@@ -4,10 +4,19 @@ const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
 const searchInput = document.querySelector('#search-input');
 const SEARCH_LIMIT = { courses: 8, branches: 12, subjects: 48 };
-const GTU_W2025_PAPER_BASE = 'https://gtu.ac.in/uploads/W2025/BE';
+function hasWinter2025Paper(subjectCode) {
+  const codes = state.catalog?.winter2025Papers?.codes;
+  if (!codes?.length) return false;
+  return codes.includes(String(subjectCode).trim());
+}
 
 function gtuWinter2025PaperUrl(subjectCode) {
-  return `${GTU_W2025_PAPER_BASE}/${encodeURIComponent(String(subjectCode).trim())}.pdf`;
+  const base = state.catalog?.winter2025Papers?.baseUrl || 'https://gtu.ac.in/uploads/W2025/BE';
+  return `${base}/${encodeURIComponent(String(subjectCode).trim())}.pdf`;
+}
+
+function winter2025ExamLabel() {
+  return state.catalog?.winter2025Papers?.exam || 'Winter 2025';
 }
 
 function urlFor(params = {}) {
@@ -251,10 +260,11 @@ function renderBranch(courseCode, branchId) {
 
 function renderGtuPaperCard(subjectCode) {
   const url = gtuWinter2025PaperUrl(subjectCode);
+  const label = winter2025ExamLabel();
   return `
     <a class="resource-card paper-card" href="${escapeHtml(url)}" target="_blank" rel="noopener">
       <span class="tag">paper</span>
-      <h3>Winter 2025</h3>
+      <h3>${escapeHtml(label)}</h3>
       <p>GTU official question paper</p>
     </a>`;
 }
@@ -268,7 +278,7 @@ function renderSubject(subjectId) {
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subjectId);
   const code = subject.code || subject.id.split('@')[0];
   const resourceCards = [
-    courseCode === 'BE' ? renderGtuPaperCard(code) : '',
+    courseCode === 'BE' && hasWinter2025Paper(code) ? renderGtuPaperCard(code) : '',
     ...resources.map(resource => `
       <a class="resource-card" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener">
         <span class="tag">${escapeHtml(resource.type)}</span>

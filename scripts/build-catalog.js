@@ -51,14 +51,37 @@ fs.writeFileSync(
   `${JSON.stringify(subjects, null, 2)}\n`,
 );
 
+function loadWinter2025Papers() {
+  const text = fs.readFileSync(path.join(base, 'details-raw/winter-2025-papers.txt'), 'utf8');
+  const codes = [...new Set(
+    text
+      .split(/\r?\n/)
+      .map((line) => line.trim().replace(/\s+\.pdf$/i, '.pdf').replace(/\.pdf$/i, ''))
+      .filter(Boolean),
+  )].sort();
+  return {
+    exam: 'Winter 2025',
+    baseUrl: 'https://gtu.ac.in/uploads/W2025/BE',
+    codes,
+  };
+}
+
+const winter2025Papers = loadWinter2025Papers();
+fs.writeFileSync(
+  path.join(base, 'details-raw/winter-2025-papers.json'),
+  `${JSON.stringify(winter2025Papers, null, 2)}\n`,
+);
+
 const catalog = {
   courses: catalogCourses,
   branches,
   subjects,
   resources: [],
+  winter2025Papers,
 };
 
 fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
 console.log(`courses: ${catalogCourses.length}`);
 console.log(`BE branches: ${branches.length}`);
 console.log(`BE subjects: ${subjects.length}`);
+console.log(`Winter 2025 papers: ${winter2025Papers.codes.length}`);

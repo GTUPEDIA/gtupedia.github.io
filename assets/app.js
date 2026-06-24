@@ -997,7 +997,7 @@ function renderNotFound(message) {
 }
 
 function renderRoute() {
-  searchInput.value = '';
+  if (searchInput) searchInput.value = '';
   setCoursesVisible(true);
 
   if (window.location.search) {
@@ -1026,7 +1026,9 @@ function renderRoute() {
   content.innerHTML = '';
 }
 
-searchInput.addEventListener('input', event => renderSearch(event.target.value));
+if (searchInput) {
+  searchInput.addEventListener('input', event => renderSearch(event.target.value));
+}
 
 function primeSubpageShell() {
   const route = parseRoutePath();

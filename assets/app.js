@@ -315,6 +315,7 @@ function renderSubject(subjectId) {
     <p class="eyebrow">${escapeHtml(branchLabel(subject.branchId, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}</p>
     <h2>${escapeHtml(subject.name)}</h2>
     <p class="subject-code-line"><span class="tag">${escapeHtml(code)}</span></p>
+    ${beAdHtml(courseCode)}
     ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}`;
 }
 

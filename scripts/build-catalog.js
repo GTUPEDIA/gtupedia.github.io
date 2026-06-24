@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { parseBeSubjects } = require('./parse-be-subjects');
 const { parseBbSubjects } = require('./parse-bb-subjects');
+const { parseBcSubjects } = require('./parse-bc-subjects');
 
 const base = path.join(__dirname, '..');
 const courses = JSON.parse(fs.readFileSync(path.join(base, 'details-raw/courses.json'), 'utf8'));
@@ -62,17 +63,20 @@ while ((match = branchRegex.exec(beHtml)) !== null) {
 const branchesWithSlugs = assignBranchSlugs(branches);
 
 const bbBranches = assignBranchSlugs([{ id: '01', name: 'BBA' }]);
+const bcBranches = assignBranchSlugs([{ id: '01', name: 'BCA' }]);
 
 const catalogCourses = courses.map((course) => {
   const entry = { code: course.code, name: course.name };
   if (course.code === 'BE') entry.branches = branchesWithSlugs;
   if (course.code === 'BB') entry.branches = bbBranches;
+  if (course.code === 'BC') entry.branches = bcBranches;
   return entry;
 });
 
 const beSubjects = parseBeSubjects(path.join(base, 'details-raw/BE.csv'));
 const bbSubjects = parseBbSubjects(path.join(base, 'details-raw/BBA.csv'));
-const subjects = [...beSubjects, ...bbSubjects];
+const bcSubjects = parseBcSubjects(path.join(base, 'details-raw/BCA.csv'));
+const subjects = [...beSubjects, ...bbSubjects, ...bcSubjects];
 fs.writeFileSync(
   path.join(base, 'details-raw/BE-subjects.json'),
   `${JSON.stringify(beSubjects, null, 2)}\n`,
@@ -80,6 +84,10 @@ fs.writeFileSync(
 fs.writeFileSync(
   path.join(base, 'details-raw/BB-subjects.json'),
   `${JSON.stringify(bbSubjects, null, 2)}\n`,
+);
+fs.writeFileSync(
+  path.join(base, 'details-raw/BC-subjects.json'),
+  `${JSON.stringify(bcSubjects, null, 2)}\n`,
 );
 
 function loadExamPapers(fileName, exam, baseUrl, courseCode = 'BE') {
@@ -161,8 +169,10 @@ const sitemapUrlCount = (generateSitemap(catalog).match(/<loc>/g) || []).length;
 console.log(`courses: ${catalogCourses.length}`);
 console.log(`BE branches: ${branchesWithSlugs.length}`);
 console.log(`BB branches: ${bbBranches.length}`);
+console.log(`BC branches: ${bcBranches.length}`);
 console.log(`BE subjects: ${beSubjects.length}`);
 console.log(`BB subjects: ${bbSubjects.length}`);
+console.log(`BC subjects: ${bcSubjects.length}`);
 console.log(`total subjects: ${subjects.length}`);
 console.log(`Winter 2025 BE papers: ${winter2025Papers.codes.length}`);
 console.log(`Winter 2025 BB papers: ${winter2025BbPapers.codes.length}`);

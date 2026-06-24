@@ -137,21 +137,56 @@ function setCoursesVisible(visible) {
   if (coursesSection) coursesSection.hidden = !visible;
 }
 
-function renderBeAd() {
-  const image = `<img src="${escapeHtml(BE_AD.src)}" alt="${escapeHtml(BE_AD.alt)}" loading="lazy" decoding="async">`;
-  const body = BE_AD.url
-    ? `<a class="course-ad__link" href="${escapeHtml(BE_AD.url)}" target="_blank" rel="noopener sponsored">${image}</a>`
-    : `<figure class="course-ad__figure">${image}</figure>`;
+function initBeAdModal() {
+  const modal = document.querySelector('#be-ad-modal');
+  if (!modal || modal.dataset.ready) return modal;
 
-  return `
-    <aside class="course-ad" aria-label="Advertisement">
-      <p class="course-ad__label">Ad</p>
-      ${body}
-    </aside>`;
+  const link = modal.querySelector('#be-ad-link');
+  const image = modal.querySelector('#be-ad-image');
+  if (link) {
+    link.href = BE_AD.url || '#';
+    if (!BE_AD.url) link.removeAttribute('href');
+  }
+  if (image) {
+    image.src = BE_AD.src;
+    image.alt = BE_AD.alt;
+  }
+
+  modal.addEventListener('click', event => {
+    if (event.target.closest('[data-ad-close]')) hideBeAdPopup();
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && modal && !modal.hidden) hideBeAdPopup();
+  });
+
+  modal.dataset.ready = 'true';
+  return modal;
 }
 
-function beAdHtml(courseCode) {
-  return courseCode === 'BE' ? renderBeAd() : '';
+function showBeAdPopup() {
+  const modal = initBeAdModal();
+  if (!modal) return;
+  modal.hidden = false;
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('ad-modal-open');
+  modal.querySelector('.ad-modal__close')?.focus();
+}
+
+function hideBeAdPopup() {
+  const modal = document.querySelector('#be-ad-modal');
+  if (!modal || modal.hidden) return;
+  modal.hidden = true;
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('ad-modal-open');
+}
+
+function maybeShowBeAdPopup(courseCode) {
+  if (courseCode !== 'BE') {
+    hideBeAdPopup();
+    return;
+  }
+  window.setTimeout(showBeAdPopup, 250);
 }
 
 function buildSearchIndex() {
@@ -240,7 +275,6 @@ function renderCourse(courseCode) {
     <a class="back-link" href="./#courses">← All courses</a>
     <p class="eyebrow">${escapeHtml(formatLabel(course.name))}</p>
     <h2>Select your branch</h2>
-    ${beAdHtml(courseCode)}
     ${branches.length ? `<div class="card-grid">${branches.map(branch => {
       const count = subjectCountForBranch(branch.id, courseCode);
       return `
@@ -250,6 +284,7 @@ function renderCourse(courseCode) {
         <p>${count ? `${count} subjects listed` : 'Browse subjects and resources'}</p>
       </a>`;
     }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}`;
+  maybeShowBeAdPopup(courseCode);
 }
 
 function renderSubjectCard(subject, meta = '') {
@@ -274,12 +309,12 @@ function renderBranch(courseCode, branchId) {
     <a class="back-link" href="${backHref}">← Back to branches</a>
     <p class="eyebrow">${escapeHtml(branch.name)}</p>
     <h2>Choose a subject</h2>
-    ${beAdHtml(resolvedCourse || 'BE')}
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
         <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open papers and material')).join('')}</div>
       </section>`).join('')}</div>` : '<p class="empty">No subjects have been imported for this branch yet.</p>'}`;
+  maybeShowBeAdPopup(resolvedCourse || 'BE');
 }
 
 function renderGtuPaperCard(subjectCode) {
@@ -315,8 +350,8 @@ function renderSubject(subjectId) {
     <p class="eyebrow">${escapeHtml(branchLabel(subject.branchId, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}</p>
     <h2>${escapeHtml(subject.name)}</h2>
     <p class="subject-code-line"><span class="tag">${escapeHtml(code)}</span></p>
-    ${beAdHtml(courseCode)}
     ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}`;
+  maybeShowBeAdPopup(courseCode);
 }
 
 function renderSearch(term) {
@@ -324,9 +359,11 @@ function renderSearch(term) {
   if (!tokens.length) {
     content.innerHTML = '';
     setCoursesVisible(true);
+    hideBeAdPopup();
     return;
   }
   setCoursesVisible(false);
+  hideBeAdPopup();
 
   const courseMatches = (state.catalog.courses || [])
     .map(course => ({ course, score: scoreSimple(`${course.code} ${course.name}`, tokens) }))
@@ -385,6 +422,7 @@ function renderSearch(term) {
 
 function renderNotFound(message) {
   setCoursesVisible(false);
+  hideBeAdPopup();
   content.innerHTML = `<p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`;
 }
 
@@ -395,6 +433,7 @@ function renderRoute() {
   if (params.has('subject')) return renderSubject(params.get('subject'));
   if (params.has('branch')) return renderBranch(params.get('course'), params.get('branch'));
   if (params.has('course')) return renderCourse(params.get('course'));
+  hideBeAdPopup();
   content.innerHTML = '';
 }
 
@@ -404,6 +443,7 @@ fetch('data/catalog.json')
   .then(catalog => {
     state.catalog = catalog;
     buildSearchIndex();
+    initBeAdModal();
     renderCourses();
     renderRoute();
   })

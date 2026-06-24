@@ -48,12 +48,19 @@ h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.045em; line-heigh
 .resource-card { position: relative; }
 .resource-card::after { content: "↗"; position: absolute; top: 19px; right: 19px; color: var(--accent); font-weight: bold; }
 .paper-card { border-color: #b8ddd4; background: linear-gradient(145deg, #fff, #eef8f4); }
-.course-ad { margin: 0 0 28px; max-width: 920px; }
-.course-ad__label { margin: 0 0 8px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
-.course-ad__link, .course-ad__figure { display: block; margin: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; box-shadow: 0 8px 24px #1730440f; transition: box-shadow .15s ease, transform .15s ease; }
-.course-ad__link { text-decoration: none; }
-.course-ad__link:hover { box-shadow: 0 12px 28px #17304418; transform: translateY(-2px); }
-.course-ad img { display: block; width: 100%; height: auto; }
+.ad-modal-open { overflow: hidden; }
+.ad-modal { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 20px; }
+.ad-modal[hidden] { display: none; }
+.ad-modal__backdrop { position: absolute; inset: 0; background: rgb(21 32 43 / 62%); backdrop-filter: blur(4px); }
+.ad-modal__dialog { position: relative; width: min(720px, 100%); max-height: calc(100vh - 40px); overflow: auto; background: #fff; border-radius: 18px; padding: 18px 18px 20px; box-shadow: 0 24px 64px rgb(21 32 43 / 28%); animation: ad-modal-in .22s ease; }
+.ad-modal__close { position: absolute; top: 10px; right: 10px; z-index: 2; width: 36px; height: 36px; border: 0; border-radius: 999px; background: rgb(255 255 255 / 92%); color: var(--ink); font-size: 1.5rem; line-height: 1; cursor: pointer; box-shadow: 0 2px 10px rgb(21 32 43 / 12%); }
+.ad-modal__close:hover { background: #fff; color: var(--accent-dark); }
+.ad-modal__label { margin: 0 0 10px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+.ad-modal__link { display: block; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.ad-modal__link:hover { transform: translateY(-2px); box-shadow: 0 12px 28px #17304418; }
+.ad-modal__link img { display: block; width: 100%; height: auto; }
+@keyframes ad-modal-in { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (max-width: 600px) { .ad-modal { padding: 12px; } .ad-modal__dialog { padding: 14px 14px 16px; border-radius: 14px; } }
 .empty { padding: 28px; border: 1px dashed #a9bbb6; border-radius: 14px; color: var(--muted); background: #fff; }
 .back-link { color: var(--accent-dark); font-weight: 700; text-decoration: none; display: inline-block; margin-bottom: 20px; }
 .about { max-width: 650px; }

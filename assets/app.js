@@ -4,6 +4,11 @@ const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
 const searchInput = document.querySelector('#search-input');
 const SEARCH_LIMIT = { courses: 8, branches: 12, subjects: 48 };
+const GTU_W2025_PAPER_BASE = 'https://gtu.ac.in/uploads/W2025/BE';
+
+function gtuWinter2025PaperUrl(subjectCode) {
+  return `${GTU_W2025_PAPER_BASE}/${encodeURIComponent(String(subjectCode).trim())}.pdf`;
+}
 
 function urlFor(params = {}) {
   const query = new URLSearchParams(params);
@@ -21,6 +26,18 @@ function formatLabel(name = '') {
     .replace(/\b([a-z])/g, (_, letter) => letter.toUpperCase());
 }
 
+function normalizeBranchId(raw = '') {
+  const value = String(raw).trim();
+  if (!value) return value;
+  if (value === '0') return '0';
+  if (/^\d+$/.test(value)) return value.padStart(2, '0');
+  return value.toUpperCase();
+}
+
+function branchIdsMatch(a, b) {
+  return normalizeBranchId(a) === normalizeBranchId(b);
+}
+
 function getCourse(courseCode) {
   return (state.catalog.courses || []).find(item => item.code === courseCode);
 }
@@ -34,16 +51,53 @@ function getCourseBranches(courseCode) {
 
 function findBranch(branchId, courseCode) {
   const branches = courseCode ? getCourseBranches(courseCode) : [];
-  return branches.find(item => String(item.id) === branchId)
-    || (state.catalog.branches || []).find(item => String(item.id) === branchId);
+  return branches.find(item => branchIdsMatch(item.id, branchId))
+    || (state.catalog.branches || []).find(item => branchIdsMatch(item.id, branchId));
 }
 
 function findCourseForBranch(branchId) {
   for (const course of state.catalog.courses || []) {
-    if ((course.branches || []).some(branch => String(branch.id) === branchId)) return course.code;
+    if ((course.branches || []).some(branch => branchIdsMatch(branch.id, branchId))) return course.code;
   }
-  if ((state.catalog.branches || []).some(branch => String(branch.id) === branchId)) return 'BE';
+  if ((state.catalog.branches || []).some(branch => branchIdsMatch(branch.id, branchId))) return 'BE';
   return null;
+}
+
+function subjectsForBranch(branchId, courseCode = 'BE') {
+  const normalizedId = normalizeBranchId(branchId);
+  return (state.catalog.subjects || []).filter(subject => {
+    if ((subject.courseCode || 'BE') !== courseCode) return false;
+    if (branchIdsMatch(subject.branchId, normalizedId)) return true;
+    if (String(subject.branchId) === '0' && (subject.semester === 1 || subject.semester === 2)) return true;
+    return false;
+  });
+}
+
+function groupSubjectsBySemester(subjects) {
+  const groups = new Map();
+  const seenCommonCodes = new Set();
+
+  for (const subject of subjects) {
+    const isCommon = String(subject.branchId) === '0';
+    if (isCommon && (subject.semester === 1 || subject.semester === 2)) {
+      if (seenCommonCodes.has(subject.code)) continue;
+      seenCommonCodes.add(subject.code);
+    }
+
+    const label = isCommon && (subject.semester === 1 || subject.semester === 2)
+      ? '1 & 2'
+      : (subject.semesterLabel || `Semester ${subject.semester || 'Unsorted'}`);
+
+    if (!groups.has(label)) groups.set(label, []);
+    groups.get(label).push(subject);
+  }
+
+  return [...groups.entries()].sort(([a], [b]) => {
+    const semA = Number(a.match(/\d+/)?.[0] || a);
+    const semB = Number(b.match(/\d+/)?.[0] || b);
+    if (semA !== semB) return semA - semB;
+    return a.localeCompare(b);
+  });
 }
 
 function branchLabel(branchId, courseCode = 'BE') {
@@ -53,10 +107,16 @@ function branchLabel(branchId, courseCode = 'BE') {
 }
 
 function subjectCountForBranch(branchId, courseCode = 'BE') {
-  return (state.catalog.subjects || []).filter(subject =>
-    subject.courseCode === courseCode
-    && (String(subject.branchId) === branchId || String(subject.branchId) === '0'),
-  ).length;
+  const seenCommonCodes = new Set();
+  let count = 0;
+  for (const subject of subjectsForBranch(branchId, courseCode)) {
+    if (String(subject.branchId) === '0') {
+      if (seenCommonCodes.has(subject.code)) continue;
+      seenCommonCodes.add(subject.code);
+    }
+    count += 1;
+  }
+  return count;
 }
 
 function setCoursesVisible(visible) {
@@ -173,27 +233,30 @@ function renderSubjectCard(subject, meta = '') {
 function renderBranch(courseCode, branchId) {
   const branch = findBranch(branchId, courseCode);
   const resolvedCourse = courseCode || findCourseForBranch(branchId);
-  const subjects = (state.catalog.subjects || []).filter(subject =>
-    (subject.courseCode || 'BE') === (resolvedCourse || 'BE')
-    && (String(subject.branchId) === branchId || String(subject.branchId) === '0'),
-  );
+  const subjects = subjectsForBranch(branchId, resolvedCourse || 'BE');
   if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
   setCoursesVisible(false);
   const backHref = resolvedCourse ? urlFor({ course: resolvedCourse }) : './#courses';
-  const bySemester = subjects.reduce((groups, subject) => {
-    const semester = subject.semester || 'Unsorted';
-    (groups[semester] ||= []).push(subject);
-    return groups;
-  }, {});
+  const semesterGroups = groupSubjectsBySemester(subjects);
   content.innerHTML = `
     <a class="back-link" href="${backHref}">← Back to branches</a>
     <p class="eyebrow">${escapeHtml(branch.name)}</p>
     <h2>Choose a subject</h2>
-    ${Object.keys(bySemester).length ? `<div class="subject-groups">${Object.entries(bySemester).sort(([a], [b]) => Number(a) - Number(b)).map(([semester, items]) => `
+    ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
-        <h2>Semester ${escapeHtml(semester)}</h2>
+        <h2>${escapeHtml(label)}</h2>
         <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open papers and material')).join('')}</div>
       </section>`).join('')}</div>` : '<p class="empty">No subjects have been imported for this branch yet.</p>'}`;
+}
+
+function renderGtuPaperCard(subjectCode) {
+  const url = gtuWinter2025PaperUrl(subjectCode);
+  return `
+    <a class="resource-card paper-card" href="${escapeHtml(url)}" target="_blank" rel="noopener">
+      <span class="tag">paper</span>
+      <h3>Winter 2025</h3>
+      <p>GTU official question paper</p>
+    </a>`;
 }
 
 function renderSubject(subjectId) {
@@ -203,18 +266,22 @@ function renderSubject(subjectId) {
   const courseCode = subject.courseCode || findCourseForBranch(String(subject.branchId)) || 'BE';
   const backHref = urlFor({ course: courseCode, branch: subject.branchId });
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subjectId);
-  const code = subject.code || subject.id;
-  content.innerHTML = `
-    <a class="back-link" href="${backHref}">← Back to subjects</a>
-    <p class="eyebrow">${escapeHtml(branchLabel(subject.branchId, courseCode))} · Semester ${escapeHtml(subject.semester || '—')}</p>
-    <h2>${escapeHtml(subject.name)}</h2>
-    <p class="subject-code-line"><span class="tag">${escapeHtml(code)}</span></p>
-    ${resources.length ? `<div class="resource-list">${resources.map(resource => `
+  const code = subject.code || subject.id.split('@')[0];
+  const resourceCards = [
+    courseCode === 'BE' ? renderGtuPaperCard(code) : '',
+    ...resources.map(resource => `
       <a class="resource-card" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener">
         <span class="tag">${escapeHtml(resource.type)}</span>
         <h3>${escapeHtml(resource.title)}</h3>
         <p>${[resource.exam, resource.author].filter(Boolean).map(escapeHtml).join(' · ') || 'Open resource'}</p>
-      </a>`).join('')}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}`;
+      </a>`),
+  ].filter(Boolean).join('');
+  content.innerHTML = `
+    <a class="back-link" href="${backHref}">← Back to subjects</a>
+    <p class="eyebrow">${escapeHtml(branchLabel(subject.branchId, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}</p>
+    <h2>${escapeHtml(subject.name)}</h2>
+    <p class="subject-code-line"><span class="tag">${escapeHtml(code)}</span></p>
+    ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}`;
 }
 
 function renderSearch(term) {

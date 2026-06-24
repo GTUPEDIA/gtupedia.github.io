@@ -47,6 +47,7 @@ h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.045em; line-heigh
 .subject-list, .resource-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 13px; }
 .resource-card { position: relative; }
 .resource-card::after { content: "↗"; position: absolute; top: 19px; right: 19px; color: var(--accent); font-weight: bold; }
+.paper-card { border-color: #b8ddd4; background: linear-gradient(145deg, #fff, #eef8f4); }
 .empty { padding: 28px; border: 1px dashed #a9bbb6; border-radius: 14px; color: var(--muted); background: #fff; }
 .back-link { color: var(--accent-dark); font-weight: 700; text-decoration: none; display: inline-block; margin-bottom: 20px; }
 .about { max-width: 650px; }

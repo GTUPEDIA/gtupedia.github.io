@@ -62,8 +62,12 @@ function normalizeBranchId(raw = '') {
   return value.toUpperCase();
 }
 
-function subjectKey(code, branchId, semester) {
-  return `${code}@${branchId}@${semester}`;
+function semesterLabelSlug(raw = '') {
+  return raw.trim().replace(/\s+/g, '_').replace(/[^\w_]/g, '').replace(/_+/g, '_');
+}
+
+function subjectKey(code, branchId, semesterLabel) {
+  return `${code.trim()}@${branchId}@${semesterLabelSlug(semesterLabel)}`;
 }
 
 function parseBeSubjects(csvPath) {
@@ -75,23 +79,22 @@ function parseBeSubjects(csvPath) {
     if (!code || !name) continue;
 
     const branchId = normalizeBranchId(branchRaw);
-    const semesters = parseSemesters(semesterRaw);
+    const semesterLabel = semesterRaw.trim();
+    const semesters = parseSemesters(semesterLabel);
     if (!semesters.length) continue;
 
-    for (const semester of semesters) {
-      const id = subjectKey(code.trim(), branchId, semester);
-      if (subjects.has(id)) continue;
+    const id = subjectKey(code, branchId, semesterLabel);
+    if (subjects.has(id)) continue;
 
-      subjects.set(id, {
-        id,
-        code: code.trim(),
-        name: name.trim(),
-        branchId,
-        semester,
-        courseCode: 'BE',
-        semesterLabel: semesterRaw.trim(),
-      });
-    }
+    subjects.set(id, {
+      id,
+      code: code.trim(),
+      name: name.trim().replace(/\s+/g, ' '),
+      branchId,
+      semester: Math.min(...semesters),
+      courseCode: 'BE',
+      semesterLabel,
+    });
   }
 
   return [...subjects.values()].sort((a, b) => {
@@ -111,4 +114,4 @@ if (require.main === module) {
   console.log(`written: ${outPath}`);
 }
 
-module.exports = { parseBeSubjects, parseCsv, normalizeBranchId, parseSemesters };
+module.exports = { parseBeSubjects, parseCsv, normalizeBranchId, parseSemesters, subjectKey, semesterLabelSlug };

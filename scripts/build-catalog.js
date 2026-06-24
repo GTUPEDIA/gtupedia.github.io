@@ -166,6 +166,7 @@ fs.writeFileSync(
 );
 
 const catalog = {
+  catalogBuiltAt: new Date().toISOString(),
   courses: catalogCourses,
   branches: branchesWithSlugs,
   subjects,
@@ -184,6 +185,23 @@ const catalog = {
 };
 
 fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
+fs.writeFileSync(
+  path.join(base, 'data/catalog-version.txt'),
+  `${catalog.catalogBuiltAt}\n`,
+);
+
+function stampCatalogVersion(filePath, builtAt) {
+  const stamp = String(Date.parse(builtAt) || Date.now());
+  const html = fs.readFileSync(filePath, 'utf8');
+  fs.writeFileSync(
+    filePath,
+    html.replace(/window\.__GTUPEDIA_CATALOG_V = '[^']*';/, `window.__GTUPEDIA_CATALOG_V = '${stamp}';`),
+  );
+}
+
+stampCatalogVersion(path.join(base, 'index.html'), catalog.catalogBuiltAt);
+stampCatalogVersion(path.join(base, '404.html'), catalog.catalogBuiltAt);
+
 const { writeSitemap, generateSitemap } = require('./generate-sitemap');
 writeSitemap(catalog, path.join(base, 'sitemap.xml'));
 const sitemapUrlCount = (generateSitemap(catalog).match(/<loc>/g) || []).length;

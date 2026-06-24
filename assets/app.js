@@ -300,8 +300,9 @@ function appPathname() {
 }
 
 function looksLikeSubjectCode(value = '') {
-  const ref = decodeURIComponent(String(value));
+  const ref = decodeURIComponent(String(value)).trim();
   if (ref.includes('@')) return true;
+  if (/^[A-Z]{2,3}\d/i.test(ref)) return true;
   return /^(BE)?[0-9A-Z_]+$/i.test(ref) && /\d/.test(ref);
 }
 
@@ -586,7 +587,13 @@ function findBranch(branchId, courseCode) {
   return null;
 }
 
-function findCourseForBranch(branchId) {
+function findCourseForBranch(branchId, preferredCourseCode) {
+  if (preferredCourseCode) {
+    const course = getCourse(preferredCourseCode);
+    if ((course?.branches || []).some(branch => branchIdsMatch(branch.id, branchId))) {
+      return preferredCourseCode;
+    }
+  }
   for (const course of state.catalog.courses || []) {
     if ((course.branches || []).some(branch => branchIdsMatch(branch.id, branchId))) return course.code;
   }
@@ -825,7 +832,7 @@ function renderSubjectCard(subject, meta = '', branchId = subject.branchId) {
 function renderBranch(courseCode, branchId) {
   const branch = findBranch(branchId, courseCode);
   const resolvedCourse = courseCode || findCourseForBranch(branchId);
-  const subjects = subjectsForBranch(branchId, resolvedCourse || 'BE');
+  const subjects = subjectsForBranch(branchId, resolvedCourse || courseCode || 'BE');
   if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
   ensureCanonicalUrl({ course: resolvedCourse || courseCode || 'BE' }, branch);
   setHeroVisible(false);
@@ -1094,7 +1101,8 @@ function primeSubpageShell() {
 }
 
 primeSubpageShell();
-fetch('data/catalog.json')
+const catalogUrl = `data/catalog.json?v=${encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1')}`;
+fetch(catalogUrl, { cache: 'no-store' })
   .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load catalogue')))
   .then(catalog => {
     state.catalog = catalog;

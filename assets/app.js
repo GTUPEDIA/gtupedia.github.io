@@ -9,19 +9,31 @@ const BE_AD = {
   alt: 'Startup wala MBA — GTU School of Management Studies. MBA in Innovation, Entrepreneurship and Venture Development. Admissions open.',
   url: 'https://www.gtu.ac.in/',
 };
-function hasWinter2025Paper(subjectCode) {
-  const codes = state.catalog?.winter2025Papers?.codes;
-  if (!codes?.length) return false;
-  return codes.includes(String(subjectCode).trim());
+function getExamPaperSets() {
+  if (state.catalog?.examPapers?.length) return state.catalog.examPapers;
+  const sets = [];
+  if (state.catalog?.winter2025Papers) sets.push(state.catalog.winter2025Papers);
+  if (state.catalog?.summer2025Papers) sets.push(state.catalog.summer2025Papers);
+  if (state.catalog?.winter2024Papers) sets.push(state.catalog.winter2024Papers);
+  if (state.catalog?.summer2024Papers) sets.push(state.catalog.summer2024Papers);
+  if (state.catalog?.winter2023Papers) sets.push(state.catalog.winter2023Papers);
+  return sets;
 }
 
-function gtuWinter2025PaperUrl(subjectCode) {
-  const base = state.catalog?.winter2025Papers?.baseUrl || 'https://gtu.ac.in/uploads/W2025/BE';
+function hasExamPaper(subjectCode, paperSet) {
+  return paperSet?.codes?.includes(String(subjectCode).trim());
+}
+
+function gtuExamPaperUrl(subjectCode, paperSet) {
+  const base = paperSet?.baseUrl || 'https://gtu.ac.in/uploads/W2025/BE';
   return `${base}/${encodeURIComponent(String(subjectCode).trim())}.pdf`;
 }
 
-function winter2025ExamLabel() {
-  return state.catalog?.winter2025Papers?.exam || 'Winter 2025';
+function examPaperCardsForSubject(subjectCode, courseCode) {
+  if (courseCode !== 'BE') return [];
+  return getExamPaperSets()
+    .filter(paperSet => hasExamPaper(subjectCode, paperSet))
+    .map(paperSet => renderGtuPaperCard(subjectCode, paperSet));
 }
 
 function urlFor(params = {}) {
@@ -317,9 +329,9 @@ function renderBranch(courseCode, branchId) {
   maybeShowBeAdPopup(resolvedCourse || 'BE');
 }
 
-function renderGtuPaperCard(subjectCode) {
-  const url = gtuWinter2025PaperUrl(subjectCode);
-  const label = winter2025ExamLabel();
+function renderGtuPaperCard(subjectCode, paperSet) {
+  const url = gtuExamPaperUrl(subjectCode, paperSet);
+  const label = paperSet.exam || 'Exam paper';
   return `
     <a class="resource-card paper-card" href="${escapeHtml(url)}" target="_blank" rel="noopener">
       <span class="tag">paper</span>
@@ -337,7 +349,7 @@ function renderSubject(subjectId) {
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subjectId);
   const code = subject.code || subject.id.split('@')[0];
   const resourceCards = [
-    courseCode === 'BE' && hasWinter2025Paper(code) ? renderGtuPaperCard(code) : '',
+    ...examPaperCardsForSubject(code, courseCode),
     ...resources.map(resource => `
       <a class="resource-card" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener">
         <span class="tag">${escapeHtml(resource.type)}</span>

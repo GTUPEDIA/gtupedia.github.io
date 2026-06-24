@@ -48,9 +48,124 @@ function examPaperCardsForSubject(subject, courseCode) {
   return cards;
 }
 
+function appPathname() {
+  let path = window.location.pathname;
+  if (path.startsWith('/gtupedia.github.io')) {
+    path = path.slice('/gtupedia.github.io'.length) || '/';
+  }
+  return path.replace(/\/+$/, '') || '/';
+}
+
+function parseRoutePath(pathname = appPathname()) {
+  if (pathname === '/' || pathname === '/index.html') return {};
+  const parts = pathname.split('/').filter(Boolean);
+  if (parts.length >= 3) {
+    return {
+      course: decodeURIComponent(parts[0]),
+      branch: decodeURIComponent(parts[1]),
+      subjectCode: decodeURIComponent(parts.slice(2).join('/')),
+    };
+  }
+  if (parts.length === 2) {
+    return {
+      course: decodeURIComponent(parts[0]),
+      branch: decodeURIComponent(parts[1]),
+    };
+  }
+  if (parts.length === 1) {
+    return { course: decodeURIComponent(parts[0]) };
+  }
+  return {};
+}
+
 function urlFor(params = {}) {
-  const query = new URLSearchParams(params);
-  return `./${query.size ? `?${query}` : ''}`;
+  if (params.subject) {
+    const subject = findSubject(params.subject);
+    if (subject) {
+      return urlFor({
+        course: params.course || subject.courseCode || 'BE',
+        branch: params.branch || subject.branchId,
+        subjectCode: subject.code,
+      });
+    }
+  }
+
+  if (params.course && params.branch && params.subjectCode) {
+    return `${params.course}/${normalizeBranchId(params.branch)}/${encodeURIComponent(params.subjectCode)}`;
+  }
+  if (params.course && params.branch) {
+    return `${params.course}/${normalizeBranchId(params.branch)}`;
+  }
+  if (params.course) return `${params.course}`;
+  return './';
+}
+
+function legacyQueryToPath(search = window.location.search) {
+  const params = new URLSearchParams(search);
+  if (params.has('subject')) {
+    const subject = findSubject(params.get('subject'));
+    if (!subject) return null;
+    return urlFor({
+      course: params.get('course') || subject.courseCode || 'BE',
+      branch: params.get('branch') || subject.branchId,
+      subjectCode: subject.code,
+    });
+  }
+  if (params.has('branch')) {
+    return urlFor({
+      course: params.get('course') || 'BE',
+      branch: params.get('branch'),
+    });
+  }
+  if (params.has('course')) {
+    return urlFor({ course: params.get('course') });
+  }
+  return null;
+}
+
+function isAppLink(url) {
+  if (url.origin !== window.location.origin) return false;
+  let path = url.pathname;
+  if (path.startsWith('/gtupedia.github.io')) {
+    path = path.slice('/gtupedia.github.io'.length) || '/';
+  }
+  if (path === '/' || path === '/index.html') return true;
+  const courseCode = path.split('/').filter(Boolean)[0];
+  return Boolean(getCourse(courseCode));
+}
+
+function absoluteAppUrl(path = './') {
+  const base = window.__GTUPEDIA_BASE || '/';
+  if (path === './' || path === '.') return base.replace(/\/$/, '') || '/';
+  return `${base}${String(path).replace(/^\//, '')}`;
+}
+
+function navigateTo(path, { replace = false } = {}) {
+  const next = absoluteAppUrl(path);
+  if (replace) window.history.replaceState(null, '', next);
+  else window.history.pushState(null, '', next);
+  renderRoute();
+}
+
+function initClientNavigation() {
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest('a[href]');
+    if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#')) return;
+    const url = new URL(link.href, window.location.href);
+    if (!isAppLink(url)) return;
+    event.preventDefault();
+    let path = url.pathname;
+    if (path.startsWith('/gtupedia.github.io')) {
+      path = path.slice('/gtupedia.github.io'.length) || '/';
+    }
+    const routePath = path.replace(/\/+$/, '') || '/';
+    navigateTo(routePath === '/' ? './' : routePath.replace(/^\//, ''), { replace: false });
+  });
+
+  window.addEventListener('popstate', () => renderRoute());
 }
 
 function escapeHtml(value = '') {
@@ -88,6 +203,24 @@ function findSubject(subjectId) {
   const id = String(subjectId);
   return (state.catalog.subjects || []).find(item => String(item.id) === id
     || (item.alternateIds || []).includes(id));
+}
+
+function subjectMatchesBranch(subject, branchId) {
+  if (branchIdsMatch(subject.branchId, branchId)) return true;
+  if (String(subject.branchId) === '0' && isSem12Subject(subject)) return true;
+  return false;
+}
+
+function findSubjectForBranch(branchId, subjectRef) {
+  const ref = String(subjectRef);
+  if (ref.includes('@')) return findSubject(ref);
+
+  const normalizedBranch = normalizeBranchId(branchId);
+  return (state.catalog.subjects || []).find(subject => {
+    if (!subjectMatchesBranch(subject, normalizedBranch)) return false;
+    if (subject.code === ref) return true;
+    return (subject.alternateCodes || []).includes(ref);
+  });
 }
 
 function getCourse(courseCode) {
@@ -312,10 +445,11 @@ function renderCourse(courseCode) {
   maybeShowBeAdPopup(courseCode);
 }
 
-function renderSubjectCard(subject, meta = '') {
+function renderSubjectCard(subject, meta = '', branchId = subject.branchId) {
   const code = subject.code || subject.id;
+  const courseCode = subject.courseCode || 'BE';
   return `
-    <a class="subject-card" href="${urlFor({ subject: subject.id })}">
+    <a class="subject-card" href="${urlFor({ course: courseCode, branch: branchId, subjectCode: code })}">
       <span class="tag">${escapeHtml(code)}</span>
       <h3>${escapeHtml(subject.name)}</h3>
       <p>${escapeHtml(meta || `Semester ${subject.semester || '—'}`)}</p>
@@ -337,7 +471,7 @@ function renderBranch(courseCode, branchId) {
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
-        <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open papers and material')).join('')}</div>
+        <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open papers and material', branchId)).join('')}</div>
       </section>`).join('')}</div>` : '<p class="empty">No subjects have been imported for this branch yet.</p>'}`;
   maybeShowBeAdPopup(resolvedCourse || 'BE');
 }
@@ -353,12 +487,16 @@ function renderGtuPaperCard(subjectCode, paperSet) {
     </a>`;
 }
 
-function renderSubject(subjectId) {
-  const subject = findSubject(subjectId);
+function renderSubject(subjectRef, routeBranchId) {
+  const branchId = routeBranchId || null;
+  const subject = branchId
+    ? findSubjectForBranch(branchId, subjectRef)
+    : findSubject(subjectRef);
   if (!subject) return renderNotFound('That subject is not in the catalogue yet.');
   setCoursesVisible(false);
   const courseCode = subject.courseCode || findCourseForBranch(String(subject.branchId)) || 'BE';
-  const backHref = urlFor({ course: courseCode, branch: subject.branchId });
+  const backBranch = branchId || subject.branchId;
+  const backHref = urlFor({ course: courseCode, branch: backBranch });
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id
     || (subject.alternateIds || []).includes(String(item.subjectId)));
   const code = subject.code || subject.id.split('@')[0];
@@ -374,7 +512,7 @@ function renderSubject(subjectId) {
   ].filter(Boolean).join('');
   content.innerHTML = `
     <a class="back-link" href="${backHref}">← Back to subjects</a>
-    <p class="eyebrow">${escapeHtml(branchLabel(subject.branchId, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}</p>
+    <p class="eyebrow">${escapeHtml(branchLabel(backBranch, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}</p>
     <h2>${escapeHtml(subject.name)}</h2>
     <p class="subject-code-line">
       <span class="tag">${escapeHtml(code)}</span>
@@ -442,10 +580,14 @@ function renderSearch(term) {
     ${visibleSubjects.length ? `
       <section class="search-group">
         <h3>Subjects ${subjectMatches.length > visibleSubjects.length ? `(top ${visibleSubjects.length} of ${subjectMatches.length.toLocaleString()})` : ''}</h3>
-        <div class="subject-list">${visibleSubjects.map(({ entry }) => renderSubjectCard(
-          entry.subject,
-          `${entry.courseCode} · ${entry.branchName} · Semester ${entry.subject.semester}`,
-        )).join('')}</div>
+        <div class="subject-list">${visibleSubjects.map(({ entry }) => {
+          const branchId = entry.subject.branchId === '0' ? '0' : entry.subject.branchId;
+          return renderSubjectCard(
+            entry.subject,
+            `${entry.courseCode} · ${entry.branchName} · Semester ${entry.subject.semester}`,
+            branchId,
+          );
+        }).join('')}</div>
       </section>` : ''}
     ${total ? '' : '<p class="empty">Try a subject code like <strong>BE03000081</strong>, a subject name like <strong>Data Structures</strong>, or a branch like <strong>Computer Engineering</strong>.</p>'}`;
 }
@@ -457,12 +599,20 @@ function renderNotFound(message) {
 }
 
 function renderRoute() {
-  const params = new URLSearchParams(location.search);
   searchInput.value = '';
   setCoursesVisible(true);
-  if (params.has('subject')) return renderSubject(params.get('subject'));
-  if (params.has('branch')) return renderBranch(params.get('course'), params.get('branch'));
-  if (params.has('course')) return renderCourse(params.get('course'));
+
+  if (window.location.search) {
+    const legacyPath = legacyQueryToPath();
+    if (legacyPath) {
+      window.history.replaceState(null, '', absoluteAppUrl(legacyPath));
+    }
+  }
+
+  const route = parseRoutePath();
+  if (route.subjectCode) return renderSubject(route.subjectCode, route.branch);
+  if (route.branch) return renderBranch(route.course, route.branch);
+  if (route.course) return renderCourse(route.course);
   hideBeAdPopup();
   content.innerHTML = '';
 }
@@ -474,6 +624,7 @@ fetch('data/catalog.json')
     state.catalog = catalog;
     buildSearchIndex();
     initBeAdModal();
+    initClientNavigation();
     renderCourses();
     renderRoute();
   })

@@ -4,6 +4,11 @@ const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
 const searchInput = document.querySelector('#search-input');
 const SEARCH_LIMIT = { courses: 8, branches: 12, subjects: 48 };
+const BE_AD = {
+  src: 'ads/startup-wala-ad.ong.PNG',
+  alt: 'Startup wala MBA — GTU School of Management Studies. MBA in Innovation, Entrepreneurship and Venture Development. Admissions open.',
+  url: 'https://www.gtu.ac.in/',
+};
 function hasWinter2025Paper(subjectCode) {
   const codes = state.catalog?.winter2025Papers?.codes;
   if (!codes?.length) return false;
@@ -132,6 +137,23 @@ function setCoursesVisible(visible) {
   if (coursesSection) coursesSection.hidden = !visible;
 }
 
+function renderBeAd() {
+  const image = `<img src="${escapeHtml(BE_AD.src)}" alt="${escapeHtml(BE_AD.alt)}" loading="lazy" decoding="async">`;
+  const body = BE_AD.url
+    ? `<a class="course-ad__link" href="${escapeHtml(BE_AD.url)}" target="_blank" rel="noopener sponsored">${image}</a>`
+    : `<figure class="course-ad__figure">${image}</figure>`;
+
+  return `
+    <aside class="course-ad" aria-label="Advertisement">
+      <p class="course-ad__label">Ad</p>
+      ${body}
+    </aside>`;
+}
+
+function beAdHtml(courseCode) {
+  return courseCode === 'BE' ? renderBeAd() : '';
+}
+
 function buildSearchIndex() {
   const branchNames = new Map((state.catalog.branches || []).map(branch => [branch.id, branch.name]));
 
@@ -218,6 +240,7 @@ function renderCourse(courseCode) {
     <a class="back-link" href="./#courses">← All courses</a>
     <p class="eyebrow">${escapeHtml(formatLabel(course.name))}</p>
     <h2>Select your branch</h2>
+    ${beAdHtml(courseCode)}
     ${branches.length ? `<div class="card-grid">${branches.map(branch => {
       const count = subjectCountForBranch(branch.id, courseCode);
       return `
@@ -251,6 +274,7 @@ function renderBranch(courseCode, branchId) {
     <a class="back-link" href="${backHref}">← Back to branches</a>
     <p class="eyebrow">${escapeHtml(branch.name)}</p>
     <h2>Choose a subject</h2>
+    ${beAdHtml(resolvedCourse || 'BE')}
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>

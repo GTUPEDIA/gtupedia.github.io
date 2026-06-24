@@ -48,6 +48,12 @@ h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.045em; line-heigh
 .resource-card { position: relative; }
 .resource-card::after { content: "↗"; position: absolute; top: 19px; right: 19px; color: var(--accent); font-weight: bold; }
 .paper-card { border-color: #b8ddd4; background: linear-gradient(145deg, #fff, #eef8f4); }
+.course-ad { margin: 0 0 28px; max-width: 920px; }
+.course-ad__label { margin: 0 0 8px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+.course-ad__link, .course-ad__figure { display: block; margin: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; box-shadow: 0 8px 24px #1730440f; transition: box-shadow .15s ease, transform .15s ease; }
+.course-ad__link { text-decoration: none; }
+.course-ad__link:hover { box-shadow: 0 12px 28px #17304418; transform: translateY(-2px); }
+.course-ad img { display: block; width: 100%; height: auto; }
 .empty { padding: 28px; border: 1px dashed #a9bbb6; border-radius: 14px; color: var(--muted); background: #fff; }
 .back-link { color: var(--accent-dark); font-weight: 700; text-decoration: none; display: inline-block; margin-bottom: 20px; }
 .about { max-width: 650px; }

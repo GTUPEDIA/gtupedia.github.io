@@ -1,6 +1,7 @@
 {
   "exam": "Summer 2025",
   "baseUrl": "https://gtu.ac.in/uploads/S2025/BE",
+  "courseCode": "BE",
   "codes": [
     "1011NA01",
     "1011NC01",

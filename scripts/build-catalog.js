@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { parseBeSubjects } = require('./parse-be-subjects');
+const { parseBbSubjects } = require('./parse-bb-subjects');
 
 const base = path.join(__dirname, '..');
 const courses = JSON.parse(fs.readFileSync(path.join(base, 'details-raw/courses.json'), 'utf8'));
@@ -60,19 +61,28 @@ while ((match = branchRegex.exec(beHtml)) !== null) {
 
 const branchesWithSlugs = assignBranchSlugs(branches);
 
+const bbBranches = assignBranchSlugs([{ id: '01', name: 'BBA' }]);
+
 const catalogCourses = courses.map((course) => {
   const entry = { code: course.code, name: course.name };
   if (course.code === 'BE') entry.branches = branchesWithSlugs;
+  if (course.code === 'BB') entry.branches = bbBranches;
   return entry;
 });
 
-const subjects = parseBeSubjects(path.join(base, 'details-raw/BE.csv'));
+const beSubjects = parseBeSubjects(path.join(base, 'details-raw/BE.csv'));
+const bbSubjects = parseBbSubjects(path.join(base, 'details-raw/BBA.csv'));
+const subjects = [...beSubjects, ...bbSubjects];
 fs.writeFileSync(
   path.join(base, 'details-raw/BE-subjects.json'),
-  `${JSON.stringify(subjects, null, 2)}\n`,
+  `${JSON.stringify(beSubjects, null, 2)}\n`,
+);
+fs.writeFileSync(
+  path.join(base, 'details-raw/BB-subjects.json'),
+  `${JSON.stringify(bbSubjects, null, 2)}\n`,
 );
 
-function loadExamPapers(fileName, exam, baseUrl) {
+function loadExamPapers(fileName, exam, baseUrl, courseCode = 'BE') {
   const text = fs.readFileSync(path.join(base, `details-raw/${fileName}`), 'utf8');
   const codes = [...new Set(
     text
@@ -80,20 +90,33 @@ function loadExamPapers(fileName, exam, baseUrl) {
       .map((line) => line.trim().replace(/\s+\.pdf$/i, '.pdf').replace(/\.pdf$/i, ''))
       .filter(Boolean),
   )].sort();
-  return { exam, baseUrl, codes };
+  return { exam, baseUrl, courseCode, codes };
 }
 
 const winter2025Papers = loadExamPapers('winter-2025-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/BE');
+const winter2025BbPapers = loadExamPapers('winter-2025-bb-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/BB', 'BB');
 const summer2025Papers = loadExamPapers('summer-2025-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/BE');
 const winter2024Papers = loadExamPapers('winter-2024-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/BE');
 const summer2024Papers = loadExamPapers('summer-2024-papers.txt', 'Summer 2024', 'https://gtu.ac.in/uploads/S2024/BE');
 const winter2023Papers = loadExamPapers('winter-2023-papers.txt', 'Winter 2023', 'https://gtu.ac.in/uploads/W2023/BE');
 const summer2023Papers = loadExamPapers('summer-2023-papers.txt', 'Summer 2023', 'https://gtu.ac.in/uploads/S2023/BE');
-const examPapers = [winter2025Papers, summer2025Papers, winter2024Papers, summer2024Papers, winter2023Papers, summer2023Papers];
+const examPapers = [
+  winter2025Papers,
+  winter2025BbPapers,
+  summer2025Papers,
+  winter2024Papers,
+  summer2024Papers,
+  winter2023Papers,
+  summer2023Papers,
+];
 
 fs.writeFileSync(
   path.join(base, 'details-raw/winter-2025-papers.json'),
   `${JSON.stringify(winter2025Papers, null, 2)}\n`,
+);
+fs.writeFileSync(
+  path.join(base, 'details-raw/winter-2025-bb-papers.json'),
+  `${JSON.stringify(winter2025BbPapers, null, 2)}\n`,
 );
 fs.writeFileSync(
   path.join(base, 'details-raw/summer-2025-papers.json'),
@@ -123,6 +146,7 @@ const catalog = {
   resources: [],
   examPapers,
   winter2025Papers,
+  winter2025BbPapers,
   summer2025Papers,
   winter2024Papers,
   summer2024Papers,
@@ -131,15 +155,20 @@ const catalog = {
 };
 
 fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
-const { writeSitemap } = require('./generate-sitemap');
+const { writeSitemap, generateSitemap } = require('./generate-sitemap');
 writeSitemap(catalog, path.join(base, 'sitemap.xml'));
+const sitemapUrlCount = (generateSitemap(catalog).match(/<loc>/g) || []).length;
 console.log(`courses: ${catalogCourses.length}`);
 console.log(`BE branches: ${branchesWithSlugs.length}`);
-console.log(`BE subjects: ${subjects.length}`);
-console.log(`Winter 2025 papers: ${winter2025Papers.codes.length}`);
+console.log(`BB branches: ${bbBranches.length}`);
+console.log(`BE subjects: ${beSubjects.length}`);
+console.log(`BB subjects: ${bbSubjects.length}`);
+console.log(`total subjects: ${subjects.length}`);
+console.log(`Winter 2025 BE papers: ${winter2025Papers.codes.length}`);
+console.log(`Winter 2025 BB papers: ${winter2025BbPapers.codes.length}`);
 console.log(`Summer 2025 papers: ${summer2025Papers.codes.length}`);
 console.log(`Winter 2024 papers: ${winter2024Papers.codes.length}`);
 console.log(`Summer 2024 papers: ${summer2024Papers.codes.length}`);
 console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
 console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);
-console.log(`sitemap urls: ${subjects.length + branchesWithSlugs.length + catalogCourses.length + 1}`);
+console.log(`sitemap urls: ${sitemapUrlCount}`);

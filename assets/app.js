@@ -186,6 +186,7 @@ function getExamPaperSets() {
   if (state.catalog?.examPapers?.length) return state.catalog.examPapers;
   const sets = [];
   if (state.catalog?.winter2025Papers) sets.push(state.catalog.winter2025Papers);
+  if (state.catalog?.winter2025BbPapers) sets.push(state.catalog.winter2025BbPapers);
   if (state.catalog?.summer2025Papers) sets.push(state.catalog.summer2025Papers);
   if (state.catalog?.winter2024Papers) sets.push(state.catalog.winter2024Papers);
   if (state.catalog?.summer2024Papers) sets.push(state.catalog.summer2024Papers);
@@ -194,22 +195,39 @@ function getExamPaperSets() {
   return sets;
 }
 
+function paperSetCourseCode(paperSet) {
+  return paperSet?.courseCode || 'BE';
+}
+
+function resolvePaperFileName(subjectCode, paperSet) {
+  const code = String(subjectCode).trim();
+  const codes = paperSet?.codes || [];
+  if (codes.includes(code)) return code;
+  const updated = `${code}_updated`;
+  if (codes.includes(updated)) return updated;
+  const alias = codes.find(item => item.replace(/_updated$/i, '') === code);
+  return alias || code;
+}
+
 function hasExamPaper(subjectCode, paperSet) {
-  return paperSet?.codes?.includes(String(subjectCode).trim());
+  const code = String(subjectCode).trim();
+  return (paperSet?.codes || []).some(item => item === code || item.replace(/_updated$/i, '') === code);
 }
 
 function gtuExamPaperUrl(subjectCode, paperSet) {
   const base = paperSet?.baseUrl || 'https://gtu.ac.in/uploads/W2025/BE';
-  return `${base}/${encodeURIComponent(String(subjectCode).trim())}.pdf`;
+  const fileName = resolvePaperFileName(subjectCode, paperSet);
+  return `${base}/${encodeURIComponent(fileName)}.pdf`;
 }
 
 function examPaperCardsForSubject(subject, courseCode) {
-  if (courseCode !== 'BE') return [];
+  if (courseCode !== 'BE' && courseCode !== 'BB') return [];
   const cards = [];
   const seen = new Set();
 
   for (const code of subjectCodes(subject)) {
     for (const paperSet of getExamPaperSets()) {
+      if (paperSetCourseCode(paperSet) !== courseCode) continue;
       if (!hasExamPaper(code, paperSet)) continue;
       const key = `${paperSet.exam}:${code}`;
       if (seen.has(key)) continue;
@@ -495,10 +513,25 @@ function getCourseBranches(courseCode) {
   return [];
 }
 
+function getAllCourseBranches() {
+  const out = [];
+  for (const course of state.catalog.courses || []) {
+    for (const branch of getCourseBranches(course.code)) {
+      out.push({ courseCode: course.code, branch });
+    }
+  }
+  return out;
+}
+
 function findBranch(branchId, courseCode) {
   const branches = courseCode ? getCourseBranches(courseCode) : [];
-  return branches.find(item => branchIdsMatch(item.id, branchId))
-    || (state.catalog.branches || []).find(item => branchIdsMatch(item.id, branchId));
+  const match = branches.find(item => branchIdsMatch(item.id, branchId));
+  if (match || !courseCode || courseCode === 'BE') {
+    return match || (courseCode === 'BE'
+      ? (state.catalog.branches || []).find(item => branchIdsMatch(item.id, branchId))
+      : null);
+  }
+  return null;
 }
 
 function findCourseForBranch(branchId) {
@@ -606,13 +639,16 @@ function maybeShowBeAdPopup(courseCode) {
 }
 
 function buildSearchIndex() {
-  const branchNames = new Map((state.catalog.branches || []).map(branch => [branch.id, branch.name]));
+  const branchNames = new Map(
+    getAllCourseBranches().map(({ courseCode, branch }) => [`${courseCode}:${branch.id}`, branch.name]),
+  );
 
   state.searchIndex = (state.catalog.subjects || []).map(subject => {
-    const course = getCourse(subject.courseCode || 'BE');
+    const courseCode = subject.courseCode || 'BE';
+    const course = getCourse(courseCode);
     const branchName = subject.branchId === '0'
       ? 'All branches'
-      : (branchNames.get(subject.branchId) || subject.branchId);
+      : (branchNames.get(`${courseCode}:${subject.branchId}`) || subject.branchId);
     return {
       subject,
       courseCode: subject.courseCode || 'BE',
@@ -856,8 +892,12 @@ function renderSearch(term) {
     .filter(item => item.score >= 0)
     .sort((a, b) => b.score - a.score);
 
-  const branchMatches = (state.catalog.branches || [])
-    .map(branch => ({ branch, score: scoreSimple(`${branch.id} ${branch.name}`, tokens) }))
+  const branchMatches = getAllCourseBranches()
+    .map(({ courseCode, branch }) => ({
+      courseCode,
+      branch,
+      score: scoreSimple(`${courseCode} ${branch.id} ${branch.name}`, tokens),
+    }))
     .filter(item => item.score >= 0)
     .sort((a, b) => b.score - a.score);
 
@@ -887,9 +927,9 @@ function renderSearch(term) {
     ${visibleBranches.length ? `
       <section class="search-group">
         <h3>Branches ${branchMatches.length > visibleBranches.length ? `(top ${visibleBranches.length} of ${branchMatches.length})` : ''}</h3>
-        <div class="card-grid">${visibleBranches.map(({ branch }) => `
-          <a class="branch-card" href="${urlFor({ course: 'BE', branch: branch.id })}">
-            <span class="branch-code">${escapeHtml(branch.id)}</span>
+        <div class="card-grid">${visibleBranches.map(({ courseCode, branch }) => `
+          <a class="branch-card" href="${urlFor({ course: courseCode, branch: branch.id })}">
+            <span class="branch-code">${escapeHtml(courseCode)} · ${escapeHtml(branch.id)}</span>
             <h3>${escapeHtml(branch.name)}</h3>
             <p>Browse subjects and resources</p>
           </a>`).join('')}</div>

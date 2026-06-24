@@ -1,6 +1,7 @@
 {
   "exam": "Summer 2024",
   "baseUrl": "https://gtu.ac.in/uploads/S2024/BE",
+  "courseCode": "BE",
   "codes": [
     "110013",
     "115AA01",

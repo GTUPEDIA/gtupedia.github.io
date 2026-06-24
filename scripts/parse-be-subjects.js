@@ -278,6 +278,10 @@ module.exports = {
   semesterLabelSlug,
   canonicalizeSubjects,
   normalizeSubjectName,
+  mergeAlternates,
+  pickCanonical,
+  absorbInto,
+  sortSubjects,
   slugify,
   assignSubjectSlugs,
 };

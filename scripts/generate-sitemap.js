@@ -3,6 +3,12 @@ const path = require('path');
 
 const SITE = 'https://gtupedia.github.io';
 
+function branchesForCourse(course, catalog) {
+  if (course.branches?.length) return course.branches;
+  if (course.code === 'BE') return catalog.branches || [];
+  return [];
+}
+
 function branchSlugFor(branchId, branches) {
   if (String(branchId) === '0') return 'common';
   return branches.find(item => item.id === branchId)?.slug || branchId;
@@ -18,7 +24,7 @@ function subjectPath(courseCode, branchId, subject, branches) {
 }
 
 function generateSitemap(catalog) {
-  const { courses = [], branches = [], subjects = [] } = catalog;
+  const { courses = [], subjects = [] } = catalog;
   const seen = new Set();
   const urls = [];
 
@@ -33,15 +39,14 @@ function generateSitemap(catalog) {
 
   for (const course of courses) {
     add(course.code, '0.9');
-  }
-
-  for (const branch of branches) {
-    add(branchPath('BE', branch.id, branches), '0.8');
-  }
-
-  for (const subject of subjects) {
-    if (subject.courseCode !== 'BE') continue;
-    add(subjectPath('BE', subject.branchId, subject, branches), '0.7');
+    const branches = branchesForCourse(course, catalog);
+    for (const branch of branches) {
+      add(branchPath(course.code, branch.id, branches), '0.8');
+    }
+    for (const subject of subjects) {
+      if (subject.courseCode !== course.code) continue;
+      add(subjectPath(course.code, subject.branchId, subject, branches), '0.7');
+    }
   }
 
   const body = urls.map(({ loc, priority }) => `  <url>
@@ -65,7 +70,7 @@ if (require.main === module) {
   const base = path.join(__dirname, '..');
   const catalog = JSON.parse(fs.readFileSync(path.join(base, 'data/catalog.json'), 'utf8'));
   writeSitemap(catalog, path.join(base, 'sitemap.xml'));
-  console.log(`sitemap: ${catalog.subjects.length + catalog.branches.length + catalog.courses.length + 1} urls`);
+  console.log(`sitemap: ${generateSitemap(catalog).match(/<loc>/g)?.length || 0} urls`);
 }
 
-module.exports = { generateSitemap, writeSitemap };
+module.exports = { generateSitemap, writeSitemap, branchesForCourse };

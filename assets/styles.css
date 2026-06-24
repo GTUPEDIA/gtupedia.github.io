@@ -69,6 +69,17 @@ h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.045em; line-heigh
 
 body.subpage main { padding-top: 4px; }
 body.subpage .hero { display: none !important; margin: 0 !important; padding: 0 !important; }
+body.search-active .hero {
+  display: block !important;
+  margin-bottom: 0 !important;
+  padding: 82px 8% 28px !important;
+}
+body.search-active .search-bar {
+  margin-bottom: 28px;
+  background: linear-gradient(125deg, #e8f5ed, #f9e8c2);
+  border-radius: 0 0 28px 28px;
+}
+body.search-active .content { margin-bottom: 56px; }
 .page-shell { max-width: 100%; }
 .page-header { margin-bottom: 24px; }
 .content h1.page-title {

@@ -45563,6 +45563,30 @@
       ]
     },
     {
+      "exam": "Winter 2025",
+      "baseUrl": "https://gtu.ac.in/uploads/W2025/BC",
+      "courseCode": "BC",
+      "codes": [
+        "BC01001011",
+        "BC01001021",
+        "BC01001031",
+        "BC01001051",
+        "BC01001071",
+        "BC01001081",
+        "BC02001011",
+        "BC02001021",
+        "BC02001031",
+        "BC02001051",
+        "BC02001071",
+        "BC02001081",
+        "BC03001011",
+        "BC03001021",
+        "BC03001031",
+        "BC03001041",
+        "BC03001071"
+      ]
+    },
+    {
       "exam": "Summer 2025",
       "baseUrl": "https://gtu.ac.in/uploads/S2025/BE",
       "courseCode": "BE",
@@ -46425,6 +46449,25 @@
       ]
     },
     {
+      "exam": "Summer 2025",
+      "baseUrl": "https://gtu.ac.in/uploads/S2025/BC",
+      "courseCode": "BC",
+      "codes": [
+        "BC01001011",
+        "BC01001021",
+        "BC01001031",
+        "BC01001051",
+        "BC01001071",
+        "BC01001081",
+        "BC02001011",
+        "BC02001021",
+        "BC02001031",
+        "BC02001051",
+        "BC02001071",
+        "BC02001081"
+      ]
+    },
+    {
       "exam": "Winter 2024",
       "baseUrl": "https://gtu.ac.in/uploads/W2024/BE",
       "courseCode": "BE",
@@ -47273,6 +47316,19 @@
         "BE01000151",
         "BE01000161",
         "BE01000171"
+      ]
+    },
+    {
+      "exam": "Winter 2024",
+      "baseUrl": "https://gtu.ac.in/uploads/W2024/BC",
+      "courseCode": "BC",
+      "codes": [
+        "BC01001011",
+        "BC01001021",
+        "BC01001031",
+        "BC01001051",
+        "BC01001071",
+        "BC01001081"
       ]
     },
     {
@@ -51027,6 +51083,30 @@
       "BB03001061"
     ]
   },
+  "winter2025BcPapers": {
+    "exam": "Winter 2025",
+    "baseUrl": "https://gtu.ac.in/uploads/W2025/BC",
+    "courseCode": "BC",
+    "codes": [
+      "BC01001011",
+      "BC01001021",
+      "BC01001031",
+      "BC01001051",
+      "BC01001071",
+      "BC01001081",
+      "BC02001011",
+      "BC02001021",
+      "BC02001031",
+      "BC02001051",
+      "BC02001071",
+      "BC02001081",
+      "BC03001011",
+      "BC03001021",
+      "BC03001031",
+      "BC03001041",
+      "BC03001071"
+    ]
+  },
   "summer2025Papers": {
     "exam": "Summer 2025",
     "baseUrl": "https://gtu.ac.in/uploads/S2025/BE",
@@ -51889,6 +51969,25 @@
       "N114AV01"
     ]
   },
+  "summer2025BcPapers": {
+    "exam": "Summer 2025",
+    "baseUrl": "https://gtu.ac.in/uploads/S2025/BC",
+    "courseCode": "BC",
+    "codes": [
+      "BC01001011",
+      "BC01001021",
+      "BC01001031",
+      "BC01001051",
+      "BC01001071",
+      "BC01001081",
+      "BC02001011",
+      "BC02001021",
+      "BC02001031",
+      "BC02001051",
+      "BC02001071",
+      "BC02001081"
+    ]
+  },
   "winter2024Papers": {
     "exam": "Winter 2024",
     "baseUrl": "https://gtu.ac.in/uploads/W2024/BE",
@@ -52738,6 +52837,19 @@
       "BE01000151",
       "BE01000161",
       "BE01000171"
+    ]
+  },
+  "winter2024BcPapers": {
+    "exam": "Winter 2024",
+    "baseUrl": "https://gtu.ac.in/uploads/W2024/BC",
+    "courseCode": "BC",
+    "codes": [
+      "BC01001011",
+      "BC01001021",
+      "BC01001031",
+      "BC01001051",
+      "BC01001071",
+      "BC01001081"
     ]
   },
   "summer2024Papers": {

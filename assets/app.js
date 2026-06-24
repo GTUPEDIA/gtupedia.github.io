@@ -7,6 +7,9 @@ const heroSection = document.querySelector('#hero');
 const breadcrumbsNav = document.querySelector('#breadcrumbs');
 const searchInput = document.querySelector('#search-input');
 const SEARCH_LIMIT = { courses: 8, branches: 12, subjects: 48 };
+const SEARCH_MIN_CHARS = 2;
+const SEARCH_DEBOUNCE_MS = 300;
+let searchDebounceTimer = null;
 const SITE = {
   name: 'GTUPEDIA',
   defaultTitle: 'GTUPEDIA — GTU Papers & Study Resources',
@@ -17,9 +20,33 @@ const BE_AD = {
   alt: 'Startup wala MBA — GTU School of Management Studies. MBA in Innovation, Entrepreneurship and Venture Development. Admissions open.',
   url: 'https://www.gtu.ac.in/',
 };
+function isHomeRoute() {
+  const route = parseRoutePath();
+  return !route.course && !route.branch && !route.branchSlug && !route.subjectCode && !route.subjectSlug;
+}
+
+function setSearchActive(active) {
+  document.body.classList.toggle('search-active', active);
+}
+
+function clearSearchResults() {
+  setSearchActive(false);
+  if (content) content.innerHTML = '';
+  if (isHomeRoute()) {
+    setHomeSectionsVisible(true);
+    setHeroVisible(true);
+    resetHomeSeo();
+  } else {
+    renderRoute();
+  }
+  hideBeAdPopup();
+}
+
 function setHeroVisible(visible) {
   if (heroSection) heroSection.hidden = !visible;
-  document.body.classList.toggle('subpage', !visible);
+  if (!document.body.classList.contains('search-active')) {
+    document.body.classList.toggle('subpage', !visible);
+  }
 }
 
 function setMeta(name, content, attr = 'name') {
@@ -209,8 +236,10 @@ function getExamPaperSets() {
   if (state.catalog?.examPapers?.length) return state.catalog.examPapers;
   const sets = [];
   if (state.catalog?.winter2025Papers) sets.push(state.catalog.winter2025Papers);
-  if (state.catalog?.winter2025BbPapers) sets.push(state.catalog.winter2025BbPapers);
+  if (state.catalog?.winter2025BcPapers) sets.push(state.catalog.winter2025BcPapers);
+  if (state.catalog?.summer2025BcPapers) sets.push(state.catalog.summer2025BcPapers);
   if (state.catalog?.summer2025Papers) sets.push(state.catalog.summer2025Papers);
+  if (state.catalog?.winter2024BcPapers) sets.push(state.catalog.winter2024BcPapers);
   if (state.catalog?.winter2024Papers) sets.push(state.catalog.winter2024Papers);
   if (state.catalog?.summer2024Papers) sets.push(state.catalog.summer2024Papers);
   if (state.catalog?.winter2023Papers) sets.push(state.catalog.winter2023Papers);
@@ -244,7 +273,7 @@ function gtuExamPaperUrl(subjectCode, paperSet) {
 }
 
 function examPaperCardsForSubject(subject, courseCode) {
-  if (courseCode !== 'BE' && courseCode !== 'BB') return [];
+  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC') return [];
   const cards = [];
   const seen = new Set();
 
@@ -902,17 +931,25 @@ function renderSubject(subjectOrRef, routeBranchId) {
 }
 
 function renderSearch(term) {
+  const trimmed = term.trim();
   const tokens = searchTokens(term);
-  if (!tokens.length) {
-    content.innerHTML = '';
-    setCoursesVisible(true);
-    setHeroVisible(true);
-    resetHomeSeo();
-    hideBeAdPopup();
+
+  if (!tokens.length || trimmed.length < SEARCH_MIN_CHARS) {
+    clearSearchResults();
     return;
   }
-  setHeroVisible(false);
-  setCoursesVisible(false);
+
+  const onHome = isHomeRoute();
+  if (onHome) {
+    setHeroVisible(true);
+    setHomeSectionsVisible(false);
+    setSearchActive(true);
+    document.body.classList.remove('subpage');
+  } else {
+    setSearchActive(false);
+    setHeroVisible(false);
+    setHomeSectionsVisible(false);
+  }
   hideBeAdPopup();
   updatePageSeo({
     title: `Search: ${term.trim()} | ${SITE.name}`,
@@ -947,7 +984,7 @@ function renderSearch(term) {
 
   content.innerHTML = pageShell(`
     <h1 class="page-title">${total ? `${total.toLocaleString()} matching result${total === 1 ? '' : 's'}` : 'No matching results'}</h1>
-    <p class="search-hint">Search by subject code, subject name, branch, or course.</p>
+    <p class="search-hint">Showing matches for “${escapeHtml(trimmed)}”. Keep typing to narrow results.</p>
     ${visibleCourses.length ? `
       <section class="search-group">
         <h3>Courses ${courseMatches.length > visibleCourses.length ? `(top ${visibleCourses.length} of ${courseMatches.length})` : ''}</h3>
@@ -997,7 +1034,9 @@ function renderNotFound(message) {
 }
 
 function renderRoute() {
+  window.clearTimeout(searchDebounceTimer);
   if (searchInput) searchInput.value = '';
+  setSearchActive(false);
   setCoursesVisible(true);
 
   if (window.location.search) {
@@ -1026,8 +1065,24 @@ function renderRoute() {
   content.innerHTML = '';
 }
 
+function scheduleSearch(term) {
+  window.clearTimeout(searchDebounceTimer);
+  const trimmed = term.trim();
+  if (!trimmed || trimmed.length < SEARCH_MIN_CHARS) {
+    renderSearch(term);
+    return;
+  }
+  searchDebounceTimer = window.setTimeout(() => renderSearch(term), SEARCH_DEBOUNCE_MS);
+}
+
 if (searchInput) {
-  searchInput.addEventListener('input', event => renderSearch(event.target.value));
+  searchInput.addEventListener('input', event => scheduleSearch(event.target.value));
+  searchInput.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      searchInput.value = '';
+      clearSearchResults();
+    }
+  });
 }
 
 function primeSubpageShell() {

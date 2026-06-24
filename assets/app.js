@@ -18,6 +18,7 @@ const BE_AD = {
 };
 function setHeroVisible(visible) {
   if (heroSection) heroSection.hidden = !visible;
+  document.body.classList.toggle('subpage', !visible);
 }
 
 function setMeta(name, content, attr = 'name') {
@@ -737,15 +738,17 @@ function renderCourse(courseCode) {
     breadcrumbs: crumbs,
   });
   content.innerHTML = `
-    <h1 class="page-title">${escapeHtml(courseName)} branches</h1>
-    <p class="seo-intro">Select your ${escapeHtml(courseCode)} branch to view semester-wise subjects and download GTU question papers.</p>
-    ${branches.length ? `<div class="card-grid">${branches.map(branch => {
+    <header class="page-header">
+      <h1 class="page-title">${escapeHtml(courseName)}</h1>
+      <p class="seo-intro">Select your ${escapeHtml(courseCode)} branch to browse semester-wise subjects and GTU question papers.</p>
+    </header>
+    ${branches.length ? `<div class="card-grid card-grid--branches">${branches.map(branch => {
       const count = subjectCountForBranch(branch.id, courseCode);
       return `
       <a class="branch-card" href="${urlFor({ course: courseCode, branch: branch.id })}">
         <span class="branch-code">${escapeHtml(branch.id)}</span>
-        <h2>${escapeHtml(branch.name)}</h2>
-        <p>${count ? `${count} subjects listed` : 'Browse subjects and resources'}</p>
+        <h3>${escapeHtml(branch.name)}</h3>
+        <p>${count ? `${count} subjects` : 'Browse subjects and resources'}</p>
       </a>`;
     }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}
     ${renderPopularBranches(courseCode)}`;
@@ -782,8 +785,10 @@ function renderBranch(courseCode, branchId) {
   });
   const semesterGroups = groupSubjectsBySemester(subjects);
   content.innerHTML = `
-    <h1 class="page-title">${escapeHtml(branch.name)}</h1>
-    <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subjects across ${semesterGroups.length} semester groups.</p>
+    <header class="page-header">
+      <h1 class="page-title">${escapeHtml(branch.name)}</h1>
+      <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subjects across ${semesterGroups.length} semester groups.</p>
+    </header>
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
@@ -856,8 +861,10 @@ function renderSubject(subjectOrRef, routeBranchId) {
       </a>`),
   ].filter(Boolean).join('');
   content.innerHTML = `
-    <h1 class="page-title">${escapeHtml(subject.name)}</h1>
-    <p class="seo-intro">${escapeHtml(branchLabel(backBranch, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}${paperCount ? ` · ${paperCount} exam paper season${paperCount === 1 ? '' : 's'}` : ''}</p>
+    <header class="page-header">
+      <h1 class="page-title">${escapeHtml(subject.name)}</h1>
+      <p class="seo-intro">${escapeHtml(branchLabel(backBranch, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}${paperCount ? ` · ${paperCount} exam paper season${paperCount === 1 ? '' : 's'}` : ''}</p>
+    </header>
     <p class="subject-code-line">
       <span class="tag">${escapeHtml(code)}</span>
       ${alternateCodes.length ? `<span class="subject-alt-codes">Also listed as ${alternateCodes.map(item => escapeHtml(item)).join(', ')}</span>` : ''}

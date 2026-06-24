@@ -17,6 +17,7 @@ function getExamPaperSets() {
   if (state.catalog?.winter2024Papers) sets.push(state.catalog.winter2024Papers);
   if (state.catalog?.summer2024Papers) sets.push(state.catalog.summer2024Papers);
   if (state.catalog?.winter2023Papers) sets.push(state.catalog.winter2023Papers);
+  if (state.catalog?.summer2023Papers) sets.push(state.catalog.summer2023Papers);
   return sets;
 }
 

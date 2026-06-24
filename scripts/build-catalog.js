@@ -67,7 +67,8 @@ const summer2025Papers = loadExamPapers('summer-2025-papers.txt', 'Summer 2025',
 const winter2024Papers = loadExamPapers('winter-2024-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/BE');
 const summer2024Papers = loadExamPapers('summer-2024-papers.txt', 'Summer 2024', 'https://gtu.ac.in/uploads/S2024/BE');
 const winter2023Papers = loadExamPapers('winter-2023-papers.txt', 'Winter 2023', 'https://gtu.ac.in/uploads/W2023/BE');
-const examPapers = [winter2025Papers, summer2025Papers, winter2024Papers, summer2024Papers, winter2023Papers];
+const summer2023Papers = loadExamPapers('summer-2023-papers.txt', 'Summer 2023', 'https://gtu.ac.in/uploads/S2023/BE');
+const examPapers = [winter2025Papers, summer2025Papers, winter2024Papers, summer2024Papers, winter2023Papers, summer2023Papers];
 
 fs.writeFileSync(
   path.join(base, 'details-raw/winter-2025-papers.json'),
@@ -89,6 +90,10 @@ fs.writeFileSync(
   path.join(base, 'details-raw/winter-2023-papers.json'),
   `${JSON.stringify(winter2023Papers, null, 2)}\n`,
 );
+fs.writeFileSync(
+  path.join(base, 'details-raw/summer-2023-papers.json'),
+  `${JSON.stringify(summer2023Papers, null, 2)}\n`,
+);
 
 const catalog = {
   courses: catalogCourses,
@@ -101,6 +106,7 @@ const catalog = {
   winter2024Papers,
   summer2024Papers,
   winter2023Papers,
+  summer2023Papers,
 };
 
 fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
@@ -112,3 +118,4 @@ console.log(`Summer 2025 papers: ${summer2025Papers.codes.length}`);
 console.log(`Winter 2024 papers: ${winter2024Papers.codes.length}`);
 console.log(`Summer 2024 papers: ${summer2024Papers.codes.length}`);
 console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
+console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);

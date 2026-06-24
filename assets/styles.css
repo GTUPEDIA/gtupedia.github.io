@@ -17,6 +17,22 @@ a { color: inherit; }
 .site-header, main, .site-footer { max-width: 1120px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
 .site-header { min-height: 78px; display: flex; align-items: center; justify-content: space-between; }
 .brand { color: var(--ink); font-weight: 850; letter-spacing: -.08em; font-size: 1.35rem; text-decoration: none; }
+.brand-group { display: flex; align-items: center; gap: 10px; }
+.beta-badge {
+  display: inline-flex;
+  align-items: center;
+  color: #8a5a00;
+  background: #fff3d6;
+  border: 1px solid #e8c874;
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: .68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  line-height: 1;
+}
+.beta-badge--footer { font-size: .62rem; padding: 2px 7px; vertical-align: middle; }
 .brand span { color: var(--accent); }
 nav { display: flex; gap: 22px; font-size: .95rem; color: var(--muted); }
 nav a { text-decoration: none; }

@@ -1,11 +1,861 @@
 {
+  "courses": [
+    {
+      "code": "BA",
+      "name": "BACHELOR OF ARCHITECTURE"
+    },
+    {
+      "code": "BB",
+      "name": "BACHELOR OF BUSINESS ADMINISTRATION (HONOURS/HONOURS WITH RESEARCH)"
+    },
+    {
+      "code": "BC",
+      "name": "BACHELOR OF COMPUTER APPLICATIONS (HONOURS/HONOURS WITH RESEARCH)"
+    },
+    {
+      "code": "BN",
+      "name": "BACHELOR OF DESIGN"
+    },
+    {
+      "code": "BE",
+      "name": "BACHELOR OF ENGINEERING",
+      "branches": [
+        {
+          "id": "01",
+          "name": "Aeronautical Engineering"
+        },
+        {
+          "id": "02",
+          "name": "Automobile Engineering"
+        },
+        {
+          "id": "03",
+          "name": "Biomedical Engineering"
+        },
+        {
+          "id": "04",
+          "name": "BIO - Technology"
+        },
+        {
+          "id": "05",
+          "name": "Chemical Engineering"
+        },
+        {
+          "id": "06",
+          "name": "Civil Engineering"
+        },
+        {
+          "id": "07",
+          "name": "Computer Engineering"
+        },
+        {
+          "id": "08",
+          "name": "Electrical & Electronics Engineering"
+        },
+        {
+          "id": "09",
+          "name": "Electrical Engineering"
+        },
+        {
+          "id": "10",
+          "name": "Electronics Engineering"
+        },
+        {
+          "id": "11",
+          "name": "Electronics & Communication Engineering"
+        },
+        {
+          "id": "12",
+          "name": "Electronics & Telecommunication Engineering"
+        },
+        {
+          "id": "13",
+          "name": "Environmental Engineering"
+        },
+        {
+          "id": "14",
+          "name": "Food Processing Technology"
+        },
+        {
+          "id": "15",
+          "name": "Industrial Engineering"
+        },
+        {
+          "id": "16",
+          "name": "Information Technology"
+        },
+        {
+          "id": "17",
+          "name": "Instrumentation & Control Engineering"
+        },
+        {
+          "id": "18",
+          "name": "Marine Engineering"
+        },
+        {
+          "id": "19",
+          "name": "Mechanical Engineering"
+        },
+        {
+          "id": "20",
+          "name": "Mechatronics Engineering"
+        },
+        {
+          "id": "21",
+          "name": "Metallurgy Engineering"
+        },
+        {
+          "id": "22",
+          "name": "Mining Engineering"
+        },
+        {
+          "id": "23",
+          "name": "Plastic Technology"
+        },
+        {
+          "id": "24",
+          "name": "Power Electronics"
+        },
+        {
+          "id": "25",
+          "name": "Production Engineering"
+        },
+        {
+          "id": "26",
+          "name": "Rubber Technology"
+        },
+        {
+          "id": "28",
+          "name": "Textile Processing"
+        },
+        {
+          "id": "29",
+          "name": "Textile Technology"
+        },
+        {
+          "id": "31",
+          "name": "Computer Science & Engineering"
+        },
+        {
+          "id": "32",
+          "name": "Information & Communication Technology"
+        },
+        {
+          "id": "34",
+          "name": "Manufacturing Engineering"
+        },
+        {
+          "id": "35",
+          "name": "Environmental Science & Technology"
+        },
+        {
+          "id": "36",
+          "name": "Chemical Technology"
+        },
+        {
+          "id": "37",
+          "name": "Environmental Science AND Engineering"
+        },
+        {
+          "id": "39",
+          "name": "Nano Technology"
+        },
+        {
+          "id": "40",
+          "name": "Civil & Infrastructure Engineering"
+        },
+        {
+          "id": "41",
+          "name": "Robotics AND Automation"
+        },
+        {
+          "id": "42",
+          "name": "Computer Science & Engineering (artificial Intelligence AND Machine Learning)"
+        },
+        {
+          "id": "43",
+          "name": "Artificial Intelligence AND Data Science"
+        },
+        {
+          "id": "44",
+          "name": "Chemical Engineering (green Technology & Sustainability Engineering)"
+        },
+        {
+          "id": "45",
+          "name": "Computer Science & Engineering (internet OF Things AND Cyber Security Including Block Chain Technology)"
+        },
+        {
+          "id": "46",
+          "name": "Computer Science & Engineering (data Science)"
+        },
+        {
+          "id": "47",
+          "name": "Electronics & Instrumentation Engineering"
+        },
+        {
+          "id": "48",
+          "name": "Computer Science & Engineering (cyber Security)"
+        },
+        {
+          "id": "49",
+          "name": "Computer Science & Design"
+        },
+        {
+          "id": "50",
+          "name": "Smart & Sustainable Energy"
+        },
+        {
+          "id": "51",
+          "name": "Food Engineering & Technology"
+        },
+        {
+          "id": "52",
+          "name": "Artificial Intelligence AND Machine Learning"
+        },
+        {
+          "id": "53",
+          "name": "Plastics Engineering"
+        },
+        {
+          "id": "54",
+          "name": "Electronics AND Communication (communication System Engineering)"
+        },
+        {
+          "id": "89",
+          "name": "Mechanical Engineering"
+        },
+        {
+          "id": "AA",
+          "name": "Minor/Honors - Industrial Process Safety"
+        },
+        {
+          "id": "AB",
+          "name": "Minor/Honors - Waste Technology"
+        },
+        {
+          "id": "AC",
+          "name": "Minor/Honors - Construction Technology"
+        },
+        {
+          "id": "AD",
+          "name": "Minor/Honors - Next Generation Smart Village"
+        },
+        {
+          "id": "AE",
+          "name": "Minor/Honors - Infrastructure Engineering"
+        },
+        {
+          "id": "AF",
+          "name": "Minor/Honors - Smart Cities"
+        },
+        {
+          "id": "AG",
+          "name": "Minor/Honors - Artificial Intelligence & Machine Learning"
+        },
+        {
+          "id": "AH",
+          "name": "Minor/Honors - Cyber Security"
+        },
+        {
+          "id": "AI",
+          "name": "Minor/Honors - Internet OF Things"
+        },
+        {
+          "id": "AJ",
+          "name": "Minor/Honors - Solar Energy Systems"
+        },
+        {
+          "id": "AK",
+          "name": "Minor/Honors - Electrical AND Computer"
+        },
+        {
+          "id": "AL",
+          "name": "Minor/Honors - Electric Vehicles"
+        },
+        {
+          "id": "AM",
+          "name": "Minor/Honors - Control Systems AND Sensors Technology"
+        },
+        {
+          "id": "AN",
+          "name": "Minor/Honors - 3 D Printing"
+        },
+        {
+          "id": "AO",
+          "name": "Minor/Honors - Robotics"
+        },
+        {
+          "id": "AP",
+          "name": "Minor/Honors - Energy Engineering"
+        },
+        {
+          "id": "AQ",
+          "name": "Minor/Honors - Global Citizenship Personality Development"
+        },
+        {
+          "id": "AR",
+          "name": "Minor/Honours - Industrial Based NON Destructive Techniques AND Practices"
+        },
+        {
+          "id": "AS",
+          "name": "Minor/Honours - Green Technology AND Sustainability Engineering"
+        },
+        {
+          "id": "AT",
+          "name": "Minor/Honours - Data Science"
+        },
+        {
+          "id": "AU",
+          "name": "Minor/Honours - Forensic Structural Engineering"
+        },
+        {
+          "id": "AV",
+          "name": "Minor/Honours - Computer Aided Civil Engineering Processes"
+        },
+        {
+          "id": "IAA",
+          "name": "Industry - Minor/Hons. - Electric Vehicles ( iACE by Maruti Suzuki )"
+        },
+        {
+          "id": "IAN",
+          "name": "Industry - Minor/Hons. - Artificial Intelligence & Machine Learning ( Infosys Springboard )"
+        },
+        {
+          "id": "IAO",
+          "name": "Industry - Minor/Hons. - GEN AI Specialist ( IBM Through Partner Etrain India Pvt. Ltd )"
+        },
+        {
+          "id": "IAP",
+          "name": "Industry - Minor/Hons. - Full Stack Java Specialization ( IBM Through Partner Etrain India Pvt. Ltd )"
+        },
+        {
+          "id": "IAQ",
+          "name": "Industry - Minor/Hons. - Cyber Security ( Infosys Springboard )"
+        },
+        {
+          "id": "IAR",
+          "name": "Industry - Minor/Hons. - Data Science ( Infosys Springboard )"
+        },
+        {
+          "id": "IAS",
+          "name": "Industry - Minor/Hons. - Microsoft Cloud & AI Honors ( Microsoft Through partner CloudThat )"
+        },
+        {
+          "id": "IAT",
+          "name": "Industry - Minor/Hons. - Electric Vehicle ( Tata IIS )"
+        },
+        {
+          "id": "IAU",
+          "name": "Industry - Minor/Hons. - Industrial Robotics(tata Iis) ( Tata IIS )"
+        },
+        {
+          "id": "IAV",
+          "name": "Industry - Minor/Hons. - Industrial Additive Manufacturing(tata Iis) ( Tata IIS )"
+        },
+        {
+          "id": "NA",
+          "name": "Army"
+        },
+        {
+          "id": "NB",
+          "name": "AIR Force"
+        },
+        {
+          "id": "NC",
+          "name": "Navy"
+        }
+      ]
+    },
+    {
+      "code": "EP",
+      "name": "BACHELOR OF ENGINEERING (PART TIME)"
+    },
+    {
+      "code": "BH",
+      "name": "BACHELOR OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY"
+    },
+    {
+      "code": "BI",
+      "name": "BACHELOR OF INTERIOR DESIGN"
+    },
+    {
+      "code": "BP",
+      "name": "BACHELOR OF PHARMACY"
+    },
+    {
+      "code": "PP",
+      "name": "BACHELOR OF PHARMACY (PRACTICE)"
+    },
+    {
+      "code": "BL",
+      "name": "BACHELOR OF PLANNING"
+    },
+    {
+      "code": "BS",
+      "name": "BACHELOR OF SCIENCE - HONOURS / HONOURS WITH RESEARCH"
+    },
+    {
+      "code": "BV",
+      "name": "BACHELOR OF VOCATION"
+    },
+    {
+      "code": "DA",
+      "name": "DIPLOMA IN ARCHITECTURE"
+    },
+    {
+      "code": "DI",
+      "name": "DIPLOMA IN ENGINEERING"
+    },
+    {
+      "code": "DP",
+      "name": "DIPLOMA IN PHARMACY"
+    },
+    {
+      "code": "DV",
+      "name": "DIPLOMA IN VOCATION"
+    },
+    {
+      "code": "PH",
+      "name": "DOCTOR OF PHILOSOPHY"
+    },
+    {
+      "code": "IM",
+      "name": "INTEGRATED M.SC. (BIOTECHNOLOGY)"
+    },
+    {
+      "code": "MR",
+      "name": "MASTER OF ARCHITECTURE"
+    },
+    {
+      "code": "MH",
+      "name": "MASTER OF ARTS IN HINDU STUDIES"
+    },
+    {
+      "code": "MB",
+      "name": "MASTER OF BUSINESS ADMINISTRATION"
+    },
+    {
+      "code": "MA",
+      "name": "MASTER OF BUSINESS ADMINISTRATION (INTEGRATED)"
+    },
+    {
+      "code": "MV",
+      "name": "MASTER OF BUSINESS ADMINISTRATION (PART TIME)"
+    },
+    {
+      "code": "MC",
+      "name": "MASTER OF COMPUTER APPLICATIONS"
+    },
+    {
+      "code": "IC",
+      "name": "MASTER OF COMPUTER APPLICATIONS (INTEGRATED)"
+    },
+    {
+      "code": "ME",
+      "name": "MASTER OF ENGINEERING"
+    },
+    {
+      "code": "MP",
+      "name": "MASTER OF PHARMACY"
+    },
+    {
+      "code": "ML",
+      "name": "MASTER OF PHILOSOPHY"
+    },
+    {
+      "code": "MN",
+      "name": "MASTER OF PLANNING"
+    },
+    {
+      "code": "IB",
+      "name": "MASTER OF SCIENCE (INDUSTRIAL BIOTECHNOLOGY)"
+    },
+    {
+      "code": "CS",
+      "name": "MASTER OF SCIENCE (INTEGRATED)"
+    },
+    {
+      "code": "FD",
+      "name": "PHARM.D."
+    },
+    {
+      "code": "PB",
+      "name": "PHARM.D. (POST BACCALAUREATE)"
+    },
+    {
+      "code": "PD",
+      "name": "POST DIPLOMA DEGREE COURSE"
+    },
+    {
+      "code": "PI",
+      "name": "POST GRADUATE DIPLOMA"
+    },
+    {
+      "code": "DB",
+      "name": "POST GRADUATE DIPLOMA IN BIOINFORMATICS"
+    },
+    {
+      "code": "DS",
+      "name": "POST GRADUATE DIPLOMA IN DATA SCIENCE"
+    },
+    {
+      "code": "DM",
+      "name": "POST GRADUATE DIPLOMA IN DIGITAL MARKETING"
+    },
+    {
+      "code": "DH",
+      "name": "POST GRADUATE DIPLOMA IN HOSPITAL MANAGEMENT"
+    },
+    {
+      "code": "PR",
+      "name": "POST GRADUATE DIPLOMA IN IPR"
+    }
+  ],
   "branches": [
-    { "id": "6", "name": "Civil Engineering" },
-    { "id": "7", "name": "Computer Engineering" },
-    { "id": "9", "name": "Electrical Engineering" },
-    { "id": "11", "name": "Electronics & Communication Engineering" },
-    { "id": "16", "name": "Information Technology" },
-    { "id": "19", "name": "Mechanical Engineering" }
+    {
+      "id": "01",
+      "name": "Aeronautical Engineering"
+    },
+    {
+      "id": "02",
+      "name": "Automobile Engineering"
+    },
+    {
+      "id": "03",
+      "name": "Biomedical Engineering"
+    },
+    {
+      "id": "04",
+      "name": "BIO - Technology"
+    },
+    {
+      "id": "05",
+      "name": "Chemical Engineering"
+    },
+    {
+      "id": "06",
+      "name": "Civil Engineering"
+    },
+    {
+      "id": "07",
+      "name": "Computer Engineering"
+    },
+    {
+      "id": "08",
+      "name": "Electrical & Electronics Engineering"
+    },
+    {
+      "id": "09",
+      "name": "Electrical Engineering"
+    },
+    {
+      "id": "10",
+      "name": "Electronics Engineering"
+    },
+    {
+      "id": "11",
+      "name": "Electronics & Communication Engineering"
+    },
+    {
+      "id": "12",
+      "name": "Electronics & Telecommunication Engineering"
+    },
+    {
+      "id": "13",
+      "name": "Environmental Engineering"
+    },
+    {
+      "id": "14",
+      "name": "Food Processing Technology"
+    },
+    {
+      "id": "15",
+      "name": "Industrial Engineering"
+    },
+    {
+      "id": "16",
+      "name": "Information Technology"
+    },
+    {
+      "id": "17",
+      "name": "Instrumentation & Control Engineering"
+    },
+    {
+      "id": "18",
+      "name": "Marine Engineering"
+    },
+    {
+      "id": "19",
+      "name": "Mechanical Engineering"
+    },
+    {
+      "id": "20",
+      "name": "Mechatronics Engineering"
+    },
+    {
+      "id": "21",
+      "name": "Metallurgy Engineering"
+    },
+    {
+      "id": "22",
+      "name": "Mining Engineering"
+    },
+    {
+      "id": "23",
+      "name": "Plastic Technology"
+    },
+    {
+      "id": "24",
+      "name": "Power Electronics"
+    },
+    {
+      "id": "25",
+      "name": "Production Engineering"
+    },
+    {
+      "id": "26",
+      "name": "Rubber Technology"
+    },
+    {
+      "id": "28",
+      "name": "Textile Processing"
+    },
+    {
+      "id": "29",
+      "name": "Textile Technology"
+    },
+    {
+      "id": "31",
+      "name": "Computer Science & Engineering"
+    },
+    {
+      "id": "32",
+      "name": "Information & Communication Technology"
+    },
+    {
+      "id": "34",
+      "name": "Manufacturing Engineering"
+    },
+    {
+      "id": "35",
+      "name": "Environmental Science & Technology"
+    },
+    {
+      "id": "36",
+      "name": "Chemical Technology"
+    },
+    {
+      "id": "37",
+      "name": "Environmental Science AND Engineering"
+    },
+    {
+      "id": "39",
+      "name": "Nano Technology"
+    },
+    {
+      "id": "40",
+      "name": "Civil & Infrastructure Engineering"
+    },
+    {
+      "id": "41",
+      "name": "Robotics AND Automation"
+    },
+    {
+      "id": "42",
+      "name": "Computer Science & Engineering (artificial Intelligence AND Machine Learning)"
+    },
+    {
+      "id": "43",
+      "name": "Artificial Intelligence AND Data Science"
+    },
+    {
+      "id": "44",
+      "name": "Chemical Engineering (green Technology & Sustainability Engineering)"
+    },
+    {
+      "id": "45",
+      "name": "Computer Science & Engineering (internet OF Things AND Cyber Security Including Block Chain Technology)"
+    },
+    {
+      "id": "46",
+      "name": "Computer Science & Engineering (data Science)"
+    },
+    {
+      "id": "47",
+      "name": "Electronics & Instrumentation Engineering"
+    },
+    {
+      "id": "48",
+      "name": "Computer Science & Engineering (cyber Security)"
+    },
+    {
+      "id": "49",
+      "name": "Computer Science & Design"
+    },
+    {
+      "id": "50",
+      "name": "Smart & Sustainable Energy"
+    },
+    {
+      "id": "51",
+      "name": "Food Engineering & Technology"
+    },
+    {
+      "id": "52",
+      "name": "Artificial Intelligence AND Machine Learning"
+    },
+    {
+      "id": "53",
+      "name": "Plastics Engineering"
+    },
+    {
+      "id": "54",
+      "name": "Electronics AND Communication (communication System Engineering)"
+    },
+    {
+      "id": "89",
+      "name": "Mechanical Engineering"
+    },
+    {
+      "id": "AA",
+      "name": "Minor/Honors - Industrial Process Safety"
+    },
+    {
+      "id": "AB",
+      "name": "Minor/Honors - Waste Technology"
+    },
+    {
+      "id": "AC",
+      "name": "Minor/Honors - Construction Technology"
+    },
+    {
+      "id": "AD",
+      "name": "Minor/Honors - Next Generation Smart Village"
+    },
+    {
+      "id": "AE",
+      "name": "Minor/Honors - Infrastructure Engineering"
+    },
+    {
+      "id": "AF",
+      "name": "Minor/Honors - Smart Cities"
+    },
+    {
+      "id": "AG",
+      "name": "Minor/Honors - Artificial Intelligence & Machine Learning"
+    },
+    {
+      "id": "AH",
+      "name": "Minor/Honors - Cyber Security"
+    },
+    {
+      "id": "AI",
+      "name": "Minor/Honors - Internet OF Things"
+    },
+    {
+      "id": "AJ",
+      "name": "Minor/Honors - Solar Energy Systems"
+    },
+    {
+      "id": "AK",
+      "name": "Minor/Honors - Electrical AND Computer"
+    },
+    {
+      "id": "AL",
+      "name": "Minor/Honors - Electric Vehicles"
+    },
+    {
+      "id": "AM",
+      "name": "Minor/Honors - Control Systems AND Sensors Technology"
+    },
+    {
+      "id": "AN",
+      "name": "Minor/Honors - 3 D Printing"
+    },
+    {
+      "id": "AO",
+      "name": "Minor/Honors - Robotics"
+    },
+    {
+      "id": "AP",
+      "name": "Minor/Honors - Energy Engineering"
+    },
+    {
+      "id": "AQ",
+      "name": "Minor/Honors - Global Citizenship Personality Development"
+    },
+    {
+      "id": "AR",
+      "name": "Minor/Honours - Industrial Based NON Destructive Techniques AND Practices"
+    },
+    {
+      "id": "AS",
+      "name": "Minor/Honours - Green Technology AND Sustainability Engineering"
+    },
+    {
+      "id": "AT",
+      "name": "Minor/Honours - Data Science"
+    },
+    {
+      "id": "AU",
+      "name": "Minor/Honours - Forensic Structural Engineering"
+    },
+    {
+      "id": "AV",
+      "name": "Minor/Honours - Computer Aided Civil Engineering Processes"
+    },
+    {
+      "id": "IAA",
+      "name": "Industry - Minor/Hons. - Electric Vehicles ( iACE by Maruti Suzuki )"
+    },
+    {
+      "id": "IAN",
+      "name": "Industry - Minor/Hons. - Artificial Intelligence & Machine Learning ( Infosys Springboard )"
+    },
+    {
+      "id": "IAO",
+      "name": "Industry - Minor/Hons. - GEN AI Specialist ( IBM Through Partner Etrain India Pvt. Ltd )"
+    },
+    {
+      "id": "IAP",
+      "name": "Industry - Minor/Hons. - Full Stack Java Specialization ( IBM Through Partner Etrain India Pvt. Ltd )"
+    },
+    {
+      "id": "IAQ",
+      "name": "Industry - Minor/Hons. - Cyber Security ( Infosys Springboard )"
+    },
+    {
+      "id": "IAR",
+      "name": "Industry - Minor/Hons. - Data Science ( Infosys Springboard )"
+    },
+    {
+      "id": "IAS",
+      "name": "Industry - Minor/Hons. - Microsoft Cloud & AI Honors ( Microsoft Through partner CloudThat )"
+    },
+    {
+      "id": "IAT",
+      "name": "Industry - Minor/Hons. - Electric Vehicle ( Tata IIS )"
+    },
+    {
+      "id": "IAU",
+      "name": "Industry - Minor/Hons. - Industrial Robotics(tata Iis) ( Tata IIS )"
+    },
+    {
+      "id": "IAV",
+      "name": "Industry - Minor/Hons. - Industrial Additive Manufacturing(tata Iis) ( Tata IIS )"
+    },
+    {
+      "id": "NA",
+      "name": "Army"
+    },
+    {
+      "id": "NB",
+      "name": "AIR Force"
+    },
+    {
+      "id": "NC",
+      "name": "Navy"
+    }
   ],
   "subjects": [],
   "resources": []

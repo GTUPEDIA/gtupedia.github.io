@@ -30,11 +30,22 @@ function gtuExamPaperUrl(subjectCode, paperSet) {
   return `${base}/${encodeURIComponent(String(subjectCode).trim())}.pdf`;
 }
 
-function examPaperCardsForSubject(subjectCode, courseCode) {
+function examPaperCardsForSubject(subject, courseCode) {
   if (courseCode !== 'BE') return [];
-  return getExamPaperSets()
-    .filter(paperSet => hasExamPaper(subjectCode, paperSet))
-    .map(paperSet => renderGtuPaperCard(subjectCode, paperSet));
+  const cards = [];
+  const seen = new Set();
+
+  for (const code of subjectCodes(subject)) {
+    for (const paperSet of getExamPaperSets()) {
+      if (!hasExamPaper(code, paperSet)) continue;
+      const key = `${paperSet.exam}:${code}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      cards.push(renderGtuPaperCard(code, paperSet));
+    }
+  }
+
+  return cards;
 }
 
 function urlFor(params = {}) {
@@ -63,6 +74,20 @@ function normalizeBranchId(raw = '') {
 
 function branchIdsMatch(a, b) {
   return normalizeBranchId(a) === normalizeBranchId(b);
+}
+
+function isSem12Subject(subject) {
+  return subject.semester === 1 || subject.semester === 2;
+}
+
+function subjectCodes(subject) {
+  return [...new Set([subject.code, ...(subject.alternateCodes || [])].filter(Boolean))];
+}
+
+function findSubject(subjectId) {
+  const id = String(subjectId);
+  return (state.catalog.subjects || []).find(item => String(item.id) === id
+    || (item.alternateIds || []).includes(id));
 }
 
 function getCourse(courseCode) {
@@ -102,16 +127,9 @@ function subjectsForBranch(branchId, courseCode = 'BE') {
 
 function groupSubjectsBySemester(subjects) {
   const groups = new Map();
-  const seenCommonCodes = new Set();
 
   for (const subject of subjects) {
-    const isCommon = String(subject.branchId) === '0';
-    if (isCommon && (subject.semester === 1 || subject.semester === 2)) {
-      if (seenCommonCodes.has(subject.code)) continue;
-      seenCommonCodes.add(subject.code);
-    }
-
-    const label = isCommon && (subject.semester === 1 || subject.semester === 2)
+    const label = isSem12Subject(subject)
       ? '1 & 2'
       : (subject.semesterLabel || `Semester ${subject.semester || 'Unsorted'}`);
 
@@ -134,16 +152,7 @@ function branchLabel(branchId, courseCode = 'BE') {
 }
 
 function subjectCountForBranch(branchId, courseCode = 'BE') {
-  const seenCommonCodes = new Set();
-  let count = 0;
-  for (const subject of subjectsForBranch(branchId, courseCode)) {
-    if (String(subject.branchId) === '0') {
-      if (seenCommonCodes.has(subject.code)) continue;
-      seenCommonCodes.add(subject.code);
-    }
-    count += 1;
-  }
-  return count;
+  return subjectsForBranch(branchId, courseCode).length;
 }
 
 function setCoursesVisible(visible) {
@@ -216,9 +225,11 @@ function buildSearchIndex() {
       courseName: formatLabel(course?.name || 'Bachelor of Engineering'),
       branchName,
       code: (subject.code || subject.id).toLowerCase(),
+      alternateCodes: (subject.alternateCodes || []).map(item => String(item).toLowerCase()),
       name: subject.name.toLowerCase(),
       haystack: [
         subject.code,
+        ...(subject.alternateCodes || []),
         subject.name,
         subject.branchId,
         branchName,
@@ -237,10 +248,11 @@ function searchTokens(term) {
 
 function scoreSubject(entry, tokens) {
   let score = 0;
+  const codes = [entry.code, ...(entry.alternateCodes || [])];
   for (const token of tokens) {
     if (!entry.haystack.includes(token)) return -1;
-    if (entry.code === token) score += 120;
-    else if (entry.code.startsWith(token)) score += 80;
+    if (codes.includes(token)) score += 120;
+    else if (codes.some(code => code.startsWith(token))) score += 80;
     else if (entry.name.startsWith(token)) score += 50;
     else if (entry.name.includes(token)) score += 25;
     else score += 8;
@@ -342,15 +354,17 @@ function renderGtuPaperCard(subjectCode, paperSet) {
 }
 
 function renderSubject(subjectId) {
-  const subject = (state.catalog.subjects || []).find(item => String(item.id) === subjectId);
+  const subject = findSubject(subjectId);
   if (!subject) return renderNotFound('That subject is not in the catalogue yet.');
   setCoursesVisible(false);
   const courseCode = subject.courseCode || findCourseForBranch(String(subject.branchId)) || 'BE';
   const backHref = urlFor({ course: courseCode, branch: subject.branchId });
-  const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subjectId);
+  const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id
+    || (subject.alternateIds || []).includes(String(item.subjectId)));
   const code = subject.code || subject.id.split('@')[0];
+  const alternateCodes = (subject.alternateCodes || []).filter(item => item !== code);
   const resourceCards = [
-    ...examPaperCardsForSubject(code, courseCode),
+    ...examPaperCardsForSubject(subject, courseCode),
     ...resources.map(resource => `
       <a class="resource-card" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener">
         <span class="tag">${escapeHtml(resource.type)}</span>
@@ -362,7 +376,10 @@ function renderSubject(subjectId) {
     <a class="back-link" href="${backHref}">← Back to subjects</a>
     <p class="eyebrow">${escapeHtml(branchLabel(subject.branchId, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}</p>
     <h2>${escapeHtml(subject.name)}</h2>
-    <p class="subject-code-line"><span class="tag">${escapeHtml(code)}</span></p>
+    <p class="subject-code-line">
+      <span class="tag">${escapeHtml(code)}</span>
+      ${alternateCodes.length ? `<span class="subject-alt-codes">Also listed as ${alternateCodes.map(item => escapeHtml(item)).join(', ')}</span>` : ''}
+    </p>
     ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}`;
   maybeShowBeAdPopup(courseCode);
 }

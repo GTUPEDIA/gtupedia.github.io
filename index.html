@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="GTUPEDIA: GTU papers, study material and syllabus, built for students.">
-    <title>GTUPEDIA — For students, by students</title>
+    <meta name="description" content="GTUPEDIA: GTU exam papers, syllabus, and study resources for every branch and subject.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gtupedia.github.io/">
+    <meta property="og:site_name" content="GTUPEDIA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GTUPEDIA — GTU Papers &amp; Study Resources">
+    <meta property="og:description" content="Find GTU question papers, syllabus, and study material by course, branch, and subject.">
+    <meta property="og:url" content="https://gtupedia.github.io/">
+    <meta name="twitter:card" content="summary">
+    <title>GTUPEDIA — GTU Papers &amp; Study Resources</title>
     <script>
       window.__GTUPEDIA_BASE = location.pathname.startsWith('/gtupedia.github.io') ? '/gtupedia.github.io/' : '/';
     </script>
@@ -25,7 +33,7 @@
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="page-title">
+      <section id="hero" class="hero" aria-labelledby="page-title">
         <p class="eyebrow">For students, by students</p>
         <h1 id="page-title">Find GTU papers and study resources.</h1>
         <p class="hero-copy">Choose your course and branch, explore a semester, and get straight to the material you need.</p>
@@ -34,6 +42,8 @@
           <input id="search-input" type="search" placeholder="Search by course, branch, or subject" autocomplete="off">
         </label>
       </section>
+
+      <nav id="breadcrumbs" class="breadcrumbs" aria-label="Breadcrumb" hidden></nav>
 
       <section id="content" class="content" aria-live="polite"></section>
 

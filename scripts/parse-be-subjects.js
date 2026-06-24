@@ -196,6 +196,37 @@ function canonicalizeSubjects(subjects) {
   return sortSubjects([...sem12Canonical, ...laterByKey.values()]);
 }
 
+function slugify(text = '') {
+  return text
+    .toLowerCase()
+    .replace(/\u2013/g, '-')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-');
+}
+
+function assignSubjectSlugs(subjects) {
+  const used = new Map();
+
+  return subjects.map((subject) => {
+    let slug = slugify(subject.name);
+    let key = `${subject.branchId}|${slug}`;
+
+    if (used.has(key)) {
+      slug = `${slug}-sem-${subject.semester}`;
+      key = `${subject.branchId}|${slug}`;
+    }
+    if (used.has(key)) {
+      slug = `${slug}-${subject.code.toLowerCase()}`;
+      key = `${subject.branchId}|${slug}`;
+    }
+
+    used.set(key, subject.id);
+    return { ...subject, slug };
+  });
+}
+
 function parseBeSubjects(csvPath) {
   const rows = parseCsv(fs.readFileSync(csvPath, 'utf8'));
   const subjects = new Map();
@@ -223,7 +254,7 @@ function parseBeSubjects(csvPath) {
     });
   }
 
-  return canonicalizeSubjects([...subjects.values()]);
+  return assignSubjectSlugs(canonicalizeSubjects([...subjects.values()]));
 }
 
 if (require.main === module) {
@@ -247,4 +278,6 @@ module.exports = {
   semesterLabelSlug,
   canonicalizeSubjects,
   normalizeSubjectName,
+  slugify,
+  assignSubjectSlugs,
 };

@@ -27,6 +27,25 @@ function formatBranchName(name) {
     .join('');
 }
 
+function branchSlug(name = '') {
+  return name
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-');
+}
+
+function assignBranchSlugs(branchList) {
+  const used = new Map();
+  return branchList.map((branch) => {
+    let slug = branchSlug(branch.name);
+    if (used.has(slug)) slug = `${slug}-${branch.id}`;
+    used.set(slug, branch.id);
+    return { ...branch, slug };
+  });
+}
+
 const branchRegex = /<option value="([^"]+)">([^<]+)<\/option>/g;
 const branches = [];
 let match;
@@ -39,9 +58,11 @@ while ((match = branchRegex.exec(beHtml)) !== null) {
   branches.push({ id, name: formatBranchName(name) });
 }
 
+const branchesWithSlugs = assignBranchSlugs(branches);
+
 const catalogCourses = courses.map((course) => {
   const entry = { code: course.code, name: course.name };
-  if (course.code === 'BE') entry.branches = branches;
+  if (course.code === 'BE') entry.branches = branchesWithSlugs;
   return entry;
 });
 
@@ -97,7 +118,7 @@ fs.writeFileSync(
 
 const catalog = {
   courses: catalogCourses,
-  branches,
+  branches: branchesWithSlugs,
   subjects,
   resources: [],
   examPapers,
@@ -110,8 +131,10 @@ const catalog = {
 };
 
 fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
+const { writeSitemap } = require('./generate-sitemap');
+writeSitemap(catalog, path.join(base, 'sitemap.xml'));
 console.log(`courses: ${catalogCourses.length}`);
-console.log(`BE branches: ${branches.length}`);
+console.log(`BE branches: ${branchesWithSlugs.length}`);
 console.log(`BE subjects: ${subjects.length}`);
 console.log(`Winter 2025 papers: ${winter2025Papers.codes.length}`);
 console.log(`Summer 2025 papers: ${summer2025Papers.codes.length}`);
@@ -119,3 +142,4 @@ console.log(`Winter 2024 papers: ${winter2024Papers.codes.length}`);
 console.log(`Summer 2024 papers: ${summer2024Papers.codes.length}`);
 console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
 console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);
+console.log(`sitemap urls: ${subjects.length + branchesWithSlugs.length + catalogCourses.length + 1}`);

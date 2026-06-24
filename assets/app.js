@@ -2,13 +2,186 @@ const state = { catalog: null, searchIndex: null };
 const content = document.querySelector('#content');
 const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
+const heroSection = document.querySelector('#hero');
+const breadcrumbsNav = document.querySelector('#breadcrumbs');
 const searchInput = document.querySelector('#search-input');
 const SEARCH_LIMIT = { courses: 8, branches: 12, subjects: 48 };
+const SITE = {
+  name: 'GTUPEDIA',
+  defaultTitle: 'GTUPEDIA — GTU Papers & Study Resources',
+  defaultDescription: 'Find GTU question papers, syllabus, and study material by course, branch, and subject.',
+};
 const BE_AD = {
   src: 'ads/startup-wala-ad.ong.PNG',
   alt: 'Startup wala MBA — GTU School of Management Studies. MBA in Innovation, Entrepreneurship and Venture Development. Admissions open.',
   url: 'https://www.gtu.ac.in/',
 };
+function setHeroVisible(visible) {
+  if (heroSection) heroSection.hidden = !visible;
+}
+
+function setMeta(name, content, attr = 'name') {
+  if (!content) return;
+  let el = document.querySelector(`meta[${attr}="${name}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute(attr, name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
+}
+
+function setCanonical(href) {
+  let el = document.querySelector('link[rel="canonical"]');
+  if (!el) {
+    el = document.createElement('link');
+    el.rel = 'canonical';
+    document.head.appendChild(el);
+  }
+  el.href = href;
+}
+
+function setJsonLd(data) {
+  let el = document.querySelector('#page-jsonld');
+  if (!data) {
+    if (el) el.remove();
+    return;
+  }
+    const payload = Array.isArray(data)
+    ? {
+      '@context': 'https://schema.org',
+      '@graph': data.map(({ '@context': _ignored, ...item }) => item),
+    }
+    : data;
+  if (!el) {
+    el = document.createElement('script');
+    el.id = 'page-jsonld';
+    el.type = 'application/ld+json';
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(payload);
+}
+
+function canonicalAbsoluteUrl(path = '') {
+  const origin = window.location.origin;
+  const base = (window.__GTUPEDIA_BASE || '/').replace(/\/$/, '');
+  if (!path || path === './') return `${origin}${base || ''}` || origin;
+  return `${origin}${base}/${String(path).replace(/^\//, '')}`;
+}
+
+function renderBreadcrumbs(items = []) {
+  if (!breadcrumbsNav) return;
+  if (!items.length) {
+    breadcrumbsNav.hidden = true;
+    breadcrumbsNav.innerHTML = '';
+    return;
+  }
+  breadcrumbsNav.hidden = false;
+  breadcrumbsNav.innerHTML = `<ol>${items.map((item, index) => {
+    if (index === items.length - 1) {
+      return `<li aria-current="page">${escapeHtml(item.label)}</li>`;
+    }
+    return `<li><a href="${item.href}">${escapeHtml(item.label)}</a></li>`;
+  }).join('')}</ol>`;
+}
+
+function breadcrumbJsonLd(items = []) {
+  if (!items.length) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.label,
+      item: item.absoluteUrl || canonicalAbsoluteUrl(item.path),
+    })),
+  };
+}
+
+function homeCrumb() {
+  return { label: 'Home', href: './', path: '' };
+}
+
+function courseCrumb(course) {
+  return {
+    label: formatLabel(course.name),
+    href: urlFor({ course: course.code }),
+    path: course.code,
+  };
+}
+
+function branchCrumb(courseCode, branch) {
+  return {
+    label: branch.name,
+    href: urlFor({ course: courseCode, branch: branch.id }),
+    path: branchPath(courseCode, branch.id),
+  };
+}
+
+function subjectCrumb(courseCode, branchId, subject) {
+  return {
+    label: subject.name,
+    href: urlFor({ course: courseCode, branch: branchId, subject }),
+    path: subjectPath(courseCode, branchId, subject),
+  };
+}
+
+function updatePageSeo({ title, description, path = '', breadcrumbs = [], jsonLd = null }) {
+  document.title = title || SITE.defaultTitle;
+  setMeta('description', description || SITE.defaultDescription);
+  setMeta('og:title', title || SITE.defaultTitle, 'property');
+  setMeta('og:description', description || SITE.defaultDescription, 'property');
+  setMeta('og:url', canonicalAbsoluteUrl(path), 'property');
+  setMeta('twitter:title', title || SITE.defaultTitle);
+  setMeta('twitter:description', description || SITE.defaultDescription);
+  setCanonical(canonicalAbsoluteUrl(path));
+  renderBreadcrumbs(breadcrumbs);
+  const structured = jsonLd || (breadcrumbs.length ? breadcrumbJsonLd(breadcrumbs) : null);
+  setJsonLd(structured);
+}
+
+function resetHomeSeo() {
+  setHeroVisible(true);
+  updatePageSeo({
+    title: SITE.defaultTitle,
+    description: SITE.defaultDescription,
+    path: '',
+    breadcrumbs: [],
+  });
+}
+
+function relatedSubjects(subject, branchId, courseCode, limit = 8) {
+  return subjectsForBranch(branchId, courseCode)
+    .filter(item => item.id !== subject.id && item.semester === subject.semester)
+    .slice(0, limit);
+}
+
+function renderRelatedSubjects(subject, branchId, courseCode) {
+  const related = relatedSubjects(subject, branchId, courseCode);
+  if (!related.length) return '';
+  return `
+    <section class="related-subjects" aria-labelledby="related-subjects-title">
+      <h2 id="related-subjects-title">More from ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester}`)}</h2>
+      <div class="subject-list">${related.map(item => renderSubjectCard(item, item.code, branchId)).join('')}</div>
+    </section>`;
+}
+
+function renderPopularBranches(courseCode, limit = 8) {
+  const branches = getCourseBranches(courseCode).slice(0, limit);
+  if (!branches.length) return '';
+  return `
+    <section class="internal-links" aria-labelledby="popular-branches-title">
+      <h2 id="popular-branches-title">Popular GTU branches</h2>
+      <div class="internal-link-list">${branches.map(branch => `
+        <a href="${urlFor({ course: courseCode, branch: branch.id })}">${escapeHtml(branch.name)}</a>`).join('')}</div>
+    </section>`;
+}
+
+function examSeasonCount(subject) {
+  return getExamPaperSets().filter(paperSet => subjectCodes(subject).some(code => hasExamPaper(code, paperSet))).length;
+}
+
 function getExamPaperSets() {
   if (state.catalog?.examPapers?.length) return state.catalog.examPapers;
   const sets = [];
@@ -56,45 +229,133 @@ function appPathname() {
   return path.replace(/\/+$/, '') || '/';
 }
 
+function looksLikeSubjectCode(value = '') {
+  const ref = decodeURIComponent(String(value));
+  if (ref.includes('@')) return true;
+  return /^(BE)?[0-9A-Z_]+$/i.test(ref) && /\d/.test(ref);
+}
+
+function branchSlugFor(branchId, courseCode = 'BE') {
+  const id = normalizeBranchId(branchId);
+  if (id === '0') return 'common';
+  const branch = findBranch(id, courseCode);
+  return branch?.slug || id;
+}
+
+function branchPath(courseCode, branchId) {
+  const id = normalizeBranchId(branchId);
+  return `${courseCode}/${id}/${branchSlugFor(id, courseCode)}`;
+}
+
+function subjectPath(courseCode, branchId, subject) {
+  return `${branchPath(courseCode, branchId)}/${encodeURIComponent(subject.code)}/${subject.slug}`;
+}
+
 function parseRoutePath(pathname = appPathname()) {
   if (pathname === '/' || pathname === '/index.html') return {};
-  const parts = pathname.split('/').filter(Boolean);
-  if (parts.length >= 3) {
-    return {
-      course: decodeURIComponent(parts[0]),
-      branch: decodeURIComponent(parts[1]),
-      subjectCode: decodeURIComponent(parts.slice(2).join('/')),
-    };
-  }
+  const parts = pathname.split('/').filter(Boolean).map(part => decodeURIComponent(part));
+  if (!parts.length) return {};
+
+  const [course, second, third, fourth, fifth, ...rest] = parts;
+  if (parts.length === 1) return { course };
+
   if (parts.length === 2) {
+    if (/^\d+[A-Z]?$/i.test(second)) return { course, branch: normalizeBranchId(second) };
+    return { course, branchSlug: second };
+  }
+
+  if (!/^\d+[A-Z]?$/i.test(second)) return { course, branchSlug: second };
+
+  const branch = normalizeBranchId(second);
+
+  if (parts.length === 3) {
+    if (looksLikeSubjectCode(third)) return { course, branch, subjectCode: third };
+    return { course, branch, branchSlug: third };
+  }
+
+  const branchSlug = third;
+  if (parts.length === 4) {
+    if (looksLikeSubjectCode(fourth)) return { course, branch, branchSlug, subjectCode: fourth };
+    return { course, branch, branchSlug, subjectSlug: fourth };
+  }
+
+  if (parts.length >= 5) {
     return {
-      course: decodeURIComponent(parts[0]),
-      branch: decodeURIComponent(parts[1]),
+      course,
+      branch,
+      branchSlug,
+      subjectCode: fourth,
+      subjectSlug: [fifth, ...rest].join('/'),
     };
   }
-  if (parts.length === 1) {
-    return { course: decodeURIComponent(parts[0]) };
+
+  return { course };
+}
+
+function findBranchBySlug(slug, courseCode = 'BE') {
+  return getCourseBranches(courseCode).find(item => item.slug === slug);
+}
+
+function resolveBranchFromRoute(route, courseCode = 'BE') {
+  if (route.branch) {
+    return findBranch(route.branch, courseCode);
   }
-  return {};
+  if (route.branchSlug) {
+    return findBranchBySlug(route.branchSlug, courseCode);
+  }
+  return null;
+}
+
+function resolveSubjectFromRoute(route, branch, courseCode = 'BE') {
+  if (route.subjectCode) {
+    return findSubjectForBranch(branch.id, route.subjectCode, courseCode);
+  }
+  if (route.subjectSlug) {
+    return findSubjectForBranch(branch.id, route.subjectSlug, courseCode);
+  }
+  return null;
+}
+
+function canonicalRoutePath(route, branch, subject) {
+  if (subject) return subjectPath(route.course, branch.id, subject);
+  return branchPath(route.course, branch.id);
+}
+
+function ensureCanonicalUrl(route, branch, subject) {
+  const expected = canonicalRoutePath(route, branch, subject);
+  const current = appPathname().replace(/^\//, '');
+  if (current !== expected) {
+    window.history.replaceState(null, '', absoluteAppUrl(expected));
+  }
 }
 
 function urlFor(params = {}) {
+  if (params.subject && params.subject.code) {
+    return subjectPath(
+      params.course || params.subject.courseCode || 'BE',
+      params.branch || params.subject.branchId,
+      params.subject,
+    );
+  }
+
   if (params.subject) {
     const subject = findSubject(params.subject);
     if (subject) {
       return urlFor({
         course: params.course || subject.courseCode || 'BE',
         branch: params.branch || subject.branchId,
-        subjectCode: subject.code,
+        subject,
       });
     }
   }
 
   if (params.course && params.branch && params.subjectCode) {
-    return `${params.course}/${normalizeBranchId(params.branch)}/${encodeURIComponent(params.subjectCode)}`;
+    const subject = findSubjectForBranch(params.branch, params.subjectCode, params.course);
+    if (subject) return subjectPath(params.course, params.branch, subject);
+    return `${branchPath(params.course, params.branch)}/${encodeURIComponent(params.subjectCode)}`;
   }
   if (params.course && params.branch) {
-    return `${params.course}/${normalizeBranchId(params.branch)}`;
+    return branchPath(params.course, params.branch);
   }
   if (params.course) return `${params.course}`;
   return './';
@@ -108,7 +369,7 @@ function legacyQueryToPath(search = window.location.search) {
     return urlFor({
       course: params.get('course') || subject.courseCode || 'BE',
       branch: params.get('branch') || subject.branchId,
-      subjectCode: subject.code,
+      subject,
     });
   }
   if (params.has('branch')) {
@@ -211,16 +472,16 @@ function subjectMatchesBranch(subject, branchId) {
   return false;
 }
 
-function findSubjectForBranch(branchId, subjectRef) {
+function findSubjectForBranch(branchId, subjectRef, courseCode = 'BE') {
   const ref = String(subjectRef);
   if (ref.includes('@')) return findSubject(ref);
 
-  const normalizedBranch = normalizeBranchId(branchId);
-  return (state.catalog.subjects || []).find(subject => {
-    if (!subjectMatchesBranch(subject, normalizedBranch)) return false;
-    if (subject.code === ref) return true;
-    return (subject.alternateCodes || []).includes(ref);
-  });
+  const candidates = subjectsForBranch(branchId, courseCode);
+  if (looksLikeSubjectCode(ref)) {
+    return candidates.find(subject => subject.code === ref
+      || (subject.alternateCodes || []).includes(ref));
+  }
+  return candidates.find(subject => subject.slug === ref);
 }
 
 function getCourse(courseCode) {
@@ -362,6 +623,7 @@ function buildSearchIndex() {
       name: subject.name.toLowerCase(),
       haystack: [
         subject.code,
+        subject.slug,
         ...(subject.alternateCodes || []),
         subject.name,
         subject.branchId,
@@ -427,21 +689,30 @@ function renderCourses() {
 function renderCourse(courseCode) {
   const course = getCourse(courseCode);
   if (!course) return renderNotFound('That course is not in the catalogue yet.');
+  setHeroVisible(false);
   setCoursesVisible(false);
   const branches = getCourseBranches(courseCode);
+  const courseName = formatLabel(course.name);
+  const crumbs = [homeCrumb(), courseCrumb(course)];
+  updatePageSeo({
+    title: `${courseName} (${courseCode}) — GTU Branches | ${SITE.name}`,
+    description: `Browse all ${courseCode} branches at GTU. Find subjects, semesters, and official exam papers for ${courseName}.`,
+    path: courseCode,
+    breadcrumbs: crumbs,
+  });
   content.innerHTML = `
-    <a class="back-link" href="./#courses">← All courses</a>
-    <p class="eyebrow">${escapeHtml(formatLabel(course.name))}</p>
-    <h2>Select your branch</h2>
+    <h1 class="page-title">${escapeHtml(courseName)} branches</h1>
+    <p class="seo-intro">Select your ${escapeHtml(courseCode)} branch to view semester-wise subjects and download GTU question papers.</p>
     ${branches.length ? `<div class="card-grid">${branches.map(branch => {
       const count = subjectCountForBranch(branch.id, courseCode);
       return `
       <a class="branch-card" href="${urlFor({ course: courseCode, branch: branch.id })}">
         <span class="branch-code">${escapeHtml(branch.id)}</span>
-        <h3>${escapeHtml(branch.name)}</h3>
+        <h2>${escapeHtml(branch.name)}</h2>
         <p>${count ? `${count} subjects listed` : 'Browse subjects and resources'}</p>
       </a>`;
-    }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}`;
+    }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}
+    ${renderPopularBranches(courseCode)}`;
   maybeShowBeAdPopup(courseCode);
 }
 
@@ -449,7 +720,7 @@ function renderSubjectCard(subject, meta = '', branchId = subject.branchId) {
   const code = subject.code || subject.id;
   const courseCode = subject.courseCode || 'BE';
   return `
-    <a class="subject-card" href="${urlFor({ course: courseCode, branch: branchId, subjectCode: code })}">
+    <a class="subject-card" href="${urlFor({ course: courseCode, branch: branchId, subject })}">
       <span class="tag">${escapeHtml(code)}</span>
       <h3>${escapeHtml(subject.name)}</h3>
       <p>${escapeHtml(meta || `Semester ${subject.semester || '—'}`)}</p>
@@ -461,13 +732,22 @@ function renderBranch(courseCode, branchId) {
   const resolvedCourse = courseCode || findCourseForBranch(branchId);
   const subjects = subjectsForBranch(branchId, resolvedCourse || 'BE');
   if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
+  ensureCanonicalUrl({ course: resolvedCourse || courseCode || 'BE' }, branch);
+  setHeroVisible(false);
   setCoursesVisible(false);
-  const backHref = resolvedCourse ? urlFor({ course: resolvedCourse }) : './#courses';
+  const course = getCourse(resolvedCourse || courseCode || 'BE');
+  const courseName = formatLabel(course?.name || 'Bachelor of Engineering');
+  const crumbs = [homeCrumb(), courseCrumb(course), branchCrumb(resolvedCourse || courseCode || 'BE', branch)];
+  updatePageSeo({
+    title: `${branch.name} (${resolvedCourse || courseCode} ${branch.id}) — GTU Subjects | ${SITE.name}`,
+    description: `Browse ${subjects.length} ${branch.name} subjects by semester. Access GTU exam papers and study resources for ${courseName}.`,
+    path: branchPath(resolvedCourse || courseCode || 'BE', branch.id),
+    breadcrumbs: crumbs,
+  });
   const semesterGroups = groupSubjectsBySemester(subjects);
   content.innerHTML = `
-    <a class="back-link" href="${backHref}">← Back to branches</a>
-    <p class="eyebrow">${escapeHtml(branch.name)}</p>
-    <h2>Choose a subject</h2>
+    <h1 class="page-title">${escapeHtml(branch.name)}</h1>
+    <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subjects across ${semesterGroups.length} semester groups.</p>
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
@@ -487,20 +767,49 @@ function renderGtuPaperCard(subjectCode, paperSet) {
     </a>`;
 }
 
-function renderSubject(subjectRef, routeBranchId) {
+function renderSubject(subjectOrRef, routeBranchId) {
   const branchId = routeBranchId || null;
-  const subject = branchId
-    ? findSubjectForBranch(branchId, subjectRef)
-    : findSubject(subjectRef);
+  const subject = typeof subjectOrRef === 'object' && subjectOrRef?.code
+    ? subjectOrRef
+    : (branchId
+      ? findSubjectForBranch(branchId, subjectOrRef)
+      : findSubject(subjectOrRef));
   if (!subject) return renderNotFound('That subject is not in the catalogue yet.');
+  setHeroVisible(false);
   setCoursesVisible(false);
   const courseCode = subject.courseCode || findCourseForBranch(String(subject.branchId)) || 'BE';
   const backBranch = branchId || subject.branchId;
-  const backHref = urlFor({ course: courseCode, branch: backBranch });
-  const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id
-    || (subject.alternateIds || []).includes(String(item.subjectId)));
+  const branch = findBranch(backBranch, courseCode);
+  if (branch) ensureCanonicalUrl({ course: courseCode }, branch, subject);
+  const course = getCourse(courseCode);
   const code = subject.code || subject.id.split('@')[0];
   const alternateCodes = (subject.alternateCodes || []).filter(item => item !== code);
+  const paperCount = examSeasonCount(subject);
+  const crumbs = [
+    homeCrumb(),
+    courseCrumb(course || { code: courseCode, name: 'Bachelor of Engineering' }),
+    ...(branch ? [branchCrumb(courseCode, branch)] : []),
+    subjectCrumb(courseCode, backBranch, subject),
+  ];
+  updatePageSeo({
+    title: `${subject.name} (${code}) — GTU Papers | ${SITE.name}`,
+    description: `Download GTU ${subject.name} (${code}) question papers for ${branch?.name || 'BE'}. ${paperCount ? `${paperCount} exam seasons available.` : 'Syllabus and study resources.'} Semester ${subject.semester}.`,
+    path: subjectPath(courseCode, backBranch, subject),
+    breadcrumbs: crumbs,
+    jsonLd: [
+      breadcrumbJsonLd(crumbs),
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Course',
+        name: subject.name,
+        courseCode: code,
+        description: `${subject.name} (${code}) — GTU ${branch?.name || 'BE'}, ${subject.semesterLabel || `Semester ${subject.semester}`}.`,
+        provider: { '@type': 'Organization', name: 'Gujarat Technological University' },
+      },
+    ].filter(Boolean),
+  });
+  const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id
+    || (subject.alternateIds || []).includes(String(item.subjectId)));
   const resourceCards = [
     ...examPaperCardsForSubject(subject, courseCode),
     ...resources.map(resource => `
@@ -511,14 +820,14 @@ function renderSubject(subjectRef, routeBranchId) {
       </a>`),
   ].filter(Boolean).join('');
   content.innerHTML = `
-    <a class="back-link" href="${backHref}">← Back to subjects</a>
-    <p class="eyebrow">${escapeHtml(branchLabel(backBranch, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}</p>
-    <h2>${escapeHtml(subject.name)}</h2>
+    <h1 class="page-title">${escapeHtml(subject.name)}</h1>
+    <p class="seo-intro">${escapeHtml(branchLabel(backBranch, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}${paperCount ? ` · ${paperCount} exam paper season${paperCount === 1 ? '' : 's'}` : ''}</p>
     <p class="subject-code-line">
       <span class="tag">${escapeHtml(code)}</span>
       ${alternateCodes.length ? `<span class="subject-alt-codes">Also listed as ${alternateCodes.map(item => escapeHtml(item)).join(', ')}</span>` : ''}
     </p>
-    ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}`;
+    ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}
+    ${branch ? renderRelatedSubjects(subject, backBranch, courseCode) : ''}`;
   maybeShowBeAdPopup(courseCode);
 }
 
@@ -527,11 +836,20 @@ function renderSearch(term) {
   if (!tokens.length) {
     content.innerHTML = '';
     setCoursesVisible(true);
+    setHeroVisible(true);
+    resetHomeSeo();
     hideBeAdPopup();
     return;
   }
+  setHeroVisible(false);
   setCoursesVisible(false);
   hideBeAdPopup();
+  updatePageSeo({
+    title: `Search: ${term.trim()} | ${SITE.name}`,
+    description: `Search GTU courses, branches, and subjects for “${term.trim()}”.`,
+    path: '',
+    breadcrumbs: [homeCrumb(), { label: 'Search', href: './', path: '' }],
+  });
 
   const courseMatches = (state.catalog.courses || [])
     .map(course => ({ course, score: scoreSimple(`${course.code} ${course.name}`, tokens) }))
@@ -554,8 +872,7 @@ function renderSearch(term) {
   const total = courseMatches.length + branchMatches.length + subjectMatches.length;
 
   content.innerHTML = `
-    <p class="eyebrow">Search results</p>
-    <h2>${total ? `${total.toLocaleString()} matching result${total === 1 ? '' : 's'}` : 'No matching results'}</h2>
+    <h1 class="page-title">${total ? `${total.toLocaleString()} matching result${total === 1 ? '' : 's'}` : 'No matching results'}</h1>
     <p class="search-hint">Search by subject code, subject name, branch, or course.</p>
     ${visibleCourses.length ? `
       <section class="search-group">
@@ -593,9 +910,16 @@ function renderSearch(term) {
 }
 
 function renderNotFound(message) {
+  setHeroVisible(false);
   setCoursesVisible(false);
   hideBeAdPopup();
-  content.innerHTML = `<p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`;
+  updatePageSeo({
+    title: `Page not found | ${SITE.name}`,
+    description: message || 'The page you requested is not in the GTUPEDIA catalogue.',
+    path: appPathname().replace(/^\//, ''),
+    breadcrumbs: [homeCrumb(), { label: 'Not found', href: './', path: '' }],
+  });
+  content.innerHTML = `<h1 class="page-title">Not found</h1><p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`;
 }
 
 function renderRoute() {
@@ -610,9 +934,20 @@ function renderRoute() {
   }
 
   const route = parseRoutePath();
-  if (route.subjectCode) return renderSubject(route.subjectCode, route.branch);
-  if (route.branch) return renderBranch(route.course, route.branch);
+  if (route.subjectCode || route.subjectSlug) {
+    const branch = resolveBranchFromRoute(route, route.course);
+    if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
+    const subject = resolveSubjectFromRoute(route, branch, route.course);
+    if (!subject) return renderNotFound('That subject is not in the catalogue yet.');
+    return renderSubject(subject, branch.id);
+  }
+  if (route.branch || route.branchSlug) {
+    const branch = resolveBranchFromRoute(route, route.course);
+    if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
+    return renderBranch(route.course, branch.id);
+  }
   if (route.course) return renderCourse(route.course);
+  resetHomeSeo();
   hideBeAdPopup();
   content.innerHTML = '';
 }

@@ -45,6 +45,21 @@ h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.045em; line-heigh
 .hero-copy { max-width: 585px; color: var(--muted); font-size: 1.08rem; }
 .search { display: block; max-width: 650px; margin-top: 34px; }
 .search input { width: 100%; border: 1px solid #b5cbc5; background: #fff; border-radius: 12px; padding: 17px 20px; font: inherit; font-size: 1rem; outline-color: var(--accent); }
+.content h1.page-title { font-size: clamp(1.85rem, 4vw, 2.75rem); letter-spacing: -.04em; line-height: 1.08; margin-bottom: 12px; }
+.breadcrumbs { font-size: .88rem; color: var(--muted); margin: -36px 0 28px; }
+.breadcrumbs ol { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; list-style: none; padding: 0; margin: 0; }
+.breadcrumbs li { display: inline-flex; align-items: center; }
+.breadcrumbs li:not(:last-child)::after { content: "›"; margin: 0 10px; color: #a9bbb6; }
+.breadcrumbs a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
+.breadcrumbs a:hover { text-decoration: underline; }
+.seo-intro { color: var(--muted); max-width: 680px; margin: 0 0 24px; }
+.related-subjects { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
+.related-subjects h2 { font-size: 1.15rem; letter-spacing: -.02em; margin-bottom: 14px; }
+.internal-links { margin-top: 28px; }
+.internal-links h2 { font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
+.internal-link-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.internal-link-list a { display: inline-block; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-size: .9rem; background: #fff; }
+.internal-link-list a:hover { border-color: #b8ddd4; color: var(--accent-dark); }
 .section, .content { margin-bottom: 74px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 24px; }
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }

@@ -89,6 +89,14 @@ fs.writeFileSync(
   path.join(base, 'details-raw/BC-subjects.json'),
   `${JSON.stringify(bcSubjects, null, 2)}\n`,
 );
+fs.writeFileSync(
+  path.join(base, 'data/bb-subjects.json'),
+  `${JSON.stringify(bbSubjects, null, 2)}\n`,
+);
+fs.writeFileSync(
+  path.join(base, 'data/bc-subjects.json'),
+  `${JSON.stringify(bcSubjects, null, 2)}\n`,
+);
 
 function loadExamPapers(fileName, exam, baseUrl, courseCode = 'BE') {
   const text = fs.readFileSync(path.join(base, `details-raw/${fileName}`), 'utf8');

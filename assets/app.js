@@ -555,6 +555,41 @@ function findSubjectForBranch(branchId, subjectRef, courseCode = 'BE') {
   return candidates.find(subject => subject.slug === ref);
 }
 
+const SINGLE_BRANCH_COURSES = {
+  BB: [{ id: '01', name: 'BBA', slug: 'bba' }],
+  BC: [{ id: '01', name: 'BCA', slug: 'bca' }],
+};
+
+async function enrichCatalog(catalog) {
+  const version = encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1');
+  const supplements = [
+    { courseCode: 'BB', url: `data/bb-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BB },
+    { courseCode: 'BC', url: `data/bc-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BC },
+  ];
+
+  for (const { courseCode, url, branches } of supplements) {
+    const course = catalog.courses.find(item => item.code === courseCode);
+    if (!course) continue;
+
+    const subjectCount = catalog.subjects.filter(item => item.courseCode === courseCode).length;
+    if (!course.branches?.length) course.branches = branches.map(branch => ({ ...branch }));
+
+    if (subjectCount) continue;
+
+    try {
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) continue;
+      const subjects = await response.json();
+      if (!Array.isArray(subjects) || !subjects.length) continue;
+      catalog.subjects = catalog.subjects.filter(item => item.courseCode !== courseCode).concat(subjects);
+    } catch (_) {
+      // Ignore supplemental load failures; main catalogue remains usable.
+    }
+  }
+
+  return catalog;
+}
+
 function getCourse(courseCode) {
   return (state.catalog.courses || []).find(item => item.code === courseCode);
 }
@@ -562,6 +597,7 @@ function getCourse(courseCode) {
 function getCourseBranches(courseCode) {
   const course = getCourse(courseCode);
   if (course?.branches?.length) return course.branches;
+  if (SINGLE_BRANCH_COURSES[courseCode]) return SINGLE_BRANCH_COURSES[courseCode];
   if (courseCode === 'BE') return state.catalog.branches || [];
   return [];
 }
@@ -1104,6 +1140,7 @@ primeSubpageShell();
 const catalogUrl = `data/catalog.json?v=${encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1')}`;
 fetch(catalogUrl, { cache: 'no-store' })
   .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load catalogue')))
+  .then(catalog => enrichCatalog(catalog))
   .then(catalog => {
     state.catalog = catalog;
     buildSearchIndex();

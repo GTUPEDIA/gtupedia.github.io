@@ -38,6 +38,8 @@ h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.045em; line-heigh
 .branch-card p, .subject-card p, .resource-card p, .about p { color: var(--muted); margin-bottom: 0; }
 .branch-code, .tag { display: inline-block; color: var(--accent-dark); background: #e5f3ef; padding: 3px 8px; border-radius: 6px; font-size: .77rem; font-weight: 750; margin-bottom: 12px; }
 .search-group { margin-bottom: 28px; }
+.search-hint { color: var(--muted); margin: -6px 0 24px; }
+.subject-code-line { margin-top: -4px; margin-bottom: 24px; }
 .search-group h3 { font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
 .subject-groups { display: grid; gap: 28px; }
 .subject-group { background: #f4f7f5; padding: 24px; border-radius: 18px; }

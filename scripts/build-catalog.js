@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { parseBeSubjects } = require('./parse-be-subjects');
 
 const base = path.join(__dirname, '..');
 const courses = JSON.parse(fs.readFileSync(path.join(base, 'details-raw/courses.json'), 'utf8'));
@@ -44,13 +45,20 @@ const catalogCourses = courses.map((course) => {
   return entry;
 });
 
+const subjects = parseBeSubjects(path.join(base, 'details-raw/BE.csv'));
+fs.writeFileSync(
+  path.join(base, 'details-raw/BE-subjects.json'),
+  `${JSON.stringify(subjects, null, 2)}\n`,
+);
+
 const catalog = {
   courses: catalogCourses,
   branches,
-  subjects: [],
+  subjects,
   resources: [],
 };
 
 fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
 console.log(`courses: ${catalogCourses.length}`);
 console.log(`BE branches: ${branches.length}`);
+console.log(`BE subjects: ${subjects.length}`);

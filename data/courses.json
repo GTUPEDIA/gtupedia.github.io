@@ -1,0 +1,166 @@
+[
+  {
+    "code": "BA",
+    "name": "BACHELOR OF ARCHITECTURE"
+  },
+  {
+    "code": "BB",
+    "name": "BACHELOR OF BUSINESS ADMINISTRATION (HONOURS/HONOURS WITH RESEARCH)"
+  },
+  {
+    "code": "BC",
+    "name": "BACHELOR OF COMPUTER APPLICATIONS (HONOURS/HONOURS WITH RESEARCH)"
+  },
+  {
+    "code": "BN",
+    "name": "BACHELOR OF DESIGN"
+  },
+  {
+    "code": "BE",
+    "name": "BACHELOR OF ENGINEERING"
+  },
+  {
+    "code": "EP",
+    "name": "BACHELOR OF ENGINEERING (PART TIME)"
+  },
+  {
+    "code": "BH",
+    "name": "BACHELOR OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY"
+  },
+  {
+    "code": "BI",
+    "name": "BACHELOR OF INTERIOR DESIGN"
+  },
+  {
+    "code": "BP",
+    "name": "BACHELOR OF PHARMACY"
+  },
+  {
+    "code": "PP",
+    "name": "BACHELOR OF PHARMACY (PRACTICE)"
+  },
+  {
+    "code": "BL",
+    "name": "BACHELOR OF PLANNING"
+  },
+  {
+    "code": "BS",
+    "name": "BACHELOR OF SCIENCE - HONOURS / HONOURS WITH RESEARCH"
+  },
+  {
+    "code": "BV",
+    "name": "BACHELOR OF VOCATION"
+  },
+  {
+    "code": "DA",
+    "name": "DIPLOMA IN ARCHITECTURE"
+  },
+  {
+    "code": "DI",
+    "name": "DIPLOMA IN ENGINEERING"
+  },
+  {
+    "code": "DP",
+    "name": "DIPLOMA IN PHARMACY"
+  },
+  {
+    "code": "DV",
+    "name": "DIPLOMA IN VOCATION"
+  },
+  {
+    "code": "PH",
+    "name": "DOCTOR OF PHILOSOPHY"
+  },
+  {
+    "code": "IM",
+    "name": "INTEGRATED M.SC. (BIOTECHNOLOGY)"
+  },
+  {
+    "code": "MR",
+    "name": "MASTER OF ARCHITECTURE"
+  },
+  {
+    "code": "MH",
+    "name": "MASTER OF ARTS IN HINDU STUDIES"
+  },
+  {
+    "code": "MB",
+    "name": "MASTER OF BUSINESS ADMINISTRATION"
+  },
+  {
+    "code": "MA",
+    "name": "MASTER OF BUSINESS ADMINISTRATION (INTEGRATED)"
+  },
+  {
+    "code": "MV",
+    "name": "MASTER OF BUSINESS ADMINISTRATION (PART TIME)"
+  },
+  {
+    "code": "MC",
+    "name": "MASTER OF COMPUTER APPLICATIONS"
+  },
+  {
+    "code": "IC",
+    "name": "MASTER OF COMPUTER APPLICATIONS (INTEGRATED)"
+  },
+  {
+    "code": "ME",
+    "name": "MASTER OF ENGINEERING"
+  },
+  {
+    "code": "MP",
+    "name": "MASTER OF PHARMACY"
+  },
+  {
+    "code": "ML",
+    "name": "MASTER OF PHILOSOPHY"
+  },
+  {
+    "code": "MN",
+    "name": "MASTER OF PLANNING"
+  },
+  {
+    "code": "IB",
+    "name": "MASTER OF SCIENCE (INDUSTRIAL BIOTECHNOLOGY)"
+  },
+  {
+    "code": "CS",
+    "name": "MASTER OF SCIENCE (INTEGRATED)"
+  },
+  {
+    "code": "FD",
+    "name": "PHARM.D."
+  },
+  {
+    "code": "PB",
+    "name": "PHARM.D. (POST BACCALAUREATE)"
+  },
+  {
+    "code": "PD",
+    "name": "POST DIPLOMA DEGREE COURSE"
+  },
+  {
+    "code": "PI",
+    "name": "POST GRADUATE DIPLOMA"
+  },
+  {
+    "code": "DB",
+    "name": "POST GRADUATE DIPLOMA IN BIOINFORMATICS"
+  },
+  {
+    "code": "DS",
+    "name": "POST GRADUATE DIPLOMA IN DATA SCIENCE"
+  },
+  {
+    "code": "DM",
+    "name": "POST GRADUATE DIPLOMA IN DIGITAL MARKETING"
+  },
+  {
+    "code": "DH",
+    "name": "POST GRADUATE DIPLOMA IN HOSPITAL MANAGEMENT"
+  },
+  {
+    "code": "PR",
+    "name": "POST GRADUATE DIPLOMA IN IPR"
+  }
+]

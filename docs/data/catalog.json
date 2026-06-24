@@ -1,0 +1,12 @@
+{
+  "branches": [
+    { "id": "6", "name": "Civil Engineering" },
+    { "id": "7", "name": "Computer Engineering" },
+    { "id": "9", "name": "Electrical Engineering" },
+    { "id": "11", "name": "Electronics & Communication Engineering" },
+    { "id": "16", "name": "Information Technology" },
+    { "id": "19", "name": "Mechanical Engineering" }
+  ],
+  "subjects": [],
+  "resources": []
+}

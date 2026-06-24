@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GTUPEDIA: GTU papers, study material and syllabus, built for students.">
+    <title>GTUPEDIA — For students, by students</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="GTUPEDIA home">GTU<span>PEDIA</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#branches">Branches</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">For students, by students</p>
+        <h1 id="page-title">Find GTU papers and study resources.</h1>
+        <p class="hero-copy">Choose your branch, explore a semester, and get straight to the material you need.</p>
+        <label class="search" for="search-input">
+          <span class="visually-hidden">Search subjects</span>
+          <input id="search-input" type="search" placeholder="Search by subject name or code" autocomplete="off">
+        </label>
+      </section>
+
+      <section id="content" class="content" aria-live="polite"></section>
+
+      <section id="branches" class="section" aria-labelledby="branches-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering</p>
+          <h2 id="branches-title">Select your branch</h2>
+        </div>
+        <div id="branch-list" class="card-grid"></div>
+      </section>
+
+      <section id="about" class="section about">
+        <p class="eyebrow">A fresh start</p>
+        <h2>A lighter, open GTUPEDIA.</h2>
+        <p>This version is a static site: it loads quickly, has no tracking scripts, and can be hosted directly on GitHub Pages.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">GTUPEDIA <span aria-hidden="true">·</span> Made for practical exam season survival.</footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,7 +1,8 @@
-const state = { catalog: null, searchIndex: null };
+const state = { catalog: null, searchIndex: null, pageBreadcrumbs: [] };
 const content = document.querySelector('#content');
 const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
+const aboutSection = document.querySelector('#about');
 const heroSection = document.querySelector('#hero');
 const breadcrumbsNav = document.querySelector('#breadcrumbs');
 const searchInput = document.querySelector('#search-input');
@@ -71,19 +72,25 @@ function canonicalAbsoluteUrl(path = '') {
 }
 
 function renderBreadcrumbs(items = []) {
-  if (!breadcrumbsNav) return;
-  if (!items.length) {
+  state.pageBreadcrumbs = items;
+  if (breadcrumbsNav) {
     breadcrumbsNav.hidden = true;
     breadcrumbsNav.innerHTML = '';
-    return;
   }
-  breadcrumbsNav.hidden = false;
-  breadcrumbsNav.innerHTML = `<ol>${items.map((item, index) => {
+}
+
+function breadcrumbsMarkup(items = state.pageBreadcrumbs) {
+  if (!items?.length) return '';
+  return `<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>${items.map((item, index) => {
     if (index === items.length - 1) {
       return `<li aria-current="page">${escapeHtml(item.label)}</li>`;
     }
     return `<li><a href="${item.href}">${escapeHtml(item.label)}</a></li>`;
-  }).join('')}</ol>`;
+  }).join('')}</ol></nav>`;
+}
+
+function pageShell(html) {
+  return `<div class="page-shell">${breadcrumbsMarkup()}${html}</div>`;
 }
 
 function breadcrumbJsonLd(items = []) {
@@ -104,15 +111,30 @@ function homeCrumb() {
   return { label: 'Home', href: './', path: '' };
 }
 
+function breadcrumbCourseLabel(course) {
+  const labels = {
+    BB: 'BBA',
+    BE: 'B.E.',
+    BA: 'B.Arch',
+    BC: 'BCA',
+    BH: 'BHMCT',
+    BN: 'B.Design',
+    EP: 'B.E. (Part Time)',
+  };
+  return labels[course?.code] || formatLabel(course?.name || course?.code || '');
+}
+
 function courseCrumb(course) {
   return {
-    label: formatLabel(course.name),
+    label: breadcrumbCourseLabel(course),
     href: urlFor({ course: course.code }),
     path: course.code,
   };
 }
 
 function branchCrumb(courseCode, branch) {
+  const course = getCourse(courseCode);
+  if (branch.name === breadcrumbCourseLabel(course || { code: courseCode })) return null;
   return {
     label: branch.name,
     href: urlFor({ course: courseCode, branch: branch.id }),
@@ -583,8 +605,13 @@ function subjectCountForBranch(branchId, courseCode = 'BE') {
   return subjectsForBranch(branchId, courseCode).length;
 }
 
-function setCoursesVisible(visible) {
+function setHomeSectionsVisible(visible) {
   if (coursesSection) coursesSection.hidden = !visible;
+  if (aboutSection) aboutSection.hidden = !visible;
+}
+
+function setCoursesVisible(visible) {
+  setHomeSectionsVisible(visible);
 }
 
 function initBeAdModal() {
@@ -737,7 +764,7 @@ function renderCourse(courseCode) {
     path: courseCode,
     breadcrumbs: crumbs,
   });
-  content.innerHTML = `
+  content.innerHTML = pageShell(`
     <header class="page-header">
       <h1 class="page-title">${escapeHtml(courseName)}</h1>
       <p class="seo-intro">Select your ${escapeHtml(courseCode)} branch to browse semester-wise subjects and GTU question papers.</p>
@@ -751,7 +778,7 @@ function renderCourse(courseCode) {
         <p>${count ? `${count} subjects` : 'Browse subjects and resources'}</p>
       </a>`;
     }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}
-    ${renderPopularBranches(courseCode)}`;
+    ${renderPopularBranches(courseCode)}`);
   maybeShowBeAdPopup(courseCode);
 }
 
@@ -776,7 +803,7 @@ function renderBranch(courseCode, branchId) {
   setCoursesVisible(false);
   const course = getCourse(resolvedCourse || courseCode || 'BE');
   const courseName = formatLabel(course?.name || 'Bachelor of Engineering');
-  const crumbs = [homeCrumb(), courseCrumb(course), branchCrumb(resolvedCourse || courseCode || 'BE', branch)];
+  const crumbs = [homeCrumb(), courseCrumb(course), branchCrumb(resolvedCourse || courseCode || 'BE', branch)].filter(Boolean);
   updatePageSeo({
     title: `${branch.name} (${resolvedCourse || courseCode} ${branch.id}) — GTU Subjects | ${SITE.name}`,
     description: `Browse ${subjects.length} ${branch.name} subjects by semester. Access GTU exam papers and study resources for ${courseName}.`,
@@ -784,7 +811,7 @@ function renderBranch(courseCode, branchId) {
     breadcrumbs: crumbs,
   });
   const semesterGroups = groupSubjectsBySemester(subjects);
-  content.innerHTML = `
+  content.innerHTML = pageShell(`
     <header class="page-header">
       <h1 class="page-title">${escapeHtml(branch.name)}</h1>
       <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subjects across ${semesterGroups.length} semester groups.</p>
@@ -793,7 +820,7 @@ function renderBranch(courseCode, branchId) {
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
         <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open papers and material', branchId)).join('')}</div>
-      </section>`).join('')}</div>` : '<p class="empty">No subjects have been imported for this branch yet.</p>'}`;
+      </section>`).join('')}</div>` : '<p class="empty">No subjects have been imported for this branch yet.</p>'}`);
   maybeShowBeAdPopup(resolvedCourse || 'BE');
 }
 
@@ -831,7 +858,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
     courseCrumb(course || { code: courseCode, name: 'Bachelor of Engineering' }),
     ...(branch ? [branchCrumb(courseCode, branch)] : []),
     subjectCrumb(courseCode, backBranch, subject),
-  ];
+  ].filter(Boolean);
   updatePageSeo({
     title: `${subject.name} (${code}) — GTU Papers | ${SITE.name}`,
     description: `Download GTU ${subject.name} (${code}) question papers for ${branch?.name || 'BE'}. ${paperCount ? `${paperCount} exam seasons available.` : 'Syllabus and study resources.'} Semester ${subject.semester}.`,
@@ -860,7 +887,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
         <p>${[resource.exam, resource.author].filter(Boolean).map(escapeHtml).join(' · ') || 'Open resource'}</p>
       </a>`),
   ].filter(Boolean).join('');
-  content.innerHTML = `
+  content.innerHTML = pageShell(`
     <header class="page-header">
       <h1 class="page-title">${escapeHtml(subject.name)}</h1>
       <p class="seo-intro">${escapeHtml(branchLabel(backBranch, courseCode))} · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester || '—'}`)}${paperCount ? ` · ${paperCount} exam paper season${paperCount === 1 ? '' : 's'}` : ''}</p>
@@ -870,7 +897,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
       ${alternateCodes.length ? `<span class="subject-alt-codes">Also listed as ${alternateCodes.map(item => escapeHtml(item)).join(', ')}</span>` : ''}
     </p>
     ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}
-    ${branch ? renderRelatedSubjects(subject, backBranch, courseCode) : ''}`;
+    ${branch ? renderRelatedSubjects(subject, backBranch, courseCode) : ''}`);
   maybeShowBeAdPopup(courseCode);
 }
 
@@ -918,7 +945,7 @@ function renderSearch(term) {
   const visibleSubjects = subjectMatches.slice(0, SEARCH_LIMIT.subjects);
   const total = courseMatches.length + branchMatches.length + subjectMatches.length;
 
-  content.innerHTML = `
+  content.innerHTML = pageShell(`
     <h1 class="page-title">${total ? `${total.toLocaleString()} matching result${total === 1 ? '' : 's'}` : 'No matching results'}</h1>
     <p class="search-hint">Search by subject code, subject name, branch, or course.</p>
     ${visibleCourses.length ? `
@@ -953,7 +980,7 @@ function renderSearch(term) {
           );
         }).join('')}</div>
       </section>` : ''}
-    ${total ? '' : '<p class="empty">Try a subject code like <strong>BE03000081</strong>, a subject name like <strong>Data Structures</strong>, or a branch like <strong>Computer Engineering</strong>.</p>'}`;
+    ${total ? '' : '<p class="empty">Try a subject code like <strong>BE03000081</strong>, a subject name like <strong>Data Structures</strong>, or a branch like <strong>Computer Engineering</strong>.</p>'}`);
 }
 
 function renderNotFound(message) {
@@ -966,7 +993,7 @@ function renderNotFound(message) {
     path: appPathname().replace(/^\//, ''),
     breadcrumbs: [homeCrumb(), { label: 'Not found', href: './', path: '' }],
   });
-  content.innerHTML = `<h1 class="page-title">Not found</h1><p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`;
+  content.innerHTML = pageShell(`<h1 class="page-title">Not found</h1><p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`);
 }
 
 function renderRoute() {
@@ -1000,6 +1027,16 @@ function renderRoute() {
 }
 
 searchInput.addEventListener('input', event => renderSearch(event.target.value));
+
+function primeSubpageShell() {
+  const route = parseRoutePath();
+  if (!route.course && !route.branch && !route.branchSlug && !route.subjectCode && !route.subjectSlug) return;
+  setHeroVisible(false);
+  setHomeSectionsVisible(false);
+  if (content) content.innerHTML = pageShell('<p class="page-loading">Loading catalogue…</p>');
+}
+
+primeSubpageShell();
 fetch('data/catalog.json')
   .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load catalogue')))
   .then(catalog => {

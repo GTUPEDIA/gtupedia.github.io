@@ -1,0 +1,51 @@
+{
+  "updatedAt": "2026-03-24",
+  "categories": [
+    {
+      "id": "courses",
+      "name": "Courses",
+      "description": "Free online courses, playlists, and structured learning paths.",
+      "icon": "course"
+    },
+    {
+      "id": "documentation",
+      "name": "Documentation",
+      "description": "Official docs, references, and quick-start guides.",
+      "icon": "doc"
+    },
+    {
+      "id": "articles",
+      "name": "Articles",
+      "description": "Blog posts, tutorials, and long-form explainers.",
+      "icon": "article"
+    },
+    {
+      "id": "code",
+      "name": "Code snippets",
+      "description": "Handy snippets, templates, and copy-paste examples.",
+      "icon": "code"
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "description": "Apps, sandboxes, and utilities that speed up study and projects.",
+      "icon": "tool"
+    },
+    {
+      "id": "exam-prep",
+      "name": "Exam prep",
+      "description": "Revision notes, problem sets, and GTU-focused material.",
+      "icon": "exam"
+    }
+  ],
+  "topics": [
+    { "id": "programming", "name": "Programming", "slug": "programming" },
+    { "id": "web-dev", "name": "Web development", "slug": "web-development" },
+    { "id": "machine-learning", "name": "Machine learning", "slug": "machine-learning" },
+    { "id": "android", "name": "Android", "slug": "android" },
+    { "id": "competitive", "name": "Competitive coding", "slug": "competitive-coding" },
+    { "id": "finance", "name": "Finance", "slug": "finance" },
+    { "id": "gtu", "name": "GTU & academics", "slug": "gtu-academics" }
+  ],
+  "items": []
+}

@@ -1,4 +1,7 @@
-# Learning Resources 2019
-This repo is the set of all resources provided to the freshers and Sophomores of the CEV Team. 
+# GTUPEDIA Resources
 
-Though CEV would love if everyone, out there uses it. :)
+Student-friendly learning library (courses, docs, articles, code, tools).
+
+- **Live page:** `/resources/`
+- **Add content:** edit `data/library.json` — see `data/HOW-TO-ADD.md`
+- **Old CEV site:** archived in `old/`

@@ -135,7 +135,7 @@ function loadExamPapers(fileName, exam, baseUrl, courseCode = 'BE') {
   const codes = [...new Set(
     text
       .split(/\r?\n/)
-      .map((line) => line.trim().replace(/\s+\.pdf$/i, '.pdf').replace(/\.pdf$/i, ''))
+      .map((line) => line.trim().replace(/\s+\.pdf$/i, '.pdf').replace(/\.pdf$/i, '').replace(/\s+\(\d+\)$/i, ''))
       .filter(Boolean),
   )].sort();
   return { exam, baseUrl, courseCode, codes };
@@ -147,9 +147,12 @@ const winter2025BcPapers = loadExamPapers('winter-2025-bc-papers.txt', 'Winter 2
 const winter2025MbPapers = loadExamPapers('winter-2025-mb-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/MB', 'MB');
 const summer2025Papers = loadExamPapers('summer-2025-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/BE');
 const summer2025BcPapers = loadExamPapers('summer-2025-bc-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/BC', 'BC');
+const summer2025MbPapers = loadExamPapers('summer-2025-mb-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/MB', 'MB');
 const winter2024Papers = loadExamPapers('winter-2024-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/BE');
 const winter2024BcPapers = loadExamPapers('winter-2024-bc-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/BC', 'BC');
+const winter2024MbPapers = loadExamPapers('winter-2024-mb-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/MB', 'MB');
 const summer2024Papers = loadExamPapers('summer-2024-papers.txt', 'Summer 2024', 'https://gtu.ac.in/uploads/S2024/BE');
+const summer2024MbPapers = loadExamPapers('summer-2024-mb-papers.txt', 'Summer 2024', 'https://gtu.ac.in/uploads/S2024/MB', 'MB');
 const winter2023Papers = loadExamPapers('winter-2023-papers.txt', 'Winter 2023', 'https://gtu.ac.in/uploads/W2023/BE');
 const summer2023Papers = loadExamPapers('summer-2023-papers.txt', 'Summer 2023', 'https://gtu.ac.in/uploads/S2023/BE');
 const examPapers = [
@@ -159,9 +162,12 @@ const examPapers = [
   winter2025MbPapers,
   summer2025Papers,
   summer2025BcPapers,
+  summer2025MbPapers,
   winter2024Papers,
   winter2024BcPapers,
+  winter2024MbPapers,
   summer2024Papers,
+  summer2024MbPapers,
   winter2023Papers,
   summer2023Papers,
 ];
@@ -191,6 +197,10 @@ fs.writeFileSync(
   `${JSON.stringify(summer2025BcPapers, null, 2)}\n`,
 );
 fs.writeFileSync(
+  path.join(base, 'details-raw/summer-2025-mb-papers.json'),
+  `${JSON.stringify(summer2025MbPapers, null, 2)}\n`,
+);
+fs.writeFileSync(
   path.join(base, 'details-raw/winter-2024-papers.json'),
   `${JSON.stringify(winter2024Papers, null, 2)}\n`,
 );
@@ -199,8 +209,16 @@ fs.writeFileSync(
   `${JSON.stringify(winter2024BcPapers, null, 2)}\n`,
 );
 fs.writeFileSync(
+  path.join(base, 'details-raw/winter-2024-mb-papers.json'),
+  `${JSON.stringify(winter2024MbPapers, null, 2)}\n`,
+);
+fs.writeFileSync(
   path.join(base, 'details-raw/summer-2024-papers.json'),
   `${JSON.stringify(summer2024Papers, null, 2)}\n`,
+);
+fs.writeFileSync(
+  path.join(base, 'details-raw/summer-2024-mb-papers.json'),
+  `${JSON.stringify(summer2024MbPapers, null, 2)}\n`,
 );
 fs.writeFileSync(
   path.join(base, 'details-raw/winter-2023-papers.json'),
@@ -224,9 +242,12 @@ const catalog = {
   winter2025MbPapers,
   summer2025Papers,
   summer2025BcPapers,
+  summer2025MbPapers,
   winter2024Papers,
   winter2024BcPapers,
+  winter2024MbPapers,
   summer2024Papers,
+  summer2024MbPapers,
   winter2023Papers,
   summer2023Papers,
 };
@@ -268,9 +289,12 @@ console.log(`Winter 2025 BC papers: ${winter2025BcPapers.codes.length}`);
 console.log(`Winter 2025 MB papers: ${winter2025MbPapers.codes.length}`);
 console.log(`Summer 2025 BE papers: ${summer2025Papers.codes.length}`);
 console.log(`Summer 2025 BC papers: ${summer2025BcPapers.codes.length}`);
+console.log(`Summer 2025 MB papers: ${summer2025MbPapers.codes.length}`);
 console.log(`Winter 2024 BE papers: ${winter2024Papers.codes.length}`);
 console.log(`Winter 2024 BC papers: ${winter2024BcPapers.codes.length}`);
-console.log(`Summer 2024 papers: ${summer2024Papers.codes.length}`);
+console.log(`Winter 2024 MB papers: ${winter2024MbPapers.codes.length}`);
+console.log(`Summer 2024 BE papers: ${summer2024Papers.codes.length}`);
+console.log(`Summer 2024 MB papers: ${summer2024MbPapers.codes.length}`);
 console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
 console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);
 console.log(`sitemap urls: ${sitemapUrlCount}`);

@@ -109,7 +109,11 @@ body.search-active .content { margin-bottom: 56px; }
 .section, .content { margin-bottom: 74px; }
 body.subpage .content { margin-bottom: 48px; margin-top: 0; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 24px; }
-.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.seo-prerender ul { margin: 0 0 18px; padding-left: 1.2rem; color: var(--muted); font-size: var(--text-sm); line-height: 1.55; }
+.seo-prerender li { margin-bottom: 6px; }
+.seo-prerender li a { color: var(--accent-dark); font-weight: 650; text-decoration: none; }
+.seo-prerender li a:hover { text-decoration: underline; }
+.seo-prerender h2 { font-size: var(--title-section); margin: 24px 0 12px; letter-spacing: -.02em; }
 .course-list-divider {
   grid-column: 1 / -1;
   display: flex;

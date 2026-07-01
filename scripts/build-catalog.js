@@ -296,9 +296,10 @@ function stampCatalogVersion(filePath, builtAt) {
 stampCatalogVersion(path.join(base, 'index.html'), catalog.catalogBuiltAt);
 stampCatalogVersion(path.join(base, '404.html'), catalog.catalogBuiltAt);
 
-const { writeSitemap, generateSitemap } = require('./generate-sitemap');
+const { writeSitemap, generateSitemap, writeSeoPages } = require('./generate-sitemap');
 writeSitemap(catalog, path.join(base, 'sitemap.xml'));
 const sitemapUrlCount = (generateSitemap(catalog).match(/<loc>/g) || []).length;
+const seoPageCount = writeSeoPages(catalog, base);
 console.log(`courses: ${catalogCourses.length}`);
 console.log(`BE branches: ${branchesWithSlugs.length}`);
 console.log(`BB branches: ${bbBranches.length}`);
@@ -327,3 +328,4 @@ console.log(`Summer 2024 MB papers: ${summer2024MbPapers.codes.length}`);
 console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
 console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);
 console.log(`sitemap urls: ${sitemapUrlCount}`);
+console.log(`seo pages: ${seoPageCount}`);

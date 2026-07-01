@@ -1,0 +1,42 @@
+[
+  {
+    "id": "90",
+    "name": "International Business (Online)",
+    "slug": "international-business-online"
+  },
+  {
+    "id": "92",
+    "name": "MBA",
+    "slug": "mba"
+  },
+  {
+    "id": "93",
+    "name": "MBA (International Business)",
+    "slug": "mba-international-business"
+  },
+  {
+    "id": "94",
+    "name": "MBA (Innovation, Entrepreneurship and Venture Development)",
+    "slug": "mba-innovation-entrepreneurship-and-venture-development"
+  },
+  {
+    "id": "95",
+    "name": "Financial Management",
+    "slug": "financial-management"
+  },
+  {
+    "id": "96",
+    "name": "Information Technology",
+    "slug": "information-technology"
+  },
+  {
+    "id": "97",
+    "name": "MBA (Logistics and Supply Chain Management)",
+    "slug": "mba-logistics-and-supply-chain-management"
+  },
+  {
+    "id": "98",
+    "name": "MBA (Fintech)",
+    "slug": "mba-fintech"
+  }
+]

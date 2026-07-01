@@ -144,6 +144,7 @@ function breadcrumbCourseLabel(course) {
     BE: 'B.E.',
     BA: 'B.Arch',
     BC: 'BCA',
+    MB: 'MBA',
     BH: 'BHMCT',
     BN: 'B.Design',
     EP: 'B.E. (Part Time)',
@@ -251,19 +252,25 @@ function paperSetCourseCode(paperSet) {
   return paperSet?.courseCode || 'BE';
 }
 
+function normalizePaperCode(value = '') {
+  return String(value).trim().replace(/_updated$/i, '').replace(/_R$/i, '');
+}
+
 function resolvePaperFileName(subjectCode, paperSet) {
   const code = String(subjectCode).trim();
   const codes = paperSet?.codes || [];
   if (codes.includes(code)) return code;
   const updated = `${code}_updated`;
   if (codes.includes(updated)) return updated;
-  const alias = codes.find(item => item.replace(/_updated$/i, '') === code);
+  const revised = `${code}_R`;
+  if (codes.includes(revised)) return revised;
+  const alias = codes.find(item => normalizePaperCode(item) === code);
   return alias || code;
 }
 
 function hasExamPaper(subjectCode, paperSet) {
   const code = String(subjectCode).trim();
-  return (paperSet?.codes || []).some(item => item === code || item.replace(/_updated$/i, '') === code);
+  return (paperSet?.codes || []).some(item => item === code || normalizePaperCode(item) === code);
 }
 
 function gtuExamPaperUrl(subjectCode, paperSet) {
@@ -273,7 +280,7 @@ function gtuExamPaperUrl(subjectCode, paperSet) {
 }
 
 function examPaperCardsForSubject(subject, courseCode) {
-  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC') return [];
+  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC' && courseCode !== 'MB') return [];
   const cards = [];
   const seen = new Set();
 
@@ -563,21 +570,38 @@ const SINGLE_BRANCH_COURSES = {
 async function enrichCatalog(catalog) {
   const version = encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1');
   const supplements = [
-    { courseCode: 'BB', url: `data/bb-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BB },
-    { courseCode: 'BC', url: `data/bc-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BC },
+    { courseCode: 'BB', subjectUrl: `data/bb-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BB },
+    { courseCode: 'BC', subjectUrl: `data/bc-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BC },
+    { courseCode: 'MB', subjectUrl: `data/mb-subjects.json?v=${version}`, branchUrl: `data/mb-branches.json?v=${version}` },
   ];
 
-  for (const { courseCode, url, branches } of supplements) {
+  for (const { courseCode, subjectUrl, branches, branchUrl } of supplements) {
     const course = catalog.courses.find(item => item.code === courseCode);
     if (!course) continue;
 
-    const subjectCount = catalog.subjects.filter(item => item.courseCode === courseCode).length;
-    if (!course.branches?.length) course.branches = branches.map(branch => ({ ...branch }));
+    if (!course.branches?.length && branches) {
+      course.branches = branches.map(branch => ({ ...branch }));
+    }
 
+    if (!course.branches?.length && branchUrl) {
+      try {
+        const response = await fetch(branchUrl, { cache: 'no-store' });
+        if (response.ok) {
+          const branchList = await response.json();
+          if (Array.isArray(branchList) && branchList.length) {
+            course.branches = branchList;
+          }
+        }
+      } catch (_) {
+        // Ignore supplemental branch load failures.
+      }
+    }
+
+    const subjectCount = catalog.subjects.filter(item => item.courseCode === courseCode).length;
     if (subjectCount) continue;
 
     try {
-      const response = await fetch(url, { cache: 'no-store' });
+      const response = await fetch(subjectUrl, { cache: 'no-store' });
       if (!response.ok) continue;
       const subjects = await response.json();
       if (!Array.isArray(subjects) || !subjects.length) continue;

@@ -1,0 +1,6180 @@
+[
+  {
+    "id": "3519201@92@Semester_1",
+    "code": "3519201",
+    "name": "Accounting for Manager",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "accounting-for-manager"
+  },
+  {
+    "id": "2810001@92@Semester_1",
+    "code": "2810001",
+    "name": "Accounting for Managers",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "810001"
+    ],
+    "alternateIds": [
+      "810001@92@Semester_1"
+    ],
+    "slug": "accounting-for-managers"
+  },
+  {
+    "id": "4519205@92@Semester_1",
+    "code": "4519205",
+    "name": "Business Ethics & Corporate Governance",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-ethics-and-corporate-governance"
+  },
+  {
+    "id": "MB01092041@92@Semester_1",
+    "code": "MB01092041",
+    "name": "Business Statistics",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "4519207",
+      "3519207"
+    ],
+    "alternateIds": [
+      "4519207@92@Semester_1",
+      "3519207@92@Semester_1"
+    ],
+    "slug": "business-statistics"
+  },
+  {
+    "id": "3519205@92@Semester_1",
+    "code": "3519205",
+    "name": "Business Structure & Management",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-structure-and-management"
+  },
+  {
+    "id": "4519208@92@Semester_1",
+    "code": "4519208",
+    "name": "Developing Contributory Skills – I",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-i"
+  },
+  {
+    "id": "3519202@92@Semester_1",
+    "code": "3519202",
+    "name": "Economics for Manager",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "4519202"
+    ],
+    "alternateIds": [
+      "4519202@92@Semester_1"
+    ],
+    "slug": "economics-for-manager"
+  },
+  {
+    "id": "MB01092021@92@Semester_1",
+    "code": "MB01092021",
+    "name": "Economics for Managers",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2810002",
+      "810002"
+    ],
+    "alternateIds": [
+      "2810002@92@Semester_1",
+      "810002@92@Semester_1"
+    ],
+    "slug": "economics-for-managers"
+  },
+  {
+    "id": "MB01000011@92@Semester_1",
+    "code": "MB01000011",
+    "name": "Essentials of Organisational Behaviour",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "essentials-of-organisational-behaviour"
+  },
+  {
+    "id": "3519206@92@Semester_1",
+    "code": "3519206",
+    "name": "Fundamentals of Marketing",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-marketing"
+  },
+  {
+    "id": "MB01000021@92@Semester_1",
+    "code": "MB01000021",
+    "name": "Indian Knowledge Systems",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "indian-knowledge-systems"
+  },
+  {
+    "id": "MB01092031@92@Semester_1",
+    "code": "MB01092031",
+    "name": "Information Systems and Analytics for Management Decision Making",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "information-systems-and-analytics-for-management-decision-making"
+  },
+  {
+    "id": "MB01092011@92@Semester_1",
+    "code": "MB01092011",
+    "name": "Management Accounting",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "4519201"
+    ],
+    "alternateIds": [
+      "4519201@92@Semester_1"
+    ],
+    "slug": "management-accounting"
+  },
+  {
+    "id": "3519208@92@Semester_1",
+    "code": "3519208",
+    "name": "Management Information System",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-information-system"
+  },
+  {
+    "id": "810003@92@Semester_1",
+    "code": "810003",
+    "name": "Management Information Systems",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "4519206"
+    ],
+    "alternateIds": [
+      "4519206@92@Semester_1"
+    ],
+    "slug": "management-information-systems"
+  },
+  {
+    "id": "2810003@92@Semester_1",
+    "code": "2810003",
+    "name": "Managerial Communication",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "3519203",
+      "4519203",
+      "810004"
+    ],
+    "alternateIds": [
+      "3519203@92@Semester_1",
+      "4519203@92@Semester_1",
+      "810004@92@Semester_1"
+    ],
+    "slug": "managerial-communication"
+  },
+  {
+    "id": "3519204@92@Semester_1",
+    "code": "3519204",
+    "name": "Organizational Behavior",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "organizational-behavior"
+  },
+  {
+    "id": "2810004@92@Semester_1",
+    "code": "2810004",
+    "name": "Organizational Behaviour",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "810005",
+      "4519204"
+    ],
+    "alternateIds": [
+      "810005@92@Semester_1",
+      "4519204@92@Semester_1"
+    ],
+    "slug": "organizational-behaviour"
+  },
+  {
+    "id": "2810005@92@Semester_1",
+    "code": "2810005",
+    "name": "Principles of Management",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "810006"
+    ],
+    "alternateIds": [
+      "810006@92@Semester_1"
+    ],
+    "slug": "principles-of-management"
+  },
+  {
+    "id": "810007@92@Semester_1",
+    "code": "810007",
+    "name": "Quantitative Analysis",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "quantitative-analysis"
+  },
+  {
+    "id": "2810007@92@Semester_1",
+    "code": "2810007",
+    "name": "Quantitative Analysis – I",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "quantitative-analysis-i"
+  },
+  {
+    "id": "2810006@92@Semester_1",
+    "code": "2810006",
+    "name": "Research Methodology",
+    "branchId": "92",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-methodology"
+  },
+  {
+    "id": "3529204@92@Semester_2",
+    "code": "3529204",
+    "name": "Advance Marketing Management",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advance-marketing-management"
+  },
+  {
+    "id": "3529201@92@Semester_2",
+    "code": "3529201",
+    "name": "Business Analytics",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "4529201"
+    ],
+    "alternateIds": [
+      "4529201@92@Semester_2"
+    ],
+    "slug": "business-analytics"
+  },
+  {
+    "id": "MB02092021@92@Semester_2",
+    "code": "MB02092021",
+    "name": "Corporate Finance",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "4529202"
+    ],
+    "alternateIds": [
+      "4529202@92@Semester_2"
+    ],
+    "slug": "corporate-finance"
+  },
+  {
+    "id": "3529202@92@Semester_2",
+    "code": "3529202",
+    "name": "Cost & Management Accounting",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cost-and-management-accounting"
+  },
+  {
+    "id": "2820001@92@Semester_2",
+    "code": "2820001",
+    "name": "Cost and Management Accounting",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "820001"
+    ],
+    "alternateIds": [
+      "820001@92@Semester_2"
+    ],
+    "slug": "cost-and-management-accounting-sem-2"
+  },
+  {
+    "id": "4529208@92@Semester_2",
+    "code": "4529208",
+    "name": "Developing Contributory Skills – II",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-ii"
+  },
+  {
+    "id": "4529207@92@Semester_2",
+    "code": "4529207",
+    "name": "Entrepreneurship",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "3529208"
+    ],
+    "alternateIds": [
+      "3529208@92@Semester_2"
+    ],
+    "slug": "entrepreneurship"
+  },
+  {
+    "id": "820002@92@Semester_2",
+    "code": "820002",
+    "name": "Environment for Business",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "environment-for-business"
+  },
+  {
+    "id": "2820003@92@Semester_2",
+    "code": "2820003",
+    "name": "Financial Management",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "820003",
+      "3529203"
+    ],
+    "alternateIds": [
+      "820003@92@Semester_2",
+      "3529203@92@Semester_2"
+    ],
+    "slug": "financial-management"
+  },
+  {
+    "id": "MB02000011@92@Semester_2",
+    "code": "MB02000011",
+    "name": "Fundamentals of ESG for Sustainability",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-esg-for-sustainability"
+  },
+  {
+    "id": "MB02092041@92@Semester_2",
+    "code": "MB02092041",
+    "name": "Human Resource Management",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "820004",
+      "2820004",
+      "4529204",
+      "3529205"
+    ],
+    "alternateIds": [
+      "820004@92@Semester_2",
+      "2820004@92@Semester_2",
+      "4529204@92@Semester_2",
+      "3529205@92@Semester_2"
+    ],
+    "slug": "human-resource-management"
+  },
+  {
+    "id": "2820002@92@Semester_2",
+    "code": "2820002",
+    "name": "Management Information System",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-information-system-sem-2"
+  },
+  {
+    "id": "MB02092031@92@Semester_2",
+    "code": "MB02092031",
+    "name": "Marketing Management",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "4529203",
+      "820005",
+      "2820005"
+    ],
+    "alternateIds": [
+      "4529203@92@Semester_2",
+      "820005@92@Semester_2",
+      "2820005@92@Semester_2"
+    ],
+    "slug": "marketing-management"
+  },
+  {
+    "id": "MB02092051@92@Semester_2",
+    "code": "MB02092051",
+    "name": "Production & Operations Management",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "4529205",
+      "3529206"
+    ],
+    "alternateIds": [
+      "4529205@92@Semester_2",
+      "3529206@92@Semester_2"
+    ],
+    "slug": "production-and-operations-management"
+  },
+  {
+    "id": "2820006@92@Semester_2",
+    "code": "2820006",
+    "name": "Production and Operations Management",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "820006"
+    ],
+    "alternateIds": [
+      "820006@92@Semester_2"
+    ],
+    "slug": "production-and-operations-management-sem-2"
+  },
+  {
+    "id": "2820007@92@Semester_2",
+    "code": "2820007",
+    "name": "Quantitative Analysis – II",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "quantitative-analysis-ii"
+  },
+  {
+    "id": "MB02092011@92@Semester_2",
+    "code": "MB02092011",
+    "name": "Research Methodology",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "4529206",
+      "3529207"
+    ],
+    "alternateIds": [
+      "4529206@92@Semester_2",
+      "3529207@92@Semester_2"
+    ],
+    "slug": "research-methodology-sem-2"
+  },
+  {
+    "id": "820007@92@Semester_2",
+    "code": "820007",
+    "name": "Research Methodology and Operations Research",
+    "branchId": "92",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-methodology-and-operations-research"
+  },
+  {
+    "id": "MB03092151@92@Semester_3",
+    "code": "MB03092151",
+    "name": "Advanced Data Analytics",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-data-analytics"
+  },
+  {
+    "id": "2830703@92@Semester_3",
+    "code": "2830703",
+    "name": "Agri and Food Processing Industry",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "agri-and-food-processing-industry"
+  },
+  {
+    "id": "MB03092081@92@Semester_3",
+    "code": "MB03092081",
+    "name": "Banking and Insurance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539224",
+      "839905"
+    ],
+    "alternateIds": [
+      "3539224@92@Semester_3",
+      "839905@92@Semester_3"
+    ],
+    "slug": "banking-and-insurance"
+  },
+  {
+    "id": "2830602@92@Semester_3",
+    "code": "2830602",
+    "name": "Banking Operations Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "banking-operations-management"
+  },
+  {
+    "id": "3539281@92@Semester_3",
+    "code": "3539281",
+    "name": "Basics of Econometrics",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basics-of-econometrics"
+  },
+  {
+    "id": "4539282@92@Semester_3",
+    "code": "4539282",
+    "name": "Behavioural Finance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "behavioural-finance"
+  },
+  {
+    "id": "2830802@92@Semester_3",
+    "code": "2830802",
+    "name": "Business in China/Central Asia/West Asia/East Asia",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-in-china-central-asia-west-asia-east-asia"
+  },
+  {
+    "id": "2830403@92@Semester_3",
+    "code": "2830403",
+    "name": "Business Process Reengineering",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539253"
+    ],
+    "alternateIds": [
+      "3539253@92@Semester_3"
+    ],
+    "slug": "business-process-reengineering"
+  },
+  {
+    "id": "MB03092021@92@Semester_3",
+    "code": "MB03092021",
+    "name": "Change Management and Organization Development",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539231",
+      "3539231"
+    ],
+    "alternateIds": [
+      "4539231@92@Semester_3",
+      "3539231@92@Semester_3"
+    ],
+    "slug": "change-management-and-organization-development"
+  },
+  {
+    "id": "2830301@92@Semester_3",
+    "code": "2830301",
+    "name": "Change Management and Organizational Development",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "830301"
+    ],
+    "alternateIds": [
+      "830301@92@Semester_3"
+    ],
+    "slug": "change-management-and-organizational-development"
+  },
+  {
+    "id": "MB03092061@92@Semester_3",
+    "code": "MB03092061",
+    "name": "Compensation Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539232",
+      "2830302",
+      "830302",
+      "3539233"
+    ],
+    "alternateIds": [
+      "4539232@92@Semester_3",
+      "2830302@92@Semester_3",
+      "830302@92@Semester_3",
+      "3539233@92@Semester_3"
+    ],
+    "slug": "compensation-management"
+  },
+  {
+    "id": "MB03092011@92@Semester_3",
+    "code": "MB03092011",
+    "name": "Consumer Behaviour",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539211",
+      "2830101",
+      "3539211"
+    ],
+    "alternateIds": [
+      "4539211@92@Semester_3",
+      "2830101@92@Semester_3",
+      "3539211@92@Semester_3"
+    ],
+    "slug": "consumer-behaviour"
+  },
+  {
+    "id": "830101@92@Semester_3",
+    "code": "830101",
+    "name": "Consumer Behaviour and Marketing Research",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "consumer-behaviour-and-marketing-research"
+  },
+  {
+    "id": "3539282@92@Semester_3",
+    "code": "3539282",
+    "name": "Corporate Tax Planning",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-tax-planning"
+  },
+  {
+    "id": "2830009@92@Semester_3",
+    "code": "2830009",
+    "name": "Corporate Taxation",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-taxation"
+  },
+  {
+    "id": "830201@92@Semester_3",
+    "code": "830201",
+    "name": "Corporate Taxation & Financial Planning",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-taxation-and-financial-planning"
+  },
+  {
+    "id": "3539234@92@Semester_3",
+    "code": "3539234",
+    "name": "Counseling Skills for Managers",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "counseling-skills-for-managers"
+  },
+  {
+    "id": "2831002@92@Semester_3",
+    "code": "2831002",
+    "name": "Creating and Leading an Entrepreneurial Organization",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "creating-and-leading-an-entrepreneurial-organization"
+  },
+  {
+    "id": "3539261@92@Semester_3",
+    "code": "3539261",
+    "name": "Creativity, Incubation and Innovation",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "creativity-incubation-and-innovation"
+  },
+  {
+    "id": "3539254@92@Semester_3",
+    "code": "3539254",
+    "name": "Cyber Security and IT Governance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-it-governance"
+  },
+  {
+    "id": "MB03092111@92@Semester_3",
+    "code": "MB03092111",
+    "name": "Data Modelling and Visualization",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-modelling-and-visualization"
+  },
+  {
+    "id": "4539251@92@Semester_3",
+    "code": "4539251",
+    "name": "Data Warehousing and Data Mining",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-warehousing-and-data-mining"
+  },
+  {
+    "id": "2830401@92@Semester_3",
+    "code": "2830401",
+    "name": "Database Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "830401"
+    ],
+    "alternateIds": [
+      "830401@92@Semester_3"
+    ],
+    "slug": "database-management"
+  },
+  {
+    "id": "3539292@92@Semester_3",
+    "code": "3539292",
+    "name": "Designing Operations Systems",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "designing-operations-systems"
+  },
+  {
+    "id": "4539203@92@Semester_3",
+    "code": "4539203",
+    "name": "Developing Contributory Skills – III",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-iii"
+  },
+  {
+    "id": "MB03092171@92@Semester_3",
+    "code": "MB03092171",
+    "name": "Digital and Social Media Marketing",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539287"
+    ],
+    "alternateIds": [
+      "4539287@92@Semester_3"
+    ],
+    "slug": "digital-and-social-media-marketing"
+  },
+  {
+    "id": "3539215@92@Semester_3",
+    "code": "3539215",
+    "name": "Digital Marketing",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "digital-marketing"
+  },
+  {
+    "id": "4539253@92@Semester_3",
+    "code": "4539253",
+    "name": "E-Business",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "e-business"
+  },
+  {
+    "id": "3539283@92@Semester_3",
+    "code": "3539283",
+    "name": "E-Commerce",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "e-commerce"
+  },
+  {
+    "id": "4539286@92@Semester_3",
+    "code": "4539286",
+    "name": "Econometrics",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "econometrics"
+  },
+  {
+    "id": "4539261@92@Semester_3",
+    "code": "4539261",
+    "name": "Entrepreneurial Finance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurial-finance"
+  },
+  {
+    "id": "3539262@92@Semester_3",
+    "code": "3539262",
+    "name": "Entreprenuerial Finance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entreprenuerial-finance"
+  },
+  {
+    "id": "2830902@92@Semester_3",
+    "code": "2830902",
+    "name": "Exploring Base of Pyramid for profitability in Businesses",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "exploring-base-of-pyramid-for-profitability-in-businesses"
+  },
+  {
+    "id": "4539296@92@Semester_3",
+    "code": "4539296",
+    "name": "Export Import Procedures",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "export-import-procedures"
+  },
+  {
+    "id": "4539262@92@Semester_3",
+    "code": "4539262",
+    "name": "Family Business Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539263"
+    ],
+    "alternateIds": [
+      "3539263@92@Semester_3"
+    ],
+    "slug": "family-business-management"
+  },
+  {
+    "id": "4539222@92@Semester_3",
+    "code": "4539222",
+    "name": "Financial Derivatives",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-derivatives"
+  },
+  {
+    "id": "MB03092041@92@Semester_3",
+    "code": "MB03092041",
+    "name": "Financial Derivatives and Risk Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-derivatives-and-risk-management"
+  },
+  {
+    "id": "MB03092121@92@Semester_3",
+    "code": "MB03092121",
+    "name": "Financial Markets and Services",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539292"
+    ],
+    "alternateIds": [
+      "4539292@92@Semester_3"
+    ],
+    "slug": "financial-markets-and-services"
+  },
+  {
+    "id": "2830010@92@Semester_3",
+    "code": "2830010",
+    "name": "Financial Planning",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-planning"
+  },
+  {
+    "id": "2830601@92@Semester_3",
+    "code": "2830601",
+    "name": "Fundamentals of Banking & Insurance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-banking-and-insurance"
+  },
+  {
+    "id": "2830011@92@Semester_3",
+    "code": "2830011",
+    "name": "Gandhian Philosophy for Managing Business",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "gandhian-philosophy-for-managing-business"
+  },
+  {
+    "id": "3539284@92@Semester_3",
+    "code": "3539284",
+    "name": "Global Human Resource Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-human-resource-management"
+  },
+  {
+    "id": "3539285@92@Semester_3",
+    "code": "3539285",
+    "name": "Healthcare and Hospital Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "healthcare-and-hospital-management"
+  },
+  {
+    "id": "4539233@92@Semester_3",
+    "code": "4539233",
+    "name": "Human Resource Audit",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resource-audit"
+  },
+  {
+    "id": "4539223@92@Semester_3",
+    "code": "4539223",
+    "name": "Insurance and Risk Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "insurance-and-risk-management"
+  },
+  {
+    "id": "MB03092051@92@Semester_3",
+    "code": "MB03092051",
+    "name": "Integrated Marketing Communication",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2830102",
+      "3539212",
+      "830102"
+    ],
+    "alternateIds": [
+      "2830102@92@Semester_3",
+      "3539212@92@Semester_3",
+      "830102@92@Semester_3"
+    ],
+    "slug": "integrated-marketing-communication"
+  },
+  {
+    "id": "4539212@92@Semester_3",
+    "code": "4539212",
+    "name": "Integrated Marketing Communications",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "integrated-marketing-communications"
+  },
+  {
+    "id": "2830603@92@Semester_3",
+    "code": "2830603",
+    "name": "International Banking",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-banking"
+  },
+  {
+    "id": "MB03092201@92@Semester_3",
+    "code": "MB03092201",
+    "name": "International Business",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2830006",
+      "3539203",
+      "4539281"
+    ],
+    "alternateIds": [
+      "2830006@92@Semester_3",
+      "3539203@92@Semester_3",
+      "4539281@92@Semester_3"
+    ],
+    "slug": "international-business"
+  },
+  {
+    "id": "3539244@92@Semester_3",
+    "code": "3539244",
+    "name": "International Commercial Law",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-commercial-law"
+  },
+  {
+    "id": "3539245@92@Semester_3",
+    "code": "3539245",
+    "name": "International Economics",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-economics"
+  },
+  {
+    "id": "3539242@92@Semester_3",
+    "code": "3539242",
+    "name": "International Finanancial Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-finanancial-management"
+  },
+  {
+    "id": "2830502@92@Semester_3",
+    "code": "2830502",
+    "name": "International Finance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539225"
+    ],
+    "alternateIds": [
+      "3539225@92@Semester_3"
+    ],
+    "slug": "international-finance"
+  },
+  {
+    "id": "4539242@92@Semester_3",
+    "code": "4539242",
+    "name": "International Finance Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-finance-management"
+  },
+  {
+    "id": "MB03092141@92@Semester_3",
+    "code": "MB03092141",
+    "name": "International HRM",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-hrm"
+  },
+  {
+    "id": "2830503@92@Semester_3",
+    "code": "2830503",
+    "name": "International Human Resource Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539243"
+    ],
+    "alternateIds": [
+      "4539243@92@Semester_3"
+    ],
+    "slug": "international-human-resource-management"
+  },
+  {
+    "id": "3539243@92@Semester_3",
+    "code": "3539243",
+    "name": "International Human Resourse Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-human-resourse-management"
+  },
+  {
+    "id": "MB03092131@92@Semester_3",
+    "code": "MB03092131",
+    "name": "International Marketing",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2830501",
+      "3539241"
+    ],
+    "alternateIds": [
+      "2830501@92@Semester_3",
+      "3539241@92@Semester_3"
+    ],
+    "slug": "international-marketing"
+  },
+  {
+    "id": "4539241@92@Semester_3",
+    "code": "4539241",
+    "name": "International Marketing Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-marketing-management"
+  },
+  {
+    "id": "MB03092161@92@Semester_3",
+    "code": "MB03092161",
+    "name": "Introduction to Fintech and Financial Analytics",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "introduction-to-fintech-and-financial-analytics"
+  },
+  {
+    "id": "3539273@92@Semester_3",
+    "code": "3539273",
+    "name": "Inventory Management, Materials Planning and Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "inventory-management-materials-planning-and-management"
+  },
+  {
+    "id": "2830002@92@Semester_3",
+    "code": "2830002",
+    "name": "Legal Aspects of Business",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539202",
+      "830002"
+    ],
+    "alternateIds": [
+      "3539202@92@Semester_3",
+      "830002@92@Semester_3"
+    ],
+    "slug": "legal-aspects-of-business"
+  },
+  {
+    "id": "4539297@92@Semester_3",
+    "code": "4539297",
+    "name": "Logistics and Supply Chain Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "logistics-and-supply-chain-management"
+  },
+  {
+    "id": "3539286@92@Semester_3",
+    "code": "3539286",
+    "name": "Management of Financial Planning",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-of-financial-planning"
+  },
+  {
+    "id": "2830202@92@Semester_3",
+    "code": "2830202",
+    "name": "Management of Financial Services",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539222",
+      "830202"
+    ],
+    "alternateIds": [
+      "3539222@92@Semester_3",
+      "830202@92@Semester_3"
+    ],
+    "slug": "management-of-financial-services"
+  },
+  {
+    "id": "3539232@92@Semester_3",
+    "code": "3539232",
+    "name": "Management of Industrial Relations and Labour Laws",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539293"
+    ],
+    "alternateIds": [
+      "4539293@92@Semester_3"
+    ],
+    "slug": "management-of-industrial-relations-and-labour-laws"
+  },
+  {
+    "id": "2830303@92@Semester_3",
+    "code": "2830303",
+    "name": "Management of Industrial Relations and Labour Legislations",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "830303"
+    ],
+    "alternateIds": [
+      "830303@92@Semester_3"
+    ],
+    "slug": "management-of-industrial-relations-and-labour-legislations"
+  },
+  {
+    "id": "4539288@92@Semester_3",
+    "code": "4539288",
+    "name": "Managing Digital Innovation and Transformation",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539255"
+    ],
+    "alternateIds": [
+      "3539255@92@Semester_3"
+    ],
+    "slug": "managing-digital-innovation-and-transformation"
+  },
+  {
+    "id": "4539283@92@Semester_3",
+    "code": "4539283",
+    "name": "Managing Talent Globally",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "managing-talent-globally"
+  },
+  {
+    "id": "3539214@92@Semester_3",
+    "code": "3539214",
+    "name": "Marketing Research",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "marketing-research"
+  },
+  {
+    "id": "3539265@92@Semester_3",
+    "code": "3539265",
+    "name": "Micro Small and Medium Enterprise",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "micro-small-and-medium-enterprise"
+  },
+  {
+    "id": "4539263@92@Semester_3",
+    "code": "4539263",
+    "name": "Micro, Small and Medium scale Enterprises & Startup",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "micro-small-and-medium-scale-enterprises-and-startup"
+  },
+  {
+    "id": "2830007@92@Semester_3",
+    "code": "2830007",
+    "name": "New Enterprise and Innovation Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "830003"
+    ],
+    "alternateIds": [
+      "830003@92@Semester_3"
+    ],
+    "slug": "new-enterprise-and-innovation-management"
+  },
+  {
+    "id": "4539271@92@Semester_3",
+    "code": "4539271",
+    "name": "Operations Research",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "operations-research"
+  },
+  {
+    "id": "MB03092101@92@Semester_3",
+    "code": "MB03092101",
+    "name": "Performance Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539235"
+    ],
+    "alternateIds": [
+      "3539235@92@Semester_3"
+    ],
+    "slug": "performance-management"
+  },
+  {
+    "id": "839902@92@Semester_3",
+    "code": "839902",
+    "name": "Pharmaceutical Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "pharmaceutical-management"
+  },
+  {
+    "id": "4539273@92@Semester_3",
+    "code": "4539273",
+    "name": "Production Planning and Control",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "production-planning-and-control"
+  },
+  {
+    "id": "3539271@92@Semester_3",
+    "code": "3539271",
+    "name": "Project Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539285"
+    ],
+    "alternateIds": [
+      "4539285@92@Semester_3"
+    ],
+    "slug": "project-management"
+  },
+  {
+    "id": "839904@92@Semester_3",
+    "code": "839904",
+    "name": "Public System and Policy -I",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "public-system-and-policy-i"
+  },
+  {
+    "id": "MB03092031@92@Semester_3",
+    "code": "MB03092031",
+    "name": "Qualitative Research Methods",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "qualitative-research-methods"
+  },
+  {
+    "id": "2830008@92@Semester_3",
+    "code": "2830008",
+    "name": "Quality Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "quality-management"
+  },
+  {
+    "id": "MB03092071@92@Semester_3",
+    "code": "MB03092071",
+    "name": "Quantitative Research Methods",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "quantitative-research-methods"
+  },
+  {
+    "id": "3539251@92@Semester_3",
+    "code": "3539251",
+    "name": "Relational Database Management System",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "relational-database-management-system"
+  },
+  {
+    "id": "MB03092191@92@Semester_3",
+    "code": "MB03092191",
+    "name": "Research Communication",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-communication"
+  },
+  {
+    "id": "2830014@92@Semester_3",
+    "code": "2830014",
+    "name": "Retail Operations",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "retail-operations"
+  },
+  {
+    "id": "4539291@92@Semester_3",
+    "code": "4539291",
+    "name": "Retailing and Franchising",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539287"
+    ],
+    "alternateIds": [
+      "3539287@92@Semester_3"
+    ],
+    "slug": "retailing-and-franchising"
+  },
+  {
+    "id": "839901@92@Semester_3",
+    "code": "839901",
+    "name": "Retailing-I",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "retailing-i"
+  },
+  {
+    "id": "2830702@92@Semester_3",
+    "code": "2830702",
+    "name": "Rural Banking & Micro Finance",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "rural-banking-and-micro-finance"
+  },
+  {
+    "id": "2830701@92@Semester_3",
+    "code": "2830701",
+    "name": "Rural Marketing",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "839903"
+    ],
+    "alternateIds": [
+      "839903@92@Semester_3"
+    ],
+    "slug": "rural-marketing"
+  },
+  {
+    "id": "MB03092091@92@Semester_3",
+    "code": "MB03092091",
+    "name": "Sales and Distribution Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "4539213",
+      "2830103",
+      "3539213",
+      "830103"
+    ],
+    "alternateIds": [
+      "4539213@92@Semester_3",
+      "2830103@92@Semester_3",
+      "3539213@92@Semester_3",
+      "830103@92@Semester_3"
+    ],
+    "slug": "sales-and-distribution-management"
+  },
+  {
+    "id": "3539223@92@Semester_3",
+    "code": "3539223",
+    "name": "Security Analysis & Portfolio Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "security-analysis-and-portfolio-management"
+  },
+  {
+    "id": "4539221@92@Semester_3",
+    "code": "4539221",
+    "name": "Security Analysis and Portfoilio Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "security-analysis-and-portfoilio-management"
+  },
+  {
+    "id": "MB03000031@92@Semester_3",
+    "code": "MB03000031",
+    "name": "Security Analysis and Portfolio Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2830203",
+      "830203"
+    ],
+    "alternateIds": [
+      "2830203@92@Semester_3",
+      "830203@92@Semester_3"
+    ],
+    "slug": "security-analysis-and-portfolio-management-sem-3"
+  },
+  {
+    "id": "4539272@92@Semester_3",
+    "code": "4539272",
+    "name": "Services Operations Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "services-operations-management"
+  },
+  {
+    "id": "4539284@92@Semester_3",
+    "code": "4539284",
+    "name": "Social Entrepreneurship",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539264"
+    ],
+    "alternateIds": [
+      "3539264@92@Semester_3"
+    ],
+    "slug": "social-entrepreneurship"
+  },
+  {
+    "id": "4539295@92@Semester_3",
+    "code": "4539295",
+    "name": "Social Media Analytics",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539288"
+    ],
+    "alternateIds": [
+      "3539288@92@Semester_3"
+    ],
+    "slug": "social-media-analytics"
+  },
+  {
+    "id": "2830201@92@Semester_3",
+    "code": "2830201",
+    "name": "Strategic Financial Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539221"
+    ],
+    "alternateIds": [
+      "3539221@92@Semester_3"
+    ],
+    "slug": "strategic-financial-management"
+  },
+  {
+    "id": "MB03000021@92@Semester_3",
+    "code": "MB03000021",
+    "name": "Strategic Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2830001",
+      "3539201",
+      "4539201",
+      "830001"
+    ],
+    "alternateIds": [
+      "2830001@92@Semester_3",
+      "3539201@92@Semester_3",
+      "4539201@92@Semester_3",
+      "830001@92@Semester_3"
+    ],
+    "slug": "strategic-management"
+  },
+  {
+    "id": "3539272@92@Semester_3",
+    "code": "3539272",
+    "name": "Strategic Operations Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "strategic-operations-management"
+  },
+  {
+    "id": "3539274@92@Semester_3",
+    "code": "3539274",
+    "name": "Supply Chain and Logistics Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "supply-chain-and-logistics-management"
+  },
+  {
+    "id": "2830402@92@Semester_3",
+    "code": "2830402",
+    "name": "System Analysis and Design",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539252",
+      "830402"
+    ],
+    "alternateIds": [
+      "3539252@92@Semester_3",
+      "830402@92@Semester_3"
+    ],
+    "slug": "system-analysis-and-design"
+  },
+  {
+    "id": "4539252@92@Semester_3",
+    "code": "4539252",
+    "name": "Systems Analysis and Design",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "systems-analysis-and-design"
+  },
+  {
+    "id": "MB03092181@92@Semester_3",
+    "code": "MB03092181",
+    "name": "Talent Acquisition and Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "talent-acquisition-and-management"
+  },
+  {
+    "id": "3539289@92@Semester_3",
+    "code": "3539289",
+    "name": "Talent Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "talent-management"
+  },
+  {
+    "id": "830403@92@Semester_3",
+    "code": "830403",
+    "name": "Technology and Business",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "technology-and-business"
+  },
+  {
+    "id": "3539275@92@Semester_3",
+    "code": "3539275",
+    "name": "Total Quality Management and World Class Manufacturing Excellence",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "total-quality-management-and-world-class-manufacturing-excellence"
+  },
+  {
+    "id": "4539294@92@Semester_3",
+    "code": "4539294",
+    "name": "Tourism and Hospitality Management",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539290"
+    ],
+    "alternateIds": [
+      "3539290@92@Semester_3"
+    ],
+    "slug": "tourism-and-hospitality-management"
+  },
+  {
+    "id": "2830013@92@Semester_3",
+    "code": "2830013",
+    "name": "WTO Multilateral Trading System and its Impact on Business",
+    "branchId": "92",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3539291"
+    ],
+    "alternateIds": [
+      "3539291@92@Semester_3"
+    ],
+    "slug": "wto-multilateral-trading-system-and-its-impact-on-business"
+  },
+  {
+    "id": "4549296@92@Semester_4",
+    "code": "4549296",
+    "name": "Advanced Data Analytics",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-data-analytics-sem-4"
+  },
+  {
+    "id": "MB04092031@92@Semester_4",
+    "code": "MB04092031",
+    "name": "Advanced Statistical Techniques",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-statistical-techniques"
+  },
+  {
+    "id": "MB04092071@92@Semester_4",
+    "code": "MB04092071",
+    "name": "B2B Marketing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549281"
+    ],
+    "alternateIds": [
+      "3549281@92@Semester_4"
+    ],
+    "slug": "b2b-marketing"
+  },
+  {
+    "id": "4549292@92@Semester_4",
+    "code": "4549292",
+    "name": "Banking",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "banking"
+  },
+  {
+    "id": "849905@92@Semester_4",
+    "code": "849905",
+    "name": "Banking and Insurance - II",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "banking-and-insurance-ii"
+  },
+  {
+    "id": "MB04092011@92@Semester_4",
+    "code": "MB04092011",
+    "name": "Brand Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "brand-management"
+  },
+  {
+    "id": "2840003@92@Semester_4",
+    "code": "2840003",
+    "name": "Business Ethics and Corporate Governance",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549201"
+    ],
+    "alternateIds": [
+      "3549201@92@Semester_4"
+    ],
+    "slug": "business-ethics-and-corporate-governance-sem-4"
+  },
+  {
+    "id": "840401@92@Semester_4",
+    "code": "840401",
+    "name": "Business Process Reengineering",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-process-reengineering-sem-4"
+  },
+  {
+    "id": "4549293@92@Semester_4",
+    "code": "4549293",
+    "name": "Business Reporting Data Visualization",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-reporting-data-visualization"
+  },
+  {
+    "id": "4549283@92@Semester_4",
+    "code": "4549283",
+    "name": "Business to Business Marketing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-to-business-marketing"
+  },
+  {
+    "id": "4549252@92@Semester_4",
+    "code": "4549252",
+    "name": "Cloud Computing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cloud-computing"
+  },
+  {
+    "id": "2840701@92@Semester_4",
+    "code": "2840701",
+    "name": "Cooperative Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cooperative-management"
+  },
+  {
+    "id": "840201@92@Semester_4",
+    "code": "840201",
+    "name": "Corporate Restructuring",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-restructuring"
+  },
+  {
+    "id": "MB04000021@92@Semester_4",
+    "code": "MB04000021",
+    "name": "Corporate Restructuring and Valuation",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "4549222"
+    ],
+    "alternateIds": [
+      "4549222@92@Semester_4"
+    ],
+    "slug": "corporate-restructuring-and-valuation"
+  },
+  {
+    "id": "4549261@92@Semester_4",
+    "code": "4549261",
+    "name": "Creativity, Innovation and Incubation",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "creativity-innovation-and-incubation"
+  },
+  {
+    "id": "4549297@92@Semester_4",
+    "code": "4549297",
+    "name": "Customer Relationship Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "customer-relationship-management"
+  },
+  {
+    "id": "2840603@92@Semester_4",
+    "code": "2840603",
+    "name": "Customer Relationship Management in Banking & Insurance",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "customer-relationship-management-in-banking-and-insurance"
+  },
+  {
+    "id": "4549251@92@Semester_4",
+    "code": "4549251",
+    "name": "Cyber Security and Information Technology Governance",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-information-technology-governance"
+  },
+  {
+    "id": "3549253@92@Semester_4",
+    "code": "3549253",
+    "name": "Data Warehousing and Data Mining",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-warehousing-and-data-mining-sem-4"
+  },
+  {
+    "id": "3549261@92@Semester_4",
+    "code": "3549261",
+    "name": "Digital Marketing for Start-ups",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "digital-marketing-for-start-ups"
+  },
+  {
+    "id": "2840004@92@Semester_4",
+    "code": "2840004",
+    "name": "Enterprise Resource Planning",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "4549289",
+      "3549282"
+    ],
+    "alternateIds": [
+      "4549289@92@Semester_4",
+      "3549282@92@Semester_4"
+    ],
+    "slug": "enterprise-resource-planning"
+  },
+  {
+    "id": "2840901@92@Semester_4",
+    "code": "2840901",
+    "name": "Environmentally Sustainable Development",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "environmentally-sustainable-development"
+  },
+  {
+    "id": "3549241@92@Semester_4",
+    "code": "3549241",
+    "name": "Export Import Policy Procedure and Documentation",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "export-import-policy-procedure-and-documentation"
+  },
+  {
+    "id": "2840502@92@Semester_4",
+    "code": "2840502",
+    "name": "Export-Import Policy, Procedure and Documentation",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "export-import-policy-procedure-and-documentation-sem-4"
+  },
+  {
+    "id": "MB04092051@92@Semester_4",
+    "code": "MB04092051",
+    "name": "Financial Planning and Taxation",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "4549284"
+    ],
+    "alternateIds": [
+      "4549284@92@Semester_4"
+    ],
+    "slug": "financial-planning-and-taxation"
+  },
+  {
+    "id": "3549223@92@Semester_4",
+    "code": "3549223",
+    "name": "Foreign Exchange Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "foreign-exchange-management"
+  },
+  {
+    "id": "4549287@92@Semester_4",
+    "code": "4549287",
+    "name": "Foreign Trade Facilitation",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549243"
+    ],
+    "alternateIds": [
+      "3549243@92@Semester_4"
+    ],
+    "slug": "foreign-trade-facilitation"
+  },
+  {
+    "id": "2840011@92@Semester_4",
+    "code": "2840011",
+    "name": "Franchising",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "franchising"
+  },
+  {
+    "id": "4549241@92@Semester_4",
+    "code": "4549241",
+    "name": "Geopolitical and World Economic Systems",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "geopolitical-and-world-economic-systems"
+  },
+  {
+    "id": "4549295@92@Semester_4",
+    "code": "4549295",
+    "name": "Global Logistics and Supply Chain Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-logistics-and-supply-chain-management"
+  },
+  {
+    "id": "4549294@92@Semester_4",
+    "code": "4549294",
+    "name": "Healthcare and Hospital Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "healthcare-and-hospital-management-sem-4"
+  },
+  {
+    "id": "849902@92@Semester_4",
+    "code": "849902",
+    "name": "Healthcare Services in India with focus on Hospital Administration & Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "healthcare-services-in-india-with-focus-on-hospital-administration-and-management"
+  },
+  {
+    "id": "MB04092081@92@Semester_4",
+    "code": "MB04092081",
+    "name": "Human Resource Analytics",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resource-analytics"
+  },
+  {
+    "id": "3549233@92@Semester_4",
+    "code": "3549233",
+    "name": "Human Resource Audit",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resource-audit-sem-4"
+  },
+  {
+    "id": "MB04092021@92@Semester_4",
+    "code": "MB04092021",
+    "name": "Human Resource Development",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2840301",
+      "3549231",
+      "840301"
+    ],
+    "alternateIds": [
+      "2840301@92@Semester_4",
+      "3549231@92@Semester_4",
+      "840301@92@Semester_4"
+    ],
+    "slug": "human-resource-development"
+  },
+  {
+    "id": "4549232@92@Semester_4",
+    "code": "4549232",
+    "name": "Human Resource Planning & Development",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resource-planning-and-development"
+  },
+  {
+    "id": "2840801@92@Semester_4",
+    "code": "2840801",
+    "name": "Immersion Study of Social Business",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "immersion-study-of-social-business"
+  },
+  {
+    "id": "3549251@92@Semester_4",
+    "code": "3549251",
+    "name": "Information System Audit & Control",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "information-system-audit-and-control"
+  },
+  {
+    "id": "2840401@92@Semester_4",
+    "code": "2840401",
+    "name": "Information System Audit and Control",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "information-system-audit-and-control-sem-4"
+  },
+  {
+    "id": "840402@92@Semester_4",
+    "code": "840402",
+    "name": "Information Systems Audit and Control",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "information-systems-audit-and-control"
+  },
+  {
+    "id": "2840602@92@Semester_4",
+    "code": "2840602",
+    "name": "Insurance and Risk Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "insurance-and-risk-management-sem-4"
+  },
+  {
+    "id": "3549262@92@Semester_4",
+    "code": "3549262",
+    "name": "Intellectual Property Rights",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "4549288"
+    ],
+    "alternateIds": [
+      "4549288@92@Semester_4"
+    ],
+    "slug": "intellectual-property-rights"
+  },
+  {
+    "id": "840002@92@Semester_4",
+    "code": "840002",
+    "name": "International Business",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-business-sem-4"
+  },
+  {
+    "id": "4549242@92@Semester_4",
+    "code": "4549242",
+    "name": "International Commercial Laws",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-commercial-laws"
+  },
+  {
+    "id": "MB04092041@92@Semester_4",
+    "code": "MB04092041",
+    "name": "International Finance",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "4549221",
+      "840202"
+    ],
+    "alternateIds": [
+      "4549221@92@Semester_4",
+      "840202@92@Semester_4"
+    ],
+    "slug": "international-finance-sem-4"
+  },
+  {
+    "id": "840302@92@Semester_4",
+    "code": "840302",
+    "name": "International Human Resource Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-human-resource-management-sem-4"
+  },
+  {
+    "id": "840101@92@Semester_4",
+    "code": "840101",
+    "name": "International Marketing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-marketing-sem-4"
+  },
+  {
+    "id": "2840501@92@Semester_4",
+    "code": "2840501",
+    "name": "International Supply Chain Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549242"
+    ],
+    "alternateIds": [
+      "3549242@92@Semester_4"
+    ],
+    "slug": "international-supply-chain-management"
+  },
+  {
+    "id": "2840601@92@Semester_4",
+    "code": "2840601",
+    "name": "Investment Banking",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549283"
+    ],
+    "alternateIds": [
+      "3549283@92@Semester_4"
+    ],
+    "slug": "investment-banking"
+  },
+  {
+    "id": "4549282@92@Semester_4",
+    "code": "4549282",
+    "name": "Knowledge Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "knowledge-management"
+  },
+  {
+    "id": "4549298@92@Semester_4",
+    "code": "4549298",
+    "name": "Leadership",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549284"
+    ],
+    "alternateIds": [
+      "3549284@92@Semester_4"
+    ],
+    "slug": "leadership"
+  },
+  {
+    "id": "4549281@92@Semester_4",
+    "code": "4549281",
+    "name": "Legal Aspects of Business",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "legal-aspects-of-business-sem-4"
+  },
+  {
+    "id": "2840007@92@Semester_4",
+    "code": "2840007",
+    "name": "Management Control System",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "840003"
+    ],
+    "alternateIds": [
+      "840003@92@Semester_4"
+    ],
+    "slug": "management-control-system"
+  },
+  {
+    "id": "4549286@92@Semester_4",
+    "code": "4549286",
+    "name": "Management Control Systems",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549285"
+    ],
+    "alternateIds": [
+      "3549285@92@Semester_4"
+    ],
+    "slug": "management-control-systems"
+  },
+  {
+    "id": "849903@92@Semester_4",
+    "code": "849903",
+    "name": "Management of Cooperative Organisations",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-of-cooperative-organisations"
+  },
+  {
+    "id": "MB04092091@92@Semester_4",
+    "code": "MB04092091",
+    "name": "Management of Industrial Relations & Labour Law",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-of-industrial-relations-and-labour-law"
+  },
+  {
+    "id": "4549271@92@Semester_4",
+    "code": "4549271",
+    "name": "Materials Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "materials-management"
+  },
+  {
+    "id": "2840201@92@Semester_4",
+    "code": "2840201",
+    "name": "Mergers & Acquisition",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549221"
+    ],
+    "alternateIds": [
+      "3549221@92@Semester_4"
+    ],
+    "slug": "mergers-and-acquisition"
+  },
+  {
+    "id": "4549262@92@Semester_4",
+    "code": "4549262",
+    "name": "New Venture Creation",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549263"
+    ],
+    "alternateIds": [
+      "3549263@92@Semester_4"
+    ],
+    "slug": "new-venture-creation"
+  },
+  {
+    "id": "2840702@92@Semester_4",
+    "code": "2840702",
+    "name": "Non-Governmental Organisation Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "non-governmental-organisation-management"
+  },
+  {
+    "id": "3549271@92@Semester_4",
+    "code": "3549271",
+    "name": "Operations Research",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "operations-research-sem-4"
+  },
+  {
+    "id": "4549231@92@Semester_4",
+    "code": "4549231",
+    "name": "Performance Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "performance-management-sem-4"
+  },
+  {
+    "id": "2840101@92@Semester_4",
+    "code": "2840101",
+    "name": "Product and Brand Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "4549211",
+      "3549211",
+      "840102"
+    ],
+    "alternateIds": [
+      "4549211@92@Semester_4",
+      "3549211@92@Semester_4",
+      "840102@92@Semester_4"
+    ],
+    "slug": "product-and-brand-management"
+  },
+  {
+    "id": "3549272@92@Semester_4",
+    "code": "3549272",
+    "name": "Product Design and Development",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "product-design-and-development"
+  },
+  {
+    "id": "2840006@92@Semester_4",
+    "code": "2840006",
+    "name": "Project Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "project-management-sem-4"
+  },
+  {
+    "id": "3549286@92@Semester_4",
+    "code": "3549286",
+    "name": "Project Management for Entrepreneurs",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "project-management-for-entrepreneurs"
+  },
+  {
+    "id": "849904@92@Semester_4",
+    "code": "849904",
+    "name": "Public System and Policy-II",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "public-system-and-policy-ii"
+  },
+  {
+    "id": "4549272@92@Semester_4",
+    "code": "4549272",
+    "name": "Quality Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "quality-management-sem-4"
+  },
+  {
+    "id": "849901@92@Semester_4",
+    "code": "849901",
+    "name": "Retailing-II",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "retailing-ii"
+  },
+  {
+    "id": "2840202@92@Semester_4",
+    "code": "2840202",
+    "name": "Risk Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549222",
+      "840203"
+    ],
+    "alternateIds": [
+      "3549222@92@Semester_4",
+      "840203@92@Semester_4"
+    ],
+    "slug": "risk-management"
+  },
+  {
+    "id": "4549291@92@Semester_4",
+    "code": "4549291",
+    "name": "Rural and Agricultural Marketing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "rural-and-agricultural-marketing"
+  },
+  {
+    "id": "3549213@92@Semester_4",
+    "code": "3549213",
+    "name": "Rural Marketing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "rural-marketing-sem-4"
+  },
+  {
+    "id": "3549287@92@Semester_4",
+    "code": "3549287",
+    "name": "Service Operations Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "service-operations-management"
+  },
+  {
+    "id": "2840102@92@Semester_4",
+    "code": "2840102",
+    "name": "Services and Relationship Marketing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549212",
+      "840103"
+    ],
+    "alternateIds": [
+      "3549212@92@Semester_4",
+      "840103@92@Semester_4"
+    ],
+    "slug": "services-and-relationship-marketing"
+  },
+  {
+    "id": "MB04092061@92@Semester_4",
+    "code": "MB04092061",
+    "name": "Services Marketing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "4549212"
+    ],
+    "alternateIds": [
+      "4549212@92@Semester_4"
+    ],
+    "slug": "services-marketing"
+  },
+  {
+    "id": "3549273@92@Semester_4",
+    "code": "3549273",
+    "name": "Six Sigma and Lean Manufacuring",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "six-sigma-and-lean-manufacuring"
+  },
+  {
+    "id": "MB04092101@92@Semester_4",
+    "code": "MB04092101",
+    "name": "Software Proficiency",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "software-proficiency"
+  },
+  {
+    "id": "2840302@92@Semester_4",
+    "code": "2840302",
+    "name": "Strategic Human Resource Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549232",
+      "840303"
+    ],
+    "alternateIds": [
+      "3549232@92@Semester_4",
+      "840303@92@Semester_4"
+    ],
+    "slug": "strategic-human-resource-management"
+  },
+  {
+    "id": "2840402@92@Semester_4",
+    "code": "2840402",
+    "name": "Strategic Information Technology Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549252",
+      "840403"
+    ],
+    "alternateIds": [
+      "3549252@92@Semester_4",
+      "840403@92@Semester_4"
+    ],
+    "slug": "strategic-information-technology-management"
+  },
+  {
+    "id": "2840005@92@Semester_4",
+    "code": "2840005",
+    "name": "Supply Chain Management",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549288"
+    ],
+    "alternateIds": [
+      "3549288@92@Semester_4"
+    ],
+    "slug": "supply-chain-management"
+  },
+  {
+    "id": "2840008@92@Semester_4",
+    "code": "2840008",
+    "name": "Technology and Business",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "technology-and-business-sem-4"
+  },
+  {
+    "id": "2840902@92@Semester_4",
+    "code": "2840902",
+    "name": "The Corporation, the Regulators and Society",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "the-corporation-the-regulators-and-society"
+  },
+  {
+    "id": "4549285@92@Semester_4",
+    "code": "4549285",
+    "name": "World Class Manufacturing",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "world-class-manufacturing"
+  },
+  {
+    "id": "2840010@92@Semester_4",
+    "code": "2840010",
+    "name": "WTO Multilateral Trading System and its Impact on Business",
+    "branchId": "92",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "3549289"
+    ],
+    "alternateIds": [
+      "3549289@92@Semester_4"
+    ],
+    "slug": "wto-multilateral-trading-system-and-its-impact-on-business-sem-4"
+  },
+  {
+    "id": "1519302@93@Semester_1",
+    "code": "1519302",
+    "name": "Business Communications & Etiquettes",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-communications-and-etiquettes"
+  },
+  {
+    "id": "N2519304@93@Semester_1",
+    "code": "N2519304",
+    "name": "Cross Continent Business Philosophies",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519304",
+      "1519304"
+    ],
+    "alternateIds": [
+      "2519304@93@Semester_1",
+      "1519304@93@Semester_1"
+    ],
+    "slug": "cross-continent-business-philosophies"
+  },
+  {
+    "id": "N2519305@93@Semester_1",
+    "code": "N2519305",
+    "name": "Global Business Strategies",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519305"
+    ],
+    "alternateIds": [
+      "2519305@93@Semester_1"
+    ],
+    "slug": "global-business-strategies"
+  },
+  {
+    "id": "MB01093041@93@Semester_1",
+    "code": "MB01093041",
+    "name": "Global Business Strategy",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-business-strategy"
+  },
+  {
+    "id": "MB01093031@93@Semester_1",
+    "code": "MB01093031",
+    "name": "Indian Knowledge System and Cross Continent Business Philosophies",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "indian-knowledge-system-and-cross-continent-business-philosophies"
+  },
+  {
+    "id": "MB01093061@93@Semester_1",
+    "code": "MB01093061",
+    "name": "Information Technology and Global Business",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519307",
+      "N2519307",
+      "1519307"
+    ],
+    "alternateIds": [
+      "2519307@93@Semester_1",
+      "N2519307@93@Semester_1",
+      "1519307@93@Semester_1"
+    ],
+    "slug": "information-technology-and-global-business"
+  },
+  {
+    "id": "MB01093011@93@Semester_1",
+    "code": "MB01093011",
+    "name": "International Accounting Practices",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "N2519301",
+      "2519301",
+      "1519301"
+    ],
+    "alternateIds": [
+      "N2519301@93@Semester_1",
+      "2519301@93@Semester_1",
+      "1519301@93@Semester_1"
+    ],
+    "slug": "international-accounting-practices"
+  },
+  {
+    "id": "1519305@93@Semester_1",
+    "code": "1519305",
+    "name": "International Business",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-business"
+  },
+  {
+    "id": "MB01093021@93@Semester_1",
+    "code": "MB01093021",
+    "name": "International Economic Environment",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "N2519303",
+      "2519303",
+      "1519303"
+    ],
+    "alternateIds": [
+      "N2519303@93@Semester_1",
+      "2519303@93@Semester_1",
+      "1519303@93@Semester_1"
+    ],
+    "slug": "international-economic-environment"
+  },
+  {
+    "id": "N2519306@93@Semester_1",
+    "code": "N2519306",
+    "name": "Multicultural Organizational Behavior",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519306",
+      "1519306"
+    ],
+    "alternateIds": [
+      "2519306@93@Semester_1",
+      "1519306@93@Semester_1"
+    ],
+    "slug": "multicultural-organizational-behavior"
+  },
+  {
+    "id": "MB01093051@93@Semester_1",
+    "code": "MB01093051",
+    "name": "Multicultural Organizational Behavior and Human Resource Management",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "multicultural-organizational-behavior-and-human-resource-management"
+  },
+  {
+    "id": "MB02093011@93@Semester_2",
+    "code": "MB02093011",
+    "name": "Export Import Management",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "N2529301",
+      "2529301"
+    ],
+    "alternateIds": [
+      "N2529301@93@Semester_2",
+      "2529301@93@Semester_2"
+    ],
+    "slug": "export-import-management"
+  },
+  {
+    "id": "MB02093031@93@Semester_2",
+    "code": "MB02093031",
+    "name": "Financial Management",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "1529302",
+      "2529304",
+      "N2529304"
+    ],
+    "alternateIds": [
+      "1529302@93@Semester_2",
+      "2529304@93@Semester_2",
+      "N2529304@93@Semester_2"
+    ],
+    "slug": "financial-management"
+  },
+  {
+    "id": "MB02093041@93@Semester_2",
+    "code": "MB02093041",
+    "name": "Global Operations Management",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "N2529303",
+      "2529303",
+      "1529303"
+    ],
+    "alternateIds": [
+      "N2529303@93@Semester_2",
+      "2529303@93@Semester_2",
+      "1529303@93@Semester_2"
+    ],
+    "slug": "global-operations-management"
+  },
+  {
+    "id": "1529305@93@Semester_2",
+    "code": "1529305",
+    "name": "International Trade Environment",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-trade-environment"
+  },
+  {
+    "id": "N2529306@93@Semester_2",
+    "code": "N2529306",
+    "name": "Managing Human Resource",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "2529306",
+      "1529304"
+    ],
+    "alternateIds": [
+      "2529306@93@Semester_2",
+      "1529304@93@Semester_2"
+    ],
+    "slug": "managing-human-resource"
+  },
+  {
+    "id": "N2529305@93@Semester_2",
+    "code": "N2529305",
+    "name": "Marketing for Managers",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "2529305"
+    ],
+    "alternateIds": [
+      "2529305@93@Semester_2"
+    ],
+    "slug": "marketing-for-managers"
+  },
+  {
+    "id": "MB02093051@93@Semester_2",
+    "code": "MB02093051",
+    "name": "Marketing Management",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "1529306"
+    ],
+    "alternateIds": [
+      "1529306@93@Semester_2"
+    ],
+    "slug": "marketing-management"
+  },
+  {
+    "id": "MB02093021@93@Semester_2",
+    "code": "MB02093021",
+    "name": "Research Methodology & Applied Statistics",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "1529301"
+    ],
+    "alternateIds": [
+      "1529301@93@Semester_2"
+    ],
+    "slug": "research-methodology-and-applied-statistics"
+  },
+  {
+    "id": "N2529302@93@Semester_2",
+    "code": "N2529302",
+    "name": "Research Methodology and Applied Statistics",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "2529302"
+    ],
+    "alternateIds": [
+      "2529302@93@Semester_2"
+    ],
+    "slug": "research-methodology-and-applied-statistics-sem-2"
+  },
+  {
+    "id": "1539346@93@Semester_3",
+    "code": "1539346",
+    "name": "Behavioral Finance",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "behavioral-finance"
+  },
+  {
+    "id": "N2539303@93@Semester_3",
+    "code": "N2539303",
+    "name": "Business Intelligence & Analytics",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539303"
+    ],
+    "alternateIds": [
+      "2539303@93@Semester_3"
+    ],
+    "slug": "business-intelligence-and-analytics"
+  },
+  {
+    "id": "N2539311@93@Semester_3",
+    "code": "N2539311",
+    "name": "Consumer Behaviour",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539311"
+    ],
+    "alternateIds": [
+      "2539311@93@Semester_3"
+    ],
+    "slug": "consumer-behaviour"
+  },
+  {
+    "id": "1539342@93@Semester_3",
+    "code": "1539342",
+    "name": "Digital Marketing",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "digital-marketing"
+  },
+  {
+    "id": "1539343@93@Semester_3",
+    "code": "1539343",
+    "name": "E-commerce",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "e-commerce"
+  },
+  {
+    "id": "1539347@93@Semester_3",
+    "code": "1539347",
+    "name": "Econometrics",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "econometrics"
+  },
+  {
+    "id": "N2539302@93@Semester_3",
+    "code": "N2539302",
+    "name": "Entrepreneurship and Innovation Management",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539302"
+    ],
+    "alternateIds": [
+      "2539302@93@Semester_3"
+    ],
+    "slug": "entrepreneurship-and-innovation-management"
+  },
+  {
+    "id": "1539344@93@Semester_3",
+    "code": "1539344",
+    "name": "Entreprise Resource Planning",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entreprise-resource-planning"
+  },
+  {
+    "id": "1539303@93@Semester_3",
+    "code": "1539303",
+    "name": "Export Import Management-I",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "export-import-management-i"
+  },
+  {
+    "id": "1539321@93@Semester_3",
+    "code": "1539321",
+    "name": "Global Financial Management",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-financial-management"
+  },
+  {
+    "id": "N2539312@93@Semester_3",
+    "code": "N2539312",
+    "name": "Global Marketing & Communication",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539312",
+      "1539312"
+    ],
+    "alternateIds": [
+      "2539312@93@Semester_3",
+      "1539312@93@Semester_3"
+    ],
+    "slug": "global-marketing-and-communication"
+  },
+  {
+    "id": "1539311@93@Semester_3",
+    "code": "1539311",
+    "name": "Global Perspectives on Consumer Behaviour",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-perspectives-on-consumer-behaviour"
+  },
+  {
+    "id": "N2539301@93@Semester_3",
+    "code": "N2539301",
+    "name": "Global Strategic Management",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539301",
+      "1539302"
+    ],
+    "alternateIds": [
+      "2539301@93@Semester_3",
+      "1539302@93@Semester_3"
+    ],
+    "slug": "global-strategic-management"
+  },
+  {
+    "id": "N2539332@93@Semester_3",
+    "code": "N2539332",
+    "name": "Global Strategies for Organizational Development",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539332"
+    ],
+    "alternateIds": [
+      "2539332@93@Semester_3"
+    ],
+    "slug": "global-strategies-for-organizational-development"
+  },
+  {
+    "id": "N2539304@93@Semester_3",
+    "code": "N2539304",
+    "name": "Global Supply Chain & Logistic Management",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539304",
+      "1539304"
+    ],
+    "alternateIds": [
+      "2539304@93@Semester_3",
+      "1539304@93@Semester_3"
+    ],
+    "slug": "global-supply-chain-and-logistic-management"
+  },
+  {
+    "id": "1539345@93@Semester_3",
+    "code": "1539345",
+    "name": "HR Metrics",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "hr-metrics"
+  },
+  {
+    "id": "1539332@93@Semester_3",
+    "code": "1539332",
+    "name": "Human Resource Planning & Development",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resource-planning-and-development"
+  },
+  {
+    "id": "N2539331@93@Semester_3",
+    "code": "N2539331",
+    "name": "International Human Resource Management",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539331",
+      "1539331"
+    ],
+    "alternateIds": [
+      "2539331@93@Semester_3",
+      "1539331@93@Semester_3"
+    ],
+    "slug": "international-human-resource-management"
+  },
+  {
+    "id": "N2539322@93@Semester_3",
+    "code": "N2539322",
+    "name": "International Investment & Portfolio Management",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539322",
+      "1539322"
+    ],
+    "alternateIds": [
+      "2539322@93@Semester_3",
+      "1539322@93@Semester_3"
+    ],
+    "slug": "international-investment-and-portfolio-management"
+  },
+  {
+    "id": "N2539321@93@Semester_3",
+    "code": "N2539321",
+    "name": "Investment Banking",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2539321",
+      "1539341"
+    ],
+    "alternateIds": [
+      "2539321@93@Semester_3",
+      "1539341@93@Semester_3"
+    ],
+    "slug": "investment-banking"
+  },
+  {
+    "id": "1539349@93@Semester_3",
+    "code": "1539349",
+    "name": "Managing Talent Globally",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "managing-talent-globally"
+  },
+  {
+    "id": "1539348@93@Semester_3",
+    "code": "1539348",
+    "name": "Social Media Analytics",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "social-media-analytics"
+  },
+  {
+    "id": "N2549307@93@Semester_4",
+    "code": "N2549307",
+    "name": "Advanced Data Analytics",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2549307"
+    ],
+    "alternateIds": [
+      "2549307@93@Semester_4"
+    ],
+    "slug": "advanced-data-analytics"
+  },
+  {
+    "id": "1549302@93@Semester_4",
+    "code": "1549302",
+    "name": "Business Analytics",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-analytics"
+  },
+  {
+    "id": "N2549306@93@Semester_4",
+    "code": "N2549306",
+    "name": "Business Ethics and Corporate Governance",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2549306",
+      "1549345"
+    ],
+    "alternateIds": [
+      "2549306@93@Semester_4",
+      "1549345@93@Semester_4"
+    ],
+    "slug": "business-ethics-and-corporate-governance"
+  },
+  {
+    "id": "1549348@93@Semester_4",
+    "code": "1549348",
+    "name": "Business Reporting Data Visualization",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-reporting-data-visualization"
+  },
+  {
+    "id": "1549344@93@Semester_4",
+    "code": "1549344",
+    "name": "Entrepreneurship",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurship"
+  },
+  {
+    "id": "1549301@93@Semester_4",
+    "code": "1549301",
+    "name": "Export Import Management-II",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "export-import-management-ii"
+  },
+  {
+    "id": "1549347@93@Semester_4",
+    "code": "1549347",
+    "name": "Foreign Trade Facilitation",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "foreign-trade-facilitation"
+  },
+  {
+    "id": "1549342@93@Semester_4",
+    "code": "1549342",
+    "name": "Forex Management",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "forex-management"
+  },
+  {
+    "id": "N2549303@93@Semester_4",
+    "code": "N2549303",
+    "name": "Global Branding",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2549303",
+      "1549311"
+    ],
+    "alternateIds": [
+      "2549303@93@Semester_4",
+      "1549311@93@Semester_4"
+    ],
+    "slug": "global-branding"
+  },
+  {
+    "id": "N2549305@93@Semester_4",
+    "code": "N2549305",
+    "name": "Global Knowledge Management",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2549305",
+      "1549343"
+    ],
+    "alternateIds": [
+      "2549305@93@Semester_4",
+      "1549343@93@Semester_4"
+    ],
+    "slug": "global-knowledge-management"
+  },
+  {
+    "id": "1549331@93@Semester_4",
+    "code": "1549331",
+    "name": "Global Leadership",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-leadership"
+  },
+  {
+    "id": "1549341@93@Semester_4",
+    "code": "1549341",
+    "name": "International Marketing Research",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-marketing-research"
+  },
+  {
+    "id": "N2549304@93@Semester_4",
+    "code": "N2549304",
+    "name": "Mergers & Acquisitions",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2549304",
+      "1549321"
+    ],
+    "alternateIds": [
+      "2549304@93@Semester_4",
+      "1549321@93@Semester_4"
+    ],
+    "slug": "mergers-and-acquisitions"
+  },
+  {
+    "id": "1549346@93@Semester_4",
+    "code": "1549346",
+    "name": "Quality Management",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "quality-management"
+  },
+  {
+    "id": "1519404@94@Semester_1",
+    "code": "1519404",
+    "name": "Business Modelling & Validation",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-modelling-and-validation"
+  },
+  {
+    "id": "N2519404@94@Semester_1",
+    "code": "N2519404",
+    "name": "Business Models & Unit Economics",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519404"
+    ],
+    "alternateIds": [
+      "2519404@94@Semester_1"
+    ],
+    "slug": "business-models-and-unit-economics"
+  },
+  {
+    "id": "N2519405@94@Semester_1",
+    "code": "N2519405",
+    "name": "Communication Techniques",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519405"
+    ],
+    "alternateIds": [
+      "2519405@94@Semester_1"
+    ],
+    "slug": "communication-techniques"
+  },
+  {
+    "id": "1519402@94@Semester_1",
+    "code": "1519402",
+    "name": "Crafting Value Proposition",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "crafting-value-proposition"
+  },
+  {
+    "id": "N2519401@94@Semester_1",
+    "code": "N2519401",
+    "name": "Creativity & Innovation Management",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519401"
+    ],
+    "alternateIds": [
+      "2519401@94@Semester_1"
+    ],
+    "slug": "creativity-and-innovation-management"
+  },
+  {
+    "id": "N2519402@94@Semester_1",
+    "code": "N2519402",
+    "name": "Design Thinking For Product Development",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519402"
+    ],
+    "alternateIds": [
+      "2519402@94@Semester_1"
+    ],
+    "slug": "design-thinking-for-product-development"
+  },
+  {
+    "id": "MB01094031@94@Semester_1",
+    "code": "MB01094031",
+    "name": "Design Thinking for Startups",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "design-thinking-for-startups"
+  },
+  {
+    "id": "MB01094041@94@Semester_1",
+    "code": "MB01094041",
+    "name": "Entrepreneurial Mindset & Business Models",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurial-mindset-and-business-models"
+  },
+  {
+    "id": "1519408@94@Semester_1",
+    "code": "1519408",
+    "name": "General Management for Entrepreneurs",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "general-management-for-entrepreneurs"
+  },
+  {
+    "id": "MB01094011@94@Semester_1",
+    "code": "MB01094011",
+    "name": "Opportunities Scouting, Problem Discovery & Innovation",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "opportunities-scouting-problem-discovery-and-innovation"
+  },
+  {
+    "id": "1519401@94@Semester_1",
+    "code": "1519401",
+    "name": "Opportunity Discovery, Creativity & Innovation",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "opportunity-discovery-creativity-and-innovation"
+  },
+  {
+    "id": "1519406@94@Semester_1",
+    "code": "1519406",
+    "name": "Product Market Fit",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "product-market-fit"
+  },
+  {
+    "id": "MB01094021@94@Semester_1",
+    "code": "MB01094021",
+    "name": "Research for Entrepreneurs",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-for-entrepreneurs"
+  },
+  {
+    "id": "1519403@94@Semester_1",
+    "code": "1519403",
+    "name": "Research Methods",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-methods"
+  },
+  {
+    "id": "N2519403@94@Semester_1",
+    "code": "N2519403",
+    "name": "Research Methods For Entrepreneurs",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2519403"
+    ],
+    "alternateIds": [
+      "2519403@94@Semester_1"
+    ],
+    "slug": "research-methods-for-entrepreneurs"
+  },
+  {
+    "id": "1519405@94@Semester_1",
+    "code": "1519405",
+    "name": "Start-up Financing & Economics",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "start-up-financing-and-economics"
+  },
+  {
+    "id": "1519407@94@Semester_1",
+    "code": "1519407",
+    "name": "Start-up Laws & IPR",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "start-up-laws-and-ipr"
+  },
+  {
+    "id": "N2529403@94@Semester_2",
+    "code": "N2529403",
+    "name": "Basics Of Accounting And Financial Management",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "2529403"
+    ],
+    "alternateIds": [
+      "2529403@94@Semester_2"
+    ],
+    "slug": "basics-of-accounting-and-financial-management"
+  },
+  {
+    "id": "MB02094031@94@Semester_2",
+    "code": "MB02094031",
+    "name": "Entrepreneurial Finance & Costing",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurial-finance-and-costing"
+  },
+  {
+    "id": "N2529402@94@Semester_2",
+    "code": "N2529402",
+    "name": "Fundamentals Of Marketing And Sales Management",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "2529402"
+    ],
+    "alternateIds": [
+      "2529402@94@Semester_2"
+    ],
+    "slug": "fundamentals-of-marketing-and-sales-management"
+  },
+  {
+    "id": "MB02094011@94@Semester_2",
+    "code": "MB02094011",
+    "name": "Human Resources for Startups",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resources-for-startups"
+  },
+  {
+    "id": "1529403@94@Semester_2",
+    "code": "1529403",
+    "name": "Lean Sales Strategies",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "lean-sales-strategies"
+  },
+  {
+    "id": "MB02094041@94@Semester_2",
+    "code": "MB02094041",
+    "name": "Legal Aspects of Venture Creation",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "legal-aspects-of-venture-creation"
+  },
+  {
+    "id": "N2529401@94@Semester_2",
+    "code": "N2529401",
+    "name": "Managing Human Resources For Startups",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "2529401"
+    ],
+    "alternateIds": [
+      "2529401@94@Semester_2"
+    ],
+    "slug": "managing-human-resources-for-startups"
+  },
+  {
+    "id": "MB02094021@94@Semester_2",
+    "code": "MB02094021",
+    "name": "Marketing Strategies for Enterprise Development",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "marketing-strategies-for-enterprise-development"
+  },
+  {
+    "id": "1529404@94@Semester_2",
+    "code": "1529404",
+    "name": "Social Entrepreneurship",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "social-entrepreneurship"
+  },
+  {
+    "id": "1529401@94@Semester_2",
+    "code": "1529401",
+    "name": "Start-up Ecosystem Support",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "start-up-ecosystem-support"
+  },
+  {
+    "id": "1529402@94@Semester_2",
+    "code": "1529402",
+    "name": "Start-up Human Resources",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "start-up-human-resources"
+  },
+  {
+    "id": "1539403@94@Semester_3",
+    "code": "1539403",
+    "name": "Branding & Channel Strategies",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "branding-and-channel-strategies"
+  },
+  {
+    "id": "N2539407@94@Semester_3",
+    "code": "N2539407",
+    "name": "Branding & Digital Marketing",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "branding-and-digital-marketing"
+  },
+  {
+    "id": "1539401@94@Semester_3",
+    "code": "1539401",
+    "name": "Business Communication",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-communication"
+  },
+  {
+    "id": "1539416@94@Semester_3",
+    "code": "1539416",
+    "name": "Digital Marketing",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "digital-marketing"
+  },
+  {
+    "id": "1539406@94@Semester_3",
+    "code": "1539406",
+    "name": "Entrepreneurial Leadership",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurial-leadership"
+  },
+  {
+    "id": "1539414@94@Semester_3",
+    "code": "1539414",
+    "name": "Global Entrepreneurship",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-entrepreneurship"
+  },
+  {
+    "id": "1539405@94@Semester_3",
+    "code": "1539405",
+    "name": "Legal Aspects in Startups",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "legal-aspects-in-startups"
+  },
+  {
+    "id": "1539404@94@Semester_3",
+    "code": "1539404",
+    "name": "Leveraging Tools for Startups",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "leveraging-tools-for-startups"
+  },
+  {
+    "id": "N2539403@94@Semester_3",
+    "code": "N2539403",
+    "name": "Project Management",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "project-management"
+  },
+  {
+    "id": "1539413@94@Semester_3",
+    "code": "1539413",
+    "name": "Project Management for Entrepreneurs",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "project-management-for-entrepreneurs"
+  },
+  {
+    "id": "N2539401@94@Semester_3",
+    "code": "N2539401",
+    "name": "Startup Scalability",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "startup-scalability"
+  },
+  {
+    "id": "1539402@94@Semester_3",
+    "code": "1539402",
+    "name": "Startup Scalability (Growth Strategies)",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "startup-scalability-growth-strategies"
+  },
+  {
+    "id": "1539412@94@Semester_3",
+    "code": "1539412",
+    "name": "Venture Financing",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "venture-financing"
+  },
+  {
+    "id": "MB01000031@95@Semester_1",
+    "code": "MB01000031",
+    "name": "Business Research and Statistical Analysis",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-research-and-statistical-analysis"
+  },
+  {
+    "id": "1519504@95@Semester_1",
+    "code": "1519504",
+    "name": "Business Statistics",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-statistics"
+  },
+  {
+    "id": "1519508@95@Semester_1",
+    "code": "1519508",
+    "name": "Developing Contributory Skills – I",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-i"
+  },
+  {
+    "id": "MB01000011@95@Semester_1",
+    "code": "MB01000011",
+    "name": "Essentials of Organisational Behaviour",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "essentials-of-organisational-behaviour"
+  },
+  {
+    "id": "MB01095011@95@Semester_1",
+    "code": "MB01095011",
+    "name": "Financial Accounting & Reporting",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-accounting-and-reporting"
+  },
+  {
+    "id": "1519506@95@Semester_1",
+    "code": "1519506",
+    "name": "Financial Accounting and Reporting",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-accounting-and-reporting-sem-1"
+  },
+  {
+    "id": "MB01095031@95@Semester_1",
+    "code": "MB01095031",
+    "name": "Financial Management",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "1519505"
+    ],
+    "alternateIds": [
+      "1519505@95@Semester_1"
+    ],
+    "slug": "financial-management"
+  },
+  {
+    "id": "MB01000021@95@Semester_1",
+    "code": "MB01000021",
+    "name": "Indian Knowledge Systems",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "indian-knowledge-systems"
+  },
+  {
+    "id": "1519503@95@Semester_1",
+    "code": "1519503",
+    "name": "Management Information Systems",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-information-systems"
+  },
+  {
+    "id": "1519501@95@Semester_1",
+    "code": "1519501",
+    "name": "Managerial Communication",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "managerial-communication"
+  },
+  {
+    "id": "MB01095021@95@Semester_1",
+    "code": "MB01095021",
+    "name": "Micro Economics",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "1519507"
+    ],
+    "alternateIds": [
+      "1519507@95@Semester_1"
+    ],
+    "slug": "micro-economics"
+  },
+  {
+    "id": "1519502@95@Semester_1",
+    "code": "1519502",
+    "name": "Organizational Behaviour",
+    "branchId": "95",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "organizational-behaviour"
+  },
+  {
+    "id": "1529503@95@Semester_2",
+    "code": "1529503",
+    "name": "Business Ethics & Corporate Governance",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-ethics-and-corporate-governance"
+  },
+  {
+    "id": "1529508@95@Semester_2",
+    "code": "1529508",
+    "name": "Developing Contributory Skills – II",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-ii"
+  },
+  {
+    "id": "MB02095021@95@Semester_2",
+    "code": "MB02095021",
+    "name": "Financial Markets and Services",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "1529504"
+    ],
+    "alternateIds": [
+      "1529504@95@Semester_2"
+    ],
+    "slug": "financial-markets-and-services"
+  },
+  {
+    "id": "1529506@95@Semester_2",
+    "code": "1529506",
+    "name": "Functions of Management - 1",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "functions-of-management-1"
+  },
+  {
+    "id": "1529507@95@Semester_2",
+    "code": "1529507",
+    "name": "Functions of Management - 2",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "functions-of-management-2"
+  },
+  {
+    "id": "MB02000021@95@Semester_2",
+    "code": "MB02000021",
+    "name": "Functions of Management-1",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "functions-of-management-1-sem-2"
+  },
+  {
+    "id": "MB02000031@95@Semester_2",
+    "code": "MB02000031",
+    "name": "Functions of Management-2",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "functions-of-management-2-sem-2"
+  },
+  {
+    "id": "MB02000011@95@Semester_2",
+    "code": "MB02000011",
+    "name": "Fundamentals of ESG for Sustainability",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-esg-for-sustainability"
+  },
+  {
+    "id": "1529505@95@Semester_2",
+    "code": "1529505",
+    "name": "Macro Economic Theory and Policy",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "macro-economic-theory-and-policy"
+  },
+  {
+    "id": "MB02095031@95@Semester_2",
+    "code": "MB02095031",
+    "name": "Macro Economics",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "macro-economics"
+  },
+  {
+    "id": "MB02095011@95@Semester_2",
+    "code": "MB02095011",
+    "name": "Management Accounting and Costing",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "1529502"
+    ],
+    "alternateIds": [
+      "1529502@95@Semester_2"
+    ],
+    "slug": "management-accounting-and-costing"
+  },
+  {
+    "id": "1529501@95@Semester_2",
+    "code": "1529501",
+    "name": "Research Methodology",
+    "branchId": "95",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-methodology"
+  },
+  {
+    "id": "MB03095041@95@Semester_3",
+    "code": "MB03095041",
+    "name": "Behavioural Finance",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "1539512"
+    ],
+    "alternateIds": [
+      "1539512@95@Semester_3"
+    ],
+    "slug": "behavioural-finance"
+  },
+  {
+    "id": "1539513@95@Semester_3",
+    "code": "1539513",
+    "name": "Business & Corporate Laws",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-and-corporate-laws"
+  },
+  {
+    "id": "1539508@95@Semester_3",
+    "code": "1539508",
+    "name": "Developing Contributory Skills – III",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-iii"
+  },
+  {
+    "id": "1539511@95@Semester_3",
+    "code": "1539511",
+    "name": "Econometrics",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "econometrics"
+  },
+  {
+    "id": "1539504@95@Semester_3",
+    "code": "1539504",
+    "name": "Financial Derivatives",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-derivatives"
+  },
+  {
+    "id": "MB03095011@95@Semester_3",
+    "code": "MB03095011",
+    "name": "International Finance and Risk Management",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-finance-and-risk-management"
+  },
+  {
+    "id": "MB03095021@95@Semester_3",
+    "code": "MB03095021",
+    "name": "Introduction to FINTECH and Financial Analytics",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "1539505"
+    ],
+    "alternateIds": [
+      "1539505@95@Semester_3"
+    ],
+    "slug": "introduction-to-fintech-and-financial-analytics"
+  },
+  {
+    "id": "MB03095031@95@Semester_3",
+    "code": "MB03095031",
+    "name": "Management Control System",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-control-system"
+  },
+  {
+    "id": "1539514@95@Semester_3",
+    "code": "1539514",
+    "name": "Management Control Systems",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-control-systems"
+  },
+  {
+    "id": "1539503@95@Semester_3",
+    "code": "1539503",
+    "name": "Security Analysis and Portfoilio Management",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "security-analysis-and-portfoilio-management"
+  },
+  {
+    "id": "MB03000031@95@Semester_3",
+    "code": "MB03000031",
+    "name": "Security Analysis and Portfolio Management",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "security-analysis-and-portfolio-management"
+  },
+  {
+    "id": "MB03000021@95@Semester_3",
+    "code": "MB03000021",
+    "name": "Strategic Management",
+    "branchId": "95",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "1539501"
+    ],
+    "alternateIds": [
+      "1539501@95@Semester_3"
+    ],
+    "slug": "strategic-management"
+  },
+  {
+    "id": "1549512@95@Semester_4",
+    "code": "1549512",
+    "name": "Banking & Insurance",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "banking-and-insurance"
+  },
+  {
+    "id": "MB04095011@95@Semester_4",
+    "code": "MB04095011",
+    "name": "Banking and Insurance",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "banking-and-insurance-sem-4"
+  },
+  {
+    "id": "1549503@95@Semester_4",
+    "code": "1549503",
+    "name": "Corporate Restructuing and Valuation",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-restructuing-and-valuation"
+  },
+  {
+    "id": "MB04000021@95@Semester_4",
+    "code": "MB04000021",
+    "name": "Corporate Restructuring and Valuation",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-restructuring-and-valuation"
+  },
+  {
+    "id": "1549514@95@Semester_4",
+    "code": "1549514",
+    "name": "Corporate Tax Planning and Management",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-tax-planning-and-management"
+  },
+  {
+    "id": "1549511@95@Semester_4",
+    "code": "1549511",
+    "name": "Entrepreneurial Finance",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurial-finance"
+  },
+  {
+    "id": "1549502@95@Semester_4",
+    "code": "1549502",
+    "name": "International Finance",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-finance"
+  },
+  {
+    "id": "MB04095021@95@Semester_4",
+    "code": "MB04095021",
+    "name": "Wealth Management",
+    "branchId": "95",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "1549513"
+    ],
+    "alternateIds": [
+      "1549513@95@Semester_4"
+    ],
+    "slug": "wealth-management"
+  },
+  {
+    "id": "MB01000031@96@Semester_1",
+    "code": "MB01000031",
+    "name": "Business Research and Statistical Analysis",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-research-and-statistical-analysis"
+  },
+  {
+    "id": "1519607@96@Semester_1",
+    "code": "1519607",
+    "name": "Business Statistics",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-statistics"
+  },
+  {
+    "id": "1519608@96@Semester_1",
+    "code": "1519608",
+    "name": "Developing Contributory Skills – I",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-i"
+  },
+  {
+    "id": "1519602@96@Semester_1",
+    "code": "1519602",
+    "name": "Economics for Manager",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "economics-for-manager"
+  },
+  {
+    "id": "MB01096031@96@Semester_1",
+    "code": "MB01096031",
+    "name": "Economics for Managers and Entrepreneurs",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "economics-for-managers-and-entrepreneurs"
+  },
+  {
+    "id": "MB01000011@96@Semester_1",
+    "code": "MB01000011",
+    "name": "Essentials of Organisational Behaviour",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "essentials-of-organisational-behaviour"
+  },
+  {
+    "id": "MB01000021@96@Semester_1",
+    "code": "MB01000021",
+    "name": "Indian Knowledge Systems",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "indian-knowledge-systems"
+  },
+  {
+    "id": "MB01096011@96@Semester_1",
+    "code": "MB01096011",
+    "name": "Information Technology Management",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "1519606"
+    ],
+    "alternateIds": [
+      "1519606@96@Semester_1"
+    ],
+    "slug": "information-technology-management"
+  },
+  {
+    "id": "1519601@96@Semester_1",
+    "code": "1519601",
+    "name": "Management Accounting",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-accounting"
+  },
+  {
+    "id": "1519603@96@Semester_1",
+    "code": "1519603",
+    "name": "Managerial Communication",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "managerial-communication"
+  },
+  {
+    "id": "1519604@96@Semester_1",
+    "code": "1519604",
+    "name": "Organizational Behaviour",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "organizational-behaviour"
+  },
+  {
+    "id": "MB01096021@96@Semester_1",
+    "code": "MB01096021",
+    "name": "Relational Database Management System",
+    "branchId": "96",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "1519605"
+    ],
+    "alternateIds": [
+      "1519605@96@Semester_1"
+    ],
+    "slug": "relational-database-management-system"
+  },
+  {
+    "id": "MB02096011@96@Semester_2",
+    "code": "MB02096011",
+    "name": "Business Analytics",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "1529601"
+    ],
+    "alternateIds": [
+      "1529601@96@Semester_2"
+    ],
+    "slug": "business-analytics"
+  },
+  {
+    "id": "1529602@96@Semester_2",
+    "code": "1529602",
+    "name": "Corporate Finance",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-finance"
+  },
+  {
+    "id": "1529608@96@Semester_2",
+    "code": "1529608",
+    "name": "Developing Contributory Skills – II",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-ii"
+  },
+  {
+    "id": "1529607@96@Semester_2",
+    "code": "1529607",
+    "name": "Entrepreneurship and Business Ethics",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurship-and-business-ethics"
+  },
+  {
+    "id": "MB02000021@96@Semester_2",
+    "code": "MB02000021",
+    "name": "Functions of Management-1",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "functions-of-management-1"
+  },
+  {
+    "id": "MB02000031@96@Semester_2",
+    "code": "MB02000031",
+    "name": "Functions of Management-2",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "functions-of-management-2"
+  },
+  {
+    "id": "MB02000011@96@Semester_2",
+    "code": "MB02000011",
+    "name": "Fundamentals of ESG for Sustainability",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-esg-for-sustainability"
+  },
+  {
+    "id": "1529604@96@Semester_2",
+    "code": "1529604",
+    "name": "Human Resource Management",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resource-management"
+  },
+  {
+    "id": "MB02096021@96@Semester_2",
+    "code": "MB02096021",
+    "name": "IT Project Management",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "it-project-management"
+  },
+  {
+    "id": "1529603@96@Semester_2",
+    "code": "1529603",
+    "name": "Marketing Management",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "marketing-management"
+  },
+  {
+    "id": "1529605@96@Semester_2",
+    "code": "1529605",
+    "name": "Production & Operations Management",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "production-and-operations-management"
+  },
+  {
+    "id": "1529606@96@Semester_2",
+    "code": "1529606",
+    "name": "Research Methodology",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-methodology"
+  },
+  {
+    "id": "MB02096031@96@Semester_2",
+    "code": "MB02096031",
+    "name": "Web Programming using PHP",
+    "branchId": "96",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "web-programming-using-php"
+  },
+  {
+    "id": "MB03096051@96@Semester_3",
+    "code": "MB03096051",
+    "name": "Advanced Analytics",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-analytics"
+  },
+  {
+    "id": "1539612@96@Semester_3",
+    "code": "1539612",
+    "name": "Advanced Data Analytics",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-data-analytics"
+  },
+  {
+    "id": "MB03096041@96@Semester_3",
+    "code": "MB03096041",
+    "name": "Advanced Digital Marketing",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-digital-marketing"
+  },
+  {
+    "id": "1539605@96@Semester_3",
+    "code": "1539605",
+    "name": "Business Process Integration",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-process-integration"
+  },
+  {
+    "id": "MB03096011@96@Semester_3",
+    "code": "MB03096011",
+    "name": "Business Reporting and Data Visualization",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-reporting-and-data-visualization"
+  },
+  {
+    "id": "1539614@96@Semester_3",
+    "code": "1539614",
+    "name": "Cloud Computing",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cloud-computing"
+  },
+  {
+    "id": "MB03096021@96@Semester_3",
+    "code": "MB03096021",
+    "name": "Cyber Security",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security"
+  },
+  {
+    "id": "1539604@96@Semester_3",
+    "code": "1539604",
+    "name": "Cyber Security and Information Technology Governance",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-information-technology-governance"
+  },
+  {
+    "id": "1539603@96@Semester_3",
+    "code": "1539603",
+    "name": "Data Warehousing and Data Mining",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-warehousing-and-data-mining"
+  },
+  {
+    "id": "1539608@96@Semester_3",
+    "code": "1539608",
+    "name": "Developing Contributory Skills – III",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-iii"
+  },
+  {
+    "id": "1539611@96@Semester_3",
+    "code": "1539611",
+    "name": "E-Business",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "e-business"
+  },
+  {
+    "id": "MB03096031@96@Semester_3",
+    "code": "MB03096031",
+    "name": "Fundamentals of Software Quality Assurance",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-software-quality-assurance"
+  },
+  {
+    "id": "1539613@96@Semester_3",
+    "code": "1539613",
+    "name": "IT Project Management",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "it-project-management-sem-3"
+  },
+  {
+    "id": "MB03000021@96@Semester_3",
+    "code": "MB03000021",
+    "name": "Strategic Management",
+    "branchId": "96",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "1539601"
+    ],
+    "alternateIds": [
+      "1539601@96@Semester_3"
+    ],
+    "slug": "strategic-management"
+  },
+  {
+    "id": "MB04096011@96@Semester_4",
+    "code": "MB04096011",
+    "name": "Blockchain & Crypto Currency",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "blockchain-and-crypto-currency"
+  },
+  {
+    "id": "1549614@96@Semester_4",
+    "code": "1549614",
+    "name": "Blockchain Management",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "blockchain-management"
+  },
+  {
+    "id": "1549602@96@Semester_4",
+    "code": "1549602",
+    "name": "Business Reporting Data Visualization",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-reporting-data-visualization"
+  },
+  {
+    "id": "MB04096021@96@Semester_4",
+    "code": "MB04096021",
+    "name": "Cloud Data Insights",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cloud-data-insights"
+  },
+  {
+    "id": "1549611@96@Semester_4",
+    "code": "1549611",
+    "name": "Knowledge Management",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "knowledge-management"
+  },
+  {
+    "id": "MB04096031@96@Semester_4",
+    "code": "MB04096031",
+    "name": "Managing Digital Innovation and Transformation",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "1549612"
+    ],
+    "alternateIds": [
+      "1549612@96@Semester_4"
+    ],
+    "slug": "managing-digital-innovation-and-transformation"
+  },
+  {
+    "id": "1549613@96@Semester_4",
+    "code": "1549613",
+    "name": "Social Media Analytics",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "social-media-analytics"
+  },
+  {
+    "id": "1549603@96@Semester_4",
+    "code": "1549603",
+    "name": "Web Programming using PHP",
+    "branchId": "96",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "web-programming-using-php-sem-4"
+  },
+  {
+    "id": "1519705@97@Semester_1",
+    "code": "1519705",
+    "name": "Basics of Supply Chain Management",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basics-of-supply-chain-management"
+  },
+  {
+    "id": "1519707@97@Semester_1",
+    "code": "1519707",
+    "name": "Business Statistics",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-statistics"
+  },
+  {
+    "id": "1519708@97@Semester_1",
+    "code": "1519708",
+    "name": "Developing Contributory Skills – I",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-i"
+  },
+  {
+    "id": "1519702@97@Semester_1",
+    "code": "1519702",
+    "name": "Economics for Manager",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "economics-for-manager"
+  },
+  {
+    "id": "1519701@97@Semester_1",
+    "code": "1519701",
+    "name": "Management Accounting",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-accounting"
+  },
+  {
+    "id": "1519706@97@Semester_1",
+    "code": "1519706",
+    "name": "Management Information Systems",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-information-systems"
+  },
+  {
+    "id": "1519703@97@Semester_1",
+    "code": "1519703",
+    "name": "Managerial Communication",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "managerial-communication"
+  },
+  {
+    "id": "1519704@97@Semester_1",
+    "code": "1519704",
+    "name": "Organizational Behaviour",
+    "branchId": "97",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "organizational-behaviour"
+  },
+  {
+    "id": "1529706@97@Semester_2",
+    "code": "1529706",
+    "name": "Basics of Logistics Management",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basics-of-logistics-management"
+  },
+  {
+    "id": "1529702@97@Semester_2",
+    "code": "1529702",
+    "name": "Corporate Finance",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "corporate-finance"
+  },
+  {
+    "id": "1529708@97@Semester_2",
+    "code": "1529708",
+    "name": "Developing Contributory Skills – II",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-ii"
+  },
+  {
+    "id": "1529707@97@Semester_2",
+    "code": "1529707",
+    "name": "Entrepreneurship",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "entrepreneurship"
+  },
+  {
+    "id": "1529704@97@Semester_2",
+    "code": "1529704",
+    "name": "Human Resource Management",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-resource-management"
+  },
+  {
+    "id": "1529701@97@Semester_2",
+    "code": "1529701",
+    "name": "International Trade & Commerce",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "international-trade-and-commerce"
+  },
+  {
+    "id": "1529703@97@Semester_2",
+    "code": "1529703",
+    "name": "Marketing Management",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "marketing-management"
+  },
+  {
+    "id": "1529705@97@Semester_2",
+    "code": "1529705",
+    "name": "Production & Operations Management",
+    "branchId": "97",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "production-and-operations-management"
+  },
+  {
+    "id": "1539710@97@Semester_3",
+    "code": "1539710",
+    "name": "Developing Contributory Skills – III",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "developing-contributory-skills-iii"
+  },
+  {
+    "id": "1539703@97@Semester_3",
+    "code": "1539703",
+    "name": "EXIM Procedures and Documentation",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "exim-procedures-and-documentation"
+  },
+  {
+    "id": "1539706@97@Semester_3",
+    "code": "1539706",
+    "name": "Multi Model Transportation",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "multi-model-transportation"
+  },
+  {
+    "id": "1539709@97@Semester_3",
+    "code": "1539709",
+    "name": "Port and Airport Logistics Management",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "port-and-airport-logistics-management"
+  },
+  {
+    "id": "1539704@97@Semester_3",
+    "code": "1539704",
+    "name": "Procurement Management",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "procurement-management"
+  },
+  {
+    "id": "1539701@97@Semester_3",
+    "code": "1539701",
+    "name": "Strategic Management",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "strategic-management"
+  },
+  {
+    "id": "1539708@97@Semester_3",
+    "code": "1539708",
+    "name": "Supply Chain Analytics",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "supply-chain-analytics"
+  },
+  {
+    "id": "1539707@97@Semester_3",
+    "code": "1539707",
+    "name": "Supply Chain Operations Management",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "supply-chain-operations-management"
+  },
+  {
+    "id": "1539705@97@Semester_3",
+    "code": "1539705",
+    "name": "Supply Chain Planning",
+    "branchId": "97",
+    "semester": 3,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "supply-chain-planning"
+  },
+  {
+    "id": "1549706@97@Semester_4",
+    "code": "1549706",
+    "name": "Designing Operations and Supply Chain",
+    "branchId": "97",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "designing-operations-and-supply-chain"
+  },
+  {
+    "id": "1549702@97@Semester_4",
+    "code": "1549702",
+    "name": "Digital Technologies for e-Logistics",
+    "branchId": "97",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "digital-technologies-for-e-logistics"
+  },
+  {
+    "id": "1549705@97@Semester_4",
+    "code": "1549705",
+    "name": "Global Logistics and Supply Chain Management",
+    "branchId": "97",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "global-logistics-and-supply-chain-management"
+  },
+  {
+    "id": "1549703@97@Semester_4",
+    "code": "1549703",
+    "name": "Regulatory Compliance in Supply Chain and Logistics",
+    "branchId": "97",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "regulatory-compliance-in-supply-chain-and-logistics"
+  },
+  {
+    "id": "1549704@97@Semester_4",
+    "code": "1549704",
+    "name": "Risk Management in Supply Chain and Logistics",
+    "branchId": "97",
+    "semester": 4,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "risk-management-in-supply-chain-and-logistics"
+  },
+  {
+    "id": "MB01098031@98@Semester_1",
+    "code": "MB01098031",
+    "name": "Banking and Insurance",
+    "branchId": "98",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "banking-and-insurance"
+  },
+  {
+    "id": "MB01098011@98@Semester_1",
+    "code": "MB01098011",
+    "name": "Financial Accounting and Reporting",
+    "branchId": "98",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-accounting-and-reporting"
+  },
+  {
+    "id": "MB01098051@98@Semester_1",
+    "code": "MB01098051",
+    "name": "Fundamentals of Data Analysis",
+    "branchId": "98",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-data-analysis"
+  },
+  {
+    "id": "MB01098061@98@Semester_1",
+    "code": "MB01098061",
+    "name": "Indian Knowledge System",
+    "branchId": "98",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "indian-knowledge-system"
+  },
+  {
+    "id": "MB01098041@98@Semester_1",
+    "code": "MB01098041",
+    "name": "Introduction to Fintech",
+    "branchId": "98",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "introduction-to-fintech"
+  },
+  {
+    "id": "MB01098021@98@Semester_1",
+    "code": "MB01098021",
+    "name": "Macro Economics",
+    "branchId": "98",
+    "semester": 1,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "macro-economics"
+  },
+  {
+    "id": "MB02098051@98@Semester_2",
+    "code": "MB02098051",
+    "name": "Business Communication",
+    "branchId": "98",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-communication"
+  },
+  {
+    "id": "MB02098021@98@Semester_2",
+    "code": "MB02098021",
+    "name": "Digital Business Tools Applications for Fintech",
+    "branchId": "98",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "digital-business-tools-applications-for-fintech"
+  },
+  {
+    "id": "MB02098011@98@Semester_2",
+    "code": "MB02098011",
+    "name": "Financial Markets",
+    "branchId": "98",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "financial-markets"
+  },
+  {
+    "id": "MB02098031@98@Semester_2",
+    "code": "MB02098031",
+    "name": "Management Functions",
+    "branchId": "98",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-functions"
+  },
+  {
+    "id": "MB02098041@98@Semester_2",
+    "code": "MB02098041",
+    "name": "Research Methodology and Statistics",
+    "branchId": "98",
+    "semester": 2,
+    "courseCode": "MB",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "research-methodology-and-statistics"
+  }
+]

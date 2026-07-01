@@ -1,0 +1,9 @@
+<option value="Select Branch">Select Branch</option>
+<option value="90">90 - International Business (Online)</option>
+<option value="92">92 - MBA</option>
+<option value="93">93 - MBA(INTERNATIONAL BUSINESS)</option>
+<option value="94">94 - MBA (INNOVATION, ENTREPRENEURSHIP AND VENTURE DEVELOPMENT)</option>
+<option value="95">95 - FINANCIAL MANAGEMENT</option>
+<option value="96">96 - INFORMATION TECHNOLOGY</option>
+<option value="97">97 - MBA(LOGISTICS AND SUPPLY CHAIN MANAGEMENT)</option>
+<option value="98">98 - MBA (FINTECH)</option>

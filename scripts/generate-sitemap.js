@@ -38,6 +38,7 @@ function generateSitemap(catalog) {
   add('', '1.0');
   add('resources/', '0.8');
   add('team/', '0.7');
+  add('campus-ambassador/', '0.7');
 
   for (const course of courses) {
     add(course.code, '0.9');

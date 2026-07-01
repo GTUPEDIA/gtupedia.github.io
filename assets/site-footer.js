@@ -8,6 +8,7 @@
   const links = {
     home: root,
     team: `${root}team/`,
+    ambassador: `${root}campus-ambassador/`,
     resources: `${root}resources/`,
     about: `${root}#about`,
   };
@@ -22,6 +23,7 @@
       </div>
       <nav class="site-footer__links" aria-label="Footer">
         <a href="${links.team}">Team GTUPEDIA</a>
+        <a href="${links.ambassador}">Campus Ambassador</a>
         <a href="${links.resources}">Resources</a>
         <a href="${links.about}">About</a>
         <a href="${links.home}">Home</a>

@@ -237,12 +237,17 @@ function getExamPaperSets() {
   if (state.catalog?.examPapers?.length) return state.catalog.examPapers;
   const sets = [];
   if (state.catalog?.winter2025Papers) sets.push(state.catalog.winter2025Papers);
+  if (state.catalog?.winter2025BbPapers) sets.push(state.catalog.winter2025BbPapers);
   if (state.catalog?.winter2025BcPapers) sets.push(state.catalog.winter2025BcPapers);
-  if (state.catalog?.summer2025BcPapers) sets.push(state.catalog.summer2025BcPapers);
+  if (state.catalog?.winter2025MbPapers) sets.push(state.catalog.winter2025MbPapers);
   if (state.catalog?.summer2025Papers) sets.push(state.catalog.summer2025Papers);
-  if (state.catalog?.winter2024BcPapers) sets.push(state.catalog.winter2024BcPapers);
+  if (state.catalog?.summer2025BcPapers) sets.push(state.catalog.summer2025BcPapers);
+  if (state.catalog?.summer2025MbPapers) sets.push(state.catalog.summer2025MbPapers);
   if (state.catalog?.winter2024Papers) sets.push(state.catalog.winter2024Papers);
+  if (state.catalog?.winter2024BcPapers) sets.push(state.catalog.winter2024BcPapers);
+  if (state.catalog?.winter2024MbPapers) sets.push(state.catalog.winter2024MbPapers);
   if (state.catalog?.summer2024Papers) sets.push(state.catalog.summer2024Papers);
+  if (state.catalog?.summer2024MbPapers) sets.push(state.catalog.summer2024MbPapers);
   if (state.catalog?.winter2023Papers) sets.push(state.catalog.winter2023Papers);
   if (state.catalog?.summer2023Papers) sets.push(state.catalog.summer2023Papers);
   return sets;
@@ -826,24 +831,54 @@ function scoreSimple(text, tokens) {
   return score;
 }
 
-function renderCourses() {
-  const courses = state.catalog.courses || [];
-  if (!courseList) return;
-  courseList.innerHTML = courses.length ? courses.map(course => {
-    const branchCount = getCourseBranches(course.code).length;
-    const subjectCount = (state.catalog.subjects || []).filter(subject => subject.courseCode === course.code).length;
-    const detail = subjectCount
-      ? `${branchCount || 'No'} branch${branchCount === 1 ? '' : 'es'} · ${subjectCount} subjects`
-      : branchCount
-        ? `${branchCount} branch${branchCount === 1 ? '' : 'es'}`
-        : 'Subjects and resources coming soon';
-    return `
-    <a class="branch-card course-card" href="${urlFor({ course: course.code })}">
+function courseHasPapers(courseCode) {
+  return getExamPaperSets().some(
+    paperSet => paperSetCourseCode(paperSet) === courseCode && (paperSet.codes?.length > 0),
+  );
+}
+
+function renderCourseCard(course, { comingSoon = false } = {}) {
+  const branchCount = getCourseBranches(course.code).length;
+  const subjectCount = (state.catalog.subjects || []).filter(subject => subject.courseCode === course.code).length;
+  let detail;
+  if (comingSoon) {
+    detail = 'Exam papers coming soon';
+  } else if (subjectCount) {
+    detail = `${branchCount || 'No'} branch${branchCount === 1 ? '' : 'es'} · ${subjectCount} subjects`;
+  } else if (branchCount) {
+    detail = `${branchCount} branch${branchCount === 1 ? '' : 'es'}`;
+  } else {
+    detail = 'Subjects and resources coming soon';
+  }
+  const extraClass = comingSoon ? ' course-card--soon' : '';
+  return `
+    <a class="branch-card course-card${extraClass}" href="${urlFor({ course: course.code })}">
       <span class="branch-code">${escapeHtml(course.code)}</span>
       <h3>${escapeHtml(formatLabel(course.name))}</h3>
       <p>${escapeHtml(detail)}</p>
     </a>`;
-  }).join('') : '<p class="empty">Course data will appear here once it is imported.</p>';
+}
+
+function renderCourses() {
+  const courses = state.catalog.courses || [];
+  if (!courseList) return;
+  if (!courses.length) {
+    courseList.innerHTML = '<p class="empty">Course data will appear here once it is imported.</p>';
+    return;
+  }
+  const withPapers = courses.filter(course => courseHasPapers(course.code));
+  const withoutPapers = courses.filter(course => !courseHasPapers(course.code));
+  const parts = [];
+  if (withPapers.length) {
+    parts.push(withPapers.map(course => renderCourseCard(course)).join(''));
+  }
+  if (withoutPapers.length) {
+    if (withPapers.length) {
+      parts.push('<div class="course-list-divider" role="separator"><span>Coming soon</span></div>');
+    }
+    parts.push(withoutPapers.map(course => renderCourseCard(course, { comingSoon: true })).join(''));
+  }
+  courseList.innerHTML = parts.join('');
 }
 
 function renderCourse(courseCode) {

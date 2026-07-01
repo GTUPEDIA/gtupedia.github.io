@@ -36,6 +36,38 @@ Edit `library.json` and add entries to the `items` array.
 
 After saving, refresh the resources page. No build step required.
 
+## Blockchain deep-dive track
+
+A curated blockchain learning path lives in `blockchain-curriculum.txt` (one entry per line: `Title | URL | recommended`).
+
+Re-import after edits:
+
+```bash
+node scripts/import-blockchain-resources.js
+```
+
+Filter on the live page: **Resources → Blockchain** topic chip, or `?topic=blockchain`.
+
+## Dead link checker
+
+Check all resource URLs (report only):
+
+```bash
+node scripts/check-resource-urls.js
+```
+
+Remove confirmed dead links from `library.json` (also updates `blockchain-curriculum.txt` and a blocklist so re-imports skip them):
+
+```bash
+node scripts/check-resource-urls.js --remove
+```
+
+Optional flags: `--limit 50` (test run), `--verbose`, `--concurrency 6`.
+
+Reports are written to `url-check-report.json`. Removed URLs are logged in `url-check-removed.json`.
+
+**Note:** Some sites return 403 to automated checks but work in a browser — those are kept. Only clear failures (404, DNS errors, timeouts) are removed.
+
 ## Old CEV library
 
 The previous Cutting Edge Visionaries site is archived in `../old/`.

@@ -1,0 +1,315 @@
+# Blockchain deep-dive curriculum (community curated)
+
+## Introduction
+
+Introduction to Cryptography (Coursera, Stanford, Dan Boneh) | https://www.coursera.org/learn/crypto | recommended
+Boneh, Shoup — A Graduate Course in Applied Cryptography | https://crypto.stanford.edu/~dabo/cryptobook/draft_0_3.pdf
+The Cryptopals Crypto Challenges | https://cryptopals.com/
+Praetorian Tech Challenges | https://www.praetorian.com/challenges
+
+## White papers
+
+Bitcoin: A Peer-to-Peer Electronic Cash System | https://bitcoin.org/bitcoin.pdf | recommended
+The idea of smart contracts (Nick Szabo) | http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html
+
+## Fundamentals & demos
+
+Learn Blockchain By Building Your Own In JavaScript | https://github.com/erictraub/Learn-Blockchain-By-Building-Your-Own-In-JavaScript
+Learn Blockchain By Building Your Own (dvf) | https://github.com/dvf/blockchain
+Blockchain Demo | https://blockchaindemo.io/
+Minimal Blockchain Learning CLI | https://github.com/daxeel/blockshell
+Coin Demo | https://coindemo.io/
+
+## Videos
+
+How does a blockchain work? | https://www.youtube.com/watch?v=SSo_EIwHSd4 | recommended
+Blockchain Basics Explained — Hashes with Mining and Merkle tree | https://www.youtube.com/watch?v=lik9aaFIsl4
+Proof-of-Stake vs Proof-of-Work | https://www.youtube.com/watch?v=M3EFi_POhps
+Smart Contracts | https://www.youtube.com/watch?v=ZE2HxTmxfrI
+Learn Blockchain in 2 Months | https://www.youtube.com/watch?v=wVVGv2bmxow
+Bitcoin explained and made simple | https://www.youtube.com/watch?v=s4g1XFU8Gto
+The Essence of How Bitcoin Works | https://www.youtube.com/watch?v=t5JGQXCTe3c
+Blockchain University — Bitcoin & the Blockchain: An Introduction | https://www.youtube.com/watch?v=ZUoXUW9zVMs
+Bitcoin 101 — What is Bitcoin? | https://www.youtube.com/watch?v=Bhe61JaNFLU
+Blockchain University — Bitcoin Keys Addresses and Wallets | https://www.youtube.com/watch?v=Ic76iSnCb_0
+Bitcoin Sidechains | https://www.youtube.com/watch?v=6sXNVIaNL2Y
+How Bitcoin Works in 5 Minutes | https://www.youtube.com/watch?v=l9jOJk30eQs
+How Bitcoin Works Under the Hood | https://www.youtube.com/watch?v=Lx9zgZCMqXE
+Mechanics of Bitcoin | https://www.youtube.com/watch?v=t3hJsFpPmXs
+Programming Bitcoin (channel) | https://www.youtube.com/user/programmingbitcoin
+Coding Multi-Signature Addresses | https://www.youtube.com/watch?v=zIbUSaZBJgU
+Ever wonder how Bitcoin actually works? | https://www.youtube.com/watch?v=bBC-nXj3Ng4 | recommended
+Ultimate Introduction to Ethereum Dapp Development (playlist) | https://www.youtube.com/playlist?list=PLV1JDFUtrXpFh85G-Ddyy2kLSafaB9biQ
+Introduction to Smart Contract Development with Solidity (playlist) | https://www.youtube.com/playlist?list=PLV1JDFUtrXpGvu8QHL9b78WYNSJsYNZsb
+Ethereum in 25 minutes | https://youtu.be/66SaEDzlmP4
+Cryptographic hash function | https://youtu.be/0WiTaBI82Mc
+How the U.S. government used blockchain to fight fraud | https://youtu.be/507wn9VcSAE
+Ethereum the world computer | https://www.youtube.com/watch?v=j23HnORQXvs
+Vitalik Buterin explains Ethereum | https://www.youtube.com/watch?v=TDGq4aeevgY
+Joseph Lubin's interview on building decentralized applications | https://www.youtube.com/watch?v=MgLmY9oedTM
+BBC explains Ethereum | https://www.youtube.com/watch?v=0X33lgMbvdI
+TechCrunch on Ethereum | https://www.youtube.com/watch?v=WfULutvxvzY
+Blockchain governance (video) | https://youtu.be/9RtSod8EXn4
+The importance of layer two | https://youtu.be/3PcR4HWJnkY
+Devcon3 panel on formal verification | https://youtu.be/DrDIcirrhWM
+IBM blockchain car use case | https://www.youtube.com/watch?v=IgNfoQQ5Reg
+Real life blockchain use cases | https://youtu.be/cHe_ow9v094
+
+## Books
+
+Mastering Bitcoin 2nd Edition — Programming the Open Blockchain | https://github.com/bitcoinbook/bitcoinbook | recommended
+Mastering Ethereum | https://github.com/ethereumbook/ethereumbook | recommended
+
+## Ethereum & smart contracts
+
+Ethereum Docs (legacy ethdocs) | http://www.ethdocs.org/en/latest/
+How does Ethereum work, anyway? | https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
+Web3 Documentation | https://web3js.readthedocs.io/en/1.0/
+Time-locked Wallets: Introduction to Ethereum Smart Contracts | https://www.toptal.com/ethereum-smart-contract/time-locked-wallet-truffle-tutorial
+The Ultimate ENS and DApp Tutorial | https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial
+Learn Solidity | https://github.com/willitscale/learning-solidity
+Consensys Smart Contract Best Practices | https://consensys.github.io/smart-contract-best-practices/ | recommended
+Solidity Patterns | https://github.com/fravoll/solidity-patterns
+Solidity By Example | https://solidity.readthedocs.io/en/latest/solidity-by-example.html
+
+## Dapps & Solidity
+
+Cryptozombies — interactive Dapp learning | https://cryptozombies.io/ | recommended
+What is Solidity? | https://en.wikipedia.org/wiki/Solidity
+Solidity Documentation | https://solidity.readthedocs.io/en/latest/
+Solidity Cheatsheet | https://github.com/manojpramesh/solidity-cheatsheet
+Remix — Solidity IDE | https://remix.ethereum.org/
+
+## Hyperledger
+
+Hyperledger | https://www.hyperledger.org/
+Hyperledger Fabric documentation | https://github.com/hyperledger/fabric#documentation-getting-started-and-developer-guides
+
+## GitHub collections
+
+Blockchain technology topic (GitHub) | https://github.com/topics/blockchain-technology
+Blockchain projects topic (GitHub) | https://github.com/topics/blockchain
+Awesome Blockchain AI | https://github.com/steven2358/awesome-blockchain-ai
+
+## Tutorials & code examples
+
+The libbitcoin Tutorial | https://libbitcoin.dyne.org/doc/
+How to Parse the Bitcoin Blockchain | http://codesuppository.blogspot.com/2014/01/how-to-parse-bitcoin-blockchain.html
+Signing Offline Transactions (gist) | https://gist.github.com/jashmenn/9811205
+Escrow Example (gist) | https://gist.github.com/jashmenn/9811198
+Multisig Example (gist) | https://gist.github.com/jashmenn/9811185
+How to decrypt messages in the blockchain from btcmsg | https://gist.github.com/ripper234/1625828
+
+## Sidechains
+
+Sidechains, Treechains, the TL;DR | http://blog.greenaddress.it/2014/06/13/sidechains-treechains-the-tldr/
+Side Chains: The How, The Challenges and The Potential | http://bitcoinmagazine.com/12349/side-chains-challenges-potential/
+Sidechain Technical Feasibility Discussion | https://bitcointalk.org/index.php?topic=566704.0;all
+Alternative Chains/Merged Mining | https://en.bitcoin.it/wiki/Alternative_Chains
+The Initial Two-Way Pegging Proposal | http://sourceforge.net/p/bitcoin/mailman/message/32108143/
+Blockstream — Enabling Blockchain Innovations with Pegged Sidechains | https://www.blockstream.com/sidechains.pdf
+Tree-chains Preliminary Summary | http://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg04388.html
+Sidechain Elements Projects | https://github.com/ElementsProject/elementsproject.github.io/
+A Treatise on Altcoins | https://download.wpsoftware.net/bitcoin/alts.pdf
+How to Clone Scrypt Based Altcoins | http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide&rev=1391981820
+
+## Slides, infographics & blogs
+
+Keccak256 slides | https://www.slideshare.net/RajeevVerma14/keccakpptx
+A beginner's guide to Ethereum (Coinbase) | https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf
+An Introduction to Ethereum and Smart Contracts (Auth0) | https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/
+Dapps 101: How do I start developing on Ethereum? | https://blog.andreacoravos.com/dapps-101-how-do-i-start-developing-on-ethereum-da0d38ed973f
+Bitcoin Network Effects | http://blog.eladgil.com/2017/12/bitcoin-network-effects_11.html
+The quiet master of cryptocurrency (Nick Szabo) | https://tim.blog/2017/06/04/nick-szabo/
+Money, blockchains, and social scalability | http://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html
+
+## Reddit & community
+
+Reddit — r/ethdev | https://www.reddit.com/r/ethdev/
+Reddit — r/ethereumnoobies | https://www.reddit.com/r/ethereumnoobies/
+ELI5: What is Ethereum? | https://www.reddit.com/r/ethereum/comments/60hhjm/eli5_what_is_ethereum/
+Learning to Code in Ethereum | https://www.reddit.com/r/ethereum/comments/4z4y81/any_advice_on_learning_to_code_in_ethereum/
+
+## Courses
+
+Cryptocurrency (Stanford, Susan Athey & Kathryn Haun) | http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MGTECON%20515:%20Cryptocurrency&academicYear=20172018
+Bitcoin and Cryptocurrency Technologies (Princeton) | https://piazza.com/princeton/spring2015/btctech/home | recommended
+Advanced topics: Bitcoin and cryptocurrency technologies (2014) | http://randomwalker.info/teaching/fall-2014-bitcoin/
+
+## Articles — fundamentals
+
+Understanding Blockchain Fundamentals Part 1: Byzantine Fault Tolerance | https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419
+Understanding Blockchain Fundamentals Part 2: PoW & PoS | https://medium.com/loom-network/understanding-blockchain-fundamentals-part-2-proof-of-work-proof-of-stake-b6ae907c7edb
+Cryptocurrency (Wikipedia) | https://en.wikipedia.org/wiki/Cryptocurrency
+Peer-to-Peer (Wikipedia) | https://en.wikipedia.org/wiki/Peer-to-peer
+Blockchain 101 (CoinDesk) | https://www.coindesk.com/information/
+Smart Contract (Wikipedia) | https://en.wikipedia.org/wiki/Smart_contract
+Decentralized Computing (Wikipedia) | https://en.wikipedia.org/wiki/Decentralized_computing
+What is Bitcoin? (CoinDesk) | https://www.coindesk.com/information/what-is-bitcoin/
+What is Bitcoin? (CNN infographic) | https://money.cnn.com/infographic/technology/what-is-bitcoin/
+The Impact of the Blockchain Goes Beyond Financial Services (HBR) | https://hbr.org/2016/05/the-impact-of-the-blockchain-goes-beyond-financial-services
+Developer's Introduction to Bitcoin | https://bitcoinmagazine.com/articles/developers-introduction-bitcoin-1388634312/
+How Bitcoin Works Under the Hood (blog) | http://www.imponderablethings.com/2013/07/how-bitcoin-works-under-hood.html
+Bitcoins the hard way: Using the raw Bitcoin protocol | http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html
+Bitcoin mining the hard way | http://www.righto.com/2014/02/bitcoin-mining-hard-way-algorithms.html
+How the Bitcoin protocol actually works | http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/
+Velocity of Tokens | https://medium.com/newtown-partners/velocity-of-tokens-26b313303b77
+Inside an Ethereum Transaction | https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f
+WTF is the blockchain? | https://hackernoon.com/wtf-is-the-blockchain-1da89ba19348
+Decrypting crypto (a16z summit) | https://a16z.com/2017/12/08/summit-crypto-alex-rampell/
+The blockchain economy: a beginner's guide | https://medium.com/@cryptoeconomics/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics-64bf2f2beec4
+Basic terminology for Ethereum | https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe
+Beginner's guide series on cryptoassets (Linda Xie) | https://medium.com/@linda.xie/beginners-guide-series-on-cryptoassets-d897535d887
+Why bitcoin matters (NYT) | https://dealbook.nytimes.com/2014/01/21/why-bitcoin-matters/
+Bitcoin's academic pedigree | https://queue.acm.org/detail.cfm?id=3136559
+Beyond the bitcoin bubble | https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html
+Crypto tokens: A breakthrough in open network design | https://medium.com/@cdixon/crypto-tokens-a-breakthrough-in-open-network-design-e600975be2ef
+Fat protocols | https://www.usv.com/blog/fat-protocols
+Cryptocurrencies, app coins, and investing in protocols | https://a16z.com/2017/04/03/cryptocurrencies-protocols-appcoins/
+Getting applications into people's hands | https://a16z.com/2017/09/14/networks-protocols-labs-tokens/
+Blockchain: what is it good for? | http://freedom-to-tinker.com/2018/02/26/blockchain-what-is-it-good-for/
+Keepers: workers that maintain blockchain networks | https://medium.com/@rzurrer/keepers-workers-that-maintain-blockchain-networks-a40182615b66
+Why crypto tokens matter | https://a16z.com/2017/09/28/cryptocurrencies-networks-tokens/
+What do we mean by blockchains are trustless? | https://medium.com/@preethikasireddy/eli5-what-do-we-mean-by-blockchains-are-trustless-aa420635d5f6
+Why decentralization matters | https://medium.com/@cdixon/why-decentralization-matters-5e3f79f7638e
+The meaning of decentralization (Vitalik) | https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274
+The truth about blockchain (HBR) | https://hbr.org/2017/01/the-truth-about-blockchain
+Vitalik Buterin — Unchained podcast | https://itunes.apple.com/us/podcast/unchained-big-ideas-from-worlds-blockchain-cryptocurrency/id1123922160
+Mental models for understanding tokens | https://a16z.com/2018/01/21/mental-models-tokens-crypto-trends/
+
+## Governance
+
+An overview of governance in blockchains | https://www.docdroid.net/ddz6VzP/overview-governance-blockchains-nc-zcon.pdf
+Governance deep dive | https://docs.google.com/presentation/d/10cLFnYaR0r58DyPVYwMgJq3nJOFVkO02hxJf1hxGnJ0/edit?usp=sharing
+The myth of the irrational token holder | https://medium.com/@kathleenbreit/the-myth-of-the-irrational-token-holder-c12438709afd
+Blockchain governance / governance 101 | https://medium.com/@FEhrsam/blockchain-governance-programming-our-future-c3bfe30f2d74
+Against on-chain governance | https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca
+
+## Privacy & security
+
+Privacy on the blockchain | https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/
+How to secure your smart contracts Part 1 | https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d
+How to secure your smart contracts Part 2 | https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834
+Town Crier: authenticated data feed for smart contracts | https://eprint.iacr.org/2016/168.pdf
+What are zk-SNARKs? | https://z.cash/technology/zksnarks.html
+zk-SNARKs: under the hood (Vitalik series) | https://medium.com/@VitalikButerin/zk-snarks-under-the-hood-b33151a013f6
+Scalable post-quantum secure computational integrity | https://eprint.iacr.org/2018/046.pdf
+Succinct non-interactive zero knowledge | https://eprint.iacr.org/2013/879.pdf
+
+## Scaling
+
+Blockchains don't scale | https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a
+Models for scaling trustless computation | https://multicoin.capital/2018/02/23/models-scaling-trustless-computation/
+What is the Lightning Network? | https://coincenter.org/entry/what-is-the-lightning-network
+Making sense of Ethereum Layer 2 scaling | https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4
+Scaling Tezos | https://hackernoon.com/scaling-tezo-8de241dd91bd
+Ethereum scalability R&D subsidy programs | https://blog.ethereum.org/2018/01/02/ethereum-scalability-research-development-subsidy-programs/
+Ethereum sharding: overview and finality | https://medium.com/@icebearhww/ethereum-sharding-and-finality-65248951f649
+
+## Consensus
+
+A proof of stake design philosophy | https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51
+Delegated proof of stake: features and tradeoffs | https://multicoin.capital/2018/03/02/delegated-proof-stake-features-tradeoffs/
+Seeking consensus on consensus | https://steemit.com/eos/@iang/seeking-consensus-on-consensus-dpos-or-delegated-proof-of-stake-and-the-two-generals-problem
+Ethereum Casper 101 | https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0
+The history of Casper Part 1 | https://medium.com/@Vlad_Zamfir/the-history-of-casper-part-1-59233819c9a9
+Inflation and participation in stake-based token protocols | https://medium.com/@petkanics/inflation-and-participation-in-stake-based-token-protocols-1593688612bf
+
+## Cryptoeconomics & investing
+
+Making sense of cryptoeconomics | https://hackernoon.com/making-sense-of-cryptoeconomics-5edea77e4e8d
+A crash course in mechanism design for cryptoeconomic applications | https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976
+The security token thesis | https://hackernoon.com/the-security-token-thesis-4c5904761063
+Cryptoasset valuations | https://medium.com/@cburniske/cryptoasset-valuations-ac83479ffca7
+Comments on investor take (tweetstorm) | https://twitter.com/KyleSamani/status/943277077037506560
+On value, velocity, and monetary theory | https://medium.com/blockchannel/on-value-velocity-and-monetary-theory-a-new-approach-to-cryptoasset-valuations-32c9b22e3b6f
+Understanding token velocity | https://multicoin.capital/2017/12/08/understanding-token-velocity/
+Token classification framework | http://www.untitled-inc.com/the-token-classification-framework-a-multi-dimensional-tool-for-understanding-and-classifying-crypto-tokens/
+Skin-in-the-game coins | https://medium.com/tbis-weekly-bits/skin-in-the-game-coins-da0afdfdc650
+
+## Fundraising & token distribution
+
+Funding the evolution of blockchains | https://medium.com/@FEhrsam/funding-the-evolution-of-blockchains-87d160988481
+How to make bonding curves | https://hackernoon.com/how-to-make-bonding-curves-for-continuous-token-models-3784653f8b17
+Explanation of DAICOs | https://ethresear.ch/t/explanation-of-daicos/465
+The SAFT Project | https://saftproject.com/
+Regulatory environment (Coin Center) | https://coincenter.org/our-work
+
+## Decentralized exchanges & stablecoins
+
+Networked liquidity | https://medium.com/radarrelay/networked-liquidity-2030d85af897
+List of decentralized exchanges | https://github.com/PYMERVAL/decentradexchange
+An overview of stablecoins | https://multicoin.capital/2018/01/17/an-overview-of-stablecoins/
+The search for a stable cryptocurrency | https://blog.ethereum.org/2014/11/11/search-stable-cryptocurrency/
+Maker for dummies: Dai stablecoin explained | https://medium.com/cryptolinks/maker-for-dummies-a-plain-english-explanation-of-the-dai-stablecoin-e4481d79b90
+
+## NFTs, TCRs & curation markets
+
+The emergence of cryptoeconomic primitives | https://medium.com/@jacobscott/the-emergence-of-cryptoeconomic-primitives-14ef3300cc10
+Token lexicon | https://medium.com/@billyrennekamp/token-lexicon-b4ed9a4ce363
+Smart media tokens whitepaper | https://smt.steem.io/smt-whitepaper.pdf
+Digital pets that don't die | https://elaineou.com/2017/12/03/digital-pets-that-dont-die/
+Will cryptocurrencies be the art market's next big thing? | https://www.nytimes.com/2018/01/13/arts/cryptocurrency-art-market.html
+Digital collectibles and digibles | https://hackernoon.com/digital-collectibles-and-the-weird-future-of-digibles-f75f4bf0f9aa
+Cryptocollectibles are XLNT | https://medium.com/xlnt-art/cryptocollectibles-are-xlnt-but-nobody-knows-whats-next-a7892b311637
+Rare pepe | http://avc.com/2017/05/rare-pepe/
+Introducing curation markets | https://medium.com/@simondlr/introducing-curation-markets-trade-popularity-of-memes-information-with-code-70bf6fed9881
+Curation markets (tweetstorm) | https://twitter.com/FEhrsam/status/958388803655184386
+Early UIs for curation markets | https://twitter.com/jessewldn/status/958733889643696128
+Token curated registries | https://medium.com/@ilovebagels/token-curated-registries-1-0-61a232f8dac7
+TCR design patterns | https://medium.com/coinmonks/token-curated-registry-tcr-design-patterns-4de6d18efa15
+Building Google for the economic web | https://blog.userfeeds.io/building-google-for-the-economic-web-on-the-ethereum-blockchain-de27cb3d23b
+
+## Developer guides
+
+How to code your own CryptoKitties-style game | https://medium.com/loom-network/how-to-code-your-own-cryptokitties-style-game-on-ethereum-7c8ac86a4eb3
+Learning Solidity — voting example | https://karl.tech/learning-solidity-part-2-voting/
+zkSNARKs: driver's ed | https://github.com/jstoxrocky/zksnarks_example
+Epicenter podcast | https://epicenter.tv/episodes/
+The Ceremony (Radiolab) | http://www.radiolab.org/story/ceremony/
+
+## Use cases
+
+Qatar blockchain pilot for money transfers | http://www.gtreview.com/news/mena/qatar-completes-blockchain-pilot-for-international-money-transfers/
+DARPA blockchain contract (Galois) | https://qz.com/801640/darpa-blockchain-a-blockchain-from-guardtime-is-being-verified-by-galois-under-a-government-contract/
+Abu Dhabi Securities Exchange on blockchain | https://www.cryptocoinsnews.com/abu-dhabi-securities-exchange-chief-big-blockchain/
+Blockchain in music industry (HBR) | https://hbr.org/2017/03/blockchain-could-help-artists-profit-more-from-their-creative-works
+Blockchain for smart cities (WEF) | https://www.weforum.org/agenda/2016/12/this-is-how-blockchain-will-change-the-face-of-our-cities/
+Using blockchain to keep public data public | https://hbr.org/2017/03/using-blockchain-to-keep-public-data-public
+How utilities use blockchain to modernize the grid | https://hbr.org/2017/03/how-utilities-are-using-blockchain-to-modernize-the-grid
+Blockchain in travel sector | https://www.forbes.com/sites/forbesfinancecouncil/2017/03/28/how-blockchain-technology-will-dominate-the-travel-sector/
+Blockchain for healthcare prescription costs | https://bitcoinmagazine.com/articles/could-there-be-blockchain-solution-high-prescription-drug-prices/
+Kotak Mahindra blockchain trade financing | http://www.econotimes.com/Indian-Kotak-Mahindra-Bank-launches-end-to-end-blockchain-based-trade-financing-707067
+SAP blockchain service in the cloud | http://www.cnbc.com/2017/05/17/sap-unveils-blockchain-service-in-the-cloud.html
+Wipro blockchain push | http://cio.economictimes.indiatimes.com/news/enterprise-services-and-applications/wipros-big-blockchain-push-across-sectors-with-the-launch-of-nine-solutions/58713030
+Irish banks blockchain payments pilot | http://www.coindesk.com/big-four-irish-banks-join-blockchain-payments-pilot/
+Luxembourg blockchain ID platform | http://www.coindesk.com/luxembourg-government-backed-firm-to-launch-blockchain-id-platform/
+Blockchain in film industry | https://www.linkedin.com/pulse/blockchain-technology-film-industry-use-case-paul-forrest
+Dubai aims to be a city built on blockchain | https://www.wsj.com/articles/dubai-aims-to-be-a-city-built-on-blockchain-1493086080
+South Korea blockchain insurance pilot | https://www.cryptocoinsnews.com/south-korea-backs-worlds-first-blockchain-pilot-insurance-payments-seoul/
+Blockchain vs WannaCry/Petya | http://www.informationsecuritybuzz.com/articles/countering-wannacry-petya-blockchain-technology/
+HSBC blockchain digital trade chain | http://www.businessinsider.com/blockchain-digital-trade-chain-ibm-hyperledger-deutsche-bank-hsbc-soc-gen-2017-6
+Blockchain could help musicians make money | https://hbr.org/2017/06/blockchain-could-help-musicians-make-money-again
+Blockchain for cyber security | http://www.financialexpress.com/industry/technology/ransomware-after-petya-attack-eyes-turn-to-blockchain-for-a-way-out/740359/
+Indian blockchain consortium BankChain | http://www.econotimes.com/Indian-blockchain-consortium-BankChain-ropes-in-Microsoft-as-exclusive-cloud-partner-752108
+Singapore tokenizes fiat on blockchain | https://bitcoinmagazine.com/articles/future-here-singapore-tokenizes-fiat-currency-blockchain/
+Blockchain for genomic data privacy | https://www.cryptocoinsnews.com/blockchain-solution-ensures-privacy-of-genomic-data-while-granting-access-for-medical-research/
+Dubai gate-less airport security with blockchain | http://www.coindesk.com/dubai-plans-gate-less-airport-security-using-blockchain-tech/
+First quantum-secured blockchain tested in Moscow | https://www.technologyreview.com/s/608041/first-quantum-secured-blockchain-technology-tested-in-moscow/
+Blockchain could help save the environment | https://futurism.com/blockchain-could-help-save-environment-heres-how/
+Samsung SDS blockchain consortium in Korea | http://www.econotimes.com/Samsung-SDS-launches-blockchain-consortium-in-Korea-733267
+How the decentralized web will rewrite security | https://hackernoon.com/how-the-decentralized-web-will-rewrite-the-rules-of-security-and-save-the-net-from-the-barbarian-23db16af34a1
+Singapore shipping IBM blockchain trial | https://siliconangle.com/blog/2017/08/16/singapore-shipping-giants-sign-deal-ibm-blockchain-supply-chain-trial/
+Blockchain idbox pilot in remote PNG village | https://www.linkedin.com/pulse/blockchain-idbox-pilot-success-remote-png-village-dr-jane-thomason
+Hardware integrity check (Google patent) | http://www.google.com/patents/US20160275461
+Australian students explore Bitcoin | https://news.bitcoin.com/australian-primary-school-students-explore-bitcoin-and-cryptocurrency-technology/
+Malta blockchain revolution | http://www.maltatoday.com.mt/business/business_news/79185/malta_lays_the_ground_for_a_blockchain_revolution
+Blockchain in education (Open University) | http://blockchain.open.ac.uk
+Blockchain predictions 2018 | https://www.linkedin.com/pulse/blockchain-predictions-2018-linas-beli%C5%ABnas
+South Korean blockchain authentication service | https://cryptovest.com/news/south-korean-consortium-launches-blockchain-based-authentication-service/
+Seafood supply chain and modern slavery | https://www.forbes.com/sites/alexcapri/2018/02/14/how-blockchain-could-help-end-modern-day-slavery-in-asias-exploitative-seafood-industry/
+Pharmaceutical logistics blockchain PoC | http://www.computerweekly.com/news/252436653/Proof-of-concept-shows-blockchain-could-save-lives-in-pharmaceutical-logistics
+KYC using blockchain | https://blogs.thomsonreuters.com/financial-risk/financial-crime/kyc-using-blockchain-answer-banks/
+Manipal student uses blockchain for medical records | https://bangaloremirror.indiatimes.com/news/state/manipal-student-uses-blockchain-for-medical-records/articleshow/64860327.cms
+IBM food traceability in Finland | https://www.ibm.com/blogs/blockchain/2018/07/this-summer-fishing-in-finland-means-food-traceability-on-the-menu/
+PwC audit service for blockchain | https://www.ccn.com/pwc-to-provide-audit-service-for-blockchain-to-stimulate-adoption/

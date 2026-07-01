@@ -1,0 +1,1169 @@
+{
+  "checkedAt": "2026-07-01T13:04:13.891Z",
+  "total": 524,
+  "ok": 359,
+  "blocked": 63,
+  "unstable": 4,
+  "dead": 98,
+  "deadItems": [
+    {
+      "id": "introductory-intermediate-advanced-c-microsoft-recommen-b59385",
+      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Advanced",
+      "url": "https://www.edx.org/course/advanced-c-2",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "introductory-intermediate-advanced-c-microsoft-recommen-9c77c3",
+      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Intermediate",
+      "url": "https://www.edx.org/course/intermediate-c-microsoft-dev210-2x",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "introductory-intermediate-advanced-c-microsoft-recommen-c0b4a6",
+      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Introductory",
+      "url": "https://www.edx.org/course/introduction-c-microsoft-dev210x-5",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "https-www-edx-org-micromasters-pennx-robotics-f91b80",
+      "title": "https://www.edx.org/micromasters/pennx-robotics",
+      "url": "https://www.edx.org/micromasters/pennx-robotics",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "masterclass-chris-hadfield-teaches-space-exploration-dr-eb0358",
+      "title": "MasterClass - Chris Hadfield teaches Space Exploration — [Drive Link] (Edureka!)",
+      "url": "https://drive.google.com/open?id=16_fpDrEz0bPaLNVMy7oZ-eqJfzYUybzS",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "cryptography-ii-course-coursera-efacbe",
+      "title": "Cryptography II [Course] (Coursera)",
+      "url": "https://www.coursera.org/learn/crypto2",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "data-world-kaggle-datasets-pytorch-standard-datasets-da-bd03b6",
+      "title": "data.world Kaggle Datasets PyTorch Standard Datasets DATAHUB Academic Torrents — PyTorch Standard Datasets",
+      "url": "https://pytorch.org/docs/master/torchvision/datasets.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "fastai-course-video-youtube-player-jeremy-howard-past-p-414713",
+      "title": "FastAi — Course Video (Youtube Player) (Jeremy Howard (past President- Kaggle ))",
+      "url": "https://course.fast.ai/videos/?lesson=1",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "in-india-we-aren-t-performing-something-like-that-but-b-86e06c",
+      "title": "In India, we aren't performing something like that, but, but surely for nuclear research we have pioneering: The BARC India is the top wo...",
+      "url": "http://www.barc.gov.in/reactor/ahwr.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "introduction-to-js-udacity-book-you-don-t-know-js-up-go-7e87e7",
+      "title": "Introduction To JS-Udacity — BOOK:You Don't Know JS(Up & Going) (School Of Programming-Udacity)",
+      "url": "https://github.com/getify/You-Dont-Know-JS/tree/master/up%20%26%20going",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "pet-shop-tutorial-https-truffleframework-com-tutorials--21eaf9",
+      "title": "Pet-Shop Tutorial — https://truffleframework.com/tutorials/pet-shop",
+      "url": "https://truffleframework.com/tutorials/pet-shop",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "software-security-course-coursera-006548",
+      "title": "Software Security [Course] (Coursera)",
+      "url": "https://www.coursera.org/learn/software-security",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "unpacking-the-ethereum-stack-for-developers-https-blog--037ca5",
+      "title": "Unpacking The Ethereum Stack For Developers — https://blog.b9lab.com/unpacking-the-ethereum-stack-for-developers-c1be1dc41c06",
+      "url": "https://blog.b9lab.com/unpacking-the-ethereum-stack-for-developers-c1be1dc41c06",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "introduction-to-blockchain-basic-definitions-key-terms-3fe5e9",
+      "title": "Introduction to Blockchain — Basic Definitions & Key Terms",
+      "url": "https://blockchainhub.net/blockchain-glossary/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "cryptography-services-challenges-bedceb",
+      "title": "Cryptography Services Challenges",
+      "url": "http://cryptoservices.github.io/challenges/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ethereum-white-paper-a8345b",
+      "title": "Ethereum White-Paper",
+      "url": "https://github.com/ethereum/wiki/wiki/White-Paper",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ethereum-a-secure-decentralised-generalised-transaction-aedec2",
+      "title": "Ethereum: A Secure Decentralised Generalised Transaction Ledger",
+      "url": "http://gavwood.com/paper.pdf",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "the-byzantine-generals-problem-f8f8b0",
+      "title": "The Byzantine Generals Problem",
+      "url": "https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "the-agoric-papers-series-e29123",
+      "title": "The Agoric papers series",
+      "url": "https://e-drexler.com/d/09/00/AgoricsPapers/agoricpapers.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "what-is-blockchain-ae28de",
+      "title": "What is Blockchain?",
+      "url": "https://blockchainhub.net/blockchain-intro/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "visual-demonstration-of-blockchain-f78f19",
+      "title": "Visual demonstration of blockchain",
+      "url": "https://anders.com/blockchain/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-technology-books-curated-list-d45ca6",
+      "title": "Blockchain technology books (curated list)",
+      "url": "https://blockchainhub.net/blockchain-technology/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "what-is-ethereum-c58edc",
+      "title": "What is Ethereum?",
+      "url": "https://blockgeeks.com/guides/what-is-ethereum/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "smart-contracts-development-hitchhiker-s-guide-9d4c8f",
+      "title": "Smart Contracts Development — Hitchhiker's Guide",
+      "url": "https://blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "truffle-documentation-43e82c",
+      "title": "Truffle Documentation",
+      "url": "https://truffleframework.com/docs",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "smartcheck-smart-contract-vulnerability-checker-197437",
+      "title": "SmartCheck — smart contract vulnerability checker",
+      "url": "https://tool.smartdec.net/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ethereum-clients-wiki-02817e",
+      "title": "Ethereum Clients (wiki)",
+      "url": "https://github.com/ethereum/wiki/wiki/Clients,-tools,-dapp-browsers,-wallets-and-other-projects",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "truffle-smart-contract-deployment-2bdad7",
+      "title": "Truffle — Smart Contract Deployment",
+      "url": "https://truffleframework.com/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "web3-javascript-api-wiki-9a5d21",
+      "title": "Web3 JavaScript API (wiki)",
+      "url": "https://github.com/ethereum/wiki/wiki/JavaScript-API",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "json-rpc-api-5dd142",
+      "title": "JSON RPC API",
+      "url": "https://github.com/ethereum/wiki/wiki/JSON-RPC",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "dapp-insight-44c12a",
+      "title": "Dapp Insight",
+      "url": "https://dappinsight.com/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ask-dr-bitcoin-what-are-side-chains-e09b94",
+      "title": "Ask Dr. Bitcoin: What are Side-Chains",
+      "url": "https://siliconangle.com/2014/04/21/bitcoin-sidechains/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "introduction-to-sidechains-and-blockchain-2-0-8faef0",
+      "title": "Introduction To Sidechains and Blockchain 2.0",
+      "url": "https://www.deepdotweb.com/2014/06/26/sidechains-blockchain-2-0/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-slides-03c50e",
+      "title": "Blockchain slides",
+      "url": "https://blockchainhub.net/slides/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-infographics-bf9887",
+      "title": "Blockchain infographics",
+      "url": "https://blockchainhub.net/infographics/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-blogs-d86a82",
+      "title": "Blockchain blogs",
+      "url": "https://blockchainhub.net/blog/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "why-it-s-hard-to-get-bitcoin-the-blockchain-spectrum-410736",
+      "title": "Why it's hard to get bitcoin: the blockchain spectrum",
+      "url": "https://blog.unchained-capital.com/blockchain-spectrum-806847e1c575",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-news-7853ff",
+      "title": "Blockchain News",
+      "url": "https://blockchainhub.net/blockchain-news/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-deep-dive-9e5ee0",
+      "title": "Blockchain Deep Dive",
+      "url": "https://blockchainhub.net/blockchain-deep-dive/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ethereum-glossary-713966",
+      "title": "Ethereum Glossary",
+      "url": "https://github.com/ethereum/wiki/wiki/Glossary",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "a-graduate-course-in-applied-cryptography-2017-2018-41be9d",
+      "title": "A graduate course in applied cryptography (2017–2018)",
+      "url": "http://toc.cryptotextbook.net/home",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ibm-blockchain-foundation-for-developers-6095ad",
+      "title": "IBM — Blockchain Foundation for Developers",
+      "url": "https://www.coursera.org/learn/ibm-blockchain-essentials-for-developers",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "nptel-blockchain-architecture-design-and-use-cases-fe6a3f",
+      "title": "NPTEL — Blockchain Architecture Design and Use Cases",
+      "url": "https://onlinecourses.nptel.ac.in/noc18_cs47/preview",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockgeeks-courses-0fad02",
+      "title": "Blockgeeks courses",
+      "url": "https://courses.blockgeeks.com/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "b9lab-academy-deee58",
+      "title": "B9lab Academy",
+      "url": "https://academy.b9lab.com/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "programming-bitcoin-transaction-scripts-195b86",
+      "title": "Programming Bitcoin Transaction Scripts",
+      "url": "https://docs.google.com/document/d/1D_gi_7Sf9sOyAHG25cMpOO4xtLq3iJUtjRwcZXFLv1E/edit",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-oracles-explained-23421b",
+      "title": "Blockchain Oracles, Explained",
+      "url": "https://cointelegraph.com/explained/blockchain-oracles-explained",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "gas-ethgas-io-975ea3",
+      "title": "Gas (ethgas.io)",
+      "url": "https://ethgas.io/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "diving-into-the-ethereum-vm-fac35c",
+      "title": "Diving Into the Ethereum VM",
+      "url": "https://blog.qtum.org/diving-into-the-ethereum-vm-6e8d5d2f3c30",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "an-introduction-to-crypto-a16z-970064",
+      "title": "An introduction to crypto (a16z)",
+      "url": "https://a16z.com/2018/05/04/intro-to-crypto/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "crypto-tokens-and-the-coming-age-of-protocol-innovation-4f4f17",
+      "title": "Crypto tokens and the coming age of protocol innovation",
+      "url": "http://continuations.com/post/148098927445/crypto-tokens-and-the-coming-age-of-protocol",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "what-are-cryptonetworks-and-why-are-tokens-fundamental-f53fad",
+      "title": "What are cryptonetworks and why are tokens fundamental?",
+      "url": "https://www.nickgrossman.is/2018/cryptonetworks-and-why-tokens-are-fundamental/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "quantifying-decentralization-e3fc70",
+      "title": "Quantifying decentralization",
+      "url": "https://news.earn.com/quantifying-decentralization-e39db233c28e",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "the-slow-death-of-the-firm-e38b2d",
+      "title": "The slow death of the firm",
+      "url": "https://thecontrol.co/the-slow-death-of-the-firm-1bd6cc81286b",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "hard-forks-soft-forks-defaults-and-coercion-c77e25",
+      "title": "Hard forks, soft forks, defaults, and coercion",
+      "url": "https://vitalik.ca/general/2017/03/14/forks_and_markets.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "on-chain-vote-buying-and-the-rise-of-dark-daos-264fdb",
+      "title": "On-chain vote buying and the rise of dark DAOs",
+      "url": "http://hackingdistributed.com/2018/07/02/on-chain-vote-buying/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "thoughts-on-governance-and-network-effects-9b8c57",
+      "title": "Thoughts on governance and network effects",
+      "url": "https://blog.aragon.one/thoughts-on-governance-and-network-effects-f40fda3e3f98",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "notes-on-blockchain-governance-f520ac",
+      "title": "Notes on blockchain governance",
+      "url": "http://vitalik.ca/general/2017/12/17/voting.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "tezos-position-paper-c1fcc7",
+      "title": "Tezos position paper",
+      "url": "https://www.tezos.com/static/papers/position_paper.pdf",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "cosmos-governance-and-constitution-701ee8",
+      "title": "Cosmos governance and constitution",
+      "url": "https://github.com/cosmos/constitution/wiki/Governance-and-Constitution",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "starks-part-i-proofs-with-polynomials-079a9c",
+      "title": "STARKs, part I: proofs with polynomials",
+      "url": "https://vitalik.ca/general/2017/11/09/starks_part_1.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "the-decentralized-consistent-scale-dcs-triangle-ec9f21",
+      "title": "The decentralized-consistent-scale (DCS) triangle",
+      "url": "https://blog.bigchaindb.com/the-dcs-triangle-5ce0e9e0f1dc",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "what-are-zk-snarks-and-why-do-they-matter-1fd805",
+      "title": "What are zk-SNARKs and why do they matter?",
+      "url": "https://blog.gnosis.pm/the-parrot-and-the-viper-a-tale-of-ethereum-scalability-3d121df3de87",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "platform-currencies-may-soon-be-obsolete-486d48",
+      "title": "Platform currencies may soon be obsolete",
+      "url": "https://blog.coinfund.io/platform-currencies-may-soon-be-obsolete-78d9b263d902",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "on-managing-tradeoffs-between-layer-1-and-layer-2-99fd5f",
+      "title": "On managing tradeoffs between Layer 1 and Layer 2",
+      "url": "https://vitalik.ca/general/2018/08/26/layer_1.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ethereum-foundation-research-initiatives-11e6c6",
+      "title": "Ethereum Foundation research initiatives",
+      "url": "http://notes.eth.sg/CwIwZgbAjADAxgUwLQEMUIKxOCsWCcIEwShAHCgEwJj4qyVA",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "a-beginner-s-guide-to-ethermint-94195d",
+      "title": "A beginner's guide to Ethermint",
+      "url": "https://blog.cosmos.network/a-beginners-guide-to-ethermint-38ee15f8a6f4",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "construction-of-a-plasma-chain-0x1-5ae215",
+      "title": "Construction of a plasma chain 0x1",
+      "url": "https://blog.omisego.network/construction-of-a-plasma-chain-0x1-614f6ebd1612",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "accounts-transactions-gas-and-block-gas-limits-642890",
+      "title": "Accounts, transactions, gas, and block gas limits",
+      "url": "https://hudsonjameson.com/2017-06-27-accounts-transactions-gas-ethereum/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "interplanetary-linked-computing-d8a19f",
+      "title": "Interplanetary linked computing",
+      "url": "https://media.consensys.net/interplanetary-linked-computing-separating-merkle-computing-from-blockchain-computational-courts-1ade201ecf8a",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "decentralization-in-bitcoin-and-ethereum-dd0637",
+      "title": "Decentralization in bitcoin and ethereum",
+      "url": "http://hackingdistributed.com/2018/01/15/decentralization-bitcoin-ethereum/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "consensus-compare-casper-vs-tendermint-570436",
+      "title": "Consensus Compare: Casper vs. Tendermint",
+      "url": "https://blog.cosmos.network/consensus-compare-casper-vs-tendermint-6df154ad56ae",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "consensus-compare-tendermint-bft-vs-eos-dpos-85106c",
+      "title": "Consensus Compare: Tendermint BFT vs. EOS dPoS",
+      "url": "https://blog.cosmos.network/consensus-compare-tendermint-bft-vs-eos-dpos-46c5bca7204b",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "an-investor-s-take-on-cryptoassets-4dd4ad",
+      "title": "An investor's take on cryptoassets",
+      "url": "https://s3.eu-west-2.amazonaws.com/john-pfeffer/An+Investo%27s+Take+on+Cryptoassets+v6.pdf",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "on-the-quantity-theory-of-money-for-tokens-16cb02",
+      "title": "On the quantity theory of money for tokens",
+      "url": "https://blog.coinfund.io/the-quantity-theory-of-money-for-tokens-dbfbc5472423",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "on-medium-of-exchange-token-valuations-9e2835",
+      "title": "On medium-of-exchange token valuations",
+      "url": "http://vitalik.ca/general/2017/10/17/moe.html",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "a-process-for-evaluating-new-tokens-ba7224",
+      "title": "A process for evaluating new tokens",
+      "url": "https://thecontrol.co/our-process-for-evaluating-new-tokens-4627ed97f500",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "on-cryptocurrency-communities-5adb9a",
+      "title": "On cryptocurrency communities",
+      "url": "https://thecontrol.co/on-cryptocurrency-communities-f592b5ce6b0b",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "fat-protocols-are-not-an-investment-thesis-fe56b3",
+      "title": "Fat protocols are not an investment thesis",
+      "url": "https://blog.coinfund.io/fat-protocols-are-not-an-investment-thesis-17c8837c2734",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "thoughts-on-tokens-a5dad2",
+      "title": "Thoughts on tokens",
+      "url": "https://news.earn.com/thoughts-on-tokens-436109aabcbe",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "the-bitcoin-model-for-crowdfunding-841d4f",
+      "title": "The bitcoin model for crowdfunding",
+      "url": "https://startupboy.com/2014/03/09/the-bitcoin-model-for-crowdfunding/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "separating-the-staking-token-from-the-fee-token-9c9957",
+      "title": "Separating the staking token from the fee token",
+      "url": "https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "state-of-decentralized-exchanges-2018-898694",
+      "title": "State of decentralized exchanges, 2018",
+      "url": "https://media.consensys.net/state-of-decentralized-exchanges-2018-276dad340c79",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "stablecoins-a-holy-grail-in-digital-currency-cf9d6a",
+      "title": "Stablecoins: A holy grail in digital currency",
+      "url": "https://thecontrol.co/stablecoins-a-holy-grail-in-digital-currency-b64f3371e111",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "token-curated-registries-that-don-t-work-a5897a",
+      "title": "Token curated registries that don't work",
+      "url": "https://blog.coinfund.io/curate-this-token-curated-registries-that-dont-work-d76370b77150",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "tcr-design-flaws-80de8e",
+      "title": "TCR design flaws",
+      "url": "https://blog.relevant.community/tcr-design-flaws-why-blockchain-needs-reputation-c5771d97b210",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "introduction-to-zk-snarks-with-examples-7bc878",
+      "title": "Introduction to zk-SNARKs with examples",
+      "url": "https://media.consensys.net/introduction-to-zksnarks-with-examples-3283b554fc3b",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "ukraine-blockchain-government-solution-c7063d",
+      "title": "Ukraine blockchain government solution",
+      "url": "https://www.blockchaintechnews.com/news/ukrainian-government-partners-with-bitfury-group-to-create-blockchain-government-solution/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-in-defence-dod-paper-f36b12",
+      "title": "Blockchain in defence (DoD paper)",
+      "url": "http://www.dtic.mil/doctrine/education/jpme_papers/barnas_n.pdf",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-in-oil-and-gas-deloitte-ad456d",
+      "title": "Blockchain in oil and gas (Deloitte)",
+      "url": "https://www2.deloitte.com/content/dam/Deloitte/us/Documents/process-and-operations/us-cons-blockchain-future-oil-gas.pdf",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "regtech-blockchain-identity-platform-20d95f",
+      "title": "Regtech blockchain identity platform",
+      "url": "https://cointelegraph.com/news/regtech-new-blockchain-platform-seeks-to-disrupt-identity-industry",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "japan-eliminates-tax-on-bitcoin-dc340c",
+      "title": "Japan eliminates tax on Bitcoin",
+      "url": "https://cointelegraph.com/news/its-official-japan-has-eliminated-tax-on-bitcoin-rise-in-trading-expected",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-unfolding-in-india-9d5601",
+      "title": "Blockchain unfolding in India",
+      "url": "http://www.cioandleader.com/article/2017/03/23/depth-analysis-how-blockchain-unfolding-india",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "india-bankchain-d0c737",
+      "title": "India Bankchain",
+      "url": "http://www.bankchain.org.in",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "south-african-central-bank-bitcoin-regulation-experimen-144d43",
+      "title": "South African central bank Bitcoin regulation experiment",
+      "url": "https://cointelegraph.com/news/south-african-central-bank-to-start-bitcoin-regulation-experiment",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "blockchain-based-academic-certificate-bc4d86",
+      "title": "Blockchain based academic certificate",
+      "url": "http://rujia.uk/talk/Blockchain%20Technology%20Report%202017.pdf",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "coca-cola-emercoin-worker-registry-d4259a",
+      "title": "Coca-Cola Emercoin worker registry",
+      "url": "https://blockmanity.com/coca-cola-collaborates-emercoin-blockchain-worker-registry/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    },
+    {
+      "id": "india-drone-regulation-digital-sky-program-105b0c",
+      "title": "India drone regulation Digital Sky Program",
+      "url": "https://factordaily.com/india-drone-regulation-digital-sky-program-draft/",
+      "detail": "Unreachable over HTTP and HTTPS",
+      "status": 0
+    }
+  ],
+  "blockedItems": [
+    {
+      "id": "getting-upto-speed-on-ethereum-ff950f",
+      "title": "Getting Upto speed on Ethereum",
+      "url": "https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "gtu-official-portal",
+      "title": "GTU — Official website",
+      "url": "https://gtu.ac.in/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "gtu-exam-papers",
+      "title": "GTU question paper uploads",
+      "url": "https://gtu.ac.in/Examination/Question-Papers",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "gtu-student-portal",
+      "title": "GTU Student Portal (SAMARTH)",
+      "url": "https://student.gtu.ac.in/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "leetcode",
+      "title": "LeetCode",
+      "url": "https://leetcode.com/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "meaning-of-decentralization-https-medium-com-vitalikbut-87138d",
+      "title": "Meaning of Decentralization — https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274",
+      "url": "https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "adding-orgs-and-peers-https-medium-com-coinmonks-step-b-9721f5",
+      "title": "Adding Orgs and Peers — https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-2-adding-an-organization-with-two-peers...",
+      "url": "https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-2-adding-an-organization-with-two-peers-to-an-4f5c4d44b8e3",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "arduino-robots-ea2ceb",
+      "title": "Arduino robots",
+      "url": "https://www.udemy.com/build-a-bluetooth-controlled-water-robot-in-simple-steps/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "basic-terminologies-blockchain-terminology-blog-c3e32a",
+      "title": "Basic Terminologies — Blockchain Terminology[Blog]",
+      "url": "https://medium.com/coinmonks/blockchain-terminology-d903758d6bd",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "chaincodes-https-codeburst-io-writing-chaincode-in-gola-3ff8ff",
+      "title": "Chaincodes — https://codeburst.io/writing-chaincode-in-golang-the-oop-way-4be3bb261dae",
+      "url": "https://codeburst.io/writing-chaincode-in-golang-the-oop-way-4be3bb261dae",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "chaincodes-https-medium-com-towardsblockchain-step-by-s-4e44b7",
+      "title": "Chaincodes — https://medium.com/towardsblockchain/step-by-step-understanding-writing-and-deploying-chaincode-in-hyperledger-fabric-e00ccd...",
+      "url": "https://medium.com/towardsblockchain/step-by-step-understanding-writing-and-deploying-chaincode-in-hyperledger-fabric-e00ccdddc4ac",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "medium-blogs-http-and-everything-you-need-to-know-about-2762b3",
+      "title": "Medium Blogs HTTP and everything you need to know about it Learn Basics of React.js in 11 Minutes A practical ES6 guide on how to perform...",
+      "url": "https://medium.com/faun/http-and-everything-you-need-to-know-about-it-8273bc224491",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "medium-blogs-nns-and-backpropagation-explained-in-a-sim-e947e8",
+      "title": "Medium Blogs NNs and Backpropagation explained in a simple way Visual Information Theory What is Exploratory Data Analysis? — NNs and Bac...",
+      "url": "https://medium.com/datathings/neural-networks-and-backpropagation-explained-in-a-simple-way-f540a3611f5e",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "pid-control-with-arduino-604099",
+      "title": "PID Control with Arduino",
+      "url": "https://www.udemy.com/pid-control-with-arduino/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "raspberry-pi-basics-of-raspbian-youtube-udemy-youtube-y-76a7f5",
+      "title": "Raspberry Pi — Basics of Raspbian (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.udemy.com/share/1002tcBEUZcl1TTXg=/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "setting-up-things-https-medium-com-coinmonks-step-by-st-a00732",
+      "title": "Setting Up Things — https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-1-c867fc5fe18",
+      "url": "https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-1-c867fc5fe18",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "udemy-learn-ethical-hacking-from-scratch-learn-ethical--83d6aa",
+      "title": "Udemy Learn Ethical Hacking From Scratch — Learn Ethical Hacking From Scratch",
+      "url": "https://www.udemy.com/learn-ethical-hacking-from-scratch/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "zero-knowledge-proofs-https-medium-com-coinmonks-introd-58a387",
+      "title": "Zero Knowledge Proofs — https://medium.com/coinmonks/introduction-to-zero-knowledge-proofs-8e8261b4a48a",
+      "url": "https://medium.com/coinmonks/introduction-to-zero-knowledge-proofs-8e8261b4a48a",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "how-does-ethereum-work-anyway-df211a",
+      "title": "How does Ethereum work, anyway?",
+      "url": "https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "time-locked-wallets-introduction-to-ethereum-smart-cont-d9f778",
+      "title": "Time-locked Wallets: Introduction to Ethereum Smart Contracts",
+      "url": "https://www.toptal.com/ethereum-smart-contract/time-locked-wallet-truffle-tutorial",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "the-ultimate-ens-and-dapp-tutorial-4a83eb",
+      "title": "The Ultimate ENS and DApp Tutorial",
+      "url": "https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial",
+      "detail": "HEAD 403",
+      "status": 403
+    },
+    {
+      "id": "sidechains-treechains-the-tl-dr-78e4a0",
+      "title": "Sidechains, Treechains, the TL;DR",
+      "url": "http://blog.greenaddress.it/2014/06/13/sidechains-treechains-the-tldr/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "sidechain-technical-feasibility-discussion-ba1566",
+      "title": "Sidechain Technical Feasibility Discussion",
+      "url": "https://bitcointalk.org/index.php?topic=566704.0;all",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "how-to-clone-scrypt-based-altcoins-630be9",
+      "title": "How to Clone Scrypt Based Altcoins",
+      "url": "http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide&rev=1391981820",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "a-beginner-s-guide-to-ethereum-coinbase-438095",
+      "title": "A beginner's guide to Ethereum (Coinbase)",
+      "url": "https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "dapps-101-how-do-i-start-developing-on-ethereum-e81e32",
+      "title": "Dapps 101: How do I start developing on Ethereum?",
+      "url": "https://blog.andreacoravos.com/dapps-101-how-do-i-start-developing-on-ethereum-da0d38ed973f",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "understanding-blockchain-fundamentals-part-1-byzantine--d5dbb3",
+      "title": "Understanding Blockchain Fundamentals Part 1: Byzantine Fault Tolerance",
+      "url": "https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "understanding-blockchain-fundamentals-part-2-pow-pos-15a86a",
+      "title": "Understanding Blockchain Fundamentals Part 2: PoW & PoS",
+      "url": "https://medium.com/loom-network/understanding-blockchain-fundamentals-part-2-proof-of-work-proof-of-stake-b6ae907c7edb",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "what-is-bitcoin-coindesk-0029f7",
+      "title": "What is Bitcoin? (CoinDesk)",
+      "url": "https://www.coindesk.com/information/what-is-bitcoin/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "inside-an-ethereum-transaction-40147d",
+      "title": "Inside an Ethereum Transaction",
+      "url": "https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "the-blockchain-economy-a-beginner-s-guide-15c584",
+      "title": "The blockchain economy: a beginner's guide",
+      "url": "https://medium.com/@cryptoeconomics/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics-64bf2f2beec4",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "beginner-s-guide-series-on-cryptoassets-linda-xie-ed902a",
+      "title": "Beginner's guide series on cryptoassets (Linda Xie)",
+      "url": "https://medium.com/@linda.xie/beginners-guide-series-on-cryptoassets-d897535d887",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "bitcoin-s-academic-pedigree-8f7350",
+      "title": "Bitcoin's academic pedigree",
+      "url": "https://queue.acm.org/detail.cfm?id=3136559",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "beyond-the-bitcoin-bubble-9a13dd",
+      "title": "Beyond the bitcoin bubble",
+      "url": "https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "crypto-tokens-a-breakthrough-in-open-network-design-263855",
+      "title": "Crypto tokens: A breakthrough in open network design",
+      "url": "https://medium.com/@cdixon/crypto-tokens-a-breakthrough-in-open-network-design-e600975be2ef",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "keepers-workers-that-maintain-blockchain-networks-356428",
+      "title": "Keepers: workers that maintain blockchain networks",
+      "url": "https://medium.com/@rzurrer/keepers-workers-that-maintain-blockchain-networks-a40182615b66",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "what-do-we-mean-by-blockchains-are-trustless-c9f09d",
+      "title": "What do we mean by blockchains are trustless?",
+      "url": "https://medium.com/@preethikasireddy/eli5-what-do-we-mean-by-blockchains-are-trustless-aa420635d5f6",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "why-decentralization-matters-17c3ab",
+      "title": "Why decentralization matters",
+      "url": "https://medium.com/@cdixon/why-decentralization-matters-5e3f79f7638e",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "the-myth-of-the-irrational-token-holder-84a53e",
+      "title": "The myth of the irrational token holder",
+      "url": "https://medium.com/@kathleenbreit/the-myth-of-the-irrational-token-holder-c12438709afd",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "town-crier-authenticated-data-feed-for-smart-contracts-945b8b",
+      "title": "Town Crier: authenticated data feed for smart contracts",
+      "url": "https://eprint.iacr.org/2016/168.pdf",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "scalable-post-quantum-secure-computational-integrity-fea9f7",
+      "title": "Scalable post-quantum secure computational integrity",
+      "url": "https://eprint.iacr.org/2018/046.pdf",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "succinct-non-interactive-zero-knowledge-647047",
+      "title": "Succinct non-interactive zero knowledge",
+      "url": "https://eprint.iacr.org/2013/879.pdf",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "ethereum-casper-101-9c5d80",
+      "title": "Ethereum Casper 101",
+      "url": "https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "the-history-of-casper-part-1-cf99f4",
+      "title": "The history of Casper Part 1",
+      "url": "https://medium.com/@Vlad_Zamfir/the-history-of-casper-part-1-59233819c9a9",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "inflation-and-participation-in-stake-based-token-protoc-a8f1da",
+      "title": "Inflation and participation in stake-based token protocols",
+      "url": "https://medium.com/@petkanics/inflation-and-participation-in-stake-based-token-protocols-1593688612bf",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "on-value-velocity-and-monetary-theory-6e73d7",
+      "title": "On value, velocity, and monetary theory",
+      "url": "https://medium.com/blockchannel/on-value-velocity-and-monetary-theory-a-new-approach-to-cryptoasset-valuations-32c9b22e3b6f",
+      "detail": "HEAD 403",
+      "status": 403
+    },
+    {
+      "id": "skin-in-the-game-coins-9e43c7",
+      "title": "Skin-in-the-game coins",
+      "url": "https://medium.com/tbis-weekly-bits/skin-in-the-game-coins-da0afdfdc650",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "funding-the-evolution-of-blockchains-9822b1",
+      "title": "Funding the evolution of blockchains",
+      "url": "https://medium.com/@FEhrsam/funding-the-evolution-of-blockchains-87d160988481",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "networked-liquidity-18dff7",
+      "title": "Networked liquidity",
+      "url": "https://medium.com/radarrelay/networked-liquidity-2030d85af897",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "the-emergence-of-cryptoeconomic-primitives-265811",
+      "title": "The emergence of cryptoeconomic primitives",
+      "url": "https://medium.com/@jacobscott/the-emergence-of-cryptoeconomic-primitives-14ef3300cc10",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "token-lexicon-0ab91b",
+      "title": "Token lexicon",
+      "url": "https://medium.com/@billyrennekamp/token-lexicon-b4ed9a4ce363",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "smart-media-tokens-whitepaper-dae1c6",
+      "title": "Smart media tokens whitepaper",
+      "url": "https://smt.steem.io/smt-whitepaper.pdf",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "will-cryptocurrencies-be-the-art-market-s-next-big-thin-c59b13",
+      "title": "Will cryptocurrencies be the art market's next big thing?",
+      "url": "https://www.nytimes.com/2018/01/13/arts/cryptocurrency-art-market.html",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "cryptocollectibles-are-xlnt-b54ded",
+      "title": "Cryptocollectibles are XLNT",
+      "url": "https://medium.com/xlnt-art/cryptocollectibles-are-xlnt-but-nobody-knows-whats-next-a7892b311637",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "introducing-curation-markets-fcb711",
+      "title": "Introducing curation markets",
+      "url": "https://medium.com/@simondlr/introducing-curation-markets-trade-popularity-of-memes-information-with-code-70bf6fed9881",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "darpa-blockchain-contract-galois-e0a2be",
+      "title": "DARPA blockchain contract (Galois)",
+      "url": "https://qz.com/801640/darpa-blockchain-a-blockchain-from-guardtime-is-being-verified-by-galois-under-a-government-contract/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "abu-dhabi-securities-exchange-on-blockchain-90232b",
+      "title": "Abu Dhabi Securities Exchange on blockchain",
+      "url": "https://www.cryptocoinsnews.com/abu-dhabi-securities-exchange-chief-big-blockchain/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "dubai-aims-to-be-a-city-built-on-blockchain-e97eab",
+      "title": "Dubai aims to be a city built on blockchain",
+      "url": "https://www.wsj.com/articles/dubai-aims-to-be-a-city-built-on-blockchain-1493086080",
+      "detail": "GET 401",
+      "status": 401
+    },
+    {
+      "id": "south-korea-blockchain-insurance-pilot-f35597",
+      "title": "South Korea blockchain insurance pilot",
+      "url": "https://www.cryptocoinsnews.com/south-korea-backs-worlds-first-blockchain-pilot-insurance-payments-seoul/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "blockchain-vs-wannacry-petya-64c5ac",
+      "title": "Blockchain vs WannaCry/Petya",
+      "url": "http://www.informationsecuritybuzz.com/articles/countering-wannacry-petya-blockchain-technology/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "blockchain-for-genomic-data-privacy-3d5895",
+      "title": "Blockchain for genomic data privacy",
+      "url": "https://www.cryptocoinsnews.com/blockchain-solution-ensures-privacy-of-genomic-data-while-granting-access-for-medical-research/",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "malta-blockchain-revolution-0a6973",
+      "title": "Malta blockchain revolution",
+      "url": "http://www.maltatoday.com.mt/business/business_news/79185/malta_lays_the_ground_for_a_blockchain_revolution",
+      "detail": "GET 403",
+      "status": 403
+    },
+    {
+      "id": "pwc-audit-service-for-blockchain-bbbda5",
+      "title": "PwC audit service for blockchain",
+      "url": "https://www.ccn.com/pwc-to-provide-audit-service-for-blockchain-to-stimulate-adoption/",
+      "detail": "GET 403",
+      "status": 403
+    }
+  ],
+  "unstableItems": [
+    {
+      "id": "automl-in-leadersboard-google-automl-https-www-h2o-ai-d-ab20e6",
+      "title": "AutoML in leadersboard Google AutoML https://www.h2o.ai Databoard The above mentioned are the quite exciting! ML using ML. — Bias & Varia...",
+      "url": "http://www.r2d3.us/visual-intro-to-machine-learning-part-2/",
+      "detail": "GET 522",
+      "status": 522
+    },
+    {
+      "id": "automl-in-leadersboard-google-automl-https-www-h2o-ai-d-6f90b3",
+      "title": "AutoML in leadersboard Google AutoML https://www.h2o.ai Databoard The above mentioned are the quite exciting! ML using ML. — Decision Tre...",
+      "url": "http://www.r2d3.us/visual-intro-to-machine-learning-part-1/",
+      "detail": "GET 522",
+      "status": 522
+    },
+    {
+      "id": "mit-6-046j-design-and-analysis-of-algorithms-website-40723d",
+      "title": "MIT 6.046J Design and Analysis of Algorithms — Website",
+      "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/syllabus/",
+      "detail": "Too many redirects",
+      "status": 301
+    },
+    {
+      "id": "what-is-bitcoin-cnn-infographic-1bb9bc",
+      "title": "What is Bitcoin? (CNN infographic)",
+      "url": "https://money.cnn.com/infographic/technology/what-is-bitcoin/",
+      "detail": "GET 503",
+      "status": 503
+    }
+  ]
+}

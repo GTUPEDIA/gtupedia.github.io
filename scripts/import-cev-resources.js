@@ -17,7 +17,7 @@ const topicBySection = {
   competitive: 'competitive',
   stocks: 'finance',
   astrophysics: 'programming',
-  blockchain: 'programming',
+  blockchain: 'blockchain',
   embeddedsystems: 'programming',
   ethicalhacking: 'programming',
   nuclearfusion: 'programming',

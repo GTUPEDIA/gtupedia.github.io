@@ -73,57 +73,14 @@
       "id": "gtu",
       "name": "GTU & academics",
       "slug": "gtu-academics"
+    },
+    {
+      "id": "blockchain",
+      "name": "Blockchain",
+      "slug": "blockchain"
     }
   ],
   "items": [
-    {
-      "id": "introductory-intermediate-advanced-c-microsoft-recommen-b59385",
-      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Advanced",
-      "url": "https://www.edx.org/course/advanced-c-2",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "",
-      "source": "edX",
-      "recommended": true,
-      "tags": [
-        "recommended"
-      ]
-    },
-    {
-      "id": "introductory-intermediate-advanced-c-microsoft-recommen-9c77c3",
-      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Intermediate",
-      "url": "https://www.edx.org/course/intermediate-c-microsoft-dev210-2x",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "",
-      "source": "edX",
-      "recommended": true,
-      "tags": [
-        "recommended"
-      ]
-    },
-    {
-      "id": "introductory-intermediate-advanced-c-microsoft-recommen-c0b4a6",
-      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Introductory",
-      "url": "https://www.edx.org/course/introduction-c-microsoft-dev210x-5",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "",
-      "source": "edX",
-      "recommended": true,
-      "tags": [
-        "recommended"
-      ]
-    },
     {
       "id": "automl-in-leadersboard-google-automl-https-www-h2o-ai-d-ab20e6",
       "title": "AutoML in leadersboard Google AutoML https://www.h2o.ai Databoard The above mentioned are the quite exciting! ML using ML. — Bias & Varia...",
@@ -309,7 +266,8 @@
       "type": "article",
       "category": "articles",
       "topics": [
-        "programming"
+        "programming",
+        "blockchain"
       ],
       "description": "",
       "source": "medium.com",
@@ -384,22 +342,6 @@
       ]
     },
     {
-      "id": "https-www-edx-org-micromasters-pennx-robotics-f91b80",
-      "title": "https://www.edx.org/micromasters/pennx-robotics",
-      "url": "https://www.edx.org/micromasters/pennx-robotics",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "",
-      "source": "edX",
-      "recommended": true,
-      "tags": [
-        "recommended"
-      ]
-    },
-    {
       "id": "leetcode",
       "title": "LeetCode",
       "url": "https://leetcode.com/",
@@ -435,22 +377,6 @@
       ]
     },
     {
-      "id": "masterclass-chris-hadfield-teaches-space-exploration-dr-eb0358",
-      "title": "MasterClass - Chris Hadfield teaches Space Exploration — [Drive Link] (Edureka!)",
-      "url": "https://drive.google.com/open?id=16_fpDrEz0bPaLNVMy7oZ-eqJfzYUybzS",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "An ground level course for the beginners who want to know how things in space work. Chris Hadfield is an astronaut who has been a mission commander on the ISS. He talks about the basic principles that govern the space exploration.",
-      "source": "drive.google.com",
-      "recommended": true,
-      "tags": [
-        "recommended"
-      ]
-    },
-    {
       "id": "mdn-web-docs",
       "title": "MDN Web Docs",
       "url": "https://developer.mozilla.org/",
@@ -474,7 +400,8 @@
       "type": "article",
       "category": "articles",
       "topics": [
-        "programming"
+        "programming",
+        "blockchain"
       ],
       "description": "",
       "source": "medium.com",
@@ -1326,26 +1253,16 @@
       "type": "course",
       "category": "courses",
       "topics": [
-        "programming"
+        "programming",
+        "blockchain"
       ],
       "description": "In this course you will learn the inner workings of cryptographic systems and how to correctly use them in real-world applications.",
       "source": "Coursera",
-      "recommended": false,
-      "tags": []
-    },
-    {
-      "id": "cryptography-ii-course-coursera-efacbe",
-      "title": "Cryptography II [Course] (Coursera)",
-      "url": "https://www.coursera.org/learn/crypto2",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "In this course you will learn the inner workings of cryptographic systems and how to correctly use them in real-world applications.",
-      "source": "Coursera",
-      "recommended": false,
-      "tags": []
+      "recommended": true,
+      "tags": [
+        "recommended",
+        "blockchain-curriculum"
+      ]
     },
     {
       "id": "css-tricks-3ed91a",
@@ -1474,21 +1391,6 @@
       ],
       "description": "",
       "source": "kaggle.com",
-      "recommended": false,
-      "tags": []
-    },
-    {
-      "id": "data-world-kaggle-datasets-pytorch-standard-datasets-da-bd03b6",
-      "title": "data.world Kaggle Datasets PyTorch Standard Datasets DATAHUB Academic Torrents — PyTorch Standard Datasets",
-      "url": "https://pytorch.org/docs/master/torchvision/datasets.html",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "machine-learning",
-        "web-dev"
-      ],
-      "description": "",
-      "source": "pytorch.org",
       "recommended": false,
       "tags": []
     },
@@ -1672,21 +1574,6 @@
       ],
       "description": "This youtube list covers most of the basic things in the field, including , the KALI linux basics, penetration testing Nmap, DDoS attacks, SQL injection, Ethical Hacking jobs and careers, the tools used etc. Basically everything required to get on board with Ethical Hacking. Edureka courses are easy to comprehend, and startwith.",
       "source": "YouTube",
-      "recommended": false,
-      "tags": []
-    },
-    {
-      "id": "fastai-course-video-youtube-player-jeremy-howard-past-p-414713",
-      "title": "FastAi — Course Video (Youtube Player) (Jeremy Howard (past President- Kaggle ))",
-      "url": "https://course.fast.ai/videos/?lesson=1",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "machine-learning",
-        "programming"
-      ],
-      "description": "Jeremy Howard is past President of Kaggle. He is a AI Expert, with an Awesome Course. Remeber to go through setup page, for setting up system instructions.",
-      "source": "course.fast.ai",
       "recommended": false,
       "tags": []
     },
@@ -1895,21 +1782,6 @@
       "tags": []
     },
     {
-      "id": "in-india-we-aren-t-performing-something-like-that-but-b-86e06c",
-      "title": "In India, we aren't performing something like that, but, but surely for nuclear research we have pioneering: The BARC India is the top wo...",
-      "url": "http://www.barc.gov.in/reactor/ahwr.html",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming",
-        "web-dev"
-      ],
-      "description": "",
-      "source": "barc.gov.in",
-      "recommended": false,
-      "tags": []
-    },
-    {
       "id": "internet-of-things-iot-iot-device-using-arduino-and-ras-7d2eb7",
       "title": "Internet of Things (IOT) — IoT device using Arduino and Raspberry Pi platforms",
       "url": "https://www.coursera.org/specializations/iot",
@@ -1991,21 +1863,6 @@
       ],
       "description": "",
       "source": "Coursera",
-      "recommended": false,
-      "tags": []
-    },
-    {
-      "id": "introduction-to-js-udacity-book-you-don-t-know-js-up-go-7e87e7",
-      "title": "Introduction To JS-Udacity — BOOK:You Don't Know JS(Up & Going) (School Of Programming-Udacity)",
-      "url": "https://github.com/getify/You-Dont-Know-JS/tree/master/up%20%26%20going",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "web-dev",
-        "programming"
-      ],
-      "description": "After the course you will be able to write and understand basic JavaScript codes",
-      "source": "Udacity",
       "recommended": false,
       "tags": []
     },
@@ -2455,20 +2312,6 @@
       "tags": []
     },
     {
-      "id": "pet-shop-tutorial-https-truffleframework-com-tutorials--21eaf9",
-      "title": "Pet-Shop Tutorial — https://truffleframework.com/tutorials/pet-shop",
-      "url": "https://truffleframework.com/tutorials/pet-shop",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "",
-      "source": "truffleframework.com",
-      "recommended": false,
-      "tags": []
-    },
-    {
       "id": "physics-kurzgesagt-in-a-nutshell-1baa50",
       "title": "PHYSICS — Kurzgesagt-in a Nutshell",
       "url": "https://www.youtube.com/user/Kurzgesagt",
@@ -2708,20 +2551,6 @@
       "tags": []
     },
     {
-      "id": "software-security-course-coursera-006548",
-      "title": "Software Security [Course] (Coursera)",
-      "url": "https://www.coursera.org/learn/software-security",
-      "type": "course",
-      "category": "courses",
-      "topics": [
-        "programming"
-      ],
-      "description": "Important software vulnerabilities and attacks that exploit them -- such as buffer overflows, SQL injection, and session hijacking",
-      "source": "Coursera",
-      "recommended": false,
-      "tags": []
-    },
-    {
       "id": "solidity-documentation-0f69bb",
       "title": "Solidity — Documentation",
       "url": "https://solidity.readthedocs.io/en/v0.5.6/",
@@ -2799,7 +2628,8 @@
       "type": "article",
       "category": "tools",
       "topics": [
-        "programming"
+        "programming",
+        "blockchain"
       ],
       "description": "Essential Tools for eth-Development",
       "source": "remix.ethereum.org",
@@ -2862,20 +2692,6 @@
       ],
       "description": "",
       "source": "udemy.com",
-      "recommended": false,
-      "tags": []
-    },
-    {
-      "id": "unpacking-the-ethereum-stack-for-developers-https-blog--037ca5",
-      "title": "Unpacking The Ethereum Stack For Developers — https://blog.b9lab.com/unpacking-the-ethereum-stack-for-developers-c1be1dc41c06",
-      "url": "https://blog.b9lab.com/unpacking-the-ethereum-stack-for-developers-c1be1dc41c06",
-      "type": "article",
-      "category": "articles",
-      "topics": [
-        "programming"
-      ],
-      "description": "",
-      "source": "blog.b9lab.com",
       "recommended": false,
       "tags": []
     },
@@ -2959,7 +2775,8 @@
       "category": "documentation",
       "topics": [
         "programming",
-        "web-dev"
+        "web-dev",
+        "blockchain"
       ],
       "description": "Try to understand how the functions written in smart contracts can be invoked,how you can query a ethereum blockchain using web3js and how to integrate frontend with the blockchain fot the dApp",
       "source": "web3js.readthedocs.io",
@@ -3078,6 +2895,3774 @@
       "source": "medium.com",
       "recommended": false,
       "tags": []
+    },
+    {
+      "id": "boneh-shoup-a-graduate-course-in-applied-cryptography-0e1493",
+      "title": "Boneh, Shoup — A Graduate Course in Applied Cryptography",
+      "url": "https://crypto.stanford.edu/~dabo/cryptobook/draft_0_3.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Introduction — curated blockchain deep-dive.",
+      "source": "crypto.stanford.edu",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-cryptopals-crypto-challenges-2d7c1c",
+      "title": "The Cryptopals Crypto Challenges",
+      "url": "https://cryptopals.com/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Introduction — curated blockchain deep-dive.",
+      "source": "cryptopals.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "praetorian-tech-challenges-541ba3",
+      "title": "Praetorian Tech Challenges",
+      "url": "https://www.praetorian.com/challenges",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Introduction — curated blockchain deep-dive.",
+      "source": "praetorian.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-a-peer-to-peer-electronic-cash-system-9c8fb9",
+      "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+      "url": "https://bitcoin.org/bitcoin.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "White papers — curated blockchain deep-dive.",
+      "source": "Bitcoin",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "the-idea-of-smart-contracts-nick-szabo-df27d8",
+      "title": "The idea of smart contracts (Nick Szabo)",
+      "url": "http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "White papers — curated blockchain deep-dive.",
+      "source": "fon.hum.uva.nl",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "learn-blockchain-by-building-your-own-in-javascript-d87987",
+      "title": "Learn Blockchain By Building Your Own In JavaScript",
+      "url": "https://github.com/erictraub/Learn-Blockchain-By-Building-Your-Own-In-JavaScript",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundamentals & demos — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "learn-blockchain-by-building-your-own-dvf-2bf957",
+      "title": "Learn Blockchain By Building Your Own (dvf)",
+      "url": "https://github.com/dvf/blockchain",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundamentals & demos — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-demo-802fc0",
+      "title": "Blockchain Demo",
+      "url": "https://blockchaindemo.io/",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundamentals & demos — curated blockchain deep-dive.",
+      "source": "blockchaindemo.io",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "minimal-blockchain-learning-cli-47ea1b",
+      "title": "Minimal Blockchain Learning CLI",
+      "url": "https://github.com/daxeel/blockshell",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundamentals & demos — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "coin-demo-fbe195",
+      "title": "Coin Demo",
+      "url": "https://coindemo.io/",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundamentals & demos — curated blockchain deep-dive.",
+      "source": "coindemo.io",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-does-a-blockchain-work-53007f",
+      "title": "How does a blockchain work?",
+      "url": "https://www.youtube.com/watch?v=SSo_EIwHSd4",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "blockchain-basics-explained-hashes-with-mining-and-merk-c140e1",
+      "title": "Blockchain Basics Explained — Hashes with Mining and Merkle tree",
+      "url": "https://www.youtube.com/watch?v=lik9aaFIsl4",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "proof-of-stake-vs-proof-of-work-155665",
+      "title": "Proof-of-Stake vs Proof-of-Work",
+      "url": "https://www.youtube.com/watch?v=M3EFi_POhps",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "smart-contracts-e568af",
+      "title": "Smart Contracts",
+      "url": "https://www.youtube.com/watch?v=ZE2HxTmxfrI",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "learn-blockchain-in-2-months-991640",
+      "title": "Learn Blockchain in 2 Months",
+      "url": "https://www.youtube.com/watch?v=wVVGv2bmxow",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-explained-and-made-simple-8bb9ad",
+      "title": "Bitcoin explained and made simple",
+      "url": "https://www.youtube.com/watch?v=s4g1XFU8Gto",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-essence-of-how-bitcoin-works-032f77",
+      "title": "The Essence of How Bitcoin Works",
+      "url": "https://www.youtube.com/watch?v=t5JGQXCTe3c",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-university-bitcoin-the-blockchain-an-introdu-56046e",
+      "title": "Blockchain University — Bitcoin & the Blockchain: An Introduction",
+      "url": "https://www.youtube.com/watch?v=ZUoXUW9zVMs",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-101-what-is-bitcoin-1f57a4",
+      "title": "Bitcoin 101 — What is Bitcoin?",
+      "url": "https://www.youtube.com/watch?v=Bhe61JaNFLU",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-university-bitcoin-keys-addresses-and-wallet-09bb8d",
+      "title": "Blockchain University — Bitcoin Keys Addresses and Wallets",
+      "url": "https://www.youtube.com/watch?v=Ic76iSnCb_0",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-sidechains-7623b7",
+      "title": "Bitcoin Sidechains",
+      "url": "https://www.youtube.com/watch?v=6sXNVIaNL2Y",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-bitcoin-works-in-5-minutes-14e45d",
+      "title": "How Bitcoin Works in 5 Minutes",
+      "url": "https://www.youtube.com/watch?v=l9jOJk30eQs",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-bitcoin-works-under-the-hood-3b809c",
+      "title": "How Bitcoin Works Under the Hood",
+      "url": "https://www.youtube.com/watch?v=Lx9zgZCMqXE",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "mechanics-of-bitcoin-90e5f7",
+      "title": "Mechanics of Bitcoin",
+      "url": "https://www.youtube.com/watch?v=t3hJsFpPmXs",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "programming-bitcoin-channel-4027af",
+      "title": "Programming Bitcoin (channel)",
+      "url": "https://www.youtube.com/user/programmingbitcoin",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "coding-multi-signature-addresses-07907d",
+      "title": "Coding Multi-Signature Addresses",
+      "url": "https://www.youtube.com/watch?v=zIbUSaZBJgU",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ever-wonder-how-bitcoin-actually-works-4ef6ab",
+      "title": "Ever wonder how Bitcoin actually works?",
+      "url": "https://www.youtube.com/watch?v=bBC-nXj3Ng4",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "ultimate-introduction-to-ethereum-dapp-development-play-dd7c38",
+      "title": "Ultimate Introduction to Ethereum Dapp Development (playlist)",
+      "url": "https://www.youtube.com/playlist?list=PLV1JDFUtrXpFh85G-Ddyy2kLSafaB9biQ",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "introduction-to-smart-contract-development-with-solidit-071e94",
+      "title": "Introduction to Smart Contract Development with Solidity (playlist)",
+      "url": "https://www.youtube.com/playlist?list=PLV1JDFUtrXpGvu8QHL9b78WYNSJsYNZsb",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ethereum-in-25-minutes-eb7845",
+      "title": "Ethereum in 25 minutes",
+      "url": "https://youtu.be/66SaEDzlmP4",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "cryptographic-hash-function-3ef476",
+      "title": "Cryptographic hash function",
+      "url": "https://youtu.be/0WiTaBI82Mc",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-the-u-s-government-used-blockchain-to-fight-fraud-3e3179",
+      "title": "How the U.S. government used blockchain to fight fraud",
+      "url": "https://youtu.be/507wn9VcSAE",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ethereum-the-world-computer-772875",
+      "title": "Ethereum the world computer",
+      "url": "https://www.youtube.com/watch?v=j23HnORQXvs",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "vitalik-buterin-explains-ethereum-40041b",
+      "title": "Vitalik Buterin explains Ethereum",
+      "url": "https://www.youtube.com/watch?v=TDGq4aeevgY",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "joseph-lubin-s-interview-on-building-decentralized-appl-80f3b8",
+      "title": "Joseph Lubin's interview on building decentralized applications",
+      "url": "https://www.youtube.com/watch?v=MgLmY9oedTM",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bbc-explains-ethereum-bf4733",
+      "title": "BBC explains Ethereum",
+      "url": "https://www.youtube.com/watch?v=0X33lgMbvdI",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "techcrunch-on-ethereum-8eda47",
+      "title": "TechCrunch on Ethereum",
+      "url": "https://www.youtube.com/watch?v=WfULutvxvzY",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-governance-video-fcf069",
+      "title": "Blockchain governance (video)",
+      "url": "https://youtu.be/9RtSod8EXn4",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-importance-of-layer-two-37d39d",
+      "title": "The importance of layer two",
+      "url": "https://youtu.be/3PcR4HWJnkY",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "devcon3-panel-on-formal-verification-5ec8a4",
+      "title": "Devcon3 panel on formal verification",
+      "url": "https://youtu.be/DrDIcirrhWM",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ibm-blockchain-car-use-case-ec09a2",
+      "title": "IBM blockchain car use case",
+      "url": "https://www.youtube.com/watch?v=IgNfoQQ5Reg",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "real-life-blockchain-use-cases-4b78bc",
+      "title": "Real life blockchain use cases",
+      "url": "https://youtu.be/cHe_ow9v094",
+      "type": "video",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Videos — curated blockchain deep-dive.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "mastering-bitcoin-2nd-edition-programming-the-open-bloc-2c27fe",
+      "title": "Mastering Bitcoin 2nd Edition — Programming the Open Blockchain",
+      "url": "https://github.com/bitcoinbook/bitcoinbook",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Books — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "mastering-ethereum-a09dd1",
+      "title": "Mastering Ethereum",
+      "url": "https://github.com/ethereumbook/ethereumbook",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Books — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "ethereum-docs-legacy-ethdocs-6a031e",
+      "title": "Ethereum Docs (legacy ethdocs)",
+      "url": "http://www.ethdocs.org/en/latest/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "ethdocs.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-does-ethereum-work-anyway-df211a",
+      "title": "How does Ethereum work, anyway?",
+      "url": "https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "pet-shop-tutorial-truffle-4fe3c5",
+      "title": "Pet shop tutorial (Truffle)",
+      "url": "http://truffleframework.com/tutorials/pet-shop",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "truffleframework.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "time-locked-wallets-introduction-to-ethereum-smart-cont-d9f778",
+      "title": "Time-locked Wallets: Introduction to Ethereum Smart Contracts",
+      "url": "https://www.toptal.com/ethereum-smart-contract/time-locked-wallet-truffle-tutorial",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "toptal.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-ultimate-ens-and-dapp-tutorial-4a83eb",
+      "title": "The Ultimate ENS and DApp Tutorial",
+      "url": "https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "toptal.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "learn-solidity-aebeac",
+      "title": "Learn Solidity",
+      "url": "https://github.com/willitscale/learning-solidity",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "consensys-smart-contract-best-practices-c796c2",
+      "title": "Consensys Smart Contract Best Practices",
+      "url": "https://consensys.github.io/smart-contract-best-practices/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "Consensys",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "solidity-patterns-db3aed",
+      "title": "Solidity Patterns",
+      "url": "https://github.com/fravoll/solidity-patterns",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "solidity-by-example-bc1697",
+      "title": "Solidity By Example",
+      "url": "https://solidity.readthedocs.io/en/latest/solidity-by-example.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Ethereum & smart contracts — curated blockchain deep-dive.",
+      "source": "solidity.readthedocs.io",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "cryptozombies-interactive-dapp-learning-719618",
+      "title": "Cryptozombies — interactive Dapp learning",
+      "url": "https://cryptozombies.io/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Dapps & Solidity — curated blockchain deep-dive.",
+      "source": "CryptoZombies",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "what-is-solidity-a1e051",
+      "title": "What is Solidity?",
+      "url": "https://en.wikipedia.org/wiki/Solidity",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Dapps & Solidity — curated blockchain deep-dive.",
+      "source": "en.wikipedia.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "solidity-documentation-bc995a",
+      "title": "Solidity Documentation",
+      "url": "https://solidity.readthedocs.io/en/latest/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Dapps & Solidity — curated blockchain deep-dive.",
+      "source": "solidity.readthedocs.io",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "solidity-cheatsheet-a6703f",
+      "title": "Solidity Cheatsheet",
+      "url": "https://github.com/manojpramesh/solidity-cheatsheet",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Dapps & Solidity — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "hyperledger-f6dcac",
+      "title": "Hyperledger",
+      "url": "https://www.hyperledger.org/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Hyperledger — curated blockchain deep-dive.",
+      "source": "Hyperledger",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "hyperledger-fabric-documentation-10e37c",
+      "title": "Hyperledger Fabric documentation",
+      "url": "https://github.com/hyperledger/fabric#documentation-getting-started-and-developer-guides",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Hyperledger — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-technology-topic-github-edba71",
+      "title": "Blockchain technology topic (GitHub)",
+      "url": "https://github.com/topics/blockchain-technology",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "GitHub collections — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-projects-topic-github-e1e2e6",
+      "title": "Blockchain projects topic (GitHub)",
+      "url": "https://github.com/topics/blockchain",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "GitHub collections — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "awesome-blockchain-ai-f3ff55",
+      "title": "Awesome Blockchain AI",
+      "url": "https://github.com/steven2358/awesome-blockchain-ai",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "GitHub collections — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-libbitcoin-tutorial-3e22dc",
+      "title": "The libbitcoin Tutorial",
+      "url": "https://libbitcoin.dyne.org/doc/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Tutorials & code examples — curated blockchain deep-dive.",
+      "source": "libbitcoin.dyne.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-to-parse-the-bitcoin-blockchain-ad7546",
+      "title": "How to Parse the Bitcoin Blockchain",
+      "url": "http://codesuppository.blogspot.com/2014/01/how-to-parse-bitcoin-blockchain.html",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Tutorials & code examples — curated blockchain deep-dive.",
+      "source": "codesuppository.blogspot.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "signing-offline-transactions-gist-2096e3",
+      "title": "Signing Offline Transactions (gist)",
+      "url": "https://gist.github.com/jashmenn/9811205",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Tutorials & code examples — curated blockchain deep-dive.",
+      "source": "GitHub Gist",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "escrow-example-gist-7e7eaf",
+      "title": "Escrow Example (gist)",
+      "url": "https://gist.github.com/jashmenn/9811198",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Tutorials & code examples — curated blockchain deep-dive.",
+      "source": "GitHub Gist",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "multisig-example-gist-eeb310",
+      "title": "Multisig Example (gist)",
+      "url": "https://gist.github.com/jashmenn/9811185",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Tutorials & code examples — curated blockchain deep-dive.",
+      "source": "GitHub Gist",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-to-decrypt-messages-in-the-blockchain-from-btcmsg-1524d6",
+      "title": "How to decrypt messages in the blockchain from btcmsg",
+      "url": "https://gist.github.com/ripper234/1625828",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Tutorials & code examples — curated blockchain deep-dive.",
+      "source": "GitHub Gist",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "sidechains-treechains-the-tl-dr-78e4a0",
+      "title": "Sidechains, Treechains, the TL;DR",
+      "url": "http://blog.greenaddress.it/2014/06/13/sidechains-treechains-the-tldr/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "blog.greenaddress.it",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "side-chains-the-how-the-challenges-and-the-potential-89f609",
+      "title": "Side Chains: The How, The Challenges and The Potential",
+      "url": "http://bitcoinmagazine.com/12349/side-chains-challenges-potential/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "bitcoinmagazine.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "sidechain-technical-feasibility-discussion-ba1566",
+      "title": "Sidechain Technical Feasibility Discussion",
+      "url": "https://bitcointalk.org/index.php?topic=566704.0;all",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "bitcointalk.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "alternative-chains-merged-mining-36d21e",
+      "title": "Alternative Chains/Merged Mining",
+      "url": "https://en.bitcoin.it/wiki/Alternative_Chains",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "en.bitcoin.it",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-initial-two-way-pegging-proposal-b1b2ec",
+      "title": "The Initial Two-Way Pegging Proposal",
+      "url": "http://sourceforge.net/p/bitcoin/mailman/message/32108143/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "sourceforge.net",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockstream-enabling-blockchain-innovations-with-pegged-33753e",
+      "title": "Blockstream — Enabling Blockchain Innovations with Pegged Sidechains",
+      "url": "https://www.blockstream.com/sidechains.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "blockstream.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "tree-chains-preliminary-summary-2166e1",
+      "title": "Tree-chains Preliminary Summary",
+      "url": "http://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg04388.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "mail-archive.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "sidechain-elements-projects-7d8e92",
+      "title": "Sidechain Elements Projects",
+      "url": "https://github.com/ElementsProject/elementsproject.github.io/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "a-treatise-on-altcoins-a77558",
+      "title": "A Treatise on Altcoins",
+      "url": "https://download.wpsoftware.net/bitcoin/alts.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "download.wpsoftware.net",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-to-clone-scrypt-based-altcoins-630be9",
+      "title": "How to Clone Scrypt Based Altcoins",
+      "url": "http://devtome.com/doku.php?id=scrypt_altcoin_cloning_guide&rev=1391981820",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Sidechains — curated blockchain deep-dive.",
+      "source": "devtome.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "keccak256-slides-28accd",
+      "title": "Keccak256 slides",
+      "url": "https://www.slideshare.net/RajeevVerma14/keccakpptx",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Slides, infographics & blogs — curated blockchain deep-dive.",
+      "source": "slideshare.net",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "a-beginner-s-guide-to-ethereum-coinbase-438095",
+      "title": "A beginner's guide to Ethereum (Coinbase)",
+      "url": "https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Slides, infographics & blogs — curated blockchain deep-dive.",
+      "source": "blog.coinbase.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "an-introduction-to-ethereum-and-smart-contracts-auth0-0dfb23",
+      "title": "An Introduction to Ethereum and Smart Contracts (Auth0)",
+      "url": "https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Slides, infographics & blogs — curated blockchain deep-dive.",
+      "source": "auth0.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "dapps-101-how-do-i-start-developing-on-ethereum-e81e32",
+      "title": "Dapps 101: How do I start developing on Ethereum?",
+      "url": "https://blog.andreacoravos.com/dapps-101-how-do-i-start-developing-on-ethereum-da0d38ed973f",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Slides, infographics & blogs — curated blockchain deep-dive.",
+      "source": "blog.andreacoravos.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-network-effects-55aef2",
+      "title": "Bitcoin Network Effects",
+      "url": "http://blog.eladgil.com/2017/12/bitcoin-network-effects_11.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Slides, infographics & blogs — curated blockchain deep-dive.",
+      "source": "blog.eladgil.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-quiet-master-of-cryptocurrency-nick-szabo-d0baa3",
+      "title": "The quiet master of cryptocurrency (Nick Szabo)",
+      "url": "https://tim.blog/2017/06/04/nick-szabo/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Slides, infographics & blogs — curated blockchain deep-dive.",
+      "source": "tim.blog",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "money-blockchains-and-social-scalability-a6f230",
+      "title": "Money, blockchains, and social scalability",
+      "url": "http://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Slides, infographics & blogs — curated blockchain deep-dive.",
+      "source": "unenumerated.blogspot.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "reddit-r-ethdev-fb2858",
+      "title": "Reddit — r/ethdev",
+      "url": "https://www.reddit.com/r/ethdev/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Reddit & community — curated blockchain deep-dive.",
+      "source": "reddit.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "reddit-r-ethereumnoobies-709675",
+      "title": "Reddit — r/ethereumnoobies",
+      "url": "https://www.reddit.com/r/ethereumnoobies/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Reddit & community — curated blockchain deep-dive.",
+      "source": "reddit.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "eli5-what-is-ethereum-d5cef4",
+      "title": "ELI5: What is Ethereum?",
+      "url": "https://www.reddit.com/r/ethereum/comments/60hhjm/eli5_what_is_ethereum/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Reddit & community — curated blockchain deep-dive.",
+      "source": "reddit.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "learning-to-code-in-ethereum-f4d107",
+      "title": "Learning to Code in Ethereum",
+      "url": "https://www.reddit.com/r/ethereum/comments/4z4y81/any_advice_on_learning_to_code_in_ethereum/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Reddit & community — curated blockchain deep-dive.",
+      "source": "reddit.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "cryptocurrency-stanford-susan-athey-kathryn-haun-7bba13",
+      "title": "Cryptocurrency (Stanford, Susan Athey & Kathryn Haun)",
+      "url": "http://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MGTECON%20515:%20Cryptocurrency&academicYear=20172018",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Courses — curated blockchain deep-dive.",
+      "source": "explorecourses.stanford.edu",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-and-cryptocurrency-technologies-princeton-6557fb",
+      "title": "Bitcoin and Cryptocurrency Technologies (Princeton)",
+      "url": "https://piazza.com/princeton/spring2015/btctech/home",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Courses — curated blockchain deep-dive.",
+      "source": "Princeton",
+      "recommended": true,
+      "tags": [
+        "blockchain-curriculum",
+        "recommended"
+      ]
+    },
+    {
+      "id": "advanced-topics-bitcoin-and-cryptocurrency-technologies-b49c21",
+      "title": "Advanced topics: Bitcoin and cryptocurrency technologies (2014)",
+      "url": "http://randomwalker.info/teaching/fall-2014-bitcoin/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Courses — curated blockchain deep-dive.",
+      "source": "randomwalker.info",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "understanding-blockchain-fundamentals-part-1-byzantine--d5dbb3",
+      "title": "Understanding Blockchain Fundamentals Part 1: Byzantine Fault Tolerance",
+      "url": "https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "understanding-blockchain-fundamentals-part-2-pow-pos-15a86a",
+      "title": "Understanding Blockchain Fundamentals Part 2: PoW & PoS",
+      "url": "https://medium.com/loom-network/understanding-blockchain-fundamentals-part-2-proof-of-work-proof-of-stake-b6ae907c7edb",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "cryptocurrency-wikipedia-e3d798",
+      "title": "Cryptocurrency (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cryptocurrency",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "en.wikipedia.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "peer-to-peer-wikipedia-446115",
+      "title": "Peer-to-Peer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Peer-to-peer",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "en.wikipedia.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-101-coindesk-bb001a",
+      "title": "Blockchain 101 (CoinDesk)",
+      "url": "https://www.coindesk.com/information/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "CoinDesk",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "smart-contract-wikipedia-4ce20e",
+      "title": "Smart Contract (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smart_contract",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "en.wikipedia.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "decentralized-computing-wikipedia-cf007f",
+      "title": "Decentralized Computing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Decentralized_computing",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "en.wikipedia.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "what-is-bitcoin-coindesk-0029f7",
+      "title": "What is Bitcoin? (CoinDesk)",
+      "url": "https://www.coindesk.com/information/what-is-bitcoin/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "CoinDesk",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "what-is-bitcoin-cnn-infographic-1bb9bc",
+      "title": "What is Bitcoin? (CNN infographic)",
+      "url": "https://money.cnn.com/infographic/technology/what-is-bitcoin/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "money.cnn.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-impact-of-the-blockchain-goes-beyond-financial-serv-2dc62b",
+      "title": "The Impact of the Blockchain Goes Beyond Financial Services (HBR)",
+      "url": "https://hbr.org/2016/05/the-impact-of-the-blockchain-goes-beyond-financial-services",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Harvard Business Review",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "developer-s-introduction-to-bitcoin-8d4dfc",
+      "title": "Developer's Introduction to Bitcoin",
+      "url": "https://bitcoinmagazine.com/articles/developers-introduction-bitcoin-1388634312/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "bitcoinmagazine.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-bitcoin-works-under-the-hood-blog-5b3618",
+      "title": "How Bitcoin Works Under the Hood (blog)",
+      "url": "http://www.imponderablethings.com/2013/07/how-bitcoin-works-under-hood.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "imponderablethings.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoins-the-hard-way-using-the-raw-bitcoin-protocol-89cefa",
+      "title": "Bitcoins the hard way: Using the raw Bitcoin protocol",
+      "url": "http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "righto.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-mining-the-hard-way-9a2a94",
+      "title": "Bitcoin mining the hard way",
+      "url": "http://www.righto.com/2014/02/bitcoin-mining-hard-way-algorithms.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "righto.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-the-bitcoin-protocol-actually-works-f597d5",
+      "title": "How the Bitcoin protocol actually works",
+      "url": "http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "michaelnielsen.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "velocity-of-tokens-bc6a6e",
+      "title": "Velocity of Tokens",
+      "url": "https://medium.com/newtown-partners/velocity-of-tokens-26b313303b77",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "inside-an-ethereum-transaction-40147d",
+      "title": "Inside an Ethereum Transaction",
+      "url": "https://medium.com/@codetractio/inside-an-ethereum-transaction-fa94ffca912f",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "wtf-is-the-blockchain-a2b44e",
+      "title": "WTF is the blockchain?",
+      "url": "https://hackernoon.com/wtf-is-the-blockchain-1da89ba19348",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "decrypting-crypto-a16z-summit-ea2f26",
+      "title": "Decrypting crypto (a16z summit)",
+      "url": "https://a16z.com/2017/12/08/summit-crypto-alex-rampell/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "a16z",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-blockchain-economy-a-beginner-s-guide-15c584",
+      "title": "The blockchain economy: a beginner's guide",
+      "url": "https://medium.com/@cryptoeconomics/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics-64bf2f2beec4",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "beginner-s-guide-series-on-cryptoassets-linda-xie-ed902a",
+      "title": "Beginner's guide series on cryptoassets (Linda Xie)",
+      "url": "https://medium.com/@linda.xie/beginners-guide-series-on-cryptoassets-d897535d887",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "why-bitcoin-matters-nyt-fc1010",
+      "title": "Why bitcoin matters (NYT)",
+      "url": "https://dealbook.nytimes.com/2014/01/21/why-bitcoin-matters/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "dealbook.nytimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "bitcoin-s-academic-pedigree-8f7350",
+      "title": "Bitcoin's academic pedigree",
+      "url": "https://queue.acm.org/detail.cfm?id=3136559",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "queue.acm.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "beyond-the-bitcoin-bubble-9a13dd",
+      "title": "Beyond the bitcoin bubble",
+      "url": "https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "nytimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "crypto-tokens-a-breakthrough-in-open-network-design-263855",
+      "title": "Crypto tokens: A breakthrough in open network design",
+      "url": "https://medium.com/@cdixon/crypto-tokens-a-breakthrough-in-open-network-design-e600975be2ef",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "fat-protocols-fb804f",
+      "title": "Fat protocols",
+      "url": "https://www.usv.com/blog/fat-protocols",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "usv.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "cryptocurrencies-app-coins-and-investing-in-protocols-20f39c",
+      "title": "Cryptocurrencies, app coins, and investing in protocols",
+      "url": "https://a16z.com/2017/04/03/cryptocurrencies-protocols-appcoins/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "a16z",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "getting-applications-into-people-s-hands-6a6495",
+      "title": "Getting applications into people's hands",
+      "url": "https://a16z.com/2017/09/14/networks-protocols-labs-tokens/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "a16z",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-what-is-it-good-for-613d07",
+      "title": "Blockchain: what is it good for?",
+      "url": "http://freedom-to-tinker.com/2018/02/26/blockchain-what-is-it-good-for/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "freedom-to-tinker.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "keepers-workers-that-maintain-blockchain-networks-356428",
+      "title": "Keepers: workers that maintain blockchain networks",
+      "url": "https://medium.com/@rzurrer/keepers-workers-that-maintain-blockchain-networks-a40182615b66",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "why-crypto-tokens-matter-e93627",
+      "title": "Why crypto tokens matter",
+      "url": "https://a16z.com/2017/09/28/cryptocurrencies-networks-tokens/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "a16z",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "what-do-we-mean-by-blockchains-are-trustless-c9f09d",
+      "title": "What do we mean by blockchains are trustless?",
+      "url": "https://medium.com/@preethikasireddy/eli5-what-do-we-mean-by-blockchains-are-trustless-aa420635d5f6",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "why-decentralization-matters-17c3ab",
+      "title": "Why decentralization matters",
+      "url": "https://medium.com/@cdixon/why-decentralization-matters-5e3f79f7638e",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-truth-about-blockchain-hbr-8f1c95",
+      "title": "The truth about blockchain (HBR)",
+      "url": "https://hbr.org/2017/01/the-truth-about-blockchain",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "Harvard Business Review",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "vitalik-buterin-unchained-podcast-646f52",
+      "title": "Vitalik Buterin — Unchained podcast",
+      "url": "https://itunes.apple.com/us/podcast/unchained-big-ideas-from-worlds-blockchain-cryptocurrency/id1123922160",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "itunes.apple.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "mental-models-for-understanding-tokens-d7b70c",
+      "title": "Mental models for understanding tokens",
+      "url": "https://a16z.com/2018/01/21/mental-models-tokens-crypto-trends/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Articles — fundamentals — curated blockchain deep-dive.",
+      "source": "a16z",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "an-overview-of-governance-in-blockchains-f094f9",
+      "title": "An overview of governance in blockchains",
+      "url": "https://www.docdroid.net/ddz6VzP/overview-governance-blockchains-nc-zcon.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Governance — curated blockchain deep-dive.",
+      "source": "docdroid.net",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "governance-deep-dive-986eb5",
+      "title": "Governance deep dive",
+      "url": "https://docs.google.com/presentation/d/10cLFnYaR0r58DyPVYwMgJq3nJOFVkO02hxJf1hxGnJ0/edit?usp=sharing",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Governance — curated blockchain deep-dive.",
+      "source": "docs.google.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-myth-of-the-irrational-token-holder-84a53e",
+      "title": "The myth of the irrational token holder",
+      "url": "https://medium.com/@kathleenbreit/the-myth-of-the-irrational-token-holder-c12438709afd",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Governance — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-governance-governance-101-946ea8",
+      "title": "Blockchain governance / governance 101",
+      "url": "https://medium.com/@FEhrsam/blockchain-governance-programming-our-future-c3bfe30f2d74",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Governance — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "against-on-chain-governance-1b3bfe",
+      "title": "Against on-chain governance",
+      "url": "https://medium.com/@Vlad_Zamfir/against-on-chain-governance-a4ceacd040ca",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Governance — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "privacy-on-the-blockchain-138759",
+      "title": "Privacy on the blockchain",
+      "url": "https://blog.ethereum.org/2016/01/15/privacy-on-the-blockchain/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "blog.ethereum.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-to-secure-your-smart-contracts-part-1-2c8fbe",
+      "title": "How to secure your smart contracts Part 1",
+      "url": "https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-to-secure-your-smart-contracts-part-2-52e5ea",
+      "title": "How to secure your smart contracts Part 2",
+      "url": "https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-2-730db0aa4834",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "town-crier-authenticated-data-feed-for-smart-contracts-945b8b",
+      "title": "Town Crier: authenticated data feed for smart contracts",
+      "url": "https://eprint.iacr.org/2016/168.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "eprint.iacr.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "what-are-zk-snarks-dfedf6",
+      "title": "What are zk-SNARKs?",
+      "url": "https://z.cash/technology/zksnarks.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "z.cash",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "zk-snarks-under-the-hood-vitalik-series-ec0ff9",
+      "title": "zk-SNARKs: under the hood (Vitalik series)",
+      "url": "https://medium.com/@VitalikButerin/zk-snarks-under-the-hood-b33151a013f6",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "scalable-post-quantum-secure-computational-integrity-fea9f7",
+      "title": "Scalable post-quantum secure computational integrity",
+      "url": "https://eprint.iacr.org/2018/046.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "eprint.iacr.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "succinct-non-interactive-zero-knowledge-647047",
+      "title": "Succinct non-interactive zero knowledge",
+      "url": "https://eprint.iacr.org/2013/879.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Privacy & security — curated blockchain deep-dive.",
+      "source": "eprint.iacr.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchains-don-t-scale-53a434",
+      "title": "Blockchains don't scale",
+      "url": "https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Scaling — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "models-for-scaling-trustless-computation-496336",
+      "title": "Models for scaling trustless computation",
+      "url": "https://multicoin.capital/2018/02/23/models-scaling-trustless-computation/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Scaling — curated blockchain deep-dive.",
+      "source": "multicoin.capital",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "what-is-the-lightning-network-9285cb",
+      "title": "What is the Lightning Network?",
+      "url": "https://coincenter.org/entry/what-is-the-lightning-network",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Scaling — curated blockchain deep-dive.",
+      "source": "coincenter.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "making-sense-of-ethereum-layer-2-scaling-ed11df",
+      "title": "Making sense of Ethereum Layer 2 scaling",
+      "url": "https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Scaling — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "scaling-tezos-39bb28",
+      "title": "Scaling Tezos",
+      "url": "https://hackernoon.com/scaling-tezo-8de241dd91bd",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Scaling — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ethereum-scalability-r-d-subsidy-programs-948a62",
+      "title": "Ethereum scalability R&D subsidy programs",
+      "url": "https://blog.ethereum.org/2018/01/02/ethereum-scalability-research-development-subsidy-programs/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Scaling — curated blockchain deep-dive.",
+      "source": "blog.ethereum.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ethereum-sharding-overview-and-finality-9f5dae",
+      "title": "Ethereum sharding: overview and finality",
+      "url": "https://medium.com/@icebearhww/ethereum-sharding-and-finality-65248951f649",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Scaling — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "a-proof-of-stake-design-philosophy-4b102e",
+      "title": "A proof of stake design philosophy",
+      "url": "https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Consensus — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "delegated-proof-of-stake-features-and-tradeoffs-52f0f8",
+      "title": "Delegated proof of stake: features and tradeoffs",
+      "url": "https://multicoin.capital/2018/03/02/delegated-proof-stake-features-tradeoffs/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Consensus — curated blockchain deep-dive.",
+      "source": "multicoin.capital",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "seeking-consensus-on-consensus-ee08ca",
+      "title": "Seeking consensus on consensus",
+      "url": "https://steemit.com/eos/@iang/seeking-consensus-on-consensus-dpos-or-delegated-proof-of-stake-and-the-two-generals-problem",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Consensus — curated blockchain deep-dive.",
+      "source": "steemit.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ethereum-casper-101-9c5d80",
+      "title": "Ethereum Casper 101",
+      "url": "https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Consensus — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-history-of-casper-part-1-cf99f4",
+      "title": "The history of Casper Part 1",
+      "url": "https://medium.com/@Vlad_Zamfir/the-history-of-casper-part-1-59233819c9a9",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Consensus — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "inflation-and-participation-in-stake-based-token-protoc-a8f1da",
+      "title": "Inflation and participation in stake-based token protocols",
+      "url": "https://medium.com/@petkanics/inflation-and-participation-in-stake-based-token-protocols-1593688612bf",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Consensus — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "making-sense-of-cryptoeconomics-ad4c83",
+      "title": "Making sense of cryptoeconomics",
+      "url": "https://hackernoon.com/making-sense-of-cryptoeconomics-5edea77e4e8d",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "a-crash-course-in-mechanism-design-for-cryptoeconomic-a-abdfed",
+      "title": "A crash course in mechanism design for cryptoeconomic applications",
+      "url": "https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-security-token-thesis-5f1032",
+      "title": "The security token thesis",
+      "url": "https://hackernoon.com/the-security-token-thesis-4c5904761063",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "cryptoasset-valuations-d9594f",
+      "title": "Cryptoasset valuations",
+      "url": "https://medium.com/@cburniske/cryptoasset-valuations-ac83479ffca7",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "comments-on-investor-take-tweetstorm-235b18",
+      "title": "Comments on investor take (tweetstorm)",
+      "url": "https://twitter.com/KyleSamani/status/943277077037506560",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "twitter.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "on-value-velocity-and-monetary-theory-6e73d7",
+      "title": "On value, velocity, and monetary theory",
+      "url": "https://medium.com/blockchannel/on-value-velocity-and-monetary-theory-a-new-approach-to-cryptoasset-valuations-32c9b22e3b6f",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "understanding-token-velocity-550515",
+      "title": "Understanding token velocity",
+      "url": "https://multicoin.capital/2017/12/08/understanding-token-velocity/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "multicoin.capital",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "token-classification-framework-12af60",
+      "title": "Token classification framework",
+      "url": "http://www.untitled-inc.com/the-token-classification-framework-a-multi-dimensional-tool-for-understanding-and-classifying-crypto-tokens/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "untitled-inc.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "skin-in-the-game-coins-9e43c7",
+      "title": "Skin-in-the-game coins",
+      "url": "https://medium.com/tbis-weekly-bits/skin-in-the-game-coins-da0afdfdc650",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Cryptoeconomics & investing — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "funding-the-evolution-of-blockchains-9822b1",
+      "title": "Funding the evolution of blockchains",
+      "url": "https://medium.com/@FEhrsam/funding-the-evolution-of-blockchains-87d160988481",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundraising & token distribution — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-to-make-bonding-curves-542f3d",
+      "title": "How to make bonding curves",
+      "url": "https://hackernoon.com/how-to-make-bonding-curves-for-continuous-token-models-3784653f8b17",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundraising & token distribution — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "explanation-of-daicos-b03958",
+      "title": "Explanation of DAICOs",
+      "url": "https://ethresear.ch/t/explanation-of-daicos/465",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundraising & token distribution — curated blockchain deep-dive.",
+      "source": "ethresear.ch",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-saft-project-b99f4b",
+      "title": "The SAFT Project",
+      "url": "https://saftproject.com/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundraising & token distribution — curated blockchain deep-dive.",
+      "source": "saftproject.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "regulatory-environment-coin-center-97c35e",
+      "title": "Regulatory environment (Coin Center)",
+      "url": "https://coincenter.org/our-work",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Fundraising & token distribution — curated blockchain deep-dive.",
+      "source": "coincenter.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "networked-liquidity-18dff7",
+      "title": "Networked liquidity",
+      "url": "https://medium.com/radarrelay/networked-liquidity-2030d85af897",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Decentralized exchanges & stablecoins — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "list-of-decentralized-exchanges-9d5e4a",
+      "title": "List of decentralized exchanges",
+      "url": "https://github.com/PYMERVAL/decentradexchange",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Decentralized exchanges & stablecoins — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "an-overview-of-stablecoins-d217ff",
+      "title": "An overview of stablecoins",
+      "url": "https://multicoin.capital/2018/01/17/an-overview-of-stablecoins/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Decentralized exchanges & stablecoins — curated blockchain deep-dive.",
+      "source": "multicoin.capital",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-search-for-a-stable-cryptocurrency-e61b57",
+      "title": "The search for a stable cryptocurrency",
+      "url": "https://blog.ethereum.org/2014/11/11/search-stable-cryptocurrency/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Decentralized exchanges & stablecoins — curated blockchain deep-dive.",
+      "source": "blog.ethereum.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "maker-for-dummies-dai-stablecoin-explained-e0afc2",
+      "title": "Maker for dummies: Dai stablecoin explained",
+      "url": "https://medium.com/cryptolinks/maker-for-dummies-a-plain-english-explanation-of-the-dai-stablecoin-e4481d79b90",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Decentralized exchanges & stablecoins — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-emergence-of-cryptoeconomic-primitives-265811",
+      "title": "The emergence of cryptoeconomic primitives",
+      "url": "https://medium.com/@jacobscott/the-emergence-of-cryptoeconomic-primitives-14ef3300cc10",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "token-lexicon-0ab91b",
+      "title": "Token lexicon",
+      "url": "https://medium.com/@billyrennekamp/token-lexicon-b4ed9a4ce363",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "smart-media-tokens-whitepaper-dae1c6",
+      "title": "Smart media tokens whitepaper",
+      "url": "https://smt.steem.io/smt-whitepaper.pdf",
+      "type": "doc",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "smt.steem.io",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "digital-pets-that-don-t-die-6f5d2f",
+      "title": "Digital pets that don't die",
+      "url": "https://elaineou.com/2017/12/03/digital-pets-that-dont-die/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "elaineou.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "will-cryptocurrencies-be-the-art-market-s-next-big-thin-c59b13",
+      "title": "Will cryptocurrencies be the art market's next big thing?",
+      "url": "https://www.nytimes.com/2018/01/13/arts/cryptocurrency-art-market.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "nytimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "digital-collectibles-and-digibles-22c73e",
+      "title": "Digital collectibles and digibles",
+      "url": "https://hackernoon.com/digital-collectibles-and-the-weird-future-of-digibles-f75f4bf0f9aa",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "cryptocollectibles-are-xlnt-b54ded",
+      "title": "Cryptocollectibles are XLNT",
+      "url": "https://medium.com/xlnt-art/cryptocollectibles-are-xlnt-but-nobody-knows-whats-next-a7892b311637",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "rare-pepe-a33179",
+      "title": "Rare pepe",
+      "url": "http://avc.com/2017/05/rare-pepe/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "avc.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "introducing-curation-markets-fcb711",
+      "title": "Introducing curation markets",
+      "url": "https://medium.com/@simondlr/introducing-curation-markets-trade-popularity-of-memes-information-with-code-70bf6fed9881",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "curation-markets-tweetstorm-ddcca4",
+      "title": "Curation markets (tweetstorm)",
+      "url": "https://twitter.com/FEhrsam/status/958388803655184386",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "twitter.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "early-uis-for-curation-markets-0d2147",
+      "title": "Early UIs for curation markets",
+      "url": "https://twitter.com/jessewldn/status/958733889643696128",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "twitter.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "token-curated-registries-a3ab85",
+      "title": "Token curated registries",
+      "url": "https://medium.com/@ilovebagels/token-curated-registries-1-0-61a232f8dac7",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "tcr-design-patterns-1892e8",
+      "title": "TCR design patterns",
+      "url": "https://medium.com/coinmonks/token-curated-registry-tcr-design-patterns-4de6d18efa15",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "building-google-for-the-economic-web-524f90",
+      "title": "Building Google for the economic web",
+      "url": "https://blog.userfeeds.io/building-google-for-the-economic-web-on-the-ethereum-blockchain-de27cb3d23b",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "NFTs, TCRs & curation markets — curated blockchain deep-dive.",
+      "source": "blog.userfeeds.io",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-to-code-your-own-cryptokitties-style-game-e961b4",
+      "title": "How to code your own CryptoKitties-style game",
+      "url": "https://medium.com/loom-network/how-to-code-your-own-cryptokitties-style-game-on-ethereum-7c8ac86a4eb3",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Developer guides — curated blockchain deep-dive.",
+      "source": "Medium",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "learning-solidity-voting-example-f38198",
+      "title": "Learning Solidity — voting example",
+      "url": "https://karl.tech/learning-solidity-part-2-voting/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Developer guides — curated blockchain deep-dive.",
+      "source": "karl.tech",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "zksnarks-driver-s-ed-9e4ae8",
+      "title": "zkSNARKs: driver's ed",
+      "url": "https://github.com/jstoxrocky/zksnarks_example",
+      "type": "code",
+      "category": "code",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Developer guides — curated blockchain deep-dive.",
+      "source": "GitHub",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "epicenter-podcast-271a7b",
+      "title": "Epicenter podcast",
+      "url": "https://epicenter.tv/episodes/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Developer guides — curated blockchain deep-dive.",
+      "source": "epicenter.tv",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "the-ceremony-radiolab-9e9616",
+      "title": "The Ceremony (Radiolab)",
+      "url": "http://www.radiolab.org/story/ceremony/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Developer guides — curated blockchain deep-dive.",
+      "source": "radiolab.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "qatar-blockchain-pilot-for-money-transfers-ca666e",
+      "title": "Qatar blockchain pilot for money transfers",
+      "url": "http://www.gtreview.com/news/mena/qatar-completes-blockchain-pilot-for-international-money-transfers/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "gtreview.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "darpa-blockchain-contract-galois-e0a2be",
+      "title": "DARPA blockchain contract (Galois)",
+      "url": "https://qz.com/801640/darpa-blockchain-a-blockchain-from-guardtime-is-being-verified-by-galois-under-a-government-contract/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "qz.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "abu-dhabi-securities-exchange-on-blockchain-90232b",
+      "title": "Abu Dhabi Securities Exchange on blockchain",
+      "url": "https://www.cryptocoinsnews.com/abu-dhabi-securities-exchange-chief-big-blockchain/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "cryptocoinsnews.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-in-music-industry-hbr-5f2ed0",
+      "title": "Blockchain in music industry (HBR)",
+      "url": "https://hbr.org/2017/03/blockchain-could-help-artists-profit-more-from-their-creative-works",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "Harvard Business Review",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-for-smart-cities-wef-7cf595",
+      "title": "Blockchain for smart cities (WEF)",
+      "url": "https://www.weforum.org/agenda/2016/12/this-is-how-blockchain-will-change-the-face-of-our-cities/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "weforum.org",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "using-blockchain-to-keep-public-data-public-c8abdd",
+      "title": "Using blockchain to keep public data public",
+      "url": "https://hbr.org/2017/03/using-blockchain-to-keep-public-data-public",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "Harvard Business Review",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-utilities-use-blockchain-to-modernize-the-grid-256f3a",
+      "title": "How utilities use blockchain to modernize the grid",
+      "url": "https://hbr.org/2017/03/how-utilities-are-using-blockchain-to-modernize-the-grid",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "Harvard Business Review",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-in-travel-sector-eecbe2",
+      "title": "Blockchain in travel sector",
+      "url": "https://www.forbes.com/sites/forbesfinancecouncil/2017/03/28/how-blockchain-technology-will-dominate-the-travel-sector/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "forbes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-for-healthcare-prescription-costs-257a48",
+      "title": "Blockchain for healthcare prescription costs",
+      "url": "https://bitcoinmagazine.com/articles/could-there-be-blockchain-solution-high-prescription-drug-prices/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "bitcoinmagazine.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "kotak-mahindra-blockchain-trade-financing-94c482",
+      "title": "Kotak Mahindra blockchain trade financing",
+      "url": "http://www.econotimes.com/Indian-Kotak-Mahindra-Bank-launches-end-to-end-blockchain-based-trade-financing-707067",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "econotimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "sap-blockchain-service-in-the-cloud-65c0da",
+      "title": "SAP blockchain service in the cloud",
+      "url": "http://www.cnbc.com/2017/05/17/sap-unveils-blockchain-service-in-the-cloud.html",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "cnbc.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "wipro-blockchain-push-fc80ca",
+      "title": "Wipro blockchain push",
+      "url": "http://cio.economictimes.indiatimes.com/news/enterprise-services-and-applications/wipros-big-blockchain-push-across-sectors-with-the-launch-of-nine-solutions/58713030",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "cio.economictimes.indiatimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "irish-banks-blockchain-payments-pilot-c370f5",
+      "title": "Irish banks blockchain payments pilot",
+      "url": "http://www.coindesk.com/big-four-irish-banks-join-blockchain-payments-pilot/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "CoinDesk",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "luxembourg-blockchain-id-platform-7ba21c",
+      "title": "Luxembourg blockchain ID platform",
+      "url": "http://www.coindesk.com/luxembourg-government-backed-firm-to-launch-blockchain-id-platform/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "CoinDesk",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-in-film-industry-2093a9",
+      "title": "Blockchain in film industry",
+      "url": "https://www.linkedin.com/pulse/blockchain-technology-film-industry-use-case-paul-forrest",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "linkedin.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "dubai-aims-to-be-a-city-built-on-blockchain-e97eab",
+      "title": "Dubai aims to be a city built on blockchain",
+      "url": "https://www.wsj.com/articles/dubai-aims-to-be-a-city-built-on-blockchain-1493086080",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "wsj.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "south-korea-blockchain-insurance-pilot-f35597",
+      "title": "South Korea blockchain insurance pilot",
+      "url": "https://www.cryptocoinsnews.com/south-korea-backs-worlds-first-blockchain-pilot-insurance-payments-seoul/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "cryptocoinsnews.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-vs-wannacry-petya-64c5ac",
+      "title": "Blockchain vs WannaCry/Petya",
+      "url": "http://www.informationsecuritybuzz.com/articles/countering-wannacry-petya-blockchain-technology/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "informationsecuritybuzz.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "hsbc-blockchain-digital-trade-chain-a0a75f",
+      "title": "HSBC blockchain digital trade chain",
+      "url": "http://www.businessinsider.com/blockchain-digital-trade-chain-ibm-hyperledger-deutsche-bank-hsbc-soc-gen-2017-6",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "businessinsider.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-could-help-musicians-make-money-b9a82f",
+      "title": "Blockchain could help musicians make money",
+      "url": "https://hbr.org/2017/06/blockchain-could-help-musicians-make-money-again",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "Harvard Business Review",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-for-cyber-security-41f720",
+      "title": "Blockchain for cyber security",
+      "url": "http://www.financialexpress.com/industry/technology/ransomware-after-petya-attack-eyes-turn-to-blockchain-for-a-way-out/740359/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "financialexpress.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "indian-blockchain-consortium-bankchain-ba2d08",
+      "title": "Indian blockchain consortium BankChain",
+      "url": "http://www.econotimes.com/Indian-blockchain-consortium-BankChain-ropes-in-Microsoft-as-exclusive-cloud-partner-752108",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "econotimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "singapore-tokenizes-fiat-on-blockchain-f0ea22",
+      "title": "Singapore tokenizes fiat on blockchain",
+      "url": "https://bitcoinmagazine.com/articles/future-here-singapore-tokenizes-fiat-currency-blockchain/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "bitcoinmagazine.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-for-genomic-data-privacy-3d5895",
+      "title": "Blockchain for genomic data privacy",
+      "url": "https://www.cryptocoinsnews.com/blockchain-solution-ensures-privacy-of-genomic-data-while-granting-access-for-medical-research/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "cryptocoinsnews.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "dubai-gate-less-airport-security-with-blockchain-bfa9a2",
+      "title": "Dubai gate-less airport security with blockchain",
+      "url": "http://www.coindesk.com/dubai-plans-gate-less-airport-security-using-blockchain-tech/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "CoinDesk",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "first-quantum-secured-blockchain-tested-in-moscow-babeb9",
+      "title": "First quantum-secured blockchain tested in Moscow",
+      "url": "https://www.technologyreview.com/s/608041/first-quantum-secured-blockchain-technology-tested-in-moscow/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "technologyreview.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-could-help-save-the-environment-2a775b",
+      "title": "Blockchain could help save the environment",
+      "url": "https://futurism.com/blockchain-could-help-save-environment-heres-how/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "futurism.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "samsung-sds-blockchain-consortium-in-korea-48a9ea",
+      "title": "Samsung SDS blockchain consortium in Korea",
+      "url": "http://www.econotimes.com/Samsung-SDS-launches-blockchain-consortium-in-Korea-733267",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "econotimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "how-the-decentralized-web-will-rewrite-security-62d692",
+      "title": "How the decentralized web will rewrite security",
+      "url": "https://hackernoon.com/how-the-decentralized-web-will-rewrite-the-rules-of-security-and-save-the-net-from-the-barbarian-23db16af34a1",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "Hacker Noon",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "singapore-shipping-ibm-blockchain-trial-8fc188",
+      "title": "Singapore shipping IBM blockchain trial",
+      "url": "https://siliconangle.com/blog/2017/08/16/singapore-shipping-giants-sign-deal-ibm-blockchain-supply-chain-trial/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "siliconangle.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-idbox-pilot-in-remote-png-village-7dbf0c",
+      "title": "Blockchain idbox pilot in remote PNG village",
+      "url": "https://www.linkedin.com/pulse/blockchain-idbox-pilot-success-remote-png-village-dr-jane-thomason",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "linkedin.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "hardware-integrity-check-google-patent-6f6b90",
+      "title": "Hardware integrity check (Google patent)",
+      "url": "http://www.google.com/patents/US20160275461",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "google.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "australian-students-explore-bitcoin-232d46",
+      "title": "Australian students explore Bitcoin",
+      "url": "https://news.bitcoin.com/australian-primary-school-students-explore-bitcoin-and-cryptocurrency-technology/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "news.bitcoin.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "malta-blockchain-revolution-0a6973",
+      "title": "Malta blockchain revolution",
+      "url": "http://www.maltatoday.com.mt/business/business_news/79185/malta_lays_the_ground_for_a_blockchain_revolution",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "maltatoday.com.mt",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-in-education-open-university-fadbf2",
+      "title": "Blockchain in education (Open University)",
+      "url": "http://blockchain.open.ac.uk",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "blockchain.open.ac.uk",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "blockchain-predictions-2018-1f70c0",
+      "title": "Blockchain predictions 2018",
+      "url": "https://www.linkedin.com/pulse/blockchain-predictions-2018-linas-beli%C5%ABnas",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "linkedin.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "south-korean-blockchain-authentication-service-9ebc28",
+      "title": "South Korean blockchain authentication service",
+      "url": "https://cryptovest.com/news/south-korean-consortium-launches-blockchain-based-authentication-service/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "cryptovest.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "seafood-supply-chain-and-modern-slavery-669940",
+      "title": "Seafood supply chain and modern slavery",
+      "url": "https://www.forbes.com/sites/alexcapri/2018/02/14/how-blockchain-could-help-end-modern-day-slavery-in-asias-exploitative-seafood-industry/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "forbes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "pharmaceutical-logistics-blockchain-poc-0c6c80",
+      "title": "Pharmaceutical logistics blockchain PoC",
+      "url": "http://www.computerweekly.com/news/252436653/Proof-of-concept-shows-blockchain-could-save-lives-in-pharmaceutical-logistics",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "computerweekly.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "kyc-using-blockchain-a543a7",
+      "title": "KYC using blockchain",
+      "url": "https://blogs.thomsonreuters.com/financial-risk/financial-crime/kyc-using-blockchain-answer-banks/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "blogs.thomsonreuters.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "manipal-student-uses-blockchain-for-medical-records-2a0d0e",
+      "title": "Manipal student uses blockchain for medical records",
+      "url": "https://bangaloremirror.indiatimes.com/news/state/manipal-student-uses-blockchain-for-medical-records/articleshow/64860327.cms",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "bangaloremirror.indiatimes.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "ibm-food-traceability-in-finland-d4e203",
+      "title": "IBM food traceability in Finland",
+      "url": "https://www.ibm.com/blogs/blockchain/2018/07/this-summer-fishing-in-finland-means-food-traceability-on-the-menu/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "ibm.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
+    },
+    {
+      "id": "pwc-audit-service-for-blockchain-bbbda5",
+      "title": "PwC audit service for blockchain",
+      "url": "https://www.ccn.com/pwc-to-provide-audit-service-for-blockchain-to-stimulate-adoption/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "blockchain"
+      ],
+      "description": "Use cases — curated blockchain deep-dive.",
+      "source": "ccn.com",
+      "recommended": false,
+      "tags": [
+        "blockchain-curriculum"
+      ]
     }
   ]
 }

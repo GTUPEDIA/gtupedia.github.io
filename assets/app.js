@@ -850,7 +850,7 @@ function renderCourseCard(course, { comingSoon = false } = {}) {
   } else {
     detail = 'Subjects and resources coming soon';
   }
-  const extraClass = comingSoon ? ' course-card--soon' : '';
+  const extraClass = comingSoon ? ' course-card--soon' : ' course-card--available';
   return `
     <a class="branch-card course-card${extraClass}" href="${urlFor({ course: course.code })}">
       <span class="branch-code">${escapeHtml(course.code)}</span>

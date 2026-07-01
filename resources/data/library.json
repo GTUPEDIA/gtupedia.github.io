@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-24",
+  "updatedAt": "2026-07-01",
   "categories": [
     {
       "id": "courses",
@@ -39,13 +39,3045 @@
     }
   ],
   "topics": [
-    { "id": "programming", "name": "Programming", "slug": "programming" },
-    { "id": "web-dev", "name": "Web development", "slug": "web-development" },
-    { "id": "machine-learning", "name": "Machine learning", "slug": "machine-learning" },
-    { "id": "android", "name": "Android", "slug": "android" },
-    { "id": "competitive", "name": "Competitive coding", "slug": "competitive-coding" },
-    { "id": "finance", "name": "Finance", "slug": "finance" },
-    { "id": "gtu", "name": "GTU & academics", "slug": "gtu-academics" }
+    {
+      "id": "programming",
+      "name": "Programming",
+      "slug": "programming"
+    },
+    {
+      "id": "web-dev",
+      "name": "Web development",
+      "slug": "web-development"
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine learning",
+      "slug": "machine-learning"
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "slug": "android"
+    },
+    {
+      "id": "competitive",
+      "name": "Competitive coding",
+      "slug": "competitive-coding"
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "slug": "finance"
+    },
+    {
+      "id": "gtu",
+      "name": "GTU & academics",
+      "slug": "gtu-academics"
+    }
   ],
-  "items": []
+  "items": [
+    {
+      "id": "introductory-intermediate-advanced-c-microsoft-recommen-b59385",
+      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Advanced",
+      "url": "https://www.edx.org/course/advanced-c-2",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "edX",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "introductory-intermediate-advanced-c-microsoft-recommen-9c77c3",
+      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Intermediate",
+      "url": "https://www.edx.org/course/intermediate-c-microsoft-dev210-2x",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "edX",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "introductory-intermediate-advanced-c-microsoft-recommen-c0b4a6",
+      "title": "[Introductory] [Intermediate] [Advanced] C++ - Microsoft (Recommended) — Introductory",
+      "url": "https://www.edx.org/course/introduction-c-microsoft-dev210x-5",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "edX",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "automl-in-leadersboard-google-automl-https-www-h2o-ai-d-ab20e6",
+      "title": "AutoML in leadersboard Google AutoML https://www.h2o.ai Databoard The above mentioned are the quite exciting! ML using ML. — Bias & Varia...",
+      "url": "http://www.r2d3.us/visual-intro-to-machine-learning-part-2/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "r2d3.us",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "automl-in-leadersboard-google-automl-https-www-h2o-ai-d-6f90b3",
+      "title": "AutoML in leadersboard Google AutoML https://www.h2o.ai Databoard The above mentioned are the quite exciting! ML using ML. — Decision Tre...",
+      "url": "http://www.r2d3.us/visual-intro-to-machine-learning-part-1/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "r2d3.us",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "automl-in-leadersboard-google-automl-https-www-h2o-ai-d-7cdf9a",
+      "title": "AutoML in leadersboard Google AutoML https://www.h2o.ai Databoard The above mentioned are the quite exciting! ML using ML. — K-NN visuali...",
+      "url": "http://vision.stanford.edu/teaching/cs231n-demos/knn/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "vision.stanford.edu",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "blockchain-technology-learning-more-resources-https-med-f0c44d",
+      "title": "Blockchain Technology Learning More Resources — https://medium.com/towardsblockchain/blockchain-technology-learning-resources-by-towardsb...",
+      "url": "https://medium.com/towardsblockchain/blockchain-technology-learning-resources-by-towardsblockchain-dcc78db941f9",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "blogs-for-mere-intro-and-warm-up-from-cev-nuclear-power-f1352c",
+      "title": "Blogs for mere intro and Warm-up from CEV Nuclear Power in India Higgs Boson Giving universe the mass Nuclear Fusion How much it takes to...",
+      "url": "http://www.cevgroup.org/nuclear-power-in-india/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "cevgroup.org",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "blogs-for-mere-intro-and-warm-up-from-cev-nuclear-power-93835a",
+      "title": "Blogs for mere intro and Warm-up from CEV Nuclear Power in India Higgs Boson Giving universe the mass Nuclear Fusion How much it takes to...",
+      "url": "http://www.cevgroup.org/higgs-bosons-giving-universe-the-mass/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "cevgroup.org",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "blogs-for-mere-intro-and-warm-up-from-cev-nuclear-power-92ab1e",
+      "title": "Blogs for mere intro and Warm-up from CEV Nuclear Power in India Higgs Boson Giving universe the mass Nuclear Fusion How much it takes to...",
+      "url": "http://www.cevgroup.org/nuclear-fusion-how-much-it-takes-to-mimic-a-star/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "cevgroup.org",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "buildwithreact-com-tutorials-a5699d",
+      "title": "BuildwithReact.com[Tutorials]",
+      "url": "http://buildwithreact.com/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "ReactJS is frontend web-framework. It is easy to learn if you have knowledge of JS.Try to follow the tutorials from NetNinja's Youtube Channel and implement a sample web-app. So try to learn flask first. ***For any kind of web-dev stuff not only reactjs,there are very informative blogs available on Medium .",
+      "source": "buildwithreact.com",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "cs50-harvard-university-240dd4",
+      "title": "CS50 - Harvard University",
+      "url": "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "edX",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "freecodecamp",
+      "title": "freeCodeCamp — Full curriculum",
+      "url": "https://www.freecodecamp.org/learn/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "Free certifications in responsive web design, JavaScript, Python, and more.",
+      "source": "freeCodeCamp",
+      "recommended": true,
+      "tags": [
+        "free",
+        "certification"
+      ]
+    },
+    {
+      "id": "fundamentals-of-astrodynamics-by-bate-and-mueller-book--572bdb",
+      "title": "Fundamentals of Astrodynamics by Bate and Mueller — [Book] (‎Donald D. Mueller, Roger R. Bate)",
+      "url": "http://cmp.felk.cvut.cz/~kukelova/pajdla/Bate,%20Mueller,%20and%20White%20-%20Fundamentals%20of%20Astrodynamics.pdf",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "This book gives an insight to how orbits works, how the attitude(orientation of spacecrafts in orbits is monitored) and how interplanetary mission’s trajectories are designed.",
+      "source": "cmp.felk.cvut.cz",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "getting-upto-speed-on-ethereum-ff950f",
+      "title": "Getting Upto speed on Ethereum",
+      "url": "https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "gtu-official-portal",
+      "title": "GTU — Official website",
+      "url": "https://gtu.ac.in/",
+      "type": "doc",
+      "category": "exam-prep",
+      "topics": [
+        "gtu"
+      ],
+      "description": "Results, syllabus, exam circulars, and official downloads.",
+      "source": "GTU",
+      "recommended": true,
+      "tags": [
+        "official"
+      ]
+    },
+    {
+      "id": "gtu-exam-papers",
+      "title": "GTU question paper uploads",
+      "url": "https://gtu.ac.in/Examination/Question-Papers",
+      "type": "doc",
+      "category": "exam-prep",
+      "topics": [
+        "gtu"
+      ],
+      "description": "Official archive of GTU exam papers (also linked from GTUPEDIA subject pages).",
+      "source": "GTU",
+      "recommended": true,
+      "tags": [
+        "papers",
+        "official"
+      ]
+    },
+    {
+      "id": "gtu-student-portal",
+      "title": "GTU Student Portal (SAMARTH)",
+      "url": "https://student.gtu.ac.in/",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "gtu"
+      ],
+      "description": "Enrollment, exam forms, and student services.",
+      "source": "GTU",
+      "recommended": true,
+      "tags": [
+        "official"
+      ]
+    },
+    {
+      "id": "gtupedia-home",
+      "title": "GTUPEDIA — Papers & syllabus",
+      "url": "https://gtupedia.github.io/",
+      "type": "tool",
+      "category": "exam-prep",
+      "topics": [
+        "gtu"
+      ],
+      "description": "Browse GTU courses, branches, subjects, and exam paper links by semester.",
+      "source": "GTUPEDIA",
+      "recommended": true,
+      "tags": [
+        "papers"
+      ]
+    },
+    {
+      "id": "https-www-edx-org-micromasters-pennx-robotics-f91b80",
+      "title": "https://www.edx.org/micromasters/pennx-robotics",
+      "url": "https://www.edx.org/micromasters/pennx-robotics",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "edX",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "leetcode",
+      "title": "LeetCode",
+      "url": "https://leetcode.com/",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "competitive",
+        "programming"
+      ],
+      "description": "Practice coding interview and DSA problems with difficulty tags.",
+      "source": "LeetCode",
+      "recommended": true,
+      "tags": [
+        "practice"
+      ]
+    },
+    {
+      "id": "machine-learning-and-reinforcement-learning-in-finance--501246",
+      "title": "Machine Learning and Reinforcement Learning in Finance Specialization — Specialization Link",
+      "url": "https://www.coursera.org/specializations/machine-learning-reinforcement-finance",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "finance",
+        "machine-learning",
+        "programming"
+      ],
+      "description": "",
+      "source": "Coursera",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "masterclass-chris-hadfield-teaches-space-exploration-dr-eb0358",
+      "title": "MasterClass - Chris Hadfield teaches Space Exploration — [Drive Link] (Edureka!)",
+      "url": "https://drive.google.com/open?id=16_fpDrEz0bPaLNVMy7oZ-eqJfzYUybzS",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "An ground level course for the beginners who want to know how things in space work. Chris Hadfield is an astronaut who has been a mission commander on the ISS. He talks about the basic principles that govern the space exploration.",
+      "source": "drive.google.com",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "mdn-web-docs",
+      "title": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "Reference for HTML, CSS, JavaScript, and web APIs.",
+      "source": "Mozilla",
+      "recommended": true,
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "id": "meaning-of-decentralization-https-medium-com-vitalikbut-87138d",
+      "title": "Meaning of Decentralization — https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274",
+      "url": "https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "netninja-complete-react-tutorial-25134c",
+      "title": "NetNinja Complete React Tutorial",
+      "url": "https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "ReactJS is frontend web-framework. It is easy to learn if you have knowledge of JS.Try to follow the tutorials from NetNinja's Youtube Channel and implement a sample web-app. So try to learn flask first. ***For any kind of web-dev stuff not only reactjs,there are very informative blogs available on Medium .",
+      "source": "YouTube",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "orbital-mechanics-for-engineering-students-book-howard--9e05fc",
+      "title": "Orbital Mechanics For Engineering Students — [Book] (‎Howard Curtis)",
+      "url": "http://www.nssc.ac.cn/wxzygx/weixin/201607/P020160718380095698873.pdf",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Just the orbits, inclination, trajectory designing, mathematical formulation of trajectories, frame of references etc.",
+      "source": "nssc.ac.cn",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "react-documentation-acc923",
+      "title": "React — Documentation",
+      "url": "https://reactjs.org/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "ReactJS is frontend web-framework. It is easy to learn if you have knowledge of JS.Try to follow the tutorials from NetNinja's Youtube Channel and implement a sample web-app. So try to learn flask first. ***For any kind of web-dev stuff not only reactjs,there are very informative blogs available on Medium .",
+      "source": "reactjs.org",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "react-redux-and-firebase-44c51a",
+      "title": "React,Redux and Firebase",
+      "url": "https://www.youtube.com/watch?v=Oi4v5uxTY5o&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "ReactJS is frontend web-framework. It is easy to learn if you have knowledge of JS.Try to follow the tutorials from NetNinja's Youtube Channel and implement a sample web-app. So try to learn flask first. ***For any kind of web-dev stuff not only reactjs,there are very informative blogs available on Medium .",
+      "source": "YouTube",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "rocket-propulsion-elements-by-sutton-book-john-wiley-so-ac24cc",
+      "title": "Rocket Propulsion Elements by Sutton — [Book] (John Wiley & Sons Inc.!)",
+      "url": "https://pdfs.semanticscholar.org/6cce/fa84a00b396c5b50b66063772f4851392b8f.pdf",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "This books covers the fundamentals of Rocket Propulsion including a variety of engines like Solid Rocket Propulsion, Liquid Rocket Engines, Hybrid Engines, Ion Propulsion, Plasma Propulsion etc.",
+      "source": "pdfs.semanticscholar.org",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "some-international-giants-include-the-iter-leads-the-ra-11ef58",
+      "title": "Some International Giants include The ITER , leads the race from end 1 The NIF , leads the race from end 2 The CERN , pushing both All of...",
+      "url": "https://www.iter.org/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "iter.org",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "some-international-giants-include-the-iter-leads-the-ra-8c0cb7",
+      "title": "Some International Giants include The ITER , leads the race from end 1 The NIF , leads the race from end 2 The CERN , pushing both All of...",
+      "url": "https://lasers.llnl.gov/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "lasers.llnl.gov",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "some-international-giants-include-the-iter-leads-the-ra-2155cb",
+      "title": "Some International Giants include The ITER , leads the race from end 1 The NIF , leads the race from end 2 The CERN , pushing both All of...",
+      "url": "https://home.cern/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "home.cern",
+      "recommended": true,
+      "tags": [
+        "recommended"
+      ]
+    },
+    {
+      "id": "advanced-ethical-hacking-and-penetration-testing-hacker-c12dd1",
+      "title": "[Advanced] Ethical Hacking and Penetration Testing — HackerSploit - [Youtube Playlist]",
+      "url": "https://www.youtube.com/playlist?list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "A big list in here, hackerspoit provides a famous list of youtube videos related to Ethical Hacking and Penetration Testing. The topic covers Kali Linux, ParrotOs Nmap, ZenMap SQL injection VPN, DNS, Lazy Scripts Metsploit, Linux Expl0rer, sAINT ...and a lot more things. Get familiar with the basics first.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "fusion-power-the-unknown-universe-explained-by-neil-deg-6c40c0",
+      "title": "[Fusion Power] The Unknown Universe Explained By Neil Degrasse Tyson Documentary",
+      "url": "https://www.youtube.com/watch?v=-bHs_x4R0l8",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "fusion-power-the-unknown-universe-explained-by-neil-deg-8d9ef8",
+      "title": "[Fusion Power] The Unknown Universe Explained By Neil Degrasse Tyson Documentary Nuclear Fusion Energy: The Race to Create a Star on Eart...",
+      "url": "https://www.youtube.com/watch?v=knrHPneSN10",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "cs229-andrew-ng-more-preferred-course-website-andrew-ng-caad3e",
+      "title": "*CS229 Andrew Ng (more preferred) — Course Website (Andrew Ng Stanford University)",
+      "url": "http://cs229.stanford.edu/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "web-dev",
+        "programming"
+      ],
+      "description": "The instructor is changed, (I’ll upload the course PDFs for previous instructor later",
+      "source": "Stanford",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "cs229-andrew-ng-more-preferred-youtube-stanford-univers-438949",
+      "title": "*CS229 Andrew Ng (more preferred) — Youtube [Stanford University Classroom course] (Andrew Ng Stanford University)",
+      "url": "https://www.youtube.com/playlist?list=PLTuOKAhhBkunnUQlOYD0PtxC7EZk2TQMv",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "programming"
+      ],
+      "description": "The instructor is changed, (I’ll upload the course PDFs for previous instructor later",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "cs231n-2017-course-website-fei-fei-li-stanford-universi-b48975",
+      "title": "*CS231n (2017) — Course Website (Fei Fei Li Stanford University)",
+      "url": "http://cs231n.stanford.edu/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "web-dev",
+        "programming"
+      ],
+      "description": "These are high quality material. Follow them according to the website.",
+      "source": "Stanford",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "cs231n-2017-youtube-stanford-university-classroom-cours-f5c73f",
+      "title": "*CS231n (2017) — Youtube [Stanford University Classroom course] (Fei Fei Li Stanford University)",
+      "url": "https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "programming"
+      ],
+      "description": "These are high quality material. Follow them according to the website.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-be0ec6",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/blockchain.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/blockchain.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-e22957",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/fabric_model.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/fabric_model.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-ddddcf",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/identity/identity.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/identity/identity.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-5aebae",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/ledger/ledger.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/ledger/ledger.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-23624d",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/membership/membership.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/membership/membership.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-25711a",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/orderer/ordering_service.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-70c277",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/peers/peers.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/peers/peers.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "must-read-topics-in-doc-https-hyperledger-fabric-readth-642c39",
+      "title": "*Must Read Topics in Doc — https://hyperledger-fabric.readthedocs.io/en/latest/smartcontract/smartcontract.html",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/latest/smartcontract/smartcontract.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "a-hitchhikers-guide-to-consensus-algorithms-https-hacke-fb98db",
+      "title": "A Hitchhikers Guide To Consensus-algorithms — https://hackernoon.com/a-hitchhikers-guide-to-consensus-algorithms-d81aae3eb0e3",
+      "url": "https://hackernoon.com/a-hitchhikers-guide-to-consensus-algorithms-d81aae3eb0e3",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "hackernoon.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "accessing-database-using-python-and-sqlite3-bbe3a6",
+      "title": "Accessing Database using Python and SQLITE3",
+      "url": "https://docs.python.org/2/library/sqlite3.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "Python 3.6 - Docs",
+      "source": "Python",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "adding-orgs-and-peers-https-medium-com-coinmonks-step-b-9721f5",
+      "title": "Adding Orgs and Peers — https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-2-adding-an-organization-with-two-peers...",
+      "url": "https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-2-adding-an-organization-with-two-peers-to-an-4f5c4d44b8e3",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "advanced-trading-algorithms-ba0b5c",
+      "title": "Advanced Trading Algorithms",
+      "url": "https://www.coursera.org/learn/advanced-trading-algorithms",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "finance",
+        "programming"
+      ],
+      "description": "",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "ancient-aliens-history-anicent-aliens-b16ac6",
+      "title": "ANCIENT ALIENS — HISTORY:anicent aliens",
+      "url": "https://www.youtube.com/playlist?list=PLob1mZcVWOaiVxrCiEyYXcAbmx7UY8ggW",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "History",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "android-basics-udacity-free-course-8e5c08",
+      "title": "Android Basics (Udacity - Free Course)",
+      "url": "https://classroom.udacity.com/courses/ud851",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android",
+        "programming"
+      ],
+      "description": "Recycler View, Aarchitecture Components, Background Tasks, Intents, SQlite, Lifecycle.",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "android-sdk-268d55",
+      "title": "Android SDK",
+      "url": "https://developer.android.com/reference/packages",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "Android Developers",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "arduino-robots-ea2ceb",
+      "title": "Arduino robots",
+      "url": "https://www.udemy.com/build-a-bluetooth-controlled-water-robot-in-simple-steps/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the very basics of using arduino development board especially Arduino UNO and using arduino IDE to code starting from scratch.",
+      "source": "udemy.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "arduino-tutorials-3c94eb",
+      "title": "Arduino Tutorials",
+      "url": "https://www.arduino.cc/en/Tutorial/HomePage?from=Main.Tutorials",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the very basics of using arduino development board especially Arduino UNO and using arduino IDE to code starting from scratch.",
+      "source": "arduino.cc",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "arduino-uno-tutorials-e4ca6e",
+      "title": "Arduino Uno tutorials",
+      "url": "https://www.youtube.com/playlist?list=PL6797398B58895F92",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the very basics of using arduino development board especially Arduino UNO and using arduino IDE to code starting from scratch.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "arm-mastering-microcontroller-mega-mega-youtube-youtube-d81dfa",
+      "title": "ARM — Mastering Microcontroller (Mega Mega Youtube Youtube)",
+      "url": "https://mega.nz/#!XaAAjAwL!Nypim8uzi3hjubdN5yygRo8fR5Fy82T5EeuMjniUYWI",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using ARM Microcontroller.",
+      "source": "mega.nz",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "arm-stm32f4-discovery-board-tutorial-series-stm32f407vg-b2eb36",
+      "title": "ARM — STM32F4 Discovery Board Tutorial Series (STM32F407VGT) (Mega Mega Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PLfExI9i0v1sn_lQjCFJHrDSpvZ8F2CpkA",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using ARM Microcontroller.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "arm-assembly-programming-mega-mega-youtube-youtube-486616",
+      "title": "ARM Assembly Programming (Mega Mega Youtube Youtube)",
+      "url": "https://mega.nz/#!bbAwDQiI!p1lu134O3ozXAaRKXv2YMF4HFsz3ySgKXLxFnRoWklU",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using ARM Microcontroller.",
+      "source": "mega.nz",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "arm-microcontroller-programming-development-and-tutoria-e2c81f",
+      "title": "ARM Microcontroller Programming, Development, and Tutorial (Mega Mega Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PL6PplMTH29SHgRPDufZhfMRoFwRAIrzOp",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using ARM Microcontroller.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "basic-terminologies-bitcoin-s-vocab-5c91e5",
+      "title": "Basic Terminologies — Bitcoin's Vocab",
+      "url": "https://bitcoin.org/en/vocabulary",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "These links cover most of the jargons thatyou need to know before diving deep into the blockchain",
+      "source": "bitcoin.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "basic-terminologies-blockchain-terminology-blog-c3e32a",
+      "title": "Basic Terminologies — Blockchain Terminology[Blog]",
+      "url": "https://medium.com/coinmonks/blockchain-terminology-d903758d6bd",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "These links cover most of the jargons thatyou need to know before diving deep into the blockchain",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "basic-terminologies-savgee-youtube-dbecbc",
+      "title": "Basic Terminologies — Savgee[Youtube]",
+      "url": "https://www.youtube.com/playlist?list=PLzvRQMJ9HDiSbvXWQ7OdgVccdr7Wni5Qw",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "These links cover most of the jargons thatyou need to know before diving deep into the blockchain",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "behavioral-finance-duke-f56247",
+      "title": "Behavioral Finance (Duke)",
+      "url": "https://www.coursera.org/learn/duke-behavioral-finance",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "finance",
+        "programming"
+      ],
+      "description": "",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "bitcoin-and-cryptocurrency-technologies-coursera-arvind-78952e",
+      "title": "Bitcoin and Cryptocurrency Technologies-Coursera (Arvind Narayanan,Associate Professor(Computer Science),Princeton University)",
+      "url": "https://www.coursera.org/learn/cryptocurrency",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Through this course you will get the answers of questions like How does Bitcoin work? What makes Bitcoin different? How secure are your Bitcoins? How anonymous are Bitcoin users? What determines the price of Bitcoins? Can cryptocurrencies be regulated? What might the future hold?",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "blogs-learn-ethical-hacking-motivation-10-of-the-world--d694c9",
+      "title": "Blogs Learn Ethical Hacking [Motivation] 10 of the World’s Most Famous and Best Hackers (and Their Fascinating Stories) — [Motivation] 10...",
+      "url": "https://www.makeuseof.com/tag/5-of-the-worlds-most-famous-hackers-what-happened-to-them/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "makeuseof.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "blogs-learn-ethical-hacking-motivation-10-of-the-world--6e210d",
+      "title": "Blogs Learn Ethical Hacking [Motivation] 10 of the World’s Most Famous and Best Hackers (and Their Fascinating Stories) — Learn Ethical H...",
+      "url": "https://medium.com/quick-code/the-best-ethical-hacking-video-tutorials-for-everyone-e0cbd465b03c",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "bootstrap-e4754b",
+      "title": "BootStrap",
+      "url": "https://www.youtube.com/watch?v=QAgrHLtG1Yk&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "After you have basic knowledge of HTML+CSS,try Bootstrap4 for making your CSS work load less.This playlist will provide you enough info. related to Bootstrap and how to use it?",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "bootstrap-4-1-636a5a",
+      "title": "Bootstrap 4.1",
+      "url": "https://getbootstrap.com/docs/4.1/getting-started/introduction/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "",
+      "source": "Bootstrap",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "c-containers-58d810",
+      "title": "C++ - Containers",
+      "url": "http://www.cplusplus.com/reference/stl/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "cplusplus.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "c-libraries-a1ecfd",
+      "title": "C++ - Libraries",
+      "url": "http://www.cplusplus.com/reference/clibrary/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "cplusplus.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "chaincodes-https-codeburst-io-writing-chaincode-in-gola-3ff8ff",
+      "title": "Chaincodes — https://codeburst.io/writing-chaincode-in-golang-the-oop-way-4be3bb261dae",
+      "url": "https://codeburst.io/writing-chaincode-in-golang-the-oop-way-4be3bb261dae",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "codeburst.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "chaincodes-https-medium-com-towardsblockchain-step-by-s-4e44b7",
+      "title": "Chaincodes — https://medium.com/towardsblockchain/step-by-step-understanding-writing-and-deploying-chaincode-in-hyperledger-fabric-e00ccd...",
+      "url": "https://medium.com/towardsblockchain/step-by-step-understanding-writing-and-deploying-chaincode-in-hyperledger-fabric-e00ccdddc4ac",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "clion-download-4689ad",
+      "title": "CLion — Download",
+      "url": "https://www.jetbrains.com/clion/download/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "competitive"
+      ],
+      "description": "",
+      "source": "jetbrains.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "codeforces",
+      "title": "Codeforces",
+      "url": "https://codeforces.com/",
+      "type": "tool",
+      "category": "tools",
+      "topics": [
+        "competitive",
+        "programming"
+      ],
+      "description": "Competitive programming contests and problem archive.",
+      "source": "Codeforces",
+      "recommended": false,
+      "tags": [
+        "contests"
+      ]
+    },
+    {
+      "id": "computer-science-algorithms-6f0542",
+      "title": "Computer Science - Algorithms",
+      "url": "https://www.khanacademy.org/computing/computer-science/algorithms",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "KhanAcademy",
+      "source": "Khan Academy",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "computer-science-crashcourse-of-various-comps-topics-48c846",
+      "title": "COMPUTER SCIENCE — Crashcourse of various comps topics",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "crashcourse-of-various-astronomy-topics-511428",
+      "title": "Crashcourse of various astronomy topics",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "crashcourse-of-various-chemistry-topics-588e84",
+      "title": "Crashcourse of various chemistry topics",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "cryptography-i-course-coursera-60ca83",
+      "title": "Cryptography I [Course] (Coursera)",
+      "url": "https://www.coursera.org/learn/crypto",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "In this course you will learn the inner workings of cryptographic systems and how to correctly use them in real-world applications.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "cryptography-ii-course-coursera-efacbe",
+      "title": "Cryptography II [Course] (Coursera)",
+      "url": "https://www.coursera.org/learn/crypto2",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "In this course you will learn the inner workings of cryptographic systems and how to correctly use them in real-world applications.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "css-tricks-3ed91a",
+      "title": "CSS Tricks",
+      "url": "https://css-tricks.com/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Checkout the website for CSS related stuffs.",
+      "source": "css-tricks.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "cyber-security-training-for-beginners-edureka-youtube-p-7c2433",
+      "title": "Cyber Security Training for Beginners — Edureka - [Youtube Playlist] (Edureka!)",
+      "url": "https://www.youtube.com/playlist?list=PL9ooVrP1hQOGPQVeapGsJCktzIO4DtI4_",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "You my want to look at the cybersecurity too. Here's a youtube playlist covering the very basics of Cyber Security, that will help you get started.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "dapp-university-66386a",
+      "title": "Dapp University",
+      "url": "https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Refer this channel for more tutorials on Ethereum.You can also vist the website at http://www.dappuniversity.com/",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "data-handling-merge-and-join-merge-and-join-34db8a",
+      "title": "Data Handling Merge and Join — Merge and Join",
+      "url": "https://jakevdp.github.io/PythonDataScienceHandbook/03.07-merge-and-join.html",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "web-dev",
+        "programming"
+      ],
+      "description": "",
+      "source": "jakevdp.github.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "data-storage-udacity-free-course-de74e8",
+      "title": "Data Storage (Udacity - Free Course)",
+      "url": "https://classroom.udacity.com/courses/ud845",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android",
+        "programming"
+      ],
+      "description": "Understand & use SQlite in Android, ContentProvider, CursorLoader (Adapter and Loader) to show data.",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "data-world-kaggle-datasets-pytorch-standard-datasets-da-083582",
+      "title": "data.world Kaggle Datasets PyTorch Standard Datasets DATAHUB Academic Torrents — Academic Torrents",
+      "url": "http://academictorrents.com/browse.php",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "academictorrents.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "data-world-kaggle-datasets-pytorch-standard-datasets-da-36bfe4",
+      "title": "data.world Kaggle Datasets PyTorch Standard Datasets DATAHUB Academic Torrents — data.world",
+      "url": "https://data.world/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "data.world",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "data-world-kaggle-datasets-pytorch-standard-datasets-da-41baa7",
+      "title": "data.world Kaggle Datasets PyTorch Standard Datasets DATAHUB Academic Torrents — DATAHUB",
+      "url": "https://datahub.io/collections",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "datahub.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "data-world-kaggle-datasets-pytorch-standard-datasets-da-a6fced",
+      "title": "data.world Kaggle Datasets PyTorch Standard Datasets DATAHUB Academic Torrents — Kaggle Datasets",
+      "url": "https://www.kaggle.com/datasets",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "kaggle.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "data-world-kaggle-datasets-pytorch-standard-datasets-da-bd03b6",
+      "title": "data.world Kaggle Datasets PyTorch Standard Datasets DATAHUB Academic Torrents — PyTorch Standard Datasets",
+      "url": "https://pytorch.org/docs/master/torchvision/datasets.html",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "pytorch.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "django-documentation-958637",
+      "title": "Django — Documentation",
+      "url": "https://docs.djangoproject.com/en/2.2/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Django is another poweful web-framework for Python.Through Django you can manage the backend of your website very easily by dividing the whole web-app into reusable apps. Try to follow the Netninja's Django Tutorial and take help from Official Dcoumentation and Stackoverflow to learn it. DjangoGirls is also a good website for Django Tutorials",
+      "source": "docs.djangoproject.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "django-netninja-youtube-9184ff",
+      "title": "Django — NetNinja[Youtube]",
+      "url": "https://www.youtube.com/watch?v=n-FTlQ7Djqc&list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Django is another poweful web-framework for Python.Through Django you can manage the backend of your website very easily by dividing the whole web-app into reusable apps. Try to follow the Netninja's Django Tutorial and take help from Official Dcoumentation and Stackoverflow to learn it. DjangoGirls is also a good website for Django Tutorials",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "djangogirls-tutorials-574fe5",
+      "title": "DjangoGirls Tutorials",
+      "url": "https://tutorial.djangogirls.org/en/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Django is another poweful web-framework for Python.Through Django you can manage the backend of your website very easily by dividing the whole web-app into reusable apps. Try to follow the Netninja's Django Tutorial and take help from Official Dcoumentation and Stackoverflow to learn it. DjangoGirls is also a good website for Django Tutorials",
+      "source": "tutorial.djangogirls.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "documentation-1f7fdd",
+      "title": "Documentation",
+      "url": "https://hyperledger-fabric.readthedocs.io/en/release-1.4/install.html",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "hyperledger-fabric.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "eclipse-download-887786",
+      "title": "Eclipse — Download",
+      "url": "https://www.eclipse.org/downloads/packages/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "eclipse.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "eclipse-installation-guide-9c93e2",
+      "title": "Eclipse — Installation Guide",
+      "url": "https://developer.android.com/studio/install",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "Android Developers",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "eclipse-intial-setup-b5c262",
+      "title": "Eclipse — Intial Setup",
+      "url": "https://www.tutorialspoint.com/android/android_eclipse.htm",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "tutorialspoint.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "eclipse-user-guide-0074cc",
+      "title": "Eclipse — User Guide",
+      "url": "https://help.eclipse.org/2019-03/index.jsp",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "help.eclipse.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "edx-arduino-programming-207940",
+      "title": "edX - Arduino Programming",
+      "url": "https://www.edx.org/course/arduino-programming-from-novice-to-ninja",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the very basics of using arduino development board especially Arduino UNO and using arduino IDE to code starting from scratch.",
+      "source": "edX",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "embedded-system-software-and-ide-coursera-edx-edx-572321",
+      "title": "Embedded System Software and IDE (Coursera edX edX)",
+      "url": "https://www.coursera.org/learn/introduction-embedded-systems",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basic of embedded systems and embedded C programming using ARM based microcontroller like TM4C123(Texas Instruments).",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "embedded-systems-shape-the-world-multi-threaded-interfa-23d635",
+      "title": "Embedded Systems - Shape The World: Multi-Threaded Interfacing (Coursera edX edX)",
+      "url": "https://www.edx.org/course/embedded-systems-shape-the-world-multi-threaded-interfacing",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basic of embedded systems and embedded C programming using ARM based microcontroller like TM4C123(Texas Instruments).",
+      "source": "edX",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "embedded-systems-edx-shape-the-world-microcontroller-in-81b43c",
+      "title": "Embedded Systems — edX - Shape The World: Microcontroller Input/Output (Coursera edX edX)",
+      "url": "https://www.edx.org/course/embedded-systems-shape-the-world-microcontroller-inputoutput",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basic of embedded systems and embedded C programming using ARM based microcontroller like TM4C123(Texas Instruments).",
+      "source": "edX",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "ethical-hacking-tutorial-for-beginners-edureka-youtube--98baad",
+      "title": "Ethical Hacking Tutorial for Beginners — Edureka - [Youtube Playlist] (Edureka!)",
+      "url": "https://www.youtube.com/playlist?list=PL9ooVrP1hQOFNILGSLOiflM9kKnEM16Ox",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "This youtube list covers most of the basic things in the field, including , the KALI linux basics, penetration testing Nmap, DDoS attacks, SQL injection, Ethical Hacking jobs and careers, the tools used etc. Basically everything required to get on board with Ethical Hacking. Edureka courses are easy to comprehend, and startwith.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "fastai-course-video-youtube-player-jeremy-howard-past-p-414713",
+      "title": "FastAi — Course Video (Youtube Player) (Jeremy Howard (past President- Kaggle ))",
+      "url": "https://course.fast.ai/videos/?lesson=1",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "programming"
+      ],
+      "description": "Jeremy Howard is past President of Kaggle. He is a AI Expert, with an Awesome Course. Remeber to go through setup page, for setting up system instructions.",
+      "source": "course.fast.ai",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "fastai-course-website-jeremy-howard-past-president-kagg-58bfec",
+      "title": "FastAi — Course Website (Jeremy Howard (past President- Kaggle ))",
+      "url": "https://course.fast.ai/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "web-dev",
+        "programming"
+      ],
+      "description": "Jeremy Howard is past President of Kaggle. He is a AI Expert, with an Awesome Course. Remeber to go through setup page, for setting up system instructions.",
+      "source": "course.fast.ai",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "flask-documentation-f343ca",
+      "title": "Flask — Documentation",
+      "url": "http://flask.pocoo.org/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Flask is micro web-framework for python. It is easy to learn. Most of the basics related to Flask are already there in Havard’s Web Programming Course mentioned above. So try to learn flask first.",
+      "source": "Flask",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "flask-1-0-quickstart-ad49ce",
+      "title": "Flask 1.0 - Quickstart",
+      "url": "http://flask.pocoo.org/docs/1.0/quickstart/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "",
+      "source": "Flask",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "flask-web-programming-from-scratch-072f5c",
+      "title": "Flask Web-Programming from Scratch",
+      "url": "https://hackernoon.com/flask-web-programming-from-scratch-9ada8088fde1",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "Flask is micro web-framework for python. It is easy to learn. Most of the basics related to Flask are already there in Havard’s Web Programming Course mentioned above. So try to learn flask first.",
+      "source": "hackernoon.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "freecodecamp-flask-s-bootcamp-1e2f6b",
+      "title": "FreeCodeCamp Flask's Bootcamp",
+      "url": "https://www.youtube.com/watch?v=zdgYw-3tzfI",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Flask is micro web-framework for python. It is easy to learn. Most of the basics related to Flask are already there in Havard’s Web Programming Course mentioned above. So try to learn flask first.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "geeks-for-geeks-website-595e05",
+      "title": "Geeks for Geeks — Website",
+      "url": "https://www.geeksforgeeks.org/category/competitive-programming/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "competitive",
+        "web-dev",
+        "programming"
+      ],
+      "description": "",
+      "source": "GeeksforGeeks",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "geeksforgeeks",
+      "title": "GeeksforGeeks — DSA & CS topics",
+      "url": "https://www.geeksforgeeks.org/",
+      "type": "article",
+      "category": "exam-prep",
+      "topics": [
+        "programming",
+        "competitive"
+      ],
+      "description": "Short articles on algorithms and CS subjects — handy for GTU exam revision.",
+      "source": "GeeksforGeeks",
+      "recommended": false,
+      "tags": [
+        "revision"
+      ]
+    },
+    {
+      "id": "getting-deep-into-ethereum-how-data-is-stored-https-hac-f1c6e0",
+      "title": "Getting Deep Into Ethereum,How Data Is Stored? — https://hackernoon.com/getting-deep-into-ethereum-how-data-is-stored-in-ethereum-e3f669d...",
+      "url": "https://hackernoon.com/getting-deep-into-ethereum-how-data-is-stored-in-ethereum-e3f669d96033",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "hackernoon.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "git-tutorial-altassasin-309f03",
+      "title": "Git Tutorial - Altassasin",
+      "url": "https://www.atlassian.com/git/tutorials",
+      "type": "course",
+      "category": "courses",
+      "topics": [],
+      "description": "",
+      "source": "Atlassian",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "gnu-debugger-online-tutorial-e61f87",
+      "title": "GNU Debugger (Online) — Tutorial",
+      "url": "http://www.gdbtutorial.com",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "competitive"
+      ],
+      "description": "",
+      "source": "gdbtutorial.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "gnu-debugger-online-website-cb1ec7",
+      "title": "GNU Debugger (Online) — Website",
+      "url": "https://www.onlinegdb.com",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "competitive",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "onlinegdb.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "hardware-security-course-coursera-95308f",
+      "title": "Hardware Security [Course] (Coursera)",
+      "url": "https://www.coursera.org/learn/hardware-security",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Upon completing the course, students will understand the vulnerabilities in current digital system design flow and the physical attacks to these systems.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "ibm-blockchain-essentials-ant-cole-ibm-dave-gorman-ibm-c8831d",
+      "title": "IBM Blockchain Essentials (Ant Cole,IBM Dave Gorman,IBM)",
+      "url": "https://cognitiveclass.ai/courses/blockchain-course/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "The video lectures and lab in this course help you learn about blockchain for business and explore key use cases that demonstrate how the technology adds value.",
+      "source": "cognitiveclass.ai",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "in-india-we-aren-t-performing-something-like-that-but-b-ecc003",
+      "title": "In India, we aren't performing something like that, but, but surely for nuclear research we have pioneering: The BARC India is the top wo...",
+      "url": "http://www.barc.gov.in/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "barc.gov.in",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "in-india-we-aren-t-performing-something-like-that-but-b-86e06c",
+      "title": "In India, we aren't performing something like that, but, but surely for nuclear research we have pioneering: The BARC India is the top wo...",
+      "url": "http://www.barc.gov.in/reactor/ahwr.html",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "barc.gov.in",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "internet-of-things-iot-iot-device-using-arduino-and-ras-7d2eb7",
+      "title": "Internet of Things (IOT) — IoT device using Arduino and Raspberry Pi platforms",
+      "url": "https://www.coursera.org/specializations/iot",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced learning along with implementation of IOT devices using Arduino and Raspberry Pi. Along with that, Cloud IoT Platform also introduced.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "internet-of-things-iot-iot-wireless-cloud-computing-eme-1a27e1",
+      "title": "Internet of Things (IOT) — IoT Wireless & Cloud Computing Emerging Technologies",
+      "url": "https://www.coursera.org/learn/iot-wireless-cloud-computing",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced learning along with implementation of IOT devices using Arduino and Raspberry Pi. Along with that, Cloud IoT Platform also introduced.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "internet-of-things-iot-programming-with-cloud-iot-platf-0ae298",
+      "title": "Internet of Things (IOT) — Programming with Cloud IoT Platforms",
+      "url": "https://www.coursera.org/learn/cloud-iot-platform",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced learning along with implementation of IOT devices using Arduino and Raspberry Pi. Along with that, Cloud IoT Platform also introduced.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "introduction-to-arduino-e91e3d",
+      "title": "Introduction to Arduino",
+      "url": "http://www.electronicwings.com/arduino/introduction-to-arduino",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the very basics of using arduino development board especially Arduino UNO and using arduino IDE to code starting from scratch.",
+      "source": "electronicwings.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "introduction-to-computer-science-and-programming-using--4a1eca",
+      "title": "Introduction to Computer Science and Programming Using Python - MITx",
+      "url": "https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-11",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "edX",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "introduction-to-financial-markets-isb-219b2a",
+      "title": "Introduction to Financial Markets (ISB)",
+      "url": "https://www.coursera.org/learn/financial-markets-intro?specialization=investment-strategy",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "finance",
+        "programming"
+      ],
+      "description": "",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "introduction-to-js-udacity-book-you-don-t-know-js-up-go-7e87e7",
+      "title": "Introduction To JS-Udacity — BOOK:You Don't Know JS(Up & Going) (School Of Programming-Udacity)",
+      "url": "https://github.com/getify/You-Dont-Know-JS/tree/master/up%20%26%20going",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "After the course you will be able to write and understand basic JavaScript codes",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "introduction-to-probability-stat110x-harvardx-d344a0",
+      "title": "Introduction to Probability(Stat110x) - HarvardX",
+      "url": "https://courses.edx.org/courses/course-v1:HarvardX+STAT110x+2T2017/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "edX",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "introduction-to-the-internet-of-things-iot-16d2c8",
+      "title": "Introduction to the Internet of Things (IoT)",
+      "url": "https://www.edx.org/course/introduction-to-the-internet-of-things-iot-1",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced learning along with implementation of IOT devices using Arduino and Raspberry Pi. Along with that, Cloud IoT Platform also introduced.",
+      "source": "edX",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "javascript30-js30-fbefcc",
+      "title": "JavaScript30 (JS30)",
+      "url": "https://javascript30.com/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "Create 30 Cool Stuffs in 30 Days using JavaScipt",
+      "source": "javascript30.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "lifecycle-of-an-ethereum-transaction-https-medium-com-b-1d1364",
+      "title": "Lifecycle of an ethereum Transaction — https://medium.com/blockchannel/life-cycle-of-an-ethereum-transaction-e5c66bae0f6e",
+      "url": "https://medium.com/blockchannel/life-cycle-of-an-ethereum-transaction-e5c66bae0f6e",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "machine-learning-stanford-university-andrew-ng-coursera-ef6a76",
+      "title": "Machine Learning - Stanford University (Andrew Ng/Coursera Andrew Ng/Coursera Coursera)",
+      "url": "https://www.coursera.org/learn/machine-learning/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "programming"
+      ],
+      "description": "Covers the very basics with assessments in octave. Deep Learning covers deep neural nets along with their optimisation.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "machine-learning-deep-learning-complete-specialization--f044c5",
+      "title": "Machine Learning — Deep Learning Complete Specialization (Andrew Ng/Coursera Andrew Ng/Coursera Coursera)",
+      "url": "https://www.coursera.org/specializations/deep-learning",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "programming"
+      ],
+      "description": "Covers the very basics with assessments in octave. Deep Learning covers deep neural nets along with their optimisation.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "machine-learning-intro-to-tensorflow-andrew-ng-coursera-8fae9f",
+      "title": "Machine Learning — Intro to tensorflow (Andrew Ng/Coursera Andrew Ng/Coursera Coursera)",
+      "url": "https://www.coursera.org/learn/intro-tensorflow",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning",
+        "programming"
+      ],
+      "description": "Covers the very basics with assessments in octave. Deep Learning covers deep neural nets along with their optimisation.",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "magneto-hydrostatics-capturing-plasma-using-magnetism-i-695a4f",
+      "title": "Magneto Hydrostatics Capturing Plasma using magnetism is one of the newest sciences in the race with AI, DL, etc. Artificial Intelligence...",
+      "url": "https://www.theweek.in/news/sci-tech/2019/04/20/ai-may-help-develop-clean-limitless-fusion-energy.html",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "theweek.in",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "magneto-hydrostatics-capturing-plasma-using-magnetism-i-813312",
+      "title": "Magneto Hydrostatics Capturing Plasma using magnetism is one of the newest sciences in the race with AI, DL, etc. Artificial Intelligence...",
+      "url": "https://www.energy.gov/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "energy.gov",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "medium-blogs-http-and-everything-you-need-to-know-about-2762b3",
+      "title": "Medium Blogs HTTP and everything you need to know about it Learn Basics of React.js in 11 Minutes A practical ES6 guide on how to perform...",
+      "url": "https://medium.com/faun/http-and-everything-you-need-to-know-about-it-8273bc224491",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "medium-blogs-http-and-everything-you-need-to-know-about-3c5c8c",
+      "title": "Medium Blogs HTTP and everything you need to know about it Learn Basics of React.js in 11 Minutes A practical ES6 guide on how to perform...",
+      "url": "https://medium.com/@madhupathy/learn-basics-of-react-js-in-3-minutes-a94cbc6f02c8",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "medium-blogs-http-and-everything-you-need-to-know-about-4868d8",
+      "title": "Medium Blogs HTTP and everything you need to know about it Learn Basics of React.js in 11 Minutes A practical ES6 guide on how to perform...",
+      "url": "https://medium.freecodecamp.org/a-practical-es6-guide-on-how-to-perform-http-requests-using-the-fetch-api-594c3d91a547",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "",
+      "source": "medium.freecodecamp.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "medium-blogs-nns-and-backpropagation-explained-in-a-sim-e947e8",
+      "title": "Medium Blogs NNs and Backpropagation explained in a simple way Visual Information Theory What is Exploratory Data Analysis? — NNs and Bac...",
+      "url": "https://medium.com/datathings/neural-networks-and-backpropagation-explained-in-a-simple-way-f540a3611f5e",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "medium-blogs-nns-and-backpropagation-explained-in-a-sim-86b573",
+      "title": "Medium Blogs NNs and Backpropagation explained in a simple way Visual Information Theory What is Exploratory Data Analysis? — Visual Info...",
+      "url": "http://colah.github.io/posts/2015-09-Visual-Information/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "colah.github.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "medium-blogs-nns-and-backpropagation-explained-in-a-sim-c6076d",
+      "title": "Medium Blogs NNs and Backpropagation explained in a simple way Visual Information Theory What is Exploratory Data Analysis? — What is Exp...",
+      "url": "https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "machine-learning"
+      ],
+      "description": "",
+      "source": "towardsdatascience.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "micro-implementations-in-python-learn-blockchain-by-bui-f01376",
+      "title": "Micro Implementations in Python — Learn Blockchain By Building One[Blog]",
+      "url": "https://hackernoon.com/learn-blockchains-by-building-one-117428612f46",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "These blogs cover the small Implementations of blockchain in python.By following them you can understand the basic functionalities and features of blockchain.",
+      "source": "hackernoon.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "micro-implementations-in-python-simple-blockchain-by-us-caeb77",
+      "title": "Micro Implementations in Python — Simple Blockchain By Using Python[CEV's Blog]",
+      "url": "http://www.cevgroup.org/constructing-a-simple-blockchain-using-python/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "These blogs cover the small Implementations of blockchain in python.By following them you can understand the basic functionalities and features of blockchain.",
+      "source": "cevgroup.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "mit-6-006-introduction-to-algorithms-website-7bdc95",
+      "title": "MIT 6.006 Introduction to Algorithms — Website",
+      "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "",
+      "source": "MIT OCW",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "mit-6-006-introduction-to-algorithms-youtube-playlist-2995cc",
+      "title": "MIT 6.006 Introduction to Algorithms — Youtube Playlist",
+      "url": "https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "mit-6-046j-design-and-analysis-of-algorithms-website-40723d",
+      "title": "MIT 6.046J Design and Analysis of Algorithms — Website",
+      "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/syllabus/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "programming"
+      ],
+      "description": "",
+      "source": "MIT OCW",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "mit-6-046j-design-and-analysis-of-algorithms-youtube-pl-1180ca",
+      "title": "MIT 6.046J Design and Analysis of Algorithms — Youtube Playlist",
+      "url": "https://www.youtube.com/watch?v=2P-yW7LQr08&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "movie-edward-snowden-full-documentary-2016-youtube-bbc--096187",
+      "title": "Movie Edward Snowden - Full Documentary 2016 [Youtube] BBC Documentary 2017 - Chasing Edward Snowden Full Documentary [Youtube] Edward Sn...",
+      "url": "https://www.youtube.com/watch?v=9g_sqKH2z4I",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "movie-edward-snowden-full-documentary-2016-youtube-bbc--0697b1",
+      "title": "Movie Edward Snowden - Full Documentary 2016 [Youtube] BBC Documentary 2017 - Chasing Edward Snowden Full Documentary [Youtube] Edward Sn...",
+      "url": "https://www.youtube.com/watch?v=kgI6MsG6-gM",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "movie-edward-snowden-full-documentary-2016-youtube-bbc--754cad",
+      "title": "Movie Edward Snowden - Full Documentary 2016 [Youtube] BBC Documentary 2017 - Chasing Edward Snowden Full Documentary [Youtube] Edward Sn...",
+      "url": "https://www.imdb.com/title/tt3774114/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "imdb.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "multiscreen-apps-udacity-free-course-97ba39",
+      "title": "MultiScreen Apps (Udacity - Free Course)",
+      "url": "https://classroom.udacity.com/courses/ud839",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android",
+        "programming"
+      ],
+      "description": "Intents & Activities, Array, List, Loop, Custom Class, Activity Lifecycle, Fragments in Android.",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "networking-udacity-free-course-2630f4",
+      "title": "Networking (Udacity - Free Course)",
+      "url": "https://classroom.udacity.com/courses/ud843",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android",
+        "programming"
+      ],
+      "description": "JSON parsing, HTTP Networking, Thread & Parallelism, Preferences (save options) in Android.",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "other-js-frameworks-libraries-angularjs-239377",
+      "title": "Other JS Frameworks & Libraries — AngularJS",
+      "url": "https://angularjs.org/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "These are some of the javascript's frameworks and libraries which you will find amazing.JS has huge base of Frameworks and libraries available on the internet which can make your work very easy.So just google them as per requirements.",
+      "source": "angularjs.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "other-js-frameworks-libraries-animejs-297e70",
+      "title": "Other JS Frameworks & Libraries — AnimeJS",
+      "url": "https://animejs.com/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "These are some of the javascript's frameworks and libraries which you will find amazing.JS has huge base of Frameworks and libraries available on the internet which can make your work very easy.So just google them as per requirements.",
+      "source": "animejs.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "other-js-frameworks-libraries-chartjs-621439",
+      "title": "Other JS Frameworks & Libraries — chartJS",
+      "url": "https://www.chartjs.org/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "These are some of the javascript's frameworks and libraries which you will find amazing.JS has huge base of Frameworks and libraries available on the internet which can make your work very easy.So just google them as per requirements.",
+      "source": "chartjs.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "other-js-frameworks-libraries-jquery-8827f2",
+      "title": "Other JS Frameworks & Libraries — jQuery",
+      "url": "https://jquery.com/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "These are some of the javascript's frameworks and libraries which you will find amazing.JS has huge base of Frameworks and libraries available on the internet which can make your work very easy.So just google them as per requirements.",
+      "source": "jquery.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "other-js-frameworks-libraries-threejs-2c7c4d",
+      "title": "Other JS Frameworks & Libraries — threeJS",
+      "url": "https://threejs.org/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "These are some of the javascript's frameworks and libraries which you will find amazing.JS has huge base of Frameworks and libraries available on the internet which can make your work very easy.So just google them as per requirements.",
+      "source": "threejs.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "pet-shop-tutorial-https-truffleframework-com-tutorials--21eaf9",
+      "title": "Pet-Shop Tutorial — https://truffleframework.com/tutorials/pet-shop",
+      "url": "https://truffleframework.com/tutorials/pet-shop",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "truffleframework.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "physics-kurzgesagt-in-a-nutshell-1baa50",
+      "title": "PHYSICS — Kurzgesagt-in a Nutshell",
+      "url": "https://www.youtube.com/user/Kurzgesagt",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Kurzgesagt",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "pid-control-with-arduino-604099",
+      "title": "PID Control with Arduino",
+      "url": "https://www.udemy.com/pid-control-with-arduino/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the very basics of using arduino development board especially Arduino UNO and using arduino IDE to code starting from scratch.",
+      "source": "udemy.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "portfolio-and-risk-management-isb-0ac46c",
+      "title": "Portfolio and Risk Management (ISB)",
+      "url": "https://www.coursera.org/learn/portfolio-management?specialization=investment-strategy",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "finance",
+        "programming"
+      ],
+      "description": "",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "projects-with-raspberry-pi-youtube-udemy-youtube-youtub-2f94fb",
+      "title": "Projects with Raspberry Pi (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PLkpY6D9q0Zg6MxfR1sFgXEfJTRjwJr9Jv",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "python-3-6-204107",
+      "title": "Python 3.6",
+      "url": "https://docs.python.org/3.6/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "Python",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "raspberry-pi-basics-of-raspbian-youtube-udemy-youtube-y-a93508",
+      "title": "Raspberry Pi — Basics of Raspbian (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PLGs0VKk2DiYypuwUUM2wxzcI9BJHK4Bfh",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "raspberry-pi-basics-of-raspbian-youtube-udemy-youtube-y-76a7f5",
+      "title": "Raspberry Pi — Basics of Raspbian (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.udemy.com/share/1002tcBEUZcl1TTXg=/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "udemy.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "raspberry-pi-socket-programming-in-python-with-raspberr-a8915d",
+      "title": "Raspberry Pi — Socket Programming in python with Raspberry (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PLWx0eBJwLh214twx51btBNC5ZP4MgIKYC",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "raspberry-pi-opencv-youtube-udemy-youtube-youtube-youtu-5f4a8a",
+      "title": "Raspberry Pi + Opencv (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PL_rtUf3jyU4QIrsWzP5hJ8bi8x9kKEGGI",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "raspberry-pi-opencv-youtube-udemy-youtube-youtube-youtu-427b30",
+      "title": "Raspberry Pi + Opencv (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PLnX7yHvbs7_jPLIZmE5H4pv7LDw9ixVXo",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "raspberry-pi-tutorials-youtube-udemy-youtube-youtube-yo-102b7a",
+      "title": "Raspberry Pi Tutorials (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PLNnwglGGYoTvy37TSGFlv-aFkpg7owWrE",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "real-engineering-amazing-facts-f2ffc6",
+      "title": "Real Engineering:Amazing Facts",
+      "url": "https://www.youtube.com/channel/UCR1IuLEqb6UEA_zQ81kwXfg",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Real Engineering",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "rocket-propulsion-lectures-youtube-playlist-prof-k-rama-438f6e",
+      "title": "Rocket Propulsion Lectures — [Youtube Playlist] (Prof. K Ramamurthy, Dept. Of Mechanical Eng. IIT Madras)",
+      "url": "https://www.youtube.com/playlist?list=PL99EA5ECCC34949DB",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Starting from the very basics, the lectures series gives an in-depth knowledge of specifically Rocket Propulsion.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "science-scishow-sciecne-stuff-9e8fb6",
+      "title": "SCIENCE — sciShow:Sciecne Stuff",
+      "url": "https://www.youtube.com/user/scishow",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "sciShow",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "self-development-improving-some-skills-d87f97",
+      "title": "SELF DEVELOPMENT — improving some skills",
+      "url": "https://www.youtube.com/user/electrickeye91",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Thomas Frank",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "self-driving-car-with-raspberry-pi-youtube-udemy-youtub-cb5e4f",
+      "title": "Self Driving car with Raspberry Pi (youtube udemy Youtube Youtube Youtube Youtube Youtube Youtube)",
+      "url": "https://www.youtube.com/playlist?list=PLCEO2oBSEpOIz52Re7vgS8LBGsNHOX3VZ",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Covers the basics and advanced of using raspberry Pi and its implementation in projects.",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "setting-up-things-https-medium-com-coinmonks-step-by-st-a00732",
+      "title": "Setting Up Things — https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-1-c867fc5fe18",
+      "url": "https://medium.com/coinmonks/step-by-step-towards-hyperledger-fabric-part-1-c867fc5fe18",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "software-security-course-coursera-006548",
+      "title": "Software Security [Course] (Coursera)",
+      "url": "https://www.coursera.org/learn/software-security",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Important software vulnerabilities and attacks that exploit them -- such as buffer overflows, SQL injection, and session hijacking",
+      "source": "Coursera",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "solidity-documentation-0f69bb",
+      "title": "Solidity — Documentation",
+      "url": "https://solidity.readthedocs.io/en/v0.5.6/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming"
+      ],
+      "description": "Try to understand smart contracts & what the do? and write one by learning the basic syntax from the playlist",
+      "source": "solidity.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "solidity-playlist-dapp-university-youtube-b3437a",
+      "title": "Solidity Playlist:Dapp University[Youtube]",
+      "url": "https://www.youtube.com/playlist?list=PLS5SEs8ZftgUq-aMMYeKf8nPqHrNqa3Iu",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "Try to understand smart contracts & what the do? and write one by learning the basic syntax from the playlist",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "stat110x-edx-better-explained-better-explained-website--eebd80",
+      "title": "Stat110x - eDx Better Explained — Better Explained (website) (Joe Blitzstein - Professor of the Practice in Statistics, Harvard University)",
+      "url": "https://betterexplained.com/articles/category/math/",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "machine-learning",
+        "web-dev"
+      ],
+      "description": "These are no coding concepts.",
+      "source": "Harvard",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "technical-all-kind-of-tech-stuff-65ae87",
+      "title": "TECHNICAL — All kind of Tech. Stuff",
+      "url": "https://www.youtube.com/channel/UCVLZmDKeT-mV4H3ToYXIFYg",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "Tech Insider",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "test-case-generator-spoj-7ac2c7",
+      "title": "Test Case Generator — SPOJ",
+      "url": "http://spojtoolkit.com/",
+      "type": "article",
+      "category": "tools",
+      "topics": [
+        "competitive"
+      ],
+      "description": "Website",
+      "source": "spojtoolkit.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "tools-tech-stack-remix-ide-580a0b",
+      "title": "Tools & Tech Stack — Remix IDE",
+      "url": "https://remix.ethereum.org/",
+      "type": "article",
+      "category": "tools",
+      "topics": [
+        "programming"
+      ],
+      "description": "Essential Tools for eth-Development",
+      "source": "remix.ethereum.org",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "tutorials-point-developers-guide-bb6d37",
+      "title": "Tutorials Point — Developers Guide",
+      "url": "https://www.tutorialspoint.com/android/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "tutorialspoint.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "tutorials-point-website-ee41a8",
+      "title": "Tutorials Point — Website",
+      "url": "https://www.tutorialspoint.com",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "competitive",
+        "web-dev"
+      ],
+      "description": "",
+      "source": "tutorialspoint.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "udacity-intro-to-html-css-free-intro-to-html-css-school-ffc7cc",
+      "title": "Udacity:Intro To HTML & CSS (Free) — Intro To HTML+CSS (School Of Programming - Udacity)",
+      "url": "https://www.udacity.com/course/intro-to-html-and-css--ud001",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev",
+        "machine-learning",
+        "programming"
+      ],
+      "description": "This free course covers the basics of writing a static webpage usinh HTML and CSS",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "udemy-learn-ethical-hacking-from-scratch-learn-ethical--83d6aa",
+      "title": "Udemy Learn Ethical Hacking From Scratch — Learn Ethical Hacking From Scratch",
+      "url": "https://www.udemy.com/learn-ethical-hacking-from-scratch/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "udemy.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "unpacking-the-ethereum-stack-for-developers-https-blog--037ca5",
+      "title": "Unpacking The Ethereum Stack For Developers — https://blog.b9lab.com/unpacking-the-ethereum-stack-for-developers-c1be1dc41c06",
+      "url": "https://blog.b9lab.com/unpacking-the-ethereum-stack-for-developers-c1be1dc41c06",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "blog.b9lab.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "user-input-udacity-free-course-416d95",
+      "title": "User Input (Udacity - Free Course)",
+      "url": "https://classroom.udacity.com/courses/ud836",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android",
+        "programming"
+      ],
+      "description": "Basic flow control, Functionality to app",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "user-interface-udacity-free-course-942f45",
+      "title": "User Interface (Udacity - Free Course)",
+      "url": "https://classroom.udacity.com/courses/ud834",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android",
+        "programming"
+      ],
+      "description": "Building layouts, XML design, Views in Android layout.",
+      "source": "Udacity",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "visual-studio-download-45fd03",
+      "title": "Visual Studio — Download",
+      "url": "https://visualstudio.microsoft.com/vs/features/cplusplus/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "competitive"
+      ],
+      "description": "",
+      "source": "visualstudio.microsoft.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "w3-schools-d9da49",
+      "title": "W3 Schools",
+      "url": "https://www.w3schools.com/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "This is a free educational website which is going to be your best-friend if you are interested in web-dev.For any kind of help related with syntax,search this site",
+      "source": "W3Schools",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "web-w3schools-howto-2cdea3",
+      "title": "WEB — W3Schools - HowTo",
+      "url": "https://www.w3schools.com/howto/default.asp",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "web-dev"
+      ],
+      "description": "W3Schools",
+      "source": "W3Schools",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "web3-js-documentation-00a367",
+      "title": "Web3-JS — Documentation",
+      "url": "https://web3js.readthedocs.io/en/1.0/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "Try to understand how the functions written in smart contracts can be invoked,how you can query a ethereum blockchain using web3js and how to integrate frontend with the blockchain fot the dApp",
+      "source": "web3js.readthedocs.io",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "web3-js-playlist-dapp-university-youtube-c28840",
+      "title": "Web3-JS Playlist:Dapp University[Youtube]",
+      "url": "https://www.youtube.com/watch?v=t3wM5903ty0&list=PLS5SEs8ZftgXlCGXNfzKdq7nGBcIaVOdN",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming",
+        "web-dev"
+      ],
+      "description": "Try to understand how the functions written in smart contracts can be invoked,how you can query a ethereum blockchain using web3js and how to integrate frontend with the blockchain fot the dApp",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "xamarin-on-visual-studio-download-cfaf16",
+      "title": "Xamarin (on Visual Studio) — Download",
+      "url": "https://visualstudio.microsoft.com/xamarin/",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "visualstudio.microsoft.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "xamarin-on-visual-studio-installation-guide-596c39",
+      "title": "Xamarin (on Visual Studio) — Installation Guide",
+      "url": "https://docs.microsoft.com/en-us/xamarin/get-started/installation/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "docs.microsoft.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "xamarin-on-visual-studio-intial-setup-ac2de3",
+      "title": "Xamarin (on Visual Studio) — Intial Setup",
+      "url": "https://docs.microsoft.com/en-gb/xamarin/android/get-started/installation/android-sdk",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "docs.microsoft.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "xamarin-on-visual-studio-user-guide-e912e4",
+      "title": "Xamarin (on Visual Studio) — User Guide",
+      "url": "https://docs.microsoft.com/en-us/xamarin/",
+      "type": "doc",
+      "category": "documentation",
+      "topics": [
+        "android"
+      ],
+      "description": "",
+      "source": "docs.microsoft.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "zero-knowledge-proof-and-their-future-applications-by-e-2a981e",
+      "title": "Zero Knowledge Proof and Their Future Applications by Elad Verbin",
+      "url": "https://www.youtube.com/watch?v=J3jKROwTPCs",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "YouTube",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "zero-knowledge-proofs-https-hackernoon-com-wtf-is-zero--2a24e8",
+      "title": "Zero Knowledge Proofs — https://hackernoon.com/wtf-is-zero-knowledge-proof-be5b49735f27",
+      "url": "https://hackernoon.com/wtf-is-zero-knowledge-proof-be5b49735f27",
+      "type": "course",
+      "category": "courses",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "hackernoon.com",
+      "recommended": false,
+      "tags": []
+    },
+    {
+      "id": "zero-knowledge-proofs-https-medium-com-coinmonks-introd-58a387",
+      "title": "Zero Knowledge Proofs — https://medium.com/coinmonks/introduction-to-zero-knowledge-proofs-8e8261b4a48a",
+      "url": "https://medium.com/coinmonks/introduction-to-zero-knowledge-proofs-8e8261b4a48a",
+      "type": "article",
+      "category": "articles",
+      "topics": [
+        "programming"
+      ],
+      "description": "",
+      "source": "medium.com",
+      "recommended": false,
+      "tags": []
+    }
+  ]
 }

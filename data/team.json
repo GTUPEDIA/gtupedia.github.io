@@ -1,0 +1,23 @@
+{
+  "updatedAt": "2026-07-01",
+  "intro": "GTUPEDIA is built and maintained by GTU students from colleges across Gujarat. We organise papers, resources, and tools so every branch can find what they need faster.",
+  "joinNote": "Want to contribute? Reach out to the team — we welcome students from any GTU-affiliated college.",
+  "members": [
+    {
+      "id": "dhruv-saidava",
+      "name": "Dhruv Saidava",
+      "role": "Team member",
+      "course": "MBA",
+      "branch": "IEV",
+      "college": "GTU — School of Management Studies (GSMS), Ahmedabad"
+    },
+    {
+      "id": "aastha-chauhan",
+      "name": "Aastha Chauhan",
+      "role": "Team member",
+      "course": "Diploma",
+      "branch": "Information Technology",
+      "college": "Government Polytechnic College, Valsad"
+    }
+  ]
+}

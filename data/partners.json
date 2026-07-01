@@ -1,0 +1,41 @@
+{
+  "intro": "GTUPEDIA is built for students, by students. These partners support our work with hardware, learning resources, documentation, and more — thank you for helping us keep exam prep open and accessible.",
+  "categories": [
+    {
+      "role": "Hardware Partner",
+      "partners": [
+        {
+          "name": "TinkerStore",
+          "url": "https://tinkerstore.in"
+        }
+      ]
+    },
+    {
+      "role": "Upskilling Partner",
+      "partners": [
+        {
+          "name": "Studity",
+          "url": "https://studity.org"
+        }
+      ]
+    },
+    {
+      "role": "Documentation Partner",
+      "partners": [
+        {
+          "name": "Filmy Grapes",
+          "url": "https://filmygrapes.com"
+        }
+      ]
+    },
+    {
+      "role": "Gifting Partner",
+      "partners": [
+        {
+          "name": "Root and Romance",
+          "url": "https://rootandromance.com"
+        }
+      ]
+    }
+  ]
+}

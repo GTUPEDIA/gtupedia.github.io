@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "3610005@93@Semester_1",
+    "code": "3610005",
+    "name": "Communications Skills",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2610005"
+    ],
+    "alternateIds": [
+      "2610005@93@Semester_1"
+    ],
+    "slug": "communications-skills"
+  },
+  {
+    "id": "610005@93@Semester_1",
+    "code": "610005",
+    "name": "Database Management Systems - I",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "database-management-systems-i"
+  },
+  {
+    "id": "2610003@93@Semester_1",
+    "code": "2610003",
+    "name": "Discrete Mathematics for Computer Science",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "610003"
+    ],
+    "alternateIds": [
+      "610003@93@Semester_1"
+    ],
+    "slug": "discrete-mathematics-for-computer-science"
+  },
+  {
+    "id": "2610002@93@Semester_1",
+    "code": "2610002",
+    "name": "Enterprise Resource Planning",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "enterprise-resource-planning"
+  },
+  {
+    "id": "610007@93@Semester_1",
+    "code": "610007",
+    "name": "Enterprise Resources & Financial Management",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "enterprise-resources-and-financial-management"
+  },
+  {
+    "id": "3610004@93@Semester_1",
+    "code": "3610004",
+    "name": "Fundamentals of Computer Organization",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "2610004",
+      "610004"
+    ],
+    "alternateIds": [
+      "2610004@93@Semester_1",
+      "610004@93@Semester_1"
+    ],
+    "slug": "fundamentals-of-computer-organization"
+  },
+  {
+    "id": "2610001@93@Semester_1",
+    "code": "2610001",
+    "name": "Fundamentals of Programming",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "610001"
+    ],
+    "alternateIds": [
+      "610001@93@Semester_1"
+    ],
+    "slug": "fundamentals-of-programming"
+  },
+  {
+    "id": "3610001@93@Semester_1",
+    "code": "3610001",
+    "name": "Fundamentals of Programming-1",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-programming-1"
+  },
+  {
+    "id": "3610002@93@Semester_1",
+    "code": "3610002",
+    "name": "Fundamentals of Web",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamentals-of-web"
+  },
+  {
+    "id": "3610003@93@Semester_1",
+    "code": "3610003",
+    "name": "Program Design techniques",
+    "branchId": "93",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "program-design-techniques"
+  },
+  {
+    "id": "620005@93@Semester_2",
+    "code": "620005",
+    "name": "Computer Oriented Numerical Methods",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "computer-oriented-numerical-methods"
+  },
+  {
+    "id": "2620004@93@Semester_2",
+    "code": "2620004",
+    "name": "Computer-Oriented Numerical Methods",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "computer-oriented-numerical-methods-sem-2"
+  },
+  {
+    "id": "620001@93@Semester_2",
+    "code": "620001",
+    "name": "Data Structures",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "2620001",
+      "3620002"
+    ],
+    "alternateIds": [
+      "2620001@93@Semester_2",
+      "3620002@93@Semester_2"
+    ],
+    "slug": "data-structures"
+  },
+  {
+    "id": "2620003@93@Semester_2",
+    "code": "2620003",
+    "name": "Database Management System",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "database-management-system"
+  },
+  {
+    "id": "620006@93@Semester_2",
+    "code": "620006",
+    "name": "Database Management Systems - II",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "database-management-systems-ii"
+  },
+  {
+    "id": "3620001@93@Semester_2",
+    "code": "3620001",
+    "name": "Fundamental of Programming – II",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamental-of-programming-ii"
+  },
+  {
+    "id": "620003@93@Semester_2",
+    "code": "620003",
+    "name": "Object Oriented Concepts & Programming",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "object-oriented-concepts-and-programming"
+  },
+  {
+    "id": "2620002@93@Semester_2",
+    "code": "2620002",
+    "name": "Object-Oriented Programming Concepts & Programming",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "object-oriented-programming-concepts-and-programming"
+  },
+  {
+    "id": "3620004@93@Semester_2",
+    "code": "3620004",
+    "name": "Object-Oriented Unified Modelling",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "object-oriented-unified-modelling"
+  },
+  {
+    "id": "3620003@93@Semester_2",
+    "code": "3620003",
+    "name": "Operating Systems",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "operating-systems"
+  },
+  {
+    "id": "620007@93@Semester_2",
+    "code": "620007",
+    "name": "Theory of Computation",
+    "branchId": "93",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "theory-of-computation"
+  },
+  {
+    "id": "3630002@93@Semester_3",
+    "code": "3630002",
+    "name": "Basic Computer Science-1(Applications of Data Structures and Applications of SQL)",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basic-computer-science-1-applications-of-data-structures-and-applications-of-sql"
+  },
+  {
+    "id": "3630003@93@Semester_3",
+    "code": "3630003",
+    "name": "Basic Computer Science-2(Applications of Operating Systems and Applications of Systems Software)",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basic-computer-science-2-applications-of-operating-systems-and-applications-of-systems-software"
+  },
+  {
+    "id": "4639301@93@Semester_3",
+    "code": "4639301",
+    "name": "Basic Mathematics",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "3630001"
+    ],
+    "alternateIds": [
+      "3630001@93@Semester_3"
+    ],
+    "slug": "basic-mathematics"
+  },
+  {
+    "id": "3630011@93@Semester_3",
+    "code": "3630011",
+    "name": "Data Warehousing",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-warehousing"
+  },
+  {
+    "id": "3630008@93@Semester_3",
+    "code": "3630008",
+    "name": "Database Administration",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "database-administration"
+  },
+  {
+    "id": "4639303@93@Semester_3",
+    "code": "4639303",
+    "name": "Database Management Systems",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "database-management-systems"
+  },
+  {
+    "id": "3630007@93@Semester_3",
+    "code": "3630007",
+    "name": "Dynamic HTML",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "dynamic-html"
+  },
+  {
+    "id": "630002@93@Semester_3",
+    "code": "630002",
+    "name": "Fundamentals of Java Programming",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2630002"
+    ],
+    "alternateIds": [
+      "2630002@93@Semester_3"
+    ],
+    "slug": "fundamentals-of-java-programming"
+  },
+  {
+    "id": "3630012@93@Semester_3",
+    "code": "3630012",
+    "name": "Information Security",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "information-security"
+  },
+  {
+    "id": "4639302@93@Semester_3",
+    "code": "4639302",
+    "name": "Object Oriented Programming in JAVA",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "object-oriented-programming-in-java"
+  },
+  {
+    "id": "630004@93@Semester_3",
+    "code": "630004",
+    "name": "Operating Systems",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2630004"
+    ],
+    "alternateIds": [
+      "2630004@93@Semester_3"
+    ],
+    "slug": "operating-systems-sem-3"
+  },
+  {
+    "id": "3630009@93@Semester_3",
+    "code": "3630009",
+    "name": "Procedure Programming in SQL",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "procedure-programming-in-sql"
+  },
+  {
+    "id": "4639304@93@Semester_3",
+    "code": "4639304",
+    "name": "Programming in Python",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-in-python"
+  },
+  {
+    "id": "3630004@93@Semester_3",
+    "code": "3630004",
+    "name": "Programming with C++",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-with-c"
+  },
+  {
+    "id": "3630005@93@Semester_3",
+    "code": "3630005",
+    "name": "Programming with Java",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-with-java"
+  },
+  {
+    "id": "3630010@93@Semester_3",
+    "code": "3630010",
+    "name": "Programming with Linux, Apache, MySQL, and PHP",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-with-linux-apache-mysql-and-php"
+  },
+  {
+    "id": "3630006@93@Semester_3",
+    "code": "3630006",
+    "name": "Programming with Python",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-with-python"
+  },
+  {
+    "id": "630003@93@Semester_3",
+    "code": "630003",
+    "name": "Statistical Methods",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2630003"
+    ],
+    "alternateIds": [
+      "2630003@93@Semester_3"
+    ],
+    "slug": "statistical-methods"
+  },
+  {
+    "id": "630001@93@Semester_3",
+    "code": "630001",
+    "name": "Structured & Object Oriented Analysis & Design Methodology",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2630001"
+    ],
+    "alternateIds": [
+      "2630001@93@Semester_3"
+    ],
+    "slug": "structured-and-object-oriented-analysis-and-design-methodology"
+  },
+  {
+    "id": "630005@93@Semester_3",
+    "code": "630005",
+    "name": "System Software",
+    "branchId": "93",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "2630005"
+    ],
+    "alternateIds": [
+      "2630005@93@Semester_3"
+    ],
+    "slug": "system-software"
+  },
+  {
+    "id": "3640014@93@Semester_4",
+    "code": "3640014",
+    "name": "Advanced Python",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-python"
+  },
+  {
+    "id": "640010@93@Semester_4",
+    "code": "640010",
+    "name": "Analysis & Design of Algorithm",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640010"
+    ],
+    "alternateIds": [
+      "2640010@93@Semester_4"
+    ],
+    "slug": "analysis-and-design-of-algorithm"
+  },
+  {
+    "id": "3640015@93@Semester_4",
+    "code": "3640015",
+    "name": "Android Programming",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "android-programming"
+  },
+  {
+    "id": "3640002@93@Semester_4",
+    "code": "3640002",
+    "name": "Basic Computer Science-3(Computer Networking)",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basic-computer-science-3-computer-networking"
+  },
+  {
+    "id": "3640003@93@Semester_4",
+    "code": "3640003",
+    "name": "Basic Computer Science-4(Software Engineering)",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basic-computer-science-4-software-engineering"
+  },
+  {
+    "id": "3640001@93@Semester_4",
+    "code": "3640001",
+    "name": "Basic Statistics",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basic-statistics"
+  },
+  {
+    "id": "4649306@93@Semester_4",
+    "code": "4649306",
+    "name": "Big Data Tools",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "big-data-tools"
+  },
+  {
+    "id": "2640013@93@Semester_4",
+    "code": "2640013",
+    "name": "Cloud Computing",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cloud-computing"
+  },
+  {
+    "id": "640008@93@Semester_4",
+    "code": "640008",
+    "name": "Computer Graphics",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640008"
+    ],
+    "alternateIds": [
+      "2640008@93@Semester_4"
+    ],
+    "slug": "computer-graphics"
+  },
+  {
+    "id": "4649301@93@Semester_4",
+    "code": "4649301",
+    "name": "Computer Networking",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "computer-networking"
+  },
+  {
+    "id": "4649309@93@Semester_4",
+    "code": "4649309",
+    "name": "Cyber Security & Forensic",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-forensic"
+  },
+  {
+    "id": "3640011@93@Semester_4",
+    "code": "3640011",
+    "name": "Cyber Security & Forensics",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-forensics"
+  },
+  {
+    "id": "3640005@93@Semester_4",
+    "code": "3640005",
+    "name": "Data Analytics with R",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-analytics-with-r"
+  },
+  {
+    "id": "640007@93@Semester_4",
+    "code": "640007",
+    "name": "Data Compression",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640007"
+    ],
+    "alternateIds": [
+      "2640007@93@Semester_4"
+    ],
+    "slug": "data-compression"
+  },
+  {
+    "id": "3640006@93@Semester_4",
+    "code": "3640006",
+    "name": "Data Mining",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-mining"
+  },
+  {
+    "id": "4649307@93@Semester_4",
+    "code": "4649307",
+    "name": "Data Mining and Data Visualization",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-mining-and-data-visualization"
+  },
+  {
+    "id": "640005@93@Semester_4",
+    "code": "640005",
+    "name": "Data Warehousing & Data Mining",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640005"
+    ],
+    "alternateIds": [
+      "2640005@93@Semester_4"
+    ],
+    "slug": "data-warehousing-and-data-mining"
+  },
+  {
+    "id": "640006@93@Semester_4",
+    "code": "640006",
+    "name": "Distributed Computing",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640006"
+    ],
+    "alternateIds": [
+      "2640006@93@Semester_4"
+    ],
+    "slug": "distributed-computing"
+  },
+  {
+    "id": "3640013@93@Semester_4",
+    "code": "3640013",
+    "name": "Function Programming with Java",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "function-programming-with-java"
+  },
+  {
+    "id": "640001@93@Semester_4",
+    "code": "640001",
+    "name": "Fundamentals of Networking",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640001"
+    ],
+    "alternateIds": [
+      "2640001@93@Semester_4"
+    ],
+    "slug": "fundamentals-of-networking"
+  },
+  {
+    "id": "3640008@93@Semester_4",
+    "code": "3640008",
+    "name": "Image Processing",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "image-processing"
+  },
+  {
+    "id": "4649305@93@Semester_4",
+    "code": "4649305",
+    "name": "Java Web Technology",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "java-web-technology"
+  },
+  {
+    "id": "3640012@93@Semester_4",
+    "code": "3640012",
+    "name": "Language Processing",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "language-processing"
+  },
+  {
+    "id": "640004@93@Semester_4",
+    "code": "640004",
+    "name": "Management Information System",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-information-system"
+  },
+  {
+    "id": "2640004@93@Semester_4",
+    "code": "2640004",
+    "name": "Management Information Systems",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "management-information-systems"
+  },
+  {
+    "id": "4649303@93@Semester_4",
+    "code": "4649303",
+    "name": "Mobile Computing",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "mobile-computing"
+  },
+  {
+    "id": "3640004@93@Semester_4",
+    "code": "3640004",
+    "name": "Network Security",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "network-security"
+  },
+  {
+    "id": "640003@93@Semester_4",
+    "code": "640003",
+    "name": "Operations Research",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640003",
+      "3640009"
+    ],
+    "alternateIds": [
+      "2640003@93@Semester_4",
+      "3640009@93@Semester_4"
+    ],
+    "slug": "operations-research"
+  },
+  {
+    "id": "640009@93@Semester_4",
+    "code": "640009",
+    "name": "Soft Computing",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640009"
+    ],
+    "alternateIds": [
+      "2640009@93@Semester_4"
+    ],
+    "slug": "soft-computing"
+  },
+  {
+    "id": "4649308@93@Semester_4",
+    "code": "4649308",
+    "name": "Software Quality Assurance",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "software-quality-assurance"
+  },
+  {
+    "id": "4649302@93@Semester_4",
+    "code": "4649302",
+    "name": "Statistical Methods",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "statistical-methods-sem-4"
+  },
+  {
+    "id": "2640020@93@Semester_4",
+    "code": "2640020",
+    "name": "Virtualization and Applications of Cloud",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "virtualization-and-applications-of-cloud"
+  },
+  {
+    "id": "3640010@93@Semester_4",
+    "code": "3640010",
+    "name": "Web Data Management",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "web-data-management"
+  },
+  {
+    "id": "640002@93@Semester_4",
+    "code": "640002",
+    "name": "Web Technology & Application Development",
+    "branchId": "93",
+    "semester": 4,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 4",
+    "alternateCodes": [
+      "2640002"
+    ],
+    "alternateIds": [
+      "2640002@93@Semester_4"
+    ],
+    "slug": "web-technology-and-application-development"
+  },
+  {
+    "id": "2650004@93@Semester_5",
+    "code": "2650004",
+    "name": "Advanced Data Base Management Systems",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650004"
+    ],
+    "alternateIds": [
+      "650004@93@Semester_5"
+    ],
+    "slug": "advanced-data-base-management-systems"
+  },
+  {
+    "id": "4659308@93@Semester_5",
+    "code": "4659308",
+    "name": "Advanced Network",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "advanced-network"
+  },
+  {
+    "id": "3650009@93@Semester_5",
+    "code": "3650009",
+    "name": "Advanced Networking",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "2650010",
+      "650010"
+    ],
+    "alternateIds": [
+      "2650010@93@Semester_5",
+      "650010@93@Semester_5"
+    ],
+    "slug": "advanced-networking"
+  },
+  {
+    "id": "4659307@93@Semester_5",
+    "code": "4659307",
+    "name": "Application Development using LARAVEL",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "application-development-using-laravel"
+  },
+  {
+    "id": "4659305@93@Semester_5",
+    "code": "4659305",
+    "name": "Application Development using SPRING",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "application-development-using-spring"
+  },
+  {
+    "id": "3650002@93@Semester_5",
+    "code": "3650002",
+    "name": "Artificial Intelligence",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "artificial-intelligence"
+  },
+  {
+    "id": "4659306@93@Semester_5",
+    "code": "4659306",
+    "name": "Big Data Analytics",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "3650004"
+    ],
+    "alternateIds": [
+      "3650004@93@Semester_5"
+    ],
+    "slug": "big-data-analytics"
+  },
+  {
+    "id": "3650010@93@Semester_5",
+    "code": "3650010",
+    "name": "Big Data Tools",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "big-data-tools-sem-5"
+  },
+  {
+    "id": "2650015@93@Semester_5",
+    "code": "2650015",
+    "name": "Bio-Informatics",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "bio-informatics"
+  },
+  {
+    "id": "650015@93@Semester_5",
+    "code": "650015",
+    "name": "Bioinformatics",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "bioinformatics"
+  },
+  {
+    "id": "3650012@93@Semester_5",
+    "code": "3650012",
+    "name": "Cloud Computing",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cloud-computing-sem-5"
+  },
+  {
+    "id": "2650008@93@Semester_5",
+    "code": "2650008",
+    "name": "Cyber Security and Forensic",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-forensic-sem-5"
+  },
+  {
+    "id": "650008@93@Semester_5",
+    "code": "650008",
+    "name": "Cyber Security and Forensics",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-forensics-sem-5"
+  },
+  {
+    "id": "3650015@93@Semester_5",
+    "code": "3650015",
+    "name": "Data Visualization",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-visualization"
+  },
+  {
+    "id": "3650001@93@Semester_5",
+    "code": "3650001",
+    "name": "Design & Analysis of Algorithms",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "design-and-analysis-of-algorithms"
+  },
+  {
+    "id": "4659301@93@Semester_5",
+    "code": "4659301",
+    "name": "Design and Analysis of Algorithms",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "design-and-analysis-of-algorithms-sem-5"
+  },
+  {
+    "id": "2650013@93@Semester_5",
+    "code": "2650013",
+    "name": "Geographical Information System",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650013"
+    ],
+    "alternateIds": [
+      "650013@93@Semester_5"
+    ],
+    "slug": "geographical-information-system"
+  },
+  {
+    "id": "4659309@93@Semester_5",
+    "code": "4659309",
+    "name": "Image Processing",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650011",
+      "2650011"
+    ],
+    "alternateIds": [
+      "650011@93@Semester_5",
+      "2650011@93@Semester_5"
+    ],
+    "slug": "image-processing-sem-5"
+  },
+  {
+    "id": "3650013@93@Semester_5",
+    "code": "3650013",
+    "name": "Information Retrieving",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "information-retrieving"
+  },
+  {
+    "id": "3650005@93@Semester_5",
+    "code": "3650005",
+    "name": "Java Web Technologies",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "java-web-technologies"
+  },
+  {
+    "id": "2650014@93@Semester_5",
+    "code": "2650014",
+    "name": "Language Processing",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650014"
+    ],
+    "alternateIds": [
+      "650014@93@Semester_5"
+    ],
+    "slug": "language-processing-sem-5"
+  },
+  {
+    "id": "4659302@93@Semester_5",
+    "code": "4659302",
+    "name": "Machine Learning",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "3650014"
+    ],
+    "alternateIds": [
+      "3650014@93@Semester_5"
+    ],
+    "slug": "machine-learning"
+  },
+  {
+    "id": "2650003@93@Semester_5",
+    "code": "2650003",
+    "name": "Mobile Computing",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650003"
+    ],
+    "alternateIds": [
+      "650003@93@Semester_5"
+    ],
+    "slug": "mobile-computing-sem-5"
+  },
+  {
+    "id": "2650002@93@Semester_5",
+    "code": "2650002",
+    "name": "Network Security",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650002"
+    ],
+    "alternateIds": [
+      "650002@93@Semester_5"
+    ],
+    "slug": "network-security-sem-5"
+  },
+  {
+    "id": "4659310@93@Semester_5",
+    "code": "4659310",
+    "name": "Operation Research",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "operation-research"
+  },
+  {
+    "id": "2650005@93@Semester_5",
+    "code": "2650005",
+    "name": "Parallel Processing",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "parallel-processing"
+  },
+  {
+    "id": "650005@93@Semester_5",
+    "code": "650005",
+    "name": "Parallel Programming",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "parallel-programming"
+  },
+  {
+    "id": "3650007@93@Semester_5",
+    "code": "3650007",
+    "name": "Search Engine Techniques",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "search-engine-techniques"
+  },
+  {
+    "id": "2650012@93@Semester_5",
+    "code": "2650012",
+    "name": "Software Development for Embedded Systems",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650012"
+    ],
+    "alternateIds": [
+      "650012@93@Semester_5"
+    ],
+    "slug": "software-development-for-embedded-systems"
+  },
+  {
+    "id": "4659303@93@Semester_5",
+    "code": "4659303",
+    "name": "Software Engineering",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "2650001",
+      "650001"
+    ],
+    "alternateIds": [
+      "2650001@93@Semester_5",
+      "650001@93@Semester_5"
+    ],
+    "slug": "software-engineering"
+  },
+  {
+    "id": "2650020@93@Semester_5",
+    "code": "2650020",
+    "name": "Software Project Management",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "software-project-management"
+  },
+  {
+    "id": "3650011@93@Semester_5",
+    "code": "3650011",
+    "name": "Software Quality and Assurance",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "software-quality-and-assurance"
+  },
+  {
+    "id": "3650006@93@Semester_5",
+    "code": "3650006",
+    "name": "Web Commerce",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "web-commerce"
+  },
+  {
+    "id": "4659311@93@Semester_5",
+    "code": "4659311",
+    "name": "Web Data Management",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "2650009",
+      "650009"
+    ],
+    "alternateIds": [
+      "2650009@93@Semester_5",
+      "650009@93@Semester_5"
+    ],
+    "slug": "web-data-management-sem-5"
+  },
+  {
+    "id": "2650006@93@Semester_5",
+    "code": "2650006",
+    "name": "Web Searching Technologies & Search Engine Optimization",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [
+      "650006"
+    ],
+    "alternateIds": [
+      "650006@93@Semester_5"
+    ],
+    "slug": "web-searching-technologies-and-search-engine-optimization"
+  },
+  {
+    "id": "4659312@93@Semester_5",
+    "code": "4659312",
+    "name": "Wireless Communication and Mobile Computing",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "wireless-communication-and-mobile-computing"
+  },
+  {
+    "id": "650016@93@Semester_5",
+    "code": "650016",
+    "name": "Wireless Communication Mobile",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "wireless-communication-mobile"
+  },
+  {
+    "id": "2650016@93@Semester_5",
+    "code": "2650016",
+    "name": "Wireless Communication:Mobile",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "wireless-communication-mobile-sem-5"
+  },
+  {
+    "id": "650007@93@Semester_5",
+    "code": "650007",
+    "name": "Wireless Sensor Network",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "wireless-sensor-network"
+  },
+  {
+    "id": "2650007@93@Semester_5",
+    "code": "2650007",
+    "name": "Wireless Sensor Networks",
+    "branchId": "93",
+    "semester": 5,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 5",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "wireless-sensor-networks"
+  },
+  {
+    "id": "619406@94@Semester_1",
+    "code": "619406",
+    "name": "Basic Computer Concepts",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basic-computer-concepts"
+  },
+  {
+    "id": "619403@94@Semester_1",
+    "code": "619403",
+    "name": "Basic Mathematics",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "basic-mathematics"
+  },
+  {
+    "id": "MC01094021@94@Semester_1",
+    "code": "MC01094021",
+    "name": "Fundamental of Computer Organization",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "fundamental-of-computer-organization"
+  },
+  {
+    "id": "619402@94@Semester_1",
+    "code": "619402",
+    "name": "Object Oriented Programming in Java",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "object-oriented-programming-in-java"
+  },
+  {
+    "id": "MC01094041@94@Semester_1",
+    "code": "MC01094041",
+    "name": "Object Oriented Programming using JAVA",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "object-oriented-programming-using-java"
+  },
+  {
+    "id": "MC01094011@94@Semester_1",
+    "code": "MC01094011",
+    "name": "Programming with C",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-with-c"
+  },
+  {
+    "id": "MC01094031@94@Semester_1",
+    "code": "MC01094031",
+    "name": "Relational Database Management Systems",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [
+      "619404"
+    ],
+    "alternateIds": [
+      "619404@94@Semester_1"
+    ],
+    "slug": "relational-database-management-systems"
+  },
+  {
+    "id": "MC01094051@94@Semester_1",
+    "code": "MC01094051",
+    "name": "Web Technology Project",
+    "branchId": "94",
+    "semester": 1,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 1",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "web-technology-project"
+  },
+  {
+    "id": "629407@94@Semester_2",
+    "code": "629407",
+    "name": "Big Data Tools",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "big-data-tools"
+  },
+  {
+    "id": "MC02094031@94@Semester_2",
+    "code": "MC02094031",
+    "name": "Computer Networking",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [
+      "629404"
+    ],
+    "alternateIds": [
+      "629404@94@Semester_2"
+    ],
+    "slug": "computer-networking"
+  },
+  {
+    "id": "MC02094011@94@Semester_2",
+    "code": "MC02094011",
+    "name": "Data Structure using C",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-structure-using-c"
+  },
+  {
+    "id": "629401@94@Semester_2",
+    "code": "629401",
+    "name": "Data Structures",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "data-structures"
+  },
+  {
+    "id": "MC02094041@94@Semester_2",
+    "code": "MC02094041",
+    "name": "Full Stack Development",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "full-stack-development"
+  },
+  {
+    "id": "MC02094061@94@Semester_2",
+    "code": "MC02094061",
+    "name": "Indian Knowledge System",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "indian-knowledge-system"
+  },
+  {
+    "id": "629408@94@Semester_2",
+    "code": "629408",
+    "name": "Java Web Technologies",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "java-web-technologies"
+  },
+  {
+    "id": "MC02094021@94@Semester_2",
+    "code": "MC02094021",
+    "name": "Operating System",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "operating-system"
+  },
+  {
+    "id": "629403@94@Semester_2",
+    "code": "629403",
+    "name": "Programming in Python",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-in-python"
+  },
+  {
+    "id": "MC02094051@94@Semester_2",
+    "code": "MC02094051",
+    "name": "Programming with Python",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "programming-with-python"
+  },
+  {
+    "id": "629406@94@Semester_2",
+    "code": "629406",
+    "name": "Software Testing",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "software-testing"
+  },
+  {
+    "id": "629409@94@Semester_2",
+    "code": "629409",
+    "name": "Statistical Methods",
+    "branchId": "94",
+    "semester": 2,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 2",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "statistical-methods"
+  },
+  {
+    "id": "MC03094051@94@Semester_3",
+    "code": "MC03094051",
+    "name": "Artificial Intelligence",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "artificial-intelligence"
+  },
+  {
+    "id": "MC03094061@94@Semester_3",
+    "code": "MC03094061",
+    "name": "Augmented Reality/Virtual Reality",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "augmented-reality-virtual-reality"
+  },
+  {
+    "id": "MC03094081@94@Semester_3",
+    "code": "MC03094081",
+    "name": "Big Data Tools",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "big-data-tools-sem-3"
+  },
+  {
+    "id": "MC03094091@94@Semester_3",
+    "code": "MC03094091",
+    "name": "Business Analytics",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "business-analytics"
+  },
+  {
+    "id": "MC03094131@94@Semester_3",
+    "code": "MC03094131",
+    "name": "Cloud Computing",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "639407"
+    ],
+    "alternateIds": [
+      "639407@94@Semester_3"
+    ],
+    "slug": "cloud-computing"
+  },
+  {
+    "id": "MC03094071@94@Semester_3",
+    "code": "MC03094071",
+    "name": "Containerization",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "containerization"
+  },
+  {
+    "id": "MC03094161@94@Semester_3",
+    "code": "MC03094161",
+    "name": "Cyber Security and Forensic",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "cyber-security-and-forensic"
+  },
+  {
+    "id": "MC03094011@94@Semester_3",
+    "code": "MC03094011",
+    "name": "Design and Analysis of Algorithms",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "639401"
+    ],
+    "alternateIds": [
+      "639401@94@Semester_3"
+    ],
+    "slug": "design-and-analysis-of-algorithms"
+  },
+  {
+    "id": "MC03094111@94@Semester_3",
+    "code": "MC03094111",
+    "name": "DevOps Engineering",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "devops-engineering"
+  },
+  {
+    "id": "639408@94@Semester_3",
+    "code": "639408",
+    "name": "Embedded System Design",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "embedded-system-design"
+  },
+  {
+    "id": "MC03094041@94@Semester_3",
+    "code": "MC03094041",
+    "name": "Human Computer Interface",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "human-computer-interface"
+  },
+  {
+    "id": "MC03094101@94@Semester_3",
+    "code": "MC03094101",
+    "name": "Information and Network Security",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "information-and-network-security"
+  },
+  {
+    "id": "MC03094151@94@Semester_3",
+    "code": "MC03094151",
+    "name": "Internet of Things",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "639409"
+    ],
+    "alternateIds": [
+      "639409@94@Semester_3"
+    ],
+    "slug": "internet-of-things"
+  },
+  {
+    "id": "MC03094121@94@Semester_3",
+    "code": "MC03094121",
+    "name": "Machine Learning",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "639402"
+    ],
+    "alternateIds": [
+      "639402@94@Semester_3"
+    ],
+    "slug": "machine-learning"
+  },
+  {
+    "id": "MC03094031@94@Semester_3",
+    "code": "MC03094031",
+    "name": "Mobile Application Development",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "mobile-application-development"
+  },
+  {
+    "id": "MC03094181@94@Semester_3",
+    "code": "MC03094181",
+    "name": "Mobile Computing and Wireless Communication",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "mobile-computing-and-wireless-communication"
+  },
+  {
+    "id": "639410@94@Semester_3",
+    "code": "639410",
+    "name": "Network and Cyber Security",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "network-and-cyber-security"
+  },
+  {
+    "id": "639405@94@Semester_3",
+    "code": "639405",
+    "name": "Open Stack Technology",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "open-stack-technology"
+  },
+  {
+    "id": "639406@94@Semester_3",
+    "code": "639406",
+    "name": "Operation Research",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "operation-research"
+  },
+  {
+    "id": "MC03094021@94@Semester_3",
+    "code": "MC03094021",
+    "name": "Software Engineering",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [
+      "639403"
+    ],
+    "alternateIds": [
+      "639403@94@Semester_3"
+    ],
+    "slug": "software-engineering"
+  },
+  {
+    "id": "MC03094141@94@Semester_3",
+    "code": "MC03094141",
+    "name": "Software Testing",
+    "branchId": "94",
+    "semester": 3,
+    "courseCode": "MC",
+    "semesterLabel": "Semester 3",
+    "alternateCodes": [],
+    "alternateIds": [],
+    "slug": "software-testing-sem-3"
+  }
+]

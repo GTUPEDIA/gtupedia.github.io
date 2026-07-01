@@ -145,6 +145,7 @@ function breadcrumbCourseLabel(course) {
     BA: 'B.Arch',
     BC: 'BCA',
     MB: 'MBA',
+    MC: 'MCA',
     BH: 'BHMCT',
     BN: 'B.Design',
     EP: 'B.E. (Part Time)',
@@ -239,7 +240,7 @@ function getExamPaperSets() {
   if (state.catalog?.winter2025Papers) sets.push(state.catalog.winter2025Papers);
   if (state.catalog?.winter2025BbPapers) sets.push(state.catalog.winter2025BbPapers);
   if (state.catalog?.winter2025BcPapers) sets.push(state.catalog.winter2025BcPapers);
-  if (state.catalog?.winter2025MbPapers) sets.push(state.catalog.winter2025MbPapers);
+  if (state.catalog?.winter2025McPapers) sets.push(state.catalog.winter2025McPapers);
   if (state.catalog?.summer2025Papers) sets.push(state.catalog.summer2025Papers);
   if (state.catalog?.summer2025BcPapers) sets.push(state.catalog.summer2025BcPapers);
   if (state.catalog?.summer2025MbPapers) sets.push(state.catalog.summer2025MbPapers);
@@ -285,7 +286,7 @@ function gtuExamPaperUrl(subjectCode, paperSet) {
 }
 
 function examPaperCardsForSubject(subject, courseCode) {
-  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC' && courseCode !== 'MB') return [];
+  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC' && courseCode !== 'MB' && courseCode !== 'MC') return [];
   const cards = [];
   const seen = new Set();
 
@@ -578,6 +579,7 @@ async function enrichCatalog(catalog) {
     { courseCode: 'BB', subjectUrl: `data/bb-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BB },
     { courseCode: 'BC', subjectUrl: `data/bc-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BC },
     { courseCode: 'MB', subjectUrl: `data/mb-subjects.json?v=${version}`, branchUrl: `data/mb-branches.json?v=${version}` },
+    { courseCode: 'MC', subjectUrl: `data/mc-subjects.json?v=${version}`, branchUrl: `data/mc-branches.json?v=${version}` },
   ];
 
   for (const { courseCode, subjectUrl, branches, branchUrl } of supplements) {

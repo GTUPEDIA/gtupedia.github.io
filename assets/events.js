@@ -3,8 +3,11 @@
   const listEl = document.querySelector('#events-list');
   if (!introEl || !listEl) return;
 
-  const base = window.__GTUPEDIA_BASE || '/';
-  const root = base.endsWith('/') ? base : `${base}/`;
+  function dataUrl(path) {
+    const base = window.__GTUPEDIA_BASE || '/';
+    const root = base.endsWith('/') ? base : `${base}/`;
+    return `${root}${path.replace(/^\//, '')}`;
+  }
 
   function escapeHtml(value = '') {
     return String(value)
@@ -42,18 +45,17 @@
       </section>`;
   }
 
-  fetch(`${root}data/events.json`, { cache: 'no-store' })
+  fetch(dataUrl('data/events.json'), { cache: 'no-store' })
     .then(response => {
       if (!response.ok) throw new Error('Failed to load events');
       return response.json();
     })
     .then(data => {
-      introEl.textContent = data.intro || 'Upcoming events for GTU students.';
+      introEl.textContent = data.intro || introEl.textContent;
       const html = (data.categories || []).map(renderCategory).filter(Boolean).join('');
-      listEl.innerHTML = html || '<p class="empty">No upcoming events listed yet. Check back soon.</p>';
+      if (html) listEl.innerHTML = html;
     })
     .catch(() => {
-      introEl.textContent = 'Upcoming expos, seminars, webinars, and community events.';
-      listEl.innerHTML = '<p class="empty">Could not load events. Please try again later.</p>';
+      /* Keep static HTML fallback (Prawaas) when JSON is unavailable. */
     });
 })();

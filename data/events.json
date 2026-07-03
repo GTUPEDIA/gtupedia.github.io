@@ -1,0 +1,31 @@
+{
+  "intro": "Conferences, expos, seminars, webinars, and community meetups worth knowing about — especially for GTU students exploring transport, tech, business, and innovation beyond the syllabus.",
+  "categories": [
+    {
+      "type": "Expos",
+      "events": [
+        {
+          "name": "Prawaas 5.0",
+          "url": "https://prawaas.com/",
+          "date": "9–11 July 2026",
+          "venue": "Helipad Exhibition Centre (HEC), Gandhinagar, Gujarat",
+          "organizer": "Bus and Car Operators Confederation of India (BOCI)",
+          "theme": "Towards Safe, Smart & Sustainable Public Transport",
+          "summary": "Prawaas 5.0 brings stakeholders together to expand services, modernise infrastructure, and enable inclusive access through a multimodal approach integrating buses, metro, taxis, and last-mile solutions. The event aligns government, operators, startups, technology providers, financiers, and civil society to build a mobility ecosystem that is efficient, inclusive, climate-conscious, and future-ready. India's flagship multimodal transport show — fifth edition at Gandhinagar."
+        }
+      ]
+    },
+    {
+      "type": "Seminars",
+      "events": []
+    },
+    {
+      "type": "Webinars",
+      "events": []
+    },
+    {
+      "type": "Community events",
+      "events": []
+    }
+  ]
+}

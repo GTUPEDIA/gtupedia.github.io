@@ -204,7 +204,7 @@ function resetHomeSeo() {
 }
 
 function relatedSubjects(subject, branchId, courseCode, limit = 8) {
-  return subjectsForBranch(branchId, courseCode)
+  return listedSubjectsForBranch(branchId, courseCode)
     .filter(item => item.id !== subject.id && item.semester === subject.semester)
     .slice(0, limit);
 }
@@ -232,6 +232,10 @@ function renderPopularBranches(courseCode, limit = 8) {
 
 function examSeasonCount(subject) {
   return getExamPaperSets().filter(paperSet => subjectCodes(subject).some(code => hasExamPaper(code, paperSet))).length;
+}
+
+function subjectHasPapers(subject) {
+  return examSeasonCount(subject) > 0;
 }
 
 function getExamPaperSets() {
@@ -678,6 +682,10 @@ function subjectsForBranch(branchId, courseCode = 'BE') {
   });
 }
 
+function listedSubjectsForBranch(branchId, courseCode = 'BE') {
+  return subjectsForBranch(branchId, courseCode).filter(subjectHasPapers);
+}
+
 function groupSubjectsBySemester(subjects) {
   const groups = new Map();
 
@@ -705,7 +713,7 @@ function branchLabel(branchId, courseCode = 'BE') {
 }
 
 function subjectCountForBranch(branchId, courseCode = 'BE') {
-  return subjectsForBranch(branchId, courseCode).length;
+  return listedSubjectsForBranch(branchId, courseCode).length;
 }
 
 function setHomeSectionsVisible(visible) {
@@ -774,7 +782,9 @@ function buildSearchIndex() {
     getAllCourseBranches().map(({ courseCode, branch }) => [`${courseCode}:${branch.id}`, branch.name]),
   );
 
-  state.searchIndex = (state.catalog.subjects || []).map(subject => {
+  state.searchIndex = (state.catalog.subjects || [])
+    .filter(subjectHasPapers)
+    .map(subject => {
     const courseCode = subject.courseCode || 'BE';
     const course = getCourse(courseCode);
     const branchName = subject.branchId === '0'
@@ -841,7 +851,9 @@ function courseHasPapers(courseCode) {
 
 function renderCourseCard(course, { comingSoon = false } = {}) {
   const branchCount = getCourseBranches(course.code).length;
-  const subjectCount = (state.catalog.subjects || []).filter(subject => subject.courseCode === course.code).length;
+  const subjectCount = (state.catalog.subjects || [])
+    .filter(subject => subject.courseCode === course.code && subjectHasPapers(subject))
+    .length;
   let detail;
   if (comingSoon) {
     detail = 'Exam papers coming soon';
@@ -908,7 +920,7 @@ function renderCourse(courseCode) {
       <a class="branch-card" href="${urlFor({ course: courseCode, branch: branch.id })}">
         <span class="branch-code">${escapeHtml(branch.id)}</span>
         <h3>${escapeHtml(branch.name)}</h3>
-        <p>${count ? `${count} subjects` : 'Browse subjects and resources'}</p>
+        <p>${count ? `${count} subjects with papers` : 'Papers coming soon'}</p>
       </a>`;
     }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}
     ${renderPopularBranches(courseCode)}`);
@@ -929,7 +941,7 @@ function renderSubjectCard(subject, meta = '', branchId = subject.branchId) {
 function renderBranch(courseCode, branchId) {
   const branch = findBranch(branchId, courseCode);
   const resolvedCourse = courseCode || findCourseForBranch(branchId);
-  const subjects = subjectsForBranch(branchId, resolvedCourse || courseCode || 'BE');
+  const subjects = listedSubjectsForBranch(branchId, resolvedCourse || courseCode || 'BE');
   if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
   ensureCanonicalUrl({ course: resolvedCourse || courseCode || 'BE' }, branch);
   setHeroVisible(false);
@@ -939,7 +951,7 @@ function renderBranch(courseCode, branchId) {
   const crumbs = [homeCrumb(), courseCrumb(course), branchCrumb(resolvedCourse || courseCode || 'BE', branch)].filter(Boolean);
   updatePageSeo({
     title: `${branch.name} (${resolvedCourse || courseCode} ${branch.id}) — GTU Subjects | ${SITE.name}`,
-    description: `Browse ${subjects.length} ${branch.name} subjects by semester. Access GTU exam papers and study resources for ${courseName}.`,
+    description: `Browse ${subjects.length} ${branch.name} subjects with GTU exam papers. Study resources for ${courseName}.`,
     path: branchPath(resolvedCourse || courseCode || 'BE', branch.id),
     breadcrumbs: crumbs,
   });
@@ -947,13 +959,13 @@ function renderBranch(courseCode, branchId) {
   content.innerHTML = pageShell(`
     <header class="page-header">
       <h1 class="page-title">${escapeHtml(branch.name)}</h1>
-      <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subjects across ${semesterGroups.length} semester groups.</p>
+      <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subject${subjects.length === 1 ? '' : 's'} with exam papers.</p>
     </header>
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
-        <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open papers and material', branchId)).join('')}</div>
-      </section>`).join('')}</div>` : '<p class="empty">No subjects have been imported for this branch yet.</p>'}`);
+        <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open exam papers', branchId)).join('')}</div>
+      </section>`).join('')}</div>` : '<p class="empty">No exam papers are available for this branch yet. Check back after the next paper upload.</p>'}`);
   maybeShowBeAdPopup(resolvedCourse || 'BE');
 }
 
@@ -976,6 +988,9 @@ function renderSubject(subjectOrRef, routeBranchId) {
       ? findSubjectForBranch(branchId, subjectOrRef)
       : findSubject(subjectOrRef));
   if (!subject) return renderNotFound('That subject is not in the catalogue yet.');
+  if (!subjectHasPapers(subject)) {
+    return renderNotFound('No exam papers are available for this subject yet. It will appear once papers are added.');
+  }
   setHeroVisible(false);
   setCoursesVisible(false);
   const courseCode = subject.courseCode || findCourseForBranch(String(subject.branchId)) || 'BE';

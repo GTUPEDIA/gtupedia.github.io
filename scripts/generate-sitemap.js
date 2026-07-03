@@ -55,6 +55,7 @@ function collectSitemapEntries(catalog) {
     }
     for (const subject of subjects) {
       if (subject.courseCode !== course.code) continue;
+      if (!subjectHasPapers(subject, catalog.examPapers || [])) continue;
       add(subjectPath(course.code, subject.branchId, subject, branches), '0.7', 'subject', {
         course,
         subject,
@@ -178,6 +179,14 @@ function examSeasonCount(subject, examPapers = []) {
   return count;
 }
 
+function subjectHasPapers(subject, examPapers = []) {
+  return examSeasonCount(subject, examPapers) > 0;
+}
+
+function listedSubjectsForBranch(branchId, courseCode, subjects = [], examPapers = []) {
+  return subjectsForBranch(branchId, courseCode, subjects).filter(subject => subjectHasPapers(subject, examPapers));
+}
+
 function subjectsForBranch(branchId, courseCode, subjects = []) {
   const id = String(branchId) === '0' ? '0' : String(branchId).padStart(2, '0');
   return subjects.filter(subject => {
@@ -278,13 +287,16 @@ function buildCoursePage(course, catalog) {
   const courseCode = course.code;
   const courseName = formatLabel(course.name);
   const branches = branchesForCourse(course, catalog);
-  const subjectCount = (catalog.subjects || []).filter(item => item.courseCode === courseCode).length;
+  const examPapers = catalog.examPapers || [];
+  const subjectCount = (catalog.subjects || []).filter(
+    item => item.courseCode === courseCode && subjectHasPapers(item, examPapers),
+  ).length;
   const title = `${courseName} (${courseCode}) — GTU Branches | ${SITE_NAME}`;
-  const description = `Browse all ${courseCode} branches at GTU. Find subjects, semesters, and official exam papers for ${courseName}.`;
+  const description = `Browse all ${courseCode} branches at GTU. Find subjects with official exam papers for ${courseName}.`;
   const branchLinks = branches.map(branch => {
     const route = branchPath(courseCode, branch.id, branches);
-    const count = subjectsForBranch(branch.id, courseCode, catalog.subjects).length;
-    return `<li><a href="${escapeHtml(route)}">${escapeHtml(branch.name)}</a>${count ? ` — ${count} subjects` : ''}</li>`;
+    const count = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers).length;
+    return `<li><a href="${escapeHtml(route)}">${escapeHtml(branch.name)}</a>${count ? ` — ${count} subjects with papers` : ''}</li>`;
   }).join('\n');
 
   return renderSeoShell({
@@ -308,9 +320,10 @@ function buildBranchPage(course, branch, branches, catalog) {
   const courseCode = course.code;
   const courseName = formatLabel(course.name);
   const route = branchPath(courseCode, branch.id, branches);
-  const subjects = subjectsForBranch(branch.id, courseCode, catalog.subjects);
+  const examPapers = catalog.examPapers || [];
+  const subjects = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers);
   const title = `${branch.name} (${courseCode} ${branch.id}) — GTU Subjects | ${SITE_NAME}`;
-  const description = `Browse ${subjects.length} ${branch.name} subjects by semester. Access GTU exam papers and study resources for ${courseName}.`;
+  const description = `Browse ${subjects.length} ${branch.name} subjects with GTU exam papers. Study resources for ${courseName}.`;
   const subjectLinks = subjects.slice(0, 120).map(subject => {
     const subjectRoute = subjectPath(courseCode, branch.id, subject, branches);
     return `<li><a href="${escapeHtml(subjectRoute)}">${escapeHtml(subject.name)}</a> <span>(${escapeHtml(subject.code)}) · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester}`)}</span></li>`;
@@ -321,11 +334,12 @@ function buildBranchPage(course, branch, branches, catalog) {
     description,
     path: route,
     h1: escapeHtml(branch.name),
-    intro: escapeHtml(`${courseName} · Branch ${branch.id} · ${subjects.length} subjects.`),
+    intro: escapeHtml(`${courseName} · Branch ${branch.id} · ${subjects.length} subjects with exam papers.`),
     bodyHtml: `
-      <h2>Subjects</h2>
+      <h2>Subjects with papers</h2>
       <ul>${subjectLinks}</ul>
-      ${subjects.length > 120 ? `<p>Showing 120 of ${subjects.length} subjects. Open the page in your browser for the full list.</p>` : ''}`,
+      ${subjects.length > 120 ? `<p>Showing 120 of ${subjects.length} subjects. Open the page in your browser for the full list.</p>` : ''}
+      ${subjects.length ? '' : '<p>No exam papers are available for this branch yet.</p>'}`,
     jsonLd: [breadcrumbListJsonLd([
       { name: 'Home', url: `${SITE}/` },
       { name: breadcrumbCourseLabel(course), url: `${SITE}/${courseCode}` },

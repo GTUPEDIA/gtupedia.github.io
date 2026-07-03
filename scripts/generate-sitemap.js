@@ -1,8 +1,21 @@
 const fs = require('fs');
 const path = require('path');
+const {
+  SEO,
+  siteUrl,
+  organizationJsonLd,
+  webPageJsonLd,
+  learningResourceJsonLd,
+  seoTitleCourse,
+  seoDescriptionCourse,
+  seoTitleBranch,
+  seoDescriptionBranch,
+  seoTitleSubject,
+  seoDescriptionSubject,
+} = require('./seo-config');
 
-const SITE = 'https://gtupedia.github.io';
-const SITE_NAME = 'GTUPEDIA';
+const SITE = SEO.siteUrl;
+const SITE_NAME = SEO.siteName;
 
 function branchesForCourse(course, catalog) {
   if (course.branches?.length) return course.branches;
@@ -31,7 +44,7 @@ function collectSitemapEntries(catalog) {
 
   function add(routePath, priority, kind, data = {}) {
     const pathValue = routePath.replace(/^\//, '');
-    const loc = pathValue ? `${SITE}/${pathValue}` : `${SITE}/`;
+    const loc = siteUrl(pathValue);
     if (seen.has(loc)) return;
     seen.add(loc);
     entries.push({ path: pathValue, loc, priority, kind, ...data });
@@ -208,23 +221,25 @@ function renderSeoShell({
   bodyHtml,
   jsonLd = [],
   catalogVersion,
+  robots = 'index, follow',
 }) {
-  const canonical = path ? `${SITE}/${path.replace(/^\//, '')}` : `${SITE}/`;
-  const structured = jsonLd.filter(Boolean);
+  const canonical = siteUrl(path);
+  const structured = [organizationJsonLd(), webPageJsonLd({ title, description, url: canonical }), ...jsonLd].filter(Boolean);
   const ldScript = structured.length
-    ? `<script type="application/ld+json">${JSON.stringify(structured.length === 1 ? structured[0] : structured)}</script>`
+    ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': structured.map(({ '@context': _c, ...item }) => item) })}</script>`
     : '';
 
   return `<!doctype html>
-<html lang="en">
+<html lang="${SEO.language}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${escapeHtml(description)}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="${escapeHtml(robots)}">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <meta property="og:site_name" content="${SITE_NAME}">
+    <meta property="og:locale" content="${SEO.locale}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(description)}">
@@ -241,6 +256,8 @@ function renderSeoShell({
     <base href="/">
     <script>document.querySelector('base').href = window.__GTUPEDIA_BASE;</script>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site-seo.js" defer></script>
+    <script src="assets/site-analytics.js" defer></script>
     <script src="assets/site-chrome.js" defer></script>
   </head>
   <body class="subpage">
@@ -284,8 +301,8 @@ function buildCoursePage(course, catalog) {
   const subjectCount = (catalog.subjects || []).filter(
     item => item.courseCode === courseCode && subjectHasPapers(item, examPapers),
   ).length;
-  const title = `${courseName} (${courseCode}) — GTU Branches | ${SITE_NAME}`;
-  const description = `Browse all ${courseCode} branches at GTU. Find subjects with official exam papers for ${courseName}.`;
+  const title = seoTitleCourse(courseName, courseCode);
+  const description = seoDescriptionCourse(courseName, courseCode, branches.length, subjectCount);
   const branchLinks = branches.map(branch => {
     const route = branchPath(courseCode, branch.id, branches);
     const count = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers).length;
@@ -302,8 +319,8 @@ function buildCoursePage(course, catalog) {
       <p>${subjectCount ? `${subjectCount} subjects across ${branches.length} branch${branches.length === 1 ? '' : 'es'}.` : 'Course catalogue on GTUPEDIA.'}</p>
       ${branchLinks ? `<h2>Branches</h2><ul>${branchLinks}</ul>` : '<p>Branches coming soon.</p>'}`,
     jsonLd: [breadcrumbListJsonLd([
-      { name: 'Home', url: `${SITE}/` },
-      { name: breadcrumbCourseLabel(course), url: `${SITE}/${courseCode}` },
+      { name: 'Home', url: siteUrl() },
+      { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
     ])],
     catalogVersion: catalog.catalogBuiltAt,
   });
@@ -315,8 +332,8 @@ function buildBranchPage(course, branch, branches, catalog) {
   const route = branchPath(courseCode, branch.id, branches);
   const examPapers = catalog.examPapers || [];
   const subjects = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers);
-  const title = `${branch.name} (${courseCode} ${branch.id}) — GTU Subjects | ${SITE_NAME}`;
-  const description = `Browse ${subjects.length} ${branch.name} subjects with GTU exam papers. Study resources for ${courseName}.`;
+  const title = seoTitleBranch(branch.name, courseCode, branch.id);
+  const description = seoDescriptionBranch(branch.name, courseCode, subjects.length);
   const subjectLinks = subjects.slice(0, 120).map(subject => {
     const subjectRoute = subjectPath(courseCode, branch.id, subject, branches);
     return `<li><a href="${escapeHtml(subjectRoute)}">${escapeHtml(subject.name)}</a> <span>(${escapeHtml(subject.code)}) · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester}`)}</span></li>`;
@@ -334,9 +351,9 @@ function buildBranchPage(course, branch, branches, catalog) {
       ${subjects.length > 120 ? `<p>Showing 120 of ${subjects.length} subjects. Open the page in your browser for the full list.</p>` : ''}
       ${subjects.length ? '' : '<p>No exam papers are available for this branch yet.</p>'}`,
     jsonLd: [breadcrumbListJsonLd([
-      { name: 'Home', url: `${SITE}/` },
-      { name: breadcrumbCourseLabel(course), url: `${SITE}/${courseCode}` },
-      { name: branch.name, url: `${SITE}/${route}` },
+      { name: 'Home', url: siteUrl() },
+      { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
+      { name: branch.name, url: siteUrl(route) },
     ])],
     catalogVersion: catalog.catalogBuiltAt,
   });
@@ -360,8 +377,8 @@ function buildSubjectPage(course, subject, branches, catalog) {
   const alternateCodes = (subject.alternateCodes || []).filter(item => item !== code);
   const paperCount = examSeasonCount(subject, catalog.examPapers || []);
   const papers = examPaperLinks(subject, catalog.examPapers || []);
-  const title = `${subject.name} (${code}) — GTU Papers | ${SITE_NAME}`;
-  const description = `Download GTU ${subject.name} (${code}) question papers for ${branchName}. ${paperCount ? `${paperCount} exam seasons available.` : 'Syllabus and study resources.'} Semester ${subject.semester}.`;
+  const title = seoTitleSubject(subject.name, code);
+  const description = seoDescriptionSubject(subject.name, code, branchName, subject.semester, paperCount);
   const paperHtml = papers.length
     ? `<h2>GTU exam papers</h2><ul>${papers.map(paper => `<li><a href="${escapeHtml(paper.url)}" rel="noopener">${escapeHtml(paper.label)}</a></li>`).join('')}</ul>`
     : '<p>No exam papers are linked for this subject yet.</p>';
@@ -379,19 +396,12 @@ function buildSubjectPage(course, subject, branches, catalog) {
       <p><a href="${escapeHtml(branchRoute)}">← Back to ${escapeHtml(branchName)} subjects</a></p>`,
     jsonLd: [
       breadcrumbListJsonLd([
-        { name: 'Home', url: `${SITE}/` },
-        { name: breadcrumbCourseLabel(course), url: `${SITE}/${courseCode}` },
-        { name: branchName, url: `${SITE}/${branchRoute}` },
-        { name: subject.name, url: `${SITE}/${route}` },
+        { name: 'Home', url: siteUrl() },
+        { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
+        { name: branchName, url: siteUrl(branchRoute) },
+        { name: subject.name, url: siteUrl(route) },
       ]),
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Course',
-        name: subject.name,
-        courseCode: code,
-        description: `${subject.name} (${code}) — GTU ${branchName}, ${subject.semesterLabel || `Semester ${subject.semester}`}.`,
-        provider: { '@type': 'Organization', name: 'Gujarat Technological University' },
-      },
+      learningResourceJsonLd(subject, branchName, siteUrl(route), paperCount),
     ],
     catalogVersion: catalog.catalogBuiltAt,
   });

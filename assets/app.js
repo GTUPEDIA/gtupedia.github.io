@@ -14,8 +14,8 @@ const SEARCH_DEBOUNCE_MS = 300;
 let searchDebounceTimer = null;
 const SITE = {
   name: 'GTUPEDIA',
-  defaultTitle: 'GTUPEDIA — GTU Papers & Study Resources',
-  defaultDescription: 'Find GTU question papers, syllabus, and study material by course, branch, and subject.',
+  defaultTitle: 'GTU Question Papers PDF — BE, BBA, BCA, MBA, MCA | GTUPEDIA',
+  defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
 };
 const BE_AD = {
   src: 'ads/startup-wala-ad.ong.PNG',
@@ -132,11 +132,70 @@ function setJsonLd(data) {
   el.textContent = JSON.stringify(payload);
 }
 
-function canonicalAbsoluteUrl(path = '') {
+function siteOrigin() {
+  if (window.__GTUPEDIA_SEO?.siteUrl) return window.__GTUPEDIA_SEO.siteUrl.replace(/\/$/, '');
   const origin = window.location.origin;
   const base = (window.__GTUPEDIA_BASE || '/').replace(/\/$/, '');
-  if (!path || path === './') return `${origin}${base || ''}` || origin;
-  return `${origin}${base}/${String(path).replace(/^\//, '')}`;
+  return `${origin}${base === '/' ? '' : base}`;
+}
+
+function canonicalAbsoluteUrl(path = '') {
+  if (!path || path === './') return `${siteOrigin()}/`;
+  return `${siteOrigin()}/${String(path).replace(/^\//, '')}`;
+}
+
+function seoTitleCourse(courseName, courseCode) {
+  return `${courseName} GTU Question Papers (${courseCode}) — All Branches | ${SITE.name}`;
+}
+
+function seoDescriptionCourse(courseName, courseCode, branchCount, subjectCount) {
+  return `Download ${courseCode} GTU question papers for ${courseName}. Browse ${branchCount} branches and ${subjectCount} subjects with official previous year exam PDFs.`;
+}
+
+function seoTitleBranch(branchName, courseCode, branchId) {
+  return `${branchName} GTU Papers — ${courseCode} Branch ${branchId} Subjects | ${SITE.name}`;
+}
+
+function seoDescriptionBranch(branchName, courseCode, subjectCount) {
+  return `${branchName} (${courseCode}) GTU previous year question papers — ${subjectCount} subjects with free exam PDFs by semester.`;
+}
+
+function seoTitleSubject(subjectName, code) {
+  return `${subjectName} GTU Question Paper PDF (${code}) | ${SITE.name}`;
+}
+
+function seoDescriptionSubject(subjectName, code, branchName, semester, paperCount) {
+  const seasons = paperCount ? `${paperCount} exam season${paperCount === 1 ? '' : 's'} of ` : '';
+  return `Download ${seasons}GTU ${subjectName} (${code}) question papers for ${branchName}, semester ${semester}. Free links to official GTU exam PDFs.`;
+}
+
+function learningResourceJsonLd(subject, branchName, url, paperCount) {
+  const code = subject.code || subject.id.split('@')[0];
+  return {
+    '@type': 'LearningResource',
+    name: `${subject.name} GTU Question Papers`,
+    description: `GTU ${subject.name} (${code}) exam papers for ${branchName}, semester ${subject.semester}.`,
+    url,
+    learningResourceType: 'Exam paper',
+    educationalLevel: 'Undergraduate',
+    inLanguage: window.__GTUPEDIA_SEO?.language || 'en-IN',
+    about: {
+      '@type': 'Course',
+      name: subject.name,
+      courseCode: code,
+      provider: {
+        '@type': 'CollegeOrUniversity',
+        name: 'Gujarat Technological University',
+        sameAs: 'https://www.gtu.ac.in/',
+      },
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE.name,
+      url: siteOrigin(),
+    },
+    ...(paperCount ? { numberOfItems: paperCount } : {}),
+  };
 }
 
 function renderBreadcrumbs(items = []) {
@@ -220,12 +279,15 @@ function subjectCrumb(courseCode, branchId, subject) {
   };
 }
 
-function updatePageSeo({ title, description, path = '', breadcrumbs = [], jsonLd = null }) {
+function updatePageSeo({ title, description, path = '', breadcrumbs = [], jsonLd = null, robots = 'index, follow' }) {
   document.title = title || SITE.defaultTitle;
   setMeta('description', description || SITE.defaultDescription);
+  setMeta('robots', robots);
   setMeta('og:title', title || SITE.defaultTitle, 'property');
   setMeta('og:description', description || SITE.defaultDescription, 'property');
   setMeta('og:url', canonicalAbsoluteUrl(path), 'property');
+  setMeta('og:locale', window.__GTUPEDIA_SEO?.locale || 'en_IN', 'property');
+  setMeta('og:site_name', SITE.name, 'property');
   setMeta('twitter:title', title || SITE.defaultTitle);
   setMeta('twitter:description', description || SITE.defaultDescription);
   setCanonical(canonicalAbsoluteUrl(path));
@@ -944,10 +1006,13 @@ function renderCourse(courseCode) {
   setCoursesVisible(false);
   const branches = getCourseBranches(courseCode);
   const courseName = formatLabel(course.name);
+  const subjectCount = (state.catalog?.subjects || []).filter(
+    item => item.courseCode === courseCode && subjectHasPapers(item),
+  ).length;
   const crumbs = [homeCrumb(), courseCrumb(course)];
   updatePageSeo({
-    title: `${courseName} (${courseCode}) — GTU Branches | ${SITE.name}`,
-    description: `Browse all ${courseCode} branches at GTU. Find subjects, semesters, and official exam papers for ${courseName}.`,
+    title: seoTitleCourse(courseName, courseCode),
+    description: seoDescriptionCourse(courseName, courseCode, branches.length, subjectCount),
     path: courseCode,
     breadcrumbs: crumbs,
   });
@@ -993,8 +1058,8 @@ function renderBranch(courseCode, branchId) {
   const courseName = formatLabel(course?.name || 'Bachelor of Engineering');
   const crumbs = [homeCrumb(), courseCrumb(course), branchCrumb(resolvedCourse || courseCode || 'BE', branch)].filter(Boolean);
   updatePageSeo({
-    title: `${branch.name} (${resolvedCourse || courseCode} ${branch.id}) — GTU Subjects | ${SITE.name}`,
-    description: `Browse ${subjects.length} ${branch.name} subjects with GTU exam papers. Study resources for ${courseName}.`,
+    title: seoTitleBranch(branch.name, resolvedCourse || courseCode || 'BE', branch.id),
+    description: seoDescriptionBranch(branch.name, resolvedCourse || courseCode || 'BE', subjects.length),
     path: branchPath(resolvedCourse || courseCode || 'BE', branch.id),
     breadcrumbs: crumbs,
   });
@@ -1052,20 +1117,13 @@ function renderSubject(subjectOrRef, routeBranchId) {
     subjectCrumb(courseCode, backBranch, subject),
   ].filter(Boolean);
   updatePageSeo({
-    title: `${subject.name} (${code}) — GTU Papers | ${SITE.name}`,
-    description: `Download GTU ${subject.name} (${code}) question papers for ${branch?.name || 'BE'}. ${paperCount ? `${paperCount} exam seasons available.` : 'Syllabus and study resources.'} Semester ${subject.semester}.`,
+    title: seoTitleSubject(subject.name, code),
+    description: seoDescriptionSubject(subject.name, code, branch?.name || 'BE', subject.semester, paperCount),
     path: subjectPath(courseCode, backBranch, subject),
     breadcrumbs: crumbs,
     jsonLd: [
       breadcrumbJsonLd(crumbs),
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Course',
-        name: subject.name,
-        courseCode: code,
-        description: `${subject.name} (${code}) — GTU ${branch?.name || 'BE'}, ${subject.semesterLabel || `Semester ${subject.semester}`}.`,
-        provider: { '@type': 'Organization', name: 'Gujarat Technological University' },
-      },
+      learningResourceJsonLd(subject, branch?.name || 'BE', canonicalAbsoluteUrl(subjectPath(courseCode, backBranch, subject)), paperCount),
     ].filter(Boolean),
   });
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id
@@ -1121,6 +1179,7 @@ function renderSearch(term) {
     description: `Search GTU courses, branches, and subjects for “${term.trim()}”.`,
     path: '',
     breadcrumbs: [homeCrumb(), { label: 'Search', href: './', path: '' }],
+    robots: 'noindex, follow',
   });
 
   const courseMatches = (state.catalog.courses || [])
@@ -1194,6 +1253,7 @@ function renderNotFound(message) {
     description: message || 'The page you requested is not in the GTUPEDIA catalogue.',
     path: appPathname().replace(/^\//, ''),
     breadcrumbs: [homeCrumb(), { label: 'Not found', href: './', path: '' }],
+    robots: 'noindex, follow',
   });
   if (showErrorStatic(message)) return;
   content.innerHTML = pageShell(`<h1 class="page-title">Not found</h1><p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`);

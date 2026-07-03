@@ -297,7 +297,13 @@ stampCatalogVersion(path.join(base, 'index.html'), catalog.catalogBuiltAt);
 stampCatalogVersion(path.join(base, '404.html'), catalog.catalogBuiltAt);
 
 const { writeSitemap, generateSitemap, writeSeoPages } = require('./generate-sitemap');
+const { SEO } = require('./seo-config');
 writeSitemap(catalog, path.join(base, 'sitemap.xml'));
+fs.writeFileSync(path.join(base, 'robots.txt'), `User-agent: *
+Allow: /
+
+Sitemap: ${SEO.siteUrl}/sitemap.xml
+`);
 const sitemapUrlCount = (generateSitemap(catalog).match(/<loc>/g) || []).length;
 const seoPageCount = writeSeoPages(catalog, base);
 console.log(`courses: ${catalogCourses.length}`);

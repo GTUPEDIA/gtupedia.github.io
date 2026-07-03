@@ -241,17 +241,7 @@ function renderSeoShell({
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body class="subpage">
-    <header class="site-header">
-      <div class="brand-group">
-        <a class="brand" href="./" aria-label="${SITE_NAME} home">GTU<span>PEDIA</span></a>
-        <span class="beta-badge">Beta</span>
-      </div>
-      <nav aria-label="Primary navigation">
-        <a href="resources/">Resources</a>
-        <a href="./#courses">Courses</a>
-        <a href="./#about">About</a>
-      </nav>
-    </header>
+    <header class="site-header" data-site-header></header>
     <main>
       <section id="content" class="content">
         <article class="seo-prerender">
@@ -264,6 +254,7 @@ function renderSeoShell({
       </section>
     </main>
     <footer class="site-footer" data-site-footer></footer>
+    <script src="assets/site-header.js"></script>
     <script src="assets/site-footer.js"></script>
     <script src="assets/app.js"></script>
   </body>

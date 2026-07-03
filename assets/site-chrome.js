@@ -72,6 +72,9 @@
           ${footerNav.map(navLink).join('')}
         </nav>
       </div>
+      <p class="site-footer__disclaimer">
+        <strong>Disclaimer:</strong> GTUPEDIA is <em>not</em> the official website of Gujarat Technological University (GTU) and is not affiliated with, endorsed by, or operated by the university. It is an independent initiative run by students and contributors to support practical learning, exam preparation, and exploration. Materials link to official GTU sources where available.
+      </p>
       <p class="site-footer__copy">Made for practical exam season survival.</p>`;
   }
 })();

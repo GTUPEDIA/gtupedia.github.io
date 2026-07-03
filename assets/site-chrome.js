@@ -7,6 +7,7 @@
     resources: `${root}resources/`,
     courses: `${root}#courses`,
     events: `${root}events/`,
+    internships: `${root}internships/`,
     partners: `${root}partners/`,
     team: `${root}team/`,
     ambassador: `${root}campus-ambassador/`,
@@ -17,6 +18,7 @@
     { key: 'resources', label: 'Resources', href: links.resources },
     { key: 'courses', label: 'Courses', href: links.courses },
     { key: 'events', label: 'Events', href: links.events },
+    { key: 'internships', label: 'Internships', href: links.internships },
     { key: 'partners', label: 'Partners', href: links.partners },
     { key: 'team', label: 'Team', href: links.team },
   ];
@@ -32,6 +34,7 @@
     const path = location.pathname.toLowerCase();
     if (path.includes('/resources')) return 'resources';
     if (path.includes('/events')) return 'events';
+    if (path.includes('/internships')) return 'internships';
     if (path.includes('/partners')) return 'partners';
     if (path.includes('/team')) return 'team';
     if (path.includes('/campus-ambassador')) return 'ambassador';

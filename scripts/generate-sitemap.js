@@ -43,6 +43,7 @@ function collectSitemapEntries(catalog) {
   add('team/', '0.7', 'static');
   add('partners/', '0.7', 'static');
   add('events/', '0.7', 'static');
+  add('internships/', '0.7', 'static');
   add('campus-ambassador/', '0.7', 'static');
 
   for (const course of courses) {

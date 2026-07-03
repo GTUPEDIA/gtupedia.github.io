@@ -5,30 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="GTUPEDIA Resources — curated courses, docs, articles, and tools for GTU students.">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gtupedia.github.io/resources/">
+    <meta property="og:site_name" content="GTUPEDIA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Resources — GTUPEDIA">
+    <meta property="og:description" content="Courses, documentation, articles, code snippets, and tools for GTU students.">
+    <meta property="og:url" content="https://gtupedia.github.io/resources/">
     <title>Resources — GTUPEDIA</title>
     <script>
       window.__GTUPEDIA_BASE = location.pathname.startsWith('/gtupedia.github.io') ? '/gtupedia.github.io/' : '/';
       window.__RESOURCES_BASE = window.__GTUPEDIA_BASE + (window.__GTUPEDIA_BASE.endsWith('/') ? '' : '/') + 'resources/';
     </script>
+    <base href="../">
+    <script>document.querySelector('base').href = window.__GTUPEDIA_BASE;</script>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="resources/assets/styles.css">
+    <script src="assets/site-chrome.js" defer></script>
   </head>
-  <body>
+  <body class="subpage resources-page">
     <header class="site-header" data-site-header></header>
 
     <main>
-      <header class="hero">
+      <section class="page-shell subpage-hero">
         <p class="eyebrow">Study beyond the syllabus</p>
-        <h1>Learning resources for GTU students</h1>
-        <p class="hero-copy">Courses, documentation, articles, code snippets, and tools — organised by topic so you can find what you need quickly.</p>
-        <div class="toolbar">
+        <h1 class="page-title">Learning resources</h1>
+        <p class="seo-intro">Courses, documentation, articles, code snippets, and tools — organised by topic so you can find what you need quickly.</p>
+        <div class="resources-toolbar">
           <label class="search-wrap" for="resource-search">
             <span class="visually-hidden">Search resources</span>
             <input id="resource-search" type="search" placeholder="Search by title, topic, or tag" autocomplete="off">
           </label>
         </div>
-      </header>
+      </section>
 
-      <section class="section" aria-labelledby="categories-title">
+      <section class="page-shell resources-section" aria-labelledby="categories-title">
         <div class="section-head">
           <h2 id="categories-title">Browse by type</h2>
           <p id="library-updated"></p>
@@ -36,14 +46,14 @@
         <div id="category-grid" class="category-grid"></div>
       </section>
 
-      <section class="section" aria-labelledby="topics-title">
+      <section class="page-shell resources-section" aria-labelledby="topics-title">
         <div class="section-head">
           <h2 id="topics-title">Filter by topic</h2>
         </div>
         <div id="topic-chips" class="filter-chips"></div>
       </section>
 
-      <section class="section" aria-labelledby="results-title">
+      <section class="page-shell resources-section" aria-labelledby="results-title">
         <div class="section-head">
           <h2 id="results-title">All resources</h2>
           <p id="results-count"></p>
@@ -55,15 +65,6 @@
     </main>
 
     <footer class="site-footer" data-site-footer></footer>
-
-    <style>
-      .visually-hidden {
-        position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-        overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-      }
-    </style>
-    <script src="../assets/site-header.js"></script>
-    <script src="../assets/site-footer.js"></script>
-    <script src="assets/app.js"></script>
+    <script src="resources/assets/app.js"></script>
   </body>
 </html>

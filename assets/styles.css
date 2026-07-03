@@ -68,7 +68,7 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { max-width: 760px; font-size: clamp(2.55rem, 7vw, 5.25rem); letter-spacing: -.065em; line-height: .98; margin-bottom: 22px; }
 h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.045em; line-height: 1.05; margin-bottom: 14px; }
 
-body.subpage main { padding-top: 20px; }
+body.subpage main { padding-top: 28px; }
 body.subpage .hero { display: none !important; margin: 0 !important; padding: 0 !important; }
 body.search-active .hero {
   display: block !important;
@@ -82,10 +82,33 @@ body.search-active .search-bar {
 }
 body.search-active .content { margin-bottom: 56px; }
 .page-shell { max-width: 100%; }
+.subpage-hero { margin-bottom: 36px; }
+.subpage-hero .page-title { margin-bottom: 12px; }
+.page-aside {
+  margin-bottom: 40px;
+  max-width: 720px;
+}
+.page-aside h2 {
+  font-size: var(--title-section);
+  letter-spacing: -.02em;
+  margin-bottom: 12px;
+}
+.page-aside p {
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+.page-aside a {
+  color: var(--accent-dark);
+  font-weight: 650;
+  text-decoration: none;
+}
+.page-aside a:hover { text-decoration: underline; }
 .page-header { margin-bottom: 28px; }
 .page-header + .card-grid,
 .page-header + .card-grid--branches { margin-top: 4px; }
-.content h1.page-title {
+.content h1.page-title,
+h1.page-title {
   font-size: var(--title-page);
   letter-spacing: -.035em;
   line-height: 1.12;
@@ -213,6 +236,51 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
 .empty { padding: 28px; border: 1px dashed #a9bbb6; border-radius: 14px; color: var(--muted); background: #fff; font-size: var(--text-base); }
 .back-link { color: var(--accent-dark); font-weight: 700; text-decoration: none; display: inline-block; margin-bottom: 20px; }
 .about { max-width: 650px; }
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 18px;
+}
+.about-links a {
+  color: var(--accent-dark);
+  font-weight: 650;
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+.about-links a:hover { text-decoration: underline; }
+
+.about-section {
+  margin-bottom: 40px;
+  max-width: 720px;
+}
+.about-section h2 {
+  font-size: var(--title-section);
+  letter-spacing: -.02em;
+  margin-bottom: 12px;
+}
+.about-section p {
+  color: var(--muted);
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+.about-section p:last-child { margin-bottom: 0; }
+.about-section a {
+  color: var(--accent-dark);
+  font-weight: 650;
+  text-decoration: none;
+}
+.about-section a:hover { text-decoration: underline; }
+.about-list {
+  margin: 0 0 16px;
+  padding-left: 1.25rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.about-list li { margin-bottom: 10px; }
+.about-list strong { color: var(--ink); font-weight: 650; }
+.about-page .page-aside .about-links { margin-top: 14px; }
+
 .site-footer {
   padding-top: 28px;
   padding-bottom: 34px;
@@ -253,9 +321,6 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
 .site-footer__links a:hover { text-decoration: underline; }
 .site-footer__copy { margin: 0; font-size: var(--text-xs); color: #7a8a96; }
 
-.team-page main { padding-top: 28px; }
-.team-hero { margin-bottom: 36px; }
-.team-hero .page-title { margin-bottom: 12px; }
 .team-updated { margin: 12px 0 0; font-size: var(--text-xs); color: #7a8a96; }
 .team-grid {
   display: grid;
@@ -326,21 +391,12 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
   font-size: .88em;
   color: var(--ink);
 }
-.team-join {
+.page-aside.is-separated {
   margin-top: 48px;
   padding-top: 28px;
   border-top: 1px solid var(--line);
-  max-width: 640px;
 }
-.team-join h2 {
-  font-size: var(--title-section);
-  margin-bottom: 10px;
-}
-.team-join p { color: var(--muted); margin: 0; }
 
-.partners-page main { padding-top: 28px; }
-.partners-hero { margin-bottom: 36px; }
-.partners-hero .page-title { margin-bottom: 12px; }
 .partners-grid { display: grid; gap: 28px; }
 .partner-group__grid {
   display: grid;
@@ -382,27 +438,6 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
   font-size: var(--text-sm);
   font-weight: 650;
 }
-.partners-note {
-  margin-top: 48px;
-  padding-top: 28px;
-  border-top: 1px solid var(--line);
-  max-width: 640px;
-}
-.partners-note h2 {
-  font-size: var(--title-section);
-  margin-bottom: 10px;
-}
-.partners-note p { color: var(--muted); margin: 0; line-height: 1.6; }
-.partners-note a {
-  color: var(--accent-dark);
-  font-weight: 650;
-  text-decoration: none;
-}
-.partners-note a:hover { text-decoration: underline; }
-
-.events-page main { padding-top: 28px; }
-.events-hero { margin-bottom: 36px; }
-.events-hero .page-title { margin-bottom: 12px; }
 .events-list { display: grid; gap: 32px; }
 .event-group__title {
   font-size: var(--text-sm);
@@ -486,27 +521,6 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
   margin-top: auto;
 }
 .event-cta:hover { text-decoration: underline; }
-.events-note {
-  margin-top: 48px;
-  padding-top: 28px;
-  border-top: 1px solid var(--line);
-  max-width: 640px;
-}
-.events-note h2 {
-  font-size: var(--title-section);
-  margin-bottom: 10px;
-}
-.events-note p { color: var(--muted); margin: 0; line-height: 1.6; }
-.events-note a {
-  color: var(--accent-dark);
-  font-weight: 650;
-  text-decoration: none;
-}
-.events-note a:hover { text-decoration: underline; }
-
-.ambassador-page main { padding-top: 28px; }
-.ambassador-hero { margin-bottom: 40px; }
-.ambassador-hero .page-title { margin-bottom: 12px; }
 .ambassador-section {
   margin-bottom: 40px;
   max-width: 720px;
@@ -588,7 +602,8 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
   body.subpage .search-bar { margin-left: 0; margin-right: 0; padding: 0 0 10px; margin-bottom: 12px; }
   nav { gap: 10px 12px; font-size: .84rem; }
   .section-heading { display: block; }
-  .content h1.page-title { font-size: 1.55rem; }
+  .content h1.page-title,
+  h1.page-title { font-size: 1.55rem; }
   .card-grid--branches { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
   .branch-card, .subject-card, .resource-card { padding: 16px 18px; }

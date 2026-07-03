@@ -39,6 +39,7 @@ function collectSitemapEntries(catalog) {
 
   add('', '1.0', 'home');
   add('resources/', '0.8', 'static');
+  add('about/', '0.7', 'static');
   add('team/', '0.7', 'static');
   add('partners/', '0.7', 'static');
   add('events/', '0.7', 'static');
@@ -239,6 +240,7 @@ function renderSeoShell({
     <base href="/">
     <script>document.querySelector('base').href = window.__GTUPEDIA_BASE;</script>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site-chrome.js" defer></script>
   </head>
   <body class="subpage">
     <header class="site-header" data-site-header></header>
@@ -254,8 +256,6 @@ function renderSeoShell({
       </section>
     </main>
     <footer class="site-footer" data-site-footer></footer>
-    <script src="assets/site-header.js"></script>
-    <script src="assets/site-footer.js"></script>
     <script src="assets/app.js"></script>
   </body>
 </html>

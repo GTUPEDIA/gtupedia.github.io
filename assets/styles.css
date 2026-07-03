@@ -250,6 +250,24 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
 }
 .about-links a:hover { text-decoration: underline; }
 
+.error-page .search-bar {
+  margin-bottom: 40px;
+  padding: 0 0 20px;
+  background: transparent;
+  border-radius: 0;
+}
+.error-path {
+  margin: 10px 0 0;
+  font-size: var(--text-sm);
+  color: #7a8a96;
+  word-break: break-all;
+}
+.error-detail {
+  margin: 8px 0 0;
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
 .about-section {
   margin-bottom: 40px;
   max-width: 720px;

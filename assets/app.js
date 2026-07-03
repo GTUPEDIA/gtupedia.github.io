@@ -6,6 +6,8 @@ const aboutSection = document.querySelector('#about');
 const heroSection = document.querySelector('#hero');
 const breadcrumbsNav = document.querySelector('#breadcrumbs');
 const searchInput = document.querySelector('#search-input');
+const errorPage = document.body.classList.contains('error-page');
+const errorStatic = document.querySelector('#error-static');
 const SEARCH_LIMIT = { courses: 8, branches: 12, subjects: 48 };
 const SEARCH_MIN_CHARS = 2;
 const SEARCH_DEBOUNCE_MS = 300;
@@ -29,6 +31,42 @@ function setSearchActive(active) {
   document.body.classList.toggle('search-active', active);
 }
 
+function isCatalogRoute(route = parseRoutePath()) {
+  return !!(route.course || route.branch || route.branchSlug || route.subjectCode || route.subjectSlug);
+}
+
+function hideErrorStatic() {
+  if (errorStatic) errorStatic.hidden = true;
+  if (content) content.hidden = false;
+}
+
+function showErrorStatic(message = '') {
+  if (!errorPage || !errorStatic) return false;
+  errorStatic.hidden = false;
+  if (content) {
+    content.hidden = true;
+    content.innerHTML = '';
+  }
+  const pathEl = document.querySelector('#error-path');
+  if (pathEl) {
+    const path = appPathname();
+    const label = path && path !== '/' && path !== '/index.html' ? `Requested: ${path}` : '';
+    pathEl.textContent = label;
+    pathEl.hidden = !label;
+  }
+  const detailEl = document.querySelector('#error-detail');
+  if (detailEl) {
+    detailEl.textContent = message;
+    detailEl.hidden = !message;
+  }
+  if (breadcrumbsNav) breadcrumbsNav.hidden = true;
+  setHeroVisible(false);
+  setHomeSectionsVisible(false);
+  hideBeAdPopup();
+  document.title = 'Page not found — GTUPEDIA';
+  return true;
+}
+
 function clearSearchResults() {
   setSearchActive(false);
   if (content) content.innerHTML = '';
@@ -36,6 +74,9 @@ function clearSearchResults() {
     setHomeSectionsVisible(true);
     setHeroVisible(true);
     resetHomeSeo();
+    if (errorPage) showErrorStatic();
+  } else if (errorPage) {
+    showErrorStatic();
   } else {
     renderRoute();
   }
@@ -896,6 +937,7 @@ function renderCourses() {
 }
 
 function renderCourse(courseCode) {
+  hideErrorStatic();
   const course = getCourse(courseCode);
   if (!course) return renderNotFound('That course is not in the catalogue yet.');
   setHeroVisible(false);
@@ -939,6 +981,7 @@ function renderSubjectCard(subject, meta = '', branchId = subject.branchId) {
 }
 
 function renderBranch(courseCode, branchId) {
+  hideErrorStatic();
   const branch = findBranch(branchId, courseCode);
   const resolvedCourse = courseCode || findCourseForBranch(branchId);
   const subjects = listedSubjectsForBranch(branchId, resolvedCourse || courseCode || 'BE');
@@ -981,6 +1024,7 @@ function renderGtuPaperCard(subjectCode, paperSet) {
 }
 
 function renderSubject(subjectOrRef, routeBranchId) {
+  hideErrorStatic();
   const branchId = routeBranchId || null;
   const subject = typeof subjectOrRef === 'object' && subjectOrRef?.code
     ? subjectOrRef
@@ -1064,10 +1108,12 @@ function renderSearch(term) {
     setHomeSectionsVisible(false);
     setSearchActive(true);
     document.body.classList.remove('subpage');
+    if (errorPage) hideErrorStatic();
   } else {
     setSearchActive(false);
     setHeroVisible(false);
     setHomeSectionsVisible(false);
+    hideErrorStatic();
   }
   hideBeAdPopup();
   updatePageSeo({
@@ -1149,6 +1195,7 @@ function renderNotFound(message) {
     path: appPathname().replace(/^\//, ''),
     breadcrumbs: [homeCrumb(), { label: 'Not found', href: './', path: '' }],
   });
+  if (showErrorStatic(message)) return;
   content.innerHTML = pageShell(`<h1 class="page-title">Not found</h1><p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`);
 }
 
@@ -1179,6 +1226,10 @@ function renderRoute() {
     return renderBranch(route.course, branch.id);
   }
   if (route.course) return renderCourse(route.course);
+  if (errorPage) {
+    showErrorStatic();
+    return;
+  }
   resetHomeSeo();
   hideBeAdPopup();
   content.innerHTML = '';
@@ -1206,7 +1257,8 @@ if (searchInput) {
 
 function primeSubpageShell() {
   const route = parseRoutePath();
-  if (!route.course && !route.branch && !route.branchSlug && !route.subjectCode && !route.subjectSlug) return;
+  if (!isCatalogRoute(route)) return;
+  hideErrorStatic();
   setHeroVisible(false);
   setHomeSectionsVisible(false);
   if (content) content.innerHTML = pageShell('<p class="page-loading">Loading catalogue…</p>');
@@ -1225,4 +1277,7 @@ fetch(catalogUrl, { cache: 'no-store' })
     renderCourses();
     renderRoute();
   })
-  .catch(() => { content.innerHTML = '<p class="empty">The catalogue could not be loaded. Please try again shortly.</p>'; });
+  .catch(() => {
+    if (errorPage) showErrorStatic('The catalogue could not be loaded. Please try again shortly.');
+    else if (content) content.innerHTML = '<p class="empty">The catalogue could not be loaded. Please try again shortly.</p>';
+  });

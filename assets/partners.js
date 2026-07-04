@@ -41,7 +41,7 @@
       </section>`;
   }
 
-  fetch(`${root}data/partners.json`, { cache: 'no-store' })
+  fetch(`${root}data/partners.json`)
     .then(response => {
       if (!response.ok) throw new Error('Failed to load partners');
       return response.json();

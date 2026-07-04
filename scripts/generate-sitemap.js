@@ -275,7 +275,7 @@ function renderSeoShell({
       </section>
     </main>
     <footer class="site-footer" data-site-footer></footer>
-    <script src="assets/app.js"></script>
+    <script src="assets/app.js" defer></script>
   </body>
 </html>
 `;

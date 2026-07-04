@@ -45,7 +45,7 @@
       </section>`;
   }
 
-  fetch(dataUrl('data/events.json'), { cache: 'no-store' })
+  fetch(dataUrl('data/events.json'))
     .then(response => {
       if (!response.ok) throw new Error('Failed to load events');
       return response.json();

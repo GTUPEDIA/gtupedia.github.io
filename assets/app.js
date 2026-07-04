@@ -1,4 +1,4 @@
-const state = { catalog: null, searchIndex: null, pageBreadcrumbs: [] };
+const state = { catalog: null, searchIndex: null, pageBreadcrumbs: [], loadedSubjectCourses: new Set() };
 const content = document.querySelector('#content');
 const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
@@ -692,53 +692,102 @@ const SINGLE_BRANCH_COURSES = {
   BC: [{ id: '01', name: 'BCA', slug: 'bca' }],
 };
 
-async function enrichCatalog(catalog) {
-  const version = encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1');
-  const supplements = [
-    { courseCode: 'BB', subjectUrl: `data/bb-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BB },
-    { courseCode: 'BC', subjectUrl: `data/bc-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BC },
-    { courseCode: 'MB', subjectUrl: `data/mb-subjects.json?v=${version}`, branchUrl: `data/mb-branches.json?v=${version}` },
-    { courseCode: 'MC', subjectUrl: `data/mc-subjects.json?v=${version}`, branchUrl: `data/mc-branches.json?v=${version}` },
-    { courseCode: 'BP', subjectUrl: `data/bp-subjects.json?v=${version}`, branchUrl: `data/bp-branches.json?v=${version}` },
-  ];
+function getCourseStats(courseCode) {
+  return state.catalog?.courseStats?.[courseCode] || {};
+}
 
-  for (const { courseCode, subjectUrl, branches, branchUrl } of supplements) {
-    const course = catalog.courses.find(item => item.code === courseCode);
-    if (!course) continue;
+function subjectsWithPapersCount(courseCode) {
+  return getCourseStats(courseCode).subjectsWithPapers || 0;
+}
 
-    if (!course.branches?.length && branches) {
-      course.branches = branches.map(branch => ({ ...branch }));
-    }
+function catalogVersionQuery() {
+  return encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1');
+}
 
-    if (!course.branches?.length && branchUrl) {
-      try {
-        const response = await fetch(branchUrl, { cache: 'no-store' });
-        if (response.ok) {
-          const branchList = await response.json();
-          if (Array.isArray(branchList) && branchList.length) {
-            course.branches = branchList;
-          }
-        }
-      } catch (_) {
-        // Ignore supplemental branch load failures.
-      }
-    }
+const SUBJECT_SOURCES = {
+  BE: () => `data/be-subjects.json?v=${catalogVersionQuery()}`,
+  BB: () => `data/bb-subjects.json?v=${catalogVersionQuery()}`,
+  BC: () => `data/bc-subjects.json?v=${catalogVersionQuery()}`,
+  MB: () => `data/mb-subjects.json?v=${catalogVersionQuery()}`,
+  MC: () => `data/mc-subjects.json?v=${catalogVersionQuery()}`,
+  BP: () => `data/bp-subjects.json?v=${catalogVersionQuery()}`,
+};
 
-    const subjectCount = catalog.subjects.filter(item => item.courseCode === courseCode).length;
-    if (subjectCount) continue;
+const BRANCH_SOURCES = {
+  MB: () => `data/mb-branches.json?v=${catalogVersionQuery()}`,
+  MC: () => `data/mc-branches.json?v=${catalogVersionQuery()}`,
+  BP: () => `data/bp-branches.json?v=${catalogVersionQuery()}`,
+};
 
+async function ensureSubjectsForCourse(courseCode) {
+  if (!state.catalog || state.loadedSubjectCourses.has(courseCode)) return;
+
+  const course = state.catalog.courses.find(item => item.code === courseCode);
+  if (!course) {
+    state.loadedSubjectCourses.add(courseCode);
+    return;
+  }
+
+  if (!course.branches?.length && SINGLE_BRANCH_COURSES[courseCode]) {
+    course.branches = SINGLE_BRANCH_COURSES[courseCode].map(branch => ({ ...branch }));
+  }
+
+  const branchUrl = BRANCH_SOURCES[courseCode]?.();
+  if (!course.branches?.length && branchUrl) {
     try {
-      const response = await fetch(subjectUrl, { cache: 'no-store' });
-      if (!response.ok) continue;
-      const subjects = await response.json();
-      if (!Array.isArray(subjects) || !subjects.length) continue;
-      catalog.subjects = catalog.subjects.filter(item => item.courseCode !== courseCode).concat(subjects);
+      const response = await fetch(branchUrl);
+      if (response.ok) {
+        const branchList = await response.json();
+        if (Array.isArray(branchList) && branchList.length) {
+          course.branches = branchList;
+        }
+      }
     } catch (_) {
-      // Ignore supplemental load failures; main catalogue remains usable.
+      // Ignore supplemental branch load failures.
     }
   }
 
-  return catalog;
+  const subjectUrl = SUBJECT_SOURCES[courseCode]?.();
+  if (subjectUrl) {
+    try {
+      const response = await fetch(subjectUrl);
+      if (response.ok) {
+        const subjectList = await response.json();
+        if (Array.isArray(subjectList) && subjectList.length) {
+          state.catalog.subjects = (state.catalog.subjects || []).concat(subjectList);
+        }
+      }
+    } catch (_) {
+      // Ignore supplemental subject load failures.
+    }
+  }
+
+  state.loadedSubjectCourses.add(courseCode);
+}
+
+async function ensureSubjectsForRoute(route = parseRoutePath()) {
+  if (route?.course) await ensureSubjectsForCourse(route.course);
+}
+
+let searchIndexPromise = null;
+
+async function ensureSearchIndex() {
+  if (state.searchIndex) return state.searchIndex;
+  if (!searchIndexPromise) {
+    const searchUrl = `data/search-index.json?v=${catalogVersionQuery()}`;
+    searchIndexPromise = fetch(searchUrl)
+      .then(response => (response.ok ? response.json() : Promise.reject(new Error('Could not load search index'))))
+      .then(data => {
+        state.searchIndex = data.entries || data;
+        return state.searchIndex;
+      })
+      .catch(() => {
+        searchIndexPromise = null;
+        state.searchIndex = [];
+        return state.searchIndex;
+      });
+  }
+  return searchIndexPromise;
 }
 
 function getCourse(courseCode) {
@@ -893,43 +942,6 @@ function maybeShowBeAdPopup(courseCode) {
   window.setTimeout(showBeAdPopup, 250);
 }
 
-function buildSearchIndex() {
-  const branchNames = new Map(
-    getAllCourseBranches().map(({ courseCode, branch }) => [`${courseCode}:${branch.id}`, branch.name]),
-  );
-
-  state.searchIndex = (state.catalog.subjects || [])
-    .filter(subjectHasPapers)
-    .map(subject => {
-    const courseCode = subject.courseCode || 'BE';
-    const course = getCourse(courseCode);
-    const branchName = subject.branchId === '0'
-      ? 'All branches'
-      : (branchNames.get(`${courseCode}:${subject.branchId}`) || subject.branchId);
-    return {
-      subject,
-      courseCode: subject.courseCode || 'BE',
-      courseName: formatLabel(course?.name || 'Bachelor of Engineering'),
-      branchName,
-      code: (subject.code || subject.id).toLowerCase(),
-      alternateCodes: (subject.alternateCodes || []).map(item => String(item).toLowerCase()),
-      name: subject.name.toLowerCase(),
-      haystack: [
-        subject.code,
-        subject.slug,
-        ...(subject.alternateCodes || []),
-        subject.name,
-        subject.branchId,
-        branchName,
-        subject.courseCode,
-        course?.name,
-        subject.semester,
-        subject.semesterLabel,
-      ].filter(Boolean).join(' ').toLowerCase(),
-    };
-  });
-}
-
 function searchTokens(term) {
   return term.trim().toLowerCase().split(/\s+/).filter(Boolean);
 }
@@ -967,9 +979,7 @@ function courseHasPapers(courseCode) {
 
 function renderCourseCard(course, { comingSoon = false } = {}) {
   const branchCount = getCourseBranches(course.code).length;
-  const subjectCount = (state.catalog.subjects || [])
-    .filter(subject => subject.courseCode === course.code && subjectHasPapers(subject))
-    .length;
+  const subjectCount = subjectsWithPapersCount(course.code);
   let detail;
   if (comingSoon) {
     detail = 'Exam papers coming soon';
@@ -1019,9 +1029,7 @@ function renderCourse(courseCode) {
   setCoursesVisible(false);
   const branches = getCourseBranches(courseCode);
   const courseName = formatLabel(course.name);
-  const subjectCount = (state.catalog?.subjects || []).filter(
-    item => item.courseCode === courseCode && subjectHasPapers(item),
-  ).length;
+  const subjectCount = subjectsWithPapersCount(courseCode);
   const crumbs = [homeCrumb(), courseCrumb(course)];
   updatePageSeo({
     title: seoTitleCourse(courseName, courseCode),
@@ -1164,7 +1172,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
   maybeShowBeAdPopup(courseCode);
 }
 
-function renderSearch(term) {
+async function renderSearch(term) {
   const trimmed = term.trim();
   const tokens = searchTokens(term);
 
@@ -1172,6 +1180,8 @@ function renderSearch(term) {
     clearSearchResults();
     return;
   }
+
+  await ensureSearchIndex();
 
   const onHome = isHomeRoute();
   if (onHome) {
@@ -1272,7 +1282,7 @@ function renderNotFound(message) {
   content.innerHTML = pageShell(`<h1 class="page-title">Not found</h1><p class="empty">${escapeHtml(message)} <a href="./">Return home</a>.</p>`);
 }
 
-function renderRoute() {
+async function renderRoute() {
   window.clearTimeout(searchDebounceTimer);
   if (searchInput) searchInput.value = '';
   setSearchActive(false);
@@ -1286,6 +1296,8 @@ function renderRoute() {
   }
 
   const route = parseRoutePath();
+  if (route.course) await ensureSubjectsForCourse(route.course);
+
   if (route.subjectCode || route.subjectSlug) {
     const branch = resolveBranchFromRoute(route, route.course);
     if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
@@ -1331,6 +1343,7 @@ if (searchInput) {
 function primeSubpageShell() {
   const route = parseRoutePath();
   if (!isCatalogRoute(route)) return;
+  if (content?.querySelector('.seo-prerender')) return;
   hideErrorStatic();
   setHeroVisible(false);
   setHomeSectionsVisible(false);
@@ -1339,16 +1352,15 @@ function primeSubpageShell() {
 
 primeSubpageShell();
 const catalogUrl = `data/catalog.json?v=${encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1')}`;
-fetch(catalogUrl, { cache: 'no-store' })
+fetch(catalogUrl)
   .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load catalogue')))
-  .then(catalog => enrichCatalog(catalog))
-  .then(catalog => {
-    state.catalog = catalog;
-    buildSearchIndex();
+  .then(async (catalog) => {
+    state.catalog = { ...catalog, subjects: [] };
+    await ensureSubjectsForRoute(parseRoutePath());
     initBeAdModal();
     initClientNavigation();
     renderCourses();
-    renderRoute();
+    return renderRoute();
   })
   .catch(() => {
     if (errorPage) showErrorStatic('The catalogue could not be loaded. Please try again shortly.');

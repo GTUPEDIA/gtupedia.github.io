@@ -167,8 +167,91 @@ fs.writeFileSync(
 );
 fs.writeFileSync(
   path.join(base, 'data/bp-subjects.json'),
-  `${JSON.stringify(bpSubjects, null, 2)}\n`,
+  `${JSON.stringify(bpSubjects)}\n`,
 );
+fs.writeFileSync(
+  path.join(base, 'data/be-subjects.json'),
+  `${JSON.stringify(beSubjects)}\n`,
+);
+
+function formatCourseLabel(name = '') {
+  if (!name || name !== name.toUpperCase()) return name;
+  return name
+    .toLowerCase()
+    .replace(/\b([a-z])/g, (_, letter) => letter.toUpperCase());
+}
+
+function subjectCodes(subject) {
+  return [subject.code, ...(subject.alternateCodes || [])].filter(Boolean);
+}
+
+function paperSetCourseCode(paperSet) {
+  return paperSet?.courseCode || 'BE';
+}
+
+function hasExamPaper(subjectCode, paperSet) {
+  const code = String(subjectCode).trim();
+  return (paperSet?.codes || []).some(item => item === code);
+}
+
+function subjectHasPapers(subject, examPaperSets = []) {
+  const courseCode = subject.courseCode || 'BE';
+  return examPaperSets.some(
+    paperSet => paperSetCourseCode(paperSet) === courseCode
+      && subjectCodes(subject).some(code => hasExamPaper(code, paperSet)),
+  );
+}
+
+function buildCourseStats(allSubjects, allCourses, examPaperSets) {
+  const stats = {};
+  for (const course of allCourses) {
+    const courseSubjects = allSubjects.filter(subject => subject.courseCode === course.code);
+    stats[course.code] = {
+      subjectsWithPapers: courseSubjects.filter(subject => subjectHasPapers(subject, examPaperSets)).length,
+    };
+  }
+  return stats;
+}
+
+function buildSearchIndexEntries(allSubjects, allCourses, branchList, examPaperSets) {
+  const branchNames = new Map(branchList.map(branch => [`BE:${branch.id}`, branch.name]));
+  for (const course of allCourses) {
+    for (const branch of course.branches || []) {
+      branchNames.set(`${course.code}:${branch.id}`, branch.name);
+    }
+  }
+
+  return allSubjects
+    .filter(subject => subjectHasPapers(subject, examPaperSets))
+    .map((subject) => {
+      const courseCode = subject.courseCode || 'BE';
+      const course = allCourses.find(item => item.code === courseCode);
+      const branchName = subject.branchId === '0'
+        ? 'All branches'
+        : (branchNames.get(`${courseCode}:${subject.branchId}`) || subject.branchId);
+      return {
+        subject,
+        courseCode,
+        courseName: formatCourseLabel(course?.name || 'Bachelor of Engineering'),
+        branchName,
+        code: (subject.code || subject.id).toLowerCase(),
+        alternateCodes: (subject.alternateCodes || []).map(item => String(item).toLowerCase()),
+        name: subject.name.toLowerCase(),
+        haystack: [
+          subject.code,
+          subject.slug,
+          ...(subject.alternateCodes || []),
+          subject.name,
+          subject.branchId,
+          branchName,
+          subject.courseCode,
+          course?.name,
+          subject.semester,
+          subject.semesterLabel,
+        ].filter(Boolean).join(' ').toLowerCase(),
+      };
+    });
+}
 
 function loadExamPapers(fileName, exam, baseUrl, courseCode = 'BE') {
   const text = fs.readFileSync(path.join(base, `details-raw/${fileName}`), 'utf8');
@@ -303,31 +386,21 @@ const catalog = {
   catalogBuiltAt: new Date().toISOString(),
   courses: catalogCourses,
   branches: branchesWithSlugs,
-  subjects,
+  courseStats: buildCourseStats(subjects, catalogCourses, examPapers),
   resources: [],
   examPapers,
-  winter2025Papers,
-  winter2025BbPapers,
-  winter2025BcPapers,
-  winter2025MbPapers,
-  winter2025McPapers,
-  winter2025BpPapers,
-  summer2025Papers,
-  summer2025BcPapers,
-  summer2025MbPapers,
-  summer2025BpPapers,
-  winter2024Papers,
-  winter2024BcPapers,
-  winter2024MbPapers,
-  winter2024BpPapers,
-  summer2024Papers,
-  summer2024MbPapers,
-  summer2024BpPapers,
-  winter2023Papers,
-  summer2023Papers,
 };
 
-fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
+const buildCatalog = {
+  ...catalog,
+  subjects,
+};
+
+fs.writeFileSync(path.join(base, 'data/catalog.json'), `${JSON.stringify(catalog)}\n`);
+fs.writeFileSync(
+  path.join(base, 'data/search-index.json'),
+  `${JSON.stringify({ entries: buildSearchIndexEntries(subjects, catalogCourses, branchesWithSlugs, examPapers) })}\n`,
+);
 fs.writeFileSync(
   path.join(base, 'data/catalog-version.txt'),
   `${catalog.catalogBuiltAt}\n`,
@@ -347,14 +420,14 @@ stampCatalogVersion(path.join(base, '404.html'), catalog.catalogBuiltAt);
 
 const { writeSitemap, generateSitemap, writeSeoPages } = require('./generate-sitemap');
 const { SEO } = require('./seo-config');
-writeSitemap(catalog, path.join(base, 'sitemap.xml'));
+writeSitemap(buildCatalog, path.join(base, 'sitemap.xml'));
 fs.writeFileSync(path.join(base, 'robots.txt'), `User-agent: *
 Allow: /
 
 Sitemap: ${SEO.siteUrl}/sitemap.xml
 `);
-const sitemapUrlCount = (generateSitemap(catalog).match(/<loc>/g) || []).length;
-const seoPageCount = writeSeoPages(catalog, base);
+const sitemapUrlCount = (generateSitemap(buildCatalog).match(/<loc>/g) || []).length;
+const seoPageCount = writeSeoPages(buildCatalog, base);
 console.log(`courses: ${catalogCourses.length}`);
 console.log(`BE branches: ${branchesWithSlugs.length}`);
 console.log(`BB branches: ${bbBranches.length}`);

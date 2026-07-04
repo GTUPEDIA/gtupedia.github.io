@@ -72,7 +72,7 @@ function renderTeam(data) {
 const base = window.__GTUPEDIA_BASE || '/';
 const root = base.endsWith('/') ? base : `${base}/`;
 
-fetch(`${root}data/team.json`, { cache: 'no-store' })
+fetch(`${root}data/team.json`)
   .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load team')))
   .then(renderTeam)
   .catch(() => {

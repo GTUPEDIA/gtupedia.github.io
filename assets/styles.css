@@ -220,6 +220,7 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
 .resource-card { position: relative; }
 .resource-card::after { content: "↗"; position: absolute; top: 19px; right: 19px; color: var(--accent); font-weight: bold; }
 .paper-card { border-color: #b8ddd4; background: linear-gradient(145deg, #fff, #eef8f4); }
+.syllabus-card { border-color: #d4c4a8; background: linear-gradient(145deg, #fff, #faf6ee); }
 .ad-modal-open { overflow: hidden; }
 .ad-modal { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 20px; }
 .ad-modal[hidden] { display: none; }

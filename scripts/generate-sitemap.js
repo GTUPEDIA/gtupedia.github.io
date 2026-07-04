@@ -163,6 +163,18 @@ function subjectCodes(subject) {
   return [subject.code, ...(subject.alternateCodes || [])].filter(Boolean);
 }
 
+const GTU_SYLLABUS_BASE = 'https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus';
+
+function gtuSyllabusUrl(subjectCode) {
+  const code = String(subjectCode).trim();
+  return `${GTU_SYLLABUS_BASE}/${encodeURIComponent(code)}.pdf`;
+}
+
+function syllabusLinks(subject) {
+  return [...new Set(subjectCodes(subject).map(code => String(code).trim()).filter(Boolean))]
+    .map(code => ({ label: `Syllabus (${code})`, url: gtuSyllabusUrl(code) }));
+}
+
 function examPaperLinks(subject, examPapers = []) {
   const courseCode = subject.courseCode || 'BE';
   const links = [];
@@ -378,8 +390,12 @@ function buildSubjectPage(course, subject, branches, catalog) {
   const alternateCodes = (subject.alternateCodes || []).filter(item => item !== code);
   const paperCount = examSeasonCount(subject, catalog.examPapers || []);
   const papers = examPaperLinks(subject, catalog.examPapers || []);
+  const syllabi = syllabusLinks(subject);
   const title = seoTitleSubject(subject.name, code);
   const description = seoDescriptionSubject(subject.name, code, branchName, subject.semester, paperCount);
+  const syllabusHtml = syllabi.length
+    ? `<h2>GTU syllabus</h2><ul>${syllabi.map(link => `<li><a href="${escapeHtml(link.url)}" rel="noopener">${escapeHtml(link.label)}</a></li>`).join('')}</ul>`
+    : '';
   const paperHtml = papers.length
     ? `<h2>GTU exam papers</h2><ul>${papers.map(paper => `<li><a href="${escapeHtml(paper.url)}" rel="noopener">${escapeHtml(paper.label)}</a></li>`).join('')}</ul>`
     : '<p>No exam papers are linked for this subject yet.</p>';
@@ -393,6 +409,7 @@ function buildSubjectPage(course, subject, branches, catalog) {
     intro: escapeHtml(`${branchName} · ${subject.semesterLabel || `Semester ${subject.semester}`}${paperCount ? ` · ${paperCount} exam paper season${paperCount === 1 ? '' : 's'}` : ''}`),
     bodyHtml: `
       <p><strong>Subject code:</strong> ${escapeHtml(code)}${alternateCodes.length ? `<br><strong>Also listed as:</strong> ${alternateCodes.map(escapeHtml).join(', ')}` : ''}</p>
+      ${syllabusHtml}
       ${paperHtml}
       <p><a href="${escapeHtml(branchRoute)}">← Back to ${escapeHtml(branchName)} subjects</a></p>`,
     jsonLd: [

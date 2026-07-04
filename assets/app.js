@@ -17,6 +17,7 @@ const SITE = {
   defaultTitle: 'GTU Question Papers PDF — BE, BBA, BCA, MBA, MCA | GTUPEDIA',
   defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
 };
+const BE_AD_ENABLED = false;
 const BE_AD = {
   src: 'ads/startup-wala-ad.ong.PNG',
   alt: 'Startup wala MBA — GTU School of Management Studies. MBA in Innovation, Entrepreneurship and Venture Development. Admissions open.',
@@ -395,6 +396,31 @@ function gtuExamPaperUrl(subjectCode, paperSet) {
   const base = paperSet?.baseUrl || 'https://gtu.ac.in/uploads/W2025/BE';
   const fileName = resolvePaperFileName(subjectCode, paperSet);
   return `${base}/${encodeURIComponent(fileName)}.pdf`;
+}
+
+const GTU_SYLLABUS_BASE = 'https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus';
+
+function gtuSyllabusUrl(subjectCode) {
+  const code = String(subjectCode).trim();
+  return `${GTU_SYLLABUS_BASE}/${encodeURIComponent(code)}.pdf`;
+}
+
+function syllabusCodesForSubject(subject) {
+  return [...new Set(subjectCodes(subject).map(code => String(code).trim()).filter(Boolean))];
+}
+
+function renderSyllabusCard(subjectCode) {
+  const url = gtuSyllabusUrl(subjectCode);
+  return `
+    <a class="resource-card syllabus-card" href="${escapeHtml(url)}" target="_blank" rel="noopener">
+      <span class="tag">syllabus</span>
+      <h3>${escapeHtml(subjectCode)}</h3>
+      <p>GTU official syllabus PDF</p>
+    </a>`;
+}
+
+function syllabusCardsForSubject(subject) {
+  return syllabusCodesForSubject(subject).map(code => renderSyllabusCard(code));
 }
 
 function examPaperCardsForSubject(subject, courseCode) {
@@ -891,6 +917,7 @@ function setCoursesVisible(visible) {
 }
 
 function initBeAdModal() {
+  if (!BE_AD_ENABLED) return null;
   const modal = document.querySelector('#be-ad-modal');
   if (!modal || modal.dataset.ready) return modal;
 
@@ -935,6 +962,7 @@ function hideBeAdPopup() {
 }
 
 function maybeShowBeAdPopup(courseCode) {
+  if (!BE_AD_ENABLED) return;
   if (courseCode !== 'BE') {
     hideBeAdPopup();
     return;
@@ -1070,7 +1098,7 @@ function renderBranch(courseCode, branchId) {
   hideErrorStatic();
   const branch = findBranch(branchId, courseCode);
   const resolvedCourse = courseCode || findCourseForBranch(branchId);
-  const subjects = listedSubjectsForBranch(branchId, resolvedCourse || courseCode || 'BE');
+  const subjects = subjectsForBranch(branchId, resolvedCourse || courseCode || 'BE');
   if (!branch) return renderNotFound('That branch is not in the catalogue yet.');
   ensureCanonicalUrl({ course: resolvedCourse || courseCode || 'BE' }, branch);
   setHeroVisible(false);
@@ -1088,12 +1116,12 @@ function renderBranch(courseCode, branchId) {
   content.innerHTML = pageShell(`
     <header class="page-header">
       <h1 class="page-title">${escapeHtml(branch.name)}</h1>
-      <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subject${subjects.length === 1 ? '' : 's'} with exam papers.</p>
+      <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subject${subjects.length === 1 ? '' : 's'}.</p>
     </header>
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
-        <div class="subject-list">${items.map(subject => renderSubjectCard(subject, 'Open exam papers', branchId)).join('')}</div>
+        <div class="subject-list">${items.map(subject => renderSubjectCard(subject, subjectHasPapers(subject) ? 'Open exam papers' : 'Open syllabus', branchId)).join('')}</div>
       </section>`).join('')}</div>` : '<p class="empty">No exam papers are available for this branch yet. Check back after the next paper upload.</p>'}`);
   maybeShowBeAdPopup(resolvedCourse || 'BE');
 }
@@ -1118,9 +1146,6 @@ function renderSubject(subjectOrRef, routeBranchId) {
       ? findSubjectForBranch(branchId, subjectOrRef)
       : findSubject(subjectOrRef));
   if (!subject) return renderNotFound('That subject is not in the catalogue yet.');
-  if (!subjectHasPapers(subject)) {
-    return renderNotFound('No exam papers are available for this subject yet. It will appear once papers are added.');
-  }
   setHeroVisible(false);
   setCoursesVisible(false);
   const courseCode = subject.courseCode || findCourseForBranch(String(subject.branchId)) || 'BE';
@@ -1150,6 +1175,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id
     || (subject.alternateIds || []).includes(String(item.subjectId)));
   const resourceCards = [
+    ...syllabusCardsForSubject(subject),
     ...examPaperCardsForSubject(subject, courseCode),
     ...resources.map(resource => `
       <a class="resource-card" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener">
@@ -1167,7 +1193,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
       <span class="tag">${escapeHtml(code)}</span>
       ${alternateCodes.length ? `<span class="subject-alt-codes">Also listed as ${alternateCodes.map(item => escapeHtml(item)).join(', ')}</span>` : ''}
     </p>
-    ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No papers or material are attached to this subject yet.</p>'}
+    ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No syllabus or exam papers are linked for this subject yet.</p>'}
     ${branch ? renderRelatedSubjects(subject, backBranch, courseCode) : ''}`);
   maybeShowBeAdPopup(courseCode);
 }
@@ -1357,7 +1383,7 @@ fetch(catalogUrl)
   .then(async (catalog) => {
     state.catalog = { ...catalog, subjects: [] };
     await ensureSubjectsForRoute(parseRoutePath());
-    initBeAdModal();
+    if (BE_AD_ENABLED) initBeAdModal();
     initClientNavigation();
     renderCourses();
     return renderRoute();

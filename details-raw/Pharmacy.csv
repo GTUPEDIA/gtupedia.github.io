@@ -1,0 +1,56 @@
+Semester,Branch,Subject,Subject Name,Date,Time,Old Date,Old Time,Exam Mode,Total QP Marks
+1,90,BP101TP,Human Anatomy and Physiology I,07 Jul 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+1,90,BP102TP,Pharmaceutical Analysis I,09 Jul 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+1,90,BP103TP,Pharmaceutics I,13 Jul 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+1,90,BP104TP,Pharmaceutical Inorganic Chemistry,15 Jul 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+2,90,BP201TP,Human Anatomy and Physiology II,07 Jul 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+2,90,BP202TP,Pharmaceutical Organic Chemistry I,09 Jul 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+2,90,BP203TP,Pharmaceutical Engineering,13 Jul 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+3,90,BP304TT,Pathophysiology,08 Jun 2026,02:30 PM TO 05:30 PM,28 May 2026,,Offline descriptive type exam as per routine practice of University,80
+3,90,BP301TP,Pharmaceutical Organic Chemistry II,19 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+3,90,BP302TP,Physical Pharmaceutics I,21 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+3,90,BP303TP,Biochemistry,25 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+3,90,BP305TP,Pharmacognosy and Phytochemistry I,30 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+4,90,BP404TP,Pharmacology I,08 Jun 2026,10:30 AM TO 01:30 PM,28 May 2026,,Offline descriptive type exam as per routine practice of University,80
+4,90,BP401TT,Pharmaceutical Organic Chemistry III,19 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+4,90,BP402TP,Medicinal Chemistry I,21 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+4,90,BP403TP,Physical Pharmaceutics II,25 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+4,90,BP405TT,Pharmaceutical Jurisprudence,30 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+5,90,BP502TP,Pharmacology II,01 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+5,90,BP503TP,Pharmacognosy and Phytochemistry II,05 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+5,90,BP504TP,Pharmaceutical Microbiology,07 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+5,90,BP505TT,Pharmaceutical Biotechnology,11 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+5,90,BP506TP,Contributor Personality Development Program,13 May 2026,02:30 PM TO 05:30 PM,,,Offline MCQ type exam as per routine practice of University,80
+5,90,BP507TP,Integrated Personality Development Course,13 May 2026,02:30 PM TO 05:30 PM,,,Offline MCQ type exam as per routine practice of University,80
+5,90,2250006,Pharmacognosy-III,13 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+5,90,BP501TT,Medicinal Chemistry II,29 Apr 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+6,90,BP603TP,Herbal Drug Technology,02 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+6,90,BP604TT,Biopharmaceutics and Pharmacokintetics,04 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+6,90,2260005,Pharmacology and Pharmacotherapeutics–II,04 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+6,90,BP605TP,Industrial Pharmacy I,06 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+6,90,2260003,Pharmaceutical Analysis IV,06 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+6,90,BP601TP,Medicinal Chemistry III,28 Apr 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+6,90,BP602TP,Pharmacology III,30 Apr 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+7,90,BP703TT,Pharmacy Practice,02 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+7,90,BP704TT,Novel Drug Delivery System,04 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+7,90,2270005,Pharmacognosy-V,04 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+7,90,BP706TT,Quality Assurance,06 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+7,90,2270003,"Pharmaceutical Chemistry – IX (Medicinal Chemistry - III)",06 May 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+7,90,BP701TP,Instrumental Methods of Analysis,28 Apr 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+7,90,BP702TT,Industrial Pharmacy II,30 Apr 2026,02:30 PM TO 05:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP802TT,Social and Preventive Pharmacy,01 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP803TT,Pharma Marketing Management,05 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP804TT,Pharmaceutical Regulatory science,05 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP807TT,Computer Aided Drug Design,05 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP808TT,Cell and Molecular Biology,05 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP811TT,Advanced Instrumentation Techniques,05 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP812TT,Dietary Supplements and Nutraceuticals,05 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,2280005,Pharmacognosy-VI,05 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP805TT,Pharmacovigilance,07 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP806TT,Quality Control and standardization of Herbals,07 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP809TT,Cosmetic Science,07 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP810TT,Experimental Pharmacology,07 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP814TT,Pharmaceutical Product Development,07 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP815TT,Epidemiology,07 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,2280004,Pharmacology and Pharmacotherapeutics – IV,07 May 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80
+8,90,BP801TT,Biostatistics and Research Methodology,29 Apr 2026,10:30 AM TO 01:30 PM,,,Offline descriptive type exam as per routine practice of University,80

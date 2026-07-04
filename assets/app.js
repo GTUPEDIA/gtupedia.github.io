@@ -246,6 +246,7 @@ function breadcrumbCourseLabel(course) {
     BC: 'BCA',
     MB: 'MBA',
     MC: 'MCA',
+    BP: 'B.Pharm',
     BH: 'BHMCT',
     BN: 'B.Design',
     EP: 'B.E. (Part Time)',
@@ -348,14 +349,18 @@ function getExamPaperSets() {
   if (state.catalog?.winter2025BbPapers) sets.push(state.catalog.winter2025BbPapers);
   if (state.catalog?.winter2025BcPapers) sets.push(state.catalog.winter2025BcPapers);
   if (state.catalog?.winter2025McPapers) sets.push(state.catalog.winter2025McPapers);
+  if (state.catalog?.winter2025BpPapers) sets.push(state.catalog.winter2025BpPapers);
   if (state.catalog?.summer2025Papers) sets.push(state.catalog.summer2025Papers);
   if (state.catalog?.summer2025BcPapers) sets.push(state.catalog.summer2025BcPapers);
   if (state.catalog?.summer2025MbPapers) sets.push(state.catalog.summer2025MbPapers);
+  if (state.catalog?.summer2025BpPapers) sets.push(state.catalog.summer2025BpPapers);
   if (state.catalog?.winter2024Papers) sets.push(state.catalog.winter2024Papers);
   if (state.catalog?.winter2024BcPapers) sets.push(state.catalog.winter2024BcPapers);
   if (state.catalog?.winter2024MbPapers) sets.push(state.catalog.winter2024MbPapers);
+  if (state.catalog?.winter2024BpPapers) sets.push(state.catalog.winter2024BpPapers);
   if (state.catalog?.summer2024Papers) sets.push(state.catalog.summer2024Papers);
   if (state.catalog?.summer2024MbPapers) sets.push(state.catalog.summer2024MbPapers);
+  if (state.catalog?.summer2024BpPapers) sets.push(state.catalog.summer2024BpPapers);
   if (state.catalog?.winter2023Papers) sets.push(state.catalog.winter2023Papers);
   if (state.catalog?.summer2023Papers) sets.push(state.catalog.summer2023Papers);
   return sets;
@@ -393,7 +398,7 @@ function gtuExamPaperUrl(subjectCode, paperSet) {
 }
 
 function examPaperCardsForSubject(subject, courseCode) {
-  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC' && courseCode !== 'MB' && courseCode !== 'MC') return [];
+  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC' && courseCode !== 'MB' && courseCode !== 'MC' && courseCode !== 'BP') return [];
   const cards = [];
   const seen = new Set();
 
@@ -452,10 +457,17 @@ function parseRoutePath(pathname = appPathname()) {
 
   if (parts.length === 2) {
     if (/^\d+[A-Z]?$/i.test(second)) return { course, branch: normalizeBranchId(second) };
+    if (/^[A-Z]{1,3}$/i.test(second)) return { course, branch: normalizeBranchId(second) };
     return { course, branchSlug: second };
   }
 
-  if (!/^\d+[A-Z]?$/i.test(second)) return { course, branchSlug: second };
+  if (!/^\d+[A-Z]?$/i.test(second)) {
+    const branch = normalizeBranchId(second);
+    if (parts.length >= 3 && !looksLikeSubjectCode(third)) {
+      return { course, branch, branchSlug: third };
+    }
+    return { course, branch };
+  }
 
   const branch = normalizeBranchId(second);
 
@@ -687,6 +699,7 @@ async function enrichCatalog(catalog) {
     { courseCode: 'BC', subjectUrl: `data/bc-subjects.json?v=${version}`, branches: SINGLE_BRANCH_COURSES.BC },
     { courseCode: 'MB', subjectUrl: `data/mb-subjects.json?v=${version}`, branchUrl: `data/mb-branches.json?v=${version}` },
     { courseCode: 'MC', subjectUrl: `data/mc-subjects.json?v=${version}`, branchUrl: `data/mc-branches.json?v=${version}` },
+    { courseCode: 'BP', subjectUrl: `data/bp-subjects.json?v=${version}`, branchUrl: `data/bp-branches.json?v=${version}` },
   ];
 
   for (const { courseCode, subjectUrl, branches, branchUrl } of supplements) {

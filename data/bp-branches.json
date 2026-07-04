@@ -1,0 +1,22 @@
+[
+  {
+    "id": "90",
+    "name": "Pharmacy",
+    "slug": "pharmacy"
+  },
+  {
+    "id": "NA",
+    "name": "Army",
+    "slug": "army"
+  },
+  {
+    "id": "NB",
+    "name": "Air Force",
+    "slug": "air-force"
+  },
+  {
+    "id": "NC",
+    "name": "Navy",
+    "slug": "navy"
+  }
+]

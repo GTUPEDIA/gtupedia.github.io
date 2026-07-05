@@ -1,0 +1,227 @@
+[
+  {
+    "id": "01",
+    "name": "Aeronautical Engineering",
+    "slug": "aeronautical-engineering"
+  },
+  {
+    "id": "02",
+    "name": "Automobile Engineering",
+    "slug": "automobile-engineering"
+  },
+  {
+    "id": "03",
+    "name": "Biomedical Engineering",
+    "slug": "biomedical-engineering"
+  },
+  {
+    "id": "05",
+    "name": "Chemical Engineering",
+    "slug": "chemical-engineering"
+  },
+  {
+    "id": "06",
+    "name": "Civil Engineering",
+    "slug": "civil-engineering"
+  },
+  {
+    "id": "07",
+    "name": "Computer Engineering",
+    "slug": "computer-engineering"
+  },
+  {
+    "id": "09",
+    "name": "Electrical Engineering",
+    "slug": "electrical-engineering"
+  },
+  {
+    "id": "11",
+    "name": "Electronics and Communication Engineering",
+    "slug": "electronics-and-communication-engineering"
+  },
+  {
+    "id": "13",
+    "name": "Environmental Engineering",
+    "slug": "environmental-engineering"
+  },
+  {
+    "id": "16",
+    "name": "Information Technology",
+    "slug": "information-technology"
+  },
+  {
+    "id": "17",
+    "name": "Instrumentation and Control Engineering",
+    "slug": "instrumentation-and-control-engineering"
+  },
+  {
+    "id": "18",
+    "name": "Marine Engineering",
+    "slug": "marine-engineering"
+  },
+  {
+    "id": "19",
+    "name": "Mechanical Engineering",
+    "slug": "mechanical-engineering"
+  },
+  {
+    "id": "20",
+    "name": "Mechatronics Engineering",
+    "slug": "mechatronics-engineering"
+  },
+  {
+    "id": "21",
+    "name": "Metallurgy Engineering",
+    "slug": "metallurgy-engineering"
+  },
+  {
+    "id": "22",
+    "name": "Mining Engineering",
+    "slug": "mining-engineering"
+  },
+  {
+    "id": "23",
+    "name": "Plastics Engineering",
+    "slug": "plastics-engineering"
+  },
+  {
+    "id": "24",
+    "name": "Power Electronics",
+    "slug": "power-electronics"
+  },
+  {
+    "id": "28",
+    "name": "Textile Processing Technology",
+    "slug": "textile-processing-technology"
+  },
+  {
+    "id": "29",
+    "name": "Textile Manufacturing Technology",
+    "slug": "textile-manufacturing-technology"
+  },
+  {
+    "id": "31",
+    "name": "Computer Science and Engineering",
+    "slug": "computer-science-and-engineering"
+  },
+  {
+    "id": "32",
+    "name": "Information and Communication Technology",
+    "slug": "information-and-communication-technology"
+  },
+  {
+    "id": "34",
+    "name": "Mechanical Engineering (Manufacturing Technology)",
+    "slug": "mechanical-engineering-manufacturing-technology"
+  },
+  {
+    "id": "41",
+    "name": "Automation and Robotics",
+    "slug": "automation-and-robotics"
+  },
+  {
+    "id": "50",
+    "name": "Architectural Assistantship",
+    "slug": "architectural-assistantship"
+  },
+  {
+    "id": "51",
+    "name": "Computer Aided Costume Design and Dress Making",
+    "slug": "computer-aided-costume-design-and-dress-making"
+  },
+  {
+    "id": "52",
+    "name": "Ceramic Technology",
+    "slug": "ceramic-technology"
+  },
+  {
+    "id": "53",
+    "name": "Commercial Art",
+    "slug": "commercial-art"
+  },
+  {
+    "id": "54",
+    "name": "Commercial Practice",
+    "slug": "commercial-practice"
+  },
+  {
+    "id": "55",
+    "name": "Fabrication Technology",
+    "slug": "fabrication-technology"
+  },
+  {
+    "id": "56",
+    "name": "Home Science",
+    "slug": "home-science"
+  },
+  {
+    "id": "58",
+    "name": "Printing Technology",
+    "slug": "printing-technology"
+  },
+  {
+    "id": "59",
+    "name": "Textile Designing",
+    "slug": "textile-designing"
+  },
+  {
+    "id": "60",
+    "name": "Transportation Engineering",
+    "slug": "transportation-engineering"
+  },
+  {
+    "id": "61",
+    "name": "Fire Technology",
+    "slug": "fire-technology"
+  },
+  {
+    "id": "63",
+    "name": "Agricultural Engineering",
+    "slug": "agricultural-engineering"
+  },
+  {
+    "id": "64",
+    "name": "Renewable Energy",
+    "slug": "renewable-energy"
+  },
+  {
+    "id": "65",
+    "name": "Mechanical Engineering (CAD/CAM)",
+    "slug": "mechanical-engineering-cad-cam"
+  },
+  {
+    "id": "66",
+    "name": "Cyber System and Information Security",
+    "slug": "cyber-system-and-information-security"
+  },
+  {
+    "id": "81",
+    "name": "Civil Engineering (DLM)",
+    "slug": "civil-engineering-dlm"
+  },
+  {
+    "id": "82",
+    "name": "Mechanical Engineering (DLM)",
+    "slug": "mechanical-engineering-dlm"
+  },
+  {
+    "id": "83",
+    "name": "Electrical Engineering (DLM)",
+    "slug": "electrical-engineering-dlm"
+  },
+  {
+    "id": "NA",
+    "name": "Army",
+    "slug": "army"
+  },
+  {
+    "id": "NB",
+    "name": "Air Force",
+    "slug": "air-force"
+  },
+  {
+    "id": "NC",
+    "name": "Navy",
+    "slug": "navy"
+  }
+]

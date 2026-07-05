@@ -127,6 +127,7 @@ function breadcrumbCourseLabel(course) {
     MB: 'MBA',
     MC: 'MCA',
     BP: 'B.Pharm',
+    DI: 'Diploma Engg.',
     BH: 'BHMCT',
     BN: 'B.Design',
     EP: 'B.E. (Part Time)',

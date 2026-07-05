@@ -248,6 +248,7 @@ function breadcrumbCourseLabel(course) {
     MB: 'MBA',
     MC: 'MCA',
     BP: 'B.Pharm',
+    DI: 'Diploma Engg.',
     BH: 'BHMCT',
     BN: 'B.Design',
     EP: 'B.E. (Part Time)',
@@ -737,12 +738,14 @@ const SUBJECT_SOURCES = {
   MB: () => `data/mb-subjects.json?v=${catalogVersionQuery()}`,
   MC: () => `data/mc-subjects.json?v=${catalogVersionQuery()}`,
   BP: () => `data/bp-subjects.json?v=${catalogVersionQuery()}`,
+  DI: () => `data/di-subjects.json?v=${catalogVersionQuery()}`,
 };
 
 const BRANCH_SOURCES = {
   MB: () => `data/mb-branches.json?v=${catalogVersionQuery()}`,
   MC: () => `data/mc-branches.json?v=${catalogVersionQuery()}`,
   BP: () => `data/bp-branches.json?v=${catalogVersionQuery()}`,
+  DI: () => `data/di-branches.json?v=${catalogVersionQuery()}`,
 };
 
 async function ensureSubjectsForCourse(courseCode) {

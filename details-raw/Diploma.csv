@@ -1,0 +1,3595 @@
+Semester,Branch,Subject,Subject Name
+1 (NCC),NA,1031NA01,National Cadet Corps I
+1 (NCC),NC,1031NC01,National Cadet Corps I
+1 (NEW),002,DI01000181,Engineering Materials Science
+1 (NEW),002,DI01002011,Basics of Automotive Science
+1 (NEW),002,DI01000021,Mathematics-I
+1 (NEW),002,DI01000031,Communication Skills in English
+1 (NEW),002,DI01000111,Engineering Graphics
+1 (NEW),003,DI01003021,Fundamentals of Biomedical Engineering
+1 (NEW),003,DI01003031,Basics of Medical Electronics
+1 (NEW),003,DI01000021,Mathematics-I
+1 (NEW),003,DI01000031,Communication Skills in English
+1 (NEW),003,DI01000061,Modern Physics
+1 (NEW),003,DI01003011,Human Biology-I
+1 (NEW),005,DI01005011,Plant Utilities
+1 (NEW),005,DI01005021,Material Science and Technology
+1 (NEW),005,DI01000021,Mathematics-I
+1 (NEW),005,DI01000031,Communication Skills in English
+1 (NEW),005,DI01000161,Basic Chemistry
+1 (NEW),005,DI01000111,Engineering Graphics
+1 (NEW),006,DI01000121,Applied Physics
+1 (NEW),006,DI01006011,Civil Engineering Drawing
+1 (NEW),006,DI01006021,Construction Material
+1 (NEW),006,DI01000021,Mathematics-I
+1 (NEW),006,DI01000031,Communication Skills in English
+1 (NEW),006,DI01000111,Engineering Graphics
+1 (NEW),007,DI01000151,Basics of Electronics
+1 (NEW),007,DI01000021,Mathematics-I
+1 (NEW),007,DI01000031,Communication Skills in English
+1 (NEW),007,DI01000061,Modern Physics
+1 (NEW),007,DI01000131,Computer Programming Fundamentals
+1 (NEW),009,DI01009011,Electronics Devices & Circuits
+1 (NEW),009,DI01000021,Mathematics-I
+1 (NEW),009,DI01000031,Communication Skills in English
+1 (NEW),009,DI01000071,Engineering Chemistry
+1 (NEW),009,DI01000081,DC Circuit
+1 (NEW),011,DI01000101,Fundamentals of Electrical Engineering
+1 (NEW),011,DI01000021,Mathematics-I
+1 (NEW),011,DI01000031,Communication Skills in English
+1 (NEW),011,DI01000061,Modern Physics
+1 (NEW),011,DI01000051,Fundamentals of Electronics
+1 (NEW),013,DI01000121,Applied Physics
+1 (NEW),013,DI01013011,Water Supply and Sewerage System
+1 (NEW),013,DI01000021,Mathematics-I
+1 (NEW),013,DI01000031,Communication Skills in English
+1 (NEW),013,DI01000111,Engineering Graphics
+1 (NEW),016,DI01016011,Python Programming
+1 (NEW),016,DI01000021,Mathematics-I
+1 (NEW),016,DI01000031,Communication Skills in English
+1 (NEW),016,DI01000071,Engineering Chemistry
+1 (NEW),016,DI01016021,Introduction to I.T. Systems
+1 (NEW),017,DI01017021,Basics of  Information Technology Systems
+1 (NEW),017,DI01000021,Mathematics-I
+1 (NEW),017,DI01000031,Communication Skills in English
+1 (NEW),017,DI01000061,Modern Physics
+1 (NEW),017,DI01017011,Fundamentals of Instrumentation & Control Engineering
+1 (NEW),019,DI01000181,Engineering Materials Science
+1 (NEW),019,DI01000191,Elements of Mechanical Engineering
+1 (NEW),019,DI01000021,Mathematics-I
+1 (NEW),019,DI01000031,Communication Skills in English
+1 (NEW),019,DI01000111,Engineering Graphics
+1 (NEW),020,DI01000181,Engineering Materials Science
+1 (NEW),020,DI01020011,Elements of Mechatronics Engineering
+1 (NEW),020,DI01000021,Mathematics-I
+1 (NEW),020,DI01000031,Communication Skills in English
+1 (NEW),020,DI01000111,Engineering Graphics
+1 (NEW),021,DI01021021,Introduction to Engineering Materials
+1 (NEW),021,DI01000021,Mathematics-I
+1 (NEW),021,DI01000031,Communication Skills in English
+1 (NEW),021,DI01021011,Applied Chemistry
+1 (NEW),021,DI01000111,Engineering Graphics
+1 (NEW),022,DI01000121,Applied Physics
+1 (NEW),022,DI01022011,Mining Geology
+1 (NEW),022,DI01022021,Introduction to Mining
+1 (NEW),022,DI01000021,Mathematics-I
+1 (NEW),022,DI01000031,Communication Skills in English
+1 (NEW),022,DI01000111,Engineering Graphics
+1 (NEW),023,DI01000021,Mathematics-I
+1 (NEW),023,DI01000031,Communication Skills in English
+1 (NEW),023,DI01023021,Basic Polymer Chemistry
+1 (NEW),023,DI01000111,Engineering Graphics
+1 (NEW),024,DI01000101,Fundamentals of Electrical Engineering
+1 (NEW),024,DI01000021,Mathematics-I
+1 (NEW),024,DI01000031,Communication Skills in English
+1 (NEW),024,DI01000071,Engineering Chemistry
+1 (NEW),024,DI01000111,Engineering Graphics
+1 (NEW),028,DI01028011,Elements of Textile and Garment Technology
+1 (NEW),028,DI01028021,Textile Fiber Science - I
+1 (NEW),028,DI01000021,Mathematics-I
+1 (NEW),028,DI01000031,Communication Skills in English
+1 (NEW),028,DI01000161,Basic Chemistry
+1 (NEW),028,DI01000111,Engineering Graphics
+1 (NEW),029,DI01000121,Applied Physics
+1 (NEW),029,DI01029021,Spinning Technology -I
+1 (NEW),029,DI01029031,Weaving Technology-I
+1 (NEW),029,DI01000021,Mathematics-I
+1 (NEW),029,DI01000031,Communication Skills in English
+1 (NEW),029,DI01029011,Textile Fiber Technology
+1 (NEW),031,DI01000151,Basics of Electronics
+1 (NEW),031,DI01000021,Mathematics-I
+1 (NEW),031,DI01000031,Communication Skills in English
+1 (NEW),031,DI01000061,Modern Physics
+1 (NEW),031,DI01000131,Computer Programming Fundamentals
+1 (NEW),032,DI01000021,Mathematics-I
+1 (NEW),032,DI01000031,Communication Skills in English
+1 (NEW),032,DI01000061,Modern Physics
+1 (NEW),032,DI01000051,Fundamentals of Electronics
+1 (NEW),041,DI01041011,Principles of Electronics in Automation
+1 (NEW),041,DI01000021,Mathematics-I
+1 (NEW),041,DI01000031,Communication Skills in English
+1 (NEW),041,DI01000061,Modern Physics
+1 (NEW),041,DI01000111,Engineering Graphics
+1 (NEW),051,DI01051041,Basics of Fiber and Yarn Manufacturing
+1 (NEW),051,DI01051011,Basics of Clothing & Wardrobe Planning
+1 (NEW),051,DI01000031,Communication Skills in English
+1 (NEW),051,DI01051031,Needle Art
+1 (NEW),051,DI01051021,Fundamental of Design
+1 (NEW),052,DI01000121,Applied Physics
+1 (NEW),052,DI01052011,Ceramic Materials
+1 (NEW),052,DI01052021,Introduction to Ceramics
+1 (NEW),052,DI01000021,Mathematics-I
+1 (NEW),052,DI01000031,Communication Skills in English
+1 (NEW),052,DI01000111,Engineering Graphics
+1 (NEW),055,DI01000181,Engineering Materials Science
+1 (NEW),055,DI01055011,Fabrication Technology-1
+1 (NEW),055,DI01000021,Mathematics-I
+1 (NEW),055,DI01000031,Communication Skills in English
+1 (NEW),055,DI01000111,Engineering Graphics
+1 (NEW),058,DI01000121,Applied Physics
+1 (NEW),058,DI01058021,Basic Graphic Design
+1 (NEW),058,DI01058031,Printer’s Science
+1 (NEW),058,DI01000021,Mathematics-I
+1 (NEW),058,DI01000031,Communication Skills in English
+1 (NEW),058,DI01058011,Fundamentals of Printing Technology
+1 (NEW),059,DI01059041,Fundamentals of Fiber Science
+1 (NEW),059,DI01000021,Mathematics-I
+1 (NEW),059,DI01000031,Communication Skills in English
+1 (NEW),059,DI01059021,Introduction to Fashion Design
+1 (NEW),059,DI01059011,Fundamentals of Yarn & Fabric Technology
+1 (NEW),064,DI01000121,Applied Physics
+1 (NEW),064,DI01064011,Basics of Mechanical Engineering
+1 (NEW),064,DI01000021,Mathematics-I
+1 (NEW),064,DI01000031,Communication Skills in English
+1 (NEW),064,DI01000081,DC Circuit
+1 (NEW),065,DI01000181,Engineering Materials Science
+1 (NEW),065,DI01000191,Elements of Mechanical Engineering
+1 (NEW),065,DI01000021,Mathematics-I
+1 (NEW),065,DI01000031,Communication Skills in English
+1 (NEW),065,DI01000111,Engineering Graphics
+1 (OLD),01,3310101,Applied Physics
+1 (OLD),01,3300003,Environment Conservation And Hazard Management
+1 (OLD),01,3300002,English
+1 (OLD),01,3310102,APPLIED MATHEMATICS-I
+1 (OLD),01,3300007,Basic Engineering Drawing
+1 (OLD),02,4300007,Engineering Drawing
+1 (OLD),02,3300002,English
+1 (OLD),02,3300007,Basic Engineering Drawing
+1 (OLD),02,3300001,Basic Mathematics
+1 (OLD),02,4300002,Communication Skills in English
+1 (OLD),02,4300001,Mathematics
+1 (OLD),02,4300004,Applied Physics
+1 (OLD),02,3300008,Applied Mechanics
+1 (OLD),02,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),03,4300005,Physics
+1 (OLD),03,3300003,Environment Conservation And Hazard Management
+1 (OLD),03,4310301,Human Biology-I
+1 (OLD),03,3300002,English
+1 (OLD),03,3311101,Electronic Components & Practice
+1 (OLD),03,3300001,Basic Mathematics
+1 (OLD),03,4300002,Communication Skills in English
+1 (OLD),03,4300001,Mathematics
+1 (OLD),03,3300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+1 (OLD),03,4300018,Fundamentals of Electrical and Electronics
+1 (OLD),05,3300002,English
+1 (OLD),05,4300011,Basic Chemistry
+1 (OLD),05,3300001,Basic Mathematics
+1 (OLD),05,4300002,Communication Skills in English
+1 (OLD),05,4300001,Mathematics
+1 (OLD),05,3310501,Physical Analytical & Inorganic Chemistry
+1 (OLD),05,4300004,Applied Physics
+1 (OLD),05,3300011,BASIC CHEMISTRY(GROUP-4)
+1 (OLD),05,4300003,Environment and Sustainability
+1 (OLD),06,3300003,Environment Conservation And Hazard Management
+1 (OLD),06,3300002,English
+1 (OLD),06,3300007,Basic Engineering Drawing
+1 (OLD),06,3300001,Basic Mathematics
+1 (OLD),06,4300002,Communication Skills in English
+1 (OLD),06,4300001,Mathematics
+1 (OLD),06,4300004,Applied Physics
+1 (OLD),06,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),06,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),07,3300003,Environment Conservation And Hazard Management
+1 (OLD),07,3300002,English
+1 (OLD),07,3310702,Fundamental Of Digital Electronics
+1 (OLD),07,3300001,Basic Mathematics
+1 (OLD),07,4300002,Communication Skills in English
+1 (OLD),07,4300001,Mathematics
+1 (OLD),07,3310701,Computer Programming
+1 (OLD),07,4310702,Basic Computer Programming
+1 (OLD),07,4300003,Environment and Sustainability
+1 (OLD),07,4300018,Fundamentals of Electrical and Electronics
+1 (OLD),09,3300003,Environment Conservation And Hazard Management
+1 (OLD),09,4310901,D.C. Circuits
+1 (OLD),09,3300002,English
+1 (OLD),09,4300006,Engineering Chemistry
+1 (OLD),09,3300015,Fundamental Of Mechanical Engineering
+1 (OLD),09,3300001,Basic Mathematics
+1 (OLD),09,4300002,Communication Skills in English
+1 (OLD),09,4300001,Mathematics
+1 (OLD),09,3300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+1 (OLD),11,3300005,BASIC PHYSICS (GROUP-2)
+1 (OLD),11,4300005,Physics
+1 (OLD),11,3300002,English
+1 (OLD),11,3311101,Electronic Components & Practice
+1 (OLD),11,3300001,Basic Mathematics
+1 (OLD),11,4300002,Communication Skills in English
+1 (OLD),11,4300001,Mathematics
+1 (OLD),11,4311102,Fundamentals of Electronics
+1 (OLD),11,3320901,Basic Of Electrical Engineering
+1 (OLD),11,4311101,Fundamentals of Electrical Engineering
+1 (OLD),13,3300003,Environment Conservation And Hazard Management
+1 (OLD),13,3300002,English
+1 (OLD),13,3300007,Basic Engineering Drawing
+1 (OLD),13,3300001,Basic Mathematics
+1 (OLD),13,4300002,Communication Skills in English
+1 (OLD),13,4300001,Mathematics
+1 (OLD),13,4300004,Applied Physics
+1 (OLD),13,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),13,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),16,3300003,Environment Conservation And Hazard Management
+1 (OLD),16,3300002,English
+1 (OLD),16,3310702,Fundamental Of Digital Electronics
+1 (OLD),16,3300001,Basic Mathematics
+1 (OLD),16,4300002,Communication Skills in English
+1 (OLD),16,4300001,Mathematics
+1 (OLD),16,3310701,Computer Programming
+1 (OLD),16,4311602,Introduction to IT Systems
+1 (OLD),16,4311601,Python Programming
+1 (OLD),17,4300005,Physics
+1 (OLD),17,3300003,Environment Conservation And Hazard Management
+1 (OLD),17,4311701,Fundamentals of Instrumentation and Control Engineering
+1 (OLD),17,3300002,English
+1 (OLD),17,3300001,Basic Mathematics
+1 (OLD),17,4300002,Communication Skills in English
+1 (OLD),17,4300001,Mathematics
+1 (OLD),17,3311703,Principles Of Chemical Engineering
+1 (OLD),17,3311701,Basic Instrumentation
+1 (OLD),18,4300007,Engineering Drawing
+1 (OLD),18,3300003,Environment Conservation And Hazard Management
+1 (OLD),18,3300002,English
+1 (OLD),18,3300007,Basic Engineering Drawing
+1 (OLD),18,3300001,Basic Mathematics
+1 (OLD),18,4300002,Communication Skills in English
+1 (OLD),18,4300001,Mathematics
+1 (OLD),18,4300004,Applied Physics
+1 (OLD),18,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),19,4300007,Engineering Drawing
+1 (OLD),19,3300003,Environment Conservation And Hazard Management
+1 (OLD),19,3300002,English
+1 (OLD),19,3300007,Basic Engineering Drawing
+1 (OLD),19,3300001,Basic Mathematics
+1 (OLD),19,4300002,Communication Skills in English
+1 (OLD),19,4300001,Mathematics
+1 (OLD),19,4300004,Applied Physics
+1 (OLD),19,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),20,3300002,English
+1 (OLD),20,3300007,Basic Engineering Drawing
+1 (OLD),20,3300001,Basic Mathematics
+1 (OLD),20,4300002,Communication Skills in English
+1 (OLD),20,4300001,Mathematics
+1 (OLD),20,4300004,Applied Physics
+1 (OLD),20,4300003,Environment and Sustainability
+1 (OLD),20,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),20,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),21,4312101,Introduction to Engineering Materials
+1 (OLD),21,3300002,English
+1 (OLD),21,3300007,Basic Engineering Drawing
+1 (OLD),21,3300001,Basic Mathematics
+1 (OLD),21,4300002,Communication Skills in English
+1 (OLD),21,4300001,Mathematics
+1 (OLD),21,4300009,Applied Chemistry
+1 (OLD),21,3300008,Applied Mechanics
+1 (OLD),21,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),21,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),22,4312201,Introduction to Mining and Geology
+1 (OLD),22,3300003,Environment Conservation And Hazard Management
+1 (OLD),22,3300002,English
+1 (OLD),22,3300007,Basic Engineering Drawing
+1 (OLD),22,3300001,Basic Mathematics
+1 (OLD),22,4300002,Communication Skills in English
+1 (OLD),22,4300001,Mathematics
+1 (OLD),22,4300004,Applied Physics
+1 (OLD),22,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),22,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),23,4312301,Basic Polymer Chemistry
+1 (OLD),23,3312301,Basic Polymer Chemistry
+1 (OLD),23,3300002,English
+1 (OLD),23,3300015,Fundamental Of Mechanical Engineering
+1 (OLD),23,3300001,Basic Mathematics
+1 (OLD),23,4300002,Communication Skills in English
+1 (OLD),23,4300001,Mathematics
+1 (OLD),23,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),23,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),24,3300002,English
+1 (OLD),24,4300006,Engineering Chemistry
+1 (OLD),24,3300001,Basic Mathematics
+1 (OLD),24,4300002,Communication Skills in English
+1 (OLD),24,4300001,Mathematics
+1 (OLD),24,3300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+1 (OLD),24,3320901,Basic Of Electrical Engineering
+1 (OLD),24,4311101,Fundamentals of Electrical Engineering
+1 (OLD),28,3300002,English
+1 (OLD),28,4300011,Basic Chemistry
+1 (OLD),28,3312801,Elements Of Textile Technology
+1 (OLD),28,3300007,Basic Engineering Drawing
+1 (OLD),28,3300001,Basic Mathematics
+1 (OLD),28,4300002,Communication Skills in English
+1 (OLD),28,4300001,Mathematics
+1 (OLD),28,4312801,Elements of Textile & Garment Technology
+1 (OLD),28,3300011,BASIC CHEMISTRY(GROUP-4)
+1 (OLD),28,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),29,4312901,Fundamentals of Textile
+1 (OLD),29,3300002,English
+1 (OLD),29,3312901,Basic Of Textile
+1 (OLD),29,3300007,Basic Engineering Drawing
+1 (OLD),29,3300001,Basic Mathematics
+1 (OLD),29,4300002,Communication Skills in English
+1 (OLD),29,4300001,Mathematics
+1 (OLD),29,4300004,Applied Physics
+1 (OLD),29,3300011,BASIC CHEMISTRY(GROUP-4)
+1 (OLD),29,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),31,4300002,Communication Skills in English
+1 (OLD),31,4300001,Mathematics
+1 (OLD),31,4310702,Basic Computer Programming
+1 (OLD),31,4300003,Environment and Sustainability
+1 (OLD),31,4300018,Fundamentals of Electrical and Electronics
+1 (OLD),32,4300005,Physics
+1 (OLD),32,1313202,Elements of Electrical & Electronics Engineering
+1 (OLD),32,4300002,Communication Skills with English
+1 (OLD),32,4300001,Mathematics
+1 (OLD),41,4321704,Fundamentals of Electrical and Electronic Instrumentation
+1 (OLD),41,4300005,Physics
+1 (OLD),41,4300002,Communication Skills in English
+1 (OLD),41,4300001,Mathematics
+1 (OLD),50,3300002,English
+1 (OLD),50,4300002,Communication Skills in English
+1 (OLD),50,4300001,Mathematics
+1 (OLD),50,3315003,Building Materials
+1 (OLD),50,4315004,Basic Design
+1 (OLD),50,4315002,Basic Architectural Drawing
+1 (OLD),50,3315002,ARCHITECTURAL DRAWING-I
+1 (OLD),50,4315003,Building Materials
+1 (OLD),50,3315004,Basic Design
+1 (OLD),51,3315103,Art & Design
+1 (OLD),51,4315103,Fiber Science and Application
+1 (OLD),51,3300002,English
+1 (OLD),51,4300002,Communication Skills in English
+1 (OLD),51,4315101,Design Fundamental
+1 (OLD),51,3315102,Computer Application
+1 (OLD),51,3315101,Clothing Construction
+1 (OLD),51,3315104,Textile Science
+1 (OLD),51,4315102,Clothing Construction
+1 (OLD),52,3300003,Environment Conservation And Hazard Management
+1 (OLD),52,3300002,English
+1 (OLD),52,3300007,Basic Engineering Drawing
+1 (OLD),52,3300001,Basic Mathematics
+1 (OLD),52,4300002,Communication Skills in English
+1 (OLD),52,4300001,Mathematics
+1 (OLD),52,4300004,Applied Physics
+1 (OLD),52,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),52,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),55,4300007,Engineering Drawing
+1 (OLD),55,3300014,Basic Of Electrical & Electronics Engineering
+1 (OLD),55,3300003,Environment Conservation And Hazard Management
+1 (OLD),55,3300002,English
+1 (OLD),55,3300001,Basic Mathematics
+1 (OLD),55,4300002,Communication Skills in English
+1 (OLD),55,4300001,Mathematics
+1 (OLD),55,4300004,Applied Physics
+1 (OLD),55,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),58,4315801,Fundamentals of Printing
+1 (OLD),58,3300002,English
+1 (OLD),58,3300007,Basic Engineering Drawing
+1 (OLD),58,3300001,Basic Mathematics
+1 (OLD),58,4300002,Communication Skills in English
+1 (OLD),58,4300001,Mathematics
+1 (OLD),58,3315801,Basic Of Printing
+1 (OLD),58,4300004,Applied Physics
+1 (OLD),58,3300011,BASIC CHEMISTRY(GROUP-4)
+1 (OLD),58,4300013,Basic Engineering Drawing and Graphics
+1 (OLD),59,4315904,Fundamental of Yarn Technology
+1 (OLD),59,3300003,Environment Conservation And Hazard Management
+1 (OLD),59,3300002,English
+1 (OLD),59,4300002,Communication Skills in English
+1 (OLD),59,4300001,Mathematics
+1 (OLD),59,4315903,Fundamentals of Fiber Science
+1 (OLD),59,3315902,Fundamental Of Textile Technology
+1 (OLD),59,4315902,Drawing Sketching & Painting
+1 (OLD),60,3300003,Environment Conservation And Hazard Management
+1 (OLD),60,3300002,English
+1 (OLD),60,3300007,Basic Engineering Drawing
+1 (OLD),60,3300001,Basic Mathematics
+1 (OLD),60,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+1 (OLD),64,4300007,Engineering Drawing
+1 (OLD),64,1316402,Basics of Renewable Energy
+1 (OLD),64,4300002,Communication Skills in English
+1 (OLD),64,4300001,Mathematics
+1 (OLD),64,4300004,Applied Physics
+1 (OLD),65,1316501,Mechanical Drawing and Drafting
+1 (OLD),65,4300002,Communication Skills in English
+1 (OLD),65,4300001,Mathematics
+1 (OLD),65,4300004,Applied Physics
+1 (OLD),83,310034,Mathematics - I
+1(CtoD),02,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),02,C300002,English
+1(CtoD),02,C4300004,Applied Physics
+1(CtoD),02,C300001,Basic Mathematics
+1(CtoD),02,C4300002,Communication Skills in English
+1(CtoD),02,C4300001,Mathematics
+1(CtoD),02,C300008,Applied Mechanics
+1(CtoD),02,C4300007,Engineering Drawing
+1(CtoD),03,C300003,Environment Conservation & Hazard Management
+1(CtoD),03,C300002,English
+1(CtoD),03,C4300018,Fundamentals of Electrical and Electronics
+1(CtoD),03,C300001,Basic Mathematics
+1(CtoD),03,C4300002,Communication Skills in English
+1(CtoD),03,C4300001,Mathematics
+1(CtoD),03,C300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+1(CtoD),03,C4310301,Human Biology-I
+1(CtoD),03,C4300005,Physics
+1(CtoD),05,C4300011,Basic Chemistry
+1(CtoD),05,C300002,English
+1(CtoD),05,C4300004,Applied Physics
+1(CtoD),05,C4300003,Environment and Sustainability
+1(CtoD),05,C300001,Basic Mathematics
+1(CtoD),05,C4300002,Communication Skills in English
+1(CtoD),05,C4300001,Mathematics
+1(CtoD),05,C300011,BASIC CHEMISTRY ( GROUP-4)
+1(CtoD),05,C310501,Physical Analytical & Inorganic Chemistry
+1(CtoD),06,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),06,C300003,Environment Conservation & Hazard Management
+1(CtoD),06,C300002,English
+1(CtoD),06,C4300004,Applied Physics
+1(CtoD),06,C300001,Basic Mathematics
+1(CtoD),06,C4300002,Communication Skills in English
+1(CtoD),06,C4300001,Mathematics
+1(CtoD),06,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),07,C300003,Environment Conservation & Hazard Management
+1(CtoD),07,C4310702,Basic Computer Programming
+1(CtoD),07,C300002,English
+1(CtoD),07,C4300018,Fundamentals of Electrical and Electronics
+1(CtoD),07,C4300003,Environment and Sustainability
+1(CtoD),07,C300001,Basic Mathematics
+1(CtoD),07,C4300002,Communication Skills in English
+1(CtoD),07,C4300001,Mathematics
+1(CtoD),07,C310702,Fundamental Of Digital Electronics
+1(CtoD),09,C300003,Environment Conservation & Hazard Management
+1(CtoD),09,C4310901,D.C. Circuits
+1(CtoD),09,C300002,English
+1(CtoD),09,C300001,Basic Mathematics
+1(CtoD),09,C4300006,Engineering Chemistry
+1(CtoD),09,C4300002,Communication Skills in English
+1(CtoD),09,C4300001,Mathematics
+1(CtoD),09,C300015,Fundamental Of Mechanical Engineering
+1(CtoD),09,C300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+1(CtoD),11,C4311102,Fundamentals of Electronics
+1(CtoD),11,C300002,English
+1(CtoD),11,C4311101,Fundamentals of Electrical Engineering
+1(CtoD),11,C300001,Basic Mathematics
+1(CtoD),11,C4300002,Communication Skills in English
+1(CtoD),11,C4300001,Mathematics
+1(CtoD),11,C4300005,Physics
+1(CtoD),11,C300005,BASIC PHYSICS (GROUP-2)
+1(CtoD),13,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),13,C300003,Environment Conservation & Hazard Management
+1(CtoD),13,C300002,English
+1(CtoD),13,C4300004,Applied Physics
+1(CtoD),13,C300001,Basic Mathematics
+1(CtoD),13,C4300002,Communication Skills in English
+1(CtoD),13,C4300001,Mathematics
+1(CtoD),13,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),16,C300003,Environment Conservation & Hazard Management
+1(CtoD),16,C300002,English
+1(CtoD),16,C4311601,Python Programming
+1(CtoD),16,C300001,Basic Mathematics
+1(CtoD),16,C4300002,Communication Skills in English
+1(CtoD),16,C4300001,Mathematics
+1(CtoD),16,C310702,Fundamental Of Digital Electronics
+1(CtoD),16,C4311602,Introduction to IT Systems
+1(CtoD),17,C300003,Environment Conservation & Hazard Management
+1(CtoD),17,C300002,English
+1(CtoD),17,C4311701,Fundamentals of Instrumentation and Control Engineering
+1(CtoD),17,C311703,Principles Of Chemical Engineering
+1(CtoD),17,C4300002,Communication Skills in English
+1(CtoD),17,C4300001,Mathematics
+1(CtoD),17,C4300005,Physics
+1(CtoD),18,C4300004,Applied Physics
+1(CtoD),18,C4300002,Communication Skills in English
+1(CtoD),18,C4300001,Mathematics
+1(CtoD),18,C4300007,Engineering Drawing
+1(CtoD),19,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),19,C300003,Environment Conservation & Hazard Management
+1(CtoD),19,C300002,English
+1(CtoD),19,C4300004,Applied Physics
+1(CtoD),19,C300001,Basic Mathematics
+1(CtoD),19,C4300002,Communication Skills in English
+1(CtoD),19,C4300001,Mathematics
+1(CtoD),19,C4300007,Engineering Drawing
+1(CtoD),20,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),20,C300002,English
+1(CtoD),20,C4300004,Applied Physics
+1(CtoD),20,C4300003,Environment and Sustainability
+1(CtoD),20,C300001,Basic Mathematics
+1(CtoD),20,C4300002,Communication Skills in English
+1(CtoD),20,C4300001,Mathematics
+1(CtoD),20,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),20,C300007,Basic Engineering Drawing
+1(CtoD),21,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),21,C300002,English
+1(CtoD),21,C4312101,Introduction to Engineering Materials
+1(CtoD),21,C300001,Basic Mathematics
+1(CtoD),21,C4300002,Communication Skills in English
+1(CtoD),21,C4300001,Mathematics
+1(CtoD),21,C300008,Applied Mechanics
+1(CtoD),21,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),21,C4300009,Applied Chemistry
+1(CtoD),22,C4312201,Introduction to Mining and Geology
+1(CtoD),22,C4300004,Applied Physics
+1(CtoD),22,C4300002,Communication Skills in English
+1(CtoD),22,C4300001,Mathematics
+1(CtoD),22,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),23,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),23,C300002,English
+1(CtoD),23,C300001,Basic Mathematics
+1(CtoD),23,C4300001,Mathematics
+1(CtoD),23,C300015,Fundamental Of Mechanical Engineering
+1(CtoD),23,C312301,Basic Polymer Chemistry
+1(CtoD),23,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),23,C4312301,Basic Polymer Chemistry
+1(CtoD),24,C300002,English
+1(CtoD),24,C4311101,Fundamentals of Electrical Engineering
+1(CtoD),24,C300001,Basic Mathematics
+1(CtoD),24,C4300006,Engineering Chemistry
+1(CtoD),24,C4300002,Communication Skills in English
+1(CtoD),24,C4300001,Mathematics
+1(CtoD),24,C300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+1(CtoD),24,C320901,Basic Of Electrical Engineering
+1(CtoD),28,C4300011,Basic Chemistry
+1(CtoD),28,C300002,English
+1(CtoD),28,C4312801,Elements of Textile & Garment Technology
+1(CtoD),28,C300001,Basic Mathematics
+1(CtoD),28,C4300002,Communication Skills in English
+1(CtoD),28,C4300001,Mathematics
+1(CtoD),28,C300011,BASIC CHEMISTRY ( GROUP-4)
+1(CtoD),28,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),28,C300007,Basic Engineering Drawing
+1(CtoD),29,C300002,English
+1(CtoD),29,C4312901,Fundamentals of Textile
+1(CtoD),29,C4300004,Applied Physics
+1(CtoD),29,C300001,Basic Mathematics
+1(CtoD),29,C4300002,Communication Skills in English
+1(CtoD),29,C4300001,Mathematics
+1(CtoD),29,C300011,BASIC CHEMISTRY ( GROUP-4)
+1(CtoD),29,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),31,C4310702,Basic Computer Programming
+1(CtoD),31,C4300018,Fundamentals of Electrical and Electronics
+1(CtoD),31,C4300003,Environment and Sustainability
+1(CtoD),31,C4300002,Communication Skills in English
+1(CtoD),31,C4300001,Mathematics
+1(CtoD),32,C4313202,Elements of Electrical & Electronics Engineering
+1(CtoD),32,C4300002,Communication Skills in English
+1(CtoD),32,C4300001,Mathematics
+1(CtoD),32,C4300005,Physics
+1(CtoD),41,C4300002,Communication Skills in English
+1(CtoD),41,C4300001,Mathematics
+1(CtoD),41,C4321704,Fundamentals of Electrical and Electronic Instrumentation
+1(CtoD),41,C4300005,Physics
+1(CtoD),50,C4315002,Basic Architectural Drawing
+1(CtoD),50,C300002,English
+1(CtoD),50,C4315004,Basic Design
+1(CtoD),50,C4300002,Communication Skills in English
+1(CtoD),50,C4300001,Mathematics
+1(CtoD),50,C315004,Basic Design
+1(CtoD),50,C315003,Building Materials
+1(CtoD),50,C4315003,Building Materials
+1(CtoD),51,C4315101,Design Fundamental
+1(CtoD),51,C4300002,Communication Skills in English
+1(CtoD),51,C4315102,Clothing Construction
+1(CtoD),51,C4315103,Fiber Science and Application
+1(CtoD),52,C4300004,Applied Physics
+1(CtoD),52,C4300002,Communication Skills in English
+1(CtoD),52,C4300001,Mathematics
+1(CtoD),52,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),55,C300004,ENGINEERING PHYSICS ( GROUP-1)
+1(CtoD),55,C300003,Environment Conservation & Hazard Management
+1(CtoD),55,C300002,English
+1(CtoD),55,C4300004,Applied Physics
+1(CtoD),55,C300001,Basic Mathematics
+1(CtoD),55,C4300002,Communication Skills in English
+1(CtoD),55,C4300001,Mathematics
+1(CtoD),55,C4300007,Engineering Drawing
+1(CtoD),55,C300014,Basic Of Electrical & Electronics Engineering
+1(CtoD),58,C4315801,Fundamentals of Printing
+1(CtoD),58,C4300004,Applied Physics
+1(CtoD),58,C4300002,Communication Skills in English
+1(CtoD),58,C4300001,Mathematics
+1(CtoD),58,C4300013,Basic Engineering Drawing and Graphics
+1(CtoD),59,C300003,Environment Conservation & Hazard Management
+1(CtoD),59,C300002,English
+1(CtoD),59,C4315902,Drawing Sketching & Painting
+1(CtoD),59,C4315904,Fundamental of Yarn Technology
+1(CtoD),59,C4300001,Mathematics
+1(CtoD),59,C315902,Fundamental Of Textile Technology
+1(CtoD),59,C4315903,Fundamentals of Fiber Science
+1(CtoD),64,C4300004,Applied Physics
+1(CtoD),64,C4300002,Communication Skills in English
+1(CtoD),64,C4300001,Mathematics
+1(CtoD),64,C4316402,Basics of Renewable Energy
+1(CtoD),64,C4300007,Engineering Drawing
+1(CtoD),65,C4300004,Applied Physics
+1(CtoD),65,C4316501,Mechanical Drawing and Drafting
+1(CtoD),65,C4300002,Communication Skills in English
+1(CtoD),65,C4300001,Mathematics
+1(CtoD) New,002,DI01C00021,Mathematics-I
+1(CtoD) New,002,DI01C00181,Engineering Materials Science
+1(CtoD) New,002,DI01C00031,Communication Skills in English
+1(CtoD) New,002,DI01C00111,Engineering Graphics
+1(CtoD) New,002,DI01C02011,Basics of Automotive Science
+1(CtoD) New,003,DI01C03021,Fundamentals of Biomedical Engineering
+1(CtoD) New,003,DI01C00061,Modern Physics
+1(CtoD) New,003,DI01C00021,Mathematics-I
+1(CtoD) New,003,DI01C00031,Communication Skills in English
+1(CtoD) New,003,DI01C03031,Basics of Medical Electronics
+1(CtoD) New,003,DI01C03011,Human Biology-I
+1(CtoD) New,005,DI01C00161,Basic Chemistry
+1(CtoD) New,005,DI01C00021,Mathematics-I
+1(CtoD) New,005,DI01C00031,Communication Skills in English
+1(CtoD) New,005,DI01C00111,Engineering Graphics
+1(CtoD) New,005,DI01C05021,Material Science and Technology
+1(CtoD) New,005,DI01C05011,Plant Utilities
+1(CtoD) New,006,DI01C00121,Applied Physics
+1(CtoD) New,006,DI01C00021,Mathematics-I
+1(CtoD) New,006,DI01C00031,Communication Skills in English
+1(CtoD) New,006,DI01C00111,Engineering Graphics
+1(CtoD) New,006,DI01C06011,Civil Engineering Drawing
+1(CtoD) New,006,DI01C06021,Construction Material
+1(CtoD) New,007,DI01C00061,Modern Physics
+1(CtoD) New,007,DI01C00021,Mathematics-I
+1(CtoD) New,007,DI01C00031,Communication Skills in English
+1(CtoD) New,007,DI01C00131,Computer Programming Fundamentals
+1(CtoD) New,007,DI01C00151,Basics of Electronics
+1(CtoD) New,009,DI01C00021,Mathematics-I
+1(CtoD) New,009,DI01C00031,Communication Skills in English
+1(CtoD) New,009,DI01C09011,Electronics Devices & Circuits
+1(CtoD) New,009,DI01C00081,DC Circuit
+1(CtoD) New,009,DI01C00071,Engineering Chemistry
+1(CtoD) New,011,DI01C00061,Modern Physics
+1(CtoD) New,011,DI01C00021,Mathematics-I
+1(CtoD) New,011,DI01C00031,Communication Skills in English
+1(CtoD) New,011,DI01C00051,Fundamentals of Electronics
+1(CtoD) New,011,DI01C00101,Fundamentals of Electrical Engineering
+1(CtoD) New,013,DI01C00121,Applied Physics
+1(CtoD) New,013,DI01C00021,Mathematics-I
+1(CtoD) New,013,DI01C00031,Communication Skills in English
+1(CtoD) New,013,DI01C00111,Engineering Graphics
+1(CtoD) New,013,DI01C13011,Water Supply and Sewerage System
+1(CtoD) New,016,DI01C16011,Python Programming
+1(CtoD) New,016,DI01C00021,Mathematics-I
+1(CtoD) New,016,DI01C00031,Communication Skills in English
+1(CtoD) New,016,DI01C16021,Introduction to I.T. Systems
+1(CtoD) New,016,DI01C00071,Engineering Chemistry
+1(CtoD) New,017,DI01C00061,Modern Physics
+1(CtoD) New,017,DI01C00021,Mathematics-I
+1(CtoD) New,017,DI01C00031,Communication Skills in English
+1(CtoD) New,017,DI01C17011,Fundamentals of Instrumentation & Control Engineering
+1(CtoD) New,017,DI01C17021,Basics of  Information Technology Systems
+1(CtoD) New,019,DI01C00021,Mathematics-I
+1(CtoD) New,019,DI01C00181,Engineering Materials Science
+1(CtoD) New,019,DI01C00031,Communication Skills in English
+1(CtoD) New,019,DI01C00111,Engineering Graphics
+1(CtoD) New,019,DI01C00191,Elements of Mechanical Engineering
+1(CtoD) New,020,DI01C00021,Mathematics-I
+1(CtoD) New,020,DI01C00181,Engineering Materials Science
+1(CtoD) New,020,DI01C00031,Communication Skills in English
+1(CtoD) New,020,DI01C00111,Engineering Graphics
+1(CtoD) New,020,DI01C20011,Elements of Mechatronics Engineering
+1(CtoD) New,021,DI01C00021,Mathematics-I
+1(CtoD) New,021,DI01C00031,Communication Skills in English
+1(CtoD) New,021,DI01C00111,Engineering Graphics
+1(CtoD) New,021,DI01C21011,Applied Chemistry
+1(CtoD) New,021,DI01C21021,Introduction to Engineering Materials
+1(CtoD) New,022,DI01C22021,Introduction to Mining
+1(CtoD) New,022,DI01C00121,Applied Physics
+1(CtoD) New,022,DI01C00021,Mathematics-I
+1(CtoD) New,022,DI01C00031,Communication Skills in English
+1(CtoD) New,022,DI01C00111,Engineering Graphics
+1(CtoD) New,022,DI01C22011,Mining Geology
+1(CtoD) New,023,DI01C00021,Mathematics-I
+1(CtoD) New,023,DI01C00031,Communication Skills in English
+1(CtoD) New,023,DI01C00111,Engineering Graphics
+1(CtoD) New,023,DI01C23021,Basic Polymer Chemistry
+1(CtoD) New,024,DI01C00021,Mathematics-I
+1(CtoD) New,024,DI01C00031,Communication Skills in English
+1(CtoD) New,024,DI01C00111,Engineering Graphics
+1(CtoD) New,024,DI01C00101,Fundamentals of Electrical Engineering
+1(CtoD) New,024,DI01C00071,Engineering Chemistry
+1(CtoD) New,028,DI01C28021,Textile Fiber Science - I
+1(CtoD) New,028,DI01C00161,Basic Chemistry
+1(CtoD) New,028,DI01C00021,Mathematics-I
+1(CtoD) New,028,DI01C00031,Communication Skills in English
+1(CtoD) New,028,DI01C00111,Engineering Graphics
+1(CtoD) New,028,DI01C28011,Elements of Textile and Garment Technology
+1(CtoD) New,029,DI01C29031,Weaving Technology-I
+1(CtoD) New,029,DI01C00121,Applied Physics
+1(CtoD) New,029,DI01C00021,Mathematics-I
+1(CtoD) New,029,DI01C00031,Communication Skills in English
+1(CtoD) New,029,DI01C29011,Textile Fiber Technology
+1(CtoD) New,029,DI01C29021,Spinning Technology -I
+1(CtoD) New,031,DI01C00061,Modern Physics
+1(CtoD) New,031,DI01C00021,Mathematics-I
+1(CtoD) New,031,DI01C00031,Communication Skills in English
+1(CtoD) New,031,DI01C00131,Computer Programming Fundamentals
+1(CtoD) New,031,DI01C00151,Basics of Electronics
+1(CtoD) New,032,DI01C00061,Modern Physics
+1(CtoD) New,032,DI01C00021,Mathematics-I
+1(CtoD) New,032,DI01C00031,Communication Skills in English
+1(CtoD) New,032,DI01C00051,Fundamentals of Electronics
+1(CtoD) New,041,DI01C00061,Modern Physics
+1(CtoD) New,041,DI01C00021,Mathematics-I
+1(CtoD) New,041,DI01C00031,Communication Skills in English
+1(CtoD) New,041,DI01C00111,Engineering Graphics
+1(CtoD) New,041,DI01C41011,Principles of Electronics in Automation
+1(CtoD) New,051,DI01C51011,Basics of Clothing & Wardrobe Planning
+1(CtoD) New,051,DI01C00031,Communication Skills in English
+1(CtoD) New,051,DI01C51021,Fundamental of Design
+1(CtoD) New,051,DI01C51031,Needle Art
+1(CtoD) New,051,DI01C51041,Basics of Fiber and Yarn Manufacturing
+1(CtoD) New,052,DI01C52021,Introduction to Ceramics
+1(CtoD) New,052,DI01C00121,Applied Physics
+1(CtoD) New,052,DI01C00021,Mathematics-I
+1(CtoD) New,052,DI01C00031,Communication Skills in English
+1(CtoD) New,052,DI01C00111,Engineering Graphics
+1(CtoD) New,052,DI01C52011,Ceramic Materials
+1(CtoD) New,055,DI01C00021,Mathematics-I
+1(CtoD) New,055,DI01C00181,Engineering Materials Science
+1(CtoD) New,055,DI01C00031,Communication Skills in English
+1(CtoD) New,055,DI01C00111,Engineering Graphics
+1(CtoD) New,055,DI01C55011,Fabrication Technology-1
+1(CtoD) New,058,DI01C58031,Printer’s Science
+1(CtoD) New,058,DI01C00121,Applied Physics
+1(CtoD) New,058,DI01C00021,Mathematics-I
+1(CtoD) New,058,DI01C00031,Communication Skills in English
+1(CtoD) New,058,DI01C58011,Fundamentals of Printing Technology
+1(CtoD) New,058,DI01C58021,Basic Graphic Design
+1(CtoD) New,059,DI01C00021,Mathematics-I
+1(CtoD) New,059,DI01C00031,Communication Skills in English
+1(CtoD) New,059,DI01C59011,Fundamentals of Yarn & Fabric Technology
+1(CtoD) New,059,DI01C59021,Introduction to Fashion Design
+1(CtoD) New,059,DI01C59041,Fundamentals of Fiber Science
+1(CtoD) New,064,DI01C00121,Applied Physics
+1(CtoD) New,064,DI01C00021,Mathematics-I
+1(CtoD) New,064,DI01C00031,Communication Skills in English
+1(CtoD) New,064,DI01C00081,DC Circuit
+1(CtoD) New,064,DI01C64011,Basics of Mechanical Engineering
+1(CtoD) New,065,DI01C00021,Mathematics-I
+1(CtoD) New,065,DI01C00181,Engineering Materials Science
+1(CtoD) New,065,DI01C00031,Communication Skills in English
+1(CtoD) New,065,DI01C00111,Engineering Graphics
+1(CtoD) New,065,DI01C00191,Elements of Mechanical Engineering
+2 (CtoD),02,C4300020,Engineering Material
+2 (CtoD),02,C4300008,Engineering Mechanics
+2 (CtoD),02,C4320202,Thermodynamics & Hydraulics
+2 (CtoD),03,C4300003,Environment and Sustainability
+2 (CtoD),03,C4300006,Engineering Chemistry
+2 (CtoD),03,C4320002,Engineering Mathematics
+2 (CtoD),03,C4320301,Human Biology-II
+2 (CtoD),05,C4320001,Applied Mathematics
+2 (CtoD),05,C4300013,Basic Engineering Drawing and Graphics
+2 (CtoD),05,C4320501,Industrial Chemistry
+2 (CtoD),05,C4320503,Material Science and Technology
+2 (CtoD),06,C4300003,Environment and Sustainability
+2 (CtoD),06,C4320001,Applied Mathematics
+2 (CtoD),06,C4320601,Civil Engineering Drawing
+2 (CtoD),06,C4300008,Engineering Mechanics
+2 (CtoD),06,C4300009,Applied Chemistry
+2 (CtoD),07,C4320702,Basic Object Oriented Programming
+2 (CtoD),07,C4320002,Engineering Mathematics
+2 (CtoD),07,C4320703,Basics of Digital Electronics
+2 (CtoD),07,C4300005,Physics
+2 (CtoD),09,C4300003,Environment and Sustainability
+2 (CtoD),09,C4320002,Engineering Mathematics
+2 (CtoD),09,C4300013,Basic Engineering Drawing and Graphics
+2 (CtoD),09,C4320901,A.C. Circuits
+2 (CtoD),09,C4300005,Physics
+2 (CtoD),11,C4300003,Environment and Sustainability
+2 (CtoD),11,C4320002,Engineering Mathematics
+2 (CtoD),11,C4321103,Electronic Circuits & Applications
+2 (CtoD),11,C4321102,Digital Electronics
+2 (CtoD),13,C4300003,Environment and Sustainability
+2 (CtoD),13,C4320002,Engineering Mathematics
+2 (CtoD),13,C4320601,Civil Engineering Drawing
+2 (CtoD),13,C4300008,Engineering Mechanics
+2 (CtoD),13,C4300009,Applied Chemistry
+2 (CtoD),16,C4300003,Environment and Sustainability
+2 (CtoD),16,C4320002,Engineering Mathematics
+2 (CtoD),16,C4321602,Advanced Python Programming
+2 (CtoD),16,C4300005,Physics
+2 (CtoD),17,C4300003,Environment and Sustainability
+2 (CtoD),17,C4320002,Engineering Mathematics
+2 (CtoD),17,C4321704,Fundamentals of Electrical and Electronic Instrumentation
+2 (CtoD),17,C4321702,Fundamentals of Information Technology Systems
+2 (CtoD),17,C4321701,Industrial Transducers
+2 (CtoD),18,C4300003,Environment and Sustainability
+2 (CtoD),18,C4320001,Applied Mathematics
+2 (CtoD),18,C4300008,Engineering Mechanics
+2 (CtoD),18,C4321902,Mechanical Drafting
+2 (CtoD),19,C4300003,Environment and Sustainability
+2 (CtoD),19,C4320001,Applied Mathematics
+2 (CtoD),19,C4300008,Engineering Mechanics
+2 (CtoD),19,C4321902,Mechanical Drafting
+2 (CtoD),20,C4300020,Engineering Material
+2 (CtoD),20,C4300008,Engineering Mechanics
+2 (CtoD),20,C4321902,Mechanical Drafting
+2 (CtoD),21,C4300004,Applied Physics
+2 (CtoD),21,C4300003,Environment and Sustainability
+2 (CtoD),21,C4322101,Physical Metallurgy-I
+2 (CtoD),21,C4300008,Engineering Mechanics
+2 (CtoD),22,C4300003,Environment and Sustainability
+2 (CtoD),22,C4320001,Applied Mathematics
+2 (CtoD),22,C4322201,Basic Mine Surveying
+2 (CtoD),22,C4300008,Engineering Mechanics
+2 (CtoD),22,C4300009,Applied Chemistry
+2 (CtoD),23,C4300004,Applied Physics
+2 (CtoD),23,C4300003,Environment and Sustainability
+2 (CtoD),23,C4322302,Mould Fabrication Technology - I
+2 (CtoD),23,C4322301,Polymer Chemistry
+2 (CtoD),24,C4300003,Environment and Sustainability
+2 (CtoD),24,C4320002,Engineering Mathematics
+2 (CtoD),24,C4322402,Basic Electronics
+2 (CtoD),24,C4322401,Sensors and transducers
+2 (CtoD),24,C4300005,Physics
+2 (CtoD),28,C4300004,Applied Physics
+2 (CtoD),28,C4300003,Environment and Sustainability
+2 (CtoD),28,C4322802,Natural Textile Fiber Science
+2 (CtoD),28,C4322801,Organic Chemistry
+2 (CtoD),28,C4322804,Principles of Textile Chemical Processing
+2 (CtoD),29,C4300011,Basic Chemistry
+2 (CtoD),29,C4300003,Environment and Sustainability
+2 (CtoD),29,C4322902,Spinning Technology-I
+2 (CtoD),29,C4322901,Textile fiber Technology
+2 (CtoD),29,C4322903,Weaving Technology -I
+2 (CtoD),31,C4320702,Basic Object Oriented Programming
+2 (CtoD),31,C4320002,Engineering Mathematics
+2 (CtoD),31,C4320703,Basics of Digital Electronics
+2 (CtoD),31,C4300005,Physics
+2 (CtoD),32,C4323202,Electronics Devices & Circuits
+2 (CtoD),32,C4323203,Python Programming
+2 (CtoD),32,C4300003,Environment and Sustainability
+2 (CtoD),32,C4320001,Applied Mathematics
+2 (CtoD),32,C4321102,Digital Electronics
+2 (CtoD),41,C4324103,Mechanical Engineering for Robotics
+2 (CtoD),41,C4300003,Environment and Sustainability
+2 (CtoD),41,C4320002,Engineering Mathematics
+2 (CtoD),41,C4324102,Analog Devices and Circuits
+2 (CtoD),41,C4324101,Sensors and Measurements
+2 (CtoD),50,C4300003,Environment and Sustainability
+2 (CtoD),50,C4325003,Advanced Building Materials
+2 (CtoD),50,C4325004,History of Indian Architecture
+2 (CtoD),50,C4325002,Architectural Drawing
+2 (CtoD),51,C4300003,Environment and Sustainability
+2 (CtoD),51,C4325104,Fabric Science and its Application
+2 (CtoD),51,C4325103,Basics of Fashion
+2 (CtoD),51,C4325105,Needle Craft
+2 (CtoD),52,C4300003,Environment and Sustainability
+2 (CtoD),52,C4325203,Ceramic Materials
+2 (CtoD),52,C4325202,Introduction to Ceramics
+2 (CtoD),52,C4300009,Applied Chemistry
+2 (CtoD),55,C4300003,Environment and Sustainability
+2 (CtoD),55,C4325501,Fabrication Drafting
+2 (CtoD),55,C4300008,Engineering Mechanics
+2 (CtoD),58,C4300011,Basic Chemistry
+2 (CtoD),58,C4300003,Environment and Sustainability
+2 (CtoD),58,C4325802,Basic Graphic Design
+2 (CtoD),58,C4325801,Text Generation
+2 (CtoD),59,C4300011,Basic Chemistry
+2 (CtoD),59,C4300003,Environment and Sustainability
+2 (CtoD),59,C4325902,Fabric Design- I
+2 (CtoD),59,C4325903,Elements of Fashion Designing
+2 (CtoD),59,C4325901,Fundamentals of Fabric Technology
+2 (CtoD),65,C4326502,Basics of Mechanical Design
+2 (CtoD),65,C4300003,Environment and Sustainability
+2 (CtoD),65,C4320001,Applied Mathematics
+2 (CtoD),65,C4326501,Manufacturing Engineering Processes-I
+2 (CtoD) New,002,DI01C00121,Applied Physics
+2 (CtoD) New,002,DI02C00011,Applied Mathematics
+2 (CtoD) New,002,DI02C00051,Environmental Sustainability
+2 (CtoD) New,002,DI02C00131,Contributor Personality Development
+2 (CtoD) New,002,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,002,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,002,DI02C02021,Fuels and Lubricants
+2 (CtoD) New,003,DI02C00161,Fundamental of Digital Electronics
+2 (CtoD) New,003,DI02C00011,Applied Mathematics
+2 (CtoD) New,003,DI02C00051,Environmental Sustainability
+2 (CtoD) New,003,DI02C00131,Contributor Personality Development
+2 (CtoD) New,003,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,003,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,003,DI02C03011,Human Biology-II
+2 (CtoD) New,003,DI01C00071,Engineering Chemistry
+2 (CtoD) New,005,DI02C05021,Mechanical Operation
+2 (CtoD) New,005,DI01C00121,Applied Physics
+2 (CtoD) New,005,DI02C00011,Applied Mathematics
+2 (CtoD) New,005,DI02C00051,Environmental Sustainability
+2 (CtoD) New,005,DI02C00131,Contributor Personality Development
+2 (CtoD) New,005,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,005,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,005,DI02C05011,Basic Chemical Engineering Calculations
+2 (CtoD) New,006,DI02C06011,Basic Surveying
+2 (CtoD) New,006,DI02C00011,Applied Mathematics
+2 (CtoD) New,006,DI02C00051,Environmental Sustainability
+2 (CtoD) New,006,DI02C00131,Contributor Personality Development
+2 (CtoD) New,006,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,006,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,006,DI01C21011,Applied Chemistry
+2 (CtoD) New,006,DI02C00071,Engineering Mechanics
+2 (CtoD) New,007,DI02C00101,Scripting Language
+2 (CtoD) New,007,DI02C00011,Applied Mathematics
+2 (CtoD) New,007,DI02C00051,Environmental Sustainability
+2 (CtoD) New,007,DI02C00131,Contributor Personality Development
+2 (CtoD) New,007,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,007,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,007,DI01C00071,Engineering Chemistry
+2 (CtoD) New,009,DI02C00161,Fundamental of Digital Electronics
+2 (CtoD) New,009,DI02C00171,AC Fundamental
+2 (CtoD) New,009,DI01C00061,Modern Physics
+2 (CtoD) New,009,DI02C00021,Engineering Mathematics
+2 (CtoD) New,009,DI02C00051,Environmental Sustainability
+2 (CtoD) New,009,DI02C00131,Contributor Personality Development
+2 (CtoD) New,009,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,009,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,011,DI02C00011,Applied Mathematics
+2 (CtoD) New,011,DI02C00051,Environmental Sustainability
+2 (CtoD) New,011,DI02C00131,Contributor Personality Development
+2 (CtoD) New,011,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,011,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,011,DI02C11011,Electronics Circuit and Application (ECA)
+2 (CtoD) New,011,DI01C00071,Engineering Chemistry
+2 (CtoD) New,013,DI02C13011,Basic Civil Engineering Drawing
+2 (CtoD) New,013,DI02C00011,Applied Mathematics
+2 (CtoD) New,013,DI02C00051,Environmental Sustainability
+2 (CtoD) New,013,DI02C00131,Contributor Personality Development
+2 (CtoD) New,013,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,013,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,013,DI01C21011,Applied Chemistry
+2 (CtoD) New,013,DI02C00071,Engineering Mechanics
+2 (CtoD) New,016,DI02C16021,Fundamentals of Software Development
+2 (CtoD) New,016,DI01C00061,Modern Physics
+2 (CtoD) New,016,DI02C00011,Applied Mathematics
+2 (CtoD) New,016,DI02C00051,Environmental Sustainability
+2 (CtoD) New,016,DI02C00131,Contributor Personality Development
+2 (CtoD) New,016,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,016,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,016,DI02C16011,Advanced Python Programming
+2 (CtoD) New,017,DI02C00181,Digital Techniques
+2 (CtoD) New,017,DI01C00161,Basic Chemistry
+2 (CtoD) New,017,DI02C00021,Engineering Mathematics
+2 (CtoD) New,017,DI02C17011,Fundamentals of Electrical and Electronic in Instrumentation
+2 (CtoD) New,017,DI02C00051,Environmental Sustainability
+2 (CtoD) New,017,DI02C00131,Contributor Personality Development
+2 (CtoD) New,017,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,017,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,019,DI01C00121,Applied Physics
+2 (CtoD) New,019,DI02C00011,Applied Mathematics
+2 (CtoD) New,019,DI02C00051,Environmental Sustainability
+2 (CtoD) New,019,DI02C00131,Contributor Personality Development
+2 (CtoD) New,019,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,019,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,019,DI02C00121,Mechanical Drafting
+2 (CtoD) New,020,DI01C00121,Applied Physics
+2 (CtoD) New,020,DI02C00011,Applied Mathematics
+2 (CtoD) New,020,DI02C00051,Environmental Sustainability
+2 (CtoD) New,020,DI02C00131,Contributor Personality Development
+2 (CtoD) New,020,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,020,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,020,DI02C00121,Mechanical Drafting
+2 (CtoD) New,021,DI01C00061,Modern Physics
+2 (CtoD) New,021,DI02C00011,Applied Mathematics
+2 (CtoD) New,021,DI02C00051,Environmental Sustainability
+2 (CtoD) New,021,DI02C00131,Contributor Personality Development
+2 (CtoD) New,021,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,021,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,021,DI02C21021,Mineral Processing
+2 (CtoD) New,022,DI02C22021,Basic Mine Surveying
+2 (CtoD) New,022,DI02C00011,Applied Mathematics
+2 (CtoD) New,022,DI02C00051,Environmental Sustainability
+2 (CtoD) New,022,DI02C00131,Contributor Personality Development
+2 (CtoD) New,022,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,022,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,022,DI01C21011,Applied Chemistry
+2 (CtoD) New,022,DI02C22011,Drilling and Blasting Technology
+2 (CtoD) New,023,DI02C00011,Applied Mathematics
+2 (CtoD) New,023,DI02C00051,Environmental Sustainability
+2 (CtoD) New,023,DI02C00131,Contributor Personality Development
+2 (CtoD) New,023,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,023,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,023,DI02C23011,Polymer Chemistry
+2 (CtoD) New,023,DI02C23021,Mould Fabrication Technology-I
+2 (CtoD) New,024,DI02C24021,Sensors and Transducers
+2 (CtoD) New,024,DI01C00061,Modern Physics
+2 (CtoD) New,024,DI02C00021,Engineering Mathematics
+2 (CtoD) New,024,DI02C24011,Basic Electronics
+2 (CtoD) New,024,DI02C00051,Environmental Sustainability
+2 (CtoD) New,024,DI02C00131,Contributor Personality Development
+2 (CtoD) New,024,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,024,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,028,DI02C28021,Principles of Textile Chemical Processing
+2 (CtoD) New,028,DI01C00121,Applied Physics
+2 (CtoD) New,028,DI02C00011,Applied Mathematics
+2 (CtoD) New,028,DI02C00051,Environmental Sustainability
+2 (CtoD) New,028,DI02C00131,Contributor Personality Development
+2 (CtoD) New,028,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,028,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,028,DI02C28011,Textile Fiber Science - II
+2 (CtoD) New,029,DI02C29021,Weaving Technology - II
+2 (CtoD) New,029,DI01C00161,Basic Chemistry
+2 (CtoD) New,029,DI02C00011,Applied Mathematics
+2 (CtoD) New,029,DI02C00051,Environmental Sustainability
+2 (CtoD) New,029,DI02C00131,Contributor Personality Development
+2 (CtoD) New,029,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,029,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,029,DI02C29011,Spinning Technology - II
+2 (CtoD) New,031,DI02C00101,Scripting Language
+2 (CtoD) New,031,DI02C00011,Applied Mathematics
+2 (CtoD) New,031,DI02C00051,Environmental Sustainability
+2 (CtoD) New,031,DI02C00131,Contributor Personality Development
+2 (CtoD) New,031,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,031,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,031,DI01C00071,Engineering Chemistry
+2 (CtoD) New,032,DI02C00011,Applied Mathematics
+2 (CtoD) New,032,DI02C00051,Environmental Sustainability
+2 (CtoD) New,032,DI02C00131,Contributor Personality Development
+2 (CtoD) New,032,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,032,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,032,DI02C32011,Python Programming
+2 (CtoD) New,032,DI01C00071,Engineering Chemistry
+2 (CtoD) New,041,DI02C00181,Digital Techniques
+2 (CtoD) New,041,DI01C00161,Basic Chemistry
+2 (CtoD) New,041,DI02C00021,Engineering Mathematics
+2 (CtoD) New,041,DI02C41011,Mechanical Engineering for Robotics
+2 (CtoD) New,041,DI02C00051,Environmental Sustainability
+2 (CtoD) New,041,DI02C00131,Contributor Personality Development
+2 (CtoD) New,041,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,041,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,051,DI02C51011,Fabric Production and Technology
+2 (CtoD) New,051,DI02C00051,Environmental Sustainability
+2 (CtoD) New,051,DI02C00131,Contributor Personality Development
+2 (CtoD) New,051,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,051,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,051,DI02C51031,Pattern Making & Grading
+2 (CtoD) New,051,DI01C00071,Engineering Chemistry
+2 (CtoD) New,052,DI02C00011,Applied Mathematics
+2 (CtoD) New,052,DI02C00051,Environmental Sustainability
+2 (CtoD) New,052,DI02C00131,Contributor Personality Development
+2 (CtoD) New,052,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,052,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,052,DI01C21011,Applied Chemistry
+2 (CtoD) New,052,DI02C52011,Ceramic Science
+2 (CtoD) New,055,DI01C00121,Applied Physics
+2 (CtoD) New,055,DI02C00011,Applied Mathematics
+2 (CtoD) New,055,DI02C00051,Environmental Sustainability
+2 (CtoD) New,055,DI02C00131,Contributor Personality Development
+2 (CtoD) New,055,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,055,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,055,DI02C55021,Fabrication Drafting
+2 (CtoD) New,058,DI01C00161,Basic Chemistry
+2 (CtoD) New,058,DI02C00011,Applied Mathematics
+2 (CtoD) New,058,DI02C00051,Environmental Sustainability
+2 (CtoD) New,058,DI02C00131,Contributor Personality Development
+2 (CtoD) New,058,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,058,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,058,DI02C58021,Text Generation
+2 (CtoD) New,059,DI01C00121,Applied Physics
+2 (CtoD) New,059,DI02C00011,Applied Mathematics
+2 (CtoD) New,059,DI02C00051,Environmental Sustainability
+2 (CtoD) New,059,DI02C00131,Contributor Personality Development
+2 (CtoD) New,059,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,059,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,059,DI02C59021,Fabric Design-1
+2 (CtoD) New,064,DI02C00171,AC Fundamental
+2 (CtoD) New,064,DI02C00021,Engineering Mathematics
+2 (CtoD) New,064,DI02C64011,Electronics Devices & Circuits
+2 (CtoD) New,064,DI02C00051,Environmental Sustainability
+2 (CtoD) New,064,DI02C00131,Contributor Personality Development
+2 (CtoD) New,064,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,064,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,064,DI01C00071,Engineering Chemistry
+2 (CtoD) New,065,DI01C00121,Applied Physics
+2 (CtoD) New,065,DI02C00011,Applied Mathematics
+2 (CtoD) New,065,DI02C00051,Environmental Sustainability
+2 (CtoD) New,065,DI02C00131,Contributor Personality Development
+2 (CtoD) New,065,DI02C00141,Integrated Personality Development Course
+2 (CtoD) New,065,DI02C00151,Essence of Indian Knowledge and Tradition
+2 (CtoD) New,065,DI02C00121,Mechanical Drafting
+2 (NCC),NA,1032NA01,National Cadet Corps II
+2 (NCC),NC,1032NC01,National Cadet Corps II
+2 (NEW),002,DI01000121,Applied Physics
+2 (NEW),002,DI02000011,Applied Mathematics
+2 (NEW),002,DI02002021,Fuels and Lubricants
+2 (NEW),002,DI02000131,Contributor Personality Development
+2 (NEW),002,DI02000141,Integrated Personality Development Course
+2 (NEW),002,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),002,DI02000051,Environmental Sustainability
+2 (NEW),003,DI02000011,Applied Mathematics
+2 (NEW),003,DI02003011,Human Biology-II
+2 (NEW),003,DI01000071,Engineering Chemistry
+2 (NEW),003,DI02000131,Contributor Personality Development
+2 (NEW),003,DI02000141,Integrated Personality Development Course
+2 (NEW),003,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),003,DI02000161,Fundamental of Digital Electronics
+2 (NEW),003,DI02000051,Environmental Sustainability
+2 (NEW),005,DI01000121,Applied Physics
+2 (NEW),005,DI02000011,Applied Mathematics
+2 (NEW),005,DI02005021,Mechanical Operation
+2 (NEW),005,DI02000131,Contributor Personality Development
+2 (NEW),005,DI02000141,Integrated Personality Development Course
+2 (NEW),005,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),005,DI02005011,Basic Chemical Engineering Calculations
+2 (NEW),005,DI02000051,Environmental Sustainability
+2 (NEW),006,DI02006011,Basic Surveying
+2 (NEW),006,DI02000011,Applied Mathematics
+2 (NEW),006,DI01021011,Applied Chemistry
+2 (NEW),006,DI02000131,Contributor Personality Development
+2 (NEW),006,DI02000141,Integrated Personality Development Course
+2 (NEW),006,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),006,DI02000071,Engineering Mechanics
+2 (NEW),006,DI02000051,Environmental Sustainability
+2 (NEW),007,DI02000011,Applied Mathematics
+2 (NEW),007,DI01000071,Engineering Chemistry
+2 (NEW),007,DI02000131,Contributor Personality Development
+2 (NEW),007,DI02000141,Integrated Personality Development Course
+2 (NEW),007,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),007,DI02000101,Scripting Language
+2 (NEW),007,DI02000051,Environmental Sustainability
+2 (NEW),009,DI02000021,Engineering Mathematics
+2 (NEW),009,DI02000171,AC Fundamental
+2 (NEW),009,DI02000131,Contributor Personality Development
+2 (NEW),009,DI02000141,Integrated Personality Development Course
+2 (NEW),009,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),009,DI01000061,Modern Physics
+2 (NEW),009,DI02000161,Fundamental of Digital Electronics
+2 (NEW),009,DI02000051,Environmental Sustainability
+2 (NEW),011,DI02000011,Applied Mathematics
+2 (NEW),011,DI01000071,Engineering Chemistry
+2 (NEW),011,DI02000131,Contributor Personality Development
+2 (NEW),011,DI02000141,Integrated Personality Development Course
+2 (NEW),011,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),011,DI02011011,Electronics Circuit and Application (ECA)
+2 (NEW),011,DI02000051,Environmental Sustainability
+2 (NEW),013,DI02000011,Applied Mathematics
+2 (NEW),013,DI02013011,Basic Civil Engineering Drawing
+2 (NEW),013,DI01021011,Applied Chemistry
+2 (NEW),013,DI02000131,Contributor Personality Development
+2 (NEW),013,DI02000141,Integrated Personality Development Course
+2 (NEW),013,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),013,DI02000071,Engineering Mechanics
+2 (NEW),013,DI02000051,Environmental Sustainability
+2 (NEW),016,DI02000011,Applied Mathematics
+2 (NEW),016,DI02016021,Fundamentals of Software Development
+2 (NEW),016,DI02000131,Contributor Personality Development
+2 (NEW),016,DI02000141,Integrated Personality Development Course
+2 (NEW),016,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),016,DI01000061,Modern Physics
+2 (NEW),016,DI02016011,Advanced Python Programming
+2 (NEW),016,DI02000051,Environmental Sustainability
+2 (NEW),017,DI02000021,Engineering Mathematics
+2 (NEW),017,DI02017011,Fundamentals of Electrical and Electronic in Instrumentation
+2 (NEW),017,DI01000161,Basic Chemistry
+2 (NEW),017,DI02000131,Contributor Personality Development
+2 (NEW),017,DI02000141,Integrated Personality Development Course
+2 (NEW),017,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),017,DI02000181,Digital Techniques
+2 (NEW),017,DI02000051,Environmental Sustainability
+2 (NEW),019,DI01000121,Applied Physics
+2 (NEW),019,DI02000011,Applied Mathematics
+2 (NEW),019,DI02000131,Contributor Personality Development
+2 (NEW),019,DI02000141,Integrated Personality Development Course
+2 (NEW),019,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),019,DI02000121,Mechanical Drafting
+2 (NEW),019,DI02000051,Environmental Sustainability
+2 (NEW),020,DI01000121,Applied Physics
+2 (NEW),020,DI02000011,Applied Mathematics
+2 (NEW),020,DI02000131,Contributor Personality Development
+2 (NEW),020,DI02000141,Integrated Personality Development Course
+2 (NEW),020,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),020,DI02000121,Mechanical Drafting
+2 (NEW),020,DI02000051,Environmental Sustainability
+2 (NEW),021,DI02000011,Applied Mathematics
+2 (NEW),021,DI02000131,Contributor Personality Development
+2 (NEW),021,DI02000141,Integrated Personality Development Course
+2 (NEW),021,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),021,DI01000061,Modern Physics
+2 (NEW),021,DI02021021,Mineral Processing
+2 (NEW),021,DI02000051,Environmental Sustainability
+2 (NEW),022,DI02000011,Applied Mathematics
+2 (NEW),022,DI02022021,Basic Mine Surveying
+2 (NEW),022,DI01021011,Applied Chemistry
+2 (NEW),022,DI02000131,Contributor Personality Development
+2 (NEW),022,DI02000141,Integrated Personality Development Course
+2 (NEW),022,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),022,DI02022011,Drilling and Blasting Technology
+2 (NEW),022,DI02000051,Environmental Sustainability
+2 (NEW),023,DI02000011,Applied Mathematics
+2 (NEW),023,DI02023021,Mould Fabrication Technology-I
+2 (NEW),023,DI02000131,Contributor Personality Development
+2 (NEW),023,DI02000141,Integrated Personality Development Course
+2 (NEW),023,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),023,DI02023011,Polymer Chemistry
+2 (NEW),023,DI02000051,Environmental Sustainability
+2 (NEW),024,DI02000021,Engineering Mathematics
+2 (NEW),024,DI02024021,Sensors and Transducers
+2 (NEW),024,DI02000131,Contributor Personality Development
+2 (NEW),024,DI02000141,Integrated Personality Development Course
+2 (NEW),024,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),024,DI01000061,Modern Physics
+2 (NEW),024,DI02024011,Basic Electronics
+2 (NEW),024,DI02000051,Environmental Sustainability
+2 (NEW),028,DI01000121,Applied Physics
+2 (NEW),028,DI02000011,Applied Mathematics
+2 (NEW),028,DI02028021,Principles of Textile Chemical Processing
+2 (NEW),028,DI02000131,Contributor Personality Development
+2 (NEW),028,DI02000141,Integrated Personality Development Course
+2 (NEW),028,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),028,DI02028011,Textile Fiber Science - II
+2 (NEW),028,DI02000051,Environmental Sustainability
+2 (NEW),029,DI02000011,Applied Mathematics
+2 (NEW),029,DI02029021,Weaving Technology - II
+2 (NEW),029,DI01000161,Basic Chemistry
+2 (NEW),029,DI02000131,Contributor Personality Development
+2 (NEW),029,DI02000141,Integrated Personality Development Course
+2 (NEW),029,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),029,DI02029011,Spinning Technology - II
+2 (NEW),029,DI02000051,Environmental Sustainability
+2 (NEW),031,DI02000011,Applied Mathematics
+2 (NEW),031,DI01000071,Engineering Chemistry
+2 (NEW),031,DI02000131,Contributor Personality Development
+2 (NEW),031,DI02000141,Integrated Personality Development Course
+2 (NEW),031,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),031,DI02000101,Scripting Language
+2 (NEW),031,DI02000051,Environmental Sustainability
+2 (NEW),032,DI02000011,Applied Mathematics
+2 (NEW),032,DI01000071,Engineering Chemistry
+2 (NEW),032,DI02000131,Contributor Personality Development
+2 (NEW),032,DI02000141,Integrated Personality Development Course
+2 (NEW),032,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),032,DI02032011,Python Programming
+2 (NEW),032,DI02000051,Environmental Sustainability
+2 (NEW),041,DI02000021,Engineering Mathematics
+2 (NEW),041,DI02041011,Mechanical Engineering for Robotics
+2 (NEW),041,DI01000161,Basic Chemistry
+2 (NEW),041,DI02000131,Contributor Personality Development
+2 (NEW),041,DI02000141,Integrated Personality Development Course
+2 (NEW),041,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),041,DI02000181,Digital Techniques
+2 (NEW),041,DI02000051,Environmental Sustainability
+2 (NEW),051,DI02051011,Fabric Production and Technology
+2 (NEW),051,DI01000071,Engineering Chemistry
+2 (NEW),051,DI02000131,Contributor Personality Development
+2 (NEW),051,DI02000141,Integrated Personality Development Course
+2 (NEW),051,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),051,DI02051031,Pattern Making & Grading
+2 (NEW),051,DI02000051,Environmental Sustainability
+2 (NEW),052,DI02000011,Applied Mathematics
+2 (NEW),052,DI01021011,Applied Chemistry
+2 (NEW),052,DI02000131,Contributor Personality Development
+2 (NEW),052,DI02000141,Integrated Personality Development Course
+2 (NEW),052,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),052,DI02052011,Ceramic Science
+2 (NEW),052,DI02000051,Environmental Sustainability
+2 (NEW),055,DI01000121,Applied Physics
+2 (NEW),055,DI02000011,Applied Mathematics
+2 (NEW),055,DI02000131,Contributor Personality Development
+2 (NEW),055,DI02000141,Integrated Personality Development Course
+2 (NEW),055,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),055,DI02055021,Fabrication Drafting
+2 (NEW),055,DI02000051,Environmental Sustainability
+2 (NEW),058,DI02000011,Applied Mathematics
+2 (NEW),058,DI01000161,Basic Chemistry
+2 (NEW),058,DI02000131,Contributor Personality Development
+2 (NEW),058,DI02000141,Integrated Personality Development Course
+2 (NEW),058,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),058,DI02058021,Text Generation
+2 (NEW),058,DI02000051,Environmental Sustainability
+2 (NEW),059,DI01000121,Applied Physics
+2 (NEW),059,DI02000011,Applied Mathematics
+2 (NEW),059,DI02000131,Contributor Personality Development
+2 (NEW),059,DI02000141,Integrated Personality Development Course
+2 (NEW),059,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),059,DI02059021,Fabric Design-1
+2 (NEW),059,DI02000051,Environmental Sustainability
+2 (NEW),064,DI02000021,Engineering Mathematics
+2 (NEW),064,DI02000171,AC Fundamental
+2 (NEW),064,DI01000071,Engineering Chemistry
+2 (NEW),064,DI02000131,Contributor Personality Development
+2 (NEW),064,DI02000141,Integrated Personality Development Course
+2 (NEW),064,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),064,DI02064011,Electronics Devices & Circuits
+2 (NEW),064,DI02000051,Environmental Sustainability
+2 (NEW),065,DI01000121,Applied Physics
+2 (NEW),065,DI02000011,Applied Mathematics
+2 (NEW),065,DI02000131,Contributor Personality Development
+2 (NEW),065,DI02000141,Integrated Personality Development Course
+2 (NEW),065,DI02000151,Essence of Indian Knowledge and Tradition
+2 (NEW),065,DI02000121,Mechanical Drafting
+2 (NEW),065,DI02000051,Environmental Sustainability
+2 (OLD),01,3300015,Fundamental Of Mechanical Engineering
+2 (OLD),01,3321902,Material Science and Metallurgy
+2 (OLD),01,1990001,Contributor Personality Development
+2 (OLD),01,1990002,Integrated Personality Development Course
+2 (OLD),01,3990001,Contributor Personality Development
+2 (OLD),01,3320101,APPLIED MATHEMATICS-II
+2 (OLD),01,3300008,Applied Mechanics
+2 (OLD),01,3320102,Advance Engineering Drawing
+2 (OLD),02,3300014,Basic Of Electrical & Electronics Engineering
+2 (OLD),02,4300008,Engineering Mechanics
+2 (OLD),02,3300003,Environment Conservation And Hazard Management
+2 (OLD),02,3320201,Thermodynamics & Hydraulics
+2 (OLD),02,4300020,Engineering Material
+2 (OLD),02,3321902,Material Science and Metallurgy
+2 (OLD),02,1990001,Contributor Personality Development
+2 (OLD),02,1990002,Integrated Personality Development Course
+2 (OLD),02,3990001,Contributor Personality Development
+2 (OLD),02,4320202,Thermodynamics & Hydraulics
+2 (OLD),03,4320002,Engineering Mathematics
+2 (OLD),03,3300005,BASIC PHYSICS (GROUP-2)
+2 (OLD),03,3320301,Human Anatomy
+2 (OLD),03,4300006,Engineering Chemistry
+2 (OLD),03,3310702,Fundamental Of Digital Electronics
+2 (OLD),03,3320002,ADVANCED MATHEMATICS (GROUP-1)
+2 (OLD),03,1990001,Contributor Personality Development
+2 (OLD),03,1990002,Integrated Personality Development Course
+2 (OLD),03,3990001,Contributor Personality Development
+2 (OLD),03,4320301,Human Biology-II
+2 (OLD),03,4300003,Environment and Sustainability
+2 (OLD),03,3320302,Human Physiology
+2 (OLD),05,3320501,Organic Chemistry
+2 (OLD),05,4320501,Industrial Chemistry
+2 (OLD),05,3300003,Environment Conservation And Hazard Management
+2 (OLD),05,4320001,Applied Mathematics
+2 (OLD),05,3300007,Basic Engineering Drawing
+2 (OLD),05,3320002,ADVANCED MATHEMATICS (GROUP-1)
+2 (OLD),05,1990001,Contributor Personality Development
+2 (OLD),05,1990002,Integrated Personality Development Course
+2 (OLD),05,3990001,Contributor Personality Development
+2 (OLD),05,4320503,Material Science and Technology
+2 (OLD),05,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+2 (OLD),05,4300013,Basic Engineering Drawing and Graphics
+2 (OLD),06,4320601,Civil Engineering Drawing
+2 (OLD),06,3320003,ADVANCED MATHEMATICS(GROUP-2)
+2 (OLD),06,4300008,Engineering Mechanics
+2 (OLD),06,4320001,Applied Mathematics
+2 (OLD),06,3320601,Building Drawing
+2 (OLD),06,3300009,APPLIED CHEMISTRY (GROUP-1)
+2 (OLD),06,1990001,Contributor Personality Development
+2 (OLD),06,1990002,Integrated Personality Development Course
+2 (OLD),06,3990001,Contributor Personality Development
+2 (OLD),06,4300009,Applied Chemistry
+2 (OLD),06,3300008,Applied Mechanics
+2 (OLD),06,4300003,Environment and Sustainability
+2 (OLD),07,4320002,Engineering Mathematics
+2 (OLD),07,3300005,BASIC PHYSICS (GROUP-2)
+2 (OLD),07,3320702,Advanced Computer Programming
+2 (OLD),07,4300005,Physics
+2 (OLD),07,3320701,Basic Electronics
+2 (OLD),07,3320002,ADVANCED MATHEMATICS (GROUP-1)
+2 (OLD),07,1990001,Contributor Personality Development
+2 (OLD),07,1990002,Integrated Personality Development Course
+2 (OLD),07,3990001,Contributor Personality Development
+2 (OLD),07,4320703,Basics of Digital Electronics
+2 (OLD),07,4320702,Basic Object Oriented Programming
+2 (OLD),09,4320002,Engineering Mathematics
+2 (OLD),09,3300005,BASIC PHYSICS (GROUP-2)
+2 (OLD),09,3320903,D.c.circuits
+2 (OLD),09,4300005,Physics
+2 (OLD),09,3300007,Basic Engineering Drawing
+2 (OLD),09,3320002,ADVANCED MATHEMATICS (GROUP-1)
+2 (OLD),09,1990001,Contributor Personality Development
+2 (OLD),09,1990002,Integrated Personality Development Course
+2 (OLD),09,3990001,Contributor Personality Development
+2 (OLD),09,4300003,Environment and Sustainability
+2 (OLD),09,4320901,A.C. Circuits
+2 (OLD),09,4300013,Basic Engineering Drawing and Graphics
+2 (OLD),11,4320002,Engineering Mathematics
+2 (OLD),11,3321102,Electronic Networks
+2 (OLD),11,3300003,Environment Conservation And Hazard Management
+2 (OLD),11,3320002,ADVANCED MATHEMATICS (GROUP-1)
+2 (OLD),11,3321101,Electronic Circuits & Applications
+2 (OLD),11,1990001,Contributor Personality Development
+2 (OLD),11,1990002,Integrated Personality Development Course
+2 (OLD),11,3990001,Contributor Personality Development
+2 (OLD),11,4321102,Digital Electronics
+2 (OLD),11,4300003,Environment and Sustainability
+2 (OLD),11,4321103,Electronic Circuits & Applications
+2 (OLD),13,4320002,Engineering Mathematics
+2 (OLD),13,4320601,Civil Engineering Drawing
+2 (OLD),13,3320003,ADVANCED MATHEMATICS(GROUP-2)
+2 (OLD),13,4300008,Engineering Mechanics
+2 (OLD),13,3320601,Building Drawing
+2 (OLD),13,3300009,APPLIED CHEMISTRY (GROUP-1)
+2 (OLD),13,1990001,Contributor Personality Development
+2 (OLD),13,1990002,Integrated Personality Development Course
+2 (OLD),13,3990001,Contributor Personality Development
+2 (OLD),13,4300009,Applied Chemistry
+2 (OLD),13,3300008,Applied Mechanics
+2 (OLD),13,4300003,Environment and Sustainability
+2 (OLD),16,4320002,Engineering Mathematics
+2 (OLD),16,3300005,BASIC PHYSICS (GROUP-2)
+2 (OLD),16,3320702,Advanced Computer Programming
+2 (OLD),16,4300005,Physics
+2 (OLD),16,3320701,Basic Electronics
+2 (OLD),16,3320002,ADVANCED MATHEMATICS (GROUP-1)
+2 (OLD),16,1990001,Contributor Personality Development
+2 (OLD),16,1990002,Integrated Personality Development Course
+2 (OLD),16,3990001,Contributor Personality Development
+2 (OLD),16,4321602,Advanced Python Programming
+2 (OLD),16,4300003,Environment and Sustainability
+2 (OLD),17,4320002,Engineering Mathematics
+2 (OLD),17,3300005,BASIC PHYSICS (GROUP-2)
+2 (OLD),17,4321704,Fundamentals of Electrical and Electronic Instrumentation
+2 (OLD),17,3321702,Instrumentation Device Materials
+2 (OLD),17,3321701,Industrial Transducers
+2 (OLD),17,1990001,Contributor Personality Development
+2 (OLD),17,1990002,Integrated Personality Development Course
+2 (OLD),17,3990001,Contributor Personality Development
+2 (OLD),17,4321701,Industrial Transducers
+2 (OLD),17,4321702,Fundamentals of Information Technology Systems
+2 (OLD),17,4300003,Environment and Sustainability
+2 (OLD),17,3321703,Instrumentation Devices & Components
+2 (OLD),18,3320003,ADVANCED MATHEMATICS(GROUP-2)
+2 (OLD),18,4300008,Engineering Mechanics
+2 (OLD),18,4320001,Applied Mathematics
+2 (OLD),18,3321901,Mechanical Drafting
+2 (OLD),18,3321902,Material Science and Metallurgy
+2 (OLD),18,1990001,Contributor Personality Development
+2 (OLD),18,1990002,Integrated Personality Development Course
+2 (OLD),18,3990001,Contributor Personality Development
+2 (OLD),18,4321902,Mechanical Drafting
+2 (OLD),18,3300008,Applied Mechanics
+2 (OLD),18,4300003,Environment and Sustainability
+2 (OLD),19,3320003,ADVANCED MATHEMATICS(GROUP-2)
+2 (OLD),19,4300008,Engineering Mechanics
+2 (OLD),19,4320001,Applied Mathematics
+2 (OLD),19,3321901,Mechanical Drafting
+2 (OLD),19,3321902,Material Science and Metallurgy
+2 (OLD),19,1990001,Contributor Personality Development
+2 (OLD),19,1990002,Integrated Personality Development Course
+2 (OLD),19,3990001,Contributor Personality Development
+2 (OLD),19,4321902,Mechanical Drafting
+2 (OLD),19,3300008,Applied Mechanics
+2 (OLD),19,4300003,Environment and Sustainability
+2 (OLD),20,3322001,Fundamentals Of Electronics Engineering
+2 (OLD),20,4300008,Engineering Mechanics
+2 (OLD),20,3300003,Environment Conservation And Hazard Management
+2 (OLD),20,4300020,Engineering Material
+2 (OLD),20,3321901,Mechanical Drafting
+2 (OLD),20,1990001,Contributor Personality Development
+2 (OLD),20,1990002,Integrated Personality Development Course
+2 (OLD),20,3990001,Contributor Personality Development
+2 (OLD),20,4321902,Mechanical Drafting
+2 (OLD),20,3300008,Applied Mechanics
+2 (OLD),21,3322101,Basic Physical Metallurgy
+2 (OLD),21,4300008,Engineering Mechanics
+2 (OLD),21,3300003,Environment Conservation And Hazard Management
+2 (OLD),21,3300015,Fundamental Of Mechanical Engineering
+2 (OLD),21,4322101,Physical Metallurgy-I
+2 (OLD),21,3300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+2 (OLD),21,4300004,Applied Physics
+2 (OLD),21,1990001,Contributor Personality Development
+2 (OLD),21,1990002,Integrated Personality Development Course
+2 (OLD),21,3990001,Contributor Personality Development
+2 (OLD),21,4300003,Environment and Sustainability
+2 (OLD),22,3320003,ADVANCED MATHEMATICS(GROUP-2)
+2 (OLD),22,4300008,Engineering Mechanics
+2 (OLD),22,3300015,Fundamental Of Mechanical Engineering
+2 (OLD),22,4320001,Applied Mathematics
+2 (OLD),22,3300009,APPLIED CHEMISTRY (GROUP-1)
+2 (OLD),22,1990001,Contributor Personality Development
+2 (OLD),22,1990002,Integrated Personality Development Course
+2 (OLD),22,3990001,Contributor Personality Development
+2 (OLD),22,4322201,Basic Mine Surveying
+2 (OLD),22,4300009,Applied Chemistry
+2 (OLD),22,3300008,Applied Mechanics
+2 (OLD),22,4300003,Environment and Sustainability
+2 (OLD),23,4322302,Mould Fabrication Technology - I
+2 (OLD),23,3300003,Environment Conservation And Hazard Management
+2 (OLD),23,4322301,Polymer Chemistry
+2 (OLD),23,3300007,Basic Engineering Drawing
+2 (OLD),23,3322301,Polymer Chemistry
+2 (OLD),23,4300004,Applied Physics
+2 (OLD),23,1990001,Contributor Personality Development
+2 (OLD),23,1990002,Integrated Personality Development Course
+2 (OLD),23,3990001,Contributor Personality Development
+2 (OLD),23,4300003,Environment and Sustainability
+2 (OLD),23,3320901,Basic Of Electrical Engineering
+2 (OLD),24,4320002,Engineering Mathematics
+2 (OLD),24,3300005,BASIC PHYSICS (GROUP-2)
+2 (OLD),24,3322402,Digital Electronics
+2 (OLD),24,4300005,Physics
+2 (OLD),24,3300003,Environment Conservation And Hazard Management
+2 (OLD),24,3322401,Basic Electronic Circuits
+2 (OLD),24,3320002,ADVANCED MATHEMATICS (GROUP-1)
+2 (OLD),24,1990001,Contributor Personality Development
+2 (OLD),24,1990002,Integrated Personality Development Course
+2 (OLD),24,3990001,Contributor Personality Development
+2 (OLD),24,4322401,Sensors and transducers
+2 (OLD),24,4300003,Environment and Sustainability
+2 (OLD),24,4322402,Basic Electronics
+2 (OLD),28,3320501,Organic Chemistry
+2 (OLD),28,4322802,Natural Textile Fiber Science
+2 (OLD),28,3300003,Environment Conservation And Hazard Management
+2 (OLD),28,4322801,Organic Chemistry
+2 (OLD),28,3322801,Fiber Science & Technology
+2 (OLD),28,4300004,Applied Physics
+2 (OLD),28,1990001,Contributor Personality Development
+2 (OLD),28,1990002,Integrated Personality Development Course
+2 (OLD),28,3990001,Contributor Personality Development
+2 (OLD),28,4322804,Principles of Textile Chemical Processing
+2 (OLD),28,4300003,Environment and Sustainability
+2 (OLD),28,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+2 (OLD),29,3322902,WEAVING TECHNOLOGY-I
+2 (OLD),29,3300003,Environment Conservation And Hazard Management
+2 (OLD),29,4300011,Basic Chemistry
+2 (OLD),29,4322901,Textile fiber Technology
+2 (OLD),29,3322901,YARN MANUFACTURING-I
+2 (OLD),29,1990001,Contributor Personality Development
+2 (OLD),29,1990002,Integrated Personality Development Course
+2 (OLD),29,3990001,Contributor Personality Development
+2 (OLD),29,4322903,Weaving Technology -I
+2 (OLD),29,4322902,Spinning Technology-I
+2 (OLD),29,4300003,Environment and Sustainability
+2 (OLD),29,3300004,ENGINEERING PHYSICS ( GROUP-1 )
+2 (OLD),31,4320002,Engineering Mathematics
+2 (OLD),31,4300005,Physics
+2 (OLD),31,4320703,Basics of Digital Electronics
+2 (OLD),31,4320702,Basic Object Oriented Programming
+2 (OLD),32,4320001,Applied Mathematics
+2 (OLD),32,1323202,Electronics Devices & Circuits
+2 (OLD),32,4321102,Digital Electronics
+2 (OLD),32,4300003,Environment and Sustainability
+2 (OLD),32,1323203,Python Programming
+2 (OLD),41,4320002,Engineering Mathematics
+2 (OLD),41,1324101,Sensors and Measurements
+2 (OLD),41,1324102,Analog Devices and Circuits
+2 (OLD),41,1324103,Mechanical Engineering for Robotics
+2 (OLD),41,4300003,Environment and Sustainability
+2 (OLD),50,3325003,Advanced Building Materials
+2 (OLD),50,4325004,History of Indian Architecture
+2 (OLD),50,3300003,Environment Conservation And Hazard Management
+2 (OLD),50,4325003,Advanced Building Materials
+2 (OLD),50,3325002,ARCHITECTURAL DRAWING-II
+2 (OLD),50,1990001,Contributor Personality Development
+2 (OLD),50,1990002,Integrated Personality Development Course
+2 (OLD),50,3990001,Contributor Personality Development
+2 (OLD),50,4325002,Architectural Drawing
+2 (OLD),50,3325004,History Of Architecture(indian)
+2 (OLD),50,4300003,Environment and Sustainability
+2 (OLD),51,3325102,Advance Computer Application
+2 (OLD),51,4325105,Needle Craft
+2 (OLD),51,3325104,Indian Embroidery
+2 (OLD),51,3325101,Pattern Making
+2 (OLD),51,4325104,Fabric Science and its Application
+2 (OLD),51,1990001,Contributor Personality Development
+2 (OLD),51,1990002,Integrated Personality Development Course
+2 (OLD),51,3990001,Contributor Personality Development
+2 (OLD),51,4325103,Basics of Fashion
+2 (OLD),51,4300003,Environment and Sustainability
+2 (OLD),51,3325103,Fashion Model Making
+2 (OLD),52,3320003,ADVANCED MATHEMATICS(GROUP-2)
+2 (OLD),52,4325203,Ceramic Materials
+2 (OLD),52,3300015,Fundamental Of Mechanical Engineering
+2 (OLD),52,4325202,Introduction to Ceramics
+2 (OLD),52,3300009,APPLIED CHEMISTRY (GROUP-1)
+2 (OLD),52,1990001,Contributor Personality Development
+2 (OLD),52,1990002,Integrated Personality Development Course
+2 (OLD),52,3990001,Contributor Personality Development
+2 (OLD),52,4300009,Applied Chemistry
+2 (OLD),52,3325201,Ceramic Materials
+2 (OLD),52,4300003,Environment and Sustainability
+2 (OLD),55,4300008,Engineering Mechanics
+2 (OLD),55,3300007,Basic Engineering Drawing
+2 (OLD),55,3300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+2 (OLD),55,1990001,Contributor Personality Development
+2 (OLD),55,1990002,Integrated Personality Development Course
+2 (OLD),55,3990001,Contributor Personality Development
+2 (OLD),55,4325501,Fabrication Drafting
+2 (OLD),55,3300008,Applied Mechanics
+2 (OLD),55,4300003,Environment and Sustainability
+2 (OLD),58,3300005,BASIC PHYSICS (GROUP-2)
+2 (OLD),58,3325802,Basic Graphic Design
+2 (OLD),58,3300003,Environment Conservation And Hazard Management
+2 (OLD),58,4300011,Basic Chemistry
+2 (OLD),58,3325801,Text Generation
+2 (OLD),58,4325802,Basic Graphic Design
+2 (OLD),58,1990001,Contributor Personality Development
+2 (OLD),58,1990002,Integrated Personality Development Course
+2 (OLD),58,3990001,Contributor Personality Development
+2 (OLD),58,4325801,Text Generation
+2 (OLD),58,4300003,Environment and Sustainability
+2 (OLD),59,3325904,DRAWING SKETCHING & PAINTING-II
+2 (OLD),59,4300011,Basic Chemistry
+2 (OLD),59,3325901,TEXTILE PROCESSES-I
+2 (OLD),59,4325902,Fabric Design- I
+2 (OLD),59,3325903,FABRIC DESIGN-I
+2 (OLD),59,1990001,Contributor Personality Development
+2 (OLD),59,1990002,Integrated Personality Development Course
+2 (OLD),59,3990001,Contributor Personality Development
+2 (OLD),59,4325901,Fundamentals of Fabric Technology
+2 (OLD),59,4325903,Elements of Fashion Designing
+2 (OLD),59,4300003,Environment and Sustainability
+2 (OLD),60,3300015,Fundamental Of Mechanical Engineering
+2 (OLD),60,3320601,Building Drawing
+2 (OLD),60,3300009,APPLIED CHEMISTRY (GROUP-1)
+2 (OLD),60,1990001,Contributor Personality Development
+2 (OLD),60,1990002,Integrated Personality Development Course
+2 (OLD),60,3990001,Contributor Personality Development
+2 (OLD),60,3300008,Applied Mechanics
+2 (OLD),64,4320001,Applied Mathematics
+2 (OLD),64,1326401,Fundamentals of Electrical and Electronics Engineering
+2 (OLD),64,4300003,Environment and Sustainability
+2 (OLD),65,4320001,Applied Mathematics
+2 (OLD),65,1326501,Manufacturing Engineering Processes-I
+2 (OLD),65,1326502,Basics of Mechanical Design
+2 (OLD),65,4300003,Environment and Sustainability
+2(CtoD),02,C300003,Environment Conservation & Hazard Management
+2(CtoD),02,C320201,Thermodynamics & Hydraulics
+2(CtoD),03,C320002,ADVANCED MATHEMATICS (GROUP-1)
+2(CtoD),03,C310702,Fundamental Of Digital Electronics
+2(CtoD),03,C320301,Human Anatomy
+2(CtoD),03,C320302,Human Physiology
+2(CtoD),03,C300005,BASIC PHYSICS (GROUP-2)
+2(CtoD),05,C300004,ENGINEERING PHYSICS ( GROUP-1)
+2(CtoD),05,C300003,Environment Conservation & Hazard Management
+2(CtoD),05,C320002,ADVANCED MATHEMATICS (GROUP-1)
+2(CtoD),06,C320003,ADVANCED MATHEMATICS(GROUP-2)
+2(CtoD),06,C300008,Applied Mechanics
+2(CtoD),06,C300009,APPLIED CHEMISTRY ( GROUP-1 )
+2(CtoD),07,C320002,ADVANCED MATHEMATICS (GROUP-1)
+2(CtoD),07,C320702,Advanced Computer Programming
+2(CtoD),07,C300005,BASIC PHYSICS (GROUP-2)
+2(CtoD),09,C320002,ADVANCED MATHEMATICS (GROUP-1)
+2(CtoD),09,C320903,D.c.circuits
+2(CtoD),09,C300005,BASIC PHYSICS (GROUP-2)
+2(CtoD),11,C300003,Environment Conservation & Hazard Management
+2(CtoD),11,C320002,ADVANCED MATHEMATICS (GROUP-1)
+2(CtoD),11,C321102,Electronic Networks
+2(CtoD),13,C320003,ADVANCED MATHEMATICS(GROUP-2)
+2(CtoD),13,C300008,Applied Mechanics
+2(CtoD),13,C300009,APPLIED CHEMISTRY ( GROUP-1 )
+2(CtoD),16,C320002,ADVANCED MATHEMATICS (GROUP-1)
+2(CtoD),16,C320702,Advanced Computer Programming
+2(CtoD),16,C300005,BASIC PHYSICS (GROUP-2)
+2(CtoD),17,C300005,BASIC PHYSICS (GROUP-2)
+2(CtoD),19,C321902,Material Science & Metallurgy
+2(CtoD),19,C320003,ADVANCED MATHEMATICS(GROUP-2)
+2(CtoD),19,C300008,Applied Mechanics
+2(CtoD),19,C321901,Mechanical Drafting
+2(CtoD),20,C300003,Environment Conservation & Hazard Management
+2(CtoD),20,C322001,Fundamentals Of Electronics Engineering
+2(CtoD),20,C300008,Applied Mechanics
+2(CtoD),20,C321901,Mechanical Drafting
+2(CtoD),21,C300003,Environment Conservation & Hazard Management
+2(CtoD),21,C322101,Basic Physical Metallurgy
+2(CtoD),21,C300015,Fundamental Of Mechanical Engineering
+2(CtoD),21,C300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+2(CtoD),23,C300003,Environment Conservation & Hazard Management
+2(CtoD),23,C322301,Polymer Chemistry
+2(CtoD),23,C320901,Basic Of Electrical Engineering
+2(CtoD),24,C300003,Environment Conservation & Hazard Management
+2(CtoD),24,C320002,ADVANCED MATHEMATICS (GROUP-1)
+2(CtoD),24,C322402,Digital Electronics
+2(CtoD),24,C322401,Basic Electronic Circuits
+2(CtoD),24,C300005,BASIC PHYSICS (GROUP-2)
+2(CtoD),28,C300004,ENGINEERING PHYSICS ( GROUP-1)
+2(CtoD),28,C300003,Environment Conservation & Hazard Management
+2(CtoD),28,C322801,Fiber Science & Technology
+2(CtoD),28,C320501,Organic Chemistry
+2(CtoD),29,C300004,ENGINEERING PHYSICS ( GROUP-1)
+2(CtoD),29,C300003,Environment Conservation & Hazard Management
+2(CtoD),29,C322901,YARN MANUFACTURING-I
+2(CtoD),50,C300003,Environment Conservation & Hazard Management
+2(CtoD),50,C325002,ARCHITECTURAL DRAWING-II
+2(CtoD),50,C325004,History Of Architecture(indian)
+2(CtoD),50,C325003,Advanced Building Materials
+2(CtoD),55,C300006,ENGINEERING CHEMISTRY ( GROUP-2 )
+2(CtoD),55,C300008,Applied Mechanics
+2(CtoD),55,C300007,Basic Engineering Drawing
+2(CtoD),59,C325901,TEXTILE PROCESSES-I
+2(CtoD),59,C325904,DRAWING SKETCHING & PAINTING-II
+2(CtoD),59,C325903,FABRIC DESIGN-I
+3 (NCC),NA,1033NA01,National Cadet Corps III
+3 (NCC),NC,1033NC01,National Cadet Corps III
+3 (NEW),002,DI03002011,Pollution Control Engineering
+3 (NEW),002,DI03002021,Automobile Engine
+3 (NEW),002,DI03002031,Automobile Transmission & Mechanism
+3 (NEW),002,DI03002041,Automobile Electrical and Electronic System
+3 (NEW),002,DI03002051,Automobile Design
+3 (NEW),002,DI03002061,Vehicle Body Engineering
+3 (NEW),003,DI03003011,Medical Transducers & Actuators
+3 (NEW),003,DI03003021,Medical Electronics
+3 (NEW),003,DI03003031,Principle of Telemedical Communication
+3 (NEW),003,DI03003041,Diagnostic Medical Instrumentation
+3 (NEW),003,DI03003051,Analytical and Optical Instrumentation
+3 (NEW),005,DI03005011,Basics of Process Instrumentations
+3 (NEW),005,DI03005021,Fluid Flow Operation
+3 (NEW),005,DI03005031,Process Heat Transfer
+3 (NEW),005,DI03005041,Chemical Process Technology – I
+3 (NEW),005,DI03005051,Safety and Hazard Management
+3 (NEW),005,DI03005061,Process Calculation
+3 (NEW),006,DI03006011,Construction Technology
+3 (NEW),006,DI03006021,Advance Surveying
+3 (NEW),006,DI03006031,Basic Transportation Engineering
+3 (NEW),006,DI03006041,Mechanics of Structures-I
+3 (NEW),006,DI03006051,Soil Engineering
+3 (NEW),007,DI03000011,Digital Electronics Fundamentals
+3 (NEW),007,DI03000021,Data Structures
+3 (NEW),007,DI03000031,Relational Database Management System
+3 (NEW),007,DI03000041,Fundamentals Operating System
+3 (NEW),007,DI03000051,Computer Networks
+3 (NEW),009,DI03000081,Electrical Machines – I
+3 (NEW),009,DI03000091,Electrical Instrumentation
+3 (NEW),009,DI03000101,Electrical Power Transmission & Distribution
+3 (NEW),009,DI03009011,Electrical Wiring Estimating & Contracting
+3 (NEW),009,DI03009021,Electrical Power Generation
+3 (NEW),011,DI03000111,Digital Logic Design
+3 (NEW),011,DI03000121,Principle of Electronics Communication
+3 (NEW),011,DI03000131,Computer Networking
+3 (NEW),011,DI03011011,Programming in C
+3 (NEW),011,DI03011021,Applied Electronics
+3 (NEW),011,DI03011031,Electronics Circuit Network & Measurement
+3 (NEW),013,DI03013011,Construction Material and Technology
+3 (NEW),013,DI03013021,Estimating and Costing in Environmental Engineering
+3 (NEW),013,DI03013031,Surveying in Environmental Engineering
+3 (NEW),013,DI03013041,Environmental Chemistry - I
+3 (NEW),013,DI03013051,Environmental Project Management
+3 (NEW),013,DI03013061,Basic Mechanics of Structures
+3 (NEW),016,DI03016011,Digital Marketing
+3 (NEW),016,DI03016021,Cryptography and Web Security
+3 (NEW),016,DI03016031,Data Structures with Python
+3 (NEW),016,DI03016041,Database Management
+3 (NEW),016,DI03016051,Object Oriented Programming with JAVA
+3 (NEW),016,DI03016061,Operating Systems
+3 (NEW),017,DI03000181,Control Instrumentation System
+3 (NEW),017,DI03000191,Control Components
+3 (NEW),017,DI03017011,Telemetry Systems
+3 (NEW),017,DI03017021,Electronics and Pneumatic Instrumentation
+3 (NEW),017,DI03017031,Process Instrumentation-I
+3 (NEW),017,DI03017041,Industrial Transducers
+3 (NEW),019,DI03000141,Theory of Machines and Mechanisms
+3 (NEW),019,DI03000151,Measurements and Metrology
+3 (NEW),019,DI03000161,Manufacturing Engineering-I
+3 (NEW),019,DI03000171,Fluid Mechanics and Hydraulic Machinery
+3 (NEW),019,DI03000201,Basics of Applied Mechanics
+3 (NEW),019,DI03019011,Engineering Thermodynamics
+3 (NEW),020,DI03000141,Theory of Machines and Mechanisms
+3 (NEW),020,DI03000151,Measurements and Metrology
+3 (NEW),020,DI03000161,Manufacturing Engineering-I
+3 (NEW),020,DI03020011,Digital Circuits
+3 (NEW),020,DI03000201,Basics of Applied Mechanics
+3 (NEW),020,DI03020021,Fundamentals of Thermal and Fluid Devices
+3 (NEW),021,DI03021021,Joining of Metals
+3 (NEW),021,DI03021031,Physical Metallurgy-I
+3 (NEW),021,DI03021041,Metal Forming
+3 (NEW),021,DI03021051,"Fuel, Furnaces and Refractories"
+3 (NEW),021,DI03021061,Non-ferrous Extractive Metallurgy
+3 (NEW),022,DI03022011,Mine Environment
+3 (NEW),022,DI03022021,Mine Surveying I
+3 (NEW),022,DI03022031,Surface Mining Technology
+3 (NEW),022,DI03022041,Mining Machineries
+3 (NEW),022,DI03022051,Mine Sampling Assaying & Mineral Dressing
+3 (NEW),022,DI03022061,Mine Access and Support Technology
+3 (NEW),023,DI03023011,Compression Transfer and Injection Moulding of Thermosets
+3 (NEW),023,DI03023021,Plastic Extrusion Technology
+3 (NEW),023,DI03023031,Technology for Injection Molding
+3 (NEW),023,DI03023041,Blow Rotational and Thermoforming Processes
+3 (NEW),023,DI03023051,Plastic Materials and Additives
+3 (NEW),023,DI03023061,Basic Mold Design
+3 (NEW),024,DI03024021,DC Machines and Transformer
+3 (NEW),024,DI03024031,Digital Electronics
+3 (NEW),024,DI03024041,Elements of Power Electronics
+3 (NEW),024,DI03024051,DC Power Electronic Converters
+3 (NEW),024,DI03024061,Linear Electronic Circuits
+3 (NEW),028,DI03028011,Textile Organic Chemicals
+3 (NEW),028,DI03028021,Bleaching Technology
+3 (NEW),028,DI03028031,Processing of Denims & Garments
+3 (NEW),028,DI03028041,Dyeing Technology - I
+3 (NEW),028,DI03028051,Printing Technology – I
+3 (NEW),028,DI03028061,Colour  Chemistry
+3 (NEW),029,DI03029011,Elements of Textile Fashion Design
+3 (NEW),029,DI03029021,Spinning Technology III
+3 (NEW),029,DI03029031,Weaving Technology-III
+3 (NEW),029,DI03029041,Woven Fabric Design-I
+3 (NEW),029,DI03029051,Textile Testing-I
+3 (NEW),029,DI03029061,Apparel Manufacturing Technology
+3 (NEW),031,DI03000011,Digital Electronics Fundamentals
+3 (NEW),031,DI03000021,Data Structures
+3 (NEW),031,DI03000031,Relational Database Management System
+3 (NEW),031,DI03000041,Fundamentals Operating System
+3 (NEW),031,DI03000051,Computer Networks
+3 (NEW),032,DI03000111,Digital Logic Design
+3 (NEW),032,DI03000121,Principle of Electronics Communication
+3 (NEW),032,DI03000131,Computer Networking
+3 (NEW),032,DI03032021,Java Programming
+3 (NEW),032,DI03032031,Data Structure and Applications
+3 (NEW),041,DI03000181,Control Instrumentation System
+3 (NEW),041,DI03000191,Control Components
+3 (NEW),041,DI03041021,Basics of Industrial Automation
+3 (NEW),041,DI03041031,Basics of Robotics
+3 (NEW),041,DI03041041,Electrical Machines
+3 (NEW),051,DI03051031,Fabric Science
+3 (NEW),051,DI03051041,Garment Cutting Technology
+3 (NEW),051,DI03051051,Native Textile
+3 (NEW),051,DI03051021,Fashion Dynamics
+3 (NEW),052,DI03052011,Ceramic Process Calculations
+3 (NEW),052,DI03052021,Vitreous Enamel
+3 (NEW),052,DI03052031,White ware
+3 (NEW),052,DI03052041,Glass-1
+3 (NEW),052,DI03052051,Refractory
+3 (NEW),052,DI03052061,Fuels & Furnaces
+3 (NEW),055,DI03055011,Production Technology
+3 (NEW),055,DI03055021,Welding Technology-1
+3 (NEW),055,DI03055031,Plant Equipment Erection and Maintenance
+3 (NEW),055,DI03055041,Fabrication Technology-2
+3 (NEW),055,DI03055051,Sheet Metal Fabrication
+3 (NEW),058,DI03058011,Mechanical Engineering for Printing
+3 (NEW),058,DI03058021,Image Carrier
+3 (NEW),058,DI03058031,Offset Printing Process
+3 (NEW),058,DI03058041,Binding and Finishing Process
+3 (NEW),058,DI03058051,Flexographic Printing Process
+3 (NEW),058,DI03058061,Digital Printing
+3 (NEW),059,DI03059011,History of Indian Textiles
+3 (NEW),059,DI03059021,Traditional Printing Design
+3 (NEW),059,DI03059031,Textile Chemical Process -I
+3 (NEW),059,DI03059041,Fabric Design-II
+3 (NEW),059,DI03059051,Pattern Making for Fashion Design
+3 (NEW),064,DI03000081,Electrical Machines – I
+3 (NEW),064,DI03000091,Electrical Instrumentation
+3 (NEW),064,DI03000101,Electrical Power Transmission & Distribution
+3 (NEW),064,DI03064011,Wind Energy Technology
+3 (NEW),064,DI03064021,Renewable Power Plants
+3 (NEW),065,DI03000141,Theory of Machines and Mechanisms
+3 (NEW),065,DI03000151,Measurements and Metrology
+3 (NEW),065,DI03065011,Manufacturing Engineering Processes-I
+3 (NEW),065,DI03000171,Fluid Mechanics and Hydraulic Machinery
+3 (NEW),065,DI03000201,Basics of Applied Mechanics
+3 (OLD),01,3330001,Human Resource Management
+3 (OLD),01,3330101,Basic Aircraft Science
+3 (OLD),01,3330102,Mechanisms For Machines & Aircrafts
+3 (OLD),01,3330103,Fundamentals Of Engineering Thermodynamics
+3 (OLD),01,3330104,Aircraft Instruments
+3 (OLD),01,3330105,Aircraft Materials & Manufacturing Techniques
+3 (OLD),02,4330201,Automobile Engine
+3 (OLD),02,3330205,Automobile Pollution Control Engineering
+3 (OLD),02,4330202,Automobile Transmission & Mechanism
+3 (OLD),02,3330204,Fuels & Lubricants
+3 (OLD),02,4330203,Automobile Electrical and Electronic System
+3 (OLD),02,3330206,Automobile Component Design
+3 (OLD),02,4330204,Fuels and Pollution Control System
+3 (OLD),02,3330201,Automobile Engines
+3 (OLD),02,4330205,Vehicle Body Engineering
+3 (OLD),02,3330202,Automobile Transmission & Mechanism
+3 (OLD),02,3330203,Automobile Electrical System
+3 (OLD),02,4330206,Automobile Design & Drafting
+3 (OLD),03,4330301,Medical Electronics
+3 (OLD),03,3330001,Human Resource Management
+3 (OLD),03,4330302,Medical Sensors & Measurement Technique
+3 (OLD),03,3330301,Basic Electronics
+3 (OLD),03,4330303,Fundamental of Digital Electronics
+3 (OLD),03,3330302,Data Communication & Networking
+3 (OLD),03,4330304,Principle of Telemedical Communication
+3 (OLD),03,3330303,Medical Electronics
+3 (OLD),03,4330305,Hospital Management & Information System
+3 (OLD),03,3330304,Medical Sensors & Measurement Technique
+3 (OLD),05,4330501,Mechanical Operation
+3 (OLD),05,3330501,Chemical Engineering Materials
+3 (OLD),05,4330502,Fluid Flow Operation
+3 (OLD),05,3330502,Mechanical Operations
+3 (OLD),05,4330503,Process Calculation
+3 (OLD),05,3330503,Fluid Flow Operations
+3 (OLD),05,4330504,Chemical Process Technology
+3 (OLD),05,3330504,Industrial Stoichiometry
+3 (OLD),05,4330505,Plant utilities
+3 (OLD),05,3330505,CHEMICAL PROCESS TECHNOLOGY-I
+3 (OLD),06,4330601,Surveying
+3 (OLD),06,3330601,Building Materials
+3 (OLD),06,4330602,Mechanics of Structures
+3 (OLD),06,3330602,Construction Technology
+3 (OLD),06,4330603,Construction Materials & Technology
+3 (OLD),06,3330603,Hydraulics
+3 (OLD),06,4330604,Hydraulics
+3 (OLD),06,3330604,Structural Mechanics
+3 (OLD),06,3330605,Surveying
+3 (OLD),07,4330701,Scripting Language -Python
+3 (OLD),07,3330701,Operating System
+3 (OLD),07,4330702,Relational Database Management System
+3 (OLD),07,3330704,Data Structure
+3 (OLD),07,4330703,Basics of Operating System
+3 (OLD),07,3330702,Programming In C++
+3 (OLD),07,4330704,Data Structures and Algorithms
+3 (OLD),07,3330703,Database Management System
+3 (OLD),07,3330705,Microprocessor & Assembly Language Programming
+3 (OLD),09,4330901,D. C. Machines And Transformer
+3 (OLD),09,3330903,Electrical Instrumentation
+3 (OLD),09,4330902,Electrical Instrumentation
+3 (OLD),09,3330901,Ac Circuits
+3 (OLD),09,4330903,Electrical Power Generation and Transmission
+3 (OLD),09,3330902,D C Machines And Transformer
+3 (OLD),09,4330904,Fundamentals Of Electronics
+3 (OLD),09,3330904,Electrical Power Generation
+3 (OLD),09,3330905,Electronics Components And Circuits
+3 (OLD),11,4331101,Electronic Circuits & Networks
+3 (OLD),11,3331101,Antenna & Wave Propagation
+3 (OLD),11,4331102,Electronic Measurements & Instruments
+3 (OLD),11,3331102,Analog Electronics
+3 (OLD),11,4331103,Industrial Electronics
+3 (OLD),11,3331103,Principle Of Electronic Communication
+3 (OLD),11,4331104,Principle of Electronic Communication
+3 (OLD),11,3331104,Digital Logic Design
+3 (OLD),11,4331105,Programming In C
+3 (OLD),11,3331105,Programming In C
+3 (OLD),13,4331301,Environmental Chemistry-I
+3 (OLD),13,3330601,Building Materials
+3 (OLD),13,4330602,Mechanics of structures
+3 (OLD),13,3331301,Environmental Science
+3 (OLD),13,4330603,Construction Materials & Technology
+3 (OLD),13,3330603,Hydraulics
+3 (OLD),13,4330604,Hydraulics
+3 (OLD),13,3330604,Structural Mechanics
+3 (OLD),13,3330605,Surveying
+3 (OLD),16,4331601,Data Structure with Python
+3 (OLD),16,3330701,Operating System
+3 (OLD),16,4331602,Linux Operating System
+3 (OLD),16,3330704,Data Structure
+3 (OLD),16,4331603,Database Management
+3 (OLD),16,3331601,Digital Memory System
+3 (OLD),16,4331604,Fundamentals of Software Development
+3 (OLD),16,3331602,Computer Graphics
+3 (OLD),17,4331701,Digital Techniques
+3 (OLD),17,3331701,Safety Instrumented Systems & Safety Integrated Level
+3 (OLD),17,4331702,Control Components
+3 (OLD),17,3331702,Telemetry System
+3 (OLD),17,4331703,Process Instrumentation - I
+3 (OLD),17,3331703,Digital Techniques
+3 (OLD),17,4331704,Electronics And Pneumatic Instrumentation
+3 (OLD),17,3331704,Control Components
+3 (OLD),17,3331705,Process Application & Instrumentation Maintenance Management
+3 (OLD),18,4300020,Engineering Material
+3 (OLD),18,3331801,MARINE WORKSHOP TECHNOLOGY-1
+3 (OLD),18,4331902,Engineering Thermodynamics
+3 (OLD),18,3331902,THERMODYNAMICS
+3 (OLD),18,4331802,Marine Workshop Technology-1
+3 (OLD),18,3331802,ELECTRICAL DRIVES AND CONTROLS
+3 (OLD),18,4331904,Strength Of Materials
+3 (OLD),18,3331904,STRENGTH OF MATERIAL
+3 (OLD),18,4331801,Ship Construction Technology
+3 (OLD),18,3331903,FLUID MECHANICS AND HYDRAULIC MACHINES
+3 (OLD),18,3331803,SHIP CONSTRUCTION TECHNOLOGY
+3 (OLD),19,4300020,Engineering Material
+3 (OLD),19,3330001,Human Resource Management
+3 (OLD),19,4331902,Engineering Thermodynamics
+3 (OLD),19,3331902,THERMODYNAMICS
+3 (OLD),19,4331903,Manufacturing Engineering-I
+3 (OLD),19,3331901,MANUFACTURING ENGINEERING-I
+3 (OLD),19,4331904,Strength Of Materials
+3 (OLD),19,3331904,STRENGTH OF MATERIAL
+3 (OLD),19,4331901,Theory Of Machines And Mechanisms
+3 (OLD),19,3331903,FLUID MECHANICS AND HYDRAULIC MACHINES
+3 (OLD),19,3331905,Applied Electrical And Electronic Engineering
+3 (OLD),20,4332001,Digital Circuits
+3 (OLD),20,3330001,Human Resource Management
+3 (OLD),20,4331902,Engineering Thermodynamics
+3 (OLD),20,3332001,Manufacturing Engineering - I
+3 (OLD),20,4331903,Manufacturing Engineering-I
+3 (OLD),20,4331904,Strength Of Materials
+3 (OLD),20,3331904,STRENGTH OF MATERIAL
+3 (OLD),20,4331901,Theory Of Machines And Mechanisms
+3 (OLD),20,3332002,Digital Circuits
+3 (OLD),21,4332101,Mineral Processing
+3 (OLD),21,3330001,Human Resource Management
+3 (OLD),21,4332102,Physical Metallurgy - II
+3 (OLD),21,3332101,Joining Of Metals
+3 (OLD),21,4332103,Joining of Metals
+3 (OLD),21,3332102,Metal Forming & Powder Metallurgy
+3 (OLD),21,4332104,Fuel Furnace and Refractories
+3 (OLD),21,3332103,Non Ferrous Production Metallurgy
+3 (OLD),21,4332105,Metal Forming Process
+3 (OLD),21,3332104,Fuel Furnaces And Refractories
+3 (OLD),21,3331905,Applied Electrical And Electronic Engineering
+3 (OLD),22,4332201,Mining I
+3 (OLD),22,3332201,Introduction To Mining And Geology
+3 (OLD),22,4332202,Mining Machineries I
+3 (OLD),22,3332202,MINING-I
+3 (OLD),22,4332203,Mine Surveying I
+3 (OLD),22,3332203,Mining GeologY- I
+3 (OLD),22,4332204,Mining Geology
+3 (OLD),22,3332204,MINING MACHINERIES-I
+3 (OLD),22,3330605,Surveying
+3 (OLD),22,3331905,Applied Electrical And Electronic Engineering
+3 (OLD),23,4332302,Basic Mould Design
+3 (OLD),23,3330001,Human Resource Management
+3 (OLD),23,4332303,Compression Transfer and Injection Molding of Thermosets
+3 (OLD),23,3332301,Basic Mould Design
+3 (OLD),23,4332304,Plastic Extrusion Technology
+3 (OLD),23,3332302,Compression Transfer & Injection Moulding Of Thermose
+3 (OLD),23,4330002,Human Resource Management
+3 (OLD),23,3332303,MOULD FABRICATION TECHNOLOGY-I
+3 (OLD),23,4332305,Plastic Materials - I
+3 (OLD),23,3332304,PLASTIC MATERIALS-I
+3 (OLD),23,4332306,Technology for Injection Molding
+3 (OLD),23,3332305,Technology For Injection Moulding
+3 (OLD),24,4332401,DC machines and transformer
+3 (OLD),24,3330001,Human Resource Management
+3 (OLD),24,4332402,Digital Electronics
+3 (OLD),24,3332401,D.c. Machines And Transformers
+3 (OLD),24,4332403,Linear Electronic Circuit
+3 (OLD),24,3332402,Generation & Transmission Of Electrical Power
+3 (OLD),24,4332404,Elements of Power Electronics
+3 (OLD),24,3332403,Advance Electronic Devices And Circuits
+3 (OLD),24,4332405,Electrical & Electronic measurement
+3 (OLD),24,3332404,Elements Of Power Electronics
+3 (OLD),24,3332405,Linear Electronic Circuits
+3 (OLD),28,4332801,Syntheic Textile Fibre science
+3 (OLD),28,3330001,Human Resource Management
+3 (OLD),28,4332802,Bleaching Technology for textiles
+3 (OLD),28,3332901,Mechanical Engineering For Textiles
+3 (OLD),28,4332803,Dyeing Technology-I
+3 (OLD),28,3332801,Bleaching Technology For Textiles
+3 (OLD),28,4332804,Printing Technology -I
+3 (OLD),28,3332802,Dyeing Technology For Natural Textiles
+3 (OLD),28,4332805,Processing of Denims & Garments
+3 (OLD),28,3332803,Printing Technology For Natural Textiles
+3 (OLD),29,4332901,Garment Manufacturing Technology
+3 (OLD),29,3330001,Human Resource Management
+3 (OLD),29,4332902,Spinning Technology-II
+3 (OLD),29,3332901,Mechanical Engineering For Textiles
+3 (OLD),29,4332903,Weaving Technology -II
+3 (OLD),29,3332902,YARN MANUFACTURING -II
+3 (OLD),29,4332904,Fabric Structure - I
+3 (OLD),29,3332903,Weaving Technology - ii
+3 (OLD),29,4332905,Statistical Quality control
+3 (OLD),29,3332904,Fabric Structure - I
+3 (OLD),29,3332905,Garment Technology
+3 (OLD),31,4330701,Scripting Language -Python
+3 (OLD),31,4330702,Relational Database Management System
+3 (OLD),31,4330703,Basics of Operating System
+3 (OLD),31,4330704,Data Structures and Algorithms
+3 (OLD),32,1333201,Communication Engineering
+3 (OLD),32,1333202,Microprocessor & Microcontroller Systems
+3 (OLD),32,1333203,Data Structure and Application
+3 (OLD),32,1333204,Database Management System
+3 (OLD),41,4331701,Digital Techniques
+3 (OLD),41,1334101,Basics of Industrial Automation
+3 (OLD),41,1334102,Basics of Robotics
+3 (OLD),41,1334103,Industrial Telemetry
+3 (OLD),50,3335002,Building Construction
+3 (OLD),50,4335002,Building Construction
+3 (OLD),50,4335003,History of Architecture(World & Modern)
+3 (OLD),50,3335003,Surveying & Levelling
+3 (OLD),50,4335004,Surveying and Levelling
+3 (OLD),50,3335004,History Of Architecture (world)
+3 (OLD),51,4335101,Clothing Psychology and grooming
+3 (OLD),51,3335101,Garment Machinery
+3 (OLD),51,4335103,Apparel Cutting Technology
+3 (OLD),51,3335102,Elements Of Fashion
+3 (OLD),51,4335105,Fabric Processing and Care
+3 (OLD),51,3335104,Indian Textile & Surface Embellishment
+3 (OLD),51,4335106,Indian Traditional Textile
+3 (OLD),52,4335201,Advance Chemistry
+3 (OLD),52,3330001,Human Resource Management
+3 (OLD),52,4335202,Vitreous Enamel
+3 (OLD),52,3335201,Advance Chemistry
+3 (OLD),52,4335203,Ceramic Process Calculatons
+3 (OLD),52,3335202,Fundamentals Of White Ware
+3 (OLD),52,4335204,Glass-1
+3 (OLD),52,3335203,Fundamentals Of Refractory
+3 (OLD),52,4335205,Fuel and Furnaces
+3 (OLD),52,3335204,GLASS-I
+3 (OLD),52,3335205,Fuels & Furnaces
+3 (OLD),55,4300020,Engineering Material
+3 (OLD),55,3335501,Fabrication Drafting
+3 (OLD),55,4335502,Plant Equipment Erection and Maintenance
+3 (OLD),55,3335502,Mechanical Technology
+3 (OLD),55,4335503,Welding Technology - 1
+3 (OLD),55,3335503,Material & Metallurgy
+3 (OLD),55,4335504,Fabrication Technology - 1
+3 (OLD),55,3335504,WELDING TECHNOLOGY-I
+3 (OLD),55,4335501,Mechanical Technology
+3 (OLD),55,3335505,Fabrication TechnologY-1
+3 (OLD),58,4335801,Engineering Mechanics
+3 (OLD),58,3330001,Human Resource Management
+3 (OLD),58,4335802,Printer`S Science
+3 (OLD),58,3335801,Mechanical Engineering For Printing
+3 (OLD),58,4335803,Image Carrier
+3 (OLD),58,3335802,Printer's Science
+3 (OLD),58,4335804,Offset Printing Process
+3 (OLD),58,3335803,Image Carrier
+3 (OLD),58,4335806,Binding and Finishing Process
+3 (OLD),58,3335804,Printing Processes
+3 (OLD),58,3335805,Binding & Finishing Process
+3 (OLD),59,4335903,History of Textile Design & Aeshthetics
+3 (OLD),59,3330001,Human Resource Management
+3 (OLD),59,4335905,Fabric Design-II
+3 (OLD),59,3335901,History Of Textile Design & Aesthetics - I
+3 (OLD),59,4335906,Textile Chemical Processes -I
+3 (OLD),59,3335904,Textile Process - ii
+3 (OLD),59,4330002,Human Resource Management
+3 (OLD),59,3335905,Fabric Design - ii
+3 (OLD),60,3336001,Highway Materials & Testing
+3 (OLD),60,3330602,Construction Technology
+3 (OLD),60,3330603,Hydraulics
+3 (OLD),60,3330604,Structural Mechanics
+3 (OLD),60,3330605,Surveying
+3 (OLD),64,1336401,Electrical Machine
+3 (OLD),64,1336402,Analog Electronics
+3 (OLD),64,1336403,Renewable Energy Instrumentation Applications
+3 (OLD),64,1336404,Fundamental of Thermodynamics and Heat Transfer
+3 (OLD),64,1336405,Solar Energy
+3 (OLD),65,1336501,Metrology and Instrumentation
+3 (OLD),65,4331902,Engineering Thermodynamics
+3 (OLD),65,1336502,Manufacturing Engineering Processes-II
+3 (OLD),65,4331901,Theory of Machines and Mechanisms
+3 (working Professionals - NEW),005,DI03005011,Basics of Process Instrumentations
+3 (working Professionals - NEW),005,DI03005021,Fluid Flow Operation
+3 (working Professionals - NEW),005,DI03005031,Process Heat Transfer
+3 (working Professionals - NEW),005,DI03005041,Chemical Process Technology – I
+3 (working Professionals - NEW),005,DI03005051,Safety and Hazard Management
+3 (working Professionals - NEW),005,DI03005061,Process Calculation
+3 (working Professionals - NEW),006,DI03006011,Construction Technology
+3 (working Professionals - NEW),006,DI03006021,Advance Surveying
+3 (working Professionals - NEW),006,DI03006031,Basic Transportation Engineering
+3 (working Professionals - NEW),006,DI03006041,Mechanics of Structures-I
+3 (working Professionals - NEW),006,DI03006051,Soil Engineering
+3 (working Professionals - NEW),009,DI03000081,Electrical Machines – I
+3 (working Professionals - NEW),009,DI03000091,Electrical Instrumentation
+3 (working Professionals - NEW),009,DI03000101,Electrical Power Transmission & Distribution
+3 (working Professionals - NEW),009,DI03009011,Electrical Wiring Estimating & Contracting
+3 (working Professionals - NEW),009,DI03009021,Electrical Power Generation
+3 (working Professionals - NEW),017,DI03000181,Control Instrumentation System
+3 (working Professionals - NEW),017,DI03000191,Control Components
+3 (working Professionals - NEW),017,DI03017011,Telemetry Systems
+3 (working Professionals - NEW),017,DI03017021,Electronics and Pneumatic Instrumentation
+3 (working Professionals - NEW),017,DI03017031,Process Instrumentation-I
+3 (working Professionals - NEW),017,DI03017041,Industrial Transducers
+3 (working Professionals - NEW),019,DI03000141,Theory of Machines and Mechanisms
+3 (working Professionals - NEW),019,DI03000151,Measurements and Metrology
+3 (working Professionals - NEW),019,DI03000161,Manufacturing Engineering-I
+3 (working Professionals - NEW),019,DI03000171,Fluid Mechanics and Hydraulic Machinery
+3 (working Professionals - NEW),019,DI03000201,Basics of Applied Mechanics
+3 (working Professionals - NEW),019,DI03019011,Engineering Thermodynamics
+3 (Working Professionals - OLD),05,4330501,Mechanical Operation
+3 (Working Professionals - OLD),05,4330502,Fluid Flow Operation
+3 (Working Professionals - OLD),05,4330503,Process Calculation
+3 (Working Professionals - OLD),05,4330504,Chemical Process Technology
+3 (Working Professionals - OLD),05,4330505,Plant utilities
+3 (Working Professionals - OLD),06,4330601,Surveying
+3 (Working Professionals - OLD),06,4330602,Mechanics of Structures
+3 (Working Professionals - OLD),06,4330603,Construction Materials & Technology
+3 (Working Professionals - OLD),06,4330604,Hydraulics
+3 (Working Professionals - OLD),09,4330901,D. C. Machines And Transformer
+3 (Working Professionals - OLD),09,4330902,Electrical Instrumentation
+3 (Working Professionals - OLD),09,4330903,Electrical Power Generation and Transmission
+3 (Working Professionals - OLD),09,4330904,Fundamentals Of Electronics
+3 (Working Professionals - OLD),17,4331701,Digital Techniques
+3 (Working Professionals - OLD),17,4331702,Control Components
+3 (Working Professionals - OLD),17,4331703,Process Instrumentation - I
+3 (Working Professionals - OLD),17,4331704,Electronics And Pneumatic Instrumentation
+3 (Working Professionals - OLD),19,4300020,Engineering Material
+3 (Working Professionals - OLD),19,4331902,Engineering Thermodynamics
+3 (Working Professionals - OLD),19,4331903,Manufacturing Engineering-I
+3 (Working Professionals - OLD),19,4331904,Strength Of Materials
+3 (Working Professionals - OLD),19,4331901,Theory Of Machines And Mechanisms
+4 (NCC),NA,1034NA01,National Cadet Corps IV
+4 (NCC),NC,1034NC01,National Cadet Corps IV
+4 (NEW),002,DI04002051,Automobile Industry Management
+4 (NEW),002,DI04002061,Two and Three - Wheeler Technology
+4 (NEW),002,DI04000081,Entrepreneurship & Start-up
+4 (NEW),002,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),002,DI04000291,Industry 4.0
+4 (NEW),002,DI04002011,Maintenance & Service - I
+4 (NEW),002,DI04002021,Maintenance & Service - II
+4 (NEW),002,DI04002031,Maintenance & Service - III
+4 (NEW),002,DI04002041,Recent Trends in Automobile
+4 (NEW),002,DI04002071,Automobile Drafting
+4 (NEW),002,DI04002081,Automobile Manufacturing Technology
+4 (NEW),003,DI04003051,Biomaterials & Implants
+4 (NEW),003,DI04003061,IOT in Healthcare
+4 (NEW),003,DI04000081,Entrepreneurship & Start-up
+4 (NEW),003,DI04003091,Biomechanics
+4 (NEW),003,DI04003011,Microcontroller in Medical Devices
+4 (NEW),003,DI04003021,Therapeutic Medical Instrumentation
+4 (NEW),003,DI04003031,Medical Imaging Techniques
+4 (NEW),003,DI04003041,Hospital Management & Information System
+4 (NEW),003,DI04003071,Ophthalmic Instrumentation
+4 (NEW),003,DI04003081,AI in Healthcare
+4 (NEW),005,DI04005051,Clean and Renewable Energy Technology
+4 (NEW),005,DI04005061,Waste to Energy Conversion Technology
+4 (NEW),005,DI04000081,Entrepreneurship & Start-up
+4 (NEW),005,DI04000141,Human Resources Management
+4 (NEW),005,DI04005011,Chemical Process Technology-II
+4 (NEW),005,DI04005021,Mass Transfer-I
+4 (NEW),005,DI04005031,Pollution Control and Effluent Treatment
+4 (NEW),005,DI04005041,Chemical Engineering Thermodynamics
+4 (NEW),005,DI04005071,Petroleum Refining and Petroleum Technology
+4 (NEW),005,DI04005081,Pulp and Paper Technology
+4 (NEW),005,DI04005091,Sugar and Food Technology
+4 (NEW),006,DI04006041,Water Resources Engineering
+4 (NEW),006,DI04006051,Ground Water Engineering
+4 (NEW),006,DI04006061,Irrigation Engineering
+4 (NEW),006,DI04000081,Entrepreneurship & Start-up
+4 (NEW),006,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),006,DI04000151,Hydraulics
+4 (NEW),006,DI04006011,Concrete Technology
+4 (NEW),006,DI04006021,Estimation & Costing
+4 (NEW),006,DI04006031,Design of Steel Structures
+4 (NEW),006,DI04006071,"Railway, Harbour & Tunnel Engineering"
+4 (NEW),006,DI04006081,Traffic Engineering
+4 (NEW),006,DI04006091,Airport Engineering
+4 (NEW),007,DI04000081,Entrepreneurship & Start-up
+4 (NEW),007,DI04000091,Digital Marketing & Ecommerce
+4 (NEW),007,DI04000101,Cyber Security Awareness & Cyber Laws
+4 (NEW),007,DI04000011,Software Engineering
+4 (NEW),007,DI04000021,Object Oriented Programming-Java
+4 (NEW),007,DI04000061,Introduction Machine Learning
+4 (NEW),007,DI04000071,Introduction to Data Analysis
+4 (NEW),007,DI04000311,Fundamentals of Artificial Intelligence
+4 (NEW),007,DI04000041,Cloud Computing
+4 (NEW),007,DI04000051,Multimedia Technologies
+4 (NEW),007,DI04000301,Advance Computer Network
+4 (NEW),009,DI04000181,Utilization of Electrical Power
+4 (NEW),009,DI04009021,Energy Efficiency & Audit
+4 (NEW),009,DI04000081,Entrepreneurship & Start-up
+4 (NEW),009,DI04000191,Introduction to IoT
+4 (NEW),009,DI04000201,Industrial Automation & Control
+4 (NEW),009,DI04000171,Microcontroller & its Applications
+4 (NEW),009,DI04000321,Electrical Machines - II
+4 (NEW),009,DI04009011,Substation Engineering
+4 (NEW),009,DI04009031,Commissioning & Maintenance of Electrical Equipments
+4 (NEW),009,DI04009041,Electrical Control Panels
+4 (NEW),011,DI04011021,Optical Communication
+4 (NEW),011,DI04011031,Consumer Electronics
+4 (NEW),011,DI04000081,Entrepreneurship & Start-up
+4 (NEW),011,DI04000091,Digital Marketing & Ecommerce
+4 (NEW),011,DI04000101,Cyber Security Awareness & Cyber Laws
+4 (NEW),011,DI04000111,Microprocessor & Microcontroller
+4 (NEW),011,DI04000121,Embedded System
+4 (NEW),011,DI04000131,Digital & Data Communication
+4 (NEW),011,DI04011011,Microwave & Its Applications
+4 (NEW),011,DI04011041,Python Programming
+4 (NEW),011,DI04011051,Renewable Energy & Emerging Electronics
+4 (NEW),013,DI04000081,Entrepreneurship & Start-up
+4 (NEW),013,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),013,DI04000151,Hydraulics
+4 (NEW),013,DI04013051,Soil Engineering
+4 (NEW),013,DI04013011,Physico Chemical Treatment of Water & Wastewater
+4 (NEW),013,DI04013021,Air Pollution & Control
+4 (NEW),013,DI04013031,Solid Waste Management
+4 (NEW),013,DI04013061,Environmental Monitoring
+4 (NEW),013,DI04013071,Environmental Microbiology
+4 (NEW),016,DI04016051,Mobile Application Development
+4 (NEW),016,DI04016061,Database Administration
+4 (NEW),016,DI04000081,Entrepreneurship & Start-up
+4 (NEW),016,DI04000141,Human Resources Management
+4 (NEW),016,DI04000291,Industry 4.0
+4 (NEW),016,DI04016011,Mobile Computing and Networks
+4 (NEW),016,DI04016021,Cyber Security and Digital Forensics
+4 (NEW),016,DI04016031,Fundamental of Machine Learning
+4 (NEW),016,DI04016071,Advanced Java Programming
+4 (NEW),016,DI04016081,Data Mining and Warehousing
+4 (NEW),017,DI04017051,Industrial Power Control
+4 (NEW),017,DI04017061,Biomedical Instrumentation
+4 (NEW),017,DI04000081,Entrepreneurship & Start-up
+4 (NEW),017,DI04000211,Automation in Production System and Management
+4 (NEW),017,DI04000221,Industrial Automation
+4 (NEW),017,DI04000231,Automation Solution
+4 (NEW),017,DI04017091,Microcontroller in Instrumentation
+4 (NEW),017,DI04017011,Process Instrumentation-II
+4 (NEW),017,DI04017021,Analytical Instrumentation
+4 (NEW),017,DI04017031,Programmable Logic Controller
+4 (NEW),017,DI04017071,Digital Control System
+4 (NEW),017,DI04017081,Industrial Data Communication
+4 (NEW),019,DI04000261,Industrial Engineering and Management
+4 (NEW),019,DI04000271,Operations Management
+4 (NEW),019,DI04000281,Total Quality Management
+4 (NEW),019,DI04000081,Entrepreneurship & Start-up
+4 (NEW),019,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),019,DI04000291,Industry 4.0
+4 (NEW),019,DI04000241,Manufacturing Engineering - II
+4 (NEW),019,DI04000251,Design of Machine Elements
+4 (NEW),019,DI04019011,Thermal Engineering - I
+4 (NEW),019,DI04019031,Engineering Costing and Plant Maintenance
+4 (NEW),019,DI04019041,Fabrication Technology
+4 (NEW),020,DI04000281,Total Quality Management
+4 (NEW),020,DI04020021,Production & Operations Management
+4 (NEW),020,DI04000081,Entrepreneurship & Start-up
+4 (NEW),020,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),020,DI04000291,Industry 4.0
+4 (NEW),020,DI04000241,Manufacturing Engineering - II
+4 (NEW),020,DI04000251,Design of Machine Elements
+4 (NEW),020,DI04020051,Programmable Logical Controllers
+4 (NEW),020,DI04020031,Basics of C Programming
+4 (NEW),020,DI04020041,Programming in Python
+4 (NEW),021,DI04021051,Destructive Testing
+4 (NEW),021,DI04021061,Material Characterization
+4 (NEW),021,DI04000081,Entrepreneurship & Start-up
+4 (NEW),021,DI04021091,Composite Materials
+4 (NEW),021,DI04021101,Powder Metallurgy
+4 (NEW),021,DI04021011,Physical Metallurgy - II
+4 (NEW),021,DI04021021,Heat Treatment
+4 (NEW),021,DI04021031,Foundry Technology
+4 (NEW),021,DI04021041,Iron Making
+4 (NEW),021,DI04021071,Non Destructive Testing
+4 (NEW),021,DI04021081,Failure Analysis
+4 (NEW),022,DI04022051,Mining Hazards and Safety
+4 (NEW),022,DI04022061,Economic Geology
+4 (NEW),022,DI04022071,Mineral Transportation Systems
+4 (NEW),022,DI04000081,Entrepreneurship & Start-up
+4 (NEW),022,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),022,DI04022011,Mine Surveying II
+4 (NEW),022,DI04022021,Underground Coal Mining
+4 (NEW),022,DI04022031,Underground Metal Mining
+4 (NEW),022,DI04022041,"Mine Management, Safety and Legislation"
+4 (NEW),022,DI04022081,Rock Mechanics
+4 (NEW),022,DI04022091,Mineral Beneficiation
+4 (NEW),022,DI04022101,Mine Electrical Engineering
+4 (NEW),023,DI04023051,Designing of Plastic Products
+4 (NEW),023,DI04023061,Plastic Products Testing
+4 (NEW),023,DI04000081,Entrepreneurship & Start-up
+4 (NEW),023,DI04000141,Human Resources Management
+4 (NEW),023,DI04023091,Green Hydrogen Production Technology
+4 (NEW),023,DI04023011,Decorating and Finishing of Plastic Products
+4 (NEW),023,DI04023021,Designing of Injection Mould
+4 (NEW),023,DI04023031,Secondary Processing Techniques
+4 (NEW),023,DI04023041,Mould Fabrication Technology – II
+4 (NEW),023,DI04023071,Hydraulics and Pneumatics System
+4 (NEW),023,DI04023081,Plastics in Medical
+4 (NEW),024,DI04024051,Industrial Programmable Logic Controller
+4 (NEW),024,DI04024061,Industrial Automation
+4 (NEW),024,DI04000081,Entrepreneurship & Start-up
+4 (NEW),024,DI04024091,Renewable Energy Sources
+4 (NEW),024,DI04024101,Energy Conservation and Audit
+4 (NEW),024,DI04024011,DC Motor Drives
+4 (NEW),024,DI04024021,AC Rotating Machines
+4 (NEW),024,DI04024031,AC Power Electronic Converters
+4 (NEW),024,DI04024071,Electric Vehicle
+4 (NEW),024,DI04024081,Electric Traction
+4 (NEW),028,DI04028051,Quality Control in Textile Processing
+4 (NEW),028,DI04000081,Entrepreneurship & Start-up
+4 (NEW),028,DI04028071,Processing of Technical Textiles
+4 (NEW),028,DI04028011,Finishing Technology
+4 (NEW),028,DI04028021,Dyeing Technology - II
+4 (NEW),028,DI04028031,Printing Technology - II
+4 (NEW),028,DI04028041,Chemistry of Intermediates & Dyestuffs
+4 (NEW),028,DI04028061,Chemistry of Textile Auxiliaries
+4 (NEW),029,DI04029051,Woven Fabric Design - II
+4 (NEW),029,DI04029061,Textile Product Design and Development
+4 (NEW),029,DI04000081,Entrepreneurship & Start-up
+4 (NEW),029,DI04000341,Smart and E - Textiles
+4 (NEW),029,DI04029101,Quality and Process Control in Textiles
+4 (NEW),029,DI04029111,Textile Fashion Marketing Import & Export
+4 (NEW),029,DI04029011,Textile Testing - II
+4 (NEW),029,DI04029021,Production Planning in Textiles
+4 (NEW),029,DI04029031,Technical Textiles
+4 (NEW),029,DI04029041,Elements of Textile Processing
+4 (NEW),029,DI04029071,Textile Fashion & Merchandising
+4 (NEW),029,DI04029081,Non Woven Technology
+4 (NEW),029,DI04029091,Knitting Technology
+4 (NEW),031,DI04000081,Entrepreneurship & Start-up
+4 (NEW),031,DI04000091,Digital Marketing & Ecommerce
+4 (NEW),031,DI04000101,Cyber Security Awareness & Cyber Laws
+4 (NEW),031,DI04000011,Software Engineering
+4 (NEW),031,DI04000021,Object Oriented Programming-Java
+4 (NEW),031,DI04000061,Introduction Machine Learning
+4 (NEW),031,DI04000071,Introduction to Data Analysis
+4 (NEW),031,DI04000311,Fundamentals of Artificial Intelligence
+4 (NEW),031,DI04000041,Cloud Computing
+4 (NEW),031,DI04000051,Multimedia Technologies
+4 (NEW),031,DI04000301,Advance Computer Network
+4 (NEW),032,DI04032021,Advance Java
+4 (NEW),032,DI04032031,Advance Python
+4 (NEW),032,DI04000081,Entrepreneurship & Start-up
+4 (NEW),032,DI04000091,Digital Marketing & Ecommerce
+4 (NEW),032,DI04000101,Cyber Security Awareness & Cyber Laws
+4 (NEW),032,DI04000111,Microprocessor & Microcontroller
+4 (NEW),032,DI04000121,Embedded System
+4 (NEW),032,DI04000131,Digital & Data Communication
+4 (NEW),032,DI04032011,Database Management System
+4 (NEW),041,DI04041051,Industrial Internet of Things
+4 (NEW),041,DI04041061,Automation in Agriculture
+4 (NEW),041,DI04000081,Entrepreneurship & Start-up
+4 (NEW),041,DI04000211,Automation in Production System and Management
+4 (NEW),041,DI04000221,Industrial Automation
+4 (NEW),041,DI04000231,Automation Solution
+4 (NEW),041,DI04041091,Automation System Design
+4 (NEW),041,DI04041011,Embedded Systems for Robotics
+4 (NEW),041,DI04041021,Process Measurement
+4 (NEW),041,DI04041031,Signals and Systems
+4 (NEW),041,DI04041041,Power Plant Automation
+4 (NEW),041,DI04041071,CNC Machines and 3D Printing
+4 (NEW),041,DI04041081,CAD - CAM
+4 (NEW),051,DI04051051,Costumes of India
+4 (NEW),051,DI04051061,World Costume
+4 (NEW),051,DI04000081,Entrepreneurship & Start-up
+4 (NEW),051,DI04051091,Nonwoven Textiles in Fashion & Apparel
+4 (NEW),051,DI04051011,Apparel Production and Quality Control
+4 (NEW),051,DI04051021,Garment Sewing Technology
+4 (NEW),051,DI04051031,Production Planning and Management
+4 (NEW),051,DI04051071,Technical Textiles
+4 (NEW),051,DI04051081,Apparel Merchandising
+4 (NEW),052,DI04052051,Advance White Ware
+4 (NEW),052,DI04052061,Structural Clay Products
+4 (NEW),052,DI04000081,Entrepreneurship & Start-up
+4 (NEW),052,DI04000141,Human Resources Management
+4 (NEW),052,DI04052011,Glass-2
+4 (NEW),052,DI04052031,Quality Control
+4 (NEW),052,DI04052041,Drying and Firing
+4 (NEW),052,DI04052071,Advance Refractory
+4 (NEW),052,DI04052081,Refractories for Iron and Steel Plants
+4 (NEW),055,DI04055051,Welding Technology - 2
+4 (NEW),055,DI04055061,Production Tool Design
+4 (NEW),055,DI04000081,Entrepreneurship & Start-up
+4 (NEW),055,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),055,DI04000291,Industry 4.0
+4 (NEW),055,DI04055011,Engineering Metrology & Instrumentation Control
+4 (NEW),055,DI04055021,Fabrication Design
+4 (NEW),055,DI04055031,Process Piping Fabrication
+4 (NEW),055,DI04055041,Industrial Management & Organizational Behaviour
+4 (NEW),055,DI04055071,Welding Inspection & Testing
+4 (NEW),055,DI04055081,Advance Welding Engineering
+4 (NEW),058,DI04058051,Computer Aided Graphic Design
+4 (NEW),058,DI04000081,Entrepreneurship & Start-up
+4 (NEW),058,DI04058071,Advertising and Digital Marketing
+4 (NEW),058,DI04058011,Total Quality Control
+4 (NEW),058,DI04058021,Advance Offset Printing
+4 (NEW),058,DI04058031,Digital Imaging and Color Management
+4 (NEW),058,DI04058041,Screen Printing Process
+4 (NEW),058,DI04058061,Printers Management
+4 (NEW),059,DI04059051,Textile Ornamentation
+4 (NEW),059,DI04059061,History of World Textiles
+4 (NEW),059,DI04000081,Entrepreneurship & Start-up
+4 (NEW),059,DI04000341,Smart and E - Textiles
+4 (NEW),059,DI04059011,Textile Chemical Process - II
+4 (NEW),059,DI04059021,Fashion Studies & Merchandising
+4 (NEW),059,DI04059031,Advance Fabric Design
+4 (NEW),059,DI04059071,Digital Printing
+4 (NEW),059,DI04059081,Knitting Design & Technology
+4 (NEW),064,DI04000181,Utilization of Electrical Power
+4 (NEW),064,DI04064021,Bio Fuels and Bio Mass
+4 (NEW),064,DI04000081,Entrepreneurship & Start-up
+4 (NEW),064,DI04000191,Introduction to IoT
+4 (NEW),064,DI04000201,Industrial Automation & Control
+4 (NEW),064,DI04000171,Microcontroller & its Applications
+4 (NEW),064,DI04000321,Electrical Machines - II
+4 (NEW),064,DI04064011,Digital Electronics & Digital Instruments
+4 (NEW),064,DI04064031,Fuel Cell Technology
+4 (NEW),064,DI04064041,"Installation, Maintenance & Monitoring of Renewable Energy Power Plant"
+4 (NEW),065,DI04000261,Industrial Engineering and Management
+4 (NEW),065,DI04000271,Operations Management
+4 (NEW),065,DI04000281,Total Quality Management
+4 (NEW),065,DI04000081,Entrepreneurship & Start-up
+4 (NEW),065,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (NEW),065,DI04000291,Industry 4.0
+4 (NEW),065,DI04065011,Thermal System Engineering
+4 (NEW),065,DI04000251,Design of Machine Elements
+4 (NEW),065,DI04065021,Manufacturing Engineering Processes - II
+4 (NEW),065,DI04065041,Computer Aided Design
+4 (NEW),065,DI04065051,Finite Element Analysis
+4 (OLD),01,3340102,Fundamentals Of Fluid Mechanics
+4 (OLD),01,3340101,Introduction To Strength Of Materials
+4 (OLD),01,3340103,Computer Aided Drafting
+4 (OLD),01,3340104,Aircraft Systems
+4 (OLD),01,3340105,Introduction Of Electrical And Electronics Engineering
+4 (OLD),02,4340201,Automotive Heating & Air Conditioning
+4 (OLD),02,3340202,Vehicle Kinematics & Dynamics
+4 (OLD),02,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),02,4340002,Contributor Personality Development
+4 (OLD),02,4340003,Integrated Personality Development Course
+4 (OLD),02,3340201,Vehicle Body Engineering
+4 (OLD),02,4300003,Environment  and Sustainability
+4 (OLD),02,3340203,Modern Vehicle Technology
+4 (OLD),02,4340202,Automotive Mechanics
+4 (OLD),02,3340204,Automobile Industrial Management
+4 (OLD),02,4340203,Recent Trends in Automobile
+4 (OLD),02,3340206,Automobile Manufacturing Technology
+4 (OLD),02,4340204,Manufacturing Technology
+4 (OLD),02,3340207,Human Resource Management For Auto Industry
+4 (OLD),03,3340001,Entrepreneurship Development
+4 (OLD),03,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),03,4340002,Contributor Personality Development
+4 (OLD),03,4340003,Integrated Personality Development Course
+4 (OLD),03,3340302,Microprocessor And Assembly Language Programming
+4 (OLD),03,4340301,Microprocessor & Microcontroller in Medical Devices
+4 (OLD),03,3340304,Diagnostic Medical Instrumentation
+4 (OLD),03,4340302,Diagnostic Medical Instrumentation
+4 (OLD),03,3340305,Analytical And Optical Instrumentation
+4 (OLD),03,4340303,Analytical and Optical Instrumentation
+4 (OLD),03,3340303,Hospital Management & Information System
+4 (OLD),03,4340304,Therapeutic Medical Instrumentation
+4 (OLD),05,3340502,MASS TRANSFER-I
+4 (OLD),05,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),05,4340002,Contributor Personality Development
+4 (OLD),05,4340003,Integrated Personality Development Course
+4 (OLD),05,3340501,Process Heat Transfer
+4 (OLD),05,4340501,Process Heat Transfer
+4 (OLD),05,3340503,CHEMICAL PROCESS TECHNOLOGY-II
+4 (OLD),05,4340502,Mass Transfer -I
+4 (OLD),05,3340504,Pollution Control & Effluent Treatment
+4 (OLD),05,4340503,Chemical Engineering Thermodynamics
+4 (OLD),05,3340505,Safety And Hazard Management In Chemical Industry
+4 (OLD),05,4340504,Safety and Pollution Control in Chemical Industry
+4 (OLD),06,340606,Quantity Survey & Costing
+4 (OLD),06,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),06,4340002,Contributor Personality Development
+4 (OLD),06,4340003,Integrated Personality Development Course
+4 (OLD),06,3340603,Basic Transportation Engineering
+4 (OLD),06,4340601,Advanced Surveying
+4 (OLD),06,3340604,Water Resources Management
+4 (OLD),06,4340602,Soil Engineering
+4 (OLD),06,3340601,STRUCTURAL MECHANICS-II
+4 (OLD),06,4340603,"Estimating, Costing and Valuation"
+4 (OLD),06,3340602,Advanced Surveying
+4 (OLD),06,340602,Surveying - II
+4 (OLD),06,4340604,Basic Transportation Engineering
+4 (OLD),06,3340605,Soil Mechanics
+4 (OLD),07,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),07,4340002,Contributor Personality Development
+4 (OLD),07,4340003,Integrated Personality Development Course
+4 (OLD),07,3340701,Advanced Database Management System
+4 (OLD),07,4340701,Advanced Object Oriented Programming
+4 (OLD),07,3340704,.net Programming
+4 (OLD),07,4340702,Introduction to Software Engineering
+4 (OLD),07,3340705,Computer Organization And Architecture
+4 (OLD),07,4340703,Computer Networking
+4 (OLD),07,3341603,Fundamentals Of Software Development
+4 (OLD),07,4340704,Introduction to Web Development
+4 (OLD),07,3340702,Computer Networks
+4 (OLD),09,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),09,4340002,Contributor Personality Development
+4 (OLD),09,4340003,Integrated Personality Development Course
+4 (OLD),09,3340901,Polyphase Transformers And Rotating Ac Machines
+4 (OLD),09,4340901,Polyphase Transformers and Rotating AC Machines
+4 (OLD),09,3340903,Utilization Of Electrical Energy
+4 (OLD),09,4340902,Distribution and Utilization of Electrical Power
+4 (OLD),09,3340904,Digital Electronics And Digital Instruments
+4 (OLD),09,4340903,"Electrical Wiring Estimating, Costing & Contracting"
+4 (OLD),09,3340902,Transmission And Distribution Of Electrical Power
+4 (OLD),09,4340904,Digital Electronics & Digital Instruments
+4 (OLD),11,4341103,Fiber Optics Communication
+4 (OLD),11,4341107,Consumer Electronics & Maintanance
+4 (OLD),11,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),11,4340002,Contributor Personality Development
+4 (OLD),11,4340003,Integrated Personality Development Course
+4 (OLD),11,3341101,Microprocessor And Assembly Language Programming
+4 (OLD),11,4341101,Microprocessor & Microcontroller
+4 (OLD),11,3341103,Optical Communication
+4 (OLD),11,4341102,Digital Communication
+4 (OLD),11,3341104,Electronics Instruments And Measurement
+4 (OLD),11,4341105,Linear Integrated Circuit(Analog Electronics)
+4 (OLD),11,3341105,Industrial Electronics
+4 (OLD),11,4341106,Antenna &  Wave Propagation
+4 (OLD),11,3341102,Digital Communication
+4 (OLD),13,4341305,Environmental Chemistry-II
+4 (OLD),13,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),13,4340002,Contributor Personality Development
+4 (OLD),13,4340003,Integrated Personality Development Course
+4 (OLD),13,3341301,Water Supply And Sewerage System
+4 (OLD),13,4341301,Water Supply and Sewarage System
+4 (OLD),13,3341303,Estimating And Costing
+4 (OLD),13,4341302,Estimating and Costing in Environmental Engineering
+4 (OLD),13,3341304,Structural Design And Drafting
+4 (OLD),13,4341303,Environmental Project Management
+4 (OLD),13,3341305,Basics Of Construction Technology
+4 (OLD),13,4341304,Surveying for Environmental Engineering
+4 (OLD),13,3341302,Ecology And Environmental Pollution
+4 (OLD),16,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),16,4340002,Contributor Personality Development
+4 (OLD),16,4340003,Integrated Personality Development Course
+4 (OLD),16,3341601,Information Communication Technology
+4 (OLD),16,4341601,Essentials of Digital Marketing
+4 (OLD),16,3341602,Object Oriented Programming
+4 (OLD),16,4341602,Object Oriented Programming with JAVA
+4 (OLD),16,3341604,Internet Technology
+4 (OLD),16,4341603,Fundamentals of Machine Learning
+4 (OLD),16,3341603,Fundamentals Of Software Development
+4 (OLD),16,3341605,Database Management
+4 (OLD),17,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),17,4340002,Contributor Personality Development
+4 (OLD),17,4340003,Integrated Personality Development Course
+4 (OLD),17,3341701,Control Instrumentation System
+4 (OLD),17,4341701,Process Instrumentation-II
+4 (OLD),17,3341703,PROCESS INSTRUMENTATION-I
+4 (OLD),17,4341702,Control Instrumentation System
+4 (OLD),17,3341704,Biomedical Instrumentation
+4 (OLD),17,4341703,Analytical Instrumentation
+4 (OLD),17,3341702,Programmable Logic Controller And Distributed Control System
+4 (OLD),17,4341705,Biomedical Instrumentation
+4 (OLD),17,4341706,Industrial Power Control
+4 (OLD),17,4341707,Artificial Intelligence
+4 (OLD),18,4341805,Marine workshop technology-2
+4 (OLD),18,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),18,4340002,Contributor Personality Development
+4 (OLD),18,4340003,Integrated Personality Development Course
+4 (OLD),18,4341801,Naval Architecture
+4 (OLD),18,4341802,Marine Thermodynamics
+4 (OLD),18,4341803,Seamamship & Life Saving Appliances
+4 (OLD),18,4341804,Marine Auxillary Machines
+4 (OLD),19,4341904,Manufacturing Engineering - II
+4 (OLD),19,3340001,Entrepreneurship Development
+4 (OLD),19,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),19,4340002,Contributor Personality Development
+4 (OLD),19,4340003,Integrated Personality Development Course
+4 (OLD),19,3341901,Manufacturing Engineering - ii
+4 (OLD),19,4341901,"Estimating, Costing and Engineering Contracting"
+4 (OLD),19,3341903,Theory Of Machines
+4 (OLD),19,4341903,Fluid Mechanics and Hydraulic Machinery
+4 (OLD),19,3341905,Metrology & Instrumentation
+4 (OLD),19,4341905,Thermal Engineering-I
+4 (OLD),19,3341906,Plant Maintenance And Safety
+4 (OLD),19,4341902,Measurements and Metrology
+4 (OLD),19,3341904,Computer Aided Design
+4 (OLD),19,3341902,THERMAL ENGINEERING-I
+4 (OLD),20,4341904,Manufacturing Engineering - II
+4 (OLD),20,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),20,4340002,Contributor Personality Development
+4 (OLD),20,4340003,Integrated Personality Development Course
+4 (OLD),20,3341901,Manufacturing Engineering - ii
+4 (OLD),20,4342001,Control Devices
+4 (OLD),20,3341903,Theory Of Machines
+4 (OLD),20,4342002,Hydraulic and Pneumatic System
+4 (OLD),20,3341905,Metrology & Instrumentation
+4 (OLD),20,4342003,Basic of C Programming
+4 (OLD),20,3341906,Plant Maintenance And Safety
+4 (OLD),20,4341902,Measurements and Metrology
+4 (OLD),20,3342001,Control Devices
+4 (OLD),21,4342105,Non Ferrous Extractive Metallurgy
+4 (OLD),21,3342102,Iron Making
+4 (OLD),21,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),21,4340002,Contributor Personality Development
+4 (OLD),21,4340003,Integrated Personality Development Course
+4 (OLD),21,3342101,Foundry Technology
+4 (OLD),21,4342101,Foundry Technology
+4 (OLD),21,3342103,Testing Of Metals
+4 (OLD),21,4342102,Destructive Testing
+4 (OLD),21,3342104,Advance Physical Metallurgy
+4 (OLD),21,4342103,Heat Treatment
+4 (OLD),21,3342105,Heat Treatments Of Metals & Alloys
+4 (OLD),21,4342104,Iron Making
+4 (OLD),21,3342106,Metallurgical Analysis
+4 (OLD),22,4342205,Mining and Processing of Dimensional Stone
+4 (OLD),22,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),22,4340002,Contributor Personality Development
+4 (OLD),22,4340003,Integrated Personality Development Course
+4 (OLD),22,3342201,Mine Surveying - I
+4 (OLD),22,4342201,Mining-II
+4 (OLD),22,3342203,Surface Mining
+4 (OLD),22,4342202,Mine Machineries-II
+4 (OLD),22,3342204,MINING MACHINERY-II
+4 (OLD),22,4342203,Mine Surveying-II
+4 (OLD),22,3342205,"Mine Sampling, Assaying And Mineral Dressing"
+4 (OLD),22,4342204,Surface Mining
+4 (OLD),22,3342202,MINING GEOLOGY-II
+4 (OLD),23,4342305,Polymer Additives and Compounding
+4 (OLD),23,3340001,Entrepreneurship Development
+4 (OLD),23,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),23,4340002,Contributor Personality Development
+4 (OLD),23,4340003,Integrated Personality Development Course
+4 (OLD),23,3342301,Blow Rotational And Thermoforming Process
+4 (OLD),23,4342301,Blow Rotational and Thermoforming Process
+4 (OLD),23,3342302,Design For Injection Mould
+4 (OLD),23,3342303,Hydraulic & Pneumatic Systems
+4 (OLD),23,4342303,Hydraulic & Pneumatic Systems
+4 (OLD),23,3342304,Plastics Extrusion Technology
+4 (OLD),23,4342304,Process Instrumentation and Maintenance
+4 (OLD),23,3342305,Process Instrumentation And Maintenance (pim)
+4 (OLD),23,4342302,Design for Injection Mold
+4 (OLD),24,4342405,Modern Control Technology
+4 (OLD),24,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),24,4340002,Contributor Personality Development
+4 (OLD),24,4340003,Integrated Personality Development Course
+4 (OLD),24,3342401,Dc Power Electronic Converters
+4 (OLD),24,4342401,D.C. Power Electronic Converters & Drives
+4 (OLD),24,3342403,Electrical Network And Circuits
+4 (OLD),24,4342402,AC Rotating Machines
+4 (OLD),24,3342404,Measuring Instruments And Transducers
+4 (OLD),24,4342403,Electric Vehicles
+4 (OLD),24,3342405,Dc Motor Drives
+4 (OLD),24,4342404,Microcontroller
+4 (OLD),24,3342402,Ac Rotating Machines
+4 (OLD),28,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),28,4340002,Contributor Personality Development
+4 (OLD),28,4340003,Integrated Personality Development Course
+4 (OLD),28,3342801,Finishing Technology For Textile
+4 (OLD),28,4342801,Chemistry  of Textile Auxiliaries
+4 (OLD),28,3342803,Printing Technology Of Synthetic Textile
+4 (OLD),28,4342802,Finishing Technology for Textiles
+4 (OLD),28,3342804,Polymer Science
+4 (OLD),28,4342803,Dyeing Technology-II
+4 (OLD),28,3342802,Dyeing Technology For Synthetic Textile
+4 (OLD),28,4342804,Printing Technology -II
+4 (OLD),28,3342901,Elements Of Electrical And Electronics Engg For Textile And Printing
+4 (OLD),29,3342903,WEAVING TECHNOLOGY-III
+4 (OLD),29,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),29,4340002,Contributor Personality Development
+4 (OLD),29,4340003,Integrated Personality Development Course
+4 (OLD),29,3342902,YARN MANUFACTURING TECHNOLOGY-III
+4 (OLD),29,4342901,Spinning Technology-III
+4 (OLD),29,3342904,FABRIC STRUCTURE -II
+4 (OLD),29,4342902,Weaving Technology -III
+4 (OLD),29,3342905,Statistical Quality Control
+4 (OLD),29,4342903,Fabric Structure - II
+4 (OLD),29,3342906,Elements Of Textile Processing
+4 (OLD),29,4342905,Elements of Textile Processing
+4 (OLD),29,3342901,Elements Of Electrical And Electronics Engg For Textile And Printing
+4 (OLD),31,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),31,4340002,Contributor Personality Development
+4 (OLD),31,4340003,Integrated Personality Development Course
+4 (OLD),31,4340701,Advanced Object Oriented Programming
+4 (OLD),31,4340702,Introduction to Software Engineering
+4 (OLD),31,4340703,Computer Networking
+4 (OLD),31,4340704,Introduction to Web Development
+4 (OLD),32,4343204,Embedded System
+4 (OLD),32,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),32,4340002,Contributor Personality Development
+4 (OLD),32,4340003,Integrated Personality Development Course
+4 (OLD),32,4343203,Java Programming
+4 (OLD),32,4343201,Digital & Data Communication
+4 (OLD),32,4343202,Computer Networking
+4 (OLD),32,4340304,Embedded System
+4 (OLD),41,4344105,CNC Machines and 3D Printing
+4 (OLD),41,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),41,4340002,Contributor Personality Development
+4 (OLD),41,4340003,Integrated Personality Development Course
+4 (OLD),41,4344101,Embedded Systems for Robotics
+4 (OLD),41,4344102,Control Engineering
+4 (OLD),41,4344103,Process Measurement
+4 (OLD),41,4344104,Signals and Systems
+4 (OLD),41,4344106,CAD - CAM
+4 (OLD),50,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),50,4340002,Contributor Personality Development
+4 (OLD),50,4340003,Integrated Personality Development Course
+4 (OLD),50,3345003,History Of Modern Architecture
+4 (OLD),50,4345003,Town Planning
+4 (OLD),50,3345005,Building Services
+4 (OLD),50,4345004,Building Services
+4 (OLD),50,3345006,Structure
+4 (OLD),50,4345005,Structure
+4 (OLD),50,3345004,Town Planning
+4 (OLD),51,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),51,4340002,Contributor Personality Development
+4 (OLD),51,4340003,Integrated Personality Development Course
+4 (OLD),51,3345101,Apparel Quality Control
+4 (OLD),51,4345101,Fashion Studies
+4 (OLD),51,3345103,Elements Of Fashion ii
+4 (OLD),51,4345104,Indian Traditional Costumes
+4 (OLD),51,3345102,Textile Science ii
+4 (OLD),51,4345106,Apparel Sewing Technology
+4 (OLD),52,4345205,Refractory
+4 (OLD),52,3340001,Entrepreneurship Development
+4 (OLD),52,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),52,4340002,Contributor Personality Development
+4 (OLD),52,4340003,Integrated Personality Development Course
+4 (OLD),52,3345201,Drying And Firing
+4 (OLD),52,4345201,Drying and Firing
+4 (OLD),52,3345203,Vitreous Enamel
+4 (OLD),52,4345202,Glass-2
+4 (OLD),52,3345204,White Ware
+4 (OLD),52,4345203,Industrial Management
+4 (OLD),52,3345205,Refractory
+4 (OLD),52,4345204,White Ware
+4 (OLD),52,3345202,GLASS-II
+4 (OLD),55,3345502,Sheet Metal Fabrication
+4 (OLD),55,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),55,4340002,Contributor Personality Development
+4 (OLD),55,4340003,Integrated Personality Development Course
+4 (OLD),55,3345501,Instrumentation Control & Quality Assurance
+4 (OLD),55,4345501,Engineering Metrology & Instrumentation Control
+4 (OLD),55,4345502,Sheet Metal Fabrication
+4 (OLD),55,3345503,Plant Equipment Erection And Maintenance
+4 (OLD),55,4345503,Welding Technology-2
+4 (OLD),55,3345504,WELDING TECHNOLOGY-II
+4 (OLD),55,4345504,Fabrication Technology-2
+4 (OLD),55,3345505,FABRICATION TECHNOLOGY-II
+4 (OLD),58,4345805,Digital Imaging and Color Management
+4 (OLD),58,3345802,Advance Offset Printing
+4 (OLD),58,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),58,4340002,Contributor Personality Development
+4 (OLD),58,4340003,Integrated Personality Development Course
+4 (OLD),58,3345801,Advance Image Carrier
+4 (OLD),58,4345801,Fundamentals of Electrical and Electronics Engineering
+4 (OLD),58,3345803,Printer's Management
+4 (OLD),58,4345802,Total Quality Control
+4 (OLD),58,3345804,Image Generation And Correction
+4 (OLD),58,4345803,Advance Offset Prinitng
+4 (OLD),58,3345805,Digital Printing
+4 (OLD),58,4345804,Printers Management
+4 (OLD),58,3342901,Elements Of Electrical And Electronics Engg For Textile And Printing
+4 (OLD),58,4345806,Digital Printing
+4 (OLD),59,3340001,Entrepreneurship Development
+4 (OLD),59,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),59,4340002,Contributor Personality Development
+4 (OLD),59,4340003,Integrated Personality Development Course
+4 (OLD),59,3345901,History Of Textile Design And Aesthetics ii
+4 (OLD),59,4345902,Textile Chemical Processes -II
+4 (OLD),59,3345904,Textile Process - Iii
+4 (OLD),59,4345903,Fashion Illustration & Pattern Making - II
+4 (OLD),59,4345904,Quality Assessment & Analisys
+4 (OLD),59,4345905,Traditional Printing and Design
+4 (OLD),60,3346001,Basic Traffic Engineering
+4 (OLD),60,3346003,Railway Engineering
+4 (OLD),60,3346002,Roads And Bridges
+4 (OLD),60,3340602,Advanced Surveying
+4 (OLD),60,3340605,Soil Mechanics
+4 (OLD),63,3346306,Irrigation Technology
+4 (OLD),63,3346301,Farm Machinery and Implements
+4 (OLD),63,3346302,Non Conventional Energy Sources
+4 (OLD),63,3346303,Post Harvest Technology
+4 (OLD),63,3346304,Applied Electronics and Instrumentation
+4 (OLD),64,4346405,Hydraulics and Pneumatics
+4 (OLD),64,4340001,Essence Of Indian Knowledge and Tradition
+4 (OLD),64,4340002,Contributor Personality Development
+4 (OLD),64,4340003,Integrated Personality Development Course
+4 (OLD),64,4346401,Solar Photovoltaic
+4 (OLD),64,4346402,Wind Energy
+4 (OLD),64,4346403,Bio-Energy
+4 (OLD),64,4346404,Power Electronics
+4 (OLD),65,4340001,Essence of Indian Knowledge and Tradition
+4 (OLD),65,4340002,Contributor Personality Development
+4 (OLD),65,4340003,Integrated Personality Development Course
+4 (OLD),65,4341901,"Estimating, Costing and Engineering Contracting"
+4 (OLD),65,4341903,Fluid Mechanics and Hydraulic Machinery
+4 (OLD),65,4346501,Manufacturing Engineering Processes-III
+4 (OLD),65,4346502,Thermal Engineering
+4 (Special Exam),007,DI04000011,Software Engineering
+4 (Special Exam),007,DI04000021,Object Oriented Programming-Java
+4 (Special Exam),007,DI04000041,Cloud Computing
+4 (Special Exam),007,DI04000061,Introduction Machine Learning
+4 (Special Exam),007,DI04000081,Entrepreneurship & Start-up
+4 (Working Professionals - NEW),005,DI04005051,Clean and Renewable Energy Technology
+4 (Working Professionals - NEW),005,DI04005061,Waste to Energy Conversion Technology
+4 (Working Professionals - NEW),005,DI04000081,Entrepreneurship & Start-up
+4 (Working Professionals - NEW),005,DI04000141,Human Resources Management
+4 (Working Professionals - NEW),005,DI04005011,Chemical Process Technology-II
+4 (Working Professionals - NEW),005,DI04005021,Mass Transfer-I
+4 (Working Professionals - NEW),005,DI04005031,Pollution Control and Effluent Treatment
+4 (Working Professionals - NEW),005,DI04005041,Chemical Engineering Thermodynamics
+4 (Working Professionals - NEW),005,DI04005071,Petroleum Refining and Petroleum Technology
+4 (Working Professionals - NEW),005,DI04005081,Pulp and Paper Technology
+4 (Working Professionals - NEW),005,DI04005091,Sugar and Food Technology
+4 (Working Professionals - NEW),006,DI04006041,Water Resources Engineering
+4 (Working Professionals - NEW),006,DI04006051,Ground Water Engineering
+4 (Working Professionals - NEW),006,DI04006061,Irrigation Engineering
+4 (Working Professionals - NEW),006,DI04000081,Entrepreneurship & Start-up
+4 (Working Professionals - NEW),006,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (Working Professionals - NEW),006,DI04000151,Hydraulics
+4 (Working Professionals - NEW),006,DI04006011,Concrete Technology
+4 (Working Professionals - NEW),006,DI04006021,Estimation & Costing
+4 (Working Professionals - NEW),006,DI04006031,Design of Steel Structures
+4 (Working Professionals - NEW),006,DI04006071,"Railway, Harbour & Tunnel Engineering"
+4 (Working Professionals - NEW),006,DI04006081,Traffic Engineering
+4 (Working Professionals - NEW),006,DI04006091,Airport Engineering
+4 (Working Professionals - NEW),009,DI04000181,Utilization of Electrical Power
+4 (Working Professionals - NEW),009,DI04009021,Energy Efficiency & Audit
+4 (Working Professionals - NEW),009,DI04000081,Entrepreneurship & Start-up
+4 (Working Professionals - NEW),009,DI04000191,Introduction to IoT
+4 (Working Professionals - NEW),009,DI04000201,Industrial Automation & Control
+4 (Working Professionals - NEW),009,DI04000171,Microcontroller & its Applications
+4 (Working Professionals - NEW),009,DI04000321,Electrical Machines - II
+4 (Working Professionals - NEW),009,DI04009011,Substation Engineering
+4 (Working Professionals - NEW),009,DI04009031,Commissioning & Maintenance of Electrical Equipments
+4 (Working Professionals - NEW),009,DI04009041,Electrical Control Panels
+4 (Working Professionals - NEW),017,DI04017051,Industrial Power Control
+4 (Working Professionals - NEW),017,DI04017061,Biomedical Instrumentation
+4 (Working Professionals - NEW),017,DI04000081,Entrepreneurship & Start-up
+4 (Working Professionals - NEW),017,DI04000211,Automation in Production System and Management
+4 (Working Professionals - NEW),017,DI04000221,Industrial Automation
+4 (Working Professionals - NEW),017,DI04000231,Automation Solution
+4 (Working Professionals - NEW),017,DI04017091,Microcontroller in Instrumentation
+4 (Working Professionals - NEW),017,DI04017011,Process Instrumentation-II
+4 (Working Professionals - NEW),017,DI04017021,Analytical Instrumentation
+4 (Working Professionals - NEW),017,DI04017031,Programmable Logic Controller
+4 (Working Professionals - NEW),017,DI04017071,Digital Control System
+4 (Working Professionals - NEW),017,DI04017081,Industrial Data Communication
+4 (Working Professionals - NEW),019,DI04000261,Industrial Engineering and Management
+4 (Working Professionals - NEW),019,DI04000271,Operations Management
+4 (Working Professionals - NEW),019,DI04000281,Total Quality Management
+4 (Working Professionals - NEW),019,DI04000081,Entrepreneurship & Start-up
+4 (Working Professionals - NEW),019,DI04000161,Artificial Intelligence and Prompt Engineering
+4 (Working Professionals - NEW),019,DI04000291,Industry 4.0
+4 (Working Professionals - NEW),019,DI04000241,Manufacturing Engineering - II
+4 (Working Professionals - NEW),019,DI04000251,Design of Machine Elements
+4 (Working Professionals - NEW),019,DI04019011,Thermal Engineering - I
+4 (Working Professionals - NEW),019,DI04019031,Engineering Costing and Plant Maintenance
+4 (Working Professionals - NEW),019,DI04019041,Fabrication Technology
+4 (Working Professionals - OLD),05,4340001,Essence of Indian Knowledge and Tradition
+4 (Working Professionals - OLD),05,4340002,Contributor Personality Development
+4 (Working Professionals - OLD),05,4340003,Integrated Personality Development Course
+4 (Working Professionals - OLD),05,4340501,Process Heat Transfer
+4 (Working Professionals - OLD),05,4340502,Mass Transfer -I
+4 (Working Professionals - OLD),05,4340503,Chemical Engineering Thermodynamics
+4 (Working Professionals - OLD),05,4340504,Safety and Pollution Control in Chemical Industry
+4 (Working Professionals - OLD),06,4340001,Essence of Indian Knowledge and Tradition
+4 (Working Professionals - OLD),06,4340002,Contributor Personality Development
+4 (Working Professionals - OLD),06,4340003,Integrated Personality Development Course
+4 (Working Professionals - OLD),06,4340601,Advanced Surveying
+4 (Working Professionals - OLD),06,4340602,Soil Engineering
+4 (Working Professionals - OLD),06,4340603,"Estimating, Costing and Valuation"
+4 (Working Professionals - OLD),06,4340604,Basic Transportation Engineering
+4 (Working Professionals - OLD),09,4340001,Essence of Indian Knowledge and Tradition
+4 (Working Professionals - OLD),09,4340002,Contributor Personality Development
+4 (Working Professionals - OLD),09,4340003,Integrated Personality Development Course
+4 (Working Professionals - OLD),09,4340901,Polyphase Transformers and Rotating AC Machines
+4 (Working Professionals - OLD),09,4340902,Distribution and Utilization of Electrical Power
+4 (Working Professionals - OLD),09,4340903,"Electrical Wiring Estimating, Costing & Contracting"
+4 (Working Professionals - OLD),09,4340904,Digital Electronics & Digital Instruments
+4 (Working Professionals - OLD),17,4340001,Essence of Indian Knowledge and Tradition
+4 (Working Professionals - OLD),17,4340002,Contributor Personality Development
+4 (Working Professionals - OLD),17,4340003,Integrated Personality Development Course
+4 (Working Professionals - OLD),17,4341701,Process Instrumentation-II
+4 (Working Professionals - OLD),17,4341702,Control Instrumentation System
+4 (Working Professionals - OLD),17,4341703,Analytical Instrumentation
+4 (Working Professionals - OLD),17,4341705,Biomedical Instrumentation
+4 (Working Professionals - OLD),17,4341706,Industrial Power Control
+4 (Working Professionals - OLD),17,4341707,Artificial Intelligence
+4 (Working Professionals - OLD),19,4341904,Manufacturing Engineering - II
+4 (Working Professionals - OLD),19,4340001,Essence of Indian Knowledge and Tradition
+4 (Working Professionals - OLD),19,4340002,Contributor Personality Development
+4 (Working Professionals - OLD),19,4340003,Integrated Personality Development Course
+4 (Working Professionals - OLD),19,4341901,"Estimating, Costing and Engineering Contracting"
+4 (Working Professionals - OLD),19,4341903,Fluid Mechanics and Hydraulic Machinery
+4 (Working Professionals - OLD),19,4341905,Thermal Engineering-I
+4 (Working Professionals - OLD),19,4341902,Measurements and Metrology
+5 (NCC),NA,1035NA01,National Cadet Corps V
+5 (NEW),03,4300021,Entrepreneurship and Start-ups
+5 (NEW),03,4350301,Medical Imaging Techniques
+5 (NEW),03,4350302,Crirtical care Instrumentation
+5 (NEW),03,4350303,Biomedical Digital Signal Processing
+5 (NEW),05,4300021,Entrepreneurship and Start-ups
+5 (NEW),05,4350501,Mass Transfer -II
+5 (NEW),05,4350502,Waste to Energy Conversion Technology
+5 (NEW),05,4350505,Fertilizer Technology
+5 (NEW),05,4350506,Pulp and Paper Technology
+5 (NEW),05,4350507,Polymer Technology
+5 (NEW),06,4300021,Entrepreneurship and Start-ups
+5 (NEW),06,4350601,Concrete Technology
+5 (NEW),06,4350602,Water Resource Engineering
+5 (NEW),06,4350605,Advance Construction Technology
+5 (NEW),06,4350606,Highway Engineering
+5 (NEW),06,4350607,Irrigation Engineering
+5 (NEW),06,4350608,Environmental Engineering and Pollution Control
+5 (NEW),06,4350609,Advance Analysis of Structures
+5 (NEW),07,4300021,Entrepreneurship and Start-ups
+5 (NEW),07,4350701,Computer Organization and Architecture
+5 (NEW),07,4350702,Introduction to Machine Learning
+5 (NEW),07,4350705,Fundamentals of Artificial Intelligence
+5 (NEW),07,4350706,Advance Computer Network
+5 (NEW),07,4350707,Multimedia Technologies
+5 (NEW),07,4350708,Web Based Java Programming
+5 (NEW),09,4300021,Entrepreneurship and Start-ups
+5 (NEW),09,4350901,Switchgear & Protection
+5 (NEW),09,4350902,Power Electronics & Drives
+5 (NEW),09,4350906,Special Electrical Machine
+5 (NEW),09,4350907,Electrical Traction & Control
+5 (NEW),11,4300021,Entrepreneurship and Start-ups
+5 (NEW),11,4351102,Embedded System
+5 (NEW),11,4351101,Internet of Things
+5 (NEW),11,4351108,OOPS & Python Programming
+5 (NEW),11,4351103,Microwave and Radar Communication
+5 (NEW),11,4351109,PLC &  Industrial Automation
+5 (NEW),11,4351104,Mobile & Wireless Communication
+5 (NEW),13,4300021,Entrepreneurship and Start-ups
+5 (NEW),13,4351301,Air Pollution and Control
+5 (NEW),13,4351302,Physico Chemical Treatment of water & waste water
+5 (NEW),13,4351303,Solid Waste Management
+5 (NEW),16,4300021,Entrepreneurship and Start-ups
+5 (NEW),16,4351601,Foundation of AI and ML
+5 (NEW),16,4351602,Mobile Computing and Networks
+5 (NEW),16,4351603,Advanced Java Programming
+5 (NEW),17,4300021,Entrepreneurship and Start-ups
+5 (NEW),17,4351701,Applied Instrumentation
+5 (NEW),17,4351702,Programmable Logic Controller
+5 (NEW),17,4351705,Virtual Instrumentation
+5 (NEW),17,4351706,Digital Control System
+5 (NEW),17,4351707,Micro Controller in Instrumentation
+5 (NEW),17,4351708,Industrial Network Security
+5 (NEW),17,4351703,Internet of Things
+5 (NEW),18,4300021,Entrepreneurship and Start-ups
+5 (NEW),18,4351801,Marine Internal Combustion Engine-I
+5 (NEW),18,4351802,Machine Design & Drawing
+5 (NEW),18,4351805,Marine Electro Technology
+5 (NEW),18,4351806,Ship Fire Prevention & Control
+5 (NEW),18,4351807,Computer Aided Manufacturing
+5 (NEW),19,4300021,Entrepreneurship and Start-ups
+5 (NEW),19,4351902,Manufacturing Engineering -III
+5 (NEW),19,4351903,Thermal Engineering-II
+5 (NEW),19,4351905,Tool Engineering
+5 (NEW),19,4351907,Renewable and Green Energy
+5 (NEW),19,4351906,Advance Manufacturing System
+5 (NEW),20,4300021,Entrepreneurship and Start-ups
+5 (NEW),20,4352002,Programmable Logical Controllers
+5 (NEW),20,4352005,Robotics & Industrial Automation
+5 (NEW),20,4351907,Renewable and Green Energy
+5 (NEW),20,4352004,AC & DC Machines
+5 (NEW),20,4351906,Advance Manufacturing System
+5 (NEW),21,4300021,Entrepreneurship and Start-ups
+5 (NEW),21,4352101,Steel Making
+5 (NEW),21,4352102,Corrosion of Metal
+5 (NEW),21,4352103,Non Destructive Testing
+5 (NEW),21,4352105,Advance Heat Treatment
+5 (NEW),21,4352106,Advance Foundry
+5 (NEW),21,4352107,Material Characterization
+5 (NEW),22,4300021,Entrepreneurship and Start-ups
+5 (NEW),22,4352201,"Mine Sampling, Assaying and Mineral Dressing"
+5 (NEW),22,4352202,Mine Ventilation
+5 (NEW),22,4352203,Rock Mechanics
+5 (NEW),22,4352204,Mining Hazards and Safety
+5 (NEW),24,4300021,Entrepreneurship and Start-ups
+5 (NEW),24,4352401,AC Power Electronic Converters & Drives
+5 (NEW),24,4352403,Programmable Logic Controller
+5 (NEW),24,4352404,Internet of Things
+5 (NEW),24,4352405,Energy Conservation and Audit
+5 (NEW),28,4300021,Entrepreneurship and Start-ups
+5 (NEW),28,4352801,Environmental Textile Chemistry
+5 (NEW),28,4352802,Chemistry of Intermediates and Dyestuffs
+5 (NEW),28,4352803,Quality Control in Textile Processing
+5 (NEW),29,4300021,Entrepreneurship and Start-ups
+5 (NEW),29,4352901,Technical Textile & Non Woven Technology
+5 (NEW),29,4352902,Production Planning
+5 (NEW),29,4352904,Yarn Texturing and Twisting Technology
+5 (NEW),29,4352905,Fabric Structure - III
+5 (NEW),31,4300021,Entrepreneurship and Start-ups
+5 (NEW),31,4350701,Computer Organization and Architecture
+5 (NEW),31,4350702,Introduction to Machine Learning
+5 (NEW),31,4350705,Fundamentals of Artificial Intelligence
+5 (NEW),31,4350706,Advanced Computer Network
+5 (NEW),31,4350707,Multimedia Technologies
+5 (NEW),31,4350708,Web Based Java Programming
+5 (NEW),32,4300021,Entrepreneurship and Start-ups
+5 (NEW),32,4353201,Wireless Sensor Networks and IoT
+5 (NEW),32,4353202,Software Engineering
+5 (NEW),32,4353204,Cyber Security
+5 (NEW),32,4353205,AI & ML
+5 (NEW),32,4353206,VLSI Technology
+5 (NEW),32,4353207,Advance Java
+5 (NEW),41,4300021,Entrepreneurship and Start-ups
+5 (NEW),41,4354102,Factory Automation
+5 (NEW),41,4354103,Field and Service Robotics
+5 (NEW),41,4350705,Fundamentals of Artificial Intelligence
+5 (NEW),41,4351705,Virtual Instrumentation
+5 (NEW),41,4354104,Robotics in BioMedical
+5 (NEW),41,4351703,Internet of Things
+5 (NEW),50,4300021,Entrepreneurship and Start-ups
+5 (NEW),50,4355002,Architectural Practice & Management
+5 (NEW),50,4355003,Estimating & Costing
+5 (NEW),51,4300021,Entrepreneurship and Start-ups
+5 (NEW),51,4355102,Industrial Management
+5 (NEW),51,4355104,Apparel Quality Control
+5 (NEW),52,4300021,Entrepreneurship and Start-ups
+5 (NEW),52,4355201,Applied Ceramics
+5 (NEW),52,4355202,Advance White Ware
+5 (NEW),52,4355203,Advance Refractroy
+5 (NEW),55,4355501,Fabrication Design
+5 (NEW),55,4355502,Process Piping Fabrication
+5 (NEW),55,4355503,Welding Metallurgy
+5 (NEW),55,4355504,Industrial Management & Organizational Behavior
+5 (NEW),55,4355505,Welding Inspection & Testing
+5 (NEW),58,4300021,Entrepreneurship and Start-ups
+5 (NEW),58,4355802,Converting and Packaging
+5 (NEW),58,4355803,Preventive Maintenance
+5 (NEW),58,4355804,Costing And Estimating For Printing
+5 (NEW),58,4355805,Flexographic Printing Process
+5 (NEW),58,4355806,Gravure Printing Process
+5 (NEW),59,4300021,Entrepreneurship and Start-ups
+5 (NEW),59,4355902,Colour Matching in Textiles
+5 (NEW),64,4300021,Entrepreneurship & Start - ups
+5 (NEW),64,4356401,Distributed Generation Systems
+5 (NEW),64,4356402,Energy Conversion Devices & Methodologies
+5 (NEW),64,4356403,Fuel cell & Hydrogen Energy
+5 (NEW),64,4356404,Marine and Geothermal Energy
+5 (NEW),65,4300021,Entrepreneurship and Start-ups
+5 (NEW),65,4356503,Computer Aided Design
+5 (NEW),65,4356504,Computer Aided Manufacturing
+5 (NEW),65,4351905,Tool Engineering
+5 (NEW),65,4351907,Renewable and Green Energy
+5 (NEW),65,4351906,Advance Manufacturing System
+5 (OLD),01,3350101,Basics Of Aerodynamics
+5 (OLD),01,3350102,AIRCRAFT MAINTENANCE-I
+5 (OLD),01,3350103,Introduction To Airframe Structure
+5 (OLD),01,3350104,Fundamentals Of Propulsion
+5 (OLD),01,3350106,Airport Operations
+5 (OLD),01,3350107,Management & Entrepreneurship
+5 (OLD),03,3350301,Mi MicrO-Controller Application In Medical Technology
+5 (OLD),03,3350302,Medical Imaging Techniques
+5 (OLD),03,3350303,Critical Care Instrumentation
+5 (OLD),03,3350304,Therapeutic Medical Instrumentation
+5 (OLD),05,3350501,Industrial Management
+5 (OLD),05,3350502,Mass Transfer - ii
+5 (OLD),05,3350503,Petroleum Refining & Petrochemical Technology
+5 (OLD),05,3350504,Utilities And Instrumentation In Chemical Plant
+5 (OLD),05,3350505,Chemical Engineering Thermodynamics
+5 (OLD),06,3350601,Design Of Steel Structure
+5 (OLD),06,3350602,Concrete Technology
+5 (OLD),06,3350603,Water Supply & Sanitary Engineering
+5 (OLD),06,3350604,"Estimating , Costing & Valuation"
+5 (OLD),06,3350605,Advance Construction Technology
+5 (OLD),06,3350606,Highway Engineering
+5 (OLD),06,3350607,Irrigation Engineering
+5 (OLD),06,3350608,Environmental Engineering &pollution Control
+5 (OLD),06,350601,Design of Concrete Structure
+5 (OLD),07,3350701,Computer Maintenance And Trouble Shooting
+5 (OLD),07,3350702,Dynamic Web Page Development
+5 (OLD),07,3350703,Java Programming
+5 (OLD),07,3350704,Computer And Network Security
+5 (OLD),07,3350705,Multimedia And Animation Techniques
+5 (OLD),09,3350901,"Wiring Estimating, Costing & Contracting"
+5 (OLD),09,3350902,Energy Conservation & Audit
+5 (OLD),09,3350903,Power Electronics
+5 (OLD),09,3350904,Microprocessor And Controller Applications
+5 (OLD),09,3350905,Wind And Solar Energy Systems
+5 (OLD),09,3350906,Special Electrical Machines
+5 (OLD),09,3350907,Electric Traction And Control
+5 (OLD),11,3351101,Microcontroller
+5 (OLD),11,3351102,Mobile Communication
+5 (OLD),11,3351103,Microwave & Radar Engineering
+5 (OLD),11,3351105,Computer Networks
+5 (OLD),11,3351106,Instrumentation & Control Engg
+5 (OLD),13,3351301,Estimating & Costing Of Environmental Structures
+5 (OLD),13,3351302,Physico Chemical Treatment Of Water & Waste Water
+5 (OLD),13,3351303,Industrial Water Pollution
+5 (OLD),13,3351304,Solid Waste Management
+5 (OLD),13,3351305,Environmental Project Management
+5 (OLD),16,3351602,Essentials Of Network Security
+5 (OLD),16,3351601,Information Communication Networks
+5 (OLD),16,3350703,Java Programming
+5 (OLD),16,3351603,Web Programming Using Asp.net
+5 (OLD),16,3351604,Management Information System
+5 (OLD),17,3351701,Electronic & Pneumatic Instrumentation
+5 (OLD),17,3351702,PROCESS INSTRUMENTATION-II
+5 (OLD),17,3351703,Analytical Instrumentation
+5 (OLD),17,3351704,PlC Programming
+5 (OLD),17,3351705,Microprocessor And Microcontroller In Instrumenation
+5 (OLD),18,3351803,MARINE ELECTRO TECHNOLOGY
+5 (OLD),18,3351805,COMPUTER AIDED MANUFACTURING
+5 (OLD),18,3351802,MACHINE DESIGN & DRAWING
+5 (OLD),19,3351901,THERMAL ENGINEERING-II
+5 (OLD),19,3351902,Design Of Machine Elements
+5 (OLD),19,3351904,Industrial Engineering
+5 (OLD),19,3351903,MANUFACTURING ENGINEERING-III
+5 (OLD),19,3351906,Self Employment And Entrepreneurship Development
+5 (OLD),19,3351907,Operations Management And Information Systems
+5 (OLD),19,3351905,"Estimating, Costing And Engineering Contracting"
+5 (OLD),20,3352002,Machine Design
+5 (OLD),20,3352001,Fundamentals Of Thermal And Fluid Devices
+5 (OLD),20,3352003,Programmable Logic Controllers
+5 (OLD),20,3351903,MANUFACTURING ENGINEERING-III
+5 (OLD),21,3352101,Steel Making
+5 (OLD),21,3352102,Corrosion Of Metals
+5 (OLD),21,3352103,Alloy Steel
+5 (OLD),21,3352104,Metallurgical Thermodynamics And Kinetics
+5 (OLD),21,3352106,Thermal Treatment Of Metals And Alloys
+5 (OLD),21,3352105,Advance Engineering Materials
+5 (OLD),21,3352107,Advance Foundry
+5 (OLD),22,3352201,Mining ii
+5 (OLD),22,3352202,Mine Ventilation
+5 (OLD),22,3352203,Rock Mechanics
+5 (OLD),22,3352204,Mining Hazards & Safety
+5 (OLD),22,3352205,Electrical Engineering For Mining
+5 (OLD),22,3352206,Mining & Processing Of Dimentional Stone
+5 (OLD),24,3352402,Applied Power Electronics
+5 (OLD),24,3352403,Ac Power Electronic Converters
+5 (OLD),24,3352401,Ac Motor Drives
+5 (OLD),24,3352404,Microcontroller For Power Electronics
+5 (OLD),24,3352405,Control System For Power Electronics
+5 (OLD),28,3352801,Computer Aided Colour Science In Textile Wet Processing
+5 (OLD),28,3352802,Quality & Process Control In Wet Processing
+5 (OLD),28,3352803,Industrial Management Of Wet Processing Industries
+5 (OLD),28,3352804,Chemistry Of Intermediates And Dyestuffs
+5 (OLD),28,3352805,Chemistry & Evaluation Of Textile Auxiliaries
+5 (OLD),29,3352901,Man Made Fiber Technology
+5 (OLD),29,3352902,Fabric Structure - Iii
+5 (OLD),29,3352903,Advance Texturising & Twisting
+5 (OLD),29,3352904,Production Planning
+5 (OLD),29,3352905,Quality And Process Control In Spinning And Weaving
+5 (OLD),50,3355002,Architectural Practice And Management
+5 (OLD),50,3355003,Advanced Structure
+5 (OLD),50,3355004,Estimating And Costing
+5 (OLD),51,3355102,"Production Planning, Management & Control"
+5 (OLD),51,3355104,Advance Apparel Production Technology
+5 (OLD),52,3355201,Applied Ceramics
+5 (OLD),52,3355202,Industrial Management
+5 (OLD),52,3355203,Advance White Ware
+5 (OLD),52,3355204,Advance Refractory
+5 (OLD),52,3355205,Quality Control
+5 (OLD),52,3355206,Structural Clay Product
+5 (OLD),52,3355207,BiO-Ceramic
+5 (OLD),52,3355208,Ceramic Processing
+5 (OLD),55,3355501,Fabrication Design
+5 (OLD),55,3355502,Process Piping Fabrication
+5 (OLD),55,3355503,Welding Metallurgy
+5 (OLD),55,3355504,Industrial Management & Organizational Behaviour
+5 (OLD),55,3355505,Welding Inspection & Testing
+5 (OLD),58,3355801,Computer Aided Graphic Design
+5 (OLD),58,3355802,Converting And Packaging
+5 (OLD),58,3355803,Preventive Maintenance
+5 (OLD),58,3355804,Costing And Estimating For Printing
+5 (OLD),58,3355805,Flexographic Printing Process
+5 (OLD),58,3355806,Gravure Printing Process
+5 (OLD),59,3355901,Computer Colour Matching
+5 (OLD),59,3355902,Traditional Printing Design - ii
+5 (OLD),60,3356001,Advanced Traffic Engineering
+5 (OLD),60,3350602,Concrete Technology
+5 (OLD),60,3356004,Highway Maintenance
+5 (OLD),60,3356005,Transport And Environment
+5 (OLD),60,3356003,Quantity Survey And Costing
+5 (OLD),60,3356002,Highway Construction
+5 (OLD),63,3356301,Farm Tractor Systems and Controls
+5 (OLD),63,3356302,Agricultural Process Engineering
+5 (OLD),63,3356303,Entrepreneurship Development And Management
+5 (OLD),63,3356304,Dairy abnd Food Engineering
+5 (OLD),63,3356305,Drainage Engineering
+5 (OLD),63,3356306,Design And Maintainance Of Green House
+5 (Working Professionals),05,4300021,Entrepreneurship and Start-ups
+5 (Working Professionals),05,4350501,Mass Transfer -II
+5 (Working Professionals),05,4350502,Waste to Energy Conversion Technology
+5 (Working Professionals),05,4350505,Fertilizer Technology
+5 (Working Professionals),05,4350506,Pulp and Paper Technology
+5 (Working Professionals),05,4350507,Polymer Technology
+5 (Working Professionals),06,4300021,Entrepreneurship and Start-ups
+5 (Working Professionals),06,4350601,Concrete Technology
+5 (Working Professionals),06,4350602,Water Resource Engineering
+5 (Working Professionals),06,4350605,Advance Construction Technology
+5 (Working Professionals),06,4350606,Highway Engineering
+5 (Working Professionals),06,4350607,Irrigation Engineering
+5 (Working Professionals),06,4350608,Environmental Engineering and Pollution Control
+5 (Working Professionals),06,4350609,Advance Analysis of Structures
+5 (Working Professionals),09,4300021,Entrepreneurship and Start-ups
+5 (Working Professionals),09,4350901,Switchgear & Protection
+5 (Working Professionals),09,4350902,Power Electronics & Drives
+5 (Working Professionals),09,4350906,Special Electrical Machine
+5 (Working Professionals),09,4350907,Electrical Traction & Control
+5 (Working Professionals),17,4300021,Entrepreneurship and Start-ups
+5 (Working Professionals),17,4351701,Applied Instrumentation
+5 (Working Professionals),17,4351702,Programmable Logic Controller
+5 (Working Professionals),17,4351705,Virtual Instrumentation
+5 (Working Professionals),17,4351706,Digital Control System
+5 (Working Professionals),17,4351707,Micro Controller in Instrumentation
+5 (Working Professionals),17,4351708,Industrial Network Security
+5 (Working Professionals),17,4351703,Internet of Things
+5 (Working Professionals),19,4300021,Entrepreneurship and Start-ups
+5 (Working Professionals),19,4351902,Manufacturing Engineering -III
+5 (Working Professionals),19,4351903,Thermal Engineering-II
+5 (Working Professionals),19,4351905,Tool Engineering
+5 (Working Professionals),19,4351907,Renewable and Green Energy
+5 (Working Professionals),19,4351906,Advance Manufacturing System
+6 (NCC),NA,1036NA01,National Cadet Corps VI
+6 (NEW),02,4360207,Entrepreneurship and Start-Ups
+6 (NEW),02,4360201,Maintenance & Service -I
+6 (NEW),02,4360202,Maintenance & Service -II
+6 (NEW),02,4360203,Maintenance & Service -III
+6 (NEW),02,4360204,Electric & Hybrid Vehicle
+6 (NEW),02,4360205,Transport Management & Motor Industry
+6 (NEW),03,4360301,Rehabilitation Engineering
+6 (NEW),03,4360302,Biomaterials & Implants
+6 (NEW),03,4360303,Medical Regulatory Affairs
+6 (NEW),03,4360305,Advance Medical Techniques
+6 (NEW),03,4360306,Opthalmic Instrumentation
+6 (NEW),03,4360307,Artificial Intelligence In Healthcare
+6 (NEW),05,4360501,Chemical Reaction Engineering
+6 (NEW),05,4360502,Petroleum Refining and Petrochemical Technology
+6 (NEW),05,4360503,Project Engineering
+6 (NEW),05,4360504,Instrumentation and Process Control
+6 (NEW),05,4360506,Advance Separation Technology
+6 (NEW),05,4360507,Process Equipment Design
+6 (NEW),05,4360508,Clean and Renewable Energy Production Technology
+6 (NEW),06,4360601,Design of Structures
+6 (NEW),06,4360602,Water Supply & Sanitary Engineering
+6 (NEW),06,4360603,Construction Project Management
+6 (NEW),06,4360605,Building Services
+6 (NEW),06,4360606,Traffic Engineering
+6 (NEW),06,4360607,Ground Water Engineering
+6 (NEW),06,4360608,Construction Quality Control and Monitoring
+6 (NEW),06,4360609,Advance Design of Structures
+6 (NEW),07,4360701,Computer Maintenance and Troubleshooting
+6 (NEW),07,4360702,Basics of information Security
+6 (NEW),07,4360703,Fundamentals of IoT
+6 (NEW),07,4360705,Network Forensics
+6 (NEW),07,4360706,Software Testing
+6 (NEW),07,4360707,Introduction to Data Analysis
+6 (NEW),07,4360708,Introduction to Game Development
+6 (NEW),07,4360709,Cloud Computing
+6 (NEW),09,4360901,"Electrical Installation, Commissioning And Maintenance"
+6 (NEW),09,4360902,Microprocessor & Controller Applications
+6 (NEW),09,4360903,Energy Conservation & Audit
+6 (NEW),09,4360904,Green Technology
+6 (NEW),09,4360905,Electrical Drives
+6 (NEW),11,4361101,Computer Networks & Data Communication
+6 (NEW),11,4361102,VLSI
+6 (NEW),11,4361105,Robotics & Autotronics
+6 (NEW),11,4361106,Renewable Energy & Emerging Trends in Electronics
+6 (NEW),13,4361301,Biological Treatment of Waste Water
+6 (NEW),13,4361302,Environmental Monitoring
+6 (NEW),13,4361303,Environmental Impact Assessment
+6 (NEW),13,4361304,Cleaner Production Engineering
+6 (NEW),13,4361305,Environmental Audit And Legislation
+6 (NEW),13,4361306,Other Environmental Pollution
+6 (NEW),16,4361601,Cyber Security and Digital Forensics
+6 (NEW),16,4361602,Cloud and Data Center Technologies
+6 (NEW),16,4361603,Foundation of Block Chain
+6 (NEW),17,4361701,DCS and SCADA
+6 (NEW),17,4361702,Industrial Data Communication
+6 (NEW),17,4361703,Advance Process Control
+6 (NEW),17,4361705,Embedded Systems
+6 (NEW),17,4361706,Industrial Automation
+6 (NEW),17,4361707,Smart and Wireless Instrumentation
+6 (NEW),17,4361708,Automation Solution
+6 (NEW),19,4361901,Industrial Engineering and Management
+6 (NEW),19,4361902,CAD/CAM
+6 (NEW),19,4361903,Design of Machine Elements
+6 (NEW),19,4361905,Power Plant Engineering
+6 (NEW),19,4361907,Fabrication Technology
+6 (NEW),19,4361908,Thermal Systems and Energy Efficiency
+6 (NEW),19,4361906,Robotics and Industrial Automation
+6 (NEW),20,4362001,Microcontroller - 8051
+6 (NEW),20,4362002,Production and Operations Management
+6 (NEW),20,4362004,Programming in Python
+6 (NEW),20,4362005,CNC Machines
+6 (NEW),20,4362006,Networking System and Communication
+6 (NEW),20,4362007,Design of Machine Elements
+6 (NEW),21,4362101,Alloy Steel
+6 (NEW),21,4362102,Introduction To Failure Analysis
+6 (NEW),21,4362103,Powder Metallurgy
+6 (NEW),21,4362105,Composite Material
+6 (NEW),21,4362106,Surface Engineering
+6 (NEW),21,4362107,Metallurgical Thermodynamics
+6 (NEW),22,4362201,Underground Mining of Coal
+6 (NEW),22,4362202,Underground Metalliferous Mining
+6 (NEW),22,4362203,Mine Management Safety and Legislation
+6 (NEW),22,4362204,Mine Environment
+6 (NEW),23,4362301,Design for Blow and Thermoforming Moulds
+6 (NEW),23,4362302,Decorating and Finishing of Plastic Products
+6 (NEW),23,4362303,Mould Fabrication Technology - II
+6 (NEW),23,4362304,Plastic Materials - II
+6 (NEW),23,4362305,Secondary Processing Techniques
+6 (NEW),28,4362801,Industrial Management of Textile Processing Industries
+6 (NEW),28,4362802,Technology of Technical Textiles
+6 (NEW),28,4362803,Theory of Dyeing
+6 (NEW),28,4362804,Analytical Textile Chemistry
+6 (NEW),29,4362901,Modern Spinning Technology
+6 (NEW),29,4362902,Modern Weaving Technology
+6 (NEW),29,4362903,Textile Testing
+6 (NEW),29,4362904,Knitting Technology
+6 (NEW),29,4362905,Quality and Process Control in Textile
+6 (NEW),29,4362906,Advance Garment Technology
+6 (NEW),31,4360701,Computer Maintenance and Troubleshooting
+6 (NEW),31,4360702,Basics of information Security
+6 (NEW),31,4360703,Fundamentals of IoT
+6 (NEW),31,4360705,Network Forensics
+6 (NEW),31,4360706,Software Testing
+6 (NEW),31,4360707,Introduction to  Data Analysis
+6 (NEW),31,4360708,Introduction to Game Development
+6 (NEW),31,4360709,Cloud Computing
+6 (NEW),41,4364102,Robotic Arm Manupluator
+6 (NEW),41,4364103,Power Plant Automation
+6 (NEW),41,4362006,Networking System and Communication
+6 (NEW),41,4360707,Introduction to Data Analysis
+6 (NEW),41,4360905,Electrical Drives
+6 (NEW),41,4364104,Robotic Oprating system
+6 (NEW),51,4365101,Apparel Merchandising
+6 (NEW),51,4365102,"Production Planning, Managment & Control"
+6 (NEW),51,4365103,Fashion Forcasting and Communication
+6 (NEW),52,4365201,Quality Control
+6 (NEW),52,4365202,Ceramic Processing
+6 (NEW),52,4365203,Tile Technology
+6 (NEW),52,4365204,Cement Technology
+6 (NEW),59,4365901,Design Visualization
+6 (NEW),59,4365902,Garment Technology for Fashion Designers
+6 (NEW),59,4365904,Fashion Studies & Merchandising
+6 (NEW),64,4366401,"Installation , Maintenance & Monitoring of Renewable Energy Power Plant"
+6 (NEW),64,4366402,"Energy Efficiency, Economics and Audit"
+6 (NEW),64,4366403,Electric and Hybrid Vehicle
+6 (NEW),64,4366404,Microcontroller Applications
+6 (NEW),64,4366405,Energy Storage
+6 (NEW),65,4361901,Industrial Engineering and Management
+6 (NEW),65,4361903,Design of Machine Elements
+6 (NEW),65,4361905,Power Plant Engineering
+6 (NEW),65,4361907,Fabrication Technology
+6 (NEW),65,4361906,Robotics and Industrial Automation
+6 (OLD),01,3360101,Airplane Performance & Stability
+6 (OLD),01,3360102,Computer Aided Modelling & Design
+6 (OLD),01,3360103,Basic Avionics
+6 (OLD),01,3360104,AIRCRAFT MAINTENANCE-II
+6 (OLD),01,3360106,Robotics & Automated Material Handling
+6 (OLD),02,3360201,Auto Engines Diagnosis And Testing
+6 (OLD),02,3360202,Auto TransmissioN-Mechanism Diagnosis And Testing
+6 (OLD),02,3360203,Auto Electrical System Diagnosis And Testing
+6 (OLD),02,3360204,Vehicle Air Conditioning
+6 (OLD),02,3360205,Motor Vehicle Acts & Loss Assesment
+6 (OLD),02,3990001,Contributor Personality Development
+6 (OLD),03,3360301,BiO-Medical Digital Signal Processing
+6 (OLD),03,3360302,Rehabilitation Engineering
+6 (OLD),03,3360303,Telemedical Instrumentation
+6 (OLD),03,3360305,Virtual Medical Instrumentation
+6 (OLD),03,3360304,Opthalmic Instrumentation
+6 (OLD),03,3360306,Bio Materials And Implants
+6 (OLD),05,3360501,Fertilizer Technology
+6 (OLD),05,3360502,Chemical Engineering Plant Economics
+6 (OLD),05,3360503,Chemical Reaction Engineering
+6 (OLD),05,3360504,Pulp & Paper Technology
+6 (OLD),05,3360505,Sugar & Food Technology
+6 (OLD),05,3360506,Polymer Technology
+6 (OLD),05,3360507,Pharmaceutical Technology
+6 (OLD),05,1990001,Contributor Personality Development
+6 (OLD),06,3360601,Design Of Reinforced Concrete Structures
+6 (OLD),06,3360602,Construction Quality Control & Monitoring
+6 (OLD),06,3360603,Construction Project Management
+6 (OLD),06,3360604,Building Services
+6 (OLD),06,3360609,Ground Water Engineering
+6 (OLD),06,360601,Design of Steel Structures
+6 (OLD),06,3360605,Maintenance & Rehabilation Of Structures
+6 (OLD),06,3360607,Traffic Engineering
+6 (OLD),06,3360608,Pavement Design
+6 (OLD),06,3360610,Advance Hydrology
+6 (OLD),06,3360612,Water And Waste Water Management
+6 (OLD),06,3360606,"Railway , Harbour & Tunnel Engineering"
+6 (OLD),06,3360611,Solid Waste Management
+6 (OLD),06,1990001,Contributor Personality Development
+6 (OLD),06,3990001,Contributor Personality Development
+6 (OLD),07,3360701,Advance Java Programming
+6 (OLD),07,3360703,Networking Management & Administration
+6 (OLD),07,3360705,Dynamic Webpage With Scripting Anguage
+6 (OLD),07,3360704,Mobile Computing And Application Development
+6 (OLD),07,3360706,Advanced Web Technology
+6 (OLD),07,1990001,Contributor Personality Development
+6 (OLD),07,3990001,Contributor Personality Development
+6 (OLD),09,3360901,Switchgear & Protection
+6 (OLD),09,3360902,"Installation, Commissioning And Maintenance"
+6 (OLD),09,3360903,Power System Operation And Control
+6 (OLD),09,3360905,Design Parameters Of Electrical Equipement And Machines
+6 (OLD),09,3360904,Substation Engineering And Power Quality
+6 (OLD),09,3360906,Electrical Drives
+6 (OLD),09,3360908,Electrification Of Building Complexes
+6 (OLD),09,3360907,Maintenance Of Transformer And Circuit Breaker
+6 (OLD),09,1990001,Contributor Personality Development
+6 (OLD),09,3990001,Contributor Personality Development
+6 (OLD),11,3361101,Entrepreneurship And Industrial Management
+6 (OLD),11,3361102,Consumer Electronics
+6 (OLD),11,3361104,VlSI
+6 (OLD),11,3361107,Industrial Automation
+6 (OLD),11,3361106,Multimedia Communication
+6 (OLD),11,3361108,Robotics & Autotronics
+6 (OLD),11,3361105,Embedded System
+6 (OLD),11,1990001,Contributor Personality Development
+6 (OLD),11,3990001,Contributor Personality Development
+6 (OLD),13,3361301,Biological Treatment Of Waste Water
+6 (OLD),13,3361302,Environmental Monitoring
+6 (OLD),13,3361303,Air Pollution And Control
+6 (OLD),13,3361304,Cleaner Production Engineering
+6 (OLD),13,3361305,Environmental Legislation And Audit
+6 (OLD),13,3361306,Environmental Impact Assessment
+6 (OLD),16,3360701,Advance Java Programming
+6 (OLD),16,3361601,Web And Network Security
+6 (OLD),16,3361602,Android Application Development
+6 (OLD),16,3361604,Data Mining And Warehousing
+6 (OLD),16,3361603,Web Designing Using Php And Mysql
+6 (OLD),16,3361605,Database Administration
+6 (OLD),16,1990001,Contributor Personality Development
+6 (OLD),16,3990001,Contributor Personality Development
+6 (OLD),17,3361701,Applied Instrumentation
+6 (OLD),17,3361702,Industrial Power Control
+6 (OLD),17,3361703,Dcs And Scada
+6 (OLD),17,3361705,Pic Microcontroller And Embedded Systems
+6 (OLD),17,3361704,Instrumentation Data Communication
+6 (OLD),17,3361706,Embedded Networks
+6 (OLD),18,3361801,MARINE INTERNAL COMBUSTION ENGINE- II
+6 (OLD),18,3361802,MARINE AUXILIARY MACHINES - II
+6 (OLD),18,3361803,SHIP SAFETY AND ENVIRONMENT PROTECTION
+6 (OLD),18,3361804,PRINCIPLES OF MANAGEMENT
+6 (OLD),19,3361901,Computer Aided Manufacturing
+6 (OLD),19,3361902,Tool Engineering
+6 (OLD),19,3361903,Industrial Management
+6 (OLD),19,3361904,Manufacturing Systems.
+6 (OLD),19,3361906,Power Plant Engineering
+6 (OLD),19,3361908,Hydraulic Systems
+6 (OLD),19,3361905,Fabrication Technology.
+6 (OLD),19,3361909,Pneumatic Systems
+6 (OLD),19,3361907,Thermal Systems And Energy Efficiency
+6 (OLD),19,3341904,Computer Aided Design
+6 (OLD),19,1990001,Contributor Personality Development
+6 (OLD),19,3990001,Contributor Personality Development
+6 (OLD),20,3362001,Microcontrollers
+6 (OLD),20,3362003,CNC Machines
+6 (OLD),20,3362004,Robotics
+6 (OLD),20,3362005,Networking System & Communications
+6 (OLD),20,3362006,Autotronics
+6 (OLD),20,3362007,Advance Manufacturing System
+6 (OLD),20,3362008,Hydraulic And Pneumatic Devices
+6 (OLD),22,3362201,Mine Surveying - ii
+6 (OLD),22,3362202,Mine Management Safety And Legislation
+6 (OLD),22,3362203,Under Ground Mining Of Coal
+6 (OLD),22,3362204,Under Ground Metalifferous Mining
+6 (OLD),23,3362301,Design For Blow And Thermoforming Moulds
+6 (OLD),23,3362302,MOULD FABRICATION TECHNOLOGY-II
+6 (OLD),23,3361903,Industrial Management
+6 (OLD),23,3362303,PLASTIC MATERIALS-II
+6 (OLD),23,3362304,Plastics Testing And Quality Management
+6 (OLD),23,3362305,Secondary Processing Techniques
+6 (OLD),24,3362401,Power Electronics For Renewable Energy
+6 (OLD),24,3362402,Programmable Logic Controllers
+6 (OLD),28,3362801,Technology Of Technical Textiles
+6 (OLD),28,3362802,Management Of Energy And Environment In Wet Processing
+6 (OLD),28,3362803,Theory Of Dyeing
+6 (OLD),28,3362804,Analytical Textile Chemistry
+6 (OLD),29,3362901,Modern Spinning Technology
+6 (OLD),29,3362902,Modern Weaving Technology
+6 (OLD),29,3362903,Textile Testing
+6 (OLD),29,3362904,Technical Textile
+6 (OLD),29,3362906,Advance Knitting Technology
+6 (OLD),29,3362907,Advance Garment Technology
+6 (OLD),50,DA300001,Mathematics
+6 (OLD),51,3365101,Apparel Merchandising
+6 (OLD),51,3365102,Industrial Management And Entrepreneurship
+6 (OLD),59,3365902,Design Visualization
+6 (OLD),60,3366001,URBAN TRANSPORTATION PLANNING
+6 (OLD),60,3360602,Construction Quality Control & Monitoring
+6 (OLD),60,3360603,Construction Project Management
+6 (OLD),60,3366003,Road Transport Economics
+6 (OLD),60,3366002,Airport Engineering
+6 (OLD),60,3366004,"Docks, Harbour And Tunnel Engineering"
+6 (OLD),60,3360608,Pavement Design
+6 (Working Professionals),05,4360501,Chemical Reaction Engineering
+6 (Working Professionals),05,4360502,Petroleum Refining and Petrochemical Technology
+6 (Working Professionals),05,4360503,Project Engineering
+6 (Working Professionals),05,4360504,Instrumentation and Process Control
+6 (Working Professionals),05,4360506,Advance Separation Technology
+6 (Working Professionals),05,4360507,Process Equipment Design
+6 (Working Professionals),05,4360508,Clean and Renewable Energy Production Technology
+6 (Working Professionals),06,4360601,Design of Structures
+6 (Working Professionals),06,4360602,Water Supply & Sanitary Engineering
+6 (Working Professionals),06,4360603,Construction Project Management
+6 (Working Professionals),06,4360605,Building Services
+6 (Working Professionals),06,4360606,Traffic Engineering
+6 (Working Professionals),06,4360607,Ground Water Engineering
+6 (Working Professionals),06,4360608,Construction Quality Control and Monitoring
+6 (Working Professionals),06,4360609,Advance Design of Structures
+6 (Working Professionals),09,4360901,"Electrical Installation, Commissioning And Maintenance"
+6 (Working Professionals),09,4360902,Microprocessor & Controller Applications
+6 (Working Professionals),09,4360903,Energy Conservation & Audit
+6 (Working Professionals),09,4360904,Green Technology
+6 (Working Professionals),09,4360905,Electrical Drives
+6 (Working Professionals),17,4361701,DCS and SCADA
+6 (Working Professionals),17,4361702,Industrial Data Communication
+6 (Working Professionals),17,4361703,Advance Process Control
+6 (Working Professionals),17,4361705,Embedded Systems
+6 (Working Professionals),17,4361706,Industrial Automation
+6 (Working Professionals),17,4361707,Smart and Wireless Instrumentation
+6 (Working Professionals),17,4361708,Automation Solution
+6 (Working Professionals),19,4361901,Industrial Engineering and Management
+6 (Working Professionals),19,4361902,CAD/CAM
+6 (Working Professionals),19,4361903,Design of Machine Elements
+6 (Working Professionals),19,4361905,Power Plant Engineering
+6 (Working Professionals),19,4361907,Fabrication Technology
+6 (Working Professionals),19,4361908,Thermal Systems and Energy Efficiency
+6 (Working Professionals),19,4361906,Robotics and Industrial Automation
+7 (NEW),23,4372303,Plastic Testing and Quality Management
+7 (NEW),23,4372304,Design for Plastic Products
+7 (NEW),23,4372305,Recycling of Plastics
+7 (NEW),23,4372306,Enterpreneurship and Start-ups
+7 (NEW),23,4372301,Advance Plastic Processing Techniques
+7 (NEW),23,4372302,Design for Extrusion Dies
+7 (OLD),23,3372303,Designing Of Extrusion Dies
+7 (OLD),23,3372304,Designing Of Plastic Product
+7 (OLD),23,3372305,Recycling Of Plastic
+7 (OLD),23,3372302,Decorating And Finishing Of Plastic Product
+7 (OLD),23,3372301,Advanced Plastic Processing Techniques
+8 (NEW),55,4385503,Process Equipment Design
+8 (NEW),55,4385505,Automation In Fabrication Technology
+8 (NEW),55,4385506,Ship Building and Ship Recycling
+8 (NEW),55,4385507,Quality & Production Management
+8 (NEW),55,4385508,Advance Welding Engineering
+8 (NEW),55,4385501,Entrepreneurship and Start-ups
+8 (NEW),55,4385502,Estimation Costing & Budgetary Control
+8 (OLD),55,3385503,Automation In Fabrication Technology
+8 (OLD),55,3385504,Ship Building & Ship Recycling
+8 (OLD),55,3385506,Computer Integrated Manufacturing
+8 (OLD),55,3385508,Marketing Management
+8 (OLD),55,3385507,Piping Engineering
+8 (OLD),55,3385509,Advance Welding Engineering
+8 (OLD),55,3385505,"Quality, Productivity & Safety Management"
+8 (OLD),55,3385501,Costing Estimation & Production Management.
+8 (OLD),55,3385502,Process Equipment Design

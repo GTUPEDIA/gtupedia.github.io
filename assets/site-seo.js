@@ -20,8 +20,8 @@
     siteUrl: resolveSiteUrl().replace(/\/$/, ''),
     locale: 'en_IN',
     language: 'en-IN',
-    defaultTitle: 'GTU Question Papers PDF — BE, BBA, BCA, MBA, MCA | GTUPEDIA',
-    defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
+    defaultTitle: 'GTU Question Papers PDF — BE, Diploma, BBA, BCA, MBA, MCA | GTUPEDIA',
+    defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, Diploma Engineering, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
     organizationDescription: 'Independent student-run platform for Gujarat Technological University (GTU) exam papers, study resources, and practical learning.',
   };
 

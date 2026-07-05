@@ -14,9 +14,11 @@ const SEARCH_DEBOUNCE_MS = 300;
 let searchDebounceTimer = null;
 const SITE = {
   name: 'GTUPEDIA',
-  defaultTitle: 'GTU Question Papers PDF — BE, BBA, BCA, MBA, MCA | GTUPEDIA',
-  defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
+  defaultTitle: 'GTU Question Papers PDF — BE, Diploma, BBA, BCA, MBA, MCA | GTUPEDIA',
+  defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, Diploma Engineering, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
 };
+const PAPER_ENABLED_COURSES = new Set(['BE', 'BB', 'BC', 'MB', 'MC', 'BP', 'DI']);
+const LANDING_COURSE_ORDER = ['BE', 'DI', 'BB', 'BC', 'MB', 'MC', 'BP'];
 const BE_AD_ENABLED = false;
 const BE_AD = {
   src: 'ads/startup-wala-ad.ong.PNG',
@@ -336,8 +338,11 @@ function renderPopularBranches(courseCode, limit = 8) {
     </section>`;
 }
 
-function examSeasonCount(subject) {
-  return getExamPaperSets().filter(paperSet => subjectCodes(subject).some(code => hasExamPaper(code, paperSet))).length;
+function examSeasonCount(subject, courseCode = subject.courseCode || 'BE') {
+  return getExamPaperSets().filter(
+    paperSet => paperSetCourseCode(paperSet) === courseCode
+      && subjectCodes(subject).some(code => hasExamPaper(code, paperSet)),
+  ).length;
 }
 
 function subjectHasPapers(subject) {
@@ -352,6 +357,7 @@ function getExamPaperSets() {
   if (state.catalog?.winter2025BcPapers) sets.push(state.catalog.winter2025BcPapers);
   if (state.catalog?.winter2025McPapers) sets.push(state.catalog.winter2025McPapers);
   if (state.catalog?.winter2025BpPapers) sets.push(state.catalog.winter2025BpPapers);
+  if (state.catalog?.winter2025DiPapers) sets.push(state.catalog.winter2025DiPapers);
   if (state.catalog?.summer2025Papers) sets.push(state.catalog.summer2025Papers);
   if (state.catalog?.summer2025BcPapers) sets.push(state.catalog.summer2025BcPapers);
   if (state.catalog?.summer2025MbPapers) sets.push(state.catalog.summer2025MbPapers);
@@ -360,6 +366,7 @@ function getExamPaperSets() {
   if (state.catalog?.winter2024BcPapers) sets.push(state.catalog.winter2024BcPapers);
   if (state.catalog?.winter2024MbPapers) sets.push(state.catalog.winter2024MbPapers);
   if (state.catalog?.winter2024BpPapers) sets.push(state.catalog.winter2024BpPapers);
+  if (state.catalog?.winter2024DiPapers) sets.push(state.catalog.winter2024DiPapers);
   if (state.catalog?.summer2024Papers) sets.push(state.catalog.summer2024Papers);
   if (state.catalog?.summer2024MbPapers) sets.push(state.catalog.summer2024MbPapers);
   if (state.catalog?.summer2024BpPapers) sets.push(state.catalog.summer2024BpPapers);
@@ -425,7 +432,7 @@ function syllabusCardsForSubject(subject) {
 }
 
 function examPaperCardsForSubject(subject, courseCode) {
-  if (courseCode !== 'BE' && courseCode !== 'BB' && courseCode !== 'BC' && courseCode !== 'MB' && courseCode !== 'MC' && courseCode !== 'BP') return [];
+  if (!PAPER_ENABLED_COURSES.has(courseCode)) return [];
   const cards = [];
   const seen = new Set();
 
@@ -1008,6 +1015,17 @@ function courseHasPapers(courseCode) {
   );
 }
 
+function sortCoursesForLanding(courses) {
+  return [...courses].sort((a, b) => {
+    const rankA = LANDING_COURSE_ORDER.indexOf(a.code);
+    const rankB = LANDING_COURSE_ORDER.indexOf(b.code);
+    const orderA = rankA === -1 ? 1000 : rankA;
+    const orderB = rankB === -1 ? 1000 : rankB;
+    if (orderA !== orderB) return orderA - orderB;
+    return a.code.localeCompare(b.code);
+  });
+}
+
 function renderCourseCard(course, { comingSoon = false } = {}) {
   const branchCount = getCourseBranches(course.code).length;
   const subjectCount = subjectsWithPapersCount(course.code);
@@ -1037,8 +1055,8 @@ function renderCourses() {
     courseList.innerHTML = '<p class="empty">Course data will appear here once it is imported.</p>';
     return;
   }
-  const withPapers = courses.filter(course => courseHasPapers(course.code));
-  const withoutPapers = courses.filter(course => !courseHasPapers(course.code));
+  const withPapers = sortCoursesForLanding(courses.filter(course => courseHasPapers(course.code)));
+  const withoutPapers = sortCoursesForLanding(courses.filter(course => !courseHasPapers(course.code)));
   const parts = [];
   if (withPapers.length) {
     parts.push(withPapers.map(course => renderCourseCard(course)).join(''));

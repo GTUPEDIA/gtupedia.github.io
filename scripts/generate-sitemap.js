@@ -54,6 +54,7 @@ function collectSitemapEntries(catalog) {
   add('', '1.0', 'home');
   add('resources/', '0.8', 'static');
   add('about/', '0.7', 'static');
+  add('privacy/', '0.7', 'static');
   add('team/', '0.7', 'static');
   add('partners/', '0.7', 'static');
   add('events/', '0.7', 'static');
@@ -274,6 +275,7 @@ function renderSeoShell({
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/site-seo.js" defer></script>
     <script src="assets/site-analytics.js" defer></script>
+    <script src="assets/site-ads.js" defer></script>
     <script src="assets/site-chrome.js" defer></script>
   </head>
   <body class="subpage">

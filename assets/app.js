@@ -17,14 +17,54 @@ const SITE = {
   defaultTitle: 'GTU Question Papers PDF — BE, Diploma, BBA, BCA, MBA, MCA | GTUPEDIA',
   defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, Diploma Engineering, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
 };
-const PAPER_ENABLED_COURSES = new Set(['BE', 'BB', 'BC', 'MB', 'MC', 'BP', 'DI']);
+function mountAdSlots(root = document) {
+  if (typeof window.hydrateAdSlots === 'function') window.hydrateAdSlots(root);
+}
+
+function courseIntroText(courseCode, course, branchCount, subjectCount) {
+  const name = formatLabel(course?.name || courseCode);
+  if (courseCode === 'DI') {
+    return `Browse GTU ${name} question papers by branch and semester. Coverage includes NEW, OLD, Credit-to-Degree, and NCC schemes where listed in the exam schedule. Pick your branch to open subjects with Winter and Summer paper links where available.`;
+  }
+  if (courseCode === 'BE') {
+    return `Browse GTU ${name} previous year question papers across ${branchCount} branches. Pick your branch, open a semester, and download official exam PDFs by subject code.`;
+  }
+  const countLabel = subjectCount ? `${subjectCount.toLocaleString()} subjects with papers or syllabus links` : 'subjects organised by semester';
+  return `Browse GTU ${name} question papers and syllabus links. ${countLabel} — all linking to official GTU PDFs where available.`;
+}
+
+function branchIntroText(courseCode, branch, subjectCount) {
+  const course = getCourse(courseCode);
+  const courseName = formatLabel(course?.name || courseCode);
+  const countLabel = subjectCount
+    ? `${subjectCount} subject${subjectCount === 1 ? '' : 's'} with exam papers or syllabus links`
+    : 'subjects listed by semester';
+  return `${branch.name} (GTU ${courseCode} branch ${branch.id}) — ${countLabel} in the ${courseName} programme. Open a semester below to find question papers by subject name or code.`;
+}
+
+function subjectIntroText(subject, branch, courseCode) {
+  const code = subject.code || subject.id.split('@')[0];
+  const branchName = branch?.name || branchLabel(subject.branchId, courseCode);
+  const semester = subject.semesterLabel || `Semester ${subject.semester || '—'}`;
+  const paperCount = examSeasonCount(subject, courseCode);
+  const course = getCourse(courseCode);
+  const courseName = formatLabel(course?.name || courseCode);
+  let text = `${subject.name} (${code}) is listed under ${branchName}, ${semester}, in the GTU ${courseName} programme. `;
+  if (paperCount) {
+    text += `Official GTU question papers are linked below for ${paperCount} exam season${paperCount === 1 ? '' : 's'}. Use these PDFs for revision and to understand typical question patterns. `;
+  } else {
+    text += `Syllabus links appear below where available. Exam papers will be added when GTU releases them for this subject. `;
+  }
+  text += 'Cross-check syllabus updates on gtu.ac.in and with your college.';
+  return text;
+}
+
+function adSlotHtml(name) {
+  return typeof window.renderAdSlot === 'function' ? window.renderAdSlot(name) : '';
+}
+
 const LANDING_COURSE_ORDER = ['BE', 'DI', 'BB', 'BC', 'MB', 'MC', 'BP'];
-const BE_AD_ENABLED = false;
-const BE_AD = {
-  src: 'ads/startup-wala-ad.ong.PNG',
-  alt: 'Startup wala MBA — GTU School of Management Studies. MBA in Innovation, Entrepreneurship and Venture Development. Admissions open.',
-  url: 'https://www.gtu.ac.in/',
-};
+const PAPER_ENABLED_COURSES = new Set(['BE', 'BB', 'BC', 'MB', 'MC', 'BP', 'DI']);
 function isHomeRoute() {
   const route = parseRoutePath();
   return !route.course && !route.branch && !route.branchSlug && !route.subjectCode && !route.subjectSlug;
@@ -65,7 +105,6 @@ function showErrorStatic(message = '') {
   if (breadcrumbsNav) breadcrumbsNav.hidden = true;
   setHeroVisible(false);
   setHomeSectionsVisible(false);
-  hideBeAdPopup();
   document.title = 'Page not found — GTUPEDIA';
   return true;
 }
@@ -83,7 +122,6 @@ function clearSearchResults() {
   } else {
     renderRoute();
   }
-  hideBeAdPopup();
 }
 
 function setHeroVisible(visible) {
@@ -926,60 +964,6 @@ function setCoursesVisible(visible) {
   setHomeSectionsVisible(visible);
 }
 
-function initBeAdModal() {
-  if (!BE_AD_ENABLED) return null;
-  const modal = document.querySelector('#be-ad-modal');
-  if (!modal || modal.dataset.ready) return modal;
-
-  const link = modal.querySelector('#be-ad-link');
-  const image = modal.querySelector('#be-ad-image');
-  if (link) {
-    link.href = BE_AD.url || '#';
-    if (!BE_AD.url) link.removeAttribute('href');
-  }
-  if (image) {
-    image.src = BE_AD.src;
-    image.alt = BE_AD.alt;
-  }
-
-  modal.addEventListener('click', event => {
-    if (event.target.closest('[data-ad-close]')) hideBeAdPopup();
-  });
-
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && modal && !modal.hidden) hideBeAdPopup();
-  });
-
-  modal.dataset.ready = 'true';
-  return modal;
-}
-
-function showBeAdPopup() {
-  const modal = initBeAdModal();
-  if (!modal) return;
-  modal.hidden = false;
-  modal.setAttribute('aria-hidden', 'false');
-  document.body.classList.add('ad-modal-open');
-  modal.querySelector('.ad-modal__close')?.focus();
-}
-
-function hideBeAdPopup() {
-  const modal = document.querySelector('#be-ad-modal');
-  if (!modal || modal.hidden) return;
-  modal.hidden = true;
-  modal.setAttribute('aria-hidden', 'true');
-  document.body.classList.remove('ad-modal-open');
-}
-
-function maybeShowBeAdPopup(courseCode) {
-  if (!BE_AD_ENABLED) return;
-  if (courseCode !== 'BE') {
-    hideBeAdPopup();
-    return;
-  }
-  window.setTimeout(showBeAdPopup, 250);
-}
-
 function searchTokens(term) {
   return term.trim().toLowerCase().split(/\s+/).filter(Boolean);
 }
@@ -1063,11 +1047,23 @@ function renderCourses() {
   }
   if (withoutPapers.length) {
     if (withPapers.length) {
-      parts.push('<div class="course-list-divider" role="separator"><span>Coming soon</span></div>');
+      parts.push(`<details class="course-list-more">
+        <summary>More GTU programmes (${withoutPapers.length})</summary>
+        <div class="card-grid">${withoutPapers.map(course => renderCourseCard(course, { comingSoon: true })).join('')}</div>
+      </details>`);
+    } else {
+      parts.push(withoutPapers.map(course => renderCourseCard(course, { comingSoon: true })).join(''));
     }
-    parts.push(withoutPapers.map(course => renderCourseCard(course, { comingSoon: true })).join(''));
   }
   courseList.innerHTML = parts.join('');
+  mountHomeAdSlot();
+}
+
+function mountHomeAdSlot() {
+  const slot = document.querySelector('#home-ad-slot');
+  if (!slot) return;
+  slot.innerHTML = adSlotHtml('home');
+  mountAdSlots(slot);
 }
 
 function renderCourse(courseCode) {
@@ -1091,6 +1087,8 @@ function renderCourse(courseCode) {
       <h1 class="page-title">${escapeHtml(courseName)}</h1>
       <p class="seo-intro">Select your ${escapeHtml(courseCode)} branch to browse semester-wise subjects and GTU question papers.</p>
     </header>
+    <p class="course-intro">${escapeHtml(courseIntroText(courseCode, course, branches.length, subjectCount))}</p>
+    ${adSlotHtml('course')}
     ${branches.length ? `<div class="card-grid card-grid--branches">${branches.map(branch => {
       const count = subjectCountForBranch(branch.id, courseCode);
       return `
@@ -1101,7 +1099,7 @@ function renderCourse(courseCode) {
       </a>`;
     }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}
     ${renderPopularBranches(courseCode)}`);
-  maybeShowBeAdPopup(courseCode);
+  mountAdSlots(content);
 }
 
 function renderSubjectCard(subject, meta = '', branchId = subject.branchId) {
@@ -1133,18 +1131,21 @@ function renderBranch(courseCode, branchId) {
     path: branchPath(resolvedCourse || courseCode || 'BE', branch.id),
     breadcrumbs: crumbs,
   });
+  const listedCount = listedSubjectsForBranch(branchId, resolvedCourse || courseCode || 'BE').length;
   const semesterGroups = groupSubjectsBySemester(subjects);
   content.innerHTML = pageShell(`
     <header class="page-header">
       <h1 class="page-title">${escapeHtml(branch.name)}</h1>
       <p class="seo-intro">${escapeHtml(courseName)} · Branch ${escapeHtml(branch.id)} · ${subjects.length} subject${subjects.length === 1 ? '' : 's'}.</p>
     </header>
+    <p class="branch-intro">${escapeHtml(branchIntroText(resolvedCourse || courseCode || 'BE', branch, listedCount))}</p>
+    ${adSlotHtml('branch')}
     ${semesterGroups.length ? `<div class="subject-groups">${semesterGroups.map(([label, items]) => `
       <section class="subject-group">
         <h2>${escapeHtml(label)}</h2>
         <div class="subject-list">${items.map(subject => renderSubjectCard(subject, subjectHasPapers(subject) ? 'Open exam papers' : 'Open syllabus', branchId)).join('')}</div>
       </section>`).join('')}</div>` : '<p class="empty">No exam papers are available for this branch yet. Check back after the next paper upload.</p>'}`);
-  maybeShowBeAdPopup(resolvedCourse || 'BE');
+  mountAdSlots(content);
 }
 
 function renderGtuPaperCard(subjectCode, paperSet) {
@@ -1176,7 +1177,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
   const course = getCourse(courseCode);
   const code = subject.code || subject.id.split('@')[0];
   const alternateCodes = (subject.alternateCodes || []).filter(item => item !== code);
-  const paperCount = examSeasonCount(subject);
+  const paperCount = examSeasonCount(subject, courseCode);
   const crumbs = [
     homeCrumb(),
     courseCrumb(course || { code: courseCode, name: 'Bachelor of Engineering' }),
@@ -1214,9 +1215,14 @@ function renderSubject(subjectOrRef, routeBranchId) {
       <span class="tag">${escapeHtml(code)}</span>
       ${alternateCodes.length ? `<span class="subject-alt-codes">Also listed as ${alternateCodes.map(item => escapeHtml(item)).join(', ')}</span>` : ''}
     </p>
-    ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No syllabus or exam papers are linked for this subject yet.</p>'}
+    <p class="subject-intro">${escapeHtml(subjectIntroText(subject, branch, courseCode))}</p>
+    ${adSlotHtml('subject')}
+    <section class="subject-resources" aria-labelledby="subject-resources-title">
+      <h2 id="subject-resources-title">GTU syllabus &amp; exam papers</h2>
+      ${resourceCards ? `<div class="resource-list">${resourceCards}</div>` : '<p class="empty">No syllabus or exam papers are linked for this subject yet.</p>'}
+    </section>
     ${branch ? renderRelatedSubjects(subject, backBranch, courseCode) : ''}`);
-  maybeShowBeAdPopup(courseCode);
+  mountAdSlots(content);
 }
 
 async function renderSearch(term) {
@@ -1243,7 +1249,6 @@ async function renderSearch(term) {
     setHomeSectionsVisible(false);
     hideErrorStatic();
   }
-  hideBeAdPopup();
   updatePageSeo({
     title: `Search: ${term.trim()} | ${SITE.name}`,
     description: `Search GTU courses, branches, and subjects for “${term.trim()}”.`,
@@ -1317,7 +1322,6 @@ async function renderSearch(term) {
 function renderNotFound(message) {
   setHeroVisible(false);
   setCoursesVisible(false);
-  hideBeAdPopup();
   updatePageSeo({
     title: `Page not found | ${SITE.name}`,
     description: message || 'The page you requested is not in the GTUPEDIA catalogue.',
@@ -1363,7 +1367,7 @@ async function renderRoute() {
     return;
   }
   resetHomeSeo();
-  hideBeAdPopup();
+  mountHomeAdSlot();
   content.innerHTML = '';
 }
 
@@ -1404,7 +1408,6 @@ fetch(catalogUrl)
   .then(async (catalog) => {
     state.catalog = { ...catalog, subjects: [] };
     await ensureSubjectsForRoute(parseRoutePath());
-    if (BE_AD_ENABLED) initBeAdModal();
     initClientNavigation();
     renderCourses();
     return renderRoute();

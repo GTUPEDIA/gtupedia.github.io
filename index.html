@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/site-seo.js" defer></script>
     <script src="assets/site-analytics.js" defer></script>
+    <script src="assets/site-ads.js" defer></script>
     <script src="assets/site-chrome.js" defer></script>
   </head>
   <body class="home-page">
@@ -47,6 +48,8 @@
         </label>
       </div>
 
+      <div id="home-ad-slot" class="home-ad-wrap"></div>
+
       <nav id="breadcrumbs" class="breadcrumbs" aria-label="Breadcrumb" hidden></nav>
 
       <section id="content" class="content" aria-live="polite"></section>
@@ -65,6 +68,7 @@
         <p>Official question papers and study material — organised by course, branch, and subject, free for every GTU student.</p>
         <p class="about-links">
           <a href="about/">About GTUPEDIA</a>
+          <a href="privacy/">Privacy Policy</a>
           <a href="team/">Team</a>
           <a href="campus-ambassador/">Campus Ambassador</a>
           <a href="events/">Events</a>
@@ -74,16 +78,6 @@
     </main>
 
     <footer class="site-footer" data-site-footer></footer>
-    <div id="be-ad-modal" class="ad-modal" hidden aria-hidden="true">
-      <div class="ad-modal__backdrop" data-ad-close tabindex="-1"></div>
-      <div class="ad-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="be-ad-title">
-        <button type="button" class="ad-modal__close" data-ad-close aria-label="Close advertisement">&times;</button>
-        <p id="be-ad-title" class="ad-modal__label">Advertisement</p>
-        <a class="ad-modal__link" id="be-ad-link" href="https://www.gtu.ac.in/" target="_blank" rel="noopener sponsored">
-          <img id="be-ad-image" data-ad-src="ads/startup-wala-ad.ong.PNG" alt="Startup wala MBA — GTU School of Management Studies. Admissions open." decoding="async">
-        </a>
-      </div>
-    </div>
     <script src="assets/app.js" defer></script>
   </body>
 </html>

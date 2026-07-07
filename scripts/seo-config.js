@@ -123,6 +123,13 @@ function seoDescriptionSubject(subjectName, code, branchName, semester, paperCou
   return `Download ${seasons}GTU ${subjectName} (${code}) question papers for ${branchName}, semester ${semester}. Free links to official GTU exam PDFs.`;
 }
 
+const ADSENSE_CLIENT = 'ca-pub-0350031762895572';
+
+function adsenseHeadScript() {
+  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}"
+     crossorigin="anonymous"></script>`;
+}
+
 module.exports = {
   SEO,
   siteUrl,
@@ -136,4 +143,5 @@ module.exports = {
   seoDescriptionBranch,
   seoTitleSubject,
   seoDescriptionSubject,
+  adsenseHeadScript,
 };

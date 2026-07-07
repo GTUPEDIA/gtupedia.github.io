@@ -12,6 +12,7 @@ const {
   seoDescriptionBranch,
   seoTitleSubject,
   seoDescriptionSubject,
+  adsenseHeadScript,
 } = require('./seo-config');
 
 const SITE = SEO.siteUrl;
@@ -262,6 +263,7 @@ function renderSeoShell({
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <title>${escapeHtml(title)}</title>
+    ${adsenseHeadScript()}
     ${ldScript}
     <script>
       window.__GTUPEDIA_BASE = location.pathname.startsWith('/gtupedia.github.io') ? '/gtupedia.github.io/' : '/';

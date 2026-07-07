@@ -13,6 +13,7 @@
     ambassador: `${root}campus-ambassador/`,
     about: `${root}about/`,
     privacy: `${root}privacy/`,
+    guide: `${root}guides/download-gtu-papers/`,
   };
 
   const primaryNav = [
@@ -29,6 +30,7 @@
     { key: 'ambassador', label: 'Campus Ambassador', href: links.ambassador },
     { key: 'about', label: 'About', href: links.about },
     { key: 'privacy', label: 'Privacy', href: links.privacy },
+    { key: 'guide', label: 'Download papers', href: links.guide },
     { key: 'home', label: 'Home', href: links.home },
   ];
 

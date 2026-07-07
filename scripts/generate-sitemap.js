@@ -55,6 +55,7 @@ function collectSitemapEntries(catalog) {
   add('resources/', '0.8', 'static');
   add('about/', '0.7', 'static');
   add('privacy/', '0.7', 'static');
+  add('guides/download-gtu-papers/', '0.8', 'static');
   add('team/', '0.7', 'static');
   add('partners/', '0.7', 'static');
   add('events/', '0.7', 'static');
@@ -364,6 +365,7 @@ function buildBranchPage(course, branch, branches, catalog) {
     h1: escapeHtml(branch.name),
     intro: escapeHtml(`${courseName} · Branch ${branch.id} · ${subjects.length} subjects with exam papers.`),
     bodyHtml: `
+      <p>${escapeHtml(`${branch.name} (GTU ${courseCode} branch ${branch.id}) — ${subjects.length} subject${subjects.length === 1 ? '' : 's'} with exam papers or syllabus links in ${courseName}.`)}</p>
       <h2>Subjects with papers</h2>
       <ul>${subjectLinks}</ul>
       ${subjects.length > 120 ? `<p>Showing 120 of ${subjects.length} subjects. Open the page in your browser for the full list.</p>` : ''}
@@ -405,14 +407,19 @@ function buildSubjectPage(course, subject, branches, catalog) {
     ? `<h2>GTU exam papers</h2><ul>${papers.map(paper => `<li><a href="${escapeHtml(paper.url)}" rel="noopener">${escapeHtml(paper.label)}</a></li>`).join('')}</ul>`
     : '<p>No exam papers are linked for this subject yet.</p>';
   const branchRoute = branch ? branchPath(courseCode, branch.id, branches) : courseCode;
+  const semesterLabel = subject.semesterLabel || `Semester ${subject.semester}`;
+  const subjectBlurb = paperCount
+    ? `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${breadcrumbCourseLabel(course)}. Official question papers are linked below for ${paperCount} exam season${paperCount === 1 ? '' : 's'}.`
+    : `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${breadcrumbCourseLabel(course)}. Syllabus links appear below; exam papers are added when GTU releases them.`;
 
   return renderSeoShell({
     title,
     description,
     path: route,
     h1: escapeHtml(subject.name),
-    intro: escapeHtml(`${branchName} · ${subject.semesterLabel || `Semester ${subject.semester}`}${paperCount ? ` · ${paperCount} exam paper season${paperCount === 1 ? '' : 's'}` : ''}`),
+    intro: escapeHtml(`${branchName} · ${semesterLabel}${paperCount ? ` · ${paperCount} exam paper season${paperCount === 1 ? '' : 's'}` : ''}`),
     bodyHtml: `
+      <p>${escapeHtml(subjectBlurb)}</p>
       <p><strong>Subject code:</strong> ${escapeHtml(code)}${alternateCodes.length ? `<br><strong>Also listed as:</strong> ${alternateCodes.map(escapeHtml).join(', ')}` : ''}</p>
       ${syllabusHtml}
       ${paperHtml}

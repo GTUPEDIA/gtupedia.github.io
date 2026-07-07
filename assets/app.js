@@ -15,7 +15,7 @@ let searchDebounceTimer = null;
 const SITE = {
   name: 'GTUPEDIA',
   defaultTitle: 'GTU Question Papers PDF — BE, Diploma, BBA, BCA, MBA, MCA | GTUPEDIA',
-  defaultDescription: 'Free GTU question papers and previous year exam PDFs for BE, Diploma Engineering, BBA, BCA, MBA, MCA and more. Browse by branch, semester, and subject code. Student-run, open access.',
+  defaultDescription: 'Free GTU question papers for BE, Diploma Engineering, BBA, BCA, MBA, MCA & more. Browse by branch, semester & subject code. Official exam PDFs.',
 };
 function mountAdSlots(root = document) {
   if (typeof window.hydrateAdSlots === 'function') window.hydrateAdSlots(root);
@@ -189,8 +189,21 @@ function seoTitleCourse(courseName, courseCode) {
   return `${courseName} GTU Question Papers (${courseCode}) — All Branches | ${SITE.name}`;
 }
 
+function truncateMetaDescription(text, max = 155) {
+  const fn = window.__GTUPEDIA_SEO?.truncateMetaDescription;
+  if (fn) return fn(text, max);
+  const clean = String(text || '').replace(/\s+/g, ' ').trim();
+  if (clean.length <= max) return clean;
+  const slice = clean.slice(0, max - 1);
+  const cut = slice.lastIndexOf(' ');
+  const trimmed = (cut > 60 ? slice.slice(0, cut) : slice).trim();
+  return `${trimmed}…`;
+}
+
 function seoDescriptionCourse(courseName, courseCode, branchCount, subjectCount) {
-  return `Download ${courseCode} GTU question papers for ${courseName}. Browse ${branchCount} branches and ${subjectCount} subjects with official previous year exam PDFs.`;
+  return truncateMetaDescription(
+    `GTU ${courseName} (${courseCode}) question papers — ${branchCount} branches, ${subjectCount} subjects. Free official Winter & Summer exam PDFs.`,
+  );
 }
 
 function seoTitleBranch(branchName, courseCode, branchId) {
@@ -198,7 +211,9 @@ function seoTitleBranch(branchName, courseCode, branchId) {
 }
 
 function seoDescriptionBranch(branchName, courseCode, subjectCount) {
-  return `${branchName} (${courseCode}) GTU previous year question papers — ${subjectCount} subjects with free exam PDFs by semester.`;
+  return truncateMetaDescription(
+    `${branchName} GTU ${courseCode} papers — ${subjectCount} subjects with previous year exam PDFs organised by semester.`,
+  );
 }
 
 function seoTitleSubject(subjectName, code) {
@@ -206,8 +221,10 @@ function seoTitleSubject(subjectName, code) {
 }
 
 function seoDescriptionSubject(subjectName, code, branchName, semester, paperCount) {
-  const seasons = paperCount ? `${paperCount} exam season${paperCount === 1 ? '' : 's'} of ` : '';
-  return `Download ${seasons}GTU ${subjectName} (${code}) question papers for ${branchName}, semester ${semester}. Free links to official GTU exam PDFs.`;
+  const seasons = paperCount ? `${paperCount} season${paperCount === 1 ? '' : 's'} · ` : '';
+  return truncateMetaDescription(
+    `GTU ${subjectName} (${code}) question papers — ${branchName}, Sem ${semester}. ${seasons}Free official exam PDF downloads.`,
+  );
 }
 
 function learningResourceJsonLd(subject, branchName, url, paperCount) {

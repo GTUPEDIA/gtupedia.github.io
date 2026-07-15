@@ -14,6 +14,7 @@
     about: `${root}about/`,
     privacy: `${root}privacy/`,
     guide: `${root}guides/download-gtu-papers/`,
+    githubInitiative: `${root}github-initiative/`,
   };
 
   const primaryNav = [
@@ -31,6 +32,7 @@
     { key: 'about', label: 'About', href: links.about },
     { key: 'privacy', label: 'Privacy', href: links.privacy },
     { key: 'guide', label: 'Download papers', href: links.guide },
+    { key: 'githubInitiative', label: 'GitHub Initiative', href: links.githubInitiative },
     { key: 'home', label: 'Home', href: links.home },
   ];
 
@@ -43,6 +45,7 @@
     if (path.includes('/team')) return 'team';
     if (path.includes('/campus-ambassador')) return 'ambassador';
     if (path.includes('/about')) return 'about';
+    if (path.includes('/github-initiative')) return 'githubInitiative';
     if (path.includes('/privacy')) return 'privacy';
     return null;
   }

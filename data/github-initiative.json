@@ -1,0 +1,58 @@
+{
+  "slug": "github-initiative",
+  "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdr4_pL8NBU7xQf0fJFpvVhmuprfbZYed-0gU9zh3Ut6mcRlw/viewform",
+  "batch": "Girls Only",
+  "poster": {
+    "title": "GitHub Learning Initiative",
+    "badge": "Girls Only",
+    "tagline": "Learn GitHub from Scratch. Build Real Skills. Strengthen Your Resume.",
+    "description": "An exclusive learning initiative for girl students who are genuinely interested in learning GitHub through guided sessions and hands-on practice.",
+    "sections": [
+      {
+        "heading": "What You'll Learn",
+        "items": [
+          "Git & GitHub Fundamentals",
+          "Creating and Managing Repositories",
+          "Branches & Merging",
+          "Pull Requests",
+          "Collaboration & Version Control",
+          "GitHub Best Practices"
+        ]
+      },
+      {
+        "heading": "Why Join?",
+        "items": [
+          "Hands-on practical learning",
+          "Mentorship throughout the initiative",
+          "Certificate of Participation/Completion",
+          "Resume enhancement for internships and placements",
+          "Build confidence using GitHub for projects"
+        ]
+      },
+      {
+        "heading": "Who Can Join?",
+        "content": "Girl students who are genuinely interested in learning GitHub. No prior GitHub experience is required."
+      }
+    ],
+    "certificate": {
+      "title": "Certificate of Participation/Completion",
+      "description": "Awarded to students who successfully complete the learning initiative and actively participate in the sessions."
+    },
+    "mentor": {
+      "name": "Dhruv Saidava",
+      "designation": "Founder, EduNeuro"
+    },
+    "coordinator": {
+      "name": "Aastha Chauhan",
+      "designation": "Student Coordinator"
+    },
+    "callToAction": {
+      "headline": "Register Now",
+      "subtext": "Limited Seats Available"
+    },
+    "footer": {
+      "organization": "EduNeuro Solutions LLP",
+      "motto": "Learning by Building"
+    }
+  }
+}

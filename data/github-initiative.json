@@ -54,5 +54,19 @@
       "organization": "EduNeuro Solutions LLP",
       "motto": "Learning by Building"
     }
-  }
+  },
+  "faqs": [
+    { "question": "Who can participate?", "answer": "Girl students who are interested in learning GitHub and improving their technical skills." },
+    { "question": "Do I need prior GitHub experience?", "answer": "No. The initiative is beginner-friendly." },
+    { "question": "Is there any registration fee?", "answer": "Free to participate. There is no registration fee." },
+    { "question": "What will I learn?", "items": ["Git & GitHub basics", "Repositories", "Branching", "Commits", "Pull requests", "Collaboration", "Best practices"] },
+    { "question": "Will I receive a certificate?", "answer": "Yes. A Certificate of Participation/Completion will be awarded to students who successfully complete the initiative and actively participate in the sessions." },
+    { "question": "What do I need to join?", "items": ["A laptop or desktop computer", "Stable internet connection", "Basic computer knowledge", "Willingness to learn"] },
+    { "question": "How will the sessions be conducted?", "answer": "Sessions will be conducted online with guided demonstrations and hands-on practice." },
+    { "question": "What is the duration of the initiative?", "answer": "Duration and schedule will be shared with registered participants." },
+    { "question": "Will there be practical assignments?", "answer": "Yes. Participants will complete hands-on exercises and GitHub activities throughout the initiative." },
+    { "question": "How can this help my career?", "items": ["Build a strong portfolio", "Collaborate on projects", "Contribute to open source", "Prepare for internships and placements"], "intro": "GitHub is an essential platform for software development. Learning GitHub helps you:" },
+    { "question": "Who is the mentor?", "answer": "Dhruv Saidava — Founder, EduNeuro" },
+    { "question": "Whom should I contact for queries?", "answer": "Student Coordinator: Aastha Chauhan" }
+  ]
 }

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0350031762895572" crossorigin="anonymous"></script>
+    <meta name="description" content="Level 0 Module 6 (~40 min) — Git branches, pull requests, merging, and conflicts.">
+    <link rel="canonical" href="https://gtupedia.github.io/github-initiative/level-0/branches-merging/">
+    <title>Branches &amp; merging (~40 min) | Level 0 | GTUPEDIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>window.__GTUPEDIA_BASE = location.pathname.startsWith('/gtupedia.github.io') ? '/gtupedia.github.io/' : '/';</script>
+    <base href="../../../">
+    <script>document.querySelector('base').href = window.__GTUPEDIA_BASE;</script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site-seo.js" defer></script>
+    <script src="assets/site-analytics.js" defer></script>
+    <script src="assets/site-ads.js" defer></script>
+    <script src="assets/site-chrome.js" defer></script>
+    <script src="assets/gh-level0-course.js" defer></script>
+  </head>
+  <body class="subpage github-initiative-page gh-level0-page gh-level0-lesson" data-gh-level0-lesson="branches-merging" data-seo-path="github-initiative/level-0/branches-merging/" data-seo-title="Branches &amp; merging | Level 0 | GTUPEDIA" data-seo-description="Feature branches, pull requests, and merge basics (~40 min).">
+    <header class="site-header" data-site-header></header>
+    <main class="gh-initiative gh-level0 gh-level0-course page-shell">
+      <aside class="gh-level0-course__sidebar" data-gh-level0-nav aria-label="Course modules"></aside>
+      <article class="gh-level0-course__main">
+        <header class="gh-level0__stage-head">
+          <p class="gh-level0__stage-label">Module 6 · <span class="gh-level0__time-badge">~40 min</span></p>
+          <h1>Branches &amp; merging</h1>
+          <p class="gh-level0__stage-goal"><strong>Goal:</strong> Work on features safely without breaking the stable <code>main</code> branch.</p>
+        </header>
+        <div class="gh-level0__body">
+          <h2>Why branches?</h2>
+          <p><code>main</code> should stay working. Branches let you build features in isolation, then merge when ready.</p>
+          <h2>Practice exercise</h2>
+          <ol class="gh-level0__steps">
+            <li>Create a branch: <code>git switch -c add-about-page</code></li>
+            <li>Edit files and commit on the branch.</li>
+            <li>Push: <code>git push -u origin add-about-page</code></li>
+            <li>On GitHub: <strong>Pull requests → New</strong> — base <code>main</code>, compare your branch.</li>
+            <li>Review <strong>Files changed</strong> → <strong>Merge pull request</strong>.</li>
+            <li>Locally: <code>git switch main</code> then <code>git pull origin main</code></li>
+          </ol>
+          <h2>Merge conflicts (brief)</h2>
+          <p>If two branches edit the same lines, resolve conflict markers in the file, then <code>git add</code> and <code>git commit</code>.</p>
+          <table class="gh-level0__table">
+            <thead><tr><th>Command</th><th>Purpose</th></tr></thead>
+            <tbody>
+              <tr><td><code>git branch</code></td><td>List local branches</td></tr>
+              <tr><td><code>git switch &lt;name&gt;</code></td><td>Change branch</td></tr>
+              <tr><td><code>git merge &lt;branch&gt;</code></td><td>Merge into current branch</td></tr>
+            </tbody>
+          </table>
+          <h2>Checklist</h2>
+          <ul class="gh-level0__checklist">
+            <li>I created a branch and committed on it</li>
+            <li>I opened and merged a pull request</li>
+            <li>I updated local <code>main</code> with <code>git pull</code></li>
+          </ul>
+        </div>
+        <aside class="gh-level0__video" aria-label="Module video">
+          <span class="gh-level0__video-icon" aria-hidden="true">▶</span>
+          <div>
+            <p class="gh-level0__video-title">Video: Branching &amp; merging</p>
+            <p class="gh-level0__video-desc">Mentor walkthrough — paste YouTube URL in page source</p>
+            <a class="gh-level0__video-link" href="">Add YouTube link</a>
+          </div>
+        </aside>
+        <nav class="gh-level0-course__pager" data-gh-level0-pager aria-label="Module navigation"></nav>
+      </article>
+    </main>
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>

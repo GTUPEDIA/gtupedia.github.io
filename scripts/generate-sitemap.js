@@ -58,6 +58,15 @@ function collectSitemapEntries(catalog) {
   add('guides/download-gtu-papers/', '0.8', 'static');
   add('github-initiative/', '0.8', 'static');
   add('github-initiative/level-0/', '0.75', 'static');
+  add('github-initiative/level-0/before-you-start/', '0.7', 'static');
+  add('github-initiative/level-0/github-account/', '0.7', 'static');
+  add('github-initiative/level-0/first-repository/', '0.7', 'static');
+  add('github-initiative/level-0/github-pages/', '0.7', 'static');
+  add('github-initiative/level-0/add-edit-code/', '0.7', 'static');
+  add('github-initiative/level-0/git-commands/', '0.7', 'static');
+  add('github-initiative/level-0/branches-merging/', '0.7', 'static');
+  add('github-initiative/level-0/collaboration/', '0.7', 'static');
+  add('github-initiative/level-0/whats-next/', '0.7', 'static');
   add('team/', '0.7', 'static');
   add('partners/', '0.7', 'static');
   add('events/', '0.7', 'static');

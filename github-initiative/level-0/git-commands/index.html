@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0350031762895572" crossorigin="anonymous"></script>
+    <meta name="description" content="Level 0 Module 5 (~50 min) — essential Git commands: init, clone, status, add, commit, push, pull, log.">
+    <link rel="canonical" href="https://gtupedia.github.io/github-initiative/level-0/git-commands/">
+    <title>Essential Git commands (~50 min) | Level 0 | GTUPEDIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>window.__GTUPEDIA_BASE = location.pathname.startsWith('/gtupedia.github.io') ? '/gtupedia.github.io/' : '/';</script>
+    <base href="../../../">
+    <script>document.querySelector('base').href = window.__GTUPEDIA_BASE;</script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site-seo.js" defer></script>
+    <script src="assets/site-analytics.js" defer></script>
+    <script src="assets/site-ads.js" defer></script>
+    <script src="assets/site-chrome.js" defer></script>
+    <script src="assets/gh-level0-course.js" defer></script>
+  </head>
+  <body class="subpage github-initiative-page gh-level0-page gh-level0-lesson" data-gh-level0-lesson="git-commands" data-seo-path="github-initiative/level-0/git-commands/" data-seo-title="Essential Git commands | Level 0 | GTUPEDIA" data-seo-description="Daily Git workflow: status, add, commit, push, pull (~50 min).">
+    <header class="site-header" data-site-header></header>
+    <main class="gh-initiative gh-level0 gh-level0-course page-shell">
+      <aside class="gh-level0-course__sidebar" data-gh-level0-nav aria-label="Course modules"></aside>
+      <article class="gh-level0-course__main">
+        <header class="gh-level0__stage-head">
+          <p class="gh-level0__stage-label">Module 5 · <span class="gh-level0__time-badge">~50 min</span></p>
+          <h1>Essential Git commands</h1>
+          <p class="gh-level0__stage-goal"><strong>Goal:</strong> Learn the small set of commands you will use every day.</p>
+        </header>
+        <div class="gh-level0__body">
+          <p>Run these inside your project folder. Same commands on Windows, Mac, and Linux.</p>
+          <div class="gh-level0__cmd-grid">
+            <section class="gh-level0__cmd"><h3><code>git init</code></h3><p>Start a new local repo.</p><pre class="gh-level0__code"><code>git init my-app</code></pre></section>
+            <section class="gh-level0__cmd"><h3><code>git clone</code></h3><p>Download a repo from GitHub.</p><pre class="gh-level0__code"><code>git clone https://github.com/&lt;user&gt;/&lt;repo&gt;.git</code></pre></section>
+            <section class="gh-level0__cmd"><h3><code>git status</code></h3><p>See modified and untracked files.</p><pre class="gh-level0__code"><code>git status</code></pre></section>
+            <section class="gh-level0__cmd"><h3><code>git add</code></h3><p>Stage changes for commit.</p><pre class="gh-level0__code"><code>git add .</code></pre></section>
+            <section class="gh-level0__cmd"><h3><code>git commit</code></h3><p>Save a snapshot locally.</p><pre class="gh-level0__code"><code>git commit -m "Clear message"</code></pre></section>
+            <section class="gh-level0__cmd"><h3><code>git push</code></h3><p>Upload commits to GitHub.</p><pre class="gh-level0__code"><code>git push origin main</code></pre></section>
+            <section class="gh-level0__cmd"><h3><code>git pull</code></h3><p>Get latest changes from GitHub.</p><pre class="gh-level0__code"><code>git pull origin main</code></pre></section>
+            <section class="gh-level0__cmd"><h3><code>git log</code></h3><p>View commit history.</p><pre class="gh-level0__code"><code>git log --oneline</code></pre></section>
+          </div>
+          <h2>The daily loop</h2>
+          <pre class="gh-level0__code gh-level0__code--flow"><code>git pull
+# edit files
+git status
+git add .
+git commit -m "Clear message"
+git push</code></pre>
+          <h2>Checklist</h2>
+          <ul class="gh-level0__checklist">
+            <li>I ran <code>git status</code> and understand its output</li>
+            <li>I made a commit with a meaningful message</li>
+            <li>I pushed to GitHub and saw the commit online</li>
+            <li>I can explain add → commit → push in my own words</li>
+          </ul>
+        </div>
+        <aside class="gh-level0__video" aria-label="Module video">
+          <span class="gh-level0__video-icon" aria-hidden="true">▶</span>
+          <div>
+            <p class="gh-level0__video-title">Video: Basic Git commands demo</p>
+            <p class="gh-level0__video-desc">Mentor walkthrough — paste YouTube URL in page source</p>
+            <a class="gh-level0__video-link" href="">Add YouTube link</a>
+          </div>
+        </aside>
+        <nav class="gh-level0-course__pager" data-gh-level0-pager aria-label="Module navigation"></nav>
+      </article>
+    </main>
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>

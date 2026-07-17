@@ -57,6 +57,7 @@ function collectSitemapEntries(catalog) {
   add('privacy/', '0.7', 'static');
   add('guides/download-gtu-papers/', '0.8', 'static');
   add('github-initiative/', '0.8', 'static');
+  add('github-initiative/level-0/', '0.75', 'static');
   add('team/', '0.7', 'static');
   add('partners/', '0.7', 'static');
   add('events/', '0.7', 'static');

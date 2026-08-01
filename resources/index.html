@@ -7,19 +7,16 @@
      crossorigin="anonymous"></script>
     <meta name="description" content="GTUPEDIA Resources — curated courses, docs, articles, and tools for GTU students.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gtupedia.github.io/resources/">
+    <link rel="canonical" href="https://gtupedia.com/resources/">
     <meta property="og:site_name" content="GTUPEDIA">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Resources — GTUPEDIA">
     <meta property="og:description" content="Courses, documentation, articles, code snippets, and tools for GTU students.">
-    <meta property="og:url" content="https://gtupedia.github.io/resources/">
+    <meta property="og:url" content="https://gtupedia.com/resources/">
     <title>Resources — GTUPEDIA</title>
-    <script>
-      window.__GTUPEDIA_BASE = location.pathname.startsWith('/gtupedia.github.io') ? '/gtupedia.github.io/' : '/';
-      window.__RESOURCES_BASE = window.__GTUPEDIA_BASE + (window.__GTUPEDIA_BASE.endsWith('/') ? '' : '/') + 'resources/';
-    </script>
     <base href="../">
-    <script>document.querySelector('base').href = window.__GTUPEDIA_BASE;</script>
+    <script src="assets/site-base.js"></script>
+    <script>window.__RESOURCES_BASE = window.__GTUPEDIA_BASE.replace(/\/?$/, '/') + 'resources/';</script>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="resources/assets/styles.css">
     <script src="assets/site-seo.js" defer></script>

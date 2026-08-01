@@ -6,7 +6,7 @@ const fileConfig = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 const SEO = {
   ...fileConfig,
-  siteUrl: (process.env.GTU_SITE_URL || fileConfig.siteUrl || 'https://gtupedia.github.io').replace(/\/$/, ''),
+  siteUrl: (process.env.GTU_SITE_URL || fileConfig.siteUrl || 'https://gtupedia.com').replace(/\/$/, ''),
 };
 
 function siteUrl(pathValue = '') {

@@ -19,7 +19,7 @@ const CURRICULUM_PATH = path.join(ROOT, 'resources/data/blockchain-curriculum.tx
 const REMOVED_PATH = path.join(ROOT, 'resources/data/url-check-removed.json');
 const REPORT_PATH = path.join(ROOT, 'resources/data/url-check-report.json');
 
-const USER_AGENT = 'GTUPEDIA-LinkChecker/1.0 (+https://gtupedia.github.io/resources/)';
+const USER_AGENT = 'GTUPEDIA-LinkChecker/1.0 (+https://gtupedia.com/resources/)';
 const REQUEST_TIMEOUT_MS = 20000;
 const MAX_REDIRECTS = 6;
 

@@ -279,11 +279,10 @@ function renderSeoShell({
     ${adsenseHeadScript()}
     ${ldScript}
     <script>
-      window.__GTUPEDIA_BASE = location.pathname.startsWith('/gtupedia.github.io') ? '/gtupedia.github.io/' : '/';
       window.__GTUPEDIA_CATALOG_V = '${escapeHtml(String(catalogVersion || '1'))}';
     </script>
     <base href="/">
-    <script>document.querySelector('base').href = window.__GTUPEDIA_BASE;</script>
+    <script src="assets/site-base.js"></script>
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/site-seo.js" defer></script>
     <script src="assets/site-analytics.js" defer></script>

@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Build site
 
 on:
   push:
@@ -8,12 +8,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   build:
@@ -30,18 +24,16 @@ jobs:
       - name: Build catalog, sitemap, and SEO pages
         run: node scripts/build-catalog.js
 
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload deploy artifact
+        uses: actions/upload-artifact@v4
         with:
-          path: .
+          name: gtupedia-hostinger
+          path: |
+            .
+            !.git
+          retention-days: 14
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy note
+        run: |
+          echo "Site is hosted on Hostinger (gtupedia.com)."
+          echo "Download the artifact and upload to public_html, or use FTP/Git on Hostinger."

@@ -341,15 +341,23 @@ function subjectCrumb(courseCode, branchId, subject) {
 
 function updatePageSeo({ title, description, path = '', breadcrumbs = [], jsonLd = null, robots = 'index, follow' }) {
   document.title = title || SITE.defaultTitle;
-  setMeta('description', description || SITE.defaultDescription);
+  const desc = description || SITE.defaultDescription;
+  const ogImage = window.__GTUPEDIA_SEO?.defaultOgImage
+    || `${(window.__GTUPEDIA_SEO?.siteUrl || 'https://gtupedia.com').replace(/\/$/, '')}/assets/og-image.jpg`;
+  setMeta('description', desc);
   setMeta('robots', robots);
+  setMeta('keywords', window.__GTUPEDIA_SEO?.keywords || '');
   setMeta('og:title', title || SITE.defaultTitle, 'property');
-  setMeta('og:description', description || SITE.defaultDescription, 'property');
+  setMeta('og:description', desc, 'property');
   setMeta('og:url', canonicalAbsoluteUrl(path), 'property');
+  setMeta('og:image', ogImage, 'property');
+  setMeta('og:image:alt', title || SITE.defaultTitle, 'property');
   setMeta('og:locale', window.__GTUPEDIA_SEO?.locale || 'en_IN', 'property');
   setMeta('og:site_name', SITE.name, 'property');
+  setMeta('twitter:card', 'summary_large_image');
   setMeta('twitter:title', title || SITE.defaultTitle);
-  setMeta('twitter:description', description || SITE.defaultDescription);
+  setMeta('twitter:description', desc);
+  setMeta('twitter:image', ogImage);
   setCanonical(canonicalAbsoluteUrl(path));
   renderBreadcrumbs(breadcrumbs);
   const structured = jsonLd || (breadcrumbs.length ? breadcrumbJsonLd(breadcrumbs) : null);

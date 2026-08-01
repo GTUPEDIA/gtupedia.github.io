@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+Disallow: /old/
+Disallow: /resources/ee/
+
 Sitemap: https://gtupedia.com/sitemap.xml

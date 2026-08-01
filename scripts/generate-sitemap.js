@@ -13,6 +13,9 @@ const {
   seoTitleSubject,
   seoDescriptionSubject,
   adsenseHeadScript,
+  PAPER_ENABLED_COURSES,
+  socialMetaTags,
+  itemListJsonLd,
 } = require('./seo-config');
 
 const SITE = SEO.siteUrl;
@@ -74,9 +77,18 @@ function collectSitemapEntries(catalog) {
   add('campus-ambassador/', '0.7', 'static');
 
   for (const course of courses) {
+    if (!PAPER_ENABLED_COURSES.has(course.code)) continue;
     const branches = branchesForCourse(course, catalog);
+    const examPapers = catalog.examPapers || [];
+    const courseSubjectCount = (catalog.subjects || []).filter(
+      item => item.courseCode === course.code && subjectHasPapers(item, examPapers),
+    ).length;
+    if (!courseSubjectCount) continue;
+
     add(course.code, '0.9', 'course', { course, branches });
     for (const branch of branches) {
+      const branchSubjectCount = listedSubjectsForBranch(branch.id, course.code, catalog.subjects, examPapers).length;
+      if (!branchSubjectCount) continue;
       add(branchPath(course.code, branch.id, branches), '0.8', 'branch', {
         course,
         branch,
@@ -97,12 +109,11 @@ function collectSitemapEntries(catalog) {
   return entries;
 }
 
-function generateSitemap(catalog) {
-  const lastmod = (catalog.catalogBuiltAt || new Date().toISOString()).slice(0, 10);
-  const body = collectSitemapEntries(catalog).map(({ loc, priority }) => `  <url>
+function renderUrlset(entries, lastmod) {
+  const body = entries.map(({ loc, priority, changefreq = 'monthly' }) => `  <url>
     <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`).join('\n');
 
@@ -113,8 +124,61 @@ ${body}
 `;
 }
 
+function generateSitemap(catalog) {
+  const lastmod = (catalog.catalogBuiltAt || new Date().toISOString()).slice(0, 10);
+  return renderUrlset(collectSitemapEntries(catalog), lastmod);
+}
+
 function writeSitemap(catalog, outPath) {
   fs.writeFileSync(outPath, generateSitemap(catalog));
+}
+
+function writeSitemapIndex(sitemapFiles, outPath, lastmod) {
+  const body = sitemapFiles.map(file => `  <sitemap>
+    <loc>${siteUrl(file)}</loc>
+    <lastmod>${lastmod}</lastmod>
+  </sitemap>`).join('\n');
+
+  fs.writeFileSync(outPath, `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${body}
+</sitemapindex>
+`);
+}
+
+function writeAllSitemaps(catalog, outDir) {
+  const lastmod = (catalog.catalogBuiltAt || new Date().toISOString()).slice(0, 10);
+  const entries = collectSitemapEntries(catalog);
+  const sitemapDir = path.join(outDir, 'sitemaps');
+  fs.mkdirSync(sitemapDir, { recursive: true });
+
+  const staticEntries = entries.filter(entry => entry.kind !== 'subject');
+  const subjectEntries = entries.filter(entry => entry.kind === 'subject');
+  const sitemapFiles = [];
+
+  fs.writeFileSync(path.join(sitemapDir, 'pages.xml'), renderUrlset(staticEntries, lastmod));
+  sitemapFiles.push('sitemaps/pages.xml');
+
+  const subjectsByCourse = new Map();
+  for (const entry of subjectEntries) {
+    const courseCode = entry.path.split('/')[0];
+    if (!subjectsByCourse.has(courseCode)) subjectsByCourse.set(courseCode, []);
+    subjectsByCourse.get(courseCode).push(entry);
+  }
+
+  for (const [courseCode, courseEntries] of subjectsByCourse) {
+    const fileName = `sitemaps/subjects-${courseCode.toLowerCase()}.xml`;
+    fs.writeFileSync(path.join(outDir, fileName), renderUrlset(courseEntries, lastmod));
+    sitemapFiles.push(fileName);
+  }
+
+  writeSitemapIndex(sitemapFiles, path.join(outDir, 'sitemap.xml'), lastmod);
+
+  return {
+    totalUrls: entries.length,
+    sitemapFiles: sitemapFiles.length + 1,
+    subjectUrls: subjectEntries.length,
+  };
 }
 
 function escapeHtml(value = '') {
@@ -256,6 +320,7 @@ function renderSeoShell({
   const ldScript = structured.length
     ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': structured.map(({ '@context': _c, ...item }) => item) })}</script>`
     : '';
+  const social = socialMetaTags({ title, description, url: canonical });
 
   return `<!doctype html>
 <html lang="${SEO.language}">
@@ -268,13 +333,12 @@ function renderSeoShell({
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <meta property="og:site_name" content="${SITE_NAME}">
     <meta property="og:locale" content="${SEO.locale}">
-    <meta property="og:type" content="website">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(description)}">
     <meta property="og:url" content="${escapeHtml(canonical)}">
-    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
+    ${social}
     <title>${escapeHtml(title)}</title>
     ${adsenseHeadScript()}
     ${ldScript}
@@ -367,6 +431,10 @@ function buildBranchPage(course, branch, branches, catalog) {
     const subjectRoute = subjectPath(courseCode, branch.id, subject, branches);
     return `<li><a href="${escapeHtml(subjectRoute)}">${escapeHtml(subject.name)}</a> <span>(${escapeHtml(subject.code)}) · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester}`)}</span></li>`;
   }).join('\n');
+  const itemList = itemListJsonLd(`${branch.name} GTU subjects`, subjects.slice(0, 50).map(subject => ({
+    name: `${subject.name} (${subject.code})`,
+    url: siteUrl(subjectPath(courseCode, branch.id, subject, branches)),
+  })));
 
   return renderSeoShell({
     title,
@@ -380,11 +448,14 @@ function buildBranchPage(course, branch, branches, catalog) {
       <ul>${subjectLinks}</ul>
       ${subjects.length > 120 ? `<p>Showing 120 of ${subjects.length} subjects. Open the page in your browser for the full list.</p>` : ''}
       ${subjects.length ? '' : '<p>No exam papers are available for this branch yet.</p>'}`,
-    jsonLd: [breadcrumbListJsonLd([
-      { name: 'Home', url: siteUrl() },
-      { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
-      { name: branch.name, url: siteUrl(route) },
-    ])],
+    jsonLd: [
+      breadcrumbListJsonLd([
+        { name: 'Home', url: siteUrl() },
+        { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
+        { name: branch.name, url: siteUrl(route) },
+      ]),
+      itemList,
+    ].filter(Boolean),
     catalogVersion: catalog.catalogBuiltAt,
   });
 }
@@ -418,6 +489,15 @@ function buildSubjectPage(course, subject, branches, catalog) {
     : '<p>No exam papers are linked for this subject yet.</p>';
   const branchRoute = branch ? branchPath(courseCode, branch.id, branches) : courseCode;
   const semesterLabel = subject.semesterLabel || `Semester ${subject.semester}`;
+  const relatedSubjects = listedSubjectsForBranch(branchId, courseCode, catalog.subjects, catalog.examPapers || [])
+    .filter(item => item.id !== subject.id && item.semester === subject.semester)
+    .slice(0, 8);
+  const relatedHtml = relatedSubjects.length
+    ? `<h2>More ${escapeHtml(semesterLabel)} papers in ${escapeHtml(branchName)}</h2><ul>${relatedSubjects.map(related => {
+      const relatedRoute = subjectPath(courseCode, branchId, related, branches);
+      return `<li><a href="${escapeHtml(relatedRoute)}">${escapeHtml(related.name)}</a> <span>(${escapeHtml(related.code)})</span></li>`;
+    }).join('')}</ul>`
+    : '';
   const subjectBlurb = paperCount
     ? `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${breadcrumbCourseLabel(course)}. Official question papers are linked below for ${paperCount} exam season${paperCount === 1 ? '' : 's'}.`
     : `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${breadcrumbCourseLabel(course)}. Syllabus links appear below; exam papers are added when GTU releases them.`;
@@ -433,6 +513,7 @@ function buildSubjectPage(course, subject, branches, catalog) {
       <p><strong>Subject code:</strong> ${escapeHtml(code)}${alternateCodes.length ? `<br><strong>Also listed as:</strong> ${alternateCodes.map(escapeHtml).join(', ')}` : ''}</p>
       ${syllabusHtml}
       ${paperHtml}
+      ${relatedHtml}
       <p><a href="${escapeHtml(branchRoute)}">← Back to ${escapeHtml(branchName)} subjects</a></p>`,
     jsonLd: [
       breadcrumbListJsonLd([
@@ -479,6 +560,7 @@ module.exports = {
   collectSitemapEntries,
   generateSitemap,
   writeSitemap,
+  writeAllSitemaps,
   writeSeoPages,
   branchesForCourse,
   branchPath,

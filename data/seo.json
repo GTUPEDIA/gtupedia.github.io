@@ -6,5 +6,8 @@
   "defaultTitle": "GTU Question Papers PDF — BE, Diploma, BBA, BCA, MBA, MCA | GTUPEDIA",
   "defaultDescription": "Free GTU question papers for BE, Diploma Engineering, BBA, BCA, MBA, MCA & more. Browse by branch, semester & subject code. Official exam PDFs.",
   "organizationDescription": "Independent student-run platform for Gujarat Technological University (GTU) exam papers, study resources, and practical learning.",
-  "keywords": "GTU question papers, GTU exam papers, GTU previous year papers, GTU Diploma papers, Gujarat Technological University, GTU PDF, GTU syllabus"
+  "keywords": "GTU question papers, GTU exam papers, GTU previous year papers, GTU Diploma papers, Gujarat Technological University, GTU PDF, GTU syllabus, GTU BE papers, GTU MBA papers",
+  "defaultOgImage": "https://gtupedia.com/assets/og-image.jpg",
+  "themeColor": "#24292f",
+  "paperEnabledCourses": ["BE", "DI", "BB", "BC", "MB", "MC", "BP"]
 }

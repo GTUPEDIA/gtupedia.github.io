@@ -140,6 +140,53 @@ function seoDescriptionSubject(subjectName, code, branchName, semester, paperCou
 
 const ADSENSE_CLIENT = 'ca-pub-0350031762895572';
 
+const PAPER_ENABLED_COURSES = new Set(SEO.paperEnabledCourses || ['BE', 'DI', 'BB', 'BC', 'MB', 'MC', 'BP']);
+
+function escapeSeoHtml(value = '') {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function defaultOgImageUrl() {
+  return SEO.defaultOgImage || siteUrl('assets/og-image.jpg');
+}
+
+function socialMetaTags({ title, description, url, type = 'website' }) {
+  const image = defaultOgImageUrl();
+  const safeTitle = escapeSeoHtml(title || SEO.defaultTitle);
+  const safeDescription = escapeSeoHtml(description || SEO.defaultDescription);
+  const safeUrl = escapeSeoHtml(url || SEO.siteUrl);
+  const safeImage = escapeSeoHtml(image);
+  const safeKeywords = escapeSeoHtml(SEO.keywords || '');
+  return `
+    <meta name="keywords" content="${safeKeywords}">
+    <meta name="theme-color" content="${escapeSeoHtml(SEO.themeColor || '#24292f')}">
+    <meta property="og:type" content="${escapeSeoHtml(type)}">
+    <meta property="og:image" content="${safeImage}">
+    <meta property="og:image:alt" content="${safeTitle}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="${safeImage}">
+    <meta name="twitter:image:alt" content="${safeTitle}">`.trim();
+}
+
+function itemListJsonLd(name, items) {
+  if (!items?.length) return null;
+  return {
+    '@type': 'ItemList',
+    name,
+    numberOfItems: items.length,
+    itemListElement: items.slice(0, 50).map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  };
+}
+
 function adsenseHeadScript() {
   return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}"
      crossorigin="anonymous"></script>`;
@@ -160,4 +207,9 @@ module.exports = {
   seoDescriptionSubject,
   truncateMetaDescription,
   adsenseHeadScript,
+  PAPER_ENABLED_COURSES,
+  defaultOgImageUrl,
+  socialMetaTags,
+  itemListJsonLd,
+  escapeSeoHtml,
 };

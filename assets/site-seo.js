@@ -6,6 +6,7 @@
 
   function resolveSiteUrl() {
     const host = location.hostname.toLowerCase();
+    if (host === 'gtupedia.com' || host === 'www.gtupedia.com') return 'https://gtupedia.com';
     if (HOST_PRIMARY[host]) return HOST_PRIMARY[host];
     if (host.endsWith('.github.io')) {
       const base = window.__GTUPEDIA_BASE || '/';
@@ -23,6 +24,9 @@
     defaultTitle: 'GTU Question Papers PDF — BE, Diploma, BBA, BCA, MBA, MCA | GTUPEDIA',
     defaultDescription: 'Free GTU question papers for BE, Diploma Engineering, BBA, BCA, MBA, MCA & more. Browse by branch, semester & subject code. Official exam PDFs.',
     organizationDescription: 'Independent student-run platform for Gujarat Technological University (GTU) exam papers, study resources, and practical learning.',
+    defaultOgImage: 'https://gtupedia.com/assets/og-image.jpg',
+    keywords: 'GTU question papers, GTU exam papers, GTU previous year papers, GTU Diploma papers, Gujarat Technological University, GTU PDF, GTU syllabus',
+    themeColor: '#24292f',
   };
 
   function truncateMetaDescription(text, max = 155) {
@@ -76,6 +80,25 @@
     return clean ? `${seo.siteUrl}/${clean}` : `${seo.siteUrl}/`;
   }
 
+  function applySocialMeta(title, description) {
+    upsertMeta('keywords', seo.keywords);
+    upsertMeta('theme-color', seo.themeColor);
+    upsertMeta('og:image', seo.defaultOgImage, 'property');
+    upsertMeta('og:image:alt', title || seo.defaultTitle, 'property');
+    upsertMeta('twitter:card', 'summary_large_image');
+    upsertMeta('twitter:image', seo.defaultOgImage);
+    if (title) upsertMeta('twitter:image:alt', title);
+    if (description) {
+      upsertMeta('description', description);
+      upsertMeta('og:description', description, 'property');
+      upsertMeta('twitter:description', description);
+    }
+    if (title) {
+      upsertMeta('og:title', title, 'property');
+      upsertMeta('twitter:title', title);
+    }
+  }
+
   function applyStaticPageSeo() {
     const body = document.body;
     if (!body) return;
@@ -86,15 +109,7 @@
     if (!title && !description && !path) return;
 
     if (title) document.title = title;
-    if (description) {
-      upsertMeta('description', description);
-      upsertMeta('og:description', description, 'property');
-      upsertMeta('twitter:description', description);
-    }
-    if (title) {
-      upsertMeta('og:title', title, 'property');
-      upsertMeta('twitter:title', title);
-    }
+    applySocialMeta(title, description);
     if (path !== undefined) {
       const url = absoluteUrl(path);
       upsertCanonical(url);
@@ -104,7 +119,6 @@
     upsertMeta('og:site_name', seo.siteName, 'property');
     upsertMeta('og:locale', seo.locale, 'property');
     upsertMeta('og:type', 'website', 'property');
-    upsertMeta('twitter:card', 'summary');
 
     if (title && description && path !== undefined) {
       upsertJsonLd('site-webpage-jsonld', {
@@ -120,6 +134,11 @@
   }
 
   upsertMeta('og:locale', seo.locale, 'property');
+  applySocialMeta(seo.defaultTitle, seo.defaultDescription);
+  if (document.body?.classList.contains('home-page')) {
+    upsertCanonical(seo.siteUrl + '/');
+    upsertMeta('og:url', seo.siteUrl + '/', 'property');
+  }
   upsertJsonLd('site-organization-jsonld', {
     '@context': 'https://schema.org',
     '@type': 'Organization',

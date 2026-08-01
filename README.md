@@ -12,7 +12,33 @@ The previous PHP site is kept in `old/` for reference. The repo name (`gtupedia.
    node scripts/build-catalog.js
    ```
 
-2. **Upload** the full project to Hostinger `public_html`:
+2. **Upload SEO pages (required for Google — ~6,700 URLs in sitemap)**
+
+   The sitemap lists thousands of subject URLs like `/BE/09/.../disaster-management`. These are **static HTML files** generated at build time into course folders (`BE/`, `DI/`, etc.). They are **not in git** — if you only uploaded the repo root, Google will see **404** on those URLs.
+
+   **Easy way — run the packaging script:**
+
+   ```bash
+   node scripts/package-hostinger-deploy.js
+   ```
+
+   This builds the catalog, then creates **`hostinger-seo-pages.zip`** (~45 MB). In Hostinger **File Manager → public_html**:
+
+   1. Upload `hostinger-seo-pages.zip`
+   2. **Extract** (merge with existing files)
+   3. Verify a subject URL loads, e.g.  
+      `https://gtupedia.com/BE/09/electrical-engineering/3150913/disaster-management/`
+
+   **Alternative — SSH on Hostinger** (if available):
+
+   ```bash
+   git pull
+   node scripts/build-catalog.js
+   ```
+
+   That generates all SEO folders directly on the server.
+
+3. **Upload** the rest of the site to Hostinger `public_html` if not already there:
    - Include `index.html`, `assets/`, `data/`, `.htaccess`, course folders (`BE/`, `DI/`, …), `sitemap.xml`, `robots.txt`, and all subpages.
    - Or use **File Manager**, **FTP**, or **Git** if enabled on your Hostinger plan.
 

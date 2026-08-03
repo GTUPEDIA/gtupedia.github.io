@@ -180,9 +180,17 @@ function siteOrigin() {
   return `${origin}${base === '/' ? '' : base}`;
 }
 
+function isCatalogPath(pathValue = '') {
+  const clean = String(pathValue).replace(/^\//, '').replace(/\/+$/, '');
+  if (!clean) return false;
+  return !/\.[a-z0-9]{2,8}$/i.test(clean.split('/').pop() || '');
+}
+
 function canonicalAbsoluteUrl(path = '') {
   if (!path || path === './') return `${siteOrigin()}/`;
-  return `${siteOrigin()}/${String(path).replace(/^\//, '')}`;
+  const clean = String(path).replace(/^\//, '').replace(/\/+$/, '');
+  const url = `${siteOrigin()}/${clean}`;
+  return isCatalogPath(clean) ? `${url}/` : url;
 }
 
 function seoTitleCourse(courseName, courseCode) {
@@ -378,6 +386,17 @@ function relatedSubjects(subject, branchId, courseCode, limit = 8) {
   return listedSubjectsForBranch(branchId, courseCode)
     .filter(item => item.id !== subject.id && item.semester === subject.semester)
     .slice(0, limit);
+}
+
+function shouldPreservePrerender() {
+  return Boolean(content?.querySelector('.seo-prerender'));
+}
+
+function mountPrerenderAdSlot(slotName) {
+  const article = content?.querySelector('.seo-prerender');
+  if (!article || article.querySelector('.ad-slot')) return;
+  article.insertAdjacentHTML('beforeend', adSlotHtml(slotName));
+  mountAdSlots(content);
 }
 
 function renderRelatedSubjects(subject, branchId, courseCode) {
@@ -623,9 +642,9 @@ function canonicalRoutePath(route, branch, subject) {
 
 function ensureCanonicalUrl(route, branch, subject) {
   const expected = canonicalRoutePath(route, branch, subject);
-  const current = appPathname().replace(/^\//, '');
-  if (current !== expected) {
-    window.history.replaceState(null, '', absoluteAppUrl(expected));
+  const current = appPathname().replace(/^\//, '').replace(/\/+$/, '');
+  if (current !== expected.replace(/\/+$/, '')) {
+    window.history.replaceState(null, '', absoluteAppUrl(`${expected}/`));
   }
 }
 
@@ -697,8 +716,10 @@ function isAppLink(url) {
 
 function absoluteAppUrl(path = './') {
   const base = window.__GTUPEDIA_BASE || '/';
-  if (path === './' || path === '.') return base.replace(/\/$/, '') || '/';
-  return `${base}${String(path).replace(/^\//, '')}`;
+  if (path === './' || path === '.') return base.endsWith('/') ? base : `${base}/`;
+  const clean = String(path).replace(/^\//, '').replace(/\/+$/, '');
+  const url = `${base}${clean}`;
+  return isCatalogPath(clean) ? `${url}/` : url;
 }
 
 function navigateTo(path, { replace = false } = {}) {
@@ -723,7 +744,7 @@ function initClientNavigation() {
       path = path.slice('/gtupedia.github.io'.length) || '/';
     }
     const routePath = path.replace(/\/+$/, '') || '/';
-    navigateTo(routePath === '/' ? './' : routePath.replace(/^\//, ''), { replace: false });
+    navigateTo(routePath === '/' ? './' : `${routePath.replace(/^\//, '')}/`, { replace: false });
   });
 
   window.addEventListener('popstate', () => renderRoute());
@@ -1101,6 +1122,16 @@ function renderCourse(courseCode) {
   const courseName = formatLabel(course.name);
   const subjectCount = subjectsWithPapersCount(courseCode);
   const crumbs = [homeCrumb(), courseCrumb(course)];
+  if (shouldPreservePrerender()) {
+    updatePageSeo({
+      title: seoTitleCourse(courseName, courseCode),
+      description: seoDescriptionCourse(courseName, courseCode, branches.length, subjectCount),
+      path: `${courseCode}/`,
+      breadcrumbs: crumbs,
+    });
+    mountPrerenderAdSlot('course');
+    return;
+  }
   updatePageSeo({
     title: seoTitleCourse(courseName, courseCode),
     description: seoDescriptionCourse(courseName, courseCode, branches.length, subjectCount),
@@ -1150,6 +1181,16 @@ function renderBranch(courseCode, branchId) {
   const course = getCourse(resolvedCourse || courseCode || 'BE');
   const courseName = formatLabel(course?.name || 'Bachelor of Engineering');
   const crumbs = [homeCrumb(), courseCrumb(course), branchCrumb(resolvedCourse || courseCode || 'BE', branch)].filter(Boolean);
+  if (shouldPreservePrerender()) {
+    updatePageSeo({
+      title: seoTitleBranch(branch.name, resolvedCourse || courseCode || 'BE', branch.id),
+      description: seoDescriptionBranch(branch.name, resolvedCourse || courseCode || 'BE', subjects.length),
+      path: `${branchPath(resolvedCourse || courseCode || 'BE', branch.id)}/`,
+      breadcrumbs: crumbs,
+    });
+    mountPrerenderAdSlot('branch');
+    return;
+  }
   updatePageSeo({
     title: seoTitleBranch(branch.name, resolvedCourse || courseCode || 'BE', branch.id),
     description: seoDescriptionBranch(branch.name, resolvedCourse || courseCode || 'BE', subjects.length),
@@ -1209,14 +1250,29 @@ function renderSubject(subjectOrRef, routeBranchId) {
     ...(branch ? [branchCrumb(courseCode, branch)] : []),
     subjectCrumb(courseCode, backBranch, subject),
   ].filter(Boolean);
+  const subjectRoute = `${subjectPath(courseCode, backBranch, subject)}/`;
+  if (shouldPreservePrerender()) {
+    updatePageSeo({
+      title: seoTitleSubject(subject.name, code),
+      description: seoDescriptionSubject(subject.name, code, branch?.name || 'BE', subject.semester, paperCount),
+      path: subjectRoute,
+      breadcrumbs: crumbs,
+      jsonLd: [
+        breadcrumbJsonLd(crumbs),
+        learningResourceJsonLd(subject, branch?.name || 'BE', canonicalAbsoluteUrl(subjectRoute), paperCount),
+      ].filter(Boolean),
+    });
+    mountPrerenderAdSlot('subject');
+    return;
+  }
   updatePageSeo({
     title: seoTitleSubject(subject.name, code),
     description: seoDescriptionSubject(subject.name, code, branch?.name || 'BE', subject.semester, paperCount),
-    path: subjectPath(courseCode, backBranch, subject),
+    path: subjectRoute,
     breadcrumbs: crumbs,
     jsonLd: [
       breadcrumbJsonLd(crumbs),
-      learningResourceJsonLd(subject, branch?.name || 'BE', canonicalAbsoluteUrl(subjectPath(courseCode, backBranch, subject)), paperCount),
+      learningResourceJsonLd(subject, branch?.name || 'BE', canonicalAbsoluteUrl(subjectRoute), paperCount),
     ].filter(Boolean),
   });
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id

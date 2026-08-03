@@ -125,6 +125,9 @@ h1.page-title {
 .breadcrumbs a:hover { text-decoration: underline; }
 .page-loading { color: var(--muted); margin: 0; font-size: var(--text-base); }
 .seo-intro { color: var(--muted); max-width: 720px; margin: 0; font-size: var(--text-base); line-height: 1.6; }
+.seo-faq { max-width: 720px; margin: 1.5rem 0; }
+.seo-faq dt { font-weight: 600; margin-top: 1rem; }
+.seo-faq dd { margin: 0.35rem 0 0; color: var(--muted); line-height: 1.6; }
 .related-subjects { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
 .related-subjects h2 { font-size: var(--title-section); letter-spacing: -.02em; margin-bottom: 14px; }
 .internal-links { margin-top: 40px; padding-top: 4px; }

@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "generatedAt": "2026-08-03T14:25:30.025Z",
+  "description": "GTUPEDIA read-only papers API for dashboard.gtupedia.com",
+  "baseUrl": "https://gtupedia.com/data/api/v1/",
+  "endpoints": {
+    "manifest": "https://gtupedia.com/data/api/v1/manifest.json",
+    "catalog": "https://gtupedia.com/data/api/v1/catalog.json",
+    "searchIndex": "https://gtupedia.com/data/search-index.json",
+    "catalogMeta": "https://gtupedia.com/data/catalog.json",
+    "subjects_BB": "https://gtupedia.com/data/api/v1/subjects-bb.json",
+    "subjects_BC": "https://gtupedia.com/data/api/v1/subjects-bc.json",
+    "subjects_BE": "https://gtupedia.com/data/api/v1/subjects-be.json",
+    "subjects_BP": "https://gtupedia.com/data/api/v1/subjects-bp.json",
+    "subjects_DI": "https://gtupedia.com/data/api/v1/subjects-di.json",
+    "subjects_MB": "https://gtupedia.com/data/api/v1/subjects-mb.json",
+    "subjects_MC": "https://gtupedia.com/data/api/v1/subjects-mc.json"
+  },
+  "usage": {
+    "listCourses": "GET /data/api/v1/catalog.json",
+    "listSubjectsByCourse": "GET /data/api/v1/subjects-{be|di|bb|bc|mb|mc|bp}.json",
+    "search": "GET /data/search-index.json",
+    "liveCatalog": "GET /data/catalog.json (exam paper sets + course stats)"
+  },
+  "cors": {
+    "allowedOrigins": [
+      "https://dashboard.gtupedia.com",
+      "https://gtupedia.com"
+    ],
+    "note": "Configure dashboard to fetch from gtupedia.com, or proxy server-side to avoid CORS."
+  }
+}

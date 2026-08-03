@@ -489,6 +489,7 @@ stampCatalogVersion(path.join(base, 'index.html'), catalog.catalogBuiltAt);
 stampCatalogVersion(path.join(base, '404.html'), catalog.catalogBuiltAt);
 
 const { writeAllSitemaps, writeSeoPages } = require('./generate-sitemap');
+const { writePapersApi } = require('./build-papers-api');
 const { SEO } = require('./seo-config');
 const sitemapStats = writeAllSitemaps(buildCatalog, base);
 fs.writeFileSync(path.join(base, 'robots.txt'), `User-agent: *
@@ -500,6 +501,7 @@ Disallow: /resources/ee/
 Sitemap: ${SEO.siteUrl}/sitemap.xml
 `);
 const seoPageCount = writeSeoPages(buildCatalog, base);
+const apiStats = writePapersApi(buildCatalog, base);
 console.log(`courses: ${catalogCourses.length}`);
 console.log(`BE branches: ${branchesWithSlugs.length}`);
 console.log(`BB branches: ${bbBranches.length}`);
@@ -539,3 +541,4 @@ console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
 console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);
 console.log(`sitemap urls: ${sitemapStats.totalUrls} (${sitemapStats.sitemapFiles} sitemap files, ${sitemapStats.subjectUrls} subject URLs)`);
 console.log(`seo pages: ${seoPageCount}`);
+console.log(`papers API: ${apiStats.subjects} subjects, ${apiStats.papers} paper links`);

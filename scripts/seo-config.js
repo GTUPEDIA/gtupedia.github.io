@@ -9,9 +9,17 @@ const SEO = {
   siteUrl: (process.env.GTU_SITE_URL || fileConfig.siteUrl || 'https://gtupedia.com').replace(/\/$/, ''),
 };
 
+function isFilePath(pathValue = '') {
+  const last = String(pathValue).split('/').pop() || '';
+  return /\.[a-z0-9]{2,8}$/i.test(last);
+}
+
+/** Directory-style catalogue paths use a trailing slash (matches Hostinger/Apache). */
 function siteUrl(pathValue = '') {
-  const clean = String(pathValue || '').replace(/^\//, '');
-  return clean ? `${SEO.siteUrl}/${clean}` : `${SEO.siteUrl}/`;
+  const clean = String(pathValue || '').replace(/^\//, '').replace(/\/+$/, '');
+  if (!clean) return `${SEO.siteUrl}/`;
+  const url = `${SEO.siteUrl}/${clean}`;
+  return isFilePath(clean) ? url : `${url}/`;
 }
 
 function organizationJsonLd() {
@@ -172,6 +180,33 @@ function socialMetaTags({ title, description, url, type = 'website' }) {
     <meta name="twitter:image:alt" content="${safeTitle}">`.trim();
 }
 
+function subjectFaqJsonLd(subject, branchName, code, paperCount, courseLabel) {
+  const seasons = paperCount
+    ? `${paperCount} GTU exam seasons (Winter & Summer) are linked on this page.`
+    : 'Exam papers are added when GTU publishes them on gtu.ac.in.';
+  return {
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `Where can I download ${subject.name} GTU question paper PDF (${code})?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `GTUPEDIA lists official ${subject.name} (${code}) question papers for ${branchName} in ${courseLabel}. ${seasons} Each link opens the PDF hosted on gtu.ac.in.`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: `What is the subject code for ${subject.name} in GTU ${branchName}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `The GTU subject code is ${code}. It is listed under ${branchName}, semester ${subject.semester || subject.semesterLabel || '—'}, in the ${courseLabel} programme.`,
+        },
+      },
+    ],
+  };
+}
+
 function itemListJsonLd(name, items) {
   if (!items?.length) return null;
   return {
@@ -211,5 +246,7 @@ module.exports = {
   defaultOgImageUrl,
   socialMetaTags,
   itemListJsonLd,
+  subjectFaqJsonLd,
+  isFilePath,
   escapeSeoHtml,
 };

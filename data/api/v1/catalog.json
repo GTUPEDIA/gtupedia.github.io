@@ -1,0 +1,960 @@
+{
+  "version": "1",
+  "generatedAt": "2026-08-03T14:25:30.025Z",
+  "siteUrl": "https://gtupedia.com",
+  "courses": [
+    {
+      "code": "BB",
+      "name": "BACHELOR OF BUSINESS ADMINISTRATION (HONOURS/HONOURS WITH RESEARCH)",
+      "subjectCount": 32,
+      "paperCount": 32,
+      "branches": [
+        {
+          "id": "01",
+          "name": "BBA",
+          "slug": "bba",
+          "subjectCount": 32
+        }
+      ],
+      "subjectsEndpoint": "https://gtupedia.com/data/api/v1/subjects-bb.json"
+    },
+    {
+      "code": "BC",
+      "name": "BACHELOR OF COMPUTER APPLICATIONS (HONOURS/HONOURS WITH RESEARCH)",
+      "subjectCount": 17,
+      "paperCount": 35,
+      "branches": [
+        {
+          "id": "01",
+          "name": "BCA",
+          "slug": "bca",
+          "subjectCount": 17
+        }
+      ],
+      "subjectsEndpoint": "https://gtupedia.com/data/api/v1/subjects-bc.json"
+    },
+    {
+      "code": "BE",
+      "name": "BACHELOR OF ENGINEERING",
+      "subjectCount": 2406,
+      "paperCount": 10800,
+      "branches": [
+        {
+          "id": "01",
+          "name": "Aeronautical Engineering",
+          "slug": "aeronautical-engineering",
+          "subjectCount": 50
+        },
+        {
+          "id": "02",
+          "name": "Automobile Engineering",
+          "slug": "automobile-engineering",
+          "subjectCount": 77
+        },
+        {
+          "id": "03",
+          "name": "Biomedical Engineering",
+          "slug": "biomedical-engineering",
+          "subjectCount": 49
+        },
+        {
+          "id": "04",
+          "name": "BIO - Technology",
+          "slug": "bio-technology",
+          "subjectCount": 47
+        },
+        {
+          "id": "05",
+          "name": "Chemical Engineering",
+          "slug": "chemical-engineering",
+          "subjectCount": 68
+        },
+        {
+          "id": "06",
+          "name": "Civil Engineering",
+          "slug": "civil-engineering",
+          "subjectCount": 97
+        },
+        {
+          "id": "07",
+          "name": "Computer Engineering",
+          "slug": "computer-engineering",
+          "subjectCount": 79
+        },
+        {
+          "id": "08",
+          "name": "Electrical & Electronics Engineering",
+          "slug": "electrical-and-electronics-engineering",
+          "subjectCount": 20
+        },
+        {
+          "id": "09",
+          "name": "Electrical Engineering",
+          "slug": "electrical-engineering",
+          "subjectCount": 93
+        },
+        {
+          "id": "10",
+          "name": "Electronics Engineering",
+          "slug": "electronics-engineering",
+          "subjectCount": 67
+        },
+        {
+          "id": "11",
+          "name": "Electronics & Communication Engineering",
+          "slug": "electronics-and-communication-engineering",
+          "subjectCount": 79
+        },
+        {
+          "id": "12",
+          "name": "Electronics & Telecommunication Engineering",
+          "slug": "electronics-and-telecommunication-engineering",
+          "subjectCount": 18
+        },
+        {
+          "id": "13",
+          "name": "Environmental Engineering",
+          "slug": "environmental-engineering",
+          "subjectCount": 43
+        },
+        {
+          "id": "14",
+          "name": "Food Processing Technology",
+          "slug": "food-processing-technology",
+          "subjectCount": 26
+        },
+        {
+          "id": "15",
+          "name": "Industrial Engineering",
+          "slug": "industrial-engineering",
+          "subjectCount": 49
+        },
+        {
+          "id": "16",
+          "name": "Information Technology",
+          "slug": "information-technology",
+          "subjectCount": 80
+        },
+        {
+          "id": "17",
+          "name": "Instrumentation & Control Engineering",
+          "slug": "instrumentation-and-control-engineering",
+          "subjectCount": 62
+        },
+        {
+          "id": "18",
+          "name": "Marine Engineering",
+          "slug": "marine-engineering",
+          "subjectCount": 0
+        },
+        {
+          "id": "19",
+          "name": "Mechanical Engineering",
+          "slug": "mechanical-engineering",
+          "subjectCount": 94
+        },
+        {
+          "id": "20",
+          "name": "Mechatronics Engineering",
+          "slug": "mechatronics-engineering",
+          "subjectCount": 52
+        },
+        {
+          "id": "21",
+          "name": "Metallurgy Engineering",
+          "slug": "metallurgy-engineering",
+          "subjectCount": 48
+        },
+        {
+          "id": "22",
+          "name": "Mining Engineering",
+          "slug": "mining-engineering",
+          "subjectCount": 45
+        },
+        {
+          "id": "23",
+          "name": "Plastic Technology",
+          "slug": "plastic-technology",
+          "subjectCount": 42
+        },
+        {
+          "id": "24",
+          "name": "Power Electronics",
+          "slug": "power-electronics",
+          "subjectCount": 55
+        },
+        {
+          "id": "25",
+          "name": "Production Engineering",
+          "slug": "production-engineering",
+          "subjectCount": 54
+        },
+        {
+          "id": "26",
+          "name": "Rubber Technology",
+          "slug": "rubber-technology",
+          "subjectCount": 42
+        },
+        {
+          "id": "28",
+          "name": "Textile Processing",
+          "slug": "textile-processing",
+          "subjectCount": 4
+        },
+        {
+          "id": "29",
+          "name": "Textile Technology",
+          "slug": "textile-technology",
+          "subjectCount": 48
+        },
+        {
+          "id": "31",
+          "name": "Computer Science & Engineering",
+          "slug": "computer-science-and-engineering",
+          "subjectCount": 70
+        },
+        {
+          "id": "32",
+          "name": "Information & Communication Technology",
+          "slug": "information-and-communication-technology",
+          "subjectCount": 57
+        },
+        {
+          "id": "34",
+          "name": "Manufacturing Engineering",
+          "slug": "manufacturing-engineering",
+          "subjectCount": 56
+        },
+        {
+          "id": "35",
+          "name": "Environmental Science & Technology",
+          "slug": "environmental-science-and-technology",
+          "subjectCount": 27
+        },
+        {
+          "id": "36",
+          "name": "Chemical Technology",
+          "slug": "chemical-technology",
+          "subjectCount": 40
+        },
+        {
+          "id": "37",
+          "name": "Environmental Science AND Engineering",
+          "slug": "environmental-science-and-engineering",
+          "subjectCount": 5
+        },
+        {
+          "id": "39",
+          "name": "Nano Technology",
+          "slug": "nano-technology",
+          "subjectCount": 13
+        },
+        {
+          "id": "40",
+          "name": "Civil & Infrastructure Engineering",
+          "slug": "civil-and-infrastructure-engineering",
+          "subjectCount": 38
+        },
+        {
+          "id": "41",
+          "name": "Robotics AND Automation",
+          "slug": "robotics-and-automation",
+          "subjectCount": 51
+        },
+        {
+          "id": "42",
+          "name": "Computer Science & Engineering (artificial Intelligence AND Machine Learning)",
+          "slug": "computer-science-and-engineering-artificial-intelligence-and-machine-learning",
+          "subjectCount": 42
+        },
+        {
+          "id": "43",
+          "name": "Artificial Intelligence AND Data Science",
+          "slug": "artificial-intelligence-and-data-science",
+          "subjectCount": 41
+        },
+        {
+          "id": "44",
+          "name": "Chemical Engineering (green Technology & Sustainability Engineering)",
+          "slug": "chemical-engineering-green-technology-and-sustainability-engineering",
+          "subjectCount": 38
+        },
+        {
+          "id": "45",
+          "name": "Computer Science & Engineering (internet OF Things AND Cyber Security Including Block Chain Technology)",
+          "slug": "computer-science-and-engineering-internet-of-things-and-cyber-security-including-block-chain-technology",
+          "subjectCount": 35
+        },
+        {
+          "id": "46",
+          "name": "Computer Science & Engineering (data Science)",
+          "slug": "computer-science-and-engineering-data-science",
+          "subjectCount": 40
+        },
+        {
+          "id": "47",
+          "name": "Electronics & Instrumentation Engineering",
+          "slug": "electronics-and-instrumentation-engineering",
+          "subjectCount": 43
+        },
+        {
+          "id": "48",
+          "name": "Computer Science & Engineering (cyber Security)",
+          "slug": "computer-science-and-engineering-cyber-security",
+          "subjectCount": 38
+        },
+        {
+          "id": "49",
+          "name": "Computer Science & Design",
+          "slug": "computer-science-and-design",
+          "subjectCount": 39
+        },
+        {
+          "id": "50",
+          "name": "Smart & Sustainable Energy",
+          "slug": "smart-and-sustainable-energy",
+          "subjectCount": 3
+        },
+        {
+          "id": "51",
+          "name": "Food Engineering & Technology",
+          "slug": "food-engineering-and-technology",
+          "subjectCount": 36
+        },
+        {
+          "id": "52",
+          "name": "Artificial Intelligence AND Machine Learning",
+          "slug": "artificial-intelligence-and-machine-learning",
+          "subjectCount": 39
+        },
+        {
+          "id": "53",
+          "name": "Plastics Engineering",
+          "slug": "plastics-engineering",
+          "subjectCount": 25
+        },
+        {
+          "id": "54",
+          "name": "Electronics AND Communication (communication System Engineering)",
+          "slug": "electronics-and-communication-communication-system-engineering",
+          "subjectCount": 24
+        },
+        {
+          "id": "89",
+          "name": "Mechanical Engineering",
+          "slug": "mechanical-engineering-89",
+          "subjectCount": 0
+        },
+        {
+          "id": "AA",
+          "name": "Minor/Honors - Industrial Process Safety",
+          "slug": "minor-honors-industrial-process-safety",
+          "subjectCount": 5
+        },
+        {
+          "id": "AB",
+          "name": "Minor/Honors - Waste Technology",
+          "slug": "minor-honors-waste-technology",
+          "subjectCount": 5
+        },
+        {
+          "id": "AC",
+          "name": "Minor/Honors - Construction Technology",
+          "slug": "minor-honors-construction-technology",
+          "subjectCount": 5
+        },
+        {
+          "id": "AD",
+          "name": "Minor/Honors - Next Generation Smart Village",
+          "slug": "minor-honors-next-generation-smart-village",
+          "subjectCount": 4
+        },
+        {
+          "id": "AE",
+          "name": "Minor/Honors - Infrastructure Engineering",
+          "slug": "minor-honors-infrastructure-engineering",
+          "subjectCount": 0
+        },
+        {
+          "id": "AF",
+          "name": "Minor/Honors - Smart Cities",
+          "slug": "minor-honors-smart-cities",
+          "subjectCount": 5
+        },
+        {
+          "id": "AG",
+          "name": "Minor/Honors - Artificial Intelligence & Machine Learning",
+          "slug": "minor-honors-artificial-intelligence-and-machine-learning",
+          "subjectCount": 5
+        },
+        {
+          "id": "AH",
+          "name": "Minor/Honors - Cyber Security",
+          "slug": "minor-honors-cyber-security",
+          "subjectCount": 5
+        },
+        {
+          "id": "AI",
+          "name": "Minor/Honors - Internet OF Things",
+          "slug": "minor-honors-internet-of-things",
+          "subjectCount": 5
+        },
+        {
+          "id": "AJ",
+          "name": "Minor/Honors - Solar Energy Systems",
+          "slug": "minor-honors-solar-energy-systems",
+          "subjectCount": 5
+        },
+        {
+          "id": "AK",
+          "name": "Minor/Honors - Electrical AND Computer",
+          "slug": "minor-honors-electrical-and-computer",
+          "subjectCount": 2
+        },
+        {
+          "id": "AL",
+          "name": "Minor/Honors - Electric Vehicles",
+          "slug": "minor-honors-electric-vehicles",
+          "subjectCount": 5
+        },
+        {
+          "id": "AM",
+          "name": "Minor/Honors - Control Systems AND Sensors Technology",
+          "slug": "minor-honors-control-systems-and-sensors-technology",
+          "subjectCount": 0
+        },
+        {
+          "id": "AN",
+          "name": "Minor/Honors - 3 D Printing",
+          "slug": "minor-honors-3-d-printing",
+          "subjectCount": 3
+        },
+        {
+          "id": "AO",
+          "name": "Minor/Honors - Robotics",
+          "slug": "minor-honors-robotics",
+          "subjectCount": 4
+        },
+        {
+          "id": "AP",
+          "name": "Minor/Honors - Energy Engineering",
+          "slug": "minor-honors-energy-engineering",
+          "subjectCount": 1
+        },
+        {
+          "id": "AQ",
+          "name": "Minor/Honors - Global Citizenship Personality Development",
+          "slug": "minor-honors-global-citizenship-personality-development",
+          "subjectCount": 3
+        },
+        {
+          "id": "AR",
+          "name": "Minor/Honours - Industrial Based NON Destructive Techniques AND Practices",
+          "slug": "minor-honours-industrial-based-non-destructive-techniques-and-practices",
+          "subjectCount": 4
+        },
+        {
+          "id": "AS",
+          "name": "Minor/Honours - Green Technology AND Sustainability Engineering",
+          "slug": "minor-honours-green-technology-and-sustainability-engineering",
+          "subjectCount": 5
+        },
+        {
+          "id": "AT",
+          "name": "Minor/Honours - Data Science",
+          "slug": "minor-honours-data-science",
+          "subjectCount": 5
+        },
+        {
+          "id": "AU",
+          "name": "Minor/Honours - Forensic Structural Engineering",
+          "slug": "minor-honours-forensic-structural-engineering",
+          "subjectCount": 4
+        },
+        {
+          "id": "AV",
+          "name": "Minor/Honours - Computer Aided Civil Engineering Processes",
+          "slug": "minor-honours-computer-aided-civil-engineering-processes",
+          "subjectCount": 4
+        },
+        {
+          "id": "IAA",
+          "name": "Industry - Minor/Hons. - Electric Vehicles ( iACE by Maruti Suzuki )",
+          "slug": "industry-minor-hons-electric-vehicles-iace-by-maruti-suzuki",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAN",
+          "name": "Industry - Minor/Hons. - Artificial Intelligence & Machine Learning ( Infosys Springboard )",
+          "slug": "industry-minor-hons-artificial-intelligence-and-machine-learning-infosys-springboard",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAO",
+          "name": "Industry - Minor/Hons. - GEN AI Specialist ( IBM Through Partner Etrain India Pvt. Ltd )",
+          "slug": "industry-minor-hons-gen-ai-specialist-ibm-through-partner-etrain-india-pvt-ltd",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAP",
+          "name": "Industry - Minor/Hons. - Full Stack Java Specialization ( IBM Through Partner Etrain India Pvt. Ltd )",
+          "slug": "industry-minor-hons-full-stack-java-specialization-ibm-through-partner-etrain-india-pvt-ltd",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAQ",
+          "name": "Industry - Minor/Hons. - Cyber Security ( Infosys Springboard )",
+          "slug": "industry-minor-hons-cyber-security-infosys-springboard",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAR",
+          "name": "Industry - Minor/Hons. - Data Science ( Infosys Springboard )",
+          "slug": "industry-minor-hons-data-science-infosys-springboard",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAS",
+          "name": "Industry - Minor/Hons. - Microsoft Cloud & AI Honors ( Microsoft Through partner CloudThat )",
+          "slug": "industry-minor-hons-microsoft-cloud-and-ai-honors-microsoft-through-partner-cloudthat",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAT",
+          "name": "Industry - Minor/Hons. - Electric Vehicle ( Tata IIS )",
+          "slug": "industry-minor-hons-electric-vehicle-tata-iis",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAU",
+          "name": "Industry - Minor/Hons. - Industrial Robotics(tata Iis) ( Tata IIS )",
+          "slug": "industry-minor-hons-industrial-robotics-tata-iis-tata-iis",
+          "subjectCount": 0
+        },
+        {
+          "id": "IAV",
+          "name": "Industry - Minor/Hons. - Industrial Additive Manufacturing(tata Iis) ( Tata IIS )",
+          "slug": "industry-minor-hons-industrial-additive-manufacturing-tata-iis-tata-iis",
+          "subjectCount": 0
+        },
+        {
+          "id": "NA",
+          "name": "Army",
+          "slug": "army",
+          "subjectCount": 3
+        },
+        {
+          "id": "NB",
+          "name": "AIR Force",
+          "slug": "air-force",
+          "subjectCount": 1
+        },
+        {
+          "id": "NC",
+          "name": "Navy",
+          "slug": "navy",
+          "subjectCount": 1
+        }
+      ],
+      "subjectsEndpoint": "https://gtupedia.com/data/api/v1/subjects-be.json"
+    },
+    {
+      "code": "BP",
+      "name": "BACHELOR OF PHARMACY",
+      "subjectCount": 54,
+      "paperCount": 195,
+      "branches": [
+        {
+          "id": "90",
+          "name": "Pharmacy",
+          "slug": "pharmacy",
+          "subjectCount": 54
+        },
+        {
+          "id": "NA",
+          "name": "Army",
+          "slug": "army",
+          "subjectCount": 0
+        },
+        {
+          "id": "NB",
+          "name": "Air Force",
+          "slug": "air-force",
+          "subjectCount": 0
+        },
+        {
+          "id": "NC",
+          "name": "Navy",
+          "slug": "navy",
+          "subjectCount": 0
+        }
+      ],
+      "subjectsEndpoint": "https://gtupedia.com/data/api/v1/subjects-bp.json"
+    },
+    {
+      "code": "DI",
+      "name": "DIPLOMA IN ENGINEERING",
+      "subjectCount": 2419,
+      "paperCount": 4062,
+      "branches": [
+        {
+          "id": "01",
+          "name": "Aeronautical Engineering",
+          "slug": "aeronautical-engineering",
+          "subjectCount": 8
+        },
+        {
+          "id": "02",
+          "name": "Automobile Engineering",
+          "slug": "automobile-engineering",
+          "subjectCount": 62
+        },
+        {
+          "id": "03",
+          "name": "Biomedical Engineering",
+          "slug": "biomedical-engineering",
+          "subjectCount": 64
+        },
+        {
+          "id": "05",
+          "name": "Chemical Engineering",
+          "slug": "chemical-engineering",
+          "subjectCount": 102
+        },
+        {
+          "id": "06",
+          "name": "Civil Engineering",
+          "slug": "civil-engineering",
+          "subjectCount": 114
+        },
+        {
+          "id": "07",
+          "name": "Computer Engineering",
+          "slug": "computer-engineering",
+          "subjectCount": 77
+        },
+        {
+          "id": "09",
+          "name": "Electrical Engineering",
+          "slug": "electrical-engineering",
+          "subjectCount": 95
+        },
+        {
+          "id": "11",
+          "name": "Electronics and Communication Engineering",
+          "slug": "electronics-and-communication-engineering",
+          "subjectCount": 72
+        },
+        {
+          "id": "13",
+          "name": "Environmental Engineering",
+          "slug": "environmental-engineering",
+          "subjectCount": 71
+        },
+        {
+          "id": "16",
+          "name": "Information Technology",
+          "slug": "information-technology",
+          "subjectCount": 65
+        },
+        {
+          "id": "17",
+          "name": "Instrumentation and Control Engineering",
+          "slug": "instrumentation-and-control-engineering",
+          "subjectCount": 85
+        },
+        {
+          "id": "18",
+          "name": "Marine Engineering",
+          "slug": "marine-engineering",
+          "subjectCount": 33
+        },
+        {
+          "id": "19",
+          "name": "Mechanical Engineering",
+          "slug": "mechanical-engineering",
+          "subjectCount": 105
+        },
+        {
+          "id": "20",
+          "name": "Mechatronics Engineering",
+          "slug": "mechatronics-engineering",
+          "subjectCount": 57
+        },
+        {
+          "id": "21",
+          "name": "Metallurgy Engineering",
+          "slug": "metallurgy-engineering",
+          "subjectCount": 52
+        },
+        {
+          "id": "22",
+          "name": "Mining Engineering",
+          "slug": "mining-engineering",
+          "subjectCount": 49
+        },
+        {
+          "id": "23",
+          "name": "Plastics Engineering",
+          "slug": "plastics-engineering",
+          "subjectCount": 58
+        },
+        {
+          "id": "24",
+          "name": "Power Electronics",
+          "slug": "power-electronics",
+          "subjectCount": 50
+        },
+        {
+          "id": "28",
+          "name": "Textile Processing Technology",
+          "slug": "textile-processing-technology",
+          "subjectCount": 44
+        },
+        {
+          "id": "29",
+          "name": "Textile Manufacturing Technology",
+          "slug": "textile-manufacturing-technology",
+          "subjectCount": 56
+        },
+        {
+          "id": "31",
+          "name": "Computer Science and Engineering",
+          "slug": "computer-science-and-engineering",
+          "subjectCount": 42
+        },
+        {
+          "id": "32",
+          "name": "Information and Communication Technology",
+          "slug": "information-and-communication-technology",
+          "subjectCount": 34
+        },
+        {
+          "id": "34",
+          "name": "Mechanical Engineering (Manufacturing Technology)",
+          "slug": "mechanical-engineering-manufacturing-technology",
+          "subjectCount": 0
+        },
+        {
+          "id": "41",
+          "name": "Automation and Robotics",
+          "slug": "automation-and-robotics",
+          "subjectCount": 40
+        },
+        {
+          "id": "50",
+          "name": "Architectural Assistantship",
+          "slug": "architectural-assistantship",
+          "subjectCount": 34
+        },
+        {
+          "id": "51",
+          "name": "Computer Aided Costume Design and Dress Making",
+          "slug": "computer-aided-costume-design-and-dress-making",
+          "subjectCount": 27
+        },
+        {
+          "id": "52",
+          "name": "Ceramic Technology",
+          "slug": "ceramic-technology",
+          "subjectCount": 38
+        },
+        {
+          "id": "53",
+          "name": "Commercial Art",
+          "slug": "commercial-art",
+          "subjectCount": 0
+        },
+        {
+          "id": "54",
+          "name": "Commercial Practice",
+          "slug": "commercial-practice",
+          "subjectCount": 0
+        },
+        {
+          "id": "55",
+          "name": "Fabrication Technology",
+          "slug": "fabrication-technology",
+          "subjectCount": 40
+        },
+        {
+          "id": "56",
+          "name": "Home Science",
+          "slug": "home-science",
+          "subjectCount": 0
+        },
+        {
+          "id": "58",
+          "name": "Printing Technology",
+          "slug": "printing-technology",
+          "subjectCount": 44
+        },
+        {
+          "id": "59",
+          "name": "Textile Designing",
+          "slug": "textile-designing",
+          "subjectCount": 28
+        },
+        {
+          "id": "60",
+          "name": "Transportation Engineering",
+          "slug": "transportation-engineering",
+          "subjectCount": 18
+        },
+        {
+          "id": "61",
+          "name": "Fire Technology",
+          "slug": "fire-technology",
+          "subjectCount": 0
+        },
+        {
+          "id": "63",
+          "name": "Agricultural Engineering",
+          "slug": "agricultural-engineering",
+          "subjectCount": 0
+        },
+        {
+          "id": "64",
+          "name": "Renewable Energy",
+          "slug": "renewable-energy",
+          "subjectCount": 28
+        },
+        {
+          "id": "65",
+          "name": "Mechanical Engineering (CAD/CAM)",
+          "slug": "mechanical-engineering-cad-cam",
+          "subjectCount": 37
+        },
+        {
+          "id": "66",
+          "name": "Cyber System and Information Security",
+          "slug": "cyber-system-and-information-security",
+          "subjectCount": 0
+        },
+        {
+          "id": "81",
+          "name": "Civil Engineering (DLM)",
+          "slug": "civil-engineering-dlm",
+          "subjectCount": 0
+        },
+        {
+          "id": "82",
+          "name": "Mechanical Engineering (DLM)",
+          "slug": "mechanical-engineering-dlm",
+          "subjectCount": 0
+        },
+        {
+          "id": "83",
+          "name": "Electrical Engineering (DLM)",
+          "slug": "electrical-engineering-dlm",
+          "subjectCount": 1
+        },
+        {
+          "id": "NA",
+          "name": "Army",
+          "slug": "army",
+          "subjectCount": 3
+        },
+        {
+          "id": "NB",
+          "name": "Air Force",
+          "slug": "air-force",
+          "subjectCount": 0
+        },
+        {
+          "id": "NC",
+          "name": "Navy",
+          "slug": "navy",
+          "subjectCount": 2
+        }
+      ],
+      "subjectsEndpoint": "https://gtupedia.com/data/api/v1/subjects-di.json"
+    },
+    {
+      "code": "MB",
+      "name": "MASTER OF BUSINESS ADMINISTRATION",
+      "subjectCount": 244,
+      "paperCount": 623,
+      "branches": [
+        {
+          "id": "90",
+          "name": "International Business (Online)",
+          "slug": "international-business-online",
+          "subjectCount": 0
+        },
+        {
+          "id": "92",
+          "name": "MBA",
+          "slug": "mba",
+          "subjectCount": 100
+        },
+        {
+          "id": "93",
+          "name": "MBA (International Business)",
+          "slug": "mba-international-business",
+          "subjectCount": 30
+        },
+        {
+          "id": "94",
+          "name": "MBA (Innovation, Entrepreneurship and Venture Development)",
+          "slug": "mba-innovation-entrepreneurship-and-venture-development",
+          "subjectCount": 15
+        },
+        {
+          "id": "95",
+          "name": "Financial Management",
+          "slug": "financial-management",
+          "subjectCount": 33
+        },
+        {
+          "id": "96",
+          "name": "Information Technology",
+          "slug": "information-technology",
+          "subjectCount": 37
+        },
+        {
+          "id": "97",
+          "name": "MBA (Logistics and Supply Chain Management)",
+          "slug": "mba-logistics-and-supply-chain-management",
+          "subjectCount": 23
+        },
+        {
+          "id": "98",
+          "name": "MBA (Fintech)",
+          "slug": "mba-fintech",
+          "subjectCount": 6
+        }
+      ],
+      "subjectsEndpoint": "https://gtupedia.com/data/api/v1/subjects-mb.json"
+    },
+    {
+      "code": "MC",
+      "name": "MASTER OF COMPUTER APPLICATIONS",
+      "subjectCount": 37,
+      "paperCount": 44,
+      "branches": [
+        {
+          "id": "93",
+          "name": "MCA",
+          "slug": "mca",
+          "subjectCount": 2
+        },
+        {
+          "id": "94",
+          "name": "MCA",
+          "slug": "mca-94",
+          "subjectCount": 35
+        }
+      ],
+      "subjectsEndpoint": "https://gtupedia.com/data/api/v1/subjects-mc.json"
+    }
+  ],
+  "examSeasons": [
+    "Winter 2025",
+    "Summer 2025",
+    "Winter 2024",
+    "Summer 2024",
+    "Winter 2023",
+    "Summer 2023"
+  ]
+}

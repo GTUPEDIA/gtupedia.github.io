@@ -18,6 +18,13 @@ Options -Indexes +FollowSymLinks
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
+  # Allow dashboard.gtupedia.com to read JSON API from browser
+  <FilesMatch "\.(json)$">
+    SetEnvIf Origin "^https://dashboard\.gtupedia\.com$" CORS=1
+    Header set Access-Control-Allow-Origin "https://dashboard.gtupedia.com" env=CORS
+    Header set Access-Control-Allow-Methods "GET, OPTIONS" env=CORS
+    Header set Access-Control-Max-Age "86400" env=CORS
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_expires.c>

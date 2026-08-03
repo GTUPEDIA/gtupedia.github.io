@@ -16,6 +16,7 @@ const {
   PAPER_ENABLED_COURSES,
   socialMetaTags,
   itemListJsonLd,
+  subjectFaqJsonLd,
 } = require('./seo-config');
 
 const SITE = SEO.siteUrl;
@@ -399,7 +400,7 @@ function buildCoursePage(course, catalog) {
   const branchLinks = branches.map(branch => {
     const route = branchPath(courseCode, branch.id, branches);
     const count = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers).length;
-    return `<li><a href="${escapeHtml(route)}">${escapeHtml(branch.name)}</a>${count ? ` — ${count} subjects with papers` : ''}</li>`;
+    return `<li><a href="${escapeHtml(`${route}/`)}">${escapeHtml(branch.name)}</a>${count ? ` — ${count} subjects with papers` : ''}</li>`;
   }).join('\n');
 
   return renderSeoShell({
@@ -429,7 +430,7 @@ function buildBranchPage(course, branch, branches, catalog) {
   const description = seoDescriptionBranch(branch.name, courseCode, subjects.length);
   const subjectLinks = subjects.slice(0, 120).map(subject => {
     const subjectRoute = subjectPath(courseCode, branch.id, subject, branches);
-    return `<li><a href="${escapeHtml(subjectRoute)}">${escapeHtml(subject.name)}</a> <span>(${escapeHtml(subject.code)}) · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester}`)}</span></li>`;
+    return `<li><a href="${escapeHtml(`${subjectRoute}/`)}">${escapeHtml(subject.name)}</a> <span>(${escapeHtml(subject.code)}) · ${escapeHtml(subject.semesterLabel || `Semester ${subject.semester}`)}</span></li>`;
   }).join('\n');
   const itemList = itemListJsonLd(`${branch.name} GTU subjects`, subjects.slice(0, 50).map(subject => ({
     name: `${subject.name} (${subject.code})`,
@@ -495,12 +496,22 @@ function buildSubjectPage(course, subject, branches, catalog) {
   const relatedHtml = relatedSubjects.length
     ? `<h2>More ${escapeHtml(semesterLabel)} papers in ${escapeHtml(branchName)}</h2><ul>${relatedSubjects.map(related => {
       const relatedRoute = subjectPath(courseCode, branchId, related, branches);
-      return `<li><a href="${escapeHtml(relatedRoute)}">${escapeHtml(related.name)}</a> <span>(${escapeHtml(related.code)})</span></li>`;
+      return `<li><a href="${escapeHtml(`${relatedRoute}/`)}">${escapeHtml(related.name)}</a> <span>(${escapeHtml(related.code)})</span></li>`;
     }).join('')}</ul>`
     : '';
+  const courseLabel = breadcrumbCourseLabel(course);
   const subjectBlurb = paperCount
-    ? `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${breadcrumbCourseLabel(course)}. Official question papers are linked below for ${paperCount} exam season${paperCount === 1 ? '' : 's'}.`
-    : `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${breadcrumbCourseLabel(course)}. Syllabus links appear below; exam papers are added when GTU releases them.`;
+    ? `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${courseLabel}. Official question papers are linked below for ${paperCount} exam season${paperCount === 1 ? '' : 's'}.`
+    : `${subject.name} (${code}) is listed under ${branchName}, ${semesterLabel}, in GTU ${courseLabel}. Syllabus links appear below; exam papers are added when GTU releases them.`;
+  const paperSeasonList = papers.map(paper => paper.label).join(', ');
+  const faqHtml = `
+      <h2>Frequently asked questions</h2>
+      <dl class="seo-faq">
+        <dt>Where can I download ${escapeHtml(subject.name)} GTU question papers?</dt>
+        <dd>Official PDFs for ${escapeHtml(code)} are linked below${paperCount ? ` (${escapeHtml(paperSeasonList)})` : ''}. Each file is hosted on gtu.ac.in.</dd>
+        <dt>Which branch and semester is ${escapeHtml(code)}?</dt>
+        <dd>${escapeHtml(branchName)}, ${escapeHtml(semesterLabel)}, ${escapeHtml(courseLabel)}.</dd>
+      </dl>`;
 
   return renderSeoShell({
     title,
@@ -513,16 +524,18 @@ function buildSubjectPage(course, subject, branches, catalog) {
       <p><strong>Subject code:</strong> ${escapeHtml(code)}${alternateCodes.length ? `<br><strong>Also listed as:</strong> ${alternateCodes.map(escapeHtml).join(', ')}` : ''}</p>
       ${syllabusHtml}
       ${paperHtml}
+      ${faqHtml}
       ${relatedHtml}
-      <p><a href="${escapeHtml(branchRoute)}">← Back to ${escapeHtml(branchName)} subjects</a></p>`,
+      <p><a href="${escapeHtml(`${branchRoute}/`)}">← Back to ${escapeHtml(branchName)} subjects</a></p>`,
     jsonLd: [
       breadcrumbListJsonLd([
         { name: 'Home', url: siteUrl() },
-        { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
+        { name: courseLabel, url: siteUrl(courseCode) },
         { name: branchName, url: siteUrl(branchRoute) },
         { name: subject.name, url: siteUrl(route) },
       ]),
       learningResourceJsonLd(subject, branchName, siteUrl(route), paperCount),
+      subjectFaqJsonLd(subject, branchName, code, paperCount, courseLabel),
     ],
     catalogVersion: catalog.catalogBuiltAt,
   });

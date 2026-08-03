@@ -76,8 +76,10 @@
   }
 
   function absoluteUrl(path = '') {
-    const clean = String(path || '').replace(/^\//, '');
-    return clean ? `${seo.siteUrl}/${clean}` : `${seo.siteUrl}/`;
+    const clean = String(path || '').replace(/^\//, '').replace(/\/+$/, '');
+    if (!clean) return `${seo.siteUrl}/`;
+    const url = `${seo.siteUrl}/${clean}`;
+    return /\.[a-z0-9]{2,8}$/i.test(clean.split('/').pop() || '') ? url : `${url}/`;
   }
 
   function applySocialMeta(title, description) {

@@ -8,6 +8,7 @@ const {
   learningResourceJsonLd,
   seoTitleCourse,
   seoDescriptionCourse,
+  seoIntroCourse,
   seoTitleBranch,
   seoDescriptionBranch,
   seoTitleSubject,
@@ -17,6 +18,9 @@ const {
   socialMetaTags,
   itemListJsonLd,
   subjectFaqJsonLd,
+  chromeHeaderInner,
+  chromeFooterInner,
+  homeJsonLdScript,
 } = require('./seo-config');
 
 const SITE = SEO.siteUrl;
@@ -31,6 +35,10 @@ function branchesForCourse(course, catalog) {
 function branchSlugFor(branchId, branches) {
   if (String(branchId) === '0') return 'common';
   return branches.find(item => item.id === branchId)?.slug || branchId;
+}
+
+function isNccBranch(branchId) {
+  return ['NA', 'NB', 'NC'].includes(String(branchId || '').toUpperCase());
 }
 
 function branchPath(courseCode, branchId, branches) {
@@ -88,6 +96,7 @@ function collectSitemapEntries(catalog) {
 
     add(course.code, '0.9', 'course', { course, branches });
     for (const branch of branches) {
+      if (isNccBranch(branch.id)) continue;
       const branchSubjectCount = listedSubjectsForBranch(branch.id, course.code, catalog.subjects, examPapers).length;
       if (!branchSubjectCount) continue;
       add(branchPath(course.code, branch.id, branches), '0.8', 'branch', {
@@ -98,6 +107,7 @@ function collectSitemapEntries(catalog) {
     }
     for (const subject of subjects) {
       if (subject.courseCode !== course.code) continue;
+      if (isNccBranch(subject.branchId)) continue;
       if (!subjectHasPapers(subject, catalog.examPapers || [])) continue;
       add(subjectPath(course.code, subject.branchId, subject, branches), '0.7', 'subject', {
         course,
@@ -153,12 +163,10 @@ function writeAllSitemaps(catalog, outDir) {
   const sitemapDir = path.join(outDir, 'sitemaps');
   fs.mkdirSync(sitemapDir, { recursive: true });
 
-  const staticEntries = entries.filter(entry => entry.kind !== 'subject');
+  const hubEntries = entries.filter(entry => entry.kind !== 'subject');
   const subjectEntries = entries.filter(entry => entry.kind === 'subject');
-  const sitemapFiles = [];
 
-  fs.writeFileSync(path.join(sitemapDir, 'pages.xml'), renderUrlset(staticEntries, lastmod));
-  sitemapFiles.push('sitemaps/pages.xml');
+  fs.writeFileSync(path.join(sitemapDir, 'pages.xml'), renderUrlset(hubEntries, lastmod));
 
   const subjectsByCourse = new Map();
   for (const entry of subjectEntries) {
@@ -167,17 +175,21 @@ function writeAllSitemaps(catalog, outDir) {
     subjectsByCourse.get(courseCode).push(entry);
   }
 
+  const subjectSitemapFiles = [];
   for (const [courseCode, courseEntries] of subjectsByCourse) {
     const fileName = `sitemaps/subjects-${courseCode.toLowerCase()}.xml`;
     fs.writeFileSync(path.join(outDir, fileName), renderUrlset(courseEntries, lastmod));
-    sitemapFiles.push(fileName);
+    subjectSitemapFiles.push(fileName);
   }
 
-  writeSitemapIndex(sitemapFiles, path.join(outDir, 'sitemap.xml'), lastmod);
+  writeSitemapIndex(subjectSitemapFiles, path.join(sitemapDir, 'subjects-index.xml'), lastmod);
+  // Submit hubs only. Subject URLs are discovered from course/branch pages.
+  writeSitemapIndex(['sitemaps/pages.xml'], path.join(outDir, 'sitemap.xml'), lastmod);
 
   return {
     totalUrls: entries.length,
-    sitemapFiles: sitemapFiles.length + 1,
+    submittedUrls: hubEntries.length,
+    sitemapFiles: 2,
     subjectUrls: subjectEntries.length,
   };
 }
@@ -355,7 +367,7 @@ function renderSeoShell({
     <script src="assets/site-chrome.js" defer></script>
   </head>
   <body class="subpage">
-    <header class="site-header" data-site-header></header>
+    <header class="site-header" data-site-header>${chromeHeaderInner('/')}</header>
     <main>
       <section id="content" class="content">
         <article class="seo-prerender">
@@ -367,7 +379,7 @@ function renderSeoShell({
         </article>
       </section>
     </main>
-    <footer class="site-footer" data-site-footer></footer>
+    <footer class="site-footer" data-site-footer>${chromeFooterInner('/')}</footer>
     <script src="assets/app.js" defer></script>
   </body>
 </html>
@@ -397,25 +409,37 @@ function buildCoursePage(course, catalog) {
   ).length;
   const title = seoTitleCourse(courseName, courseCode);
   const description = seoDescriptionCourse(courseName, courseCode, branches.length, subjectCount);
-  const branchLinks = branches.map(branch => {
-    const route = branchPath(courseCode, branch.id, branches);
-    const count = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers).length;
-    return `<li><a href="${escapeHtml(`${route}/`)}">${escapeHtml(branch.name)}</a>${count ? ` — ${count} subjects with papers` : ''}</li>`;
-  }).join('\n');
+  const listedBranches = branches
+    .map(branch => {
+      const route = branchPath(courseCode, branch.id, branches);
+      const count = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers).length;
+      return { branch, route, count };
+    })
+    .filter(item => item.count > 0 && !isNccBranch(item.branch.id));
+  const branchLinks = listedBranches.map(({ branch, route, count }) => (
+    `<li><a href="${escapeHtml(`${route}/`)}">${escapeHtml(branch.name)}</a> — ${count} subjects with papers</li>`
+  )).join('\n');
+  const itemList = itemListJsonLd(`${courseName} GTU branches`, listedBranches.slice(0, 50).map(({ branch, route }) => ({
+    name: branch.name,
+    url: siteUrl(route),
+  })));
 
   return renderSeoShell({
     title,
     description,
     path: courseCode,
-    h1: escapeHtml(courseName),
-    intro: escapeHtml(`Select your ${courseCode} branch to browse semester-wise subjects and GTU question papers.`),
+    h1: escapeHtml(`${courseName} GTU Question Papers`),
+    intro: escapeHtml(seoIntroCourse(courseCode, courseName, listedBranches.length)),
     bodyHtml: `
-      <p>${subjectCount ? `${subjectCount} subjects across ${branches.length} branch${branches.length === 1 ? '' : 'es'}.` : 'Course catalogue on GTUPEDIA.'}</p>
+      <p>${subjectCount ? `${subjectCount} subjects with exam papers across ${listedBranches.length} branch${listedBranches.length === 1 ? '' : 'es'}.` : 'Course catalogue on GTUPEDIA.'}</p>
       ${branchLinks ? `<h2>Branches</h2><ul>${branchLinks}</ul>` : '<p>Branches coming soon.</p>'}`,
-    jsonLd: [breadcrumbListJsonLd([
-      { name: 'Home', url: siteUrl() },
-      { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
-    ])],
+    jsonLd: [
+      breadcrumbListJsonLd([
+        { name: 'Home', url: siteUrl() },
+        { name: breadcrumbCourseLabel(course), url: siteUrl(courseCode) },
+      ]),
+      itemList,
+    ].filter(Boolean),
     catalogVersion: catalog.catalogBuiltAt,
   });
 }
@@ -541,8 +565,82 @@ function buildSubjectPage(course, subject, branches, catalog) {
   });
 }
 
-function writeSeoPages(catalog, outDir) {
-  const entries = collectSitemapEntries(catalog).filter(entry => ['course', 'branch', 'subject'].includes(entry.kind));
+function replaceSeoBlock(html, name, inner) {
+  const start = `<!--seo:${name}-->`;
+  const end = `<!--/seo:${name}-->`;
+  const from = html.indexOf(start);
+  const to = html.indexOf(end);
+  if (from === -1 || to === -1 || to < from) return html;
+  return `${html.slice(0, from + start.length)}\n${inner}\n    ${html.slice(to)}`;
+}
+
+function homeCourseCardsHtml(catalog) {
+  const examPapers = catalog.examPapers || [];
+  const order = ['BE', 'DI', 'BB', 'BC', 'MB', 'MC', 'BP'];
+  return order.map((code) => {
+    const course = (catalog.courses || []).find(item => item.code === code);
+    if (!course) return '';
+    const branches = branchesForCourse(course, catalog);
+    const subjectCount = (catalog.subjects || []).filter(
+      item => item.courseCode === code && subjectHasPapers(item, examPapers),
+    ).length;
+    if (!subjectCount) return '';
+    const name = formatLabel(course.name);
+    const branchCount = branches.filter(branch => (
+      listedSubjectsForBranch(branch.id, code, catalog.subjects, examPapers).length > 0
+    )).length;
+    return `<a class="branch-card course-card course-card--available" href="${escapeHtml(code)}/">
+      <span class="branch-code">${escapeHtml(code)}</span>
+      <h3>${escapeHtml(name)}</h3>
+      <p>${branchCount} branch${branchCount === 1 ? '' : 'es'} · ${subjectCount} subjects</p>
+    </a>`;
+  }).filter(Boolean).join('\n          ');
+}
+
+const POPULAR_BRANCHES = [
+  ['BE', '07'],
+  ['BE', '19'],
+  ['BE', '06'],
+  ['BE', '09'],
+  ['BE', '16'],
+  ['DI', '07'],
+  ['BB', '01'],
+  ['MB', '92'],
+  ['BC', '01'],
+  ['BP', '90'],
+];
+
+function homePopularLinksHtml(catalog) {
+  const examPapers = catalog.examPapers || [];
+  const links = [];
+  for (const [courseCode, branchId] of POPULAR_BRANCHES) {
+    const course = (catalog.courses || []).find(item => item.code === courseCode);
+    if (!course) continue;
+    const branches = branchesForCourse(course, catalog);
+    const branch = branches.find(item => item.id === branchId);
+    if (!branch) continue;
+    const count = listedSubjectsForBranch(branch.id, courseCode, catalog.subjects, examPapers).length;
+    if (!count) continue;
+    const route = branchPath(courseCode, branch.id, branches);
+    const label = courseCode === 'DI' ? `Diploma ${branch.name}` : branch.name;
+    links.push(`<a href="${escapeHtml(route)}/">${escapeHtml(label)} papers</a>`);
+  }
+  return links.join('\n          ');
+}
+
+function writeHomePage(catalog, filePath) {
+  let html = fs.readFileSync(filePath, 'utf8');
+  html = replaceSeoBlock(html, 'home-jsonld', homeJsonLdScript());
+  html = replaceSeoBlock(html, 'home-header', chromeHeaderInner('/'));
+  html = replaceSeoBlock(html, 'home-courses', homeCourseCardsHtml(catalog));
+  html = replaceSeoBlock(html, 'home-popular', homePopularLinksHtml(catalog));
+  html = replaceSeoBlock(html, 'home-footer', chromeFooterInner('/'));
+  fs.writeFileSync(filePath, html);
+}
+
+function writeSeoPages(catalog, outDir, kinds = ['course', 'branch', 'subject']) {
+  const wanted = new Set(kinds);
+  const entries = collectSitemapEntries(catalog).filter(entry => wanted.has(entry.kind));
   let count = 0;
 
   for (const entry of entries) {
@@ -575,6 +673,7 @@ module.exports = {
   writeSitemap,
   writeAllSitemaps,
   writeSeoPages,
+  writeHomePage,
   branchesForCourse,
   branchPath,
   subjectPath,

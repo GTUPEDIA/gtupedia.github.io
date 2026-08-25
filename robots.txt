@@ -4,4 +4,5 @@ Allow: /
 Disallow: /old/
 Disallow: /resources/ee/
 
+# Hub pages only. Do not submit sitemaps/subjects-index.xml until /BE/ and /DI/ are indexed.
 Sitemap: https://gtupedia.com/sitemap.xml

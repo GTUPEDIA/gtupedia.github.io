@@ -401,6 +401,21 @@ body.subpage .content { margin-bottom: 48px; margin-top: 0; }
   text-decoration: none;
 }
 .site-footer__links a:hover { text-decoration: underline; }
+.site-footer__papers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: 0 0 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.site-footer__papers a {
+  color: var(--accent-dark);
+  font-size: var(--text-sm);
+  font-weight: 650;
+  text-decoration: none;
+}
+.site-footer__papers a:hover { text-decoration: underline; }
 .site-footer__disclaimer {
   margin: 0 0 14px;
   padding: 14px 16px;

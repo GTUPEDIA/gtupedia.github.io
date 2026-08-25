@@ -11,7 +11,16 @@ const { execSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
 const SEO_COURSES = ['BE', 'DI', 'BB', 'BC', 'MB', 'MC', 'BP'];
-const EXTRA_PATHS = ['sitemap.xml', 'sitemaps', 'robots.txt', '.htaccess'];
+const EXTRA_PATHS = [
+  'sitemap.xml',
+  'sitemaps',
+  'robots.txt',
+  '.htaccess',
+  'index.html',
+  'assets/site-chrome.js',
+  'assets/styles.css',
+  'assets/app.js',
+];
 
 console.log('Running build-catalog.js…');
 execSync('node scripts/build-catalog.js', { cwd: ROOT, stdio: 'inherit' });

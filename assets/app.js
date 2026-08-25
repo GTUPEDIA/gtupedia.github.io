@@ -3,6 +3,7 @@ const content = document.querySelector('#content');
 const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
 const aboutSection = document.querySelector('#about');
+const popularSection = document.querySelector('#popular-papers');
 const heroSection = document.querySelector('#hero');
 const breadcrumbsNav = document.querySelector('#breadcrumbs');
 const searchInput = document.querySelector('#search-input');
@@ -1004,6 +1005,7 @@ function subjectCountForBranch(branchId, courseCode = 'BE') {
 function setHomeSectionsVisible(visible) {
   if (coursesSection) coursesSection.hidden = !visible;
   if (aboutSection) aboutSection.hidden = !visible;
+  if (popularSection) popularSection.hidden = !visible;
 }
 
 function setCoursesVisible(visible) {

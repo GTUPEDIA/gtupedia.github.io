@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generatedAt": "2026-08-03T14:25:30.025Z",
+  "generatedAt": "2026-08-25T15:05:39.309Z",
   "description": "GTUPEDIA read-only papers API for dashboard.gtupedia.com",
   "baseUrl": "https://gtupedia.com/data/api/v1/",
   "endpoints": {

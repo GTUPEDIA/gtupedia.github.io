@@ -83,6 +83,15 @@
           ${footerNav.map(navLink).join('')}
         </nav>
       </div>
+      <nav class="site-footer__papers" aria-label="GTU question papers">
+        <a href="${root}BE/">BE papers</a>
+        <a href="${root}DI/">Diploma papers</a>
+        <a href="${root}BB/">BBA papers</a>
+        <a href="${root}BC/">BCA papers</a>
+        <a href="${root}MB/">MBA papers</a>
+        <a href="${root}MC/">MCA papers</a>
+        <a href="${root}BP/">B.Pharm papers</a>
+      </nav>
       <div data-ad-footer></div>
       <p class="site-footer__disclaimer">
         <strong>Disclaimer:</strong> GTUPEDIA is <em>not</em> the official website of Gujarat Technological University (GTU) and is not affiliated with, endorsed by, or operated by the university. It is an independent initiative run by students and contributors to support practical learning, exam preparation, and exploration. Materials link to official GTU sources where available. See our <a href="${links.privacy}">Privacy Policy</a>.

@@ -488,16 +488,18 @@ function stampCatalogVersion(filePath, builtAt) {
 stampCatalogVersion(path.join(base, 'index.html'), catalog.catalogBuiltAt);
 stampCatalogVersion(path.join(base, '404.html'), catalog.catalogBuiltAt);
 
-const { writeAllSitemaps, writeSeoPages } = require('./generate-sitemap');
+const { writeAllSitemaps, writeSeoPages, writeHomePage } = require('./generate-sitemap');
 const { writePapersApi } = require('./build-papers-api');
 const { SEO } = require('./seo-config');
 const sitemapStats = writeAllSitemaps(buildCatalog, base);
+writeHomePage(buildCatalog, path.join(base, 'index.html'));
 fs.writeFileSync(path.join(base, 'robots.txt'), `User-agent: *
 Allow: /
 
 Disallow: /old/
 Disallow: /resources/ee/
 
+# Hub pages only. Do not submit sitemaps/subjects-index.xml until /BE/ and /DI/ are indexed.
 Sitemap: ${SEO.siteUrl}/sitemap.xml
 `);
 const seoPageCount = writeSeoPages(buildCatalog, base);
@@ -539,6 +541,6 @@ console.log(`Summer 2024 MB papers: ${summer2024MbPapers.codes.length}`);
 console.log(`Summer 2024 BP papers: ${summer2024BpPapers.codes.length}`);
 console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
 console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);
-console.log(`sitemap urls: ${sitemapStats.totalUrls} (${sitemapStats.sitemapFiles} sitemap files, ${sitemapStats.subjectUrls} subject URLs)`);
+console.log(`sitemap urls: ${sitemapStats.submittedUrls} submitted hubs (${sitemapStats.subjectUrls} subject URLs generated, not submitted)`);
 console.log(`seo pages: ${seoPageCount}`);
 console.log(`papers API: ${apiStats.subjects} subjects, ${apiStats.papers} paper links`);

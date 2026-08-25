@@ -125,6 +125,86 @@ function seoDescriptionCourse(courseName, courseCode, branchCount, subjectCount)
   );
 }
 
+function seoIntroCourse(courseCode, courseName, branchCount) {
+  if (courseCode === 'DI') {
+    return `Browse GTU ${courseName} question papers by branch and semester. Coverage includes NEW, OLD, and Credit-to-Degree schemes where listed. Pick your branch to open subjects with Winter and Summer paper links.`;
+  }
+  if (courseCode === 'BE') {
+    return `Browse GTU ${courseName} previous year question papers across ${branchCount} branches. Pick your branch, open a semester, and download official exam PDFs by subject code.`;
+  }
+  return `Browse GTU ${courseName} (${courseCode}) question papers and syllabus links — organised by branch and semester. All paper links point to official GTU PDFs.`;
+}
+
+const PAPER_NAV = [
+  { code: 'BE', label: 'BE papers' },
+  { code: 'DI', label: 'Diploma papers' },
+  { code: 'BB', label: 'BBA papers' },
+  { code: 'BC', label: 'BCA papers' },
+  { code: 'MB', label: 'MBA papers' },
+  { code: 'MC', label: 'MCA papers' },
+  { code: 'BP', label: 'B.Pharm papers' },
+];
+
+function withRoot(root = '/') {
+  return root.endsWith('/') ? root : `${root}/`;
+}
+
+function chromeHeaderInner(root = '/') {
+  const r = withRoot(root);
+  return `<div class="brand-group">
+        <a class="brand" href="${r}" aria-label="GTUPEDIA home">GTU<span>PEDIA</span></a>
+        <span class="beta-badge">Beta</span>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="${r}resources/">Resources</a>
+        <a href="${r}#courses">Courses</a>
+        <a href="${r}events/">Events</a>
+        <a href="${r}internships/">Internships</a>
+        <a href="${r}partners/">Partners</a>
+        <a href="${r}team/">Team</a>
+      </nav>`;
+}
+
+function chromeFooterInner(root = '/') {
+  const r = withRoot(root);
+  const paperLinks = PAPER_NAV.map(item => `<a href="${r}${item.code}/">${item.label}</a>`).join('\n          ');
+  return `<div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <p class="site-footer__name">
+            GTUPEDIA <span class="beta-badge beta-badge--footer">Beta</span>
+          </p>
+          <p class="site-footer__tagline">For students, by students — GTU exam papers and study resources.</p>
+        </div>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="${r}resources/">Resources</a>
+          <a href="${r}#courses">Courses</a>
+          <a href="${r}events/">Events</a>
+          <a href="${r}internships/">Internships</a>
+          <a href="${r}partners/">Partners</a>
+          <a href="${r}team/">Team</a>
+          <a href="${r}campus-ambassador/">Campus Ambassador</a>
+          <a href="${r}about/">About</a>
+          <a href="${r}privacy/">Privacy</a>
+          <a href="${r}guides/download-gtu-papers/">Download papers</a>
+          <a href="${r}github-initiative/">GitHub Initiative</a>
+          <a href="${r}">Home</a>
+        </nav>
+      </div>
+      <nav class="site-footer__papers" aria-label="GTU question papers">
+          ${paperLinks}
+      </nav>
+      <div data-ad-footer></div>
+      <p class="site-footer__disclaimer">
+        <strong>Disclaimer:</strong> GTUPEDIA is <em>not</em> the official website of Gujarat Technological University (GTU) and is not affiliated with, endorsed by, or operated by the university. It is an independent initiative run by students and contributors to support practical learning, exam preparation, and exploration. Materials link to official GTU sources where available. See our <a href="${r}privacy/">Privacy Policy</a>.
+      </p>
+      <p class="site-footer__copy"> Made for supporting students to learn better for 21st Century.</p>`;
+}
+
+function homeJsonLdScript() {
+  const graph = [organizationJsonLd(), webSiteJsonLd()].map(({ '@context': _c, ...item }) => item);
+  return `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}</script>`;
+}
+
 function seoTitleBranch(branchName, courseCode, branchId) {
   return `${branchName} GTU Papers — ${courseCode} Branch ${branchId} Subjects | ${SEO.siteName}`;
 }
@@ -236,7 +316,12 @@ module.exports = {
   learningResourceJsonLd,
   seoTitleCourse,
   seoDescriptionCourse,
+  seoIntroCourse,
   seoTitleBranch,
+  PAPER_NAV,
+  chromeHeaderInner,
+  chromeFooterInner,
+  homeJsonLdScript,
   seoDescriptionBranch,
   seoTitleSubject,
   seoDescriptionSubject,

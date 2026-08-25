@@ -499,7 +499,7 @@ Allow: /
 Disallow: /old/
 Disallow: /resources/ee/
 
-# Hub pages only. Do not submit sitemaps/subjects-index.xml until /BE/ and /DI/ are indexed.
+# Hub pages only. sitemap.xml is a urlset (not an index).
 Sitemap: ${SEO.siteUrl}/sitemap.xml
 `);
 const seoPageCount = writeSeoPages(buildCatalog, base);

@@ -183,8 +183,9 @@ function writeAllSitemaps(catalog, outDir) {
   }
 
   writeSitemapIndex(subjectSitemapFiles, path.join(sitemapDir, 'subjects-index.xml'), lastmod);
-  // Submit hubs only. Subject URLs are discovered from course/branch pages.
-  writeSitemapIndex(['sitemaps/pages.xml'], path.join(outDir, 'sitemap.xml'), lastmod);
+  // Submit a urlset, not an index. GSC reports 0 discovered pages on sitemap indexes
+  // until it separately crawls each child file.
+  fs.writeFileSync(path.join(outDir, 'sitemap.xml'), renderUrlset(hubEntries, lastmod));
 
   return {
     totalUrls: entries.length,

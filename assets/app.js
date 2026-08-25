@@ -112,17 +112,16 @@ function showErrorStatic(message = '') {
 
 function clearSearchResults() {
   setSearchActive(false);
-  if (content) content.innerHTML = '';
   if (isHomeRoute()) {
+    if (content) content.innerHTML = '';
     setHomeSectionsVisible(true);
     setHeroVisible(true);
     resetHomeSeo();
     if (errorPage) showErrorStatic();
-  } else if (errorPage) {
-    showErrorStatic();
-  } else {
-    renderRoute();
+    return;
   }
+  if (state.catalog) renderRoute();
+  else if (errorPage) showErrorStatic();
 }
 
 function setHeroVisible(visible) {
@@ -1018,13 +1017,15 @@ function searchTokens(term) {
 
 function scoreSubject(entry, tokens) {
   let score = 0;
-  const codes = [entry.code, ...(entry.alternateCodes || [])];
+  const haystack = String(entry?.haystack || entry?.name || '');
+  const name = String(entry?.name || '');
+  const codes = [entry?.code, ...(entry?.alternateCodes || [])].filter(Boolean).map(String);
   for (const token of tokens) {
-    if (!entry.haystack.includes(token)) return -1;
+    if (!haystack.includes(token)) return -1;
     if (codes.includes(token)) score += 120;
     else if (codes.some(code => code.startsWith(token))) score += 80;
-    else if (entry.name.startsWith(token)) score += 50;
-    else if (entry.name.includes(token)) score += 25;
+    else if (name.startsWith(token)) score += 50;
+    else if (name.includes(token)) score += 25;
     else score += 8;
   }
   return score;
@@ -1239,9 +1240,21 @@ function renderSubject(subjectOrRef, routeBranchId) {
   setHeroVisible(false);
   setCoursesVisible(false);
   const courseCode = subject.courseCode || findCourseForBranch(String(subject.branchId)) || 'BE';
-  const backBranch = branchId || subject.branchId;
+  const canonicalBranchId = subject.branchId || branchId;
+  const backBranch = branchId || canonicalBranchId;
   const branch = findBranch(backBranch, courseCode);
-  if (branch) ensureCanonicalUrl({ course: courseCode }, branch, subject);
+  if (errorPage) {
+    const canonical = `${subjectPath(courseCode, canonicalBranchId, subject)}/`;
+    const current = appPathname().replace(/^\//, '').replace(/\/+$/, '');
+    if (current !== canonical.replace(/\/+$/, '')) {
+      window.location.replace(absoluteAppUrl(canonical));
+      return;
+    }
+  }
+  if (branch) {
+    const canonicalBranch = findBranch(canonicalBranchId, courseCode) || branch;
+    ensureCanonicalUrl({ course: courseCode }, canonicalBranch, subject);
+  }
   const course = getCourse(courseCode);
   const code = subject.code || subject.id.split('@')[0];
   const alternateCodes = (subject.alternateCodes || []).filter(item => item !== code);
@@ -1317,20 +1330,22 @@ async function renderSearch(term) {
     return;
   }
 
-  await ensureSearchIndex();
+  hideErrorStatic();
+  setHomeSectionsVisible(false);
+  setHeroVisible(isHomeRoute());
+  setSearchActive(true);
+  if (isHomeRoute()) document.body.classList.remove('subpage');
+  if (content) {
+    content.hidden = false;
+    content.innerHTML = pageShell('<p class="page-loading">Searching…</p>');
+  }
 
-  const onHome = isHomeRoute();
-  if (onHome) {
-    setHeroVisible(true);
-    setHomeSectionsVisible(false);
-    setSearchActive(true);
-    document.body.classList.remove('subpage');
-    if (errorPage) hideErrorStatic();
-  } else {
-    setSearchActive(false);
-    setHeroVisible(false);
-    setHomeSectionsVisible(false);
-    hideErrorStatic();
+  await ensureSearchIndex();
+  if (!state.catalog) {
+    if (content) {
+      content.innerHTML = pageShell('<p class="empty">Catalogue is still loading. Try search again in a moment.</p>');
+    }
+    return;
   }
   updatePageSeo({
     title: `Search: ${term.trim()} | ${SITE.name}`,
@@ -1464,15 +1479,14 @@ function scheduleSearch(term) {
   searchDebounceTimer = window.setTimeout(() => renderSearch(term), SEARCH_DEBOUNCE_MS);
 }
 
-if (searchInput) {
-  searchInput.addEventListener('input', event => scheduleSearch(event.target.value));
-  searchInput.addEventListener('keydown', event => {
-    if (event.key === 'Escape') {
-      searchInput.value = '';
-      clearSearchResults();
-    }
-  });
-}
+document.addEventListener('input', event => {
+  if (event.target && event.target.id === 'search-input') scheduleSearch(event.target.value);
+});
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape' || event.target?.id !== 'search-input') return;
+  event.target.value = '';
+  clearSearchResults();
+});
 
 function primeSubpageShell() {
   const route = parseRoutePath();

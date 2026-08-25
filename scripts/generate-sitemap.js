@@ -365,10 +365,16 @@ function renderSeoShell({
     <script src="assets/site-seo.js" defer></script>
     <script src="assets/site-analytics.js" defer></script>
     <script src="assets/site-ads.js" defer></script>
-    <script src="assets/site-chrome.js" defer></script>
+    <script src="assets/site-chrome.js?v=${escapeHtml(String(catalogVersion || '1'))}" defer></script>
   </head>
   <body class="subpage">
     <header class="site-header" data-site-header>${chromeHeaderInner('/')}</header>
+    <div id="search-bar" class="search-bar">
+      <label class="search" for="search-input">
+        <span class="visually-hidden">Search courses, branches, and subjects</span>
+        <input id="search-input" type="search" placeholder="Search course, branch, or subject (2+ letters)" autocomplete="off">
+      </label>
+    </div>
     <main>
       <section id="content" class="content">
         <article class="seo-prerender">
@@ -381,7 +387,7 @@ function renderSeoShell({
       </section>
     </main>
     <footer class="site-footer" data-site-footer>${chromeFooterInner('/')}</footer>
-    <script src="assets/app.js" defer></script>
+    <script src="assets/app.js?v=${escapeHtml(String(catalogVersion || '1'))}" defer></script>
   </body>
 </html>
 `;

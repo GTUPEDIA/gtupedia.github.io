@@ -69,6 +69,21 @@
       </nav>`;
   }
 
+  if (!document.querySelector('#search-bar')) {
+    const bar = document.createElement('div');
+    bar.id = 'search-bar';
+    bar.className = 'search-bar';
+    bar.innerHTML = `<label class="search" for="search-input">
+        <span class="visually-hidden">Search courses, branches, and subjects</span>
+        <input id="search-input" type="search" placeholder="Search course, branch, or subject (2+ letters)" autocomplete="off">
+      </label>`;
+    if (header && header.parentNode) header.insertAdjacentElement('afterend', bar);
+    else {
+      const main = document.querySelector('main');
+      if (main) main.insertAdjacentElement('afterbegin', bar);
+    }
+  }
+
   const footer = document.querySelector('[data-site-footer]');
   if (footer) {
     footer.innerHTML = `

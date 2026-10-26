@@ -361,7 +361,7 @@ function renderSeoShell({
       window.__GTUPEDIA_CATALOG_V = '${escapeHtml(String(catalogVersion || '1'))}';
     </script>
     <base href="/">
-    <script src="assets/site-base.js"></script>
+    <script src="assets/site-base.js?v=db3"></script>
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/site-seo.js" defer></script>
     <script src="assets/site-analytics.js" defer></script>
@@ -388,7 +388,7 @@ function renderSeoShell({
       </section>
     </main>
     <footer class="site-footer" data-site-footer>${chromeFooterInner('/')}</footer>
-    <script src="assets/app.js?v=${escapeHtml(String(catalogVersion || '1'))}" defer></script>
+    <script src="assets/app.js?v=db3" defer></script>
   </body>
 </html>
 `;

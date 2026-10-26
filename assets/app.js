@@ -1,3 +1,15 @@
+if (typeof window.gtuFetchJson !== 'function') {
+  window.gtuFetchJson = function gtuFetchJson(apiPath, jsonPath) {
+    const rootBase = window.__GTUPEDIA_BASE || '/';
+    const root = rootBase.endsWith('/') ? rootBase : `${rootBase}/`;
+    const read = (path) => fetch(root + String(path || '').replace(/^\//, '')).then((response) => {
+      if (!response.ok) throw new Error('Could not load data');
+      return response.json();
+    });
+    return read(apiPath).catch(() => read(jsonPath));
+  };
+}
+
 const state = {
   catalog: null,
   searchIndex: null,
@@ -395,8 +407,20 @@ function relatedSubjects(subject, branchId, courseCode, limit = 8) {
     .slice(0, limit);
 }
 
+function prerenderMatchesLocation() {
+  const canonical = document.querySelector('link[rel="canonical"]')?.getAttribute('href');
+  if (!canonical) return true;
+  try {
+    const canonPath = new URL(canonical, window.location.origin).pathname.replace(/\/+$/, '') || '/';
+    const here = window.location.pathname.replace(/\/+$/, '') || '/';
+    return canonPath === here;
+  } catch (_) {
+    return true;
+  }
+}
+
 function shouldPreservePrerender() {
-  return state.keepPrerender && Boolean(content?.querySelector('.seo-prerender'));
+  return state.keepPrerender && prerenderMatchesLocation() && Boolean(content?.querySelector('.seo-prerender'));
 }
 
 function mountPrerenderAdSlot(slotName) {
@@ -763,13 +787,11 @@ function initClientNavigation() {
     if (!href || href.startsWith('#')) return;
     const url = new URL(link.href, window.location.href);
     if (!isAppLink(url)) return;
+    const here = window.location.pathname.replace(/\/+$/, '') || '/';
+    const next = url.pathname.replace(/\/+$/, '') || '/';
+    if (here === next && url.search === window.location.search) return;
     event.preventDefault();
-    let path = url.pathname;
-    if (path.startsWith('/gtupedia.github.io')) {
-      path = path.slice('/gtupedia.github.io'.length) || '/';
-    }
-    const routePath = path.replace(/\/+$/, '') || '/';
-    navigateTo(routePath === '/' ? './' : `${routePath.replace(/^\//, '')}/`, { replace: false });
+    window.location.assign(url.href);
   });
 
   window.addEventListener('popstate', () => {

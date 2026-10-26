@@ -513,8 +513,14 @@ function hasExamPaper(subjectCode, paperSet) {
   return (paperSet?.codes || []).some(item => item === code || normalizePaperCode(item) === code);
 }
 
+function gtuPaperBaseUrl(baseUrl) {
+  const archive = 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/';
+  const value = String(baseUrl || `${archive}W2025/BE`);
+  return value.replace(/^https?:\/\/(?:www\.)?gtu\.ac\.in\/uploads\//i, archive);
+}
+
 function gtuExamPaperUrl(subjectCode, paperSet) {
-  const base = paperSet?.baseUrl || 'https://gtu.ac.in/uploads/W2025/BE';
+  const base = gtuPaperBaseUrl(paperSet?.baseUrl);
   const fileName = resolvePaperFileName(subjectCode, paperSet);
   return `${base}/${encodeURIComponent(fileName)}.pdf`;
 }

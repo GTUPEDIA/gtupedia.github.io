@@ -1,6 +1,6 @@
 {
   "exam": "Winter 2024",
-  "baseUrl": "https://gtu.ac.in/uploads/W2024/DI",
+  "baseUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/DI",
   "courseCode": "DI",
   "codes": [
     "1313202",

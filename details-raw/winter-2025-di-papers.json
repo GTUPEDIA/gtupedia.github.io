@@ -1,6 +1,6 @@
 {
   "exam": "Winter 2025",
-  "baseUrl": "https://gtu.ac.in/uploads/W2025/DI",
+  "baseUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/DI",
   "courseCode": "DI",
   "codes": [
     "1031NA01",

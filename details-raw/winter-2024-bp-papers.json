@@ -1,6 +1,6 @@
 {
   "exam": "Winter 2024",
-  "baseUrl": "https://gtu.ac.in/uploads/W2024/BP",
+  "baseUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/BP",
   "courseCode": "BP",
   "codes": [
     "2250005",

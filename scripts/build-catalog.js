@@ -322,27 +322,27 @@ function loadExamPapers(fileName, exam, baseUrl, courseCode = 'BE') {
   return { exam, baseUrl, courseCode, codes };
 }
 
-const winter2025Papers = loadExamPapers('winter-2025-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/BE');
-const winter2025BbPapers = loadExamPapers('winter-2025-bb-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/BB', 'BB');
-const winter2025BcPapers = loadExamPapers('winter-2025-bc-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/BC', 'BC');
-const winter2025MbPapers = loadExamPapers('winter-2025-mb-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/MB', 'MB');
-const winter2025McPapers = loadExamPapers('winter-2025-mc-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/MC', 'MC');
-const winter2025BpPapers = loadExamPapers('winter-2025-bp-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/BP', 'BP');
-const winter2025DiPapers = loadExamPapers('winter-2025-di-papers.txt', 'Winter 2025', 'https://gtu.ac.in/uploads/W2025/DI', 'DI');
-const summer2025Papers = loadExamPapers('summer-2025-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/BE');
-const summer2025BcPapers = loadExamPapers('summer-2025-bc-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/BC', 'BC');
-const summer2025MbPapers = loadExamPapers('summer-2025-mb-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/MB', 'MB');
-const summer2025BpPapers = loadExamPapers('summer-2025-bp-papers.txt', 'Summer 2025', 'https://gtu.ac.in/uploads/S2025/BP', 'BP');
-const winter2024Papers = loadExamPapers('winter-2024-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/BE');
-const winter2024BcPapers = loadExamPapers('winter-2024-bc-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/BC', 'BC');
-const winter2024MbPapers = loadExamPapers('winter-2024-mb-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/MB', 'MB');
-const winter2024BpPapers = loadExamPapers('winter-2024-bp-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/BP', 'BP');
-const winter2024DiPapers = loadExamPapers('winter-2024-di-papers.txt', 'Winter 2024', 'https://gtu.ac.in/uploads/W2024/DI', 'DI');
-const summer2024Papers = loadExamPapers('summer-2024-papers.txt', 'Summer 2024', 'https://gtu.ac.in/uploads/S2024/BE');
-const summer2024MbPapers = loadExamPapers('summer-2024-mb-papers.txt', 'Summer 2024', 'https://gtu.ac.in/uploads/S2024/MB', 'MB');
-const summer2024BpPapers = loadExamPapers('summer-2024-bp-papers.txt', 'Summer 2024', 'https://gtu.ac.in/uploads/S2024/BP', 'BP');
-const winter2023Papers = loadExamPapers('winter-2023-papers.txt', 'Winter 2023', 'https://gtu.ac.in/uploads/W2023/BE');
-const summer2023Papers = loadExamPapers('summer-2023-papers.txt', 'Summer 2023', 'https://gtu.ac.in/uploads/S2023/BE');
+const winter2025Papers = loadExamPapers('winter-2025-papers.txt', 'Winter 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/BE');
+const winter2025BbPapers = loadExamPapers('winter-2025-bb-papers.txt', 'Winter 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/BB', 'BB');
+const winter2025BcPapers = loadExamPapers('winter-2025-bc-papers.txt', 'Winter 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/BC', 'BC');
+const winter2025MbPapers = loadExamPapers('winter-2025-mb-papers.txt', 'Winter 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/MB', 'MB');
+const winter2025McPapers = loadExamPapers('winter-2025-mc-papers.txt', 'Winter 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/MC', 'MC');
+const winter2025BpPapers = loadExamPapers('winter-2025-bp-papers.txt', 'Winter 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/BP', 'BP');
+const winter2025DiPapers = loadExamPapers('winter-2025-di-papers.txt', 'Winter 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/DI', 'DI');
+const summer2025Papers = loadExamPapers('summer-2025-papers.txt', 'Summer 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2025/BE');
+const summer2025BcPapers = loadExamPapers('summer-2025-bc-papers.txt', 'Summer 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2025/BC', 'BC');
+const summer2025MbPapers = loadExamPapers('summer-2025-mb-papers.txt', 'Summer 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2025/MB', 'MB');
+const summer2025BpPapers = loadExamPapers('summer-2025-bp-papers.txt', 'Summer 2025', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2025/BP', 'BP');
+const winter2024Papers = loadExamPapers('winter-2024-papers.txt', 'Winter 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/BE');
+const winter2024BcPapers = loadExamPapers('winter-2024-bc-papers.txt', 'Winter 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/BC', 'BC');
+const winter2024MbPapers = loadExamPapers('winter-2024-mb-papers.txt', 'Winter 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/MB', 'MB');
+const winter2024BpPapers = loadExamPapers('winter-2024-bp-papers.txt', 'Winter 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/BP', 'BP');
+const winter2024DiPapers = loadExamPapers('winter-2024-di-papers.txt', 'Winter 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/DI', 'DI');
+const summer2024Papers = loadExamPapers('summer-2024-papers.txt', 'Summer 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2024/BE');
+const summer2024MbPapers = loadExamPapers('summer-2024-mb-papers.txt', 'Summer 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2024/MB', 'MB');
+const summer2024BpPapers = loadExamPapers('summer-2024-bp-papers.txt', 'Summer 2024', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2024/BP', 'BP');
+const winter2023Papers = loadExamPapers('winter-2023-papers.txt', 'Winter 2023', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2023/BE');
+const summer2023Papers = loadExamPapers('summer-2023-papers.txt', 'Summer 2023', 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2023/BE');
 const examPapers = [
   winter2025Papers,
   winter2025BbPapers,

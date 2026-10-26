@@ -1,6 +1,6 @@
 {
   "exam": "Winter 2023",
-  "baseUrl": "https://gtu.ac.in/uploads/W2023/BE",
+  "baseUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2023/BE",
   "courseCode": "BE",
   "codes": [
     "110013",

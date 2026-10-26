@@ -1,6 +1,6 @@
 {
   "exam": "Summer 2025",
-  "baseUrl": "https://gtu.ac.in/uploads/S2025/BP",
+  "baseUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2025/BP",
   "courseCode": "BP",
   "codes": [
     "2250006",

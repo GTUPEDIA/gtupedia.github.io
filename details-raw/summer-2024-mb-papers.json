@@ -1,6 +1,6 @@
 {
   "exam": "Summer 2024",
-  "baseUrl": "https://gtu.ac.in/uploads/S2024/MB",
+  "baseUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2024/MB",
   "courseCode": "MB",
   "codes": [
     "1519504",

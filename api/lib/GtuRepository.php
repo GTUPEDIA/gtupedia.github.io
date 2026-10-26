@@ -698,6 +698,13 @@ class GtuRepository
         return $subjects;
     }
 
+    private function paperBaseUrl(string $baseUrl): string
+    {
+        $archive = 'https://www.gtu.ac.in/api/v1/question-papers/archive/file/';
+        $rewritten = preg_replace('#^https?://(?:www\.)?gtu\.ac\.in/uploads/#i', $archive, $baseUrl);
+        return is_string($rewritten) && $rewritten !== '' ? $rewritten : $baseUrl;
+    }
+
     private function paperSets(): array
     {
         if ($this->paperSets !== null) {
@@ -722,7 +729,7 @@ class GtuRepository
             }
             $sets[] = [
                 'exam' => $row['exam'],
-                'baseUrl' => $row['base_url'],
+                'baseUrl' => $this->paperBaseUrl($row['base_url']),
                 'courseCode' => $row['course_code'],
                 'codes' => $list,
                 'exact' => $exact,

@@ -59,7 +59,7 @@ be.subjects.forEach(subject => {
   "papers": [
     {
       "exam": "Winter 2025",
-      "pdfUrl": "https://gtu.ac.in/uploads/W2025/BE/3150913.pdf",
+      "pdfUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2025/BE/3150913.pdf",
       "fileCode": "3150913"
     }
   ]

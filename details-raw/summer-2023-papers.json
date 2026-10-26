@@ -1,6 +1,6 @@
 {
   "exam": "Summer 2023",
-  "baseUrl": "https://gtu.ac.in/uploads/S2023/BE",
+  "baseUrl": "https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2023/BE",
   "courseCode": "BE",
   "codes": [
     "110004",

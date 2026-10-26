@@ -46,3 +46,7 @@ hostinger-deploy-staging/
 
 # Database credentials (local XAMPP or Hostinger). Copy from database/config.example.php.
 database/config.local.php
+
+cache/paper-archive/*
+!cache/paper-archive/.htaccess
+

@@ -1177,7 +1177,7 @@ function ensureFinderStyles() {
   if (document.getElementById('gtu-finder-styles')) return;
   const style = document.createElement('style');
   style.id = 'gtu-finder-styles';
-  style.textContent = '.finder{display:block;margin:0 0 16px;font-size:.92rem;font-weight:700}.finder-input{display:block;width:min(100%,560px);margin-top:8px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:12px;font:inherit;font-weight:500;background:#fff}.finder-empty{margin:12px 0 0;color:#5c6b66}.latest-paper{margin:0 0 18px}.latest-paper__btn{display:inline-block;background:#0e766e;color:#fff;text-decoration:none;font-weight:750;padding:12px 16px;border-radius:12px}';
+  style.textContent = '.finder{display:block;margin:0 0 16px;font-size:.92rem;font-weight:700}.finder-input{display:block;width:min(100%,560px);margin-top:8px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:12px;font:inherit;font-weight:500;background:#fff}.finder-empty{margin:12px 0 0;color:#5c6b66}.latest-paper{margin:0 0 14px}.latest-paper__btn{display:flex;align-items:center;justify-content:center;width:min(100%,420px);min-height:52px;background:#0e766e;color:#fff;text-decoration:none;font-weight:750;padding:12px 16px;border-radius:14px;text-align:center}.paper-status{margin:0 0 14px;color:#5c6b66;font-size:.95rem}.paper-board{display:flex;flex-direction:column;gap:8px;margin:0 0 18px}.paper-year{margin:10px 0 0;font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#5c6b66}.paper-row,.seo-prerender ul.link-board a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:14px;background:#fff;color:#17332f;text-decoration:none;font-weight:700}.paper-row__pdf,.subject-row__meta{flex:none;font-size:.75rem;font-weight:750;letter-spacing:.04em;color:#0e766e;background:#e5f3ef;border-radius:999px;padding:4px 8px}.seo-prerender ul.link-board{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px}.seo-prerender ul.link-board>li{margin:0}@media (min-width:800px){.paper-board,.seo-prerender ul.link-board{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}.paper-year{grid-column:1 / -1}}.seo-prerender ul.link-board.link-board--solo{display:flex;max-width:420px}';
   document.head.appendChild(style);
 }
 
@@ -1206,6 +1206,30 @@ function mountFinder(list, items, placeholder) {
       group.hidden = ![...group.querySelectorAll('.subject-card')].some(card => !card.hidden);
     });
     empty.hidden = shown > 0;
+  });
+}
+
+function styleCatalogLists() {
+  const root = content;
+  if (!root) return;
+  ensureFinderStyles();
+  root.querySelectorAll('h2').forEach((heading) => {
+    const title = heading.textContent || '';
+    if (!/subjects|syllabus|more .+ papers/i.test(title)) return;
+    const list = heading.nextElementSibling;
+    if (!list || list.tagName !== 'UL' || list.classList.contains('link-board')) return;
+    list.classList.add('link-board');
+    if (list.children.length < 2) list.classList.add('link-board--solo');
+    [...list.children].forEach((item) => {
+      if (item.tagName !== 'LI') return;
+      const link = item.querySelector('a');
+      if (!link) return;
+      const meta = [...item.children].find(node => node.tagName === 'SPAN' && !link.contains(node));
+      if (meta) {
+        meta.classList.add('subject-row__meta');
+        link.append(meta);
+      }
+    });
   });
 }
 
@@ -1248,87 +1272,161 @@ function codesForArchive() {
   return [...codes].filter(code => /^[A-Z0-9_-]{3,24}$/.test(code)).slice(0, 6);
 }
 
-function mergeArchivePapers(papers) {
+function papersOnPage() {
   const root = content;
-  if (!root || !papers?.length) return;
-  let list = listAfterHeading(root, /exam papers/i);
-  if (!list) {
-    const heading = document.createElement('h2');
-    heading.textContent = 'GTU exam papers';
-    list = document.createElement('ul');
-    const faq = root.querySelector('.seo-faq');
-    const article = root.querySelector('article') || root;
-    if (faq) faq.before(heading, list);
-    else article.append(heading, list);
-  }
-  const seen = new Set([...list.querySelectorAll('a')].map(link => examSessionKey(link.href)).filter(Boolean));
-  papers.forEach((paper) => {
-    const key = paper.session || examSessionKey(paper.url);
-    if (!key || seen.has(key)) return;
-    seen.add(key);
-    const item = document.createElement('li');
-    const link = document.createElement('a');
-    link.href = paper.url;
-    link.rel = 'noopener';
-    link.target = '_blank';
-    link.textContent = paper.label;
-    item.append(link);
-    list.append(item);
-  });
-  [...list.querySelectorAll(':scope > li')].sort((a, b) => {
-    const left = EXAM_SESSION_ORDER.indexOf(examSessionKey(a.querySelector('a')?.href));
-    const right = EXAM_SESSION_ORDER.indexOf(examSessionKey(b.querySelector('a')?.href));
-    return (left < 0 ? 99 : left) - (right < 0 ? 99 : right);
-  }).forEach(item => list.append(item));
-  const newest = list.querySelector('a');
-  if (newest) {
-    let button = root.querySelector('.latest-paper__btn');
-    if (!button) {
-      const banner = document.createElement('p');
-      banner.className = 'latest-paper';
-      button = document.createElement('a');
-      button.className = 'latest-paper__btn';
-      button.target = '_blank';
-      button.rel = 'noopener';
-      banner.append(button);
-      (list.previousElementSibling || list).before(banner);
-    }
-    button.href = newest.href;
-    button.textContent = `Download ${newest.textContent.trim()} paper`;
-  }
-  const resourceList = root.querySelector('.resource-list');
-  if (!resourceList) return;
-  papers.forEach((paper) => {
-    const key = paper.session || examSessionKey(paper.url);
-    if ([...resourceList.querySelectorAll('a')].some(link => examSessionKey(link.href) === key)) return;
-    const card = document.createElement('a');
-    card.className = 'resource-card paper-card';
-    card.href = paper.url;
-    card.target = '_blank';
-    card.rel = 'noopener';
-    card.innerHTML = '<span class="tag">paper</span><h3></h3><p>GTU official question paper</p>';
-    card.querySelector('h3').textContent = paper.label;
-    resourceList.append(card);
-  });
+  if (!root) return [];
+  const links = root.querySelector('.paper-board')
+    ? [...root.querySelectorAll('.paper-board a')]
+    : [...(listAfterHeading(root, /exam papers/i)?.querySelectorAll('a') || [])];
+  return links.map((link) => ({
+    label: (link.querySelector('span')?.textContent || link.textContent || '').replace(/\s*PDF\s*$/i, '').trim(),
+    url: link.href,
+    session: examSessionKey(link.href),
+  })).filter(paper => paper.session && paper.label);
 }
+
+function setPaperStatus(message) {
+  const root = content;
+  if (!root) return;
+  let status = root.querySelector('.paper-status');
+  if (!message) {
+    status?.remove();
+    return;
+  }
+  if (!status) {
+    status = document.createElement('p');
+    status.className = 'paper-status';
+    const board = root.querySelector('.paper-board');
+    const button = root.querySelector('.latest-paper');
+    const heading = [...root.querySelectorAll('h2')].find(node => /exam papers/i.test(node.textContent || ''));
+    if (button) button.after(status);
+    else (board || heading)?.before(status);
+    if (!status.parentElement) root.prepend(status);
+  }
+  status.textContent = message;
+}
+
+function paintPaperBoard(papers) {
+  const root = content;
+  if (!root) return;
+  const sorted = [];
+  const seen = new Set();
+  papers.forEach((paper) => {
+    const session = paper.session || examSessionKey(paper.url);
+    if (!session || seen.has(session)) return;
+    seen.add(session);
+    sorted.push({ ...paper, session });
+  });
+  const rank = (session) => {
+    const index = EXAM_SESSION_ORDER.indexOf(session);
+    return index < 0 ? 99 : index;
+  };
+  sorted.sort((a, b) => rank(a.session) - rank(b.session));
+  let board = root.querySelector('.paper-board');
+  const list = listAfterHeading(root, /exam papers/i);
+  if (!board) {
+    board = document.createElement('div');
+    board.className = 'paper-board';
+    if (list) list.replaceWith(board);
+    else {
+      const heading = document.createElement('h2');
+      heading.textContent = 'GTU exam papers';
+      const faq = root.querySelector('.seo-faq');
+      const article = root.querySelector('article') || root;
+      if (faq) faq.before(heading, board);
+      else article.append(heading, board);
+    }
+  }
+  board.replaceChildren();
+  let year = '';
+  sorted.forEach((paper) => {
+    const nextYear = paper.session.slice(1);
+    if (nextYear !== year) {
+      year = nextYear;
+      const label = document.createElement('p');
+      label.className = 'paper-year';
+      label.textContent = year;
+      board.append(label);
+    }
+    const link = document.createElement('a');
+    link.className = 'paper-row';
+    link.href = paper.url;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    const name = document.createElement('span');
+    name.textContent = paper.label;
+    const pdf = document.createElement('span');
+    pdf.className = 'paper-row__pdf';
+    pdf.textContent = 'PDF';
+    link.append(name, pdf);
+    board.append(link);
+  });
+  const newest = sorted[0];
+  if (!newest) return;
+  let button = root.querySelector('.latest-paper__btn');
+  if (!button) {
+    const banner = document.createElement('p');
+    banner.className = 'latest-paper';
+    button = document.createElement('a');
+    button.className = 'latest-paper__btn';
+    button.target = '_blank';
+    button.rel = 'noopener';
+    banner.append(button);
+    board.before(banner);
+  }
+  button.href = newest.url;
+  button.textContent = `Download ${newest.label} paper`;
+}
+
+function mergeArchivePapers(papers) {
+  paintPaperBoard([...papersOnPage(), ...(papers || [])]);
+}
+
+let archiveKey = '';
 
 function attachArchivePapers() {
   const route = parseRoutePath();
   const codes = codesForArchive();
-  if (!route.course || !codes.length || !content || content.dataset.archive === '1') return;
-  content.dataset.archive = '1';
+  if (!route.course || !codes.length || !content) return;
+  const key = `${route.course}:${codes.join(',')}`;
+  if (archiveKey === key) return;
+  archiveKey = key;
+  ensureFinderStyles();
+  if (papersOnPage().length) paintPaperBoard(papersOnPage());
+  setPaperStatus('Looking up papers from Summer 2026 back to Winter 2016…');
   const params = new URLSearchParams({ course: route.course, code: codes.join(',') });
   const base = window.__GTUPEDIA_BASE || '/';
   const root = base.endsWith('/') ? base : `${base}/`;
   fetch(`${root}api/v1/paper-archive.php?${params}`)
     .then(response => (response.ok ? response.json() : null))
-    .then(data => mergeArchivePapers(data?.papers))
-    .catch(() => {});
+    .then((data) => {
+      if (archiveKey !== key) return;
+      mergeArchivePapers(data?.papers || []);
+      const count = content?.querySelectorAll('.paper-row').length || 0;
+      refreshSeasonCount(count);
+      setPaperStatus(count ? '' : 'No PDF was found for this subject code yet.');
+    })
+    .catch(() => {
+      if (archiveKey === key) setPaperStatus('Showing the papers already saved on this page.');
+    });
+}
+
+function refreshSeasonCount(count) {
+  if (!content || !count) return;
+  content.querySelectorAll('p').forEach((node) => {
+    if (node.querySelector('a, strong')) return;
+    const text = node.textContent || '';
+    if (!/\d+\s+exam(?: paper)? seasons?/i.test(text)) return;
+    node.textContent = text
+      .replace(/\d+\s+exam paper seasons?/gi, `${count} exam paper seasons`)
+      .replace(/\d+\s+exam seasons?/gi, `${count} exam seasons`);
+  });
 }
 
 function enhanceCurrentPage() {
   const root = content;
   if (!root) return;
+  styleCatalogLists();
   attachArchivePapers();
   const branchList = listAfterHeading(root, /^branches$/i);
   if (branchList) {
@@ -1766,6 +1864,8 @@ function primeSubpageShell() {
 }
 
 primeSubpageShell();
+styleCatalogLists();
+attachArchivePapers();
 const catalogSource = catalogDataPair('api/v1/catalog.php', 'data/catalog.json');
 window.gtuFetchJson(catalogSource.api, catalogSource.json)
   .then(async (catalog) => {

@@ -4,6 +4,10 @@
   window.__GTUPEDIA_BASE = path.indexOf(legacyPrefix) === 0 ? legacyPrefix + '/' : '/';
   var baseEl = document.querySelector('base');
   if (baseEl) baseEl.href = window.__GTUPEDIA_BASE;
+  var hide = document.createElement('style');
+  hide.id = 'gtu-hide-later';
+  hide.textContent = 'a[href$="/resources/"],a[href$="/events/"],a[href$="/internships/"],a[href$="/partners/"],a[href$="/team/"],a[href$="/campus-ambassador/"],a[href$="/github-initiative/"]{display:none!important}';
+  document.head.appendChild(hide);
 })();
 
 window.gtuFetchJson = function gtuFetchJson(apiPath, jsonPath) {

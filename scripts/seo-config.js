@@ -156,12 +156,7 @@ function chromeHeaderInner(root = '/') {
         <span class="beta-badge">Beta</span>
       </div>
       <nav aria-label="Primary navigation">
-        <a href="${r}resources/">Resources</a>
         <a href="${r}#courses">Courses</a>
-        <a href="${r}events/">Events</a>
-        <a href="${r}internships/">Internships</a>
-        <a href="${r}partners/">Partners</a>
-        <a href="${r}team/">Team</a>
       </nav>`;
 }
 
@@ -176,17 +171,10 @@ function chromeFooterInner(root = '/') {
           <p class="site-footer__tagline">For students, by students — GTU exam papers and study resources.</p>
         </div>
         <nav class="site-footer__links" aria-label="Footer">
-          <a href="${r}resources/">Resources</a>
           <a href="${r}#courses">Courses</a>
-          <a href="${r}events/">Events</a>
-          <a href="${r}internships/">Internships</a>
-          <a href="${r}partners/">Partners</a>
-          <a href="${r}team/">Team</a>
-          <a href="${r}campus-ambassador/">Campus Ambassador</a>
           <a href="${r}about/">About</a>
           <a href="${r}privacy/">Privacy</a>
           <a href="${r}guides/download-gtu-papers/">Download papers</a>
-          <a href="${r}github-initiative/">GitHub Initiative</a>
           <a href="${r}">Home</a>
         </nav>
       </div>

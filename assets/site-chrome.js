@@ -18,21 +18,14 @@
   };
 
   const primaryNav = [
-    { key: 'resources', label: 'Resources', href: links.resources },
     { key: 'courses', label: 'Courses', href: links.courses },
-    { key: 'events', label: 'Events', href: links.events },
-    { key: 'internships', label: 'Internships', href: links.internships },
-    { key: 'partners', label: 'Partners', href: links.partners },
-    { key: 'team', label: 'Team', href: links.team },
   ];
 
   const footerNav = [
     ...primaryNav,
-    { key: 'ambassador', label: 'Campus Ambassador', href: links.ambassador },
     { key: 'about', label: 'About', href: links.about },
     { key: 'privacy', label: 'Privacy', href: links.privacy },
     { key: 'guide', label: 'Download papers', href: links.guide },
-    { key: 'githubInitiative', label: 'GitHub Initiative', href: links.githubInitiative },
     { key: 'home', label: 'Home', href: links.home },
   ];
 

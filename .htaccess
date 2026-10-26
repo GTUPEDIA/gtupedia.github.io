@@ -35,5 +35,5 @@ Options -Indexes +FollowSymLinks
 </IfModule>
 
 <IfModule mod_headers.c>
-  Header set Cache-Control "no-cache" "expr=%{REQUEST_URI} =~ m#/assets/app\.js# || %{REQUEST_URI} =~ m#/assets/site-base\.js# || %{REQUEST_URI} =~ m#\.html$#"
+  Header set Cache-Control "no-cache" "expr=%{REQUEST_URI} =~ m#/assets/app\.js# || %{REQUEST_URI} =~ m#/assets/site-base\.js# || %{REQUEST_URI} =~ m#/assets/site-chrome\.js# || %{REQUEST_URI} =~ m#\.html$#"
 </IfModule>

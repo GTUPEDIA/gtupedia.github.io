@@ -41,7 +41,8 @@
       </section>`;
   }
 
-  fetch(`${root}data/partners.json`)
+  fetch(`${root}api/v1/partners.php`)
+    .then(response => response.ok ? response : fetch(`${root}data/partners.json`))
     .then(response => {
       if (!response.ok) throw new Error('Failed to load partners');
       return response.json();

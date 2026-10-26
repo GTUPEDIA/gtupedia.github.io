@@ -822,21 +822,30 @@ function catalogVersionQuery() {
   return encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1');
 }
 
+function catalogDataPair(apiPath, jsonPath) {
+  const version = catalogVersionQuery();
+  const join = apiPath.includes('?') ? '&' : '?';
+  return {
+    api: `${apiPath}${join}v=${version}`,
+    json: `${jsonPath}?v=${version}`,
+  };
+}
+
 const SUBJECT_SOURCES = {
-  BE: () => `data/be-subjects.json?v=${catalogVersionQuery()}`,
-  BB: () => `data/bb-subjects.json?v=${catalogVersionQuery()}`,
-  BC: () => `data/bc-subjects.json?v=${catalogVersionQuery()}`,
-  MB: () => `data/mb-subjects.json?v=${catalogVersionQuery()}`,
-  MC: () => `data/mc-subjects.json?v=${catalogVersionQuery()}`,
-  BP: () => `data/bp-subjects.json?v=${catalogVersionQuery()}`,
-  DI: () => `data/di-subjects.json?v=${catalogVersionQuery()}`,
+  BE: () => catalogDataPair('api/v1/subjects.php?course=BE', 'data/be-subjects.json'),
+  BB: () => catalogDataPair('api/v1/subjects.php?course=BB', 'data/bb-subjects.json'),
+  BC: () => catalogDataPair('api/v1/subjects.php?course=BC', 'data/bc-subjects.json'),
+  MB: () => catalogDataPair('api/v1/subjects.php?course=MB', 'data/mb-subjects.json'),
+  MC: () => catalogDataPair('api/v1/subjects.php?course=MC', 'data/mc-subjects.json'),
+  BP: () => catalogDataPair('api/v1/subjects.php?course=BP', 'data/bp-subjects.json'),
+  DI: () => catalogDataPair('api/v1/subjects.php?course=DI', 'data/di-subjects.json'),
 };
 
 const BRANCH_SOURCES = {
-  MB: () => `data/mb-branches.json?v=${catalogVersionQuery()}`,
-  MC: () => `data/mc-branches.json?v=${catalogVersionQuery()}`,
-  BP: () => `data/bp-branches.json?v=${catalogVersionQuery()}`,
-  DI: () => `data/di-branches.json?v=${catalogVersionQuery()}`,
+  MB: () => catalogDataPair('api/v1/branches.php?course=MB', 'data/mb-branches.json'),
+  MC: () => catalogDataPair('api/v1/branches.php?course=MC', 'data/mc-branches.json'),
+  BP: () => catalogDataPair('api/v1/branches.php?course=BP', 'data/bp-branches.json'),
+  DI: () => catalogDataPair('api/v1/branches.php?course=DI', 'data/di-branches.json'),
 };
 
 async function ensureSubjectsForCourse(courseCode) {
@@ -852,30 +861,24 @@ async function ensureSubjectsForCourse(courseCode) {
     course.branches = SINGLE_BRANCH_COURSES[courseCode].map(branch => ({ ...branch }));
   }
 
-  const branchUrl = BRANCH_SOURCES[courseCode]?.();
-  if (!course.branches?.length && branchUrl) {
+  const branchSource = BRANCH_SOURCES[courseCode]?.();
+  if (!course.branches?.length && branchSource) {
     try {
-      const response = await fetch(branchUrl);
-      if (response.ok) {
-        const branchList = await response.json();
-        if (Array.isArray(branchList) && branchList.length) {
-          course.branches = branchList;
-        }
+      const branchList = await window.gtuFetchJson(branchSource.api, branchSource.json);
+      if (Array.isArray(branchList) && branchList.length) {
+        course.branches = branchList;
       }
     } catch (_) {
       // Ignore supplemental branch load failures.
     }
   }
 
-  const subjectUrl = SUBJECT_SOURCES[courseCode]?.();
-  if (subjectUrl) {
+  const subjectSource = SUBJECT_SOURCES[courseCode]?.();
+  if (subjectSource) {
     try {
-      const response = await fetch(subjectUrl);
-      if (response.ok) {
-        const subjectList = await response.json();
-        if (Array.isArray(subjectList) && subjectList.length) {
-          state.catalog.subjects = (state.catalog.subjects || []).concat(subjectList);
-        }
+      const subjectList = await window.gtuFetchJson(subjectSource.api, subjectSource.json);
+      if (Array.isArray(subjectList) && subjectList.length) {
+        state.catalog.subjects = (state.catalog.subjects || []).concat(subjectList);
       }
     } catch (_) {
       // Ignore supplemental subject load failures.
@@ -894,9 +897,8 @@ let searchIndexPromise = null;
 async function ensureSearchIndex() {
   if (state.searchIndex) return state.searchIndex;
   if (!searchIndexPromise) {
-    const searchUrl = `data/search-index.json?v=${catalogVersionQuery()}`;
-    searchIndexPromise = fetch(searchUrl)
-      .then(response => (response.ok ? response.json() : Promise.reject(new Error('Could not load search index'))))
+    const searchSource = catalogDataPair('api/v1/search.php', 'data/search-index.json');
+    searchIndexPromise = window.gtuFetchJson(searchSource.api, searchSource.json)
       .then(data => {
         state.searchIndex = data.entries || data;
         return state.searchIndex;
@@ -1499,9 +1501,8 @@ function primeSubpageShell() {
 }
 
 primeSubpageShell();
-const catalogUrl = `data/catalog.json?v=${encodeURIComponent(window.__GTUPEDIA_CATALOG_V || '1')}`;
-fetch(catalogUrl)
-  .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load catalogue')))
+const catalogSource = catalogDataPair('api/v1/catalog.php', 'data/catalog.json');
+window.gtuFetchJson(catalogSource.api, catalogSource.json)
   .then(async (catalog) => {
     state.catalog = { ...catalog, subjects: [] };
     await ensureSubjectsForRoute(parseRoutePath());

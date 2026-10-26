@@ -72,8 +72,9 @@ function renderTeam(data) {
 const base = window.__GTUPEDIA_BASE || '/';
 const root = base.endsWith('/') ? base : `${base}/`;
 
-fetch(`${root}data/team.json`)
-  .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load team')))
+fetch(`${root}api/v1/team.php`)
+  .then(response => response.ok ? response.json() : Promise.reject(new Error('api')))
+  .catch(() => fetch(`${root}data/team.json`).then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load team'))))
   .then(renderTeam)
   .catch(() => {
     if (teamEls.grid) {

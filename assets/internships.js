@@ -138,7 +138,8 @@
       .join('');
   }
 
-  fetch(`${root}data/internships.json`)
+  fetch(`${root}api/v1/internships.php`)
+    .then(response => response.ok ? response : fetch(`${root}data/internships.json`))
     .then(response => {
       if (!response.ok) throw new Error('Failed to load internships');
       return response.json();

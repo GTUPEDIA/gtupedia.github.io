@@ -1,0 +1,7 @@
+# Credentials and the seed script must not be reachable from the web.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Deny from all
+</IfModule>

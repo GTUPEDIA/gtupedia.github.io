@@ -45,7 +45,8 @@
       </section>`;
   }
 
-  fetch(dataUrl('data/events.json'))
+  fetch(dataUrl('api/v1/events.php'))
+    .then(response => response.ok ? response : fetch(dataUrl('data/events.json')))
     .then(response => {
       if (!response.ok) throw new Error('Failed to load events');
       return response.json();

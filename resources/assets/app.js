@@ -176,7 +176,8 @@ function bindSearch() {
 readFiltersFromUrl();
 bindSearch();
 
-fetch(`${basePath()}data/library.json`)
+fetch(`${homeUrl()}api/v1/library.php`)
+  .then(response => response.ok ? response : fetch(`${basePath()}data/library.json`))
   .then(response => response.ok ? response.json() : Promise.reject(new Error('Could not load library')))
   .then(library => {
     state.library = library;

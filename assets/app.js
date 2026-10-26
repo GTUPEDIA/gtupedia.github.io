@@ -1,4 +1,11 @@
-const state = { catalog: null, searchIndex: null, pageBreadcrumbs: [], loadedSubjectCourses: new Set() };
+const state = {
+  catalog: null,
+  searchIndex: null,
+  pageBreadcrumbs: [],
+  loadedSubjectCourses: new Set(),
+  renderToken: 0,
+  keepPrerender: true,
+};
 const content = document.querySelector('#content');
 const courseList = document.querySelector('#course-list');
 const coursesSection = document.querySelector('#courses');
@@ -389,7 +396,7 @@ function relatedSubjects(subject, branchId, courseCode, limit = 8) {
 }
 
 function shouldPreservePrerender() {
-  return Boolean(content?.querySelector('.seo-prerender'));
+  return state.keepPrerender && Boolean(content?.querySelector('.seo-prerender'));
 }
 
 function mountPrerenderAdSlot(slotName) {
@@ -513,23 +520,40 @@ function syllabusCardsForSubject(subject) {
   return syllabusCodesForSubject(subject).map(code => renderSyllabusCard(code));
 }
 
-function examPaperCardsForSubject(subject, courseCode) {
+function examPapersForSubject(subject, courseCode) {
   if (!PAPER_ENABLED_COURSES.has(courseCode)) return [];
-  const cards = [];
+  const papers = [];
   const seen = new Set();
 
   for (const code of subjectCodes(subject)) {
     for (const paperSet of getExamPaperSets()) {
       if (paperSetCourseCode(paperSet) !== courseCode) continue;
       if (!hasExamPaper(code, paperSet)) continue;
-      const key = `${paperSet.exam}:${code}`;
+      const key = String(paperSet.exam || code).toLowerCase();
       if (seen.has(key)) continue;
       seen.add(key);
-      cards.push(renderGtuPaperCard(code, paperSet));
+      papers.push({
+        label: paperSet.exam || 'Exam paper',
+        url: gtuExamPaperUrl(code, paperSet),
+      });
     }
   }
 
-  return cards;
+  return papers;
+}
+
+function latestPaperButton(paper) {
+  if (!paper) return '';
+  return `<p class="latest-paper"><a class="latest-paper__btn" href="${escapeHtml(paper.url)}" target="_blank" rel="noopener">Download ${escapeHtml(paper.label)} paper</a></p>`;
+}
+
+function examPaperCardsForSubject(subject, courseCode) {
+  return examPapersForSubject(subject, courseCode).map(paper => `
+    <a class="resource-card paper-card" href="${escapeHtml(paper.url)}" target="_blank" rel="noopener">
+      <span class="tag">paper</span>
+      <h3>${escapeHtml(paper.label)}</h3>
+      <p>GTU official question paper</p>
+    </a>`);
 }
 
 function appPathname() {
@@ -723,6 +747,7 @@ function absoluteAppUrl(path = './') {
 }
 
 function navigateTo(path, { replace = false } = {}) {
+  state.keepPrerender = false;
   const next = absoluteAppUrl(path);
   if (replace) window.history.replaceState(null, '', next);
   else window.history.pushState(null, '', next);
@@ -747,7 +772,10 @@ function initClientNavigation() {
     navigateTo(routePath === '/' ? './' : `${routePath.replace(/^\//, '')}/`, { replace: false });
   });
 
-  window.addEventListener('popstate', () => renderRoute());
+  window.addEventListener('popstate', () => {
+    state.keepPrerender = false;
+    renderRoute();
+  });
 }
 
 function escapeHtml(value = '') {
@@ -1117,6 +1145,85 @@ function mountHomeAdSlot() {
   mountAdSlots(slot);
 }
 
+function ensureFinderStyles() {
+  if (document.getElementById('gtu-finder-styles')) return;
+  const style = document.createElement('style');
+  style.id = 'gtu-finder-styles';
+  style.textContent = '.finder{display:block;margin:0 0 16px;font-size:.92rem;font-weight:700}.finder-input{display:block;width:min(100%,560px);margin-top:8px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:12px;font:inherit;font-weight:500;background:#fff}.finder-empty{margin:12px 0 0;color:#5c6b66}.latest-paper{margin:0 0 18px}.latest-paper__btn{display:inline-block;background:#0e766e;color:#fff;text-decoration:none;font-weight:750;padding:12px 16px;border-radius:12px}';
+  document.head.appendChild(style);
+}
+
+function mountFinder(list, items, placeholder) {
+  ensureFinderStyles();
+  if (!list || !items.length || list.previousElementSibling?.classList?.contains('finder')) return;
+  const label = document.createElement('label');
+  label.className = 'finder';
+  label.innerHTML = `Find on this page <input class="finder-input" type="search" placeholder="${escapeHtml(placeholder)}" autocomplete="off" enterkeyhint="search">`;
+  list.before(label);
+  const input = label.querySelector('input');
+  const empty = document.createElement('p');
+  empty.className = 'finder-empty';
+  empty.hidden = true;
+  empty.textContent = 'No match on this page. Try a shorter name or the subject code.';
+  list.after(empty);
+  input.addEventListener('input', () => {
+    const query = input.value.trim().toLowerCase();
+    let shown = 0;
+    items.forEach((item) => {
+      const match = !query || item.textContent.toLowerCase().includes(query);
+      item.hidden = !match;
+      if (match) shown += 1;
+    });
+    list.querySelectorAll(':scope > .subject-group').forEach((group) => {
+      group.hidden = ![...group.querySelectorAll('.subject-card')].some(card => !card.hidden);
+    });
+    empty.hidden = shown > 0;
+  });
+}
+
+function listAfterHeading(root, pattern) {
+  const heading = [...root.querySelectorAll('h2')].find(node => pattern.test(node.textContent || ''));
+  const list = heading?.nextElementSibling;
+  if (!list || list.tagName !== 'UL') return null;
+  return list;
+}
+
+function enhanceCurrentPage() {
+  const root = content;
+  if (!root) return;
+  const branchList = listAfterHeading(root, /^branches$/i);
+  if (branchList) {
+    mountFinder(branchList, [...branchList.children], 'Branch name, for example Computer or Mechanical');
+  }
+  const branchCards = root.querySelector('.card-grid--branches');
+  if (branchCards) {
+    mountFinder(branchCards, [...branchCards.querySelectorAll(':scope > .branch-card')], 'Branch name, for example Computer or Mechanical');
+  }
+  const subjectList = listAfterHeading(root, /subjects/i);
+  if (subjectList) {
+    mountFinder(subjectList, [...subjectList.children], 'Subject name or code, for example 3150913');
+  }
+  const subjectGroups = root.querySelector('.subject-groups');
+  if (subjectGroups) {
+    mountFinder(subjectGroups, [...subjectGroups.querySelectorAll('.subject-card')], 'Subject name or code, for example 3150913');
+  }
+  ensureFinderStyles();
+  if (root.querySelector('.latest-paper')) return;
+  const paperList = listAfterHeading(root, /exam papers/i);
+  const firstPaper = paperList?.querySelector('a');
+  if (!firstPaper || !paperList.previousElementSibling) return;
+  const banner = document.createElement('p');
+  banner.className = 'latest-paper';
+  const link = document.createElement('a');
+  link.className = 'latest-paper__btn';
+  link.href = firstPaper.href;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.textContent = `Download ${firstPaper.textContent.trim()} paper`;
+  paperList.previousElementSibling.before(banner);
+  banner.appendChild(link);
+}
+
 function renderCourse(courseCode) {
   hideErrorStatic();
   const course = getCourse(courseCode);
@@ -1135,6 +1242,7 @@ function renderCourse(courseCode) {
       breadcrumbs: crumbs,
     });
     mountPrerenderAdSlot('course');
+    enhanceCurrentPage();
     return;
   }
   updatePageSeo({
@@ -1161,6 +1269,7 @@ function renderCourse(courseCode) {
     }).join('')}</div>` : '<p class="empty">No branches have been imported for this course yet.</p>'}
     ${renderPopularBranches(courseCode)}`);
   mountAdSlots(content);
+  enhanceCurrentPage();
 }
 
 function renderSubjectCard(subject, meta = '', branchId = subject.branchId) {
@@ -1194,6 +1303,7 @@ function renderBranch(courseCode, branchId) {
       breadcrumbs: crumbs,
     });
     mountPrerenderAdSlot('branch');
+    enhanceCurrentPage();
     return;
   }
   updatePageSeo({
@@ -1217,6 +1327,7 @@ function renderBranch(courseCode, branchId) {
         <div class="subject-list">${items.map(subject => renderSubjectCard(subject, subjectHasPapers(subject) ? 'Open exam papers' : 'Open syllabus', branchId)).join('')}</div>
       </section>`).join('')}</div>` : '<p class="empty">No exam papers are available for this branch yet. Check back after the next paper upload.</p>'}`);
   mountAdSlots(content);
+  enhanceCurrentPage();
 }
 
 function renderGtuPaperCard(subjectCode, paperSet) {
@@ -1280,6 +1391,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
       ].filter(Boolean),
     });
     mountPrerenderAdSlot('subject');
+    enhanceCurrentPage();
     return;
   }
   updatePageSeo({
@@ -1292,6 +1404,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
       learningResourceJsonLd(subject, branch?.name || 'BE', canonicalAbsoluteUrl(subjectRoute), paperCount),
     ].filter(Boolean),
   });
+  const papers = examPapersForSubject(subject, courseCode);
   const resources = (state.catalog.resources || []).filter(item => String(item.subjectId) === subject.id
     || (subject.alternateIds || []).includes(String(item.subjectId)));
   const resourceCards = [
@@ -1314,6 +1427,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
       ${alternateCodes.length ? `<span class="subject-alt-codes">Also listed as ${alternateCodes.map(item => escapeHtml(item)).join(', ')}</span>` : ''}
     </p>
     <p class="subject-intro">${escapeHtml(subjectIntroText(subject, branch, courseCode))}</p>
+    ${latestPaperButton(papers[0])}
     ${adSlotHtml('subject')}
     <section class="subject-resources" aria-labelledby="subject-resources-title">
       <h2 id="subject-resources-title">GTU syllabus &amp; exam papers</h2>
@@ -1321,6 +1435,7 @@ function renderSubject(subjectOrRef, routeBranchId) {
     </section>
     ${branch ? renderRelatedSubjects(subject, backBranch, courseCode) : ''}`);
   mountAdSlots(content);
+  enhanceCurrentPage();
 }
 
 async function renderSearch(term) {
@@ -1411,7 +1526,7 @@ async function renderSearch(term) {
           const branchId = entry.subject.branchId === '0' ? '0' : entry.subject.branchId;
           return renderSubjectCard(
             entry.subject,
-            `${entry.courseCode} · ${entry.branchName} · Semester ${entry.subject.semester}`,
+            `${entry.courseCode} · ${entry.branchName} · Open papers`,
             branchId,
           );
         }).join('')}</div>
@@ -1434,10 +1549,10 @@ function renderNotFound(message) {
 }
 
 async function renderRoute() {
+  const token = ++state.renderToken;
   window.clearTimeout(searchDebounceTimer);
-  if (searchInput) searchInput.value = '';
+  if (searchInput && document.activeElement !== searchInput) searchInput.value = '';
   setSearchActive(false);
-  setCoursesVisible(true);
 
   if (window.location.search) {
     const legacyPath = legacyQueryToPath();
@@ -1447,7 +1562,18 @@ async function renderRoute() {
   }
 
   const route = parseRoutePath();
+  if (isCatalogRoute(route)) {
+    setHeroVisible(false);
+    setCoursesVisible(false);
+    if (!shouldPreservePrerender() && content && route.course && !state.loadedSubjectCourses.has(route.course)) {
+      content.innerHTML = pageShell('<p class="page-loading">Loading papers…</p>');
+    }
+  } else {
+    setCoursesVisible(true);
+  }
+
   if (route.course) await ensureSubjectsForCourse(route.course);
+  if (token !== state.renderToken) return;
 
   if (route.subjectCode || route.subjectSlug) {
     const branch = resolveBranchFromRoute(route, route.course);
@@ -1505,7 +1631,6 @@ const catalogSource = catalogDataPair('api/v1/catalog.php', 'data/catalog.json')
 window.gtuFetchJson(catalogSource.api, catalogSource.json)
   .then(async (catalog) => {
     state.catalog = { ...catalog, subjects: [] };
-    await ensureSubjectsForRoute(parseRoutePath());
     initClientNavigation();
     renderCourses();
     return renderRoute();

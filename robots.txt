@@ -2,7 +2,17 @@ User-agent: *
 Allow: /
 
 Disallow: /old/
+Disallow: /api/
+Disallow: /database/
 Disallow: /resources/ee/
 
-# Hub pages only. sitemap.xml is a urlset (not an index).
+# Hub pages plus one urlset per course so Search Console can count subject URLs.
 Sitemap: https://gtupedia.com/sitemap.xml
+Sitemap: https://gtupedia.com/sitemaps/pages.xml
+Sitemap: https://gtupedia.com/sitemaps/subjects-be.xml
+Sitemap: https://gtupedia.com/sitemaps/subjects-di.xml
+Sitemap: https://gtupedia.com/sitemaps/subjects-bb.xml
+Sitemap: https://gtupedia.com/sitemaps/subjects-bc.xml
+Sitemap: https://gtupedia.com/sitemaps/subjects-mb.xml
+Sitemap: https://gtupedia.com/sitemaps/subjects-mc.xml
+Sitemap: https://gtupedia.com/sitemaps/subjects-bp.xml

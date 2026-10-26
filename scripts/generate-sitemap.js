@@ -183,14 +183,15 @@ function writeAllSitemaps(catalog, outDir) {
   }
 
   writeSitemapIndex(subjectSitemapFiles, path.join(sitemapDir, 'subjects-index.xml'), lastmod);
-  // Submit a urlset, not an index. GSC reports 0 discovered pages on sitemap indexes
-  // until it separately crawls each child file.
-  fs.writeFileSync(path.join(outDir, 'sitemap.xml'), renderUrlset(hubEntries, lastmod));
+  // sitemap.xml is the file already submitted in Search Console. It must list the
+  // subject urlsets, not only hub pages, or Google never receives the paper URLs.
+  const indexFiles = ['sitemaps/pages.xml', ...subjectSitemapFiles];
+  writeSitemapIndex(indexFiles, path.join(outDir, 'sitemap.xml'), lastmod);
 
   return {
     totalUrls: entries.length,
-    submittedUrls: hubEntries.length,
-    sitemapFiles: 2,
+    submittedUrls: entries.length,
+    sitemapFiles: indexFiles,
     subjectUrls: subjectEntries.length,
   };
 }

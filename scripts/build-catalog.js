@@ -493,14 +493,20 @@ const { writePapersApi } = require('./build-papers-api');
 const { SEO } = require('./seo-config');
 const sitemapStats = writeAllSitemaps(buildCatalog, base);
 writeHomePage(buildCatalog, path.join(base, 'index.html'));
+const sitemapLines = [
+  `${SEO.siteUrl}/sitemap.xml`,
+  ...(sitemapStats.sitemapFiles || []).map((file) => `${SEO.siteUrl}/${file}`),
+].map((url) => `Sitemap: ${url}`).join('\n');
 fs.writeFileSync(path.join(base, 'robots.txt'), `User-agent: *
 Allow: /
 
 Disallow: /old/
+Disallow: /api/
+Disallow: /database/
 Disallow: /resources/ee/
 
-# Hub pages only. sitemap.xml is a urlset (not an index).
-Sitemap: ${SEO.siteUrl}/sitemap.xml
+# Hub pages plus one urlset per course so Search Console can count subject URLs.
+${sitemapLines}
 `);
 const seoPageCount = writeSeoPages(buildCatalog, base);
 const apiStats = writePapersApi(buildCatalog, base);
@@ -541,6 +547,6 @@ console.log(`Summer 2024 MB papers: ${summer2024MbPapers.codes.length}`);
 console.log(`Summer 2024 BP papers: ${summer2024BpPapers.codes.length}`);
 console.log(`Winter 2023 papers: ${winter2023Papers.codes.length}`);
 console.log(`Summer 2023 papers: ${summer2023Papers.codes.length}`);
-console.log(`sitemap urls: ${sitemapStats.submittedUrls} submitted hubs (${sitemapStats.subjectUrls} subject URLs generated, not submitted)`);
+console.log(`sitemap urls: ${sitemapStats.submittedUrls} total (${sitemapStats.subjectUrls} subject URLs in course sitemaps)`);
 console.log(`seo pages: ${seoPageCount}`);
 console.log(`papers API: ${apiStats.subjects} subjects, ${apiStats.papers} paper links`);

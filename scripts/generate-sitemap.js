@@ -388,7 +388,7 @@ function renderSeoShell({
       </section>
     </main>
     <footer class="site-footer" data-site-footer>${chromeFooterInner('/')}</footer>
-    <script src="assets/app.js?v=db5" defer></script>
+    <script src="assets/app.js?v=db6" defer></script>
   </body>
 </html>
 `;

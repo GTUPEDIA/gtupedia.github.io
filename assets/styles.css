@@ -214,6 +214,21 @@ h1.page-title {
   font-weight: 700;
 }
 .seo-prerender ul.link-board a:hover { border-color: #b8ddd4; }
+.seo-prerender ul.link-board--branches a {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-height: 76px;
+}
+.seo-prerender ul.link-board--branches .subject-row__meta {
+  background: transparent;
+  padding: 0;
+  color: var(--muted);
+  letter-spacing: 0;
+  font-size: .82rem;
+  font-weight: 650;
+}
 @media (min-width: 800px) {
   .paper-board,
   .seo-prerender ul.link-board {
@@ -222,6 +237,15 @@ h1.page-title {
     gap: 8px 12px;
   }
   .paper-year { grid-column: 1 / -1; }
+}
+.seo-prerender ul.link-board.link-board--solo {
+  display: flex;
+  max-width: 420px;
+}
+@media (min-width: 1100px) {
+  .seo-prerender ul.link-board.link-board--branches {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .seo-prerender ul.link-board.link-board--solo {
   display: flex;

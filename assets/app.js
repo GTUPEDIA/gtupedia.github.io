@@ -1177,7 +1177,7 @@ function ensureFinderStyles() {
   if (document.getElementById('gtu-finder-styles')) return;
   const style = document.createElement('style');
   style.id = 'gtu-finder-styles';
-  style.textContent = '.finder{display:block;margin:0 0 16px;font-size:.92rem;font-weight:700}.finder-input{display:block;width:min(100%,560px);margin-top:8px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:12px;font:inherit;font-weight:500;background:#fff}.finder-empty{margin:12px 0 0;color:#5c6b66}.latest-paper{margin:0 0 14px}.latest-paper__btn{display:flex;align-items:center;justify-content:center;width:min(100%,420px);min-height:52px;background:#0e766e;color:#fff;text-decoration:none;font-weight:750;padding:12px 16px;border-radius:14px;text-align:center}.paper-status{margin:0 0 14px;color:#5c6b66;font-size:.95rem}.paper-board{display:flex;flex-direction:column;gap:8px;margin:0 0 18px}.paper-year{margin:10px 0 0;font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#5c6b66}.paper-row,.seo-prerender ul.link-board a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:14px;background:#fff;color:#17332f;text-decoration:none;font-weight:700}.paper-row__pdf,.subject-row__meta{flex:none;font-size:.75rem;font-weight:750;letter-spacing:.04em;color:#0e766e;background:#e5f3ef;border-radius:999px;padding:4px 8px}.seo-prerender ul.link-board{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px}.seo-prerender ul.link-board>li{margin:0}@media (min-width:800px){.paper-board,.seo-prerender ul.link-board{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}.paper-year{grid-column:1 / -1}}.seo-prerender ul.link-board.link-board--solo{display:flex;max-width:420px}';
+  style.textContent = '.finder{display:block;margin:0 0 16px;font-size:.92rem;font-weight:700}.finder-input{display:block;width:min(100%,560px);margin-top:8px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:12px;font:inherit;font-weight:500;background:#fff}.finder-empty{margin:12px 0 0;color:#5c6b66}.latest-paper{margin:0 0 14px}.latest-paper__btn{display:flex;align-items:center;justify-content:center;width:min(100%,420px);min-height:52px;background:#0e766e;color:#fff;text-decoration:none;font-weight:750;padding:12px 16px;border-radius:14px;text-align:center}.paper-status{margin:0 0 14px;color:#5c6b66;font-size:.95rem}.paper-board{display:flex;flex-direction:column;gap:8px;margin:0 0 18px}.paper-year{margin:10px 0 0;font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#5c6b66}.paper-row,.seo-prerender ul.link-board a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:12px 14px;border:1px solid #d7e0dc;border-radius:14px;background:#fff;color:#17332f;text-decoration:none;font-weight:700}.paper-row__pdf,.subject-row__meta{flex:none;font-size:.75rem;font-weight:750;letter-spacing:.04em;color:#0e766e;background:#e5f3ef;border-radius:999px;padding:4px 8px}.seo-prerender ul.link-board{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px}.seo-prerender ul.link-board>li{margin:0}@media (min-width:800px){.paper-board,.seo-prerender ul.link-board{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}.paper-year{grid-column:1 / -1}}.seo-prerender ul.link-board.link-board--solo{display:flex;max-width:420px}.seo-prerender ul.link-board--branches a{align-items:flex-start;flex-direction:column;justify-content:center;gap:4px;min-height:76px}.seo-prerender ul.link-board--branches .subject-row__meta{background:transparent;padding:0;color:#5c6b66;letter-spacing:0;font-size:.82rem;font-weight:650}@media (min-width:1100px){.seo-prerender ul.link-board.link-board--branches{grid-template-columns:1fr 1fr 1fr}}.seo-prerender ul.link-board.link-board--solo{display:flex;max-width:420px}';
   document.head.appendChild(style);
 }
 
@@ -1215,17 +1215,28 @@ function styleCatalogLists() {
   ensureFinderStyles();
   root.querySelectorAll('h2').forEach((heading) => {
     const title = heading.textContent || '';
-    if (!/subjects|syllabus|more .+ papers/i.test(title)) return;
+    if (!/subjects|syllabus|more .+ papers|^branches$/i.test(title.trim())) return;
     const list = heading.nextElementSibling;
     if (!list || list.tagName !== 'UL' || list.classList.contains('link-board')) return;
+    const branches = /^branches$/i.test(title.trim());
     list.classList.add('link-board');
+    if (branches) list.classList.add('link-board--branches');
     if (list.children.length < 2) list.classList.add('link-board--solo');
     [...list.children].forEach((item) => {
       if (item.tagName !== 'LI') return;
       const link = item.querySelector('a');
       if (!link) return;
-      const meta = [...item.children].find(node => node.tagName === 'SPAN' && !link.contains(node));
+      let meta = [...item.children].find(node => node.tagName === 'SPAN' && !link.contains(node));
+      if (!meta) {
+        const loose = [...item.childNodes].filter(node => node !== link && node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+        if (loose.length) {
+          meta = document.createElement('span');
+          meta.textContent = loose.map(node => node.textContent.trim()).join(' ').replace(/^[—–-]\s*/, '');
+          loose.forEach(node => node.remove());
+        }
+      }
       if (meta) {
+        meta.textContent = meta.textContent.replace(/\b1 subjects\b/g, '1 subject');
         meta.classList.add('subject-row__meta');
         link.append(meta);
       }
@@ -1430,11 +1441,11 @@ function enhanceCurrentPage() {
   attachArchivePapers();
   const branchList = listAfterHeading(root, /^branches$/i);
   if (branchList) {
-    mountFinder(branchList, [...branchList.children], 'Branch name, for example Computer or Mechanical');
+    mountFinder(branchList, [...branchList.children], 'Computer, Civil, or Mechanical');
   }
   const branchCards = root.querySelector('.card-grid--branches');
   if (branchCards) {
-    mountFinder(branchCards, [...branchCards.querySelectorAll(':scope > .branch-card')], 'Branch name, for example Computer or Mechanical');
+    mountFinder(branchCards, [...branchCards.querySelectorAll(':scope > .branch-card')], 'Computer, Civil, or Mechanical');
   }
   const subjectList = listAfterHeading(root, /subjects/i);
   if (subjectList) {
